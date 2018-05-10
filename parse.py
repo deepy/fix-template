@@ -5,14 +5,21 @@ import gen
 from models import Message, MsgContent, Component, Field
 
 
+def extract_xml(constructor, element):
+    r = constructor()
+    for tag in element:
+        r.parse_value(tag.tag, tag.text)
+    for attrib in element.attrib:
+        r.parse_value('attr_' + attrib, element.attrib[attrib])
+    return r
+
+
 def parse_messages(xml):
     tree = ET.parse(xml)
     root = tree.getroot()
     messages = {}
-    for message in root:
-        m = Message()
-        for tag in message:
-            m.parse_value(tag.tag, tag.text)
+    for element in root:
+        m = extract_xml(Message, element)
         messages[m.ComponentID] = m
     return messages
 
@@ -25,12 +32,8 @@ def parse_msgcontents(xml):
 
     msgcontent = defaultdict(list)
 
-    for message in root:
-        m = MsgContent()
-        for tag in message:
-            m.parse_value(tag.tag, tag.text)
-        for attrib in message.attrib:
-            m.parse_value('attr_' + attrib, message.attrib[attrib])
+    for element in root:
+        m = extract_xml(MsgContent, element)
         msgcontent[m.ComponentID].append(m)
     return msgcontent
 
@@ -41,12 +44,8 @@ def parse_fields(xml):
 
     fields = {}
 
-    for message in root:
-        f = Field()
-        for tag in message:
-            f.parse_value(tag.tag, tag.text)
-        for attrib in message.attrib:
-            f.parse_value('attr_' + attrib, message.attrib[attrib])
+    for element in root:
+        f = extract_xml(Field, element)
         fields[f.Tag] = f
     return fields
 
@@ -57,10 +56,8 @@ def parse_components(xml):
 
     components = {}
 
-    for message in root:
-        c = Component()
-        for tag in message:
-            c.parse_value(tag.tag, tag.text)
+    for element in root:
+        c = extract_xml(Component, element)
         components[c.Name] = c
     return components
 
