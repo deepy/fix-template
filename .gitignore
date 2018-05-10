@@ -1,0 +1,5 @@
+fix_repository_2010_edition_20140507/
+out/
+.idea
+__pycache__
+*.pyc
