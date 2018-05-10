@@ -90,8 +90,13 @@ class Lookup:
 
 
 if __name__ == '__main__':
-    messages = parse_messages('fix_repository_2010_edition_20140507/FIX.5.0SP2/Base/Messages.xml')
-    msgcontents = parse_msgcontents('fix_repository_2010_edition_20140507/FIX.5.0SP2/Base/MsgContents.xml')
-    fields = parse_fields('fix_repository_2010_edition_20140507/FIX.5.0SP2/Base/Fields.xml')
-    components = parse_components('fix_repository_2010_edition_20140507/FIX.5.0SP2/Base/Components.xml')
+    import os
+
+    base = 'fix_repository_2010_edition_20140507'
+    version = 'FIX.5.0SP2'
+
+    messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
+    msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
+    fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
+    components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
     gen.render(messages.values(), Lookup(messages, msgcontents, fields, components))
