@@ -1,5 +1,6 @@
 fix_repository_2010_edition_20140507/
 out/
+out
 .idea
 __pycache__
 *.pyc

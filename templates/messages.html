@@ -1,24 +1,25 @@
-{% for message in messages %}
-    <h1>{{ message.MsgType }} [type '{{ message.Name }}']</h1>
-    <p>{{ message.Description }}</p>
-    <table>
+<html>
+<meta charset="utf-8" />
+<h1>{{ message.MsgType }} [type '{{ message.Name }}']</h1>
+<p style="white-space: pre-wrap;">{{ message.Description }}</p>
+<table>
+<tr>
+    <th>Field or Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+{% for msgcontent in lookup.msgcontents(message.ComponentID) %}
     <tr>
-        <th>Field or Component</th>
-        <th>Field Name</th>
-        <th>FIXML name</th>
-        <th>Req'd</th>
-        <th>Comments</th>
-        <th>Depr.</th>
+        <td>{{ msgcontent.DisplayTagText }}</td>
+        <td>{{ msgcontent.FieldName }}</td>
+        <td>{{ msgcontent.AbbrName }}</td>
+        <td>{% if msgcontent.Reqd %}x{% endif %}</td>
+        <td>{{ msgcontent.Description }}</td>
+        <td>{{ msgcontent.attr_deprecated }}</td>
     </tr>
-    {% for msgcontent in lookup.msgcontents(message.ComponentID) %}
-        <tr>
-            <td>{{ msgcontent.DisplayTagText }}</td>
-            <td>{{ msgcontent.FieldName }}</td>
-            <td>{{ msgcontent.AbbrName }}</td>
-            <td>{% if msgcontent.Reqd %}x{% endif %}</td>
-            <td>{{ msgcontent.Description }}</td>
-            <td>{{ msgcontent.attr_deprecated }}</td>
-        </tr>
-    {% endfor %}
-    </table>
 {% endfor %}
+</table>
+</html>
