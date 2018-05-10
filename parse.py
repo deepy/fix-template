@@ -71,7 +71,9 @@ class Lookup:
 
     def msgcontents(self, id):
         import copy
-        result = copy.deepcopy(self._msgcontents[id])
+
+        result = sorted(copy.deepcopy(self._msgcontents[id]), key=lambda res: float(res.Position))
+
         for r in result:
             if not r.TagText.isdigit():
                 r.FieldName = r.TagText
