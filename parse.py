@@ -95,10 +95,18 @@ if __name__ == '__main__':
     import os
 
     base = 'fix_repository_2010_edition_20140507'
-    version = 'FIX.5.0SP2'
 
-    messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
-    msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
-    fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
-    components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
-    gen.render(messages.values(), Lookup(messages, msgcontents, fields, components))
+    for version in next(os.walk(base))[1]:
+        if not version.startswith('FIX') or version == 'FIX.4.3':  # Looks for field 465, which seems to be an enum.
+            continue
+        output = os.path.join('out', version)
+
+        try:
+            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
+            msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
+            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
+            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
+            gen.render_messages(output, messages.values(), Lookup(messages, msgcontents, fields, components))
+        except:
+            print("Exception while processing: %s" % version)
+            raise
