@@ -7,8 +7,8 @@
         <th>Field Name</th>
         <th>FIXML name</th>
         <th>Req'd</th>
-{#        <th>Comments</th>#}
-{#        <th>Depr.</th>#}
+        <th>Comments</th>
+        <th>Depr.</th>
     </tr>
     {% for msgcontent in lookup.msgcontents(message.ComponentID) %}
         <tr>
@@ -16,6 +16,8 @@
             <td>{{ msgcontent.FieldName }}</td>
             <td>{{ msgcontent.AbbrName }}</td>
             <td>{% if msgcontent.Reqd %}x{% endif %}</td>
+            <td>{{ msgcontent.Description }}</td>
+            <td>{{ msgcontent.attr_deprecated }}</td>
         </tr>
     {% endfor %}
     </table>
