@@ -1,0 +1,155 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>AffectedOrdGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/534.html">
+            534
+            </a>
+        </td>
+        <td>
+            <a href="../fields/534.html">
+            NoAffectedOrders
+            </a>
+        </td>
+        <td>@NoAffctdOrds</td>
+        <td class="green center"></td>
+        <td>Optional field used to indicate the number of order identifiers for orders affected by the mass action request. Must be followed with OrigClOrdID (41) as the next field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41.html">
+            41
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41.html">
+            OrigClOrdID
+            </a>
+        </td>
+        <td>@OrigClOrdID</td>
+        <td class="green center"></td>
+        <td>Required if NoAffectedOrders &gt; 0 and must be the first repeating field in the group.
+Indicates the client order id of an order affected by this request. If order(s) were manually delivered (or otherwise not delivered over FIX and not assigned a ClOrdID) this field should contain string &#34;MANUAL&#34;.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/535.html">
+            535
+            </a>
+        </td>
+        <td>
+            <a href="../fields/535.html">
+            AffectedOrderID
+            </a>
+        </td>
+        <td>@AffctdOrdID</td>
+        <td class="green center"></td>
+        <td>Contains the OrderID assigned by the counterparty of an affected order. Not required as part of the repeating group if OrigClOrdID(41) has a value other than &#34;MANUAL&#34;.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/536.html">
+            536
+            </a>
+        </td>
+        <td>
+            <a href="../fields/536.html">
+            AffectedSecondaryOrderID
+            </a>
+        </td>
+        <td>@AffctdScndOrdID</td>
+        <td class="green center"></td>
+        <td>Contains the SecondaryOrderID assigned by the counterparty of an affected order. Not required as part of the repeating group</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

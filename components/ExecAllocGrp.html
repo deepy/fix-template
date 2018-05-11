@@ -1,0 +1,240 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>ExecAllocGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/124.html">
+            124
+            </a>
+        </td>
+        <td>
+            <a href="../fields/124.html">
+            NoExecs
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Indicates number of individual execution repeating group entries to follow. Absence of this field indicates that no individual execution entries are included. Primarily used to support step-outs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/32.html">
+            32
+            </a>
+        </td>
+        <td>
+            <a href="../fields/32.html">
+            LastQty
+            </a>
+        </td>
+        <td>@LastQty</td>
+        <td class="green center"></td>
+        <td>Amount of quantity (e.g. number of shares) in individual execution. Required if NoExecs &gt; 0</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/17.html">
+            17
+            </a>
+        </td>
+        <td>
+            <a href="../fields/17.html">
+            ExecID
+            </a>
+        </td>
+        <td>@ExecID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/527.html">
+            527
+            </a>
+        </td>
+        <td>
+            <a href="../fields/527.html">
+            SecondaryExecID
+            </a>
+        </td>
+        <td>@ExecID2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/31.html">
+            31
+            </a>
+        </td>
+        <td>
+            <a href="../fields/31.html">
+            LastPx
+            </a>
+        </td>
+        <td>@LastPx</td>
+        <td class="green center"></td>
+        <td>Price of individual execution. Required if NoExecs &gt; 0.
+For FX, if specified, expressed in terms of Currency(15).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/669.html">
+            669
+            </a>
+        </td>
+        <td>
+            <a href="../fields/669.html">
+            LastParPx
+            </a>
+        </td>
+        <td>@LastParPx</td>
+        <td class="green center"></td>
+        <td>Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx is expressed in Yield, Spread, Discount or any other price type</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/29.html">
+            29
+            </a>
+        </td>
+        <td>
+            <a href="../fields/29.html">
+            LastCapacity
+            </a>
+        </td>
+        <td>@LastCpcty</td>
+        <td class="green center"></td>
+        <td>Used to identify whether the trade was executed on an agency or principal basis.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1003.html">
+            1003
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1003.html">
+            TradeID
+            </a>
+        </td>
+        <td>@TrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1041.html">
+            1041
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1041.html">
+            FirmTradeID
+            </a>
+        </td>
+        <td>@FirmTrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

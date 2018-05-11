@@ -1,0 +1,1556 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>Instrument [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The Instrument component block contains all the fields commonly used to describe a security or instrument. Typically the data elements in this component block are considered the static data of a security, data that may be commonly found in a security master database. The Instrument component block can be used to describe any asset type supported by FIX.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/55.html">
+            55
+            </a>
+        </td>
+        <td>
+            <a href="../fields/55.html">
+            Symbol
+            </a>
+        </td>
+        <td>@Sym</td>
+        <td class="green center"></td>
+        <td>Common, &#34;human understood&#34; representation of the security. SecurityID value can be specified if no symbol exists (e.g. non-exchange traded Collective Investment Vehicles)
+Use &#34;[N/A]&#34; for products which do not have a symbol.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/65.html">
+            65
+            </a>
+        </td>
+        <td>
+            <a href="../fields/65.html">
+            SymbolSfx
+            </a>
+        </td>
+        <td>@Sfx</td>
+        <td class="green center"></td>
+        <td>Used in Fixed Income with a value of &#34;WI&#34; to indicate &#34;When Issued&#34; for a security to be reissued under an old CUSIP or ISIN or with a value of &#34;CD&#34; to indicate a EUCP with lump-sum interest rather than discount price.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/48.html">
+            48
+            </a>
+        </td>
+        <td>
+            <a href="../fields/48.html">
+            SecurityID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Takes precedence in identifying security to counterparty over SecurityAltID block. Requires SecurityIDSource if specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/22.html">
+            22
+            </a>
+        </td>
+        <td>
+            <a href="../fields/22.html">
+            SecurityIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Required if SecurityID is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SecAltIDGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SecAltIDGrp.html">
+            <b>SecAltIDGrp</b>
+            </a>
+        </td>
+        <td>AID</td>
+        <td class="green center"></td>
+        <td>Number of alternate Security Identifiers</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/460.html">
+            460
+            </a>
+        </td>
+        <td>
+            <a href="../fields/460.html">
+            Product
+            </a>
+        </td>
+        <td>@Prod</td>
+        <td class="green center"></td>
+        <td>Indicates the type of product the security is associated with (high-level category)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1227.html">
+            1227
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1227.html">
+            ProductComplex
+            </a>
+        </td>
+        <td>@ProdCmplx</td>
+        <td class="green center"></td>
+        <td>Identifies an entire suite of products for a given market. In Futures this may be &#34;interest rates&#34;, &#34;agricultural&#34;, &#34;equity indexes&#34;, etc</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1151.html">
+            1151
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1151.html">
+            SecurityGroup
+            </a>
+        </td>
+        <td>@SecGrp</td>
+        <td class="green center"></td>
+        <td>An exchange specific name assigned to a group of related securities which may be concurrently affected by market events and actions.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/461.html">
+            461
+            </a>
+        </td>
+        <td>
+            <a href="../fields/461.html">
+            CFICode
+            </a>
+        </td>
+        <td>@CFI</td>
+        <td class="green center"></td>
+        <td>Indicates the type of security using ISO 10962 standard, Classification of Financial Instruments (CFI code) values. It is recommended that CFICode be used instead of SecurityType for non-Fixed Income instruments.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/167.html">
+            167
+            </a>
+        </td>
+        <td>
+            <a href="../fields/167.html">
+            SecurityType
+            </a>
+        </td>
+        <td>@SecTyp</td>
+        <td class="green center"></td>
+        <td>It is recommended that CFICode be used instead of SecurityType for non-Fixed Income instruments.
+Required for Fixed Income. Refer to Volume 7 - Fixed Income
+Futures and Options should be specified using the CFICode[461] field instead of SecurityType[167] (Refer to Volume 7 - Recommendations and Guidelines for Futures and Options Markets.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/762.html">
+            762
+            </a>
+        </td>
+        <td>
+            <a href="../fields/762.html">
+            SecuritySubType
+            </a>
+        </td>
+        <td>@SubTyp</td>
+        <td class="green center"></td>
+        <td>Sub-type qualification/identification of the SecurityType (e.g. for SecurityType=&#34;MLEG&#34;). If specified, SecurityType is required.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/200.html">
+            200
+            </a>
+        </td>
+        <td>
+            <a href="../fields/200.html">
+            MaturityMonthYear
+            </a>
+        </td>
+        <td>@MMY</td>
+        <td class="green center"></td>
+        <td>Specifies the month and year of maturity. Applicable for standardized derivatives which are typically only referenced by month and year (e.g. S&amp;P futures). Note MaturityDate (a full date) can also be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/541.html">
+            541
+            </a>
+        </td>
+        <td>
+            <a href="../fields/541.html">
+            MaturityDate
+            </a>
+        </td>
+        <td>@MatDt</td>
+        <td class="green center"></td>
+        <td>Specifies date of maturity (a full date).  Note that standardized derivatives which are typically only referenced by month and year (e.g. S&amp;amp;P futures).may use MaturityMonthYear and/or this field.
+When using MaturityMonthYear, it is recommended that markets and sell sides report the MaturityDate on all outbound messages as a means of data enrichment.
+For NDFs this represents the fixing date of the contract.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1079.html">
+            1079
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1079.html">
+            MaturityTime
+            </a>
+        </td>
+        <td>@MatTm</td>
+        <td class="green center"></td>
+        <td>For NDFs this represents the fixing time of the contract. It is optional to specify the fixing time.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/966.html">
+            966
+            </a>
+        </td>
+        <td>
+            <a href="../fields/966.html">
+            SettleOnOpenFlag
+            </a>
+        </td>
+        <td>@SettlOnOpenFlag</td>
+        <td class="green center"></td>
+        <td>Indicator to determine if Instrument is Settle on Open.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1049.html">
+            1049
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1049.html">
+            InstrmtAssignmentMethod
+            </a>
+        </td>
+        <td>@AsgnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/965.html">
+            965
+            </a>
+        </td>
+        <td>
+            <a href="../fields/965.html">
+            SecurityStatus
+            </a>
+        </td>
+        <td>@Status</td>
+        <td class="green center"></td>
+        <td>Gives the current state of the instrument</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/224.html">
+            224
+            </a>
+        </td>
+        <td>
+            <a href="../fields/224.html">
+            CouponPaymentDate
+            </a>
+        </td>
+        <td>@CpnPmt</td>
+        <td class="green center"></td>
+        <td>Date interest is to be paid. Used in identifying Corporate Bond issues.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1449.html">
+            1449
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1449.html">
+            RestructuringType
+            </a>
+        </td>
+        <td>@RestrctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1450.html">
+            1450
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1450.html">
+            Seniority
+            </a>
+        </td>
+        <td>@Snrty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1451.html">
+            1451
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1451.html">
+            NotionalPercentageOutstanding
+            </a>
+        </td>
+        <td>@NotlPctOut</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1452.html">
+            1452
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1452.html">
+            OriginalNotionalPercentageOutstanding
+            </a>
+        </td>
+        <td>@OrigNotlPctOut</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1457.html">
+            1457
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1457.html">
+            AttachmentPoint
+            </a>
+        </td>
+        <td>@AttchPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1458.html">
+            1458
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1458.html">
+            DetachmentPoint
+            </a>
+        </td>
+        <td>@DetchPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/225.html">
+            225
+            </a>
+        </td>
+        <td>
+            <a href="../fields/225.html">
+            IssueDate
+            </a>
+        </td>
+        <td>@Issued</td>
+        <td class="green center"></td>
+        <td>Date instrument was issued. For Fixed Income IOIs for new issues, specifies the issue date.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/239.html">
+            239
+            </a>
+        </td>
+        <td>
+            <a href="../fields/239.html">
+            RepoCollateralSecurityType
+            </a>
+        </td>
+        <td>@RepoCollSecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/226.html">
+            226
+            </a>
+        </td>
+        <td>
+            <a href="../fields/226.html">
+            RepurchaseTerm
+            </a>
+        </td>
+        <td>@RepoTrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/227.html">
+            227
+            </a>
+        </td>
+        <td>
+            <a href="../fields/227.html">
+            RepurchaseRate
+            </a>
+        </td>
+        <td>@RepoRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/228.html">
+            228
+            </a>
+        </td>
+        <td>
+            <a href="../fields/228.html">
+            Factor
+            </a>
+        </td>
+        <td>@Fctr</td>
+        <td class="green center"></td>
+        <td>For Fixed Income: Amortization Factor for deriving Current face from Original face for ABS or MBS securities, note the fraction may be greater than, equal to or less than 1. In TIPS securities this is the Inflation index.
+Qty * Factor * Price = Gross Trade Amount
+For Derivatives: Contract Value Factor by which price must be adjusted to determine the true nominal value of one futures/options contract.
+(Qty * Price) * Factor = Nominal Value</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/255.html">
+            255
+            </a>
+        </td>
+        <td>
+            <a href="../fields/255.html">
+            CreditRating
+            </a>
+        </td>
+        <td>@CrdRtg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/543.html">
+            543
+            </a>
+        </td>
+        <td>
+            <a href="../fields/543.html">
+            InstrRegistry
+            </a>
+        </td>
+        <td>@Rgstry</td>
+        <td class="green center"></td>
+        <td>The location at which records of ownership are maintained for this instrument, and at which ownership changes must be recorded. Can be used in conjunction with ISIN to address ISIN uniqueness issues.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/470.html">
+            470
+            </a>
+        </td>
+        <td>
+            <a href="../fields/470.html">
+            CountryOfIssue
+            </a>
+        </td>
+        <td>@IssuCtry</td>
+        <td class="green center"></td>
+        <td>ISO Country code of instrument issue (e.g. the country portion typically used in ISIN). Can be used in conjunction with non-ISIN SecurityID (e.g. CUSIP for Municipal Bonds without ISIN) to provide uniqueness.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/471.html">
+            471
+            </a>
+        </td>
+        <td>
+            <a href="../fields/471.html">
+            StateOrProvinceOfIssue
+            </a>
+        </td>
+        <td>@StPrv</td>
+        <td class="green center"></td>
+        <td>A two-character state or province abbreviation.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/472.html">
+            472
+            </a>
+        </td>
+        <td>
+            <a href="../fields/472.html">
+            LocaleOfIssue
+            </a>
+        </td>
+        <td>@Lcl</td>
+        <td class="green center"></td>
+        <td>The three-character IATA code for a locale (e.g. airport code for Municipal Bonds).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/240.html">
+            240
+            </a>
+        </td>
+        <td>
+            <a href="../fields/240.html">
+            RedemptionDate
+            </a>
+        </td>
+        <td>@Redeem</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/202.html">
+            202
+            </a>
+        </td>
+        <td>
+            <a href="../fields/202.html">
+            StrikePrice
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td>Used for derivatives, such as options and covered warrants</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/947.html">
+            947
+            </a>
+        </td>
+        <td>
+            <a href="../fields/947.html">
+            StrikeCurrency
+            </a>
+        </td>
+        <td>@StrkCcy</td>
+        <td class="green center"></td>
+        <td>Used for derivatives</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/967.html">
+            967
+            </a>
+        </td>
+        <td>
+            <a href="../fields/967.html">
+            StrikeMultiplier
+            </a>
+        </td>
+        <td>@StrkMult</td>
+        <td class="green center"></td>
+        <td>Used for derivatives. Multiplier applied to the strike price for the purpose of calculating the settlement value.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/968.html">
+            968
+            </a>
+        </td>
+        <td>
+            <a href="../fields/968.html">
+            StrikeValue
+            </a>
+        </td>
+        <td>@StrkValu</td>
+        <td class="green center"></td>
+        <td>Used for derivatives. The number of shares/units for the financial instrument involved in the option trade.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1478.html">
+            1478
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1478.html">
+            StrikePriceDeterminationMethod
+            </a>
+        </td>
+        <td>@StrkPxDtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1479.html">
+            1479
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1479.html">
+            StrikePriceBoundaryMethod
+            </a>
+        </td>
+        <td>@StrkPxBndryMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1480.html">
+            1480
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1480.html">
+            StrikePriceBoundaryPrecision
+            </a>
+        </td>
+        <td>@StrkPxBndryPrcsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1481.html">
+            1481
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1481.html">
+            UnderlyingPriceDeterminationMethod
+            </a>
+        </td>
+        <td>@PxDtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/206.html">
+            206
+            </a>
+        </td>
+        <td>
+            <a href="../fields/206.html">
+            OptAttribute
+            </a>
+        </td>
+        <td>@OptAt</td>
+        <td class="green center"></td>
+        <td>Used for derivatives, such as options and covered warrants to indicate a versioning of the contract when required due to corporate actions to the underlying. Should not be used to indicate type of option - use the CFICode[461] for this purpose.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/231.html">
+            231
+            </a>
+        </td>
+        <td>
+            <a href="../fields/231.html">
+            ContractMultiplier
+            </a>
+        </td>
+        <td>@Mult</td>
+        <td class="green center"></td>
+        <td>For Fixed Income, Convertible Bonds, Derivatives, etc. Note: If used, quantities should be expressed in the &#34;nominal&#34; (e.g. contracts vs. shares) amount.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1435.html">
+            1435
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1435.html">
+            ContractMultiplierUnit
+            </a>
+        </td>
+        <td>@MultTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1439.html">
+            1439
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1439.html">
+            FlowScheduleType
+            </a>
+        </td>
+        <td>@FlowSchedTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/969.html">
+            969
+            </a>
+        </td>
+        <td>
+            <a href="../fields/969.html">
+            MinPriceIncrement
+            </a>
+        </td>
+        <td>@MinPxIncr</td>
+        <td class="green center"></td>
+        <td>Minimum price increment for the instrument. Could also be used to represent tick value.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1146.html">
+            1146
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1146.html">
+            MinPriceIncrementAmount
+            </a>
+        </td>
+        <td>@MinPxIncrAmt</td>
+        <td class="green center"></td>
+        <td>Minimum price increment amount associated with the MinPriceIncrement [969]. For listed derivatives, the value can be calculated by multiplying MinPriceIncrement by ContractValueFactor [231]</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/996.html">
+            996
+            </a>
+        </td>
+        <td>
+            <a href="../fields/996.html">
+            UnitOfMeasure
+            </a>
+        </td>
+        <td>@UOM</td>
+        <td class="green center"></td>
+        <td>0</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1147.html">
+            1147
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1147.html">
+            UnitOfMeasureQty
+            </a>
+        </td>
+        <td>@UOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1191.html">
+            1191
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1191.html">
+            PriceUnitOfMeasure
+            </a>
+        </td>
+        <td>@PxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1192.html">
+            1192
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1192.html">
+            PriceUnitOfMeasureQty
+            </a>
+        </td>
+        <td>@PxUOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1193.html">
+            1193
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1193.html">
+            SettlMethod
+            </a>
+        </td>
+        <td>@SettlMeth</td>
+        <td class="green center"></td>
+        <td>Settlement method for a contract. Can be used as an alternative to CFI Code value</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1194.html">
+            1194
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1194.html">
+            ExerciseStyle
+            </a>
+        </td>
+        <td>@ExerStyle</td>
+        <td class="green center"></td>
+        <td>Type of exercise of a derivatives security</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1482.html">
+            1482
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1482.html">
+            OptPayoutType
+            </a>
+        </td>
+        <td>@OptPayoutTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1195.html">
+            1195
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1195.html">
+            OptPayoutAmount
+            </a>
+        </td>
+        <td>@OptPayAmt</td>
+        <td class="green center"></td>
+        <td>Cash amount indicating the pay out associated with an option. For binary options this is a fixed amount</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1196.html">
+            1196
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1196.html">
+            PriceQuoteMethod
+            </a>
+        </td>
+        <td>@PxQteMeth</td>
+        <td class="green center"></td>
+        <td>Method for price quotation</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1197.html">
+            1197
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1197.html">
+            ValuationMethod
+            </a>
+        </td>
+        <td>@ValMeth</td>
+        <td class="green center"></td>
+        <td>Indicates type of valuation method used.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1198.html">
+            1198
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1198.html">
+            ListMethod
+            </a>
+        </td>
+        <td>@ListMeth</td>
+        <td class="green center"></td>
+        <td>Indicates whether the instruments are pre-listed only or can also be defined via user request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1199.html">
+            1199
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1199.html">
+            CapPrice
+            </a>
+        </td>
+        <td>@CapPx</td>
+        <td class="green center"></td>
+        <td>Used to express the ceiling price of a capped call</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1200.html">
+            1200
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1200.html">
+            FloorPrice
+            </a>
+        </td>
+        <td>@FlrPx</td>
+        <td class="green center"></td>
+        <td>Used to express the floor price of a capped put</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/201.html">
+            201
+            </a>
+        </td>
+        <td>
+            <a href="../fields/201.html">
+            PutOrCall
+            </a>
+        </td>
+        <td>@PutCall</td>
+        <td class="green center"></td>
+        <td>Used to express option right</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1244.html">
+            1244
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1244.html">
+            FlexibleIndicator
+            </a>
+        </td>
+        <td>@FlexInd</td>
+        <td class="green center"></td>
+        <td>Used to indicate if a security has been defined as flexible according to &#34;non-standard&#34; means. Analog to CFICode Standard/Non-standard indicator</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1242.html">
+            1242
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1242.html">
+            FlexProductEligibilityIndicator
+            </a>
+        </td>
+        <td>@FlexProdElig</td>
+        <td class="green center"></td>
+        <td>Used to indicate if a product or group of product supports the creation of flexible securities</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/997.html">
+            997
+            </a>
+        </td>
+        <td>
+            <a href="../fields/997.html">
+            TimeUnit
+            </a>
+        </td>
+        <td>@TmUnit</td>
+        <td class="green center"></td>
+        <td>Used to indicate a time unit for the contract (e.g., days, weeks, months, etc.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/223.html">
+            223
+            </a>
+        </td>
+        <td>
+            <a href="../fields/223.html">
+            CouponRate
+            </a>
+        </td>
+        <td>@CpnRt</td>
+        <td class="green center"></td>
+        <td>For Fixed Income.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/207.html">
+            207
+            </a>
+        </td>
+        <td>
+            <a href="../fields/207.html">
+            SecurityExchange
+            </a>
+        </td>
+        <td>@Exch</td>
+        <td class="green center"></td>
+        <td>Can be used to identify the security.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/970.html">
+            970
+            </a>
+        </td>
+        <td>
+            <a href="../fields/970.html">
+            PositionLimit
+            </a>
+        </td>
+        <td>@PosLmt</td>
+        <td class="green center"></td>
+        <td>Position Limit for the instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/971.html">
+            971
+            </a>
+        </td>
+        <td>
+            <a href="../fields/971.html">
+            NTPositionLimit
+            </a>
+        </td>
+        <td>@NTPosLmt</td>
+        <td class="green center"></td>
+        <td>Near-term Position Limit for the instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/106.html">
+            106
+            </a>
+        </td>
+        <td>
+            <a href="../fields/106.html">
+            Issuer
+            </a>
+        </td>
+        <td>@Issr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/348.html">
+            348
+            </a>
+        </td>
+        <td>
+            <a href="../fields/348.html">
+            EncodedIssuerLen
+            </a>
+        </td>
+        <td>@EncIssrLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedIssuer field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/349.html">
+            349
+            </a>
+        </td>
+        <td>
+            <a href="../fields/349.html">
+            EncodedIssuer
+            </a>
+        </td>
+        <td>@EncIssr</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Issuer field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/107.html">
+            107
+            </a>
+        </td>
+        <td>
+            <a href="../fields/107.html">
+            SecurityDesc
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/350.html">
+            350
+            </a>
+        </td>
+        <td>
+            <a href="../fields/350.html">
+            EncodedSecurityDescLen
+            </a>
+        </td>
+        <td>@EncSecDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedSecurityDesc field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/351.html">
+            351
+            </a>
+        </td>
+        <td>
+            <a href="../fields/351.html">
+            EncodedSecurityDesc
+            </a>
+        </td>
+        <td>@EncSecDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the SecurityDesc field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SecurityXML.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SecurityXML.html">
+            <b>SecurityXML</b>
+            </a>
+        </td>
+        <td>SecXML</td>
+        <td class="green center"></td>
+        <td>Embedded XML document describing security.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/691.html">
+            691
+            </a>
+        </td>
+        <td>
+            <a href="../fields/691.html">
+            Pool
+            </a>
+        </td>
+        <td>@Pool</td>
+        <td class="green center"></td>
+        <td>Identifies MBS / ABS pool</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/667.html">
+            667
+            </a>
+        </td>
+        <td>
+            <a href="../fields/667.html">
+            ContractSettlMonth
+            </a>
+        </td>
+        <td>@CSetMo</td>
+        <td class="green center"></td>
+        <td>Must be present for MBS/TBA</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/875.html">
+            875
+            </a>
+        </td>
+        <td>
+            <a href="../fields/875.html">
+            CPProgram
+            </a>
+        </td>
+        <td>@CPPgm</td>
+        <td class="green center"></td>
+        <td>The program under which a commercial paper is issued</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/876.html">
+            876
+            </a>
+        </td>
+        <td>
+            <a href="../fields/876.html">
+            CPRegType
+            </a>
+        </td>
+        <td>@CPRegT</td>
+        <td class="green center"></td>
+        <td>The registration type of a commercial paper issuance</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/EvntGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/EvntGrp.html">
+            <b>EvntGrp</b>
+            </a>
+        </td>
+        <td>Evnt</td>
+        <td class="green center"></td>
+        <td>Number of repeating EventType group entries.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/873.html">
+            873
+            </a>
+        </td>
+        <td>
+            <a href="../fields/873.html">
+            DatedDate
+            </a>
+        </td>
+        <td>@Dated</td>
+        <td class="green center"></td>
+        <td>If different from IssueDate</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/874.html">
+            874
+            </a>
+        </td>
+        <td>
+            <a href="../fields/874.html">
+            InterestAccrualDate
+            </a>
+        </td>
+        <td>@IntAcrl</td>
+        <td class="green center"></td>
+        <td>If different from IssueDate and DatedDate</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentParties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentParties.html">
+            <b>InstrumentParties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Used to identify the parties listing a specific instrument</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEvents.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEvents.html">
+            <b>ComplexEvents</b>
+            </a>
+        </td>
+        <td>CmplxEvnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,597 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>StandardHeader [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The standard FIX message header</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/8.html">
+            8
+            </a>
+        </td>
+        <td>
+            <a href="../fields/8.html">
+            BeginString
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>FIXT.1.1 (Always unencrypted, must be first field in message)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/9.html">
+            9
+            </a>
+        </td>
+        <td>
+            <a href="../fields/9.html">
+            BodyLength
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>(Always unencrypted, must be second field in message)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/35.html">
+            35
+            </a>
+        </td>
+        <td>
+            <a href="../fields/35.html">
+            MsgType
+            </a>
+        </td>
+        <td>@MsgTyp</td>
+        <td class="green center">✔</td>
+        <td>(Always unencrypted, must be third field in message)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1128.html">
+            1128
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1128.html">
+            ApplVerID
+            </a>
+        </td>
+        <td>@ApplVerID</td>
+        <td class="green center"></td>
+        <td>Indicates application version using a service pack identifier. The ApplVerID applies to a specific message occurrence.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1156.html">
+            1156
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1156.html">
+            ApplExtID
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1129.html">
+            1129
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1129.html">
+            CstmApplVerID
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Used to support bilaterally agreed custom functionality</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/49.html">
+            49
+            </a>
+        </td>
+        <td>
+            <a href="../fields/49.html">
+            SenderCompID
+            </a>
+        </td>
+        <td>@SID</td>
+        <td class="green center">✔</td>
+        <td>(Always unencrypted)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/56.html">
+            56
+            </a>
+        </td>
+        <td>
+            <a href="../fields/56.html">
+            TargetCompID
+            </a>
+        </td>
+        <td>@TID</td>
+        <td class="green center">✔</td>
+        <td>(Always unencrypted)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/115.html">
+            115
+            </a>
+        </td>
+        <td>
+            <a href="../fields/115.html">
+            OnBehalfOfCompID
+            </a>
+        </td>
+        <td>@OBID</td>
+        <td class="green center"></td>
+        <td>Trading partner company ID used when sending messages via a third party (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/128.html">
+            128
+            </a>
+        </td>
+        <td>
+            <a href="../fields/128.html">
+            DeliverToCompID
+            </a>
+        </td>
+        <td>@D2ID</td>
+        <td class="green center"></td>
+        <td>Trading partner company ID used when sending messages via a third party (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/90.html">
+            90
+            </a>
+        </td>
+        <td>
+            <a href="../fields/90.html">
+            SecureDataLen
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Required to identify length of encrypted section of message. (Always unencrypted)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/91.html">
+            91
+            </a>
+        </td>
+        <td>
+            <a href="../fields/91.html">
+            SecureData
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Required when message body is encrypted. Always immediately follows SecureDataLen field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/34.html">
+            34
+            </a>
+        </td>
+        <td>
+            <a href="../fields/34.html">
+            MsgSeqNum
+            </a>
+        </td>
+        <td>@SeqNum</td>
+        <td class="green center">✔</td>
+        <td>(Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/50.html">
+            50
+            </a>
+        </td>
+        <td>
+            <a href="../fields/50.html">
+            SenderSubID
+            </a>
+        </td>
+        <td>@SSub</td>
+        <td class="green center"></td>
+        <td>(Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/142.html">
+            142
+            </a>
+        </td>
+        <td>
+            <a href="../fields/142.html">
+            SenderLocationID
+            </a>
+        </td>
+        <td>@SLoc</td>
+        <td class="green center"></td>
+        <td>Sender&#39;s LocationID (i.e. geographic location and/or desk) (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/57.html">
+            57
+            </a>
+        </td>
+        <td>
+            <a href="../fields/57.html">
+            TargetSubID
+            </a>
+        </td>
+        <td>@TSub</td>
+        <td class="green center"></td>
+        <td>&#34;ADMIN&#34; reserved for administrative messages not intended for a specific user. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/143.html">
+            143
+            </a>
+        </td>
+        <td>
+            <a href="../fields/143.html">
+            TargetLocationID
+            </a>
+        </td>
+        <td>@TLoc</td>
+        <td class="green center"></td>
+        <td>Trading partner LocationID (i.e. geographic location and/or desk) (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/116.html">
+            116
+            </a>
+        </td>
+        <td>
+            <a href="../fields/116.html">
+            OnBehalfOfSubID
+            </a>
+        </td>
+        <td>@OBSub</td>
+        <td class="green center"></td>
+        <td>Trading partner SubID used when delivering messages via a third party. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/144.html">
+            144
+            </a>
+        </td>
+        <td>
+            <a href="../fields/144.html">
+            OnBehalfOfLocationID
+            </a>
+        </td>
+        <td>@OBLoc</td>
+        <td class="green center"></td>
+        <td>Trading partner LocationID (i.e. geographic location and/or desk) used when delivering messages via a third party. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/129.html">
+            129
+            </a>
+        </td>
+        <td>
+            <a href="../fields/129.html">
+            DeliverToSubID
+            </a>
+        </td>
+        <td>@D2Sub</td>
+        <td class="green center"></td>
+        <td>Trading partner SubID used when delivering messages via a third party. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/145.html">
+            145
+            </a>
+        </td>
+        <td>
+            <a href="../fields/145.html">
+            DeliverToLocationID
+            </a>
+        </td>
+        <td>@D2Loc</td>
+        <td class="green center"></td>
+        <td>Trading partner LocationID (i.e. geographic location and/or desk) used when delivering messages via a third party. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/43.html">
+            43
+            </a>
+        </td>
+        <td>
+            <a href="../fields/43.html">
+            PossDupFlag
+            </a>
+        </td>
+        <td>@PosDup</td>
+        <td class="green center"></td>
+        <td>Always required for retransmitted messages, whether prompted by the sending system or as the result of a resend request. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/97.html">
+            97
+            </a>
+        </td>
+        <td>
+            <a href="../fields/97.html">
+            PossResend
+            </a>
+        </td>
+        <td>@PosRsnd</td>
+        <td class="green center"></td>
+        <td>Required when message may be duplicate of another message sent under a different sequence number. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/52.html">
+            52
+            </a>
+        </td>
+        <td>
+            <a href="../fields/52.html">
+            SendingTime
+            </a>
+        </td>
+        <td>@Snt</td>
+        <td class="green center">✔</td>
+        <td>(Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/122.html">
+            122
+            </a>
+        </td>
+        <td>
+            <a href="../fields/122.html">
+            OrigSendingTime
+            </a>
+        </td>
+        <td>@OrigSnt</td>
+        <td class="green center"></td>
+        <td>Required for message resent as a result of a ResendRequest. If data is not available set to same value as SendingTime (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/212.html">
+            212
+            </a>
+        </td>
+        <td>
+            <a href="../fields/212.html">
+            XmlDataLen
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Required when specifying XmlData to identify the length of a XmlData message block. (Can be embedded within encrypted data section.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/213.html">
+            213
+            </a>
+        </td>
+        <td>
+            <a href="../fields/213.html">
+            XmlData
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Can contain a XML formatted message block (e.g. FIXML). Always immediately follows XmlDataLen field. (Can be embedded within encrypted data section.)
+See Volume 1: FIXML Support</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/347.html">
+            347
+            </a>
+        </td>
+        <td>
+            <a href="../fields/347.html">
+            MessageEncoding
+            </a>
+        </td>
+        <td>@MsgEncd</td>
+        <td class="green center"></td>
+        <td>Type of message encoding (non-ASCII characters) used in a message&#39;s &#34;Encoded&#34; fields. Required if any &#34;Encoding&#34; fields are used.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/369.html">
+            369
+            </a>
+        </td>
+        <td>
+            <a href="../fields/369.html">
+            LastMsgSeqNumProcessed
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>The last MsgSeqNum value received by the FIX engine and processed by downstream application, such as trading system or order routing system. Can be specified on every message sent. Useful for detecting a backlog with a counterparty.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/HopGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/HopGrp.html">
+            <b>HopGrp</b>
+            </a>
+        </td>
+        <td>Hop</td>
+        <td class="green center"></td>
+        <td>Number of repeating groups of historical &#34;hop&#34; information. Only applicable if OnBehalfOfCompID is used, however, its use is optional. Note that some market regulations or counterparties may require tracking of message hops.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

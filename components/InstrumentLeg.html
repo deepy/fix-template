@@ -1,0 +1,1004 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>InstrumentLeg [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The InstrumentLeg component block, like the Instrument component block, contains all the fields commonly used to describe a security or instrument. In the case of the InstrumentLeg component block it describes a security used in multileg-oriented messages.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/600.html">
+            600
+            </a>
+        </td>
+        <td>
+            <a href="../fields/600.html">
+            LegSymbol
+            </a>
+        </td>
+        <td>@Sym</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/601.html">
+            601
+            </a>
+        </td>
+        <td>
+            <a href="../fields/601.html">
+            LegSymbolSfx
+            </a>
+        </td>
+        <td>@Sfx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/602.html">
+            602
+            </a>
+        </td>
+        <td>
+            <a href="../fields/602.html">
+            LegSecurityID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/603.html">
+            603
+            </a>
+        </td>
+        <td>
+            <a href="../fields/603.html">
+            LegSecurityIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegSecAltIDGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegSecAltIDGrp.html">
+            <b>LegSecAltIDGrp</b>
+            </a>
+        </td>
+        <td>LegAID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/607.html">
+            607
+            </a>
+        </td>
+        <td>
+            <a href="../fields/607.html">
+            LegProduct
+            </a>
+        </td>
+        <td>@Prod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/608.html">
+            608
+            </a>
+        </td>
+        <td>
+            <a href="../fields/608.html">
+            LegCFICode
+            </a>
+        </td>
+        <td>@CFI</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/609.html">
+            609
+            </a>
+        </td>
+        <td>
+            <a href="../fields/609.html">
+            LegSecurityType
+            </a>
+        </td>
+        <td>@SecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/764.html">
+            764
+            </a>
+        </td>
+        <td>
+            <a href="../fields/764.html">
+            LegSecuritySubType
+            </a>
+        </td>
+        <td>@SecSubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/610.html">
+            610
+            </a>
+        </td>
+        <td>
+            <a href="../fields/610.html">
+            LegMaturityMonthYear
+            </a>
+        </td>
+        <td>@MMY</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/611.html">
+            611
+            </a>
+        </td>
+        <td>
+            <a href="../fields/611.html">
+            LegMaturityDate
+            </a>
+        </td>
+        <td>@Mat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1212.html">
+            1212
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1212.html">
+            LegMaturityTime
+            </a>
+        </td>
+        <td>@MatTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/248.html">
+            248
+            </a>
+        </td>
+        <td>
+            <a href="../fields/248.html">
+            LegCouponPaymentDate
+            </a>
+        </td>
+        <td>@CpnPmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/249.html">
+            249
+            </a>
+        </td>
+        <td>
+            <a href="../fields/249.html">
+            LegIssueDate
+            </a>
+        </td>
+        <td>@Issued</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/250.html">
+            250
+            </a>
+        </td>
+        <td>
+            <a href="../fields/250.html">
+            LegRepoCollateralSecurityType
+            </a>
+        </td>
+        <td>@RepoCollSecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/251.html">
+            251
+            </a>
+        </td>
+        <td>
+            <a href="../fields/251.html">
+            LegRepurchaseTerm
+            </a>
+        </td>
+        <td>@RepoTrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/252.html">
+            252
+            </a>
+        </td>
+        <td>
+            <a href="../fields/252.html">
+            LegRepurchaseRate
+            </a>
+        </td>
+        <td>@RepoRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/253.html">
+            253
+            </a>
+        </td>
+        <td>
+            <a href="../fields/253.html">
+            LegFactor
+            </a>
+        </td>
+        <td>@Fctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/257.html">
+            257
+            </a>
+        </td>
+        <td>
+            <a href="../fields/257.html">
+            LegCreditRating
+            </a>
+        </td>
+        <td>@CrdRtg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/599.html">
+            599
+            </a>
+        </td>
+        <td>
+            <a href="../fields/599.html">
+            LegInstrRegistry
+            </a>
+        </td>
+        <td>@Rgstry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/596.html">
+            596
+            </a>
+        </td>
+        <td>
+            <a href="../fields/596.html">
+            LegCountryOfIssue
+            </a>
+        </td>
+        <td>@Ctry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/597.html">
+            597
+            </a>
+        </td>
+        <td>
+            <a href="../fields/597.html">
+            LegStateOrProvinceOfIssue
+            </a>
+        </td>
+        <td>@StOrProvnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/598.html">
+            598
+            </a>
+        </td>
+        <td>
+            <a href="../fields/598.html">
+            LegLocaleOfIssue
+            </a>
+        </td>
+        <td>@Lcl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/254.html">
+            254
+            </a>
+        </td>
+        <td>
+            <a href="../fields/254.html">
+            LegRedemptionDate
+            </a>
+        </td>
+        <td>@Redeem</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/612.html">
+            612
+            </a>
+        </td>
+        <td>
+            <a href="../fields/612.html">
+            LegStrikePrice
+            </a>
+        </td>
+        <td>@Strk</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/942.html">
+            942
+            </a>
+        </td>
+        <td>
+            <a href="../fields/942.html">
+            LegStrikeCurrency
+            </a>
+        </td>
+        <td>@StrkCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/613.html">
+            613
+            </a>
+        </td>
+        <td>
+            <a href="../fields/613.html">
+            LegOptAttribute
+            </a>
+        </td>
+        <td>@OptA</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/614.html">
+            614
+            </a>
+        </td>
+        <td>
+            <a href="../fields/614.html">
+            LegContractMultiplier
+            </a>
+        </td>
+        <td>@Cmult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1436.html">
+            1436
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1436.html">
+            LegContractMultiplierUnit
+            </a>
+        </td>
+        <td>@MultTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1440.html">
+            1440
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1440.html">
+            LegFlowScheduleType
+            </a>
+        </td>
+        <td>@FlowSchedTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/999.html">
+            999
+            </a>
+        </td>
+        <td>
+            <a href="../fields/999.html">
+            LegUnitOfMeasure
+            </a>
+        </td>
+        <td>@UOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1224.html">
+            1224
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1224.html">
+            LegUnitOfMeasureQty
+            </a>
+        </td>
+        <td>@UOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1421.html">
+            1421
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1421.html">
+            LegPriceUnitOfMeasure
+            </a>
+        </td>
+        <td>@PxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1422.html">
+            1422
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1422.html">
+            LegPriceUnitOfMeasureQty
+            </a>
+        </td>
+        <td>@PxUOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1001.html">
+            1001
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1001.html">
+            LegTimeUnit
+            </a>
+        </td>
+        <td>@TmUnit</td>
+        <td class="green center"></td>
+        <td>Used to indicate a time unit for the contract (e.g., days, weeks, months, etc.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1420.html">
+            1420
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1420.html">
+            LegExerciseStyle
+            </a>
+        </td>
+        <td>@ExerStyle</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/615.html">
+            615
+            </a>
+        </td>
+        <td>
+            <a href="../fields/615.html">
+            LegCouponRate
+            </a>
+        </td>
+        <td>@CpnRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/616.html">
+            616
+            </a>
+        </td>
+        <td>
+            <a href="../fields/616.html">
+            LegSecurityExchange
+            </a>
+        </td>
+        <td>@Exch</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/617.html">
+            617
+            </a>
+        </td>
+        <td>
+            <a href="../fields/617.html">
+            LegIssuer
+            </a>
+        </td>
+        <td>@Issr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/618.html">
+            618
+            </a>
+        </td>
+        <td>
+            <a href="../fields/618.html">
+            EncodedLegIssuerLen
+            </a>
+        </td>
+        <td>@EncLegIssrLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/619.html">
+            619
+            </a>
+        </td>
+        <td>
+            <a href="../fields/619.html">
+            EncodedLegIssuer
+            </a>
+        </td>
+        <td>@EncLegIssr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/620.html">
+            620
+            </a>
+        </td>
+        <td>
+            <a href="../fields/620.html">
+            LegSecurityDesc
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/621.html">
+            621
+            </a>
+        </td>
+        <td>
+            <a href="../fields/621.html">
+            EncodedLegSecurityDescLen
+            </a>
+        </td>
+        <td>@EncLegSecDescLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/622.html">
+            622
+            </a>
+        </td>
+        <td>
+            <a href="../fields/622.html">
+            EncodedLegSecurityDesc
+            </a>
+        </td>
+        <td>@EncLegSecDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/623.html">
+            623
+            </a>
+        </td>
+        <td>
+            <a href="../fields/623.html">
+            LegRatioQty
+            </a>
+        </td>
+        <td>@RatioQty</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;InstrumentLeg&gt; (not in &lt;Instrument&gt;)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/624.html">
+            624
+            </a>
+        </td>
+        <td>
+            <a href="../fields/624.html">
+            LegSide
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;InstrumentLeg&gt; (not in &lt;Instrument&gt;)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/556.html">
+            556
+            </a>
+        </td>
+        <td>
+            <a href="../fields/556.html">
+            LegCurrency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;InstrumentLeg&gt; (not in &lt;Instrument&gt;)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/740.html">
+            740
+            </a>
+        </td>
+        <td>
+            <a href="../fields/740.html">
+            LegPool
+            </a>
+        </td>
+        <td>@Pool</td>
+        <td class="green center"></td>
+        <td>Identifies MBS / ABS pool</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/739.html">
+            739
+            </a>
+        </td>
+        <td>
+            <a href="../fields/739.html">
+            LegDatedDate
+            </a>
+        </td>
+        <td>@Dated</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/955.html">
+            955
+            </a>
+        </td>
+        <td>
+            <a href="../fields/955.html">
+            LegContractSettlMonth
+            </a>
+        </td>
+        <td>@CSetMo</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/956.html">
+            956
+            </a>
+        </td>
+        <td>
+            <a href="../fields/956.html">
+            LegInterestAccrualDate
+            </a>
+        </td>
+        <td>@IntAcrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1358.html">
+            1358
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1358.html">
+            LegPutOrCall
+            </a>
+        </td>
+        <td>@PutCall</td>
+        <td class="green center"></td>
+        <td>Used to express option right</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1017.html">
+            1017
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1017.html">
+            LegOptionRatio
+            </a>
+        </td>
+        <td>@LegOptionRatio</td>
+        <td class="green center"></td>
+        <td>LegOptionRatio is provided on covering leg to create a delta neutral spread. In Listed Derivatives, the delta of the leg is multiplied by LegOptionRatio and OrderQty to determine the covering quantity.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/566.html">
+            566
+            </a>
+        </td>
+        <td>
+            <a href="../fields/566.html">
+            LegPrice
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td>Used to specify an anchor price for a leg as part of the definition or creation of the strategy - not used for execution price.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

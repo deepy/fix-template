@@ -1,0 +1,1194 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>TrdCapRptSideGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/552.html">
+            552
+            </a>
+        </td>
+        <td>
+            <a href="../fields/552.html">
+            NoSides
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>Number of sides</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            54
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            Side
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1427.html">
+            1427
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1427.html">
+            SideExecID
+            </a>
+        </td>
+        <td>@SideExecID</td>
+        <td class="green center"></td>
+        <td>Execution Identifier assigned by Market - used when each side of a trade is assigned its own unique ExecID</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1428.html">
+            1428
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1428.html">
+            OrderDelay
+            </a>
+        </td>
+        <td>@OrdDelay</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1429.html">
+            1429
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1429.html">
+            OrderDelayUnit
+            </a>
+        </td>
+        <td>@OrdDelayUnit</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1009.html">
+            1009
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1009.html">
+            SideLastQty
+            </a>
+        </td>
+        <td>@SideQty</td>
+        <td class="green center"></td>
+        <td>Used to indicate the quantity on one side of a multi-sided Trade Capture Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1005.html">
+            1005
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1005.html">
+            SideTradeReportID
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center"></td>
+        <td>Used to indicate the report ID on one side of a multi-sided Trade Capture Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1006.html">
+            1006
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1006.html">
+            SideFillStationCd
+            </a>
+        </td>
+        <td>@FillStationCd</td>
+        <td class="green center"></td>
+        <td>Used for order routing to indicate the Fill Station Code on one side of a multi-sided Trade Capture Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1007.html">
+            1007
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1007.html">
+            SideReasonCd
+            </a>
+        </td>
+        <td>@RsnCD</td>
+        <td class="green center"></td>
+        <td>Used to indicate the reason of a multi-sided Trade Capture Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/83.html">
+            83
+            </a>
+        </td>
+        <td>
+            <a href="../fields/83.html">
+            RptSeq
+            </a>
+        </td>
+        <td>@RptSeq</td>
+        <td class="green center"></td>
+        <td>Used for order routing to indicate the fill sequence on one side of a multi-sided Trade Capture Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1008.html">
+            1008
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1008.html">
+            SideTrdSubTyp
+            </a>
+        </td>
+        <td>@TrdSubTyp</td>
+        <td class="green center"></td>
+        <td>Used to support multi-sided orders of different trade types</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/430.html">
+            430
+            </a>
+        </td>
+        <td>
+            <a href="../fields/430.html">
+            NetGrossInd
+            </a>
+        </td>
+        <td>@NetGrossInd</td>
+        <td class="green center"></td>
+        <td>Code to represent whether value is net (inclusive of tax) or gross.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1154.html">
+            1154
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1154.html">
+            SideCurrency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Used to Identify the Currency of the Trade Report Side.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1155.html">
+            1155
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1155.html">
+            SideSettlCurrency
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td>Used to Identify the Settlement Currency of the Trade Report Side.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;
+Range of values on report:</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1.html">
+            1
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1.html">
+            Account
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td>Required for executions against electronically submitted orders which were assigned an account by the institution or intermediary</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/660.html">
+            660
+            </a>
+        </td>
+        <td>
+            <a href="../fields/660.html">
+            AcctIDSource
+            </a>
+        </td>
+        <td>@AcctIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/581.html">
+            581
+            </a>
+        </td>
+        <td>
+            <a href="../fields/581.html">
+            AccountType
+            </a>
+        </td>
+        <td>@AcctTyp</td>
+        <td class="green center"></td>
+        <td>Specifies type of account</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/81.html">
+            81
+            </a>
+        </td>
+        <td>
+            <a href="../fields/81.html">
+            ProcessCode
+            </a>
+        </td>
+        <td>@ProcCode</td>
+        <td class="green center"></td>
+        <td>Used to specify Step-out trades</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/575.html">
+            575
+            </a>
+        </td>
+        <td>
+            <a href="../fields/575.html">
+            OddLot
+            </a>
+        </td>
+        <td>@OddLot</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ClrInstGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ClrInstGrp.html">
+            <b>ClrInstGrp</b>
+            </a>
+        </td>
+        <td>ClrInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/578.html">
+            578
+            </a>
+        </td>
+        <td>
+            <a href="../fields/578.html">
+            TradeInputSource
+            </a>
+        </td>
+        <td>@InptSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/579.html">
+            579
+            </a>
+        </td>
+        <td>
+            <a href="../fields/579.html">
+            TradeInputDevice
+            </a>
+        </td>
+        <td>@InptDev</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/376.html">
+            376
+            </a>
+        </td>
+        <td>
+            <a href="../fields/376.html">
+            ComplianceID
+            </a>
+        </td>
+        <td>@ComplianceID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/377.html">
+            377
+            </a>
+        </td>
+        <td>
+            <a href="../fields/377.html">
+            SolicitedFlag
+            </a>
+        </td>
+        <td>@SolFlag</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/582.html">
+            582
+            </a>
+        </td>
+        <td>
+            <a href="../fields/582.html">
+            CustOrderCapacity
+            </a>
+        </td>
+        <td>@CustCpcty</td>
+        <td class="green center"></td>
+        <td>The customer capacity for this trade</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            336
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            TradingSessionID
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td>Usually the same for all sides of a trade, if reported only on the first side the same TradingSessionID then applies to all sides of the trade</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            625
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            TradingSessionSubID
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td>Usually the same for all sides of a trade, if reported only on the first side the same TradingSessionSubID then applies to all sides of the trade</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/943.html">
+            943
+            </a>
+        </td>
+        <td>
+            <a href="../fields/943.html">
+            TimeBracket
+            </a>
+        </td>
+        <td>@TmBkt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CommissionData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/CommissionData.html">
+            <b>CommissionData</b>
+            </a>
+        </td>
+        <td>Comm</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;CommissionData&#34; fields defined in &#34;Common Components of Application Messages&#34;
+Note: On a fill/partial fill messages, it represents value for that fill/partial fill, on ExecType=Calculated, it represents cumulative value for the order. Monetary commission values are expressed in the currency reflected by the Currency field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/157.html">
+            157
+            </a>
+        </td>
+        <td>
+            <a href="../fields/157.html">
+            NumDaysInterest
+            </a>
+        </td>
+        <td>@NumDaysInt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/230.html">
+            230
+            </a>
+        </td>
+        <td>
+            <a href="../fields/230.html">
+            ExDate
+            </a>
+        </td>
+        <td>@ExDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/158.html">
+            158
+            </a>
+        </td>
+        <td>
+            <a href="../fields/158.html">
+            AccruedInterestRate
+            </a>
+        </td>
+        <td>@AcrdIntRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/159.html">
+            159
+            </a>
+        </td>
+        <td>
+            <a href="../fields/159.html">
+            AccruedInterestAmt
+            </a>
+        </td>
+        <td>@AcrdIntAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/738.html">
+            738
+            </a>
+        </td>
+        <td>
+            <a href="../fields/738.html">
+            InterestAtMaturity
+            </a>
+        </td>
+        <td>@IntAtMat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/920.html">
+            920
+            </a>
+        </td>
+        <td>
+            <a href="../fields/920.html">
+            EndAccruedInterestAmt
+            </a>
+        </td>
+        <td>@EndAcrdIntAmt</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the accrued interest on termination.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/921.html">
+            921
+            </a>
+        </td>
+        <td>
+            <a href="../fields/921.html">
+            StartCash
+            </a>
+        </td>
+        <td>@StartCsh</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the start (dirty) cash consideration</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/922.html">
+            922
+            </a>
+        </td>
+        <td>
+            <a href="../fields/922.html">
+            EndCash
+            </a>
+        </td>
+        <td>@EndCsh</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the end (dirty) cash consideration</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/238.html">
+            238
+            </a>
+        </td>
+        <td>
+            <a href="../fields/238.html">
+            Concession
+            </a>
+        </td>
+        <td>@Concession</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/237.html">
+            237
+            </a>
+        </td>
+        <td>
+            <a href="../fields/237.html">
+            TotalTakedown
+            </a>
+        </td>
+        <td>@TotTakedown</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/118.html">
+            118
+            </a>
+        </td>
+        <td>
+            <a href="../fields/118.html">
+            NetMoney
+            </a>
+        </td>
+        <td>@NetMny</td>
+        <td class="green center"></td>
+        <td>Note: On a fill/partial fill messages, it represents value for that fill/partial fill, on ExecType=Calculated, it represents cumulative value for the order. Value expressed in the currency reflected by the Currency field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/119.html">
+            119
+            </a>
+        </td>
+        <td>
+            <a href="../fields/119.html">
+            SettlCurrAmt
+            </a>
+        </td>
+        <td>@SettlCurrAmt</td>
+        <td class="green center"></td>
+        <td>Used to report results of forex accommodation trade</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/155.html">
+            155
+            </a>
+        </td>
+        <td>
+            <a href="../fields/155.html">
+            SettlCurrFxRate
+            </a>
+        </td>
+        <td>@SettlCurrFxRt</td>
+        <td class="green center"></td>
+        <td>Foreign exchange rate used to compute SettlCurrAmt from Currency to SettlCurrency</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/156.html">
+            156
+            </a>
+        </td>
+        <td>
+            <a href="../fields/156.html">
+            SettlCurrFxRateCalc
+            </a>
+        </td>
+        <td>@SettlCurrFxRtCalc</td>
+        <td class="green center"></td>
+        <td>Specifies whether the SettlCurrFxRate should be multiplied or divided</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/77.html">
+            77
+            </a>
+        </td>
+        <td>
+            <a href="../fields/77.html">
+            PositionEffect
+            </a>
+        </td>
+        <td>@PosEfct</td>
+        <td class="green center"></td>
+        <td>For use in derivatives omnibus accounting</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td>May be used by the executing market to record any execution Details that are particular to that market</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/752.html">
+            752
+            </a>
+        </td>
+        <td>
+            <a href="../fields/752.html">
+            SideMultiLegReportingType
+            </a>
+        </td>
+        <td>@MLegRptTyp</td>
+        <td class="green center"></td>
+        <td>Default is a single security if not specified.
+Provided to support the scenario where a single leg instrument trades against an individual leg of a multileg instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ContAmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ContAmtGrp.html">
+            <b>ContAmtGrp</b>
+            </a>
+        </td>
+        <td>ContAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Stipulations.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Stipulations.html">
+            <b>Stipulations</b>
+            </a>
+        </td>
+        <td>Stip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MiscFeesGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/MiscFeesGrp.html">
+            <b>MiscFeesGrp</b>
+            </a>
+        </td>
+        <td>MiscFees</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/825.html">
+            825
+            </a>
+        </td>
+        <td>
+            <a href="../fields/825.html">
+            ExchangeRule
+            </a>
+        </td>
+        <td>@ExchRule</td>
+        <td class="green center"></td>
+        <td>Used to report any exchange rules that apply to this trade.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/826.html">
+            826
+            </a>
+        </td>
+        <td>
+            <a href="../fields/826.html">
+            TradeAllocIndicator
+            </a>
+        </td>
+        <td>@AllocInd</td>
+        <td class="green center"></td>
+        <td>Identifies if the trade is to be allocated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/591.html">
+            591
+            </a>
+        </td>
+        <td>
+            <a href="../fields/591.html">
+            PreallocMethod
+            </a>
+        </td>
+        <td>@PreallocMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/70.html">
+            70
+            </a>
+        </td>
+        <td>
+            <a href="../fields/70.html">
+            AllocID
+            </a>
+        </td>
+        <td>@AllocID</td>
+        <td class="green center"></td>
+        <td>Used to assign an ID to the block of preallocations</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdAllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdAllocGrp.html">
+            <b>TrdAllocGrp</b>
+            </a>
+        </td>
+        <td>Alloc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SideTrdRegTS.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SideTrdRegTS.html">
+            <b>SideTrdRegTS</b>
+            </a>
+        </td>
+        <td>TrdRegTS</td>
+        <td class="green center"></td>
+        <td>Used to indicate the regulatory time stamp on one side of a multi-sided Trade Capture Report.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SettlDetails.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SettlDetails.html">
+            <b>SettlDetails</b>
+            </a>
+        </td>
+        <td>SettlDetails</td>
+        <td class="green center"></td>
+        <td>Conveys settlement account details reported as part of obligation</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1072.html">
+            1072
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1072.html">
+            SideGrossTradeAmt
+            </a>
+        </td>
+        <td>@SideGrossTradeAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1057.html">
+            1057
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1057.html">
+            AggressorIndicator
+            </a>
+        </td>
+        <td>@AgrsrInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1139.html">
+            1139
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1139.html">
+            ExchangeSpecialInstructions
+            </a>
+        </td>
+        <td>@ExchSpeclInstr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1115.html">
+            1115
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1115.html">
+            OrderCategory
+            </a>
+        </td>
+        <td>@OrdCat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1444.html">
+            1444
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1444.html">
+            SideLiquidityInd
+            </a>
+        </td>
+        <td>@LqdtyInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TradeReportOrderDetail.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TradeReportOrderDetail.html">
+            <b>TradeReportOrderDetail</b>
+            </a>
+        </td>
+        <td>TrdRptOrdDetl</td>
+        <td class="green center"></td>
+        <td>Order details for the order associated with this side of the trade</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,188 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>FillsGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1362.html">
+            1362
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1362.html">
+            NoFills
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Specifies the number of partial fills included in this Execution Report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1363.html">
+            1363
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1363.html">
+            FillExecID
+            </a>
+        </td>
+        <td>@FillExecID</td>
+        <td class="green center"></td>
+        <td>Unique identifier of execution as assigned by sell-side (broker, exchange, ECN). Must not overlap ExecID(17). Required if NoFills &gt; 0</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1364.html">
+            1364
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1364.html">
+            FillPx
+            </a>
+        </td>
+        <td>@FillPx</td>
+        <td class="green center"></td>
+        <td>Price of this partial fill. Conditionally required if NoFills &gt; 0. Refer to LastPx(31).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1365.html">
+            1365
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1365.html">
+            FillQty
+            </a>
+        </td>
+        <td>@FillQty</td>
+        <td class="green center"></td>
+        <td>Quantity (e.g. shares) bought/sold on this partial fill. Required if NoFills &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1443.html">
+            1443
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1443.html">
+            FillLiquidityInd
+            </a>
+        </td>
+        <td>@LqdtyInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NestedParties4.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/NestedParties4.html">
+            <b>NestedParties4</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Contraparty information</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

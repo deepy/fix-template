@@ -1,0 +1,307 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>DerivativeSecurityListUpdateReport [type 'BR']</h1>
+<p style="white-space: pre-wrap;">The Derivative Security List Update Report message is used to send updates to an option family or the strikes that comprise an option family.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = BR</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>ApplicationSequenceControl</b>
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/320.html">
+            320
+            </a>
+        </td>
+        <td>
+            <a href="../fields/320.html">
+            SecurityReqID
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/322.html">
+            322
+            </a>
+        </td>
+        <td>
+            <a href="../fields/322.html">
+            SecurityResponseID
+            </a>
+        </td>
+        <td>@RspID</td>
+        <td class="green center"></td>
+        <td>Identifier for the Derivative Security List message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/560.html">
+            560
+            </a>
+        </td>
+        <td>
+            <a href="../fields/560.html">
+            SecurityRequestResult
+            </a>
+        </td>
+        <td>@ReqRslt</td>
+        <td class="green center"></td>
+        <td>Result of the Security Request identified by SecurityReqID</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/980.html">
+            980
+            </a>
+        </td>
+        <td>
+            <a href="../fields/980.html">
+            SecurityUpdateAction
+            </a>
+        </td>
+        <td>@UpdActn</td>
+        <td class="green center"></td>
+        <td>Updates can be applied to Underlying or option class. If Series information provided, then Series has explicitly changed</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingInstrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingInstrument.html">
+            <b>UnderlyingInstrument</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>Underlying security for which derivatives are being returned</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DerivativeSecurityDefinition.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/DerivativeSecurityDefinition.html">
+            <b>DerivativeSecurityDefinition</b>
+            </a>
+        </td>
+        <td>DerivSecDef</td>
+        <td class="green center"></td>
+        <td>Group block which contains all information for an option family. If provided DerivativeSecurityDefinition qualifies the strikes specified in the Instrument block. DerivativeSecurityDefinition contains the following components: DerivativeInstrument. DerivativeInstrumentExtension, MarketSegmentGrp</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/393.html">
+            393
+            </a>
+        </td>
+        <td>
+            <a href="../fields/393.html">
+            TotNoRelatedSym
+            </a>
+        </td>
+        <td>@TotNoReltdSym</td>
+        <td class="green center"></td>
+        <td>Used to indicate the total number of securities being returned for this request. Used in the event that message fragmentation is required.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            893
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            LastFragment
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelSymDerivSecUpdGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelSymDerivSecUpdGrp.html">
+            <b>RelSymDerivSecUpdGrp</b>
+            </a>
+        </td>
+        <td>RelSym</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

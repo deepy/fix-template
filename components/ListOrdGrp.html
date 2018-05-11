@@ -1,0 +1,1549 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>ListOrdGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/73.html">
+            73
+            </a>
+        </td>
+        <td>
+            <a href="../fields/73.html">
+            NoOrders
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>Number of orders in this message (number of repeating groups to follow)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/11.html">
+            11
+            </a>
+        </td>
+        <td>
+            <a href="../fields/11.html">
+            ClOrdID
+            </a>
+        </td>
+        <td>@ClOrdID</td>
+        <td class="green center">✔</td>
+        <td>Must be the first field in the repeating group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/526.html">
+            526
+            </a>
+        </td>
+        <td>
+            <a href="../fields/526.html">
+            SecondaryClOrdID
+            </a>
+        </td>
+        <td>@ClOrdID2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/67.html">
+            67
+            </a>
+        </td>
+        <td>
+            <a href="../fields/67.html">
+            ListSeqNo
+            </a>
+        </td>
+        <td>@ListSeqNo</td>
+        <td class="green center">✔</td>
+        <td>Order number within the list</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/583.html">
+            583
+            </a>
+        </td>
+        <td>
+            <a href="../fields/583.html">
+            ClOrdLinkID
+            </a>
+        </td>
+        <td>@ClOrdLinkID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/160.html">
+            160
+            </a>
+        </td>
+        <td>
+            <a href="../fields/160.html">
+            SettlInstMode
+            </a>
+        </td>
+        <td>@SettlInstMode</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/229.html">
+            229
+            </a>
+        </td>
+        <td>
+            <a href="../fields/229.html">
+            TradeOriginationDate
+            </a>
+        </td>
+        <td>@OrignDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            75
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            TradeDate
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1.html">
+            1
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1.html">
+            Account
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/660.html">
+            660
+            </a>
+        </td>
+        <td>
+            <a href="../fields/660.html">
+            AcctIDSource
+            </a>
+        </td>
+        <td>@AcctIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/581.html">
+            581
+            </a>
+        </td>
+        <td>
+            <a href="../fields/581.html">
+            AccountType
+            </a>
+        </td>
+        <td>@AcctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/589.html">
+            589
+            </a>
+        </td>
+        <td>
+            <a href="../fields/589.html">
+            DayBookingInst
+            </a>
+        </td>
+        <td>@DayBkngInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/590.html">
+            590
+            </a>
+        </td>
+        <td>
+            <a href="../fields/590.html">
+            BookingUnit
+            </a>
+        </td>
+        <td>@BkngUnit</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/70.html">
+            70
+            </a>
+        </td>
+        <td>
+            <a href="../fields/70.html">
+            AllocID
+            </a>
+        </td>
+        <td>@AllocID</td>
+        <td class="green center"></td>
+        <td>Use to assign an ID to the block of individual preallocations</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/591.html">
+            591
+            </a>
+        </td>
+        <td>
+            <a href="../fields/591.html">
+            PreallocMethod
+            </a>
+        </td>
+        <td>@PreallocMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PreAllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PreAllocGrp.html">
+            <b>PreAllocGrp</b>
+            </a>
+        </td>
+        <td>PreAll</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/63.html">
+            63
+            </a>
+        </td>
+        <td>
+            <a href="../fields/63.html">
+            SettlType
+            </a>
+        </td>
+        <td>@SettlTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/64.html">
+            64
+            </a>
+        </td>
+        <td>
+            <a href="../fields/64.html">
+            SettlDate
+            </a>
+        </td>
+        <td>@SettlDt</td>
+        <td class="green center"></td>
+        <td>Takes precedence over SettlType value and conditionally required/omitted for specific SettlType values.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/544.html">
+            544
+            </a>
+        </td>
+        <td>
+            <a href="../fields/544.html">
+            CashMargin
+            </a>
+        </td>
+        <td>@CshMgn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/635.html">
+            635
+            </a>
+        </td>
+        <td>
+            <a href="../fields/635.html">
+            ClearingFeeIndicator
+            </a>
+        </td>
+        <td>@ClrFeeInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/21.html">
+            21
+            </a>
+        </td>
+        <td>
+            <a href="../fields/21.html">
+            HandlInst
+            </a>
+        </td>
+        <td>@HandlInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/18.html">
+            18
+            </a>
+        </td>
+        <td>
+            <a href="../fields/18.html">
+            ExecInst
+            </a>
+        </td>
+        <td>@ExecInst</td>
+        <td class="green center"></td>
+        <td>Can contain multiple instructions, space delimited. If OrdType=P, exactly one of the following values (ExecInst = L, R, M, P, O, T, or W) must be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/110.html">
+            110
+            </a>
+        </td>
+        <td>
+            <a href="../fields/110.html">
+            MinQty
+            </a>
+        </td>
+        <td>@MinQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1089.html">
+            1089
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1089.html">
+            MatchIncrement
+            </a>
+        </td>
+        <td>@MtchInc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1090.html">
+            1090
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1090.html">
+            MaxPriceLevels
+            </a>
+        </td>
+        <td>@MxPxLvls</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DisplayInstruction.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/DisplayInstruction.html">
+            <b>DisplayInstruction</b>
+            </a>
+        </td>
+        <td>DsplyInstr</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;DisplayInstruction&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/111.html">
+            111
+            </a>
+        </td>
+        <td>
+            <a href="../fields/111.html">
+            MaxFloor
+            </a>
+        </td>
+        <td>@MaxFloor</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/100.html">
+            100
+            </a>
+        </td>
+        <td>
+            <a href="../fields/100.html">
+            ExDestination
+            </a>
+        </td>
+        <td>@ExDest</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1133.html">
+            1133
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1133.html">
+            ExDestinationIDSource
+            </a>
+        </td>
+        <td>@ExDestIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdgSesGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdgSesGrp.html">
+            <b>TrdgSesGrp</b>
+            </a>
+        </td>
+        <td>TrdSes</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/81.html">
+            81
+            </a>
+        </td>
+        <td>
+            <a href="../fields/81.html">
+            ProcessCode
+            </a>
+        </td>
+        <td>@ProcCode</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center">✔</td>
+        <td>Insert here the set of &#34;Instrument&#34; (symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            <b>UndInstrmtGrp</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/140.html">
+            140
+            </a>
+        </td>
+        <td>
+            <a href="../fields/140.html">
+            PrevClosePx
+            </a>
+        </td>
+        <td>@PrevClsPx</td>
+        <td class="green center"></td>
+        <td>Useful for verifying security identification</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            54
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            Side
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center">✔</td>
+        <td>Note: to indicate the side of SideValue1 or SideValue2, specify Side=Undisclosed and SideValueInd=either the SideValue1 or SideValue2 indicator.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/401.html">
+            401
+            </a>
+        </td>
+        <td>
+            <a href="../fields/401.html">
+            SideValueInd
+            </a>
+        </td>
+        <td>@SideValuInd</td>
+        <td class="green center"></td>
+        <td>Refers to the SideValue1 or SideValue2. These are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/114.html">
+            114
+            </a>
+        </td>
+        <td>
+            <a href="../fields/114.html">
+            LocateReqd
+            </a>
+        </td>
+        <td>@LocReqd</td>
+        <td class="green center"></td>
+        <td>Required for short sell orders</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Stipulations.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Stipulations.html">
+            <b>Stipulations</b>
+            </a>
+        </td>
+        <td>Stip</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Stipulations&#34; (repeating group of Fixed Income stipulations) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/854.html">
+            854
+            </a>
+        </td>
+        <td>
+            <a href="../fields/854.html">
+            QtyType
+            </a>
+        </td>
+        <td>@QtyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrderQtyData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrderQtyData.html">
+            <b>OrderQtyData</b>
+            </a>
+        </td>
+        <td>OrdQty</td>
+        <td class="green center">✔</td>
+        <td>Insert here the set of &#34;OrderQtyData&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40.html">
+            40
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40.html">
+            OrdType
+            </a>
+        </td>
+        <td>@OrdTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            423
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            PriceType
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/44.html">
+            44
+            </a>
+        </td>
+        <td>
+            <a href="../fields/44.html">
+            Price
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1092.html">
+            1092
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1092.html">
+            PriceProtectionScope
+            </a>
+        </td>
+        <td>@PxPrtScp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/99.html">
+            99
+            </a>
+        </td>
+        <td>
+            <a href="../fields/99.html">
+            StopPx
+            </a>
+        </td>
+        <td>@StopPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TriggeringInstruction.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TriggeringInstruction.html">
+            <b>TriggeringInstruction</b>
+            </a>
+        </td>
+        <td>TrgrInstr</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;TriggeringInstruction&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SpreadOrBenchmarkCurveData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SpreadOrBenchmarkCurveData.html">
+            <b>SpreadOrBenchmarkCurveData</b>
+            </a>
+        </td>
+        <td>SprdBnchmkCurve</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;SpreadOrBenchmarkCurveData&#34; (Fixed Income spread or benchmark curve) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/YieldData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/YieldData.html">
+            <b>YieldData</b>
+            </a>
+        </td>
+        <td>Yield</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;YieldData&#34; (yield-related) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            15
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            Currency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/376.html">
+            376
+            </a>
+        </td>
+        <td>
+            <a href="../fields/376.html">
+            ComplianceID
+            </a>
+        </td>
+        <td>@ComplianceID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/377.html">
+            377
+            </a>
+        </td>
+        <td>
+            <a href="../fields/377.html">
+            SolicitedFlag
+            </a>
+        </td>
+        <td>@SolFlag</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/23.html">
+            23
+            </a>
+        </td>
+        <td>
+            <a href="../fields/23.html">
+            IOIID
+            </a>
+        </td>
+        <td>@IOIID</td>
+        <td class="green center"></td>
+        <td>Required for Previously Indicated Orders (OrdType=E)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/117.html">
+            117
+            </a>
+        </td>
+        <td>
+            <a href="../fields/117.html">
+            QuoteID
+            </a>
+        </td>
+        <td>@QID</td>
+        <td class="green center"></td>
+        <td>Required for Previously Quoted Orders (OrdType=D)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1080.html">
+            1080
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1080.html">
+            RefOrderID
+            </a>
+        </td>
+        <td>@RefOrdID</td>
+        <td class="green center"></td>
+        <td>Required for counter-order selection / Hit / Take Orders (OrdType = Q)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1081.html">
+            1081
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1081.html">
+            RefOrderIDSource
+            </a>
+        </td>
+        <td>@RefOrdIDSrc</td>
+        <td class="green center"></td>
+        <td>Conditionally required if RefOrderID is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/59.html">
+            59
+            </a>
+        </td>
+        <td>
+            <a href="../fields/59.html">
+            TimeInForce
+            </a>
+        </td>
+        <td>@TmInForce</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/168.html">
+            168
+            </a>
+        </td>
+        <td>
+            <a href="../fields/168.html">
+            EffectiveTime
+            </a>
+        </td>
+        <td>@EfctvTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/432.html">
+            432
+            </a>
+        </td>
+        <td>
+            <a href="../fields/432.html">
+            ExpireDate
+            </a>
+        </td>
+        <td>@ExpireDt</td>
+        <td class="green center"></td>
+        <td>Conditionally required if TimeInForce = GTD and ExpireTime is not specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/126.html">
+            126
+            </a>
+        </td>
+        <td>
+            <a href="../fields/126.html">
+            ExpireTime
+            </a>
+        </td>
+        <td>@ExpireTm</td>
+        <td class="green center"></td>
+        <td>Conditionally required if TimeInForce = GTD and ExpireDate is not specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/427.html">
+            427
+            </a>
+        </td>
+        <td>
+            <a href="../fields/427.html">
+            GTBookingInst
+            </a>
+        </td>
+        <td>@GTBkngInst</td>
+        <td class="green center"></td>
+        <td>States whether executions are booked out or accumulated on a partially filled GT order</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CommissionData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/CommissionData.html">
+            <b>CommissionData</b>
+            </a>
+        </td>
+        <td>Comm</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;CommissionData&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/528.html">
+            528
+            </a>
+        </td>
+        <td>
+            <a href="../fields/528.html">
+            OrderCapacity
+            </a>
+        </td>
+        <td>@Cpcty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/529.html">
+            529
+            </a>
+        </td>
+        <td>
+            <a href="../fields/529.html">
+            OrderRestrictions
+            </a>
+        </td>
+        <td>@Rstctions</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1091.html">
+            1091
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1091.html">
+            PreTradeAnonymity
+            </a>
+        </td>
+        <td>@PrTrdAnon</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/582.html">
+            582
+            </a>
+        </td>
+        <td>
+            <a href="../fields/582.html">
+            CustOrderCapacity
+            </a>
+        </td>
+        <td>@CustCpcty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/121.html">
+            121
+            </a>
+        </td>
+        <td>
+            <a href="../fields/121.html">
+            ForexReq
+            </a>
+        </td>
+        <td>@ForexReq</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/120.html">
+            120
+            </a>
+        </td>
+        <td>
+            <a href="../fields/120.html">
+            SettlCurrency
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/775.html">
+            775
+            </a>
+        </td>
+        <td>
+            <a href="../fields/775.html">
+            BookingType
+            </a>
+        </td>
+        <td>@BkngTyp</td>
+        <td class="green center"></td>
+        <td>Method for booking out this order. Used when notifying a broker that an order to be settled by that broker is to be booked out as an OTC derivative (e.g. CFD or similar). Absence of this field implies regular booking.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/193.html">
+            193
+            </a>
+        </td>
+        <td>
+            <a href="../fields/193.html">
+            SettlDate2
+            </a>
+        </td>
+        <td>@SettlDt2</td>
+        <td class="green center"></td>
+        <td>Can be used with OrdType = &#34;Forex - Swap&#34; to specify the &#34;value date&#34; for the future portion of a F/X swap.</td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/192.html">
+            192
+            </a>
+        </td>
+        <td>
+            <a href="../fields/192.html">
+            OrderQty2
+            </a>
+        </td>
+        <td>@Qty2</td>
+        <td class="green center"></td>
+        <td>Can be used with OrdType = &#34;Forex - Swap&#34; to specify the order quantity for the future portion of a F/X swap.</td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/640.html">
+            640
+            </a>
+        </td>
+        <td>
+            <a href="../fields/640.html">
+            Price2
+            </a>
+        </td>
+        <td>@Px2</td>
+        <td class="green center"></td>
+        <td>Can be used with OrdType = &#34;Forex - Swap&#34; to specify the price for the future portion of a F/X swap which is also a limit order. For F/X orders, should be the &#34;all-in&#34; rate (spot rate adjusted for forward points).</td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/77.html">
+            77
+            </a>
+        </td>
+        <td>
+            <a href="../fields/77.html">
+            PositionEffect
+            </a>
+        </td>
+        <td>@PosEfct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/203.html">
+            203
+            </a>
+        </td>
+        <td>
+            <a href="../fields/203.html">
+            CoveredOrUncovered
+            </a>
+        </td>
+        <td>@Covered</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/210.html">
+            210
+            </a>
+        </td>
+        <td>
+            <a href="../fields/210.html">
+            MaxShow
+            </a>
+        </td>
+        <td>@MaxShow</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PegInstructions.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PegInstructions.html">
+            <b>PegInstructions</b>
+            </a>
+        </td>
+        <td>PegInstr</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;PegInstruction&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DiscretionInstructions.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/DiscretionInstructions.html">
+            <b>DiscretionInstructions</b>
+            </a>
+        </td>
+        <td>DiscInstr</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;DiscretionInstruction&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/847.html">
+            847
+            </a>
+        </td>
+        <td>
+            <a href="../fields/847.html">
+            TargetStrategy
+            </a>
+        </td>
+        <td>@TgtStrategy</td>
+        <td class="green center"></td>
+        <td>The target strategy of the order</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StrategyParametersGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StrategyParametersGrp.html">
+            <b>StrategyParametersGrp</b>
+            </a>
+        </td>
+        <td>StrtPrmGrp</td>
+        <td class="green center"></td>
+        <td>Strategy parameter block</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/848.html">
+            848
+            </a>
+        </td>
+        <td>
+            <a href="../fields/848.html">
+            TargetStrategyParameters
+            </a>
+        </td>
+        <td>@TgtStrategyParameters</td>
+        <td class="green center"></td>
+        <td>For further specification of the TargetStrategy</td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/849.html">
+            849
+            </a>
+        </td>
+        <td>
+            <a href="../fields/849.html">
+            ParticipationRate
+            </a>
+        </td>
+        <td>@ParticipationRt</td>
+        <td class="green center"></td>
+        <td>Mandatory for a TargetStrategy=Participate order and specifies the target particpation rate.
+For other order types optionally specifies a volume limit (i.e. do not be more than this percent of the market volume)</td>
+        <td class="green">FIX.5.0</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/494.html">
+            494
+            </a>
+        </td>
+        <td>
+            <a href="../fields/494.html">
+            Designation
+            </a>
+        </td>
+        <td>@Designation</td>
+        <td class="green center"></td>
+        <td>Supplementary registration information for this Order within the List</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

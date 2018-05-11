@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>MsgTypeGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/384.html">
+            384
+            </a>
+        </td>
+        <td>
+            <a href="../fields/384.html">
+            NoMsgTypes
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Specifies the number of repeating RefMsgTypes specified</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/372.html">
+            372
+            </a>
+        </td>
+        <td>
+            <a href="../fields/372.html">
+            RefMsgType
+            </a>
+        </td>
+        <td>@RefMsgTyp</td>
+        <td class="green center"></td>
+        <td>Specifies a specific, supported MsgType. Required if NoMsgTypes is &gt; 0. Should be specified from the point of view of the sender of the Logon message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/385.html">
+            385
+            </a>
+        </td>
+        <td>
+            <a href="../fields/385.html">
+            MsgDirection
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Indicates direction (send vs. receive) of a supported MsgType. Required if NoMsgTypes is &gt; 0. Should be specified from the point of view of the sender of the Logon message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1130.html">
+            1130
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1130.html">
+            RefApplVerID
+            </a>
+        </td>
+        <td>@RefApplVerID</td>
+        <td class="green center"></td>
+        <td>Specifies the service pack release being applied to an application message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1406.html">
+            1406
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1406.html">
+            RefApplExtID
+            </a>
+        </td>
+        <td>@RefApplExtID</td>
+        <td class="green center"></td>
+        <td>Specified the extension pack being applied to a message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1131.html">
+            1131
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1131.html">
+            RefCstmApplVerID
+            </a>
+        </td>
+        <td>@RefCstmApplVerID</td>
+        <td class="green center"></td>
+        <td>Specifies a custom extension to a message being applied at the session level.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1410.html">
+            1410
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1410.html">
+            DefaultVerIndicator
+            </a>
+        </td>
+        <td>@DfltVerInd</td>
+        <td class="green center"></td>
+        <td>Indicates that this Application Version (RefApplVerID(1130), RefApplExtID(1406),RefCstmApplVerID(1131)) is the default for the RefMsgType(372) field.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>UnderlyingAmount [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The UnderlyingAmount component block is used to supply the underlying amounts, dates, settlement status and method for derivative positions.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/984.html">
+            984
+            </a>
+        </td>
+        <td>
+            <a href="../fields/984.html">
+            NoUnderlyingAmounts
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/985.html">
+            985
+            </a>
+        </td>
+        <td>
+            <a href="../fields/985.html">
+            UnderlyingPayAmount
+            </a>
+        </td>
+        <td>@PayAmt</td>
+        <td class="green center"></td>
+        <td>Amount to pay in order to receive the underlying instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/986.html">
+            986
+            </a>
+        </td>
+        <td>
+            <a href="../fields/986.html">
+            UnderlyingCollectAmount
+            </a>
+        </td>
+        <td>@ColAmt</td>
+        <td class="green center"></td>
+        <td>Amount to collect in order to deliver the underlying instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/987.html">
+            987
+            </a>
+        </td>
+        <td>
+            <a href="../fields/987.html">
+            UnderlyingSettlementDate
+            </a>
+        </td>
+        <td>@StlDt</td>
+        <td class="green center"></td>
+        <td>Date the underlying instrument will settle. Used for derivatives that deliver into more than one underlying instrument. Settlement dates can vary across underlying instruments.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/988.html">
+            988
+            </a>
+        </td>
+        <td>
+            <a href="../fields/988.html">
+            UnderlyingSettlementStatus
+            </a>
+        </td>
+        <td>@SetStat</td>
+        <td class="green center"></td>
+        <td>Settlement status of the underlying instrument. Used for derivatives that deliver into more than one underlying instrument. Settlement can be delayed for an underlying instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

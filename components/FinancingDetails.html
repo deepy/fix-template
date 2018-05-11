@@ -1,0 +1,239 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>FinancingDetails [type 'Component']</h1>
+<p style="white-space: pre-wrap;">Component block is optionally used only for financing deals to identify the legal agreement under which the deal was made and other unique characteristics of the transaction. The AgreementDesc field refers to base standard documents such as MRA 1996 Repurchase Agreement, GMRA 2000 Bills Transaction (U.K.), MSLA 1993 Securities Loan – Amended 1998, for example.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/913.html">
+            913
+            </a>
+        </td>
+        <td>
+            <a href="../fields/913.html">
+            AgreementDesc
+            </a>
+        </td>
+        <td>@AgmtDesc</td>
+        <td class="green center"></td>
+        <td>The full name of the base standard agreement, annexes and amendments in place between the principals and applicable to this deal</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/914.html">
+            914
+            </a>
+        </td>
+        <td>
+            <a href="../fields/914.html">
+            AgreementID
+            </a>
+        </td>
+        <td>@AgmtID</td>
+        <td class="green center"></td>
+        <td>A common reference to the applicable standing agreement between the principals</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/915.html">
+            915
+            </a>
+        </td>
+        <td>
+            <a href="../fields/915.html">
+            AgreementDate
+            </a>
+        </td>
+        <td>@AgmtDt</td>
+        <td class="green center"></td>
+        <td>A reference to the date the underlying agreement was executed.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/918.html">
+            918
+            </a>
+        </td>
+        <td>
+            <a href="../fields/918.html">
+            AgreementCurrency
+            </a>
+        </td>
+        <td>@AgmtCcy</td>
+        <td class="green center"></td>
+        <td>Currency of the underlying agreement.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/788.html">
+            788
+            </a>
+        </td>
+        <td>
+            <a href="../fields/788.html">
+            TerminationType
+            </a>
+        </td>
+        <td>@TrmTyp</td>
+        <td class="green center"></td>
+        <td>For Repos the timing or method for terminating the agreement.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/916.html">
+            916
+            </a>
+        </td>
+        <td>
+            <a href="../fields/916.html">
+            StartDate
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td>Settlement date of the beginning of the deal</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/917.html">
+            917
+            </a>
+        </td>
+        <td>
+            <a href="../fields/917.html">
+            EndDate
+            </a>
+        </td>
+        <td>@EndDt</td>
+        <td class="green center"></td>
+        <td>Repayment / repurchase date</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/919.html">
+            919
+            </a>
+        </td>
+        <td>
+            <a href="../fields/919.html">
+            DeliveryType
+            </a>
+        </td>
+        <td>@DlvryTyp</td>
+        <td class="green center"></td>
+        <td>Delivery or custody arrangement for the underlying securities</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/898.html">
+            898
+            </a>
+        </td>
+        <td>
+            <a href="../fields/898.html">
+            MarginRatio
+            </a>
+        </td>
+        <td>@MgnRatio</td>
+        <td class="green center"></td>
+        <td>Percentage of cash value that underlying security collateral must meet.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

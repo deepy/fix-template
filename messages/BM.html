@@ -1,0 +1,1368 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>AllocationInstructionAlert [type 'BM']</h1>
+<p style="white-space: pre-wrap;">This message is used in a 3-party allocation model where notification of group creation and group updates to counterparties is needed. The mssage will also carry trade information that comprised the group to the counterparties.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = BM</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/70.html">
+            70
+            </a>
+        </td>
+        <td>
+            <a href="../fields/70.html">
+            AllocID
+            </a>
+        </td>
+        <td>@AllocID</td>
+        <td class="green center">✔</td>
+        <td>Unique identifier for this allocation instruction alert message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/71.html">
+            71
+            </a>
+        </td>
+        <td>
+            <a href="../fields/71.html">
+            AllocTransType
+            </a>
+        </td>
+        <td>@TransTyp</td>
+        <td class="green center">✔</td>
+        <td>i.e. New, Cancel, Replace</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/626.html">
+            626
+            </a>
+        </td>
+        <td>
+            <a href="../fields/626.html">
+            AllocType
+            </a>
+        </td>
+        <td>@AllocType</td>
+        <td class="green center">✔</td>
+        <td>Specifies the purpose or type of Allocation message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/793.html">
+            793
+            </a>
+        </td>
+        <td>
+            <a href="../fields/793.html">
+            SecondaryAllocID
+            </a>
+        </td>
+        <td>@AllocID2</td>
+        <td class="green center"></td>
+        <td>Optional second identifier for this allocation instruction (need not be unique)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/72.html">
+            72
+            </a>
+        </td>
+        <td>
+            <a href="../fields/72.html">
+            RefAllocID
+            </a>
+        </td>
+        <td>@RefAllocID</td>
+        <td class="green center"></td>
+        <td>Required for AllocTransType = Replace or Cancel</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/796.html">
+            796
+            </a>
+        </td>
+        <td>
+            <a href="../fields/796.html">
+            AllocCancReplaceReason
+            </a>
+        </td>
+        <td>@CxlRplcRsn</td>
+        <td class="green center"></td>
+        <td>Required for AllocTransType = Replace or Cancel
+Gives the reason for replacing or cancelling the allocation instruction</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/808.html">
+            808
+            </a>
+        </td>
+        <td>
+            <a href="../fields/808.html">
+            AllocIntermedReqType
+            </a>
+        </td>
+        <td>@IntermedReqTyp</td>
+        <td class="green center"></td>
+        <td>Required if AllocType = 8 (Request to Intermediary)
+Indicates status that is requested to be transmitted to counterparty by the intermediary (i.e. clearing house)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/196.html">
+            196
+            </a>
+        </td>
+        <td>
+            <a href="../fields/196.html">
+            AllocLinkID
+            </a>
+        </td>
+        <td>@LinkID</td>
+        <td class="green center"></td>
+        <td>Can be used to link two different Allocation messages (each with unique AllocID) together, i.e. for F/X &#34;Netting&#34; or &#34;Swaps&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/197.html">
+            197
+            </a>
+        </td>
+        <td>
+            <a href="../fields/197.html">
+            AllocLinkType
+            </a>
+        </td>
+        <td>@LinkTyp</td>
+        <td class="green center"></td>
+        <td>Can be used to link two different Allocation messages and identifies the type of link. Required if AllocLinkID is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/466.html">
+            466
+            </a>
+        </td>
+        <td>
+            <a href="../fields/466.html">
+            BookingRefID
+            </a>
+        </td>
+        <td>@BkngRefID</td>
+        <td class="green center"></td>
+        <td>Can be used with AllocType=&#34; Ready-To-Book &#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/857.html">
+            857
+            </a>
+        </td>
+        <td>
+            <a href="../fields/857.html">
+            AllocNoOrdersType
+            </a>
+        </td>
+        <td>@NoOrdsTyp</td>
+        <td class="green center"></td>
+        <td>Indicates how the orders being booked and allocated by this message are identified, i.e. by explicit definition in the NoOrders group or not.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrdAllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrdAllocGrp.html">
+            <b>OrdAllocGrp</b>
+            </a>
+        </td>
+        <td>OrdAlloc</td>
+        <td class="green center"></td>
+        <td>Indicates number of orders to be combined for allocation. If order(s) were manually delivered set to 1 (one).Required when AllocNoOrdersType = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ExecAllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ExecAllocGrp.html">
+            <b>ExecAllocGrp</b>
+            </a>
+        </td>
+        <td>AllExc</td>
+        <td class="green center"></td>
+        <td>Indicates number of individual execution repeating group entries to follow. Absence of this field indicates that no individual execution entries are included. Primarily used to support step-outs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/570.html">
+            570
+            </a>
+        </td>
+        <td>
+            <a href="../fields/570.html">
+            PreviouslyReported
+            </a>
+        </td>
+        <td>@PrevlyRpted</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/700.html">
+            700
+            </a>
+        </td>
+        <td>
+            <a href="../fields/700.html">
+            ReversalIndicator
+            </a>
+        </td>
+        <td>@ReversalInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/574.html">
+            574
+            </a>
+        </td>
+        <td>
+            <a href="../fields/574.html">
+            MatchType
+            </a>
+        </td>
+        <td>@MtchTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            54
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            Side
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center">✔</td>
+        <td>Insert here the set of &#34;Instrument&#34; (symbology) fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentExtension.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentExtension.html">
+            <b>InstrumentExtension</b>
+            </a>
+        </td>
+        <td>InstrmtExt</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;InstrumentExtension&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingDetails.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingDetails.html">
+            <b>FinancingDetails</b>
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;FinancingDetails&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            <b>UndInstrmtGrp</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtLegGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtLegGrp.html">
+            <b>InstrmtLegGrp</b>
+            </a>
+        </td>
+        <td>Leg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/53.html">
+            53
+            </a>
+        </td>
+        <td>
+            <a href="../fields/53.html">
+            Quantity
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center">✔</td>
+        <td>Total quantity (e.g. number of shares) allocated to all accounts, or that is Ready-To-Book</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/854.html">
+            854
+            </a>
+        </td>
+        <td>
+            <a href="../fields/854.html">
+            QtyType
+            </a>
+        </td>
+        <td>@QtyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/30.html">
+            30
+            </a>
+        </td>
+        <td>
+            <a href="../fields/30.html">
+            LastMkt
+            </a>
+        </td>
+        <td>@LastMkt</td>
+        <td class="green center"></td>
+        <td>Market of the executions.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/229.html">
+            229
+            </a>
+        </td>
+        <td>
+            <a href="../fields/229.html">
+            TradeOriginationDate
+            </a>
+        </td>
+        <td>@OrignDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            336
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            TradingSessionID
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            625
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            TradingSessionSubID
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            423
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            PriceType
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/6.html">
+            6
+            </a>
+        </td>
+        <td>
+            <a href="../fields/6.html">
+            AvgPx
+            </a>
+        </td>
+        <td>@AvgPx</td>
+        <td class="green center"></td>
+        <td>For F/X orders, should be the &#34;all-in&#34; rate (spot rate adjusted for forward points).
+For 3rd party allocations used to convey either basic price or averaged price
+Optional for average price allocations in the listed derivatives markets where the central counterparty calculates and manages average price across an allocation group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/860.html">
+            860
+            </a>
+        </td>
+        <td>
+            <a href="../fields/860.html">
+            AvgParPx
+            </a>
+        </td>
+        <td>@AvgParPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SpreadOrBenchmarkCurveData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SpreadOrBenchmarkCurveData.html">
+            <b>SpreadOrBenchmarkCurveData</b>
+            </a>
+        </td>
+        <td>SprdBnchmkCurve</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;SpreadOrBenchmarkCurveData&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            15
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            Currency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Currency of AvgPx. Should be the currency of the local market or exchange where the trade was conducted.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/74.html">
+            74
+            </a>
+        </td>
+        <td>
+            <a href="../fields/74.html">
+            AvgPxPrecision
+            </a>
+        </td>
+        <td>@AvgPxPrcsn</td>
+        <td class="green center"></td>
+        <td>Absence of this field indicates that default precision arranged by the broker/institution is to be used</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;common components of application messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            75
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            TradeDate
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>Date/time when allocation is generated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/63.html">
+            63
+            </a>
+        </td>
+        <td>
+            <a href="../fields/63.html">
+            SettlType
+            </a>
+        </td>
+        <td>@SettlTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/64.html">
+            64
+            </a>
+        </td>
+        <td>
+            <a href="../fields/64.html">
+            SettlDate
+            </a>
+        </td>
+        <td>@SettlDt</td>
+        <td class="green center"></td>
+        <td>Takes precedence over SettlType value and conditionally required/omitted for specific SettlType values.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/775.html">
+            775
+            </a>
+        </td>
+        <td>
+            <a href="../fields/775.html">
+            BookingType
+            </a>
+        </td>
+        <td>@BkngTyp</td>
+        <td class="green center"></td>
+        <td>Method for booking. Used to provide notification that this is to be booked out as an OTC derivative (e.g. CFD or similar). Absence of this field implies regular booking.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/381.html">
+            381
+            </a>
+        </td>
+        <td>
+            <a href="../fields/381.html">
+            GrossTradeAmt
+            </a>
+        </td>
+        <td>@GrossTrdAmt</td>
+        <td class="green center"></td>
+        <td>Expressed in same currency as AvgPx. Sum of (AllocQty * AllocAvgPx or AllocPrice).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/238.html">
+            238
+            </a>
+        </td>
+        <td>
+            <a href="../fields/238.html">
+            Concession
+            </a>
+        </td>
+        <td>@Concession</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/237.html">
+            237
+            </a>
+        </td>
+        <td>
+            <a href="../fields/237.html">
+            TotalTakedown
+            </a>
+        </td>
+        <td>@TotTakedown</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/118.html">
+            118
+            </a>
+        </td>
+        <td>
+            <a href="../fields/118.html">
+            NetMoney
+            </a>
+        </td>
+        <td>@NetMny</td>
+        <td class="green center"></td>
+        <td>Expressed in same currency as AvgPx. Sum of AllocNetMoney.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/77.html">
+            77
+            </a>
+        </td>
+        <td>
+            <a href="../fields/77.html">
+            PositionEffect
+            </a>
+        </td>
+        <td>@PosEfct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/754.html">
+            754
+            </a>
+        </td>
+        <td>
+            <a href="../fields/754.html">
+            AutoAcceptIndicator
+            </a>
+        </td>
+        <td>@AutoAcceptInd</td>
+        <td class="green center"></td>
+        <td>Indicates if Allocation has been automatically accepted on behalf of the Carry Firm by the Clearing House</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/157.html">
+            157
+            </a>
+        </td>
+        <td>
+            <a href="../fields/157.html">
+            NumDaysInterest
+            </a>
+        </td>
+        <td>@NumDaysInt</td>
+        <td class="green center"></td>
+        <td>Applicable for Convertible Bonds and fixed income</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/158.html">
+            158
+            </a>
+        </td>
+        <td>
+            <a href="../fields/158.html">
+            AccruedInterestRate
+            </a>
+        </td>
+        <td>@AcrdIntRt</td>
+        <td class="green center"></td>
+        <td>Applicable for Convertible Bonds and fixed income</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/159.html">
+            159
+            </a>
+        </td>
+        <td>
+            <a href="../fields/159.html">
+            AccruedInterestAmt
+            </a>
+        </td>
+        <td>@AcrdIntAmt</td>
+        <td class="green center"></td>
+        <td>Applicable for Convertible Bonds and fixed income (REMOVED FROM THIS LOCATION AS OF FIX 4.4, REPLACED BY AllocAccruedInterest)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/540.html">
+            540
+            </a>
+        </td>
+        <td>
+            <a href="../fields/540.html">
+            TotalAccruedInterestAmt
+            </a>
+        </td>
+        <td>@TotAcrdIntAmt</td>
+        <td class="green center"></td>
+        <td>(Deprecated) use AccruedInterestAmt Sum of AccruedInterestAmt within repeating group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/738.html">
+            738
+            </a>
+        </td>
+        <td>
+            <a href="../fields/738.html">
+            InterestAtMaturity
+            </a>
+        </td>
+        <td>@IntAtMat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/920.html">
+            920
+            </a>
+        </td>
+        <td>
+            <a href="../fields/920.html">
+            EndAccruedInterestAmt
+            </a>
+        </td>
+        <td>@EndAcrdIntAmt</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the accrued interest on termination.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/921.html">
+            921
+            </a>
+        </td>
+        <td>
+            <a href="../fields/921.html">
+            StartCash
+            </a>
+        </td>
+        <td>@StartCsh</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the start (dirty) cash consideration</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/922.html">
+            922
+            </a>
+        </td>
+        <td>
+            <a href="../fields/922.html">
+            EndCash
+            </a>
+        </td>
+        <td>@EndCsh</td>
+        <td class="green center"></td>
+        <td>For repurchase agreements the end (dirty) cash consideration</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/650.html">
+            650
+            </a>
+        </td>
+        <td>
+            <a href="../fields/650.html">
+            LegalConfirm
+            </a>
+        </td>
+        <td>@LegalCnfm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Stipulations.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Stipulations.html">
+            <b>Stipulations</b>
+            </a>
+        </td>
+        <td>Stip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/YieldData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/YieldData.html">
+            <b>YieldData</b>
+            </a>
+        </td>
+        <td>Yield</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionAmountData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionAmountData.html">
+            <b>PositionAmountData</b>
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td>Insert here here the set of &#34;Position Amount Data&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/892.html">
+            892
+            </a>
+        </td>
+        <td>
+            <a href="../fields/892.html">
+            TotNoAllocs
+            </a>
+        </td>
+        <td>@TotNoAllocs</td>
+        <td class="green center"></td>
+        <td>Indicates total number of allocation groups (used to support fragmentation). Must equal the sum of all NoAllocs values across all message fragments making up this allocation instruction.
+Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            893
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            LastFragment
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/AllocGrp.html">
+            <b>AllocGrp</b>
+            </a>
+        </td>
+        <td>Alloc</td>
+        <td class="green center"></td>
+        <td>Indicates number of allocation groups to follow.
+Not required for AllocTransType=Cancel
+Not required for AllocType=&#34; Ready-To-Book &#34; or &#34;Warehouse instruction&#34;.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/819.html">
+            819
+            </a>
+        </td>
+        <td>
+            <a href="../fields/819.html">
+            AvgPxIndicator
+            </a>
+        </td>
+        <td>@AvgPxInd</td>
+        <td class="green center"></td>
+        <td>Indicates if an allocation is to be average priced. Is also used to indicate if average price allocation group is complete or incomplete.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            715
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            ClearingBusinessDate
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center"></td>
+        <td>Indicates Clearing Business Date for which transaction will be settled.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/828.html">
+            828
+            </a>
+        </td>
+        <td>
+            <a href="../fields/828.html">
+            TrdType
+            </a>
+        </td>
+        <td>@TrdTyp</td>
+        <td class="green center"></td>
+        <td>Indicates Trade Type of Allocation.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/829.html">
+            829
+            </a>
+        </td>
+        <td>
+            <a href="../fields/829.html">
+            TrdSubType
+            </a>
+        </td>
+        <td>@TrdSubTyp</td>
+        <td class="green center"></td>
+        <td>Indicates TradeSubType of Allocation. Necessary for defining groups.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/582.html">
+            582
+            </a>
+        </td>
+        <td>
+            <a href="../fields/582.html">
+            CustOrderCapacity
+            </a>
+        </td>
+        <td>@CustCpcty</td>
+        <td class="green center"></td>
+        <td>Indicates CTI of original trade marked for allocation.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/578.html">
+            578
+            </a>
+        </td>
+        <td>
+            <a href="../fields/578.html">
+            TradeInputSource
+            </a>
+        </td>
+        <td>@InptSrc</td>
+        <td class="green center"></td>
+        <td>Indicates input source of original trade marked for allocation.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/442.html">
+            442
+            </a>
+        </td>
+        <td>
+            <a href="../fields/442.html">
+            MultiLegReportingType
+            </a>
+        </td>
+        <td>@MLegRptTyp</td>
+        <td class="green center"></td>
+        <td>Indicates MultiLegReportType of original trade marked for allocation.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1011.html">
+            1011
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1011.html">
+            MessageEventSource
+            </a>
+        </td>
+        <td>@MsgEvtSrc</td>
+        <td class="green center"></td>
+        <td>Used to identify the event or source which gave rise to a message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/991.html">
+            991
+            </a>
+        </td>
+        <td>
+            <a href="../fields/991.html">
+            RndPx
+            </a>
+        </td>
+        <td>@RndPx</td>
+        <td class="green center"></td>
+        <td>Specifies the rounded price to quoted precision.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

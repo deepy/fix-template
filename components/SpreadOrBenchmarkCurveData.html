@@ -1,0 +1,222 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>SpreadOrBenchmarkCurveData [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The SpreadOrBenchmarkCurveData component block is primarily used for Fixed Income to convey spread to a benchmark security or curve.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/218.html">
+            218
+            </a>
+        </td>
+        <td>
+            <a href="../fields/218.html">
+            Spread
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td>For Fixed Income</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/220.html">
+            220
+            </a>
+        </td>
+        <td>
+            <a href="../fields/220.html">
+            BenchmarkCurveCurrency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/221.html">
+            221
+            </a>
+        </td>
+        <td>
+            <a href="../fields/221.html">
+            BenchmarkCurveName
+            </a>
+        </td>
+        <td>@Name</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/222.html">
+            222
+            </a>
+        </td>
+        <td>
+            <a href="../fields/222.html">
+            BenchmarkCurvePoint
+            </a>
+        </td>
+        <td>@Point</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/662.html">
+            662
+            </a>
+        </td>
+        <td>
+            <a href="../fields/662.html">
+            BenchmarkPrice
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/663.html">
+            663
+            </a>
+        </td>
+        <td>
+            <a href="../fields/663.html">
+            BenchmarkPriceType
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td>Must be present if BenchmarkPrice is used.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/699.html">
+            699
+            </a>
+        </td>
+        <td>
+            <a href="../fields/699.html">
+            BenchmarkSecurityID
+            </a>
+        </td>
+        <td>@SecID</td>
+        <td class="green center"></td>
+        <td>The identifier of the benchmark security, e.g. Treasury against Corporate bond.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/761.html">
+            761
+            </a>
+        </td>
+        <td>
+            <a href="../fields/761.html">
+            BenchmarkSecurityIDSource
+            </a>
+        </td>
+        <td>@SecIDSrc</td>
+        <td class="green center"></td>
+        <td>Source of BenchmarkSecurityID. If not specified, then ID Source is understood to be the same as that in the Instrument block.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

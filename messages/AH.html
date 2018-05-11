@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>RFQRequest [type 'AH']</h1>
+<p style="white-space: pre-wrap;">In tradeable and restricted tradeable quoting markets – Quote Requests are issued by counterparties interested in ascertaining the market for an instrument. Quote Requests are then distributed by the market to liquidity providers who make markets in the instrument. The RFQ Request is used by liquidity providers to indicate to the market for which instruments they are interested in receiving Quote Requests. It can be used to register interest in receiving quote requests for a single instrument or for multiple instruments</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = AH</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/644.html">
+            644
+            </a>
+        </td>
+        <td>
+            <a href="../fields/644.html">
+            RFQReqID
+            </a>
+        </td>
+        <td>@RFQReqID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of Parties (firm identification) fields defined in COMMON COMPONENTS OF APPLICATION MESSAGES</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RFQReqGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RFQReqGrp.html">
+            <b>RFQReqGrp</b>
+            </a>
+        </td>
+        <td>RFQReq</td>
+        <td class="green center">✔</td>
+        <td>Number of related symbols (instruments) in Request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/263.html">
+            263
+            </a>
+        </td>
+        <td>
+            <a href="../fields/263.html">
+            SubscriptionRequestType
+            </a>
+        </td>
+        <td>@SubReqTyp</td>
+        <td class="green center"></td>
+        <td>Used to subscribe for Quote Requests that are sent into a market</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1171.html">
+            1171
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1171.html">
+            PrivateQuote
+            </a>
+        </td>
+        <td>@PrvtQt</td>
+        <td class="green center"></td>
+        <td>Used to indicate whether a private negotiation is requested or if the response should be public. Only relevant in markets supporting both Private and Public quotes. If field is not provided in message, the model used must be bilaterally agreed.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

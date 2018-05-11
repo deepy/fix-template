@@ -1,0 +1,1318 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>UnderlyingInstrument [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The UnderlyingInstrument component block, like the Instrument component block, contains all the fields commonly used to describe a security or instrument. In the case of the UnderlyingInstrument component block it describes an instrument which underlies the primary instrument Refer to the Instrument component block comments as this component block mirrors Instrument, except for the noted fields.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/311.html">
+            311
+            </a>
+        </td>
+        <td>
+            <a href="../fields/311.html">
+            UnderlyingSymbol
+            </a>
+        </td>
+        <td>@Sym</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/312.html">
+            312
+            </a>
+        </td>
+        <td>
+            <a href="../fields/312.html">
+            UnderlyingSymbolSfx
+            </a>
+        </td>
+        <td>@Sfx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/309.html">
+            309
+            </a>
+        </td>
+        <td>
+            <a href="../fields/309.html">
+            UnderlyingSecurityID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/305.html">
+            305
+            </a>
+        </td>
+        <td>
+            <a href="../fields/305.html">
+            UnderlyingSecurityIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndSecAltIDGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndSecAltIDGrp.html">
+            <b>UndSecAltIDGrp</b>
+            </a>
+        </td>
+        <td>UndAID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/462.html">
+            462
+            </a>
+        </td>
+        <td>
+            <a href="../fields/462.html">
+            UnderlyingProduct
+            </a>
+        </td>
+        <td>@Prod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/463.html">
+            463
+            </a>
+        </td>
+        <td>
+            <a href="../fields/463.html">
+            UnderlyingCFICode
+            </a>
+        </td>
+        <td>@CFI</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/310.html">
+            310
+            </a>
+        </td>
+        <td>
+            <a href="../fields/310.html">
+            UnderlyingSecurityType
+            </a>
+        </td>
+        <td>@SecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/763.html">
+            763
+            </a>
+        </td>
+        <td>
+            <a href="../fields/763.html">
+            UnderlyingSecuritySubType
+            </a>
+        </td>
+        <td>@SubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/313.html">
+            313
+            </a>
+        </td>
+        <td>
+            <a href="../fields/313.html">
+            UnderlyingMaturityMonthYear
+            </a>
+        </td>
+        <td>@MMY</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/542.html">
+            542
+            </a>
+        </td>
+        <td>
+            <a href="../fields/542.html">
+            UnderlyingMaturityDate
+            </a>
+        </td>
+        <td>@Mat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1213.html">
+            1213
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1213.html">
+            UnderlyingMaturityTime
+            </a>
+        </td>
+        <td>@MatTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/241.html">
+            241
+            </a>
+        </td>
+        <td>
+            <a href="../fields/241.html">
+            UnderlyingCouponPaymentDate
+            </a>
+        </td>
+        <td>@CpnPmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1453.html">
+            1453
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1453.html">
+            UnderlyingRestructuringType
+            </a>
+        </td>
+        <td>@RestrctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1454.html">
+            1454
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1454.html">
+            UnderlyingSeniority
+            </a>
+        </td>
+        <td>@Snrty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1455.html">
+            1455
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1455.html">
+            UnderlyingNotionalPercentageOutstanding
+            </a>
+        </td>
+        <td>@NotlPctOut</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1456.html">
+            1456
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1456.html">
+            UnderlyingOriginalNotionalPercentageOutstanding
+            </a>
+        </td>
+        <td>@OrigNotlPctOut</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1459.html">
+            1459
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1459.html">
+            UnderlyingAttachmentPoint
+            </a>
+        </td>
+        <td>@AttchPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1460.html">
+            1460
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1460.html">
+            UnderlyingDetachmentPoint
+            </a>
+        </td>
+        <td>@DetchPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/242.html">
+            242
+            </a>
+        </td>
+        <td>
+            <a href="../fields/242.html">
+            UnderlyingIssueDate
+            </a>
+        </td>
+        <td>@Issued</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/243.html">
+            243
+            </a>
+        </td>
+        <td>
+            <a href="../fields/243.html">
+            UnderlyingRepoCollateralSecurityType
+            </a>
+        </td>
+        <td>@RepoCollSecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/244.html">
+            244
+            </a>
+        </td>
+        <td>
+            <a href="../fields/244.html">
+            UnderlyingRepurchaseTerm
+            </a>
+        </td>
+        <td>@RepoTrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/245.html">
+            245
+            </a>
+        </td>
+        <td>
+            <a href="../fields/245.html">
+            UnderlyingRepurchaseRate
+            </a>
+        </td>
+        <td>@RepoRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/246.html">
+            246
+            </a>
+        </td>
+        <td>
+            <a href="../fields/246.html">
+            UnderlyingFactor
+            </a>
+        </td>
+        <td>@Fctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/256.html">
+            256
+            </a>
+        </td>
+        <td>
+            <a href="../fields/256.html">
+            UnderlyingCreditRating
+            </a>
+        </td>
+        <td>@CrdRtg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/595.html">
+            595
+            </a>
+        </td>
+        <td>
+            <a href="../fields/595.html">
+            UnderlyingInstrRegistry
+            </a>
+        </td>
+        <td>@Rgstry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/592.html">
+            592
+            </a>
+        </td>
+        <td>
+            <a href="../fields/592.html">
+            UnderlyingCountryOfIssue
+            </a>
+        </td>
+        <td>@Ctry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/593.html">
+            593
+            </a>
+        </td>
+        <td>
+            <a href="../fields/593.html">
+            UnderlyingStateOrProvinceOfIssue
+            </a>
+        </td>
+        <td>@StOrProvnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/594.html">
+            594
+            </a>
+        </td>
+        <td>
+            <a href="../fields/594.html">
+            UnderlyingLocaleOfIssue
+            </a>
+        </td>
+        <td>@Lcl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/247.html">
+            247
+            </a>
+        </td>
+        <td>
+            <a href="../fields/247.html">
+            UnderlyingRedemptionDate
+            </a>
+        </td>
+        <td>@Redeem</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.4.4</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/316.html">
+            316
+            </a>
+        </td>
+        <td>
+            <a href="../fields/316.html">
+            UnderlyingStrikePrice
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/941.html">
+            941
+            </a>
+        </td>
+        <td>
+            <a href="../fields/941.html">
+            UnderlyingStrikeCurrency
+            </a>
+        </td>
+        <td>@StrkCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/317.html">
+            317
+            </a>
+        </td>
+        <td>
+            <a href="../fields/317.html">
+            UnderlyingOptAttribute
+            </a>
+        </td>
+        <td>@OptA</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/436.html">
+            436
+            </a>
+        </td>
+        <td>
+            <a href="../fields/436.html">
+            UnderlyingContractMultiplier
+            </a>
+        </td>
+        <td>@Mult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1437.html">
+            1437
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1437.html">
+            UnderlyingContractMultiplierUnit
+            </a>
+        </td>
+        <td>@MultTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1441.html">
+            1441
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1441.html">
+            UnderlyingFlowScheduleType
+            </a>
+        </td>
+        <td>@FlowSchedTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/998.html">
+            998
+            </a>
+        </td>
+        <td>
+            <a href="../fields/998.html">
+            UnderlyingUnitOfMeasure
+            </a>
+        </td>
+        <td>@UOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1423.html">
+            1423
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1423.html">
+            UnderlyingUnitOfMeasureQty
+            </a>
+        </td>
+        <td>@UOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1424.html">
+            1424
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1424.html">
+            UnderlyingPriceUnitOfMeasure
+            </a>
+        </td>
+        <td>@PxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1425.html">
+            1425
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1425.html">
+            UnderlyingPriceUnitOfMeasureQty
+            </a>
+        </td>
+        <td>@PxUOMQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1000.html">
+            1000
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1000.html">
+            UnderlyingTimeUnit
+            </a>
+        </td>
+        <td>@TmUnit</td>
+        <td class="green center"></td>
+        <td>Used to indicate a time unit for the contract (e.g., days, weeks, months, etc.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1419.html">
+            1419
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1419.html">
+            UnderlyingExerciseStyle
+            </a>
+        </td>
+        <td>@ExerStyle</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/435.html">
+            435
+            </a>
+        </td>
+        <td>
+            <a href="../fields/435.html">
+            UnderlyingCouponRate
+            </a>
+        </td>
+        <td>@CpnRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/308.html">
+            308
+            </a>
+        </td>
+        <td>
+            <a href="../fields/308.html">
+            UnderlyingSecurityExchange
+            </a>
+        </td>
+        <td>@Exch</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/306.html">
+            306
+            </a>
+        </td>
+        <td>
+            <a href="../fields/306.html">
+            UnderlyingIssuer
+            </a>
+        </td>
+        <td>@Issr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/362.html">
+            362
+            </a>
+        </td>
+        <td>
+            <a href="../fields/362.html">
+            EncodedUnderlyingIssuerLen
+            </a>
+        </td>
+        <td>@EncUndIssrLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/363.html">
+            363
+            </a>
+        </td>
+        <td>
+            <a href="../fields/363.html">
+            EncodedUnderlyingIssuer
+            </a>
+        </td>
+        <td>@EncUndIssr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/307.html">
+            307
+            </a>
+        </td>
+        <td>
+            <a href="../fields/307.html">
+            UnderlyingSecurityDesc
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/364.html">
+            364
+            </a>
+        </td>
+        <td>
+            <a href="../fields/364.html">
+            EncodedUnderlyingSecurityDescLen
+            </a>
+        </td>
+        <td>@EncUndSecDescLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/365.html">
+            365
+            </a>
+        </td>
+        <td>
+            <a href="../fields/365.html">
+            EncodedUnderlyingSecurityDesc
+            </a>
+        </td>
+        <td>@EncUndSecDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/877.html">
+            877
+            </a>
+        </td>
+        <td>
+            <a href="../fields/877.html">
+            UnderlyingCPProgram
+            </a>
+        </td>
+        <td>@CPPgm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/878.html">
+            878
+            </a>
+        </td>
+        <td>
+            <a href="../fields/878.html">
+            UnderlyingCPRegType
+            </a>
+        </td>
+        <td>@CPRegTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/972.html">
+            972
+            </a>
+        </td>
+        <td>
+            <a href="../fields/972.html">
+            UnderlyingAllocationPercent
+            </a>
+        </td>
+        <td>@AllocPct</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt; UnderlyingInstrument &gt; Percent of the Strike Price that this underlying represents. Necessary for derivatives that deliver into more than one underlying instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/318.html">
+            318
+            </a>
+        </td>
+        <td>
+            <a href="../fields/318.html">
+            UnderlyingCurrency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/879.html">
+            879
+            </a>
+        </td>
+        <td>
+            <a href="../fields/879.html">
+            UnderlyingQty
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+Unit amount of the underlying security (par, shares, currency, etc.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/975.html">
+            975
+            </a>
+        </td>
+        <td>
+            <a href="../fields/975.html">
+            UnderlyingSettlementType
+            </a>
+        </td>
+        <td>@SettlTyp</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt; UnderlyingInstrument &gt; Indicates order settlement period for the underlying deliverable component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/973.html">
+            973
+            </a>
+        </td>
+        <td>
+            <a href="../fields/973.html">
+            UnderlyingCashAmount
+            </a>
+        </td>
+        <td>@CashAmt</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt; UnderlyingInstrument &gt; Cash amount associated with the underlying component. Necessary for derivatives that deliver into more than one underlying instrument and one of the underlying&#39;s is a fixed cash value.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/974.html">
+            974
+            </a>
+        </td>
+        <td>
+            <a href="../fields/974.html">
+            UnderlyingCashType
+            </a>
+        </td>
+        <td>@CashTyp</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt; UnderlyingInstrument &gt; Used for derivatives that deliver into cash underlying. Indicates that the cash is either fixed or difference value (difference between strike and current underlying price)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/810.html">
+            810
+            </a>
+        </td>
+        <td>
+            <a href="../fields/810.html">
+            UnderlyingPx
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+In a financing deal clean price (percent-of-par or per unit) of the underlying security or basket.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/882.html">
+            882
+            </a>
+        </td>
+        <td>
+            <a href="../fields/882.html">
+            UnderlyingDirtyPrice
+            </a>
+        </td>
+        <td>@DirtPx</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+In a financing deal price (percent-of-par or per unit) of the underlying security or basket. &#34;Dirty&#34; means it includes accrued interest</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/883.html">
+            883
+            </a>
+        </td>
+        <td>
+            <a href="../fields/883.html">
+            UnderlyingEndPrice
+            </a>
+        </td>
+        <td>@EndPx</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+In a financing deal price (percent-of-par or per unit) of the underlying security or basket at the end of the agreement.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/884.html">
+            884
+            </a>
+        </td>
+        <td>
+            <a href="../fields/884.html">
+            UnderlyingStartValue
+            </a>
+        </td>
+        <td>@StartVal</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+Currency value attributed to this collateral at the start of the agreement</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/885.html">
+            885
+            </a>
+        </td>
+        <td>
+            <a href="../fields/885.html">
+            UnderlyingCurrentValue
+            </a>
+        </td>
+        <td>@CurVal</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+Currency value currently attributed to this collateral</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/886.html">
+            886
+            </a>
+        </td>
+        <td>
+            <a href="../fields/886.html">
+            UnderlyingEndValue
+            </a>
+        </td>
+        <td>@EndVal</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+Currency value attributed to this collateral at the end of the agreement</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingStipulations.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingStipulations.html">
+            <b>UnderlyingStipulations</b>
+            </a>
+        </td>
+        <td>Stip</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;)
+Insert here the contents of the &lt;UnderlyingStipulations&gt; Component Block</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1044.html">
+            1044
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1044.html">
+            UnderlyingAdjustedQuantity
+            </a>
+        </td>
+        <td>@AdjQty</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;). For listed derivatives margin management, this is the number of shares adjusted for upcoming corporate action. Used only for securities which are optionable and are between ex-date and settlement date (4 days).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1045.html">
+            1045
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1045.html">
+            UnderlyingFXRate
+            </a>
+        </td>
+        <td>@FxRate</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;). Foreign exchange rate used to compute UnderlyingCurrentValue (885) (or market value) from UnderlyingCurrency (318) to Currency (15).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1046.html">
+            1046
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1046.html">
+            UnderlyingFXRateCalc
+            </a>
+        </td>
+        <td>@FxRateCalc</td>
+        <td class="green center"></td>
+        <td>Specific to the &lt;UnderlyingInstrument&gt; (not in &lt;Instrument&gt;). Specified whether UnderlyingFxRate (1045) should be multiplied or divided to derive UnderlyingCurrentValue (885).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1038.html">
+            1038
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1038.html">
+            UnderlyingCapValue
+            </a>
+        </td>
+        <td>@CapValu</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndlyInstrumentParties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndlyInstrumentParties.html">
+            <b>UndlyInstrumentParties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1039.html">
+            1039
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1039.html">
+            UnderlyingSettlMethod
+            </a>
+        </td>
+        <td>@SetMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/315.html">
+            315
+            </a>
+        </td>
+        <td>
+            <a href="../fields/315.html">
+            UnderlyingPutOrCall
+            </a>
+        </td>
+        <td>@PutCall</td>
+        <td class="green center"></td>
+        <td>Used to express option right</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

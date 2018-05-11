@@ -1,0 +1,260 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>OrdAllocGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/73.html">
+            73
+            </a>
+        </td>
+        <td>
+            <a href="../fields/73.html">
+            NoOrders
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Indicates number of orders to be combined for allocation. If order(s) were manually delivered set to 1 (one).Required when AllocNoOrdersType = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/11.html">
+            11
+            </a>
+        </td>
+        <td>
+            <a href="../fields/11.html">
+            ClOrdID
+            </a>
+        </td>
+        <td>@ClOrdID</td>
+        <td class="green center"></td>
+        <td>Order identifier assigned by client if order(s) were electronically delivered over FIX (or otherwise assigned a ClOrdID) and executed. If order(s) were manually delivered (or otherwise not delivered over FIX) this field should contain string &#34;MANUAL&#34;. Note where an order has undergone one or more cancel/replaces, this should be the ClOrdID of the most recent version of the order.
+Required when NoOrders(73) &gt; 0 and must be the first repeating field in the group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/37.html">
+            37
+            </a>
+        </td>
+        <td>
+            <a href="../fields/37.html">
+            OrderID
+            </a>
+        </td>
+        <td>@OrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/198.html">
+            198
+            </a>
+        </td>
+        <td>
+            <a href="../fields/198.html">
+            SecondaryOrderID
+            </a>
+        </td>
+        <td>@OrdID2</td>
+        <td class="green center"></td>
+        <td>Can be used to provide order id used by exchange or executing system.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/526.html">
+            526
+            </a>
+        </td>
+        <td>
+            <a href="../fields/526.html">
+            SecondaryClOrdID
+            </a>
+        </td>
+        <td>@ClOrdID2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/66.html">
+            66
+            </a>
+        </td>
+        <td>
+            <a href="../fields/66.html">
+            ListID
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center"></td>
+        <td>Required for List Orders.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NestedParties2.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/NestedParties2.html">
+            <b>NestedParties2</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;NestedParties2&#34; fields defined in &#34;Common Components of Application Messages&#34;
+This is used to identify the executing broker for step in/give in trades</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/38.html">
+            38
+            </a>
+        </td>
+        <td>
+            <a href="../fields/38.html">
+            OrderQty
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/799.html">
+            799
+            </a>
+        </td>
+        <td>
+            <a href="../fields/799.html">
+            OrderAvgPx
+            </a>
+        </td>
+        <td>@AvgPx</td>
+        <td class="green center"></td>
+        <td>Average price for this order.
+For FX, if specified, expressed in terms of Currency(15).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/800.html">
+            800
+            </a>
+        </td>
+        <td>
+            <a href="../fields/800.html">
+            OrderBookingQty
+            </a>
+        </td>
+        <td>@BkngQty</td>
+        <td class="green center"></td>
+        <td>Quantity of this order that is being booked out by this message (will be equal to or less than this order&#39;s OrderQty)
+Note that the sum of the OrderBookingQty values in this repeating group must equal the total quantity being allocated (in Quantity (53) field)</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

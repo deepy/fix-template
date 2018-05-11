@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>TickRules [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1205.html">
+            1205
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1205.html">
+            NoTickRules
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Number of tick rules. This block specifies the rules for determining how a security ticks, i.e. the price increments at which it can be quoted and traded, depending on the current price of the security.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1206.html">
+            1206
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1206.html">
+            StartTickPriceRange
+            </a>
+        </td>
+        <td>@StartTickPxRng</td>
+        <td class="green center"></td>
+        <td>Starting price range for specified tick increment</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1207.html">
+            1207
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1207.html">
+            EndTickPriceRange
+            </a>
+        </td>
+        <td>@EndTickPxRng</td>
+        <td class="green center"></td>
+        <td>Ending price range for the specified tick increment</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1208.html">
+            1208
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1208.html">
+            TickIncrement
+            </a>
+        </td>
+        <td>@TickIncr</td>
+        <td class="green center"></td>
+        <td>Tick increment for stated price range. Specifies the valid price increments at which a security can be quoted and traded</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1209.html">
+            1209
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1209.html">
+            TickRuleType
+            </a>
+        </td>
+        <td>@TickRuleTyp</td>
+        <td class="green center"></td>
+        <td>Specifies the type of tick rule which is being described</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,494 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>TradingSessionStatus [type 'h']</h1>
+<p style="white-space: pre-wrap;">The Trading Session Status provides information on the status of a market. For markets multiple trading sessions on multiple-markets occurring (morning and evening sessions for instance), this message is able to provide information on what products are trading on what market during what trading session.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = h (lowercase)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>ApplicationSequenceControl</b>
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/335.html">
+            335
+            </a>
+        </td>
+        <td>
+            <a href="../fields/335.html">
+            TradSesReqID
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Provided for a response to a specific Trading Session Status Request message (snapshot).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1301.html">
+            1301
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1301.html">
+            MarketID
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td>Market for which Trading Session applies</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            1300
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            MarketSegmentID
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td>Market Segment for which Trading Session applies</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            336
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            TradingSessionID
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center">✔</td>
+        <td>Identifier for Trading Session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            625
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            TradingSessionSubID
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/338.html">
+            338
+            </a>
+        </td>
+        <td>
+            <a href="../fields/338.html">
+            TradSesMethod
+            </a>
+        </td>
+        <td>@Method</td>
+        <td class="green center"></td>
+        <td>Method of trading:</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/339.html">
+            339
+            </a>
+        </td>
+        <td>
+            <a href="../fields/339.html">
+            TradSesMode
+            </a>
+        </td>
+        <td>@Mode</td>
+        <td class="green center"></td>
+        <td>Trading Session Mode</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/325.html">
+            325
+            </a>
+        </td>
+        <td>
+            <a href="../fields/325.html">
+            UnsolicitedIndicator
+            </a>
+        </td>
+        <td>@Unsol</td>
+        <td class="green center"></td>
+        <td>Set to &#39;Y&#39; if message is sent unsolicited as a result of a previous subscription request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/340.html">
+            340
+            </a>
+        </td>
+        <td>
+            <a href="../fields/340.html">
+            TradSesStatus
+            </a>
+        </td>
+        <td>@Stat</td>
+        <td class="green center">✔</td>
+        <td>State of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1368.html">
+            1368
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1368.html">
+            TradSesEvent
+            </a>
+        </td>
+        <td>@TradSesEvent</td>
+        <td class="green center"></td>
+        <td>Identifies an event related to the trading status of a trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/567.html">
+            567
+            </a>
+        </td>
+        <td>
+            <a href="../fields/567.html">
+            TradSesStatusRejReason
+            </a>
+        </td>
+        <td>@StatRejRsn</td>
+        <td class="green center"></td>
+        <td>Use with TradSesStatus = &#34;Request Rejected&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/341.html">
+            341
+            </a>
+        </td>
+        <td>
+            <a href="../fields/341.html">
+            TradSesStartTime
+            </a>
+        </td>
+        <td>@StartTm</td>
+        <td class="green center"></td>
+        <td>Starting time of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/342.html">
+            342
+            </a>
+        </td>
+        <td>
+            <a href="../fields/342.html">
+            TradSesOpenTime
+            </a>
+        </td>
+        <td>@OpenTm</td>
+        <td class="green center"></td>
+        <td>Time of the opening of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/343.html">
+            343
+            </a>
+        </td>
+        <td>
+            <a href="../fields/343.html">
+            TradSesPreCloseTime
+            </a>
+        </td>
+        <td>@PreClsTm</td>
+        <td class="green center"></td>
+        <td>Time of the pre-close of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/344.html">
+            344
+            </a>
+        </td>
+        <td>
+            <a href="../fields/344.html">
+            TradSesCloseTime
+            </a>
+        </td>
+        <td>@ClsTm</td>
+        <td class="green center"></td>
+        <td>Closing time of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/345.html">
+            345
+            </a>
+        </td>
+        <td>
+            <a href="../fields/345.html">
+            TradSesEndTime
+            </a>
+        </td>
+        <td>@EndTm</td>
+        <td class="green center"></td>
+        <td>End time of the trading session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/387.html">
+            387
+            </a>
+        </td>
+        <td>
+            <a href="../fields/387.html">
+            TotalVolumeTraded
+            </a>
+        </td>
+        <td>@TotVolTrdd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

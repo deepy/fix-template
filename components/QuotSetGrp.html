@@ -1,0 +1,206 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>QuotSetGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/296.html">
+            296
+            </a>
+        </td>
+        <td>
+            <a href="../fields/296.html">
+            NoQuoteSets
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>The number of sets of quotes in the message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/302.html">
+            302
+            </a>
+        </td>
+        <td>
+            <a href="../fields/302.html">
+            QuoteSetID
+            </a>
+        </td>
+        <td>@SetID</td>
+        <td class="green center">✔</td>
+        <td>Sequential number for the Quote Set. For a given QuoteID - assumed to start at 1.
+Must be the first field in the repeating group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingInstrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingInstrument.html">
+            <b>UnderlyingInstrument</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;UnderlyingInstrument&#34; (underlying symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/367.html">
+            367
+            </a>
+        </td>
+        <td>
+            <a href="../fields/367.html">
+            QuoteSetValidUntilTime
+            </a>
+        </td>
+        <td>@ValidTil</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/304.html">
+            304
+            </a>
+        </td>
+        <td>
+            <a href="../fields/304.html">
+            TotNoQuoteEntries
+            </a>
+        </td>
+        <td>@TotNoQuotEntries</td>
+        <td class="green center">✔</td>
+        <td>Total number of quotes for the quote set across all messages. Should be the sum of all NoQuoteEntries in each message that has repeating quotes that are part of the same quote set.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            893
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            LastFragment
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/QuotEntryGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/QuotEntryGrp.html">
+            <b>QuotEntryGrp</b>
+            </a>
+        </td>
+        <td>QuotEntry</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

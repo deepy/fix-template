@@ -1,0 +1,206 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>StrikeRules [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1201.html">
+            1201
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1201.html">
+            NoStrikeRules
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Number of strike rule entries. This block specifies the rules for determining how new strikes should be listed within the stated price range of the underlying instrument</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1223.html">
+            1223
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1223.html">
+            StrikeRuleID
+            </a>
+        </td>
+        <td>@StrkRule</td>
+        <td class="green center"></td>
+        <td>Allows strike rule to be referenced via an identifier so that rules do not need to be explicitly enumerated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1202.html">
+            1202
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1202.html">
+            StartStrikePxRange
+            </a>
+        </td>
+        <td>@StartStrkPxRng</td>
+        <td class="green center"></td>
+        <td>Starting price for the range to which the StrikeIncrement applies. Price refers to the price of the underlying</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1203.html">
+            1203
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1203.html">
+            EndStrikePxRange
+            </a>
+        </td>
+        <td>@EndStrkPxRng</td>
+        <td class="green center"></td>
+        <td>Ending price of the range to which the StrikeIncrement applies. Price refers to the price of the underlying</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1204.html">
+            1204
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1204.html">
+            StrikeIncrement
+            </a>
+        </td>
+        <td>@StrkIncr</td>
+        <td class="green center"></td>
+        <td>Value by which strike price should be incremented within the specified price</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1304.html">
+            1304
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1304.html">
+            StrikeExerciseStyle
+            </a>
+        </td>
+        <td>@StrkExrStyle</td>
+        <td class="green center"></td>
+        <td>Enumeration that represents the exercise style for a class of options
+Same values as ExerciseStyle</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MaturityRules.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/MaturityRules.html">
+            <b>MaturityRules</b>
+            </a>
+        </td>
+        <td>MatRules</td>
+        <td class="green center"></td>
+        <td>Describes the maturity rules for a given set of strikes as defined by StrikeRules</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

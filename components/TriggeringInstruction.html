@@ -1,0 +1,341 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>TriggeringInstruction [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The TriggeringInstruction component block specifies the conditions under which an order will be triggered by related market events as well as the behavior of the order in the market once it is triggered.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1100.html">
+            1100
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1100.html">
+            TriggerType
+            </a>
+        </td>
+        <td>@TrgrTyp</td>
+        <td class="green center"></td>
+        <td>Required if any other Triggering tags are specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1101.html">
+            1101
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1101.html">
+            TriggerAction
+            </a>
+        </td>
+        <td>@TrgrActn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1102.html">
+            1102
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1102.html">
+            TriggerPrice
+            </a>
+        </td>
+        <td>@TrgrPx</td>
+        <td class="green center"></td>
+        <td>Only relevant and required for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1103.html">
+            1103
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1103.html">
+            TriggerSymbol
+            </a>
+        </td>
+        <td>@TrgrSym</td>
+        <td class="green center"></td>
+        <td>Only relevant and required for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1104.html">
+            1104
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1104.html">
+            TriggerSecurityID
+            </a>
+        </td>
+        <td>@TrgrSecID</td>
+        <td class="green center"></td>
+        <td>Requires TriggerSecurityIDSource if specified. Only relevant and required for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1105.html">
+            1105
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1105.html">
+            TriggerSecurityIDSource
+            </a>
+        </td>
+        <td>@TrgrSecIDSrc</td>
+        <td class="green center"></td>
+        <td>Requires TriggerSecurityIDSource if specified. Only relevant and required for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1106.html">
+            1106
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1106.html">
+            TriggerSecurityDesc
+            </a>
+        </td>
+        <td>@TrgrSecDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1107.html">
+            1107
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1107.html">
+            TriggerPriceType
+            </a>
+        </td>
+        <td>@TrgrPxTyp</td>
+        <td class="green center"></td>
+        <td>Only relevant for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1108.html">
+            1108
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1108.html">
+            TriggerPriceTypeScope
+            </a>
+        </td>
+        <td>@TrgrPxTypScp</td>
+        <td class="green center"></td>
+        <td>Only relevant for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1109.html">
+            1109
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1109.html">
+            TriggerPriceDirection
+            </a>
+        </td>
+        <td>@TrgrPxDir</td>
+        <td class="green center"></td>
+        <td>Only relevant for TriggerAction = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1110.html">
+            1110
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1110.html">
+            TriggerNewPrice
+            </a>
+        </td>
+        <td>@TrgrNewPx</td>
+        <td class="green center"></td>
+        <td>Should be specified if the order changes Price.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1111.html">
+            1111
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1111.html">
+            TriggerOrderType
+            </a>
+        </td>
+        <td>@TrgrOrdTyp</td>
+        <td class="green center"></td>
+        <td>Should be specified if the order changes type.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1112.html">
+            1112
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1112.html">
+            TriggerNewQty
+            </a>
+        </td>
+        <td>@TrgrNewQty</td>
+        <td class="green center"></td>
+        <td>Required if the order should change quantity</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1113.html">
+            1113
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1113.html">
+            TriggerTradingSessionID
+            </a>
+        </td>
+        <td>@TrgrTrdSessID</td>
+        <td class="green center"></td>
+        <td>Only relevant and required for TriggerType = 2.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1114.html">
+            1114
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1114.html">
+            TriggerTradingSessionSubID
+            </a>
+        </td>
+        <td>@TrgrTrdSessSubID</td>
+        <td class="green center"></td>
+        <td>Requires TriggerTradingSessionID if specified. Relevant for TriggerType = 2 only.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

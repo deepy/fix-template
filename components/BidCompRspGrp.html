@@ -1,0 +1,358 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>BidCompRspGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/420.html">
+            420
+            </a>
+        </td>
+        <td>
+            <a href="../fields/420.html">
+            NoBidComponents
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>Number of bid repeating groups</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CommissionData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/CommissionData.html">
+            <b>CommissionData</b>
+            </a>
+        </td>
+        <td>Comm</td>
+        <td class="green center">✔</td>
+        <td>First element Commission required if NoBidComponents &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/66.html">
+            66
+            </a>
+        </td>
+        <td>
+            <a href="../fields/66.html">
+            ListID
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/421.html">
+            421
+            </a>
+        </td>
+        <td>
+            <a href="../fields/421.html">
+            Country
+            </a>
+        </td>
+        <td>@Ctry</td>
+        <td class="green center"></td>
+        <td>ISO Country Code</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            54
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            Side
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center"></td>
+        <td>When used in response to a &#34;Disclosed&#34; request indicates whether SideValue1 is Buy or Sell. SideValue2 can be derived by inference.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/44.html">
+            44
+            </a>
+        </td>
+        <td>
+            <a href="../fields/44.html">
+            Price
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td>Second element of price</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            423
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            PriceType
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/406.html">
+            406
+            </a>
+        </td>
+        <td>
+            <a href="../fields/406.html">
+            FairValue
+            </a>
+        </td>
+        <td>@FairValu</td>
+        <td class="green center"></td>
+        <td>The difference between the value of a future and the value of the underlying equities after allowing for the discounted cash flows associated with the underlying stocks (E.g. Dividends etc).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/430.html">
+            430
+            </a>
+        </td>
+        <td>
+            <a href="../fields/430.html">
+            NetGrossInd
+            </a>
+        </td>
+        <td>@NetGrossInd</td>
+        <td class="green center"></td>
+        <td>Net/Gross</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/63.html">
+            63
+            </a>
+        </td>
+        <td>
+            <a href="../fields/63.html">
+            SettlType
+            </a>
+        </td>
+        <td>@SettlTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/64.html">
+            64
+            </a>
+        </td>
+        <td>
+            <a href="../fields/64.html">
+            SettlDate
+            </a>
+        </td>
+        <td>@SettlDt</td>
+        <td class="green center"></td>
+        <td>Takes precedence over SettlType value and conditionally required/omitted for specific SettlType values.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            336
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            TradingSessionID
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            625
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            TradingSessionSubID
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

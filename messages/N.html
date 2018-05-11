@@ -1,0 +1,358 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>ListStatus [type 'N']</h1>
+<p style="white-space: pre-wrap;">The list status message is issued as the response to a List Status Request message sent in an unsolicited fashion by the sell-side. It indicates the current state of the orders within the list as they exist at the broker&#39;s site. This message may also be used to respond to the List Cancel Request.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = N</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/66.html">
+            66
+            </a>
+        </td>
+        <td>
+            <a href="../fields/66.html">
+            ListID
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/429.html">
+            429
+            </a>
+        </td>
+        <td>
+            <a href="../fields/429.html">
+            ListStatusType
+            </a>
+        </td>
+        <td>@ListStatTyp</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/82.html">
+            82
+            </a>
+        </td>
+        <td>
+            <a href="../fields/82.html">
+            NoRpts
+            </a>
+        </td>
+        <td>@NoRpts</td>
+        <td class="green center">✔</td>
+        <td>Total number of messages required to status complete list.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/431.html">
+            431
+            </a>
+        </td>
+        <td>
+            <a href="../fields/431.html">
+            ListOrderStatus
+            </a>
+        </td>
+        <td>@ListOrdStat</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1385.html">
+            1385
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1385.html">
+            ContingencyType
+            </a>
+        </td>
+        <td>@ContingencyType</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1386.html">
+            1386
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1386.html">
+            ListRejectReason
+            </a>
+        </td>
+        <td>@ListRejectReason</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/83.html">
+            83
+            </a>
+        </td>
+        <td>
+            <a href="../fields/83.html">
+            RptSeq
+            </a>
+        </td>
+        <td>@RptSeq</td>
+        <td class="green center">✔</td>
+        <td>Sequence number of this report message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/444.html">
+            444
+            </a>
+        </td>
+        <td>
+            <a href="../fields/444.html">
+            ListStatusText
+            </a>
+        </td>
+        <td>@ListStatText</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/445.html">
+            445
+            </a>
+        </td>
+        <td>
+            <a href="../fields/445.html">
+            EncodedListStatusTextLen
+            </a>
+        </td>
+        <td>@EncListStatTextLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedListStatusText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/446.html">
+            446
+            </a>
+        </td>
+        <td>
+            <a href="../fields/446.html">
+            EncodedListStatusText
+            </a>
+        </td>
+        <td>@EncListStatText</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the ListStatusText field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/68.html">
+            68
+            </a>
+        </td>
+        <td>
+            <a href="../fields/68.html">
+            TotNoOrders
+            </a>
+        </td>
+        <td>@TotNoOrds</td>
+        <td class="green center">✔</td>
+        <td>Used to support fragmentation. Sum of NoOrders across all messages with the same ListID.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            893
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            LastFragment
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrdListStatGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrdListStatGrp.html">
+            <b>OrdListStatGrp</b>
+            </a>
+        </td>
+        <td>ListStat</td>
+        <td class="green center">✔</td>
+        <td>Number of orders statused in this message, i.e. number of repeating groups to follow.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

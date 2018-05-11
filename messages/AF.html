@@ -1,0 +1,307 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>OrderMassStatusRequest [type 'AF']</h1>
+<p style="white-space: pre-wrap;">The order mass status request message requests the status for orders matching criteria specified within the request.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = AF</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/584.html">
+            584
+            </a>
+        </td>
+        <td>
+            <a href="../fields/584.html">
+            MassStatusReqID
+            </a>
+        </td>
+        <td>@MassStatReqID</td>
+        <td class="green center">✔</td>
+        <td>Unique ID of mass status request as assigned by the institution.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/585.html">
+            585
+            </a>
+        </td>
+        <td>
+            <a href="../fields/585.html">
+            MassStatusReqType
+            </a>
+        </td>
+        <td>@MassStatReqTyp</td>
+        <td class="green center">✔</td>
+        <td>Specifies the scope of the mass status request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TargetParties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TargetParties.html">
+            <b>TargetParties</b>
+            </a>
+        </td>
+        <td>TgtPty</td>
+        <td class="green center"></td>
+        <td>Can be used to specify the parties to whom the Order Mass Status Request should apply.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1.html">
+            1
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1.html">
+            Account
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td>Account</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/660.html">
+            660
+            </a>
+        </td>
+        <td>
+            <a href="../fields/660.html">
+            AcctIDSource
+            </a>
+        </td>
+        <td>@AcctIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            336
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            TradingSessionID
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td>Trading Session</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            625
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            TradingSessionSubID
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Instrument&#34; (symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingInstrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingInstrument.html">
+            <b>UnderlyingInstrument</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;UnderlyingInstrument&#34; (underlying symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            54
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            Side
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center"></td>
+        <td>Optional qualifier used to indicate the side of the market for which orders will be returned.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

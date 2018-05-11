@@ -1,0 +1,307 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>BaseTradingRules [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TickRules.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TickRules.html">
+            <b>TickRules</b>
+            </a>
+        </td>
+        <td>TickRules</td>
+        <td class="green center"></td>
+        <td>This block specifies the rules for determining how a security ticks, i.e. the price increments at which it can be quoted and traded, depending on the current price of the security</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LotTypeRules.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/LotTypeRules.html">
+            <b>LotTypeRules</b>
+            </a>
+        </td>
+        <td>LotTypeRules</td>
+        <td class="green center"></td>
+        <td>Specifies the lot types that are valid for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PriceLimits.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PriceLimits.html">
+            <b>PriceLimits</b>
+            </a>
+        </td>
+        <td>PxLmts</td>
+        <td class="green center"></td>
+        <td>Specifies the price limits that are valid for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/827.html">
+            827
+            </a>
+        </td>
+        <td>
+            <a href="../fields/827.html">
+            ExpirationCycle
+            </a>
+        </td>
+        <td>@ExpirationCycle</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/562.html">
+            562
+            </a>
+        </td>
+        <td>
+            <a href="../fields/562.html">
+            MinTradeVol
+            </a>
+        </td>
+        <td>@MinTrdVol</td>
+        <td class="green center"></td>
+        <td>The minimum order quantity that can be submitted for an order.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1140.html">
+            1140
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1140.html">
+            MaxTradeVol
+            </a>
+        </td>
+        <td>@MaxTrdVol</td>
+        <td class="green center"></td>
+        <td>The maximum order quantity that can be submitted for a security. For listed derivatives this indicates the minimum quantity necessary for an order or trade to qualify as a block trade</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1143.html">
+            1143
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1143.html">
+            MaxPriceVariation
+            </a>
+        </td>
+        <td>@MxPxVar</td>
+        <td class="green center"></td>
+        <td>The maximum price variation of an execution from one event to the next for a given security. Expressed in absolute price terms.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1144.html">
+            1144
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1144.html">
+            ImpliedMarketIndicator
+            </a>
+        </td>
+        <td>@ImpldMktInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1245.html">
+            1245
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1245.html">
+            TradingCurrency
+            </a>
+        </td>
+        <td>@TrdCcy</td>
+        <td class="green center"></td>
+        <td>Used when the trading currency can differ from the price currency</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/561.html">
+            561
+            </a>
+        </td>
+        <td>
+            <a href="../fields/561.html">
+            RoundLot
+            </a>
+        </td>
+        <td>@RndLot</td>
+        <td class="green center"></td>
+        <td>Trading lot size of security</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1377.html">
+            1377
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1377.html">
+            MultilegModel
+            </a>
+        </td>
+        <td>@MlegModel</td>
+        <td class="green center"></td>
+        <td>Used for multileg security only. Defines whether the security is pre-defined or user-defined. Not that value = 2 (User-defined, Non-Securitized, Multileg) does not apply for Securities.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1378.html">
+            1378
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1378.html">
+            MultilegPriceMethod
+            </a>
+        </td>
+        <td>@MlegPxMeth</td>
+        <td class="green center"></td>
+        <td>Used for multileg security only. Defines the method used when applying the multileg price to the legs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            423
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            PriceType
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td>Defines the default Price Type used for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

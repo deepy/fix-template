@@ -1,0 +1,341 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>ConfirmationRequest [type 'BH']</h1>
+<p style="white-space: pre-wrap;">The Confirmation Request message is used to request a Confirmation message.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = BH</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/859.html">
+            859
+            </a>
+        </td>
+        <td>
+            <a href="../fields/859.html">
+            ConfirmReqID
+            </a>
+        </td>
+        <td>@CnfmReqID</td>
+        <td class="green center">✔</td>
+        <td>Unique identifier for this message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/773.html">
+            773
+            </a>
+        </td>
+        <td>
+            <a href="../fields/773.html">
+            ConfirmType
+            </a>
+        </td>
+        <td>@CnfmTyp</td>
+        <td class="green center">✔</td>
+        <td>Denotes whether this message is being used to request a confirmation or a trade status message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrdAllocGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrdAllocGrp.html">
+            <b>OrdAllocGrp</b>
+            </a>
+        </td>
+        <td>OrdAlloc</td>
+        <td class="green center"></td>
+        <td>Indicates number of orders to be combined for allocation. If order(s) were manually delivered set to 1 (one).Required when AllocNoOrdersType = 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/70.html">
+            70
+            </a>
+        </td>
+        <td>
+            <a href="../fields/70.html">
+            AllocID
+            </a>
+        </td>
+        <td>@AllocID</td>
+        <td class="green center"></td>
+        <td>Used to refer to an earlier Allocation Instruction.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/793.html">
+            793
+            </a>
+        </td>
+        <td>
+            <a href="../fields/793.html">
+            SecondaryAllocID
+            </a>
+        </td>
+        <td>@AllocID2</td>
+        <td class="green center"></td>
+        <td>Used to refer to an earlier Allocation Instruction via its secondary identifier</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/467.html">
+            467
+            </a>
+        </td>
+        <td>
+            <a href="../fields/467.html">
+            IndividualAllocID
+            </a>
+        </td>
+        <td>@IndAllocID</td>
+        <td class="green center"></td>
+        <td>Used to refer to an allocation account within an earlier Allocation Instruction.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center">✔</td>
+        <td>Represents the time this message was generated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/79.html">
+            79
+            </a>
+        </td>
+        <td>
+            <a href="../fields/79.html">
+            AllocAccount
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td>Account number for the trade being confirmed by this message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/661.html">
+            661
+            </a>
+        </td>
+        <td>
+            <a href="../fields/661.html">
+            AllocAcctIDSource
+            </a>
+        </td>
+        <td>@ActIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/798.html">
+            798
+            </a>
+        </td>
+        <td>
+            <a href="../fields/798.html">
+            AllocAccountType
+            </a>
+        </td>
+        <td>@AcctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

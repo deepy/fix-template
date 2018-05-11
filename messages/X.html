@@ -1,0 +1,273 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>MarketDataIncrementalRefresh [type 'X']</h1>
+<p style="white-space: pre-wrap;">The Market Data message for incremental updates may contain any combination of new, changed, or deleted Market Data Entries, for any combination of instruments, with any combination of trades, imbalances, quotes, index values, open, close, settlement, high, low, and VWAP prices, trade volume and open interest so long as the maximum FIX message size is not exceeded. All of these types of Market Data Entries can be changed and deleted.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = X</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>ApplicationSequenceControl</b>
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1021.html">
+            1021
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1021.html">
+            MDBookType
+            </a>
+        </td>
+        <td>@MDBkTyp</td>
+        <td class="green center"></td>
+        <td>Describes the type of book for which the feed is intended. Can be used when multiple feeds are provided over the same connection</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1022.html">
+            1022
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1022.html">
+            MDFeedType
+            </a>
+        </td>
+        <td>@MDFeedTyp</td>
+        <td class="green center"></td>
+        <td>Describes a class of service for a given data feed, ie Regular and Market Maker</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            75
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            TradeDate
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td>Used to specify the trading date for which a set of market data applies</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/262.html">
+            262
+            </a>
+        </td>
+        <td>
+            <a href="../fields/262.html">
+            MDReqID
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Conditionally required if this message is in response to a Market Data Request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MDIncGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/MDIncGrp.html">
+            <b>MDIncGrp</b>
+            </a>
+        </td>
+        <td>Inc</td>
+        <td class="green center">✔</td>
+        <td>Number of entries following.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/813.html">
+            813
+            </a>
+        </td>
+        <td>
+            <a href="../fields/813.html">
+            ApplQueueDepth
+            </a>
+        </td>
+        <td>@ApplQuDepth</td>
+        <td class="green center"></td>
+        <td>Depth of application messages queued for transmission as of delivery of this message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/814.html">
+            814
+            </a>
+        </td>
+        <td>
+            <a href="../fields/814.html">
+            ApplQueueResolution
+            </a>
+        </td>
+        <td>@ApplQuResolution</td>
+        <td class="green center"></td>
+        <td>Action taken to resolve application queuing</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RoutingGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RoutingGrp.html">
+            <b>RoutingGrp</b>
+            </a>
+        </td>
+        <td>Rtg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

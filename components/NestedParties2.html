@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>NestedParties2 [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The NestedParties2 component block is identical to the Parties Block. It is used in other component blocks and repeating groups when nesting will take place resulting in multiple occurrences of the Parties block within a single FIX message.. Use of NestedParties2 under these conditions avoids multiple references to the Parties block within the same message which is not allowed in FIX tag/value syntax.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/756.html">
+            756
+            </a>
+        </td>
+        <td>
+            <a href="../fields/756.html">
+            NoNested2PartyIDs
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Repeating group below should contain unique combinations of Nested2PartyID, Nested2PartyIDSource, and Nested2PartyRole</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/757.html">
+            757
+            </a>
+        </td>
+        <td>
+            <a href="../fields/757.html">
+            Nested2PartyID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Used to identify source of Nested2PartyID. Required if Nested2PartyIDSource is specified. Required if NoNested2PartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/758.html">
+            758
+            </a>
+        </td>
+        <td>
+            <a href="../fields/758.html">
+            Nested2PartyIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Used to identify class source of Nested2PartyID value (e.g. BIC). Required if Nested2PartyID is specified. Required if NoNested2PartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/759.html">
+            759
+            </a>
+        </td>
+        <td>
+            <a href="../fields/759.html">
+            Nested2PartyRole
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Identifies the type of Nested2PartyID (e.g. Executing Broker). Required if NoNested2PartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NstdPtys2SubGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/NstdPtys2SubGrp.html">
+            <b>NstdPtys2SubGrp</b>
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td>Repeating group of Nested2Party sub-identifiers.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>SettlParties [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The SettlParties component block is used in a similar manner as Parties Block within the context of settlement instruction messages to distinguish between parties involved in the settlement and parties who are expected to execute the settlement process.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/781.html">
+            781
+            </a>
+        </td>
+        <td>
+            <a href="../fields/781.html">
+            NoSettlPartyIDs
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Repeating group below should contain unique combinations of SettlPartyID, SettlPartyIDSource, and SettlPartyRole</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/782.html">
+            782
+            </a>
+        </td>
+        <td>
+            <a href="../fields/782.html">
+            SettlPartyID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Used to identify source of SettlPartyID. Required if SettlPartyIDSource is specified. Required if NoSettlPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/783.html">
+            783
+            </a>
+        </td>
+        <td>
+            <a href="../fields/783.html">
+            SettlPartyIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Used to identify class source of SettlPartyID value (e.g. BIC). Required if SettlPartyID is specified. Required if NoSettlPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/784.html">
+            784
+            </a>
+        </td>
+        <td>
+            <a href="../fields/784.html">
+            SettlPartyRole
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Identifies the type of SettlPartyID (e.g. Executing Broker). Required if NoSettlPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SettlPtysSubGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SettlPtysSubGrp.html">
+            <b>SettlPtysSubGrp</b>
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td>Repeating group of SettlParty sub-identifiers.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

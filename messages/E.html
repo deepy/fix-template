@@ -1,0 +1,477 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>NewOrderList [type 'E']</h1>
+<p style="white-space: pre-wrap;">The NewOrderList Message can be used in one of two ways depending on which market conventions are being followed.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = E</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/66.html">
+            66
+            </a>
+        </td>
+        <td>
+            <a href="../fields/66.html">
+            ListID
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center">✔</td>
+        <td>Must be unique, by customer, for the day</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/390.html">
+            390
+            </a>
+        </td>
+        <td>
+            <a href="../fields/390.html">
+            BidID
+            </a>
+        </td>
+        <td>@BidID</td>
+        <td class="green center"></td>
+        <td>Should refer to an earlier program if bidding took place.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/391.html">
+            391
+            </a>
+        </td>
+        <td>
+            <a href="../fields/391.html">
+            ClientBidID
+            </a>
+        </td>
+        <td>@ClBidID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/414.html">
+            414
+            </a>
+        </td>
+        <td>
+            <a href="../fields/414.html">
+            ProgRptReqs
+            </a>
+        </td>
+        <td>@ProgRptReqs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/394.html">
+            394
+            </a>
+        </td>
+        <td>
+            <a href="../fields/394.html">
+            BidType
+            </a>
+        </td>
+        <td>@BidTyp</td>
+        <td class="green center">✔</td>
+        <td>e.g. Non Disclosed Model, Disclosed Model, No Bidding Process</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/415.html">
+            415
+            </a>
+        </td>
+        <td>
+            <a href="../fields/415.html">
+            ProgPeriodInterval
+            </a>
+        </td>
+        <td>@ProgPeriodIntvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/480.html">
+            480
+            </a>
+        </td>
+        <td>
+            <a href="../fields/480.html">
+            CancellationRights
+            </a>
+        </td>
+        <td>@CxllationRights</td>
+        <td class="green center"></td>
+        <td>For CIV - Optional</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/481.html">
+            481
+            </a>
+        </td>
+        <td>
+            <a href="../fields/481.html">
+            MoneyLaunderingStatus
+            </a>
+        </td>
+        <td>@MnyLaunderingStat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/513.html">
+            513
+            </a>
+        </td>
+        <td>
+            <a href="../fields/513.html">
+            RegistID
+            </a>
+        </td>
+        <td>@RegistID</td>
+        <td class="green center"></td>
+        <td>Reference to Registration Instructions message applicable to all Orders in this List.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/433.html">
+            433
+            </a>
+        </td>
+        <td>
+            <a href="../fields/433.html">
+            ListExecInstType
+            </a>
+        </td>
+        <td>@ListExecInstTyp</td>
+        <td class="green center"></td>
+        <td>Controls when execution should begin For CIV Orders indicates order of execution..</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/69.html">
+            69
+            </a>
+        </td>
+        <td>
+            <a href="../fields/69.html">
+            ListExecInst
+            </a>
+        </td>
+        <td>@ListExecInst</td>
+        <td class="green center"></td>
+        <td>Free-form text.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1385.html">
+            1385
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1385.html">
+            ContingencyType
+            </a>
+        </td>
+        <td>@ContingencyType</td>
+        <td class="green center"></td>
+        <td>Used for contingency orders.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/352.html">
+            352
+            </a>
+        </td>
+        <td>
+            <a href="../fields/352.html">
+            EncodedListExecInstLen
+            </a>
+        </td>
+        <td>@EncListExecInstLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedListExecInst field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/353.html">
+            353
+            </a>
+        </td>
+        <td>
+            <a href="../fields/353.html">
+            EncodedListExecInst
+            </a>
+        </td>
+        <td>@EncListExecInst</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the ListExecInst field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/765.html">
+            765
+            </a>
+        </td>
+        <td>
+            <a href="../fields/765.html">
+            AllowableOneSidednessPct
+            </a>
+        </td>
+        <td>@AOSPct</td>
+        <td class="green center"></td>
+        <td>The maximum percentage that execution of one side of a program trade can exceed execution of the other.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/766.html">
+            766
+            </a>
+        </td>
+        <td>
+            <a href="../fields/766.html">
+            AllowableOneSidednessValue
+            </a>
+        </td>
+        <td>@AOSValu</td>
+        <td class="green center"></td>
+        <td>The maximum amount that execution of one side of a program trade can exceed execution of the other.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/767.html">
+            767
+            </a>
+        </td>
+        <td>
+            <a href="../fields/767.html">
+            AllowableOneSidednessCurr
+            </a>
+        </td>
+        <td>@AOSCurr</td>
+        <td class="green center"></td>
+        <td>The currency that AllowableOneSidedness is expressed in if AllowableOneSidednessValue is used.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/68.html">
+            68
+            </a>
+        </td>
+        <td>
+            <a href="../fields/68.html">
+            TotNoOrders
+            </a>
+        </td>
+        <td>@TotNoOrds</td>
+        <td class="green center">✔</td>
+        <td>Used to support fragmentation. Sum of NoOrders across all messages with the same ListID.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            893
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            LastFragment
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RootParties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RootParties.html">
+            <b>RootParties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Root Parties&#34; fields defined in &#34;common components of application messages&#34; Used for acting parties that applies to the whole message, not individual orders.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ListOrdGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ListOrdGrp.html">
+            <b>ListOrdGrp</b>
+            </a>
+        </td>
+        <td>Ord</td>
+        <td class="green center">✔</td>
+        <td>Number of orders in this message (number of repeating groups to follow)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,461 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>News [type 'B']</h1>
+<p style="white-space: pre-wrap;">The news message is a general free format message between the broker and institution. The message contains flags to identify the news item&#39;s urgency and to allow sorting by subject company (symbol). The News message can be originated at either the broker or institution side, or exchanges and other marketplace venues.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = B</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            <b>ApplicationSequenceControl</b>
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1472.html">
+            1472
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1472.html">
+            NewsID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Unique identifer for News message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NewsRefGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/NewsRefGrp.html">
+            <b>NewsRefGrp</b>
+            </a>
+        </td>
+        <td>Refs</td>
+        <td class="green center"></td>
+        <td>News items referenced by this News message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1473.html">
+            1473
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1473.html">
+            NewsCategory
+            </a>
+        </td>
+        <td>@NewsCatgy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1474.html">
+            1474
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1474.html">
+            LanguageCode
+            </a>
+        </td>
+        <td>@LangCd</td>
+        <td class="green center"></td>
+        <td>Used to optionally specify the national language used for the News item.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42.html">
+            42
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42.html">
+            OrigTime
+            </a>
+        </td>
+        <td>@OrigTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/61.html">
+            61
+            </a>
+        </td>
+        <td>
+            <a href="../fields/61.html">
+            Urgency
+            </a>
+        </td>
+        <td>@Urgency</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/148.html">
+            148
+            </a>
+        </td>
+        <td>
+            <a href="../fields/148.html">
+            Headline
+            </a>
+        </td>
+        <td>@Headline</td>
+        <td class="green center">✔</td>
+        <td>Specifies the headline text</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/358.html">
+            358
+            </a>
+        </td>
+        <td>
+            <a href="../fields/358.html">
+            EncodedHeadlineLen
+            </a>
+        </td>
+        <td>@EncHeadlineLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedHeadline field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/359.html">
+            359
+            </a>
+        </td>
+        <td>
+            <a href="../fields/359.html">
+            EncodedHeadline
+            </a>
+        </td>
+        <td>@EncHeadline</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Headline field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RoutingGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RoutingGrp.html">
+            <b>RoutingGrp</b>
+            </a>
+        </td>
+        <td>Rtg</td>
+        <td class="green center"></td>
+        <td>Required if any RoutingType and RoutingIDs are specified. Indicates the number within repeating group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1301.html">
+            1301
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1301.html">
+            MarketID
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td>Used to optionally specify the market to which this News applies.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            1300
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            MarketSegmentID
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td>Used to optionally specify the market segment to which this News applies.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtGrp.html">
+            <b>InstrmtGrp</b>
+            </a>
+        </td>
+        <td>Inst</td>
+        <td class="green center"></td>
+        <td>Specifies the number of repeating symbols (instruments) specified</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtLegGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtLegGrp.html">
+            <b>InstrmtLegGrp</b>
+            </a>
+        </td>
+        <td>Leg</td>
+        <td class="green center"></td>
+        <td>Number of legs
+Identifies a Multi-leg Execution if present and non-zero.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            <b>UndInstrmtGrp</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>Number of underlyings</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LinesOfTextGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/LinesOfTextGrp.html">
+            <b>LinesOfTextGrp</b>
+            </a>
+        </td>
+        <td>TxtLn</td>
+        <td class="green center">✔</td>
+        <td>Specifies the number of repeating lines of text specified</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/149.html">
+            149
+            </a>
+        </td>
+        <td>
+            <a href="../fields/149.html">
+            URLLink
+            </a>
+        </td>
+        <td>@URL</td>
+        <td class="green center"></td>
+        <td>A URL (Uniform Resource Locator) link to additional information (i.e. http://www.XYZ.com/research.html)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/95.html">
+            95
+            </a>
+        </td>
+        <td>
+            <a href="../fields/95.html">
+            RawDataLength
+            </a>
+        </td>
+        <td>@RawDataLength</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/96.html">
+            96
+            </a>
+        </td>
+        <td>
+            <a href="../fields/96.html">
+            RawData
+            </a>
+        </td>
+        <td>@RawData</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,273 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>TrdAllocGrp [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/78.html">
+            78
+            </a>
+        </td>
+        <td>
+            <a href="../fields/78.html">
+            NoAllocs
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Number of repeating groups for trade allocation</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/79.html">
+            79
+            </a>
+        </td>
+        <td>
+            <a href="../fields/79.html">
+            AllocAccount
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td>Required if NoAllocs &gt; 0. Must be first field in repeating group.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/661.html">
+            661
+            </a>
+        </td>
+        <td>
+            <a href="../fields/661.html">
+            AllocAcctIDSource
+            </a>
+        </td>
+        <td>@ActIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/736.html">
+            736
+            </a>
+        </td>
+        <td>
+            <a href="../fields/736.html">
+            AllocSettlCurrency
+            </a>
+        </td>
+        <td>@AllocSettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/467.html">
+            467
+            </a>
+        </td>
+        <td>
+            <a href="../fields/467.html">
+            IndividualAllocID
+            </a>
+        </td>
+        <td>@IndAllocID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NestedParties2.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/NestedParties2.html">
+            <b>NestedParties2</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;NestedParties2&#34; (firm identification &#34;nested&#34; within additional repeating group) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/80.html">
+            80
+            </a>
+        </td>
+        <td>
+            <a href="../fields/80.html">
+            AllocQty
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/993.html">
+            993
+            </a>
+        </td>
+        <td>
+            <a href="../fields/993.html">
+            AllocCustomerCapacity
+            </a>
+        </td>
+        <td>@CustCpcty</td>
+        <td class="green center"></td>
+        <td>Can be used for granular reporting of separate allocation detail within a single trade report or allocation message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1002.html">
+            1002
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1002.html">
+            AllocMethod
+            </a>
+        </td>
+        <td>@Meth</td>
+        <td class="green center"></td>
+        <td>Specifies the method under which a trade quantity was allocated.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/989.html">
+            989
+            </a>
+        </td>
+        <td>
+            <a href="../fields/989.html">
+            SecondaryIndividualAllocID
+            </a>
+        </td>
+        <td>@IndAllocID2</td>
+        <td class="green center"></td>
+        <td>Provides support for an intermediary assigned allocation ID</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1136.html">
+            1136
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1136.html">
+            AllocClearingFeeIndicator
+            </a>
+        </td>
+        <td>@ClrFeeInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

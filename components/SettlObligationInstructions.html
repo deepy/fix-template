@@ -1,0 +1,375 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>SettlObligationInstructions [type 'Component']</h1>
+<p style="white-space: pre-wrap;">None</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1165.html">
+            1165
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1165.html">
+            NoSettlOblig
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Number of Settlement Obligations</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/430.html">
+            430
+            </a>
+        </td>
+        <td>
+            <a href="../fields/430.html">
+            NetGrossInd
+            </a>
+        </td>
+        <td>@NetGrossInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1161.html">
+            1161
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1161.html">
+            SettlObligID
+            </a>
+        </td>
+        <td>@SettlID</td>
+        <td class="green center"></td>
+        <td>Unique ID for this settlement instruction</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1162.html">
+            1162
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1162.html">
+            SettlObligTransType
+            </a>
+        </td>
+        <td>@SettlTransTyp</td>
+        <td class="green center"></td>
+        <td>New, Replace, Cancel, or Restate</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1163.html">
+            1163
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1163.html">
+            SettlObligRefID
+            </a>
+        </td>
+        <td>@SettlRefID</td>
+        <td class="green center"></td>
+        <td>Required where SettlObligTransType(1162) is Cancel or Replace. The SettlObligID(1161) of the settlement obligation being canceled or replaced.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1157.html">
+            1157
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1157.html">
+            CcyAmt
+            </a>
+        </td>
+        <td>@CcyAmt</td>
+        <td class="green center"></td>
+        <td>Net flow of currency 1</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/119.html">
+            119
+            </a>
+        </td>
+        <td>
+            <a href="../fields/119.html">
+            SettlCurrAmt
+            </a>
+        </td>
+        <td>@SettlCurrAmt</td>
+        <td class="green center"></td>
+        <td>Net flow of currency 2</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            15
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            Currency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Currency 1 in the stated currency pair, the dealt currency</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/120.html">
+            120
+            </a>
+        </td>
+        <td>
+            <a href="../fields/120.html">
+            SettlCurrency
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td>Currency 2 in the stated currency pair, the contra currency</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/155.html">
+            155
+            </a>
+        </td>
+        <td>
+            <a href="../fields/155.html">
+            SettlCurrFxRate
+            </a>
+        </td>
+        <td>@SettlCurrFxRt</td>
+        <td class="green center"></td>
+        <td>Derived rate of Ccy2 per Ccy1 based on netting</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/64.html">
+            64
+            </a>
+        </td>
+        <td>
+            <a href="../fields/64.html">
+            SettlDate
+            </a>
+        </td>
+        <td>@SettlDt</td>
+        <td class="green center"></td>
+        <td>Value Date</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>Used to express the instrument in which settlement is taking place</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/168.html">
+            168
+            </a>
+        </td>
+        <td>
+            <a href="../fields/168.html">
+            EffectiveTime
+            </a>
+        </td>
+        <td>@EfctvTm</td>
+        <td class="green center"></td>
+        <td>Effective (start) date/time for this settlement instruction</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/126.html">
+            126
+            </a>
+        </td>
+        <td>
+            <a href="../fields/126.html">
+            ExpireTime
+            </a>
+        </td>
+        <td>@ExpireTm</td>
+        <td class="green center"></td>
+        <td>Termination date/time for this settlement instruction.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/779.html">
+            779
+            </a>
+        </td>
+        <td>
+            <a href="../fields/779.html">
+            LastUpdateTime
+            </a>
+        </td>
+        <td>@LastUpdateTm</td>
+        <td class="green center"></td>
+        <td>Date/time this settlement instruction was last updated (or created if not updated since creation).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SettlDetails.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/SettlDetails.html">
+            <b>SettlDetails</b>
+            </a>
+        </td>
+        <td>SettlDetails</td>
+        <td class="green center"></td>
+        <td>Conveys settlement account details reported as part of obligation</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

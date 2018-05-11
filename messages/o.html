@@ -1,0 +1,324 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>RegistrationInstructions [type 'o']</h1>
+<p style="white-space: pre-wrap;">The Registration Instructions message type may be used by institutions or retail intermediaries wishing to electronically submit registration information to a broker or fund manager (for CIV) for an order or for an allocation.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = o (lowercase O)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/513.html">
+            513
+            </a>
+        </td>
+        <td>
+            <a href="../fields/513.html">
+            RegistID
+            </a>
+        </td>
+        <td>@RegistID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/514.html">
+            514
+            </a>
+        </td>
+        <td>
+            <a href="../fields/514.html">
+            RegistTransType
+            </a>
+        </td>
+        <td>@TransTyp</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/508.html">
+            508
+            </a>
+        </td>
+        <td>
+            <a href="../fields/508.html">
+            RegistRefID
+            </a>
+        </td>
+        <td>@RefID</td>
+        <td class="green center">✔</td>
+        <td>Required for Cancel and Replace RegistTransType messages</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/11.html">
+            11
+            </a>
+        </td>
+        <td>
+            <a href="../fields/11.html">
+            ClOrdID
+            </a>
+        </td>
+        <td>@ClOrdID</td>
+        <td class="green center"></td>
+        <td>Unique identifier of the order as assigned by institution or intermediary to which Registration relates</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1.html">
+            1
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1.html">
+            Account
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/660.html">
+            660
+            </a>
+        </td>
+        <td>
+            <a href="../fields/660.html">
+            AcctIDSource
+            </a>
+        </td>
+        <td>@AcctIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/493.html">
+            493
+            </a>
+        </td>
+        <td>
+            <a href="../fields/493.html">
+            RegistAcctType
+            </a>
+        </td>
+        <td>@AcctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/495.html">
+            495
+            </a>
+        </td>
+        <td>
+            <a href="../fields/495.html">
+            TaxAdvantageType
+            </a>
+        </td>
+        <td>@TaxAdvantageTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/517.html">
+            517
+            </a>
+        </td>
+        <td>
+            <a href="../fields/517.html">
+            OwnershipType
+            </a>
+        </td>
+        <td>@OwnershipTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RgstDtlsGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RgstDtlsGrp.html">
+            <b>RgstDtlsGrp</b>
+            </a>
+        </td>
+        <td>RgDtl</td>
+        <td class="green center"></td>
+        <td>Number of registration details in this message (number of repeating groups to follow)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RgstDistInstGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RgstDistInstGrp.html">
+            <b>RgstDistInstGrp</b>
+            </a>
+        </td>
+        <td>RgDtlInst</td>
+        <td class="green center"></td>
+        <td>Number of Distribution instructions in this message (number of repeating groups to follow)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

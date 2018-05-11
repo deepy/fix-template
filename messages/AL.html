@@ -1,0 +1,600 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>PositionMaintenanceRequest [type 'AL']</h1>
+<p style="white-space: pre-wrap;">The Position Maintenance Request message allows the position owner to submit requests to the holder of a position which will result in a specific action being taken which will affect the position. Generally, the holder of the position is a central counter party or clearing organization but can also be a party providing investment services.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = AL</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/710.html">
+            710
+            </a>
+        </td>
+        <td>
+            <a href="../fields/710.html">
+            PosReqID
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Unique identifier for the position maintenance request as assigned by the submitter. Conditionally required when used in a request/reply scenario (i.e. not required in batch scenario)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/709.html">
+            709
+            </a>
+        </td>
+        <td>
+            <a href="../fields/709.html">
+            PosTransType
+            </a>
+        </td>
+        <td>@TxnTyp</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/712.html">
+            712
+            </a>
+        </td>
+        <td>
+            <a href="../fields/712.html">
+            PosMaintAction
+            </a>
+        </td>
+        <td>@Actn</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/713.html">
+            713
+            </a>
+        </td>
+        <td>
+            <a href="../fields/713.html">
+            OrigPosReqRefID
+            </a>
+        </td>
+        <td>@OrigPosReqRefID</td>
+        <td class="green center"></td>
+        <td>Reference to the PosReqID of a previous maintenance request that is being replaced or canceled.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/714.html">
+            714
+            </a>
+        </td>
+        <td>
+            <a href="../fields/714.html">
+            PosMaintRptRefID
+            </a>
+        </td>
+        <td>@RptRefID</td>
+        <td class="green center"></td>
+        <td>Reference to a PosMaintRptID from a previous Position Maintenance Report that is being replaced or canceled.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            715
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            ClearingBusinessDate
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center">✔</td>
+        <td>The Clearing Business Date referred to by this maintenance request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/716.html">
+            716
+            </a>
+        </td>
+        <td>
+            <a href="../fields/716.html">
+            SettlSessID
+            </a>
+        </td>
+        <td>@SetSesID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/717.html">
+            717
+            </a>
+        </td>
+        <td>
+            <a href="../fields/717.html">
+            SettlSessSubID
+            </a>
+        </td>
+        <td>@SetSesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center">✔</td>
+        <td>The Following PartyRoles can be specified:
+ClearingOrganization
+Clearing Firm
+Position Account</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1.html">
+            1
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1.html">
+            Account
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/660.html">
+            660
+            </a>
+        </td>
+        <td>
+            <a href="../fields/660.html">
+            AcctIDSource
+            </a>
+        </td>
+        <td>@AcctIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/581.html">
+            581
+            </a>
+        </td>
+        <td>
+            <a href="../fields/581.html">
+            AccountType
+            </a>
+        </td>
+        <td>@AcctTyp</td>
+        <td class="green center"></td>
+        <td>Type of account associated with the order (Origin)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            <b>Instrument</b>
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            15
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            Currency
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtLegGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtLegGrp.html">
+            <b>InstrmtLegGrp</b>
+            </a>
+        </td>
+        <td>Leg</td>
+        <td class="green center"></td>
+        <td>Specifies the number of legs that make up the Security</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            <b>UndInstrmtGrp</b>
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>Specifies the number of underlying legs that make up the Security</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdgSesGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdgSesGrp.html">
+            <b>TrdgSesGrp</b>
+            </a>
+        </td>
+        <td>TrdSes</td>
+        <td class="green center"></td>
+        <td>Specifies the number of repeating TradingSessionIDs</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>Time this order request was initiated/released by the trader, trading system, or intermediary.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionQty.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionQty.html">
+            <b>PositionQty</b>
+            </a>
+        </td>
+        <td>Qty</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionAmountData.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionAmountData.html">
+            <b>PositionAmountData</b>
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/718.html">
+            718
+            </a>
+        </td>
+        <td>
+            <a href="../fields/718.html">
+            AdjustmentType
+            </a>
+        </td>
+        <td>@AdjTyp</td>
+        <td class="green center"></td>
+        <td>Type of adjustment to be applied, used for PCS &amp; PAJ
+Delta_plus, Delta_minus, Final, If Adjustment Type is null, the request will be processed as Margin Disposition</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/719.html">
+            719
+            </a>
+        </td>
+        <td>
+            <a href="../fields/719.html">
+            ContraryInstructionIndicator
+            </a>
+        </td>
+        <td>@CntraryInstrctnInd</td>
+        <td class="green center"></td>
+        <td>Boolean - if Y then indicates you are requesting a position maintenance that acting</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/720.html">
+            720
+            </a>
+        </td>
+        <td>
+            <a href="../fields/720.html">
+            PriorSpreadIndicator
+            </a>
+        </td>
+        <td>@PriorSpreadInd</td>
+        <td class="green center"></td>
+        <td>Boolean - Y indicates you are requesting rollover of prior day&#39;s spread submissions</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/834.html">
+            834
+            </a>
+        </td>
+        <td>
+            <a href="../fields/834.html">
+            ThresholdAmount
+            </a>
+        </td>
+        <td>@ThresholdAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/120.html">
+            120
+            </a>
+        </td>
+        <td>
+            <a href="../fields/120.html">
+            SettlCurrency
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

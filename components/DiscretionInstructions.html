@@ -1,0 +1,205 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>DiscretionInstructions [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The presence of DiscretionInstructions component block on an order indicates that the trader wishes to display one price but will accept trades at another price.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/388.html">
+            388
+            </a>
+        </td>
+        <td>
+            <a href="../fields/388.html">
+            DiscretionInst
+            </a>
+        </td>
+        <td>@DsctnInst</td>
+        <td class="green center"></td>
+        <td>What the discretionary price is related to (e.g. primary price, display price etc)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/389.html">
+            389
+            </a>
+        </td>
+        <td>
+            <a href="../fields/389.html">
+            DiscretionOffsetValue
+            </a>
+        </td>
+        <td>@OfstValu</td>
+        <td class="green center"></td>
+        <td>Amount (signed) added to the &#34;related to&#34; price specified via DiscretionInst, in the context of DiscretionOffsetType</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/841.html">
+            841
+            </a>
+        </td>
+        <td>
+            <a href="../fields/841.html">
+            DiscretionMoveType
+            </a>
+        </td>
+        <td>@MoveTyp</td>
+        <td class="green center"></td>
+        <td>Describes whether discretion price is static/fixed or floats</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/842.html">
+            842
+            </a>
+        </td>
+        <td>
+            <a href="../fields/842.html">
+            DiscretionOffsetType
+            </a>
+        </td>
+        <td>@OfstTyp</td>
+        <td class="green center"></td>
+        <td>Type of Discretion Offset (e.g. price offset, tick offset etc)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/843.html">
+            843
+            </a>
+        </td>
+        <td>
+            <a href="../fields/843.html">
+            DiscretionLimitType
+            </a>
+        </td>
+        <td>@LimitTyp</td>
+        <td class="green center"></td>
+        <td>Specifies the nature of the resulting discretion price (e.g. or better limit, strict limit etc)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/844.html">
+            844
+            </a>
+        </td>
+        <td>
+            <a href="../fields/844.html">
+            DiscretionRoundDirection
+            </a>
+        </td>
+        <td>@RndDir</td>
+        <td class="green center"></td>
+        <td>If the calculated discretion price is not a valid tick price, specifies how to round the price (e.g. to be more or less aggressive)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/846.html">
+            846
+            </a>
+        </td>
+        <td>
+            <a href="../fields/846.html">
+            DiscretionScope
+            </a>
+        </td>
+        <td>@Scope</td>
+        <td class="green center"></td>
+        <td>The scope of &#34;related to&#34; price of the discretion (e.g. local, global etc)</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,375 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>MarketDataRequest [type 'V']</h1>
+<p style="white-space: pre-wrap;">Some systems allow the transmission of real-time quote, order, trade, trade volume, open interest, and/or other price information on a subscription basis. A Market Data Request is a general request for market data on specific securities or forex quotes.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = V</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/262.html">
+            262
+            </a>
+        </td>
+        <td>
+            <a href="../fields/262.html">
+            MDReqID
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center">✔</td>
+        <td>Must be unique, or the ID of previous Market Data Request to disable if SubscriptionRequestType = Disable previous Snapshot + Updates Request (2).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/263.html">
+            263
+            </a>
+        </td>
+        <td>
+            <a href="../fields/263.html">
+            SubscriptionRequestType
+            </a>
+        </td>
+        <td>@SubReqTyp</td>
+        <td class="green center">✔</td>
+        <td>SubscriptionRequestType indicates to the other party what type of response is expected. A snapshot request only asks for current information. A subscribe request asks for updates as the status changes. Unsubscribe will cancel any future update messages from the counter party.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of Parties (firm identification) fields defined in &#34;Common Components of Application Messages</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/264.html">
+            264
+            </a>
+        </td>
+        <td>
+            <a href="../fields/264.html">
+            MarketDepth
+            </a>
+        </td>
+        <td>@MktDepth</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/265.html">
+            265
+            </a>
+        </td>
+        <td>
+            <a href="../fields/265.html">
+            MDUpdateType
+            </a>
+        </td>
+        <td>@UpdtTyp</td>
+        <td class="green center"></td>
+        <td>Required if SubscriptionRequestType = Snapshot + Updates (1).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/266.html">
+            266
+            </a>
+        </td>
+        <td>
+            <a href="../fields/266.html">
+            AggregatedBook
+            </a>
+        </td>
+        <td>@AggBook</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/286.html">
+            286
+            </a>
+        </td>
+        <td>
+            <a href="../fields/286.html">
+            OpenCloseSettlFlag
+            </a>
+        </td>
+        <td>@OpenClsSettlFlag</td>
+        <td class="green center"></td>
+        <td>Can be used to clarify a request if MDEntryType = Opening Price(4), Closing Price(5), or Settlement Price(6).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/546.html">
+            546
+            </a>
+        </td>
+        <td>
+            <a href="../fields/546.html">
+            Scope
+            </a>
+        </td>
+        <td>@Scope</td>
+        <td class="green center"></td>
+        <td>Defines the scope(s) of the request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/547.html">
+            547
+            </a>
+        </td>
+        <td>
+            <a href="../fields/547.html">
+            MDImplicitDelete
+            </a>
+        </td>
+        <td>@ImplctDel</td>
+        <td class="green center"></td>
+        <td>Can be used when MarketDepth &gt;= 2 and MDUpdateType = Incremental Refresh(1).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MDReqGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/MDReqGrp.html">
+            <b>MDReqGrp</b>
+            </a>
+        </td>
+        <td>Req</td>
+        <td class="green center">✔</td>
+        <td>Number of MDEntryType fields requested.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtMDReqGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtMDReqGrp.html">
+            <b>InstrmtMDReqGrp</b>
+            </a>
+        </td>
+        <td>InstReq</td>
+        <td class="green center">✔</td>
+        <td>Number of symbols (instruments) requested.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdgSesGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdgSesGrp.html">
+            <b>TrdgSesGrp</b>
+            </a>
+        </td>
+        <td>TrdSes</td>
+        <td class="green center"></td>
+        <td>Number of trading sessions for which the request is valid.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/815.html">
+            815
+            </a>
+        </td>
+        <td>
+            <a href="../fields/815.html">
+            ApplQueueAction
+            </a>
+        </td>
+        <td>@ApplQuActn</td>
+        <td class="green center"></td>
+        <td>Action to take if application level queuing exists</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/812.html">
+            812
+            </a>
+        </td>
+        <td>
+            <a href="../fields/812.html">
+            ApplQueueMax
+            </a>
+        </td>
+        <td>@ApplQuMax</td>
+        <td class="green center"></td>
+        <td>Maximum application queue depth that must be exceeded before queuing action is taken.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1070.html">
+            1070
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1070.html">
+            MDQuoteType
+            </a>
+        </td>
+        <td>@MDQteTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,480 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>AllocationReportAck [type 'AT']</h1>
+<p style="white-space: pre-wrap;">The Allocation Report Ack message is used to acknowledge the receipt of and provide status for an Allocation Report message.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = AT</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/755.html">
+            755
+            </a>
+        </td>
+        <td>
+            <a href="../fields/755.html">
+            AllocReportID
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/70.html">
+            70
+            </a>
+        </td>
+        <td>
+            <a href="../fields/70.html">
+            AllocID
+            </a>
+        </td>
+        <td>@AllocID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            715
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            ClearingBusinessDate
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center"></td>
+        <td>Indicates Clearing Business Date for which transaction will be settled.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/819.html">
+            819
+            </a>
+        </td>
+        <td>
+            <a href="../fields/819.html">
+            AvgPxIndicator
+            </a>
+        </td>
+        <td>@AvgPxInd</td>
+        <td class="green center"></td>
+        <td>Indicates if an allocation is to be average priced. Is also used to indicate if average price allocation group is complete or incomplete.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/53.html">
+            53
+            </a>
+        </td>
+        <td>
+            <a href="../fields/53.html">
+            Quantity
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/71.html">
+            71
+            </a>
+        </td>
+        <td>
+            <a href="../fields/71.html">
+            AllocTransType
+            </a>
+        </td>
+        <td>@TransTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/793.html">
+            793
+            </a>
+        </td>
+        <td>
+            <a href="../fields/793.html">
+            SecondaryAllocID
+            </a>
+        </td>
+        <td>@AllocID2</td>
+        <td class="green center"></td>
+        <td>Optional second identifier for the allocation report being acknowledged (need not be unique)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            75
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            TradeDate
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            60
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            TransactTime
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>Date/Time Allocation Report Ack generated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/87.html">
+            87
+            </a>
+        </td>
+        <td>
+            <a href="../fields/87.html">
+            AllocStatus
+            </a>
+        </td>
+        <td>@Stat</td>
+        <td class="green center"></td>
+        <td>Denotes the status of the allocation report; received (but not yet processed), rejected (at block or account level) or accepted (and processed).
+AllocStatus will be conditionally required in a 2-party model when used by a counterparty to convey a change in status. It will be optional in a 3-party model in which only the central counterparty may issue the status of an allocation</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/88.html">
+            88
+            </a>
+        </td>
+        <td>
+            <a href="../fields/88.html">
+            AllocRejCode
+            </a>
+        </td>
+        <td>@RejCode</td>
+        <td class="green center"></td>
+        <td>Required for AllocStatus = 1 ( block level reject) and for AllocStatus 2 (account level reject) if the individual accounts and reject reasons are not provided in this message</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/794.html">
+            794
+            </a>
+        </td>
+        <td>
+            <a href="../fields/794.html">
+            AllocReportType
+            </a>
+        </td>
+        <td>@RptTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/808.html">
+            808
+            </a>
+        </td>
+        <td>
+            <a href="../fields/808.html">
+            AllocIntermedReqType
+            </a>
+        </td>
+        <td>@IntermedReqTyp</td>
+        <td class="green center"></td>
+        <td>Required if AllocReportType = 8 (Request to Intermediary)
+Indicates status that is requested to be transmitted to counterparty by the intermediary (i.e. clearing house)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/573.html">
+            573
+            </a>
+        </td>
+        <td>
+            <a href="../fields/573.html">
+            MatchStatus
+            </a>
+        </td>
+        <td>@MtchStat</td>
+        <td class="green center"></td>
+        <td>Denotes whether the financial details provided on the Allocation Report were successfully matched.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/460.html">
+            460
+            </a>
+        </td>
+        <td>
+            <a href="../fields/460.html">
+            Product
+            </a>
+        </td>
+        <td>@Prod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/167.html">
+            167
+            </a>
+        </td>
+        <td>
+            <a href="../fields/167.html">
+            SecurityType
+            </a>
+        </td>
+        <td>@SecTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            58
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            Text
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td>Can include explanation for AllocRejCode = 7 (other)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            354
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            EncodedTextLen
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            355
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            EncodedText
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AllocAckGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/AllocAckGrp.html">
+            <b>AllocAckGrp</b>
+            </a>
+        </td>
+        <td>AllocAck</td>
+        <td class="green center"></td>
+        <td>This repeating group is optionally used for messages with AllocStatus = 2 (account level reject) to provide details of the individual accounts that caused the rejection, together with reject reasons. This group should not be populated where AllocStatus has any other value.
+Indicates number of allocation groups to follow.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

@@ -1,0 +1,324 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>UserRequest [type 'BE']</h1>
+<p style="white-space: pre-wrap;">This message is used to initiate a user action, logon, logout or password change. It can also be used to request a report on a user&#39;s status.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = &#34;BE&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/923.html">
+            923
+            </a>
+        </td>
+        <td>
+            <a href="../fields/923.html">
+            UserRequestID
+            </a>
+        </td>
+        <td>@UserReqID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/924.html">
+            924
+            </a>
+        </td>
+        <td>
+            <a href="../fields/924.html">
+            UserRequestType
+            </a>
+        </td>
+        <td>@UserReqTyp</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/553.html">
+            553
+            </a>
+        </td>
+        <td>
+            <a href="../fields/553.html">
+            Username
+            </a>
+        </td>
+        <td>@Username</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/554.html">
+            554
+            </a>
+        </td>
+        <td>
+            <a href="../fields/554.html">
+            Password
+            </a>
+        </td>
+        <td>@Password</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/925.html">
+            925
+            </a>
+        </td>
+        <td>
+            <a href="../fields/925.html">
+            NewPassword
+            </a>
+        </td>
+        <td>@NewPassword</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1400.html">
+            1400
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1400.html">
+            EncryptedPasswordMethod
+            </a>
+        </td>
+        <td>@EncPwdMethod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1401.html">
+            1401
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1401.html">
+            EncryptedPasswordLen
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1402.html">
+            1402
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1402.html">
+            EncryptedPassword
+            </a>
+        </td>
+        <td>@EncPwd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1403.html">
+            1403
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1403.html">
+            EncryptedNewPasswordLen
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1404.html">
+            1404
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1404.html">
+            EncryptedNewPassword
+            </a>
+        </td>
+        <td>@EncNewPwd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/95.html">
+            95
+            </a>
+        </td>
+        <td>
+            <a href="../fields/95.html">
+            RawDataLength
+            </a>
+        </td>
+        <td>@RawDataLength</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/96.html">
+            96
+            </a>
+        </td>
+        <td>
+            <a href="../fields/96.html">
+            RawData
+            </a>
+        </td>
+        <td>@RawData</td>
+        <td class="green center"></td>
+        <td>Can be used to hand structures etc to other API&#39;s etc</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

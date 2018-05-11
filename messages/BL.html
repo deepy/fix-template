@@ -1,0 +1,290 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>AdjustedPositionReport [type 'BL']</h1>
+<p style="white-space: pre-wrap;">Used to report changes in position, primarily in equity options, due to modifications to the underlying due to corporate actions</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            <b>StandardHeader</b>
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = BL</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/721.html">
+            721
+            </a>
+        </td>
+        <td>
+            <a href="../fields/721.html">
+            PosMaintRptID
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center">✔</td>
+        <td>Unique identifier for this Adjusted Position report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/724.html">
+            724
+            </a>
+        </td>
+        <td>
+            <a href="../fields/724.html">
+            PosReqType
+            </a>
+        </td>
+        <td>@ReqTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            715
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            ClearingBusinessDate
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center">✔</td>
+        <td>The Clearing Business Date referred to by this maintenance request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/716.html">
+            716
+            </a>
+        </td>
+        <td>
+            <a href="../fields/716.html">
+            SettlSessID
+            </a>
+        </td>
+        <td>@SetSesID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/714.html">
+            714
+            </a>
+        </td>
+        <td>
+            <a href="../fields/714.html">
+            PosMaintRptRefID
+            </a>
+        </td>
+        <td>@RptRefID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            <b>Parties</b>
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center">✔</td>
+        <td>Position Account</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionQty.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionQty.html">
+            <b>PositionQty</b>
+            </a>
+        </td>
+        <td>Qty</td>
+        <td class="green center">✔</td>
+        <td>Insert here here the set of &#34;Position Qty&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtGrp.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtGrp.html">
+            <b>InstrmtGrp</b>
+            </a>
+        </td>
+        <td>Inst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/730.html">
+            730
+            </a>
+        </td>
+        <td>
+            <a href="../fields/730.html">
+            SettlPrice
+            </a>
+        </td>
+        <td>@SetPx</td>
+        <td class="green center"></td>
+        <td>Settlement Price</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/734.html">
+            734
+            </a>
+        </td>
+        <td>
+            <a href="../fields/734.html">
+            PriorSettlPrice
+            </a>
+        </td>
+        <td>@PriSetPx</td>
+        <td class="green center"></td>
+        <td>Prior Settlement Price</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            <b>StandardTrailer</b>
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>

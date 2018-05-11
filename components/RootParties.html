@@ -1,0 +1,171 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<h1>RootParties [type 'Component']</h1>
+<p style="white-space: pre-wrap;">The RootParties component block is a version of the Parties component block used to provide root information regarding the owning and entering parties of a transaction.</p>
+<table>
+<tr>
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+</tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1116.html">
+            1116
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1116.html">
+            NoRootPartyIDs
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Repeating group below should contain unique combinations of RootPartyID, RootPartyIDSource, and RootPartyRole</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1117.html">
+            1117
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1117.html">
+            RootPartyID
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Used to identify source of RootPartyID. Required if RootPartyIDSource is specified. Required if NoRootPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1118.html">
+            1118
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1118.html">
+            RootPartyIDSource
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Used to identify class source of RootPartyID value (e.g. BIC). Required if RootPartyID is specified. Required if NoRootPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1119.html">
+            1119
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1119.html">
+            RootPartyRole
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Identifies the type of RootPartyID (e.g. Executing Broker). Required if NoRootPartyIDs &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RootSubParties.html">
+            <b>Component</b>
+            </a>
+        </td>
+        <td>
+            <a href="../components/RootSubParties.html">
+            <b>RootSubParties</b>
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td>Repeating group of RootParty sub-identifiers.</td>
+        <td class="green"></td>
+    </tr>
+
+</table>
+</html>
