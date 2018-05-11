@@ -9,6 +9,15 @@ class Message:
             text = int(text)
         setattr(self, tag, text)
 
+    def pretty_name(self):
+        return self.Name
+
+    def pretty_type(self):
+        return self.MsgType
+
+    def __repr__(self):
+        return "<Message %s>" % self.pretty_name()
+
 
 class MsgContent:
     def parse_value(self, tag, text):
@@ -18,8 +27,17 @@ class MsgContent:
             text = int(text)
         setattr(self, tag, text)
 
+    def pretty_name(self):
+        return self.TagText
+
+    def pretty_type(self):
+        if self.TagText.isdigit():
+            return self.TagText
+        else:
+            return "Component"
+
     def __repr__(self):
-        return '<MsgContent %s>' % self.TagText
+        return '<MsgContent %s>' % self.pretty_name()
 
 
 class Component:
@@ -30,8 +48,14 @@ class Component:
             text = int(text)
         setattr(self, tag, text)
 
+    def pretty_name(self):
+        return self.Name
+
+    def pretty_type(self):
+        return "Component"
+
     def __repr__(self):
-        return '<MsgContent %s>' % self.TagText
+        return '<Component %s>' % self.pretty_name()
 
 
 class Field:

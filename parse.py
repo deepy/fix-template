@@ -77,14 +77,14 @@ class Lookup:
         for r in result:
             if not r.TagText.isdigit():
                 r.FieldName = r.TagText
-                r.DisplayTagText = 'Component'
+                # r.DisplayTagText = 'Component'
                 # Is this *really* keyed by name?
                 # MsgContent -TagText-> Component -ComponentID-> MsgContent?
                 if not self._components[r.TagText].NotReqXML:
                     r.AbbrName = self._components[r.TagText].AbbrName
             else:
                 r.FieldName = self._fields[r.TagText].Name
-                r.DisplayTagText = r.TagText
+                # r.DisplayTagText = r.TagText
                 # This seems backwards
                 if not self._fields[r.TagText].NotReqXML:
                     r.AbbrName = "@" + self._fields[r.TagText].AbbrName
@@ -106,7 +106,8 @@ if __name__ == '__main__':
             msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
             fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
             components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
-            gen.render_messages(output, messages.values(), Lookup(messages, msgcontents, fields, components))
+            gen.render_messages(output, 'messages', messages.values(), Lookup(messages, msgcontents, fields, components))
+            gen.render_messages(output, 'components', components.values(), Lookup(messages, msgcontents, fields, components))
         except:
             print("Exception while processing: %s" % version)
             raise
