@@ -183,7 +183,7 @@ if __name__ == '__main__':
     base = 'fix_repository_2010_edition_20140507'
 
     for version in next(os.walk(base))[1]:
-        if not version.startswith('FIX') or version == 'FIX.4.3':  # Looks for field 465, which seems to be an enum.
+        if not version.startswith('FIX'):
             continue
         output = os.path.join('out', version)
 
