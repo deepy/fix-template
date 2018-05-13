@@ -21,18 +21,15 @@ class Stylify:
             return text
 
 
-def render_messages(base_path, subdir, messages, lookup):
-    template = env.get_template('messages.html')
+def render_pages(base_path, subdir, messages, lookup):
+    template = env.select_template([subdir+'.html', 'messages.html'])
 
     import os
     path = os.path.join(base_path, subdir)
     os.makedirs(path, exist_ok=True)
 
     for message in messages:
-        if subdir == 'messages':
-            filename = '{}.html'.format(message.MsgType)
-        else:
-            filename = '{}.html'.format(message.Name)
+        filename = '{}.html'.format(message.filename())
         with open(os.path.join(path, filename), 'w', encoding='utf-8') as outfile:
             result = template.render(message=message, lookup=lookup, stylify=Stylify)
             outfile.write(result)

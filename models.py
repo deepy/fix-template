@@ -15,6 +15,9 @@ class Message:
     def pretty_type(self):
         return self.MsgType
 
+    def filename(self):
+        return self.MsgType
+
     def __repr__(self):
         return "<Message %s>" % self.pretty_name()
 
@@ -54,18 +57,27 @@ class Component:
     def pretty_type(self):
         return "Component"
 
+    def filename(self):
+        return self.Name
+
     def __repr__(self):
         return '<Component %s>' % self.pretty_name()
 
 
 class Field:
-    # TODO: added/deprecated
-    # <Field added="FIX.2.7" deprecated="FIXT.1.1">
-
     def parse_value(self, tag, text):
         if tag == 'NotReqXML':
             text = bool(int(text))
         setattr(self, tag, text)
+
+    def pretty_name(self):
+        return self.Name
+
+    def pretty_type(self):
+        return self.Tag
+
+    def filename(self):
+        return self.Tag
 
     def __repr__(self):
         return '<Field %s>' % self.Name

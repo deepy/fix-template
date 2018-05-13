@@ -62,12 +62,50 @@ def parse_components(xml):
     return components
 
 
+# noinspection SqlNoDataSourceInspection
 class Lookup:
+    def _init_db(self):
+        import sqlite3
+
+        self._db = sqlite3.connect(":memory:")
+        cur = self._db.cursor()
+        cur.execute('CREATE TABLE messages (type varchar, name varchar, component_id int)')
+        cur.execute('CREATE TABLE msgcontents (component_id int, tag_text varchar)')
+        cur.execute('CREATE TABLE fields (tag int, name varchar)')
+        cur.execute('CREATE TABLE components (component_id int, name varchar)')
+        cur.close()
+        self._db.commit()
+
+    def _index(self):
+        cur = self._db.cursor()
+        # Insert messages
+        cur.executemany('INSERT INTO messages values(?, ?, ?)',
+                        [(x.MsgType, x.Name, x.ComponentID) for x in self._messages.values()])
+
+        # Insert msgcontents
+        import itertools
+        cur.executemany('INSERT INTO msgcontents values(?, ?)',
+                        [(x.ComponentID, x.TagText) for x in itertools.chain.from_iterable(self._msgcontents.values())])
+
+        # Insert fields
+        cur.executemany('INSERT INTO fields values(?, ?)',
+                        [(x.Tag, x.Name) for x in self._fields.values()])
+
+        # Insert components
+        cur.executemany('INSERT INTO components values(?, ?)',
+                        [(x.ComponentID, x.Name) for x in self._components.values()])
+
+        cur.close()
+        self._db.commit()
+
     def __init__(self, messages, msgcontents, fields, components):
         self._messages = messages
         self._msgcontents = msgcontents
         self._fields = fields
         self._components = components
+
+        self._init_db()
+        self._index()
 
     def msgcontents(self, id):
         import copy
@@ -77,17 +115,47 @@ class Lookup:
         for r in result:
             if not r.TagText.isdigit():
                 r.FieldName = r.TagText
-                # r.DisplayTagText = 'Component'
                 # Is this *really* keyed by name?
                 # MsgContent -TagText-> Component -ComponentID-> MsgContent?
                 if not self._components[r.TagText].NotReqXML:
                     r.AbbrName = self._components[r.TagText].AbbrName
             else:
                 r.FieldName = self._fields[r.TagText].Name
-                # r.DisplayTagText = r.TagText
                 # This seems backwards
                 if not self._fields[r.TagText].NotReqXML:
                     r.AbbrName = "@" + self._fields[r.TagText].AbbrName
+        return result
+
+    def fields_in(self, tag):
+        result = {}
+
+        cur = self._db.cursor()
+        res = cur.execute('SELECT f.name, group_concat(c.name) '
+                          'FROM fields f '
+                           
+                          'LEFT JOIN msgcontents mc ON f.tag == mc.tag_text '
+                          'LEFT JOIN components c ON mc.component_id == c.component_id '
+                           
+                          'WHERE f.name = ? '
+                           
+                          'ORDER BY f.tag', (tag,)).fetchone()
+        if res and res[1]:
+            result['components'] = sorted(zip(res[1].split(','), res[1].split(',')))
+
+        res = cur.execute('SELECT f.name, group_concat(m.name), group_concat(m.type) '
+                          'FROM fields f '
+                           
+                          'LEFT JOIN msgcontents mc ON f.tag == mc.tag_text '
+                          'LEFT JOIN messages m ON mc.component_id == m.component_id '
+                           
+                          'WHERE f.name = ? '
+                           
+                          'ORDER BY f.tag', (tag,)).fetchone()
+        if res and res[1]:
+            result['messages'] = sorted(zip(res[1].split(','), res[2].split(',')), key=lambda x: x[0])
+
+        cur.close()
+
         return result
 
 
@@ -102,12 +170,14 @@ if __name__ == '__main__':
         output = os.path.join('out', version)
 
         try:
-            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
+            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))  # index this
             msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
-            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
-            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
-            gen.render_messages(output, 'messages', messages.values(), Lookup(messages, msgcontents, fields, components))
-            gen.render_messages(output, 'components', components.values(), Lookup(messages, msgcontents, fields, components))
+            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))  # lookup index
+            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))  # index this
+            lookup = Lookup(messages, msgcontents, fields, components)
+            gen.render_pages(output, 'messages', messages.values(), lookup)
+            gen.render_pages(output, 'components', components.values(), lookup)
+            gen.render_pages(output, 'fields', fields.values(), lookup)
         except:
             print("Exception while processing: %s" % version)
             raise

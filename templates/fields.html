@@ -1,0 +1,40 @@
+{% extends "base_fiximate.html" %}
+{% block page_header %}
+<h1>{{ message.pretty_name() }} [type '{{ message.pretty_type() }}']</h1>
+<p style="white-space: pre-wrap;">{{ message.Description }}</p>
+{% endblock %}
+{% block table_header %}
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+{% endblock %}
+{% block table_body %}
+    <tr>
+        <td class="green">
+            <a href="{{ stylify.linkify(message) | safe }}">
+            {{ stylify.boldify(message, message.pretty_type()) | safe }}
+            </a>
+        </td>
+        <td>
+            <a href="{{ stylify.linkify(message) | safe }}">
+            {{ stylify.boldify(message, message.pretty_name()) | safe }}
+            </a>
+        </td>
+        <td>{{ message.AbbrName }}</td>
+        <td>{{ message.Description }}</td>
+        <td class="green">{{ message.attr_deprecated }}</td>
+    </tr>
+{% endblock %}
+{% block page_body %}
+    {% for section, content in lookup.fields_in(message.pretty_name()).items() %}
+    <p>Used in {{ section }}:</p>
+    <p>
+    {% for mess in content %}
+        [<a href="../{{ section }}/{{ mess[1] }}.html">{{ mess[0] }}]</a>
+    {% endfor %}
+    </p>
+    <hr />
+    {% endfor %}
+{% endblock %}
