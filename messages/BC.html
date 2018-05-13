@@ -1,6 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    
     <style type="text/css">
         th {
             word-wrap: break-word;
@@ -69,18 +70,24 @@
         }
 
     </style>
+    
 </head>
+
 <h1>NetworkCounterpartySystemStatusRequest [type 'BC']</h1>
 <p style="white-space: pre-wrap;">This message is send either immediately after logging on to inform a network (counterparty system) of the type of updates required or to at any other time in the FIX conversation to change the nature of the types of status updates required. It can also be used with a NetworkRequestType of Snapshot to request a one-off report of the status of a network (or counterparty) system. Finally this message can also be used to cancel a request to receive updates into the status of the counterparties on a network by sending a NetworkRequestStatusMessage with a NetworkRequestType of StopSubscribing.</p>
+
 <table>
 <tr>
+    
     <th>Field/Component</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Req'd</th>
     <th>Comments</th>
     <th>Depr.</th>
+
 </tr>
+
 
     <tr>
         <td class="green">
@@ -168,5 +175,8 @@ If not present request applies to all applicable available counterparties. EG Un
         <td class="green"></td>
     </tr>
 
+
 </table>
+
+
 </html>

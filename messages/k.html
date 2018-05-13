@@ -1,6 +1,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
+    
     <style type="text/css">
         th {
             word-wrap: break-word;
@@ -69,20 +70,26 @@
         }
 
     </style>
+    
 </head>
+
 <h1>BidRequest [type 'k']</h1>
 <p style="white-space: pre-wrap;">The BidRequest Message can be used in one of two ways depending on which market conventions are being followed.
       In the &#34;Non disclosed&#34; convention (e.g. US/European model) the BidRequest message can be used to request a bid based on the sector, country, index and liquidity information contained within the message itself. In the &#34;Non disclosed&#34; convention the entry repeating group is used to define liquidity of the program. See &#34; Program/Basket/List Trading&#34;  for an example.
       In the &#34;Disclosed&#34; convention (e.g. Japanese model) the BidRequest message can be used to request bids based on the ListOrderDetail messages sent in advance of BidRequest message. In the &#34;Disclosed&#34; convention the list repeating group is used to define which ListOrderDetail messages a bid is being sort for and the directions of the required bids.</p>
+
 <table>
 <tr>
+    
     <th>Field/Component</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Req'd</th>
     <th>Comments</th>
     <th>Depr.</th>
+
 </tr>
+
 
     <tr>
         <td class="green">
@@ -611,5 +618,8 @@
         <td class="green"></td>
     </tr>
 
+
 </table>
+
+
 </html>
