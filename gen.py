@@ -7,29 +7,30 @@ env = Environment(
 
 
 class Stylify:
-    @staticmethod
-    def linkify(obj):
-        if obj.pretty_type().isdigit():
-            return "../{}/{}.html".format('fields', obj.pretty_name())
-        return "../{}s/{}.html".format(obj.pretty_type().lower(), obj.pretty_name())
+    def __init__(self, conf):
+        self.conf = conf
 
-    @staticmethod
-    def boldify(obj, text):
+    def linkify(self, obj):
+        return "../{}.html".format(self.conf.get_http_path(obj))
+
+    def boldify(self, obj, text):
         if obj.pretty_type() == 'Component':
             return "<b>{}</b>".format(text)
         else:
             return text
 
 
-def render_pages(base_path, subdir, messages, lookup):
+def render_pages(conf, subdir, messages, lookup):
     template = env.select_template([subdir+'.html', 'messages.html'])
 
     import os
-    path = os.path.join(base_path, subdir)
+    path = conf.get_paths(subdir)
     os.makedirs(path, exist_ok=True)
 
+    stylify = Stylify(conf)
+
     for message in messages:
-        filename = '{}.html'.format(message.filename())
+        filename = '{}.html'.format(conf.get_filename(message))
         with open(os.path.join(path, filename), 'w', encoding='utf-8') as outfile:
-            result = template.render(message=message, lookup=lookup, stylify=Stylify)
+            result = template.render(message=message, lookup=lookup, stylify=stylify)
             outfile.write(result)

@@ -179,13 +179,14 @@ class Lookup:
 
 if __name__ == '__main__':
     import os
+    from configuration import Configuration
 
     base = 'fix_repository_2010_edition_20140507'
 
     for version in next(os.walk(base))[1]:
         if not version.startswith('FIX'):
             continue
-        output = os.path.join('out', version)
+        conf = Configuration.fiximate(os.path.join('out', version))
 
         try:
             messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
@@ -194,9 +195,9 @@ if __name__ == '__main__':
             components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
             enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
             lookup = Lookup(messages, msgcontents, fields, components, enums)
-            gen.render_pages(output, 'messages', messages.values(), lookup)
-            gen.render_pages(output, 'components', components.values(), lookup)
-            gen.render_pages(output, 'fields', fields.values(), lookup)
+            gen.render_pages(conf, 'messages', messages.values(), lookup)
+            gen.render_pages(conf, 'components', components.values(), lookup)
+            gen.render_pages(conf, 'fields', fields.values(), lookup)
         except:
             print("Exception while processing: %s" % version)
             raise
