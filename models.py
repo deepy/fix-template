@@ -81,3 +81,14 @@ class Field:
 
     def __repr__(self):
         return '<Field %s>' % self.Name
+
+
+class Enum:
+    def parse_value(self, tag, text):
+        setattr(self, tag, text)
+
+    def pretty_name(self):
+        return self.SymbolicName
+
+    def __repr__(self):
+        return '<Enum %s>' % self.SymbolicName

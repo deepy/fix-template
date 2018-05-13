@@ -23,7 +23,20 @@
             </a>
         </td>
         <td>{{ message.AbbrName }}</td>
-        <td>{{ message.Description }}</td>
+        <td>
+            {{ message.Description }}
+            {% if lookup.get_enums(message.pretty_type()) %}
+            <table>
+            {% for enum in lookup.get_enums(message.pretty_type()) %}
+            <tr>
+                <td>{{ enum.Value }}</td>
+                <td>=</td>
+                <td>{{ enum.SymbolicName }}</td>
+            </tr>
+            {% endfor %}
+            </table>
+            {% endif %}
+        </td>
         <td class="green">{{ message.attr_deprecated }}</td>
     </tr>
 {% endblock %}

@@ -2,7 +2,7 @@ import xml.etree.ElementTree as ET
 
 import gen
 
-from models import Message, MsgContent, Component, Field
+from models import Message, MsgContent, Component, Field, Enum
 
 
 def extract_xml(constructor, element):
@@ -62,6 +62,20 @@ def parse_components(xml):
     return components
 
 
+def parse_enums(xml):
+    from collections import defaultdict
+
+    tree = ET.parse(xml)
+    root = tree.getroot()
+
+    enums = defaultdict(list)
+
+    for element in root:
+        c = extract_xml(Enum, element)
+        enums[c.Tag].append(c)
+    return enums
+
+
 # noinspection SqlNoDataSourceInspection
 class Lookup:
     def _init_db(self):
@@ -98,11 +112,12 @@ class Lookup:
         cur.close()
         self._db.commit()
 
-    def __init__(self, messages, msgcontents, fields, components):
+    def __init__(self, messages, msgcontents, fields, components, enums):
         self._messages = messages
         self._msgcontents = msgcontents
         self._fields = fields
         self._components = components
+        self._enums = enums
 
         self._init_db()
         self._index()
@@ -158,6 +173,9 @@ class Lookup:
 
         return result
 
+    def get_enums(self, tag_id):
+        return self._enums.get(tag_id)
+
 
 if __name__ == '__main__':
     import os
@@ -170,11 +188,12 @@ if __name__ == '__main__':
         output = os.path.join('out', version)
 
         try:
-            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))  # index this
+            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
             msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
-            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))  # lookup index
-            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))  # index this
-            lookup = Lookup(messages, msgcontents, fields, components)
+            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
+            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
+            enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
+            lookup = Lookup(messages, msgcontents, fields, components, enums)
             gen.render_pages(output, 'messages', messages.values(), lookup)
             gen.render_pages(output, 'components', components.values(), lookup)
             gen.render_pages(output, 'fields', fields.values(), lookup)
