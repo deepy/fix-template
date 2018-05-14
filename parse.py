@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import os
 
 import gen
 
@@ -177,8 +178,17 @@ class Lookup:
         return self._enums.get(tag_id)
 
 
+def parse_spec(base, version):
+    return {
+        'messages': parse_messages(os.path.join(base, version, 'Base/Messages.xml')),
+        'msgcontents': parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml')),
+        'fields': parse_fields(os.path.join(base, version, 'Base/Fields.xml')),
+        'components': parse_components(os.path.join(base, version, 'Base/Components.xml')),
+        'enums': parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
+    }
+
+
 if __name__ == '__main__':
-    import os
     from configuration import Configuration
 
     base = 'fix_repository_2010_edition_20140507'
@@ -189,15 +199,11 @@ if __name__ == '__main__':
         conf = Configuration.fiximate(os.path.join('out', version))
 
         try:
-            messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
-            msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
-            fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
-            components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
-            enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
-            lookup = Lookup(messages, msgcontents, fields, components, enums)
-            gen.render_pages(conf, 'messages', messages.values(), lookup)
-            gen.render_pages(conf, 'components', components.values(), lookup)
-            gen.render_pages(conf, 'fields', fields.values(), lookup)
+            spec = parse_spec(base, version)
+            lookup = Lookup(spec['messages'], spec['msgcontents'], spec['fields'], spec['components'], spec['enums'])
+            gen.fiximate(conf, 'messages', spec['messages'].values(), lookup)
+            gen.fiximate(conf, 'components', spec['components'].values(), lookup)
+            gen.fiximate(conf, 'fields', spec['fields'].values(), lookup)
         except:
             print("Exception while processing: %s" % version)
             raise

@@ -20,7 +20,7 @@ class Stylify:
             return text
 
 
-def render_pages(conf, subdir, messages, lookup):
+def fiximate(conf, subdir, messages, lookup):
     template = env.select_template([subdir+'.html', 'messages.html'])
 
     import os
