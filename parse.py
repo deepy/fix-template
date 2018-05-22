@@ -22,7 +22,7 @@ def parse_messages(xml):
     for element in root:
         m = extract_xml(Message, element)
         messages[m.ComponentID] = m
-    return messages, root.attrib.get('copyright')
+    return messages, root.attrib.get('copyright'), root.attrib.get('version')
 
 
 def parse_msgcontents(xml):
@@ -36,7 +36,7 @@ def parse_msgcontents(xml):
     for element in root:
         m = extract_xml(MsgContent, element)
         msgcontent[m.ComponentID].append(m)
-    return msgcontent, root.attrib.get('copyright')
+    return msgcontent, root.attrib.get('copyright'), root.attrib.get('version')
 
 
 def parse_fields(xml):
@@ -48,7 +48,7 @@ def parse_fields(xml):
     for element in root:
         f = extract_xml(Field, element)
         fields[f.Tag] = f
-    return fields, root.attrib.get('copyright')
+    return fields, root.attrib.get('copyright'), root.attrib.get('version')
 
 
 def parse_components(xml):
@@ -60,7 +60,7 @@ def parse_components(xml):
     for element in root:
         c = extract_xml(Component, element)
         components[c.Name] = c
-    return components, root.attrib.get('copyright')
+    return components, root.attrib.get('copyright'), root.attrib.get('version')
 
 
 def parse_enums(xml):
@@ -74,7 +74,7 @@ def parse_enums(xml):
     for element in root:
         c = extract_xml(Enum, element)
         enums[c.Tag].append(c)
-    return enums, root.attrib.get('copyright')
+    return enums, root.attrib.get('copyright'), root.attrib.get('version')
 
 
 # noinspection SqlNoDataSourceInspection
@@ -197,6 +197,13 @@ def parse_spec(base, version):
             'fields': fields[1],
             'components': components[1],
             'enums': enums[1]
+        },
+        'version': {
+            'messages': messages[2],
+            'msgcontents': msgcontents[2],
+            'fields': fields[2],
+            'components': components[2],
+            'enums': enums[2]
         }
     }
 
@@ -215,7 +222,7 @@ if __name__ == '__main__':
             spec = parse_spec(base, version)
             lookup = Lookup(spec['messages'], spec['msgcontents'], spec['fields'], spec['components'], spec['enums'])
             for content in ['messages', 'components', 'fields']:
-                repo = {'version': version, 'type': content}
+                repo = {'version': spec['version'].get(content, version), 'type': content}
                 gen.fiximate(conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
         except:
             print("Exception while processing: %s" % version)
