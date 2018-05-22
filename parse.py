@@ -113,7 +113,7 @@ class Lookup:
         cur.close()
         self._db.commit()
 
-    def __init__(self, messages, msgcontents, fields, components, enums):
+    def __init__(self, messages, msgcontents, fields, components, enums, **kwargs):
         self._messages = messages
         self._msgcontents = msgcontents
         self._fields = fields
@@ -220,7 +220,7 @@ if __name__ == '__main__':
 
         try:
             spec = parse_spec(base, version)
-            lookup = Lookup(spec['messages'], spec['msgcontents'], spec['fields'], spec['components'], spec['enums'])
+            lookup = Lookup(**spec)
             for content in ['messages', 'components', 'fields']:
                 repo = {'version': spec['version'].get(content, version), 'type': content}
                 gen.fiximate(conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
