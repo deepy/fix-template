@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderRestrictions [type '529']</h1>
-<p style="white-space: pre-wrap;">Restrictions associated with an order. If more than one restriction is applicable to an order, this field can contain multiple instructions separated by space.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrderRestrictions [type '529']</h3>
+<p class="description">Restrictions associated with an order. If more than one restriction is applicable to an order, this field can contain multiple instructions separated by space.</p>
 
 <table>
 <tr>
@@ -89,17 +102,114 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrderRestrictions.html">
+            <a href="../fields/529.html">
             529
             </a>
         </td>
         <td>
-            <a href="../fields/OrderRestrictions.html">
+            <a href="../fields/529.html">
             OrderRestrictions
             </a>
         </td>
         <td>Rstctions</td>
-        <td>Restrictions associated with an order. If more than one restriction is applicable to an order, this field can contain multiple instructions separated by space.</td>
+        <td>
+            Restrictions associated with an order. If more than one restriction is applicable to an order, this field can contain multiple instructions separated by space.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ProgramTrade</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>IndexArbitrage</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>NonIndexArbitrage</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>CompetingMarketMaker</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ActingAsMarketMakerOrSpecialistInSecurity</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ActingAsMarketMakerOrSpecialistInUnderlying</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ForeignEntity</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>ExternalMarketParticipant</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>ExternalInterConnectedMarketLinkage</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>RisklessArbitrage</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>IssuerHolding</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>IssuePriceStabilization</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>NonAlgorithmic</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>Algorithmic</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>Cross</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -147,6 +257,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

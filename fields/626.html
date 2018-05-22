@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>AllocType [type '626']</h1>
-<p style="white-space: pre-wrap;">Describes the specific type or purpose of an Allocation message (i.e. &#34;Buyside Calculated&#34;)
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>AllocType [type '626']</h3>
+<p class="description">Describes the specific type or purpose of an Allocation message (i.e. &#34;Buyside Calculated&#34;)
 (see Volume : &#34;Glossary&#34; for value definitions)
 *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; ***</p>
 
@@ -91,19 +104,110 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/AllocType.html">
+            <a href="../fields/626.html">
             626
             </a>
         </td>
         <td>
-            <a href="../fields/AllocType.html">
+            <a href="../fields/626.html">
             AllocType
             </a>
         </td>
         <td>AllocType</td>
-        <td>Describes the specific type or purpose of an Allocation message (i.e. &#34;Buyside Calculated&#34;)
+        <td>
+            Describes the specific type or purpose of an Allocation message (i.e. &#34;Buyside Calculated&#34;)
 (see Volume : &#34;Glossary&#34; for value definitions)
-*** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; ***</td>
+*** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; ***
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Calculated</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Preliminary</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>SellsideCalculatedUsingPreliminary</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SellsideCalculatedWithoutPreliminary</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ReadyToBook</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>BuysideReadyToBook</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>WarehouseInstruction</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>RequestToIntermediary</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>Accept</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>Reject</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>AcceptPending</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>IncompleteGroup</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>CompleteGroup</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>ReversalPending</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -121,6 +225,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

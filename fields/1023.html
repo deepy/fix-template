@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDPriceLevel [type '1023']</h1>
-<p style="white-space: pre-wrap;">Integer to convey the level of a bid or offer at a given price level. This is in contrast to MDEntryPositionNo which is used to convey the position of an order within a Price level</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDPriceLevel [type '1023']</h3>
+<p class="description">Integer to convey the level of a bid or offer at a given price level. This is in contrast to MDEntryPositionNo which is used to convey the position of an order within a Price level</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MDPriceLevel.html">
+            <a href="../fields/1023.html">
             1023
             </a>
         </td>
         <td>
-            <a href="../fields/MDPriceLevel.html">
+            <a href="../fields/1023.html">
             MDPriceLevel
             </a>
         </td>
         <td>MDPxLvl</td>
-        <td>Integer to convey the level of a bid or offer at a given price level. This is in contrast to MDEntryPositionNo which is used to convey the position of an order within a Price level</td>
+        <td>
+            Integer to convey the level of a bid or offer at a given price level. This is in contrast to MDEntryPositionNo which is used to convey the position of an order within a Price level
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

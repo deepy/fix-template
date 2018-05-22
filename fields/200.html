@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MaturityMonthYear [type '200']</h1>
-<p style="white-space: pre-wrap;">Can be used with standardized derivatives vs. the MaturityDate (54) field.  Month and Year of the maturity (used for standardized futures and options).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MaturityMonthYear [type '200']</h3>
+<p class="description">Can be used with standardized derivatives vs. the MaturityDate (54) field.  Month and Year of the maturity (used for standardized futures and options).
 Format:
 YYYYMM (e.g. 199903)
 YYYYMMDD (e.g. 20030323)
@@ -94,22 +107,25 @@ A specific date or can be appended to the MaturityMonthYear. For instance, if mu
 
     <tr>
         <td class="green">
-            <a href="../fields/MaturityMonthYear.html">
+            <a href="../fields/200.html">
             200
             </a>
         </td>
         <td>
-            <a href="../fields/MaturityMonthYear.html">
+            <a href="../fields/200.html">
             MaturityMonthYear
             </a>
         </td>
         <td>MMY</td>
-        <td>Can be used with standardized derivatives vs. the MaturityDate (54) field.  Month and Year of the maturity (used for standardized futures and options).
+        <td>
+            Can be used with standardized derivatives vs. the MaturityDate (54) field.  Month and Year of the maturity (used for standardized futures and options).
 Format:
 YYYYMM (e.g. 199903)
 YYYYMMDD (e.g. 20030323)
 YYYYMMwN (e.g. 200303w) for week
-A specific date or can be appended to the MaturityMonthYear. For instance, if multiple standard products exist that mature in the same Year and Month, but actually mature at a different time, a value can be appended, such as &#34;w&#34; or &#34;w2&#34; to indicate week  as opposed to week 2 expiration. Likewise, the date (0-3) can be appended to indicate a specific expiration (maturity date).</td>
+A specific date or can be appended to the MaturityMonthYear. For instance, if multiple standard products exist that mature in the same Year and Month, but actually mature at a different time, a value can be appended, such as &#34;w&#34; or &#34;w2&#34; to indicate week  as opposed to week 2 expiration. Likewise, the date (0-3) can be appended to indicate a specific expiration (maturity date).
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +139,11 @@ A specific date or can be appended to the MaturityMonthYear. For instance, if mu
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

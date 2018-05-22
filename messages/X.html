@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MarketDataIncrementalRefresh [type 'X']</h1>
-<p style="white-space: pre-wrap;">The Market Data message for incremental updates may contain any combination of new, changed, or deleted Market Data Entries, for any combination of instruments, with any combination of trades, imbalances, quotes, index values, open, close, settlement, high, low, and VWAP prices, trade volume and open interest so long as the maximum FIX message size is not exceeded. All of these types of Market Data Entries can be changed and deleted.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>MarketDataIncrementalRefresh [type 'X']</h3>
+<p class="description">The Market Data message for incremental updates may contain any combination of new, changed, or deleted Market Data Entries, for any combination of instruments, with any combination of trades, imbalances, quotes, index values, open, close, settlement, high, low, and VWAP prices, trade volume and open interest so long as the maximum FIX message size is not exceeded. All of these types of Market Data Entries can be changed and deleted.</p>
 
 <table>
 <tr>
@@ -279,5 +292,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

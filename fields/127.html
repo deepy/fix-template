@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>DKReason [type '127']</h1>
-<p style="white-space: pre-wrap;">Reason for execution rejection.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>DKReason [type '127']</h3>
+<p class="description">Reason for execution rejection.</p>
 
 <table>
 <tr>
@@ -89,17 +102,66 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/DKReason.html">
+            <a href="../fields/127.html">
             127
             </a>
         </td>
         <td>
-            <a href="../fields/DKReason.html">
+            <a href="../fields/127.html">
             DKReason
             </a>
         </td>
         <td>DkRsn</td>
-        <td>Reason for execution rejection.</td>
+        <td>
+            Reason for execution rejection.
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>UnknownSymbol</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>WrongSide</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>QuantityExceedsOrder</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>NoMatchingOrder</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>PriceExceedsLimit</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>CalculationDifference</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +177,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

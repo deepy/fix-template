@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlInstReqRejCode [type '792']</h1>
-<p style="white-space: pre-wrap;">Identifies reason for rejection (of a settlement instruction request message).</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlInstReqRejCode [type '792']</h3>
+<p class="description">Identifies reason for rejection (of a settlement instruction request message).</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlInstReqRejCode.html">
+            <a href="../fields/792.html">
             792
             </a>
         </td>
         <td>
-            <a href="../fields/SettlInstReqRejCode.html">
+            <a href="../fields/792.html">
             SettlInstReqRejCode
             </a>
         </td>
         <td>SettlInstReqRejCode</td>
-        <td>Identifies reason for rejection (of a settlement instruction request message).</td>
+        <td>
+            Identifies reason for rejection (of a settlement instruction request message).
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>UnableToProcessRequest</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>UnknownAccount</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>NoMatchingSettlementInstructionsFound</td>
+            </tr>
+            
+            <tr>
+                <td>99</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

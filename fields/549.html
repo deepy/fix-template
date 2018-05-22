@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CrossType [type '549']</h1>
-<p style="white-space: pre-wrap;">Type of cross being submitted to a market</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CrossType [type '549']</h3>
+<p class="description">Type of cross being submitted to a market</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CrossType.html">
+            <a href="../fields/549.html">
             549
             </a>
         </td>
         <td>
-            <a href="../fields/CrossType.html">
+            <a href="../fields/549.html">
             CrossType
             </a>
         </td>
         <td>CrssTyp</td>
-        <td>Type of cross being submitted to a market</td>
+        <td>
+            Type of cross being submitted to a market
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CrossAON</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>CrossIOC</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>CrossOneSide</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>CrossSamePrice</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

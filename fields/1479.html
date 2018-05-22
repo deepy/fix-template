@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>StrikePriceBoundaryMethod [type '1479']</h1>
-<p style="white-space: pre-wrap;">Specifies the boundary condition to be used for the strike price relative to the underlying price at the point of option exercise.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>StrikePriceBoundaryMethod [type '1479']</h3>
+<p class="description">Specifies the boundary condition to be used for the strike price relative to the underlying price at the point of option exercise.</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/StrikePriceBoundaryMethod.html">
+            <a href="../fields/1479.html">
             1479
             </a>
         </td>
         <td>
-            <a href="../fields/StrikePriceBoundaryMethod.html">
+            <a href="../fields/1479.html">
             StrikePriceBoundaryMethod
             </a>
         </td>
         <td>StrkPxBndryMeth</td>
-        <td>Specifies the boundary condition to be used for the strike price relative to the underlying price at the point of option exercise.</td>
+        <td>
+            Specifies the boundary condition to be used for the strike price relative to the underlying price at the point of option exercise.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>LessThan</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>LessThanOrEqual</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Equal</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>GreaterThanOrEqual</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>GreaterThan</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

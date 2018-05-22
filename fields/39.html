@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrdStatus [type '39']</h1>
-<p style="white-space: pre-wrap;">Identifies current status of order. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrdStatus [type '39']</h3>
+<p class="description">Identifies current status of order. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
 <table>
 <tr>
@@ -89,17 +102,114 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrdStatus.html">
+            <a href="../fields/39.html">
             39
             </a>
         </td>
         <td>
-            <a href="../fields/OrdStatus.html">
+            <a href="../fields/39.html">
             OrdStatus
             </a>
         </td>
         <td>OrdStat</td>
-        <td>Identifies current status of order. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</td>
+        <td>
+            Identifies current status of order. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>New</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PartiallyFilled</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Filled</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>DoneForDay</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Canceled</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Replaced</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>PendingCancel</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>Stopped</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>Rejected</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>Suspended</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>PendingNew</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>Calculated</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>Expired</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>AcceptedForBidding</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>PendingReplace</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +235,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

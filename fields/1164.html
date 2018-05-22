@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlObligSource [type '1164']</h1>
-<p style="white-space: pre-wrap;">Used to identify whether these delivery instructions are for the buyside or the sellside.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlObligSource [type '1164']</h3>
+<p class="description">Used to identify whether these delivery instructions are for the buyside or the sellside.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlObligSource.html">
+            <a href="../fields/1164.html">
             1164
             </a>
         </td>
         <td>
-            <a href="../fields/SettlObligSource.html">
+            <a href="../fields/1164.html">
             SettlObligSource
             </a>
         </td>
         <td>SettlSrc</td>
-        <td>Used to identify whether these delivery instructions are for the buyside or the sellside.</td>
+        <td>
+            Used to identify whether these delivery instructions are for the buyside or the sellside.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>InstructionsOfBroker</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>InstructionsForInstitution</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Investor</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

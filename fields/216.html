@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RoutingType [type '216']</h1>
-<p style="white-space: pre-wrap;">Indicates the type of RoutingID (217) specified.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RoutingType [type '216']</h3>
+<p class="description">Indicates the type of RoutingID (217) specified.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/RoutingType.html">
+            <a href="../fields/216.html">
             216
             </a>
         </td>
         <td>
-            <a href="../fields/RoutingType.html">
+            <a href="../fields/216.html">
             RoutingType
             </a>
         </td>
         <td>RtgTyp</td>
-        <td>Indicates the type of RoutingID (217) specified.</td>
+        <td>
+            Indicates the type of RoutingID (217) specified.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>TargetFirm</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TargetList</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>BlockFirm</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>BlockList</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

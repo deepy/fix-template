@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OddLot [type '575']</h1>
-<p style="white-space: pre-wrap;">This trade is to be treated as an odd lot
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OddLot [type '575']</h3>
+<p class="description">This trade is to be treated as an odd lot
 If this field is not specified, the default will be &#34;N&#34;</p>
 
 <table>
@@ -90,18 +103,37 @@ If this field is not specified, the default will be &#34;N&#34;</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/OddLot.html">
+            <a href="../fields/575.html">
             575
             </a>
         </td>
         <td>
-            <a href="../fields/OddLot.html">
+            <a href="../fields/575.html">
             OddLot
             </a>
         </td>
         <td>OddLot</td>
-        <td>This trade is to be treated as an odd lot
-If this field is not specified, the default will be &#34;N&#34;</td>
+        <td>
+            This trade is to be treated as an odd lot
+If this field is not specified, the default will be &#34;N&#34;
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>TreatAsRoundLot</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>TreatAsOddLot</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green">FIX.5.0</td>
     </tr>
 
@@ -117,6 +149,11 @@ If this field is not specified, the default will be &#34;N&#34;</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

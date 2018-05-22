@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>DlvyInstType [type '787']</h1>
-<p style="white-space: pre-wrap;">Used to indicate whether a delivery instruction is used for securities or cash settlement.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>DlvyInstType [type '787']</h3>
+<p class="description">Used to indicate whether a delivery instruction is used for securities or cash settlement.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/DlvyInstType.html">
+            <a href="../fields/787.html">
             787
             </a>
         </td>
         <td>
-            <a href="../fields/DlvyInstType.html">
+            <a href="../fields/787.html">
             DlvyInstType
             </a>
         </td>
         <td>InstTyp</td>
-        <td>Used to indicate whether a delivery instruction is used for securities or cash settlement.</td>
+        <td>
+            Used to indicate whether a delivery instruction is used for securities or cash settlement.
+            
+            <table>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>Cash</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>Securities</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CustOrderCapacity [type '582']</h1>
-<p style="white-space: pre-wrap;">Capacity of customer placing the order
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CustOrderCapacity [type '582']</h3>
+<p class="description">Capacity of customer placing the order
 Primarily used by futures exchanges to indicate the CTICode (customer type indicator) as required by the US CFTC (Commodity Futures Trading Commission).</p>
 
 <table>
@@ -90,18 +103,49 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
 
     <tr>
         <td class="green">
-            <a href="../fields/CustOrderCapacity.html">
+            <a href="../fields/582.html">
             582
             </a>
         </td>
         <td>
-            <a href="../fields/CustOrderCapacity.html">
+            <a href="../fields/582.html">
             CustOrderCapacity
             </a>
         </td>
         <td>CustCpcty</td>
-        <td>Capacity of customer placing the order
-Primarily used by futures exchanges to indicate the CTICode (customer type indicator) as required by the US CFTC (Commodity Futures Trading Commission).</td>
+        <td>
+            Capacity of customer placing the order
+Primarily used by futures exchanges to indicate the CTICode (customer type indicator) as required by the US CFTC (Commodity Futures Trading Commission).
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>MemberTradingForTheirOwnAccount</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>ClearingFirmTradingForItsProprietaryAccount</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>MemberTradingForAnotherMember</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>AllOther</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -149,6 +193,11 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

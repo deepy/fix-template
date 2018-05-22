@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>LegOptionRatio [type '1017']</h1>
-<p style="white-space: pre-wrap;">Expresses the risk of an option leg
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>LegOptionRatio [type '1017']</h3>
+<p class="description">Expresses the risk of an option leg
 Value must be between -1 and 1.
 A Call Option will require a ratio value between 0 and 1
 A Put Option will require a ratio value between -1 and 0</p>
@@ -92,20 +105,23 @@ A Put Option will require a ratio value between -1 and 0</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/LegOptionRatio.html">
+            <a href="../fields/1017.html">
             1017
             </a>
         </td>
         <td>
-            <a href="../fields/LegOptionRatio.html">
+            <a href="../fields/1017.html">
             LegOptionRatio
             </a>
         </td>
         <td>LegOptionRatio</td>
-        <td>Expresses the risk of an option leg
+        <td>
+            Expresses the risk of an option leg
 Value must be between -1 and 1.
 A Call Option will require a ratio value between 0 and 1
-A Put Option will require a ratio value between -1 and 0</td>
+A Put Option will require a ratio value between -1 and 0
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +135,11 @@ A Put Option will require a ratio value between -1 and 0</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

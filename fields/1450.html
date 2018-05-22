@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>Seniority [type '1450']</h1>
-<p style="white-space: pre-wrap;">Specifies which issue (underlying bond) will receive payment priority in the event of a default.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>Seniority [type '1450']</h3>
+<p class="description">Specifies which issue (underlying bond) will receive payment priority in the event of a default.
 Used to define a CDS instrument.</p>
 
 <table>
@@ -90,18 +103,43 @@ Used to define a CDS instrument.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/Seniority.html">
+            <a href="../fields/1450.html">
             1450
             </a>
         </td>
         <td>
-            <a href="../fields/Seniority.html">
+            <a href="../fields/1450.html">
             Seniority
             </a>
         </td>
         <td>Snrty</td>
-        <td>Specifies which issue (underlying bond) will receive payment priority in the event of a default.
-Used to define a CDS instrument.</td>
+        <td>
+            Specifies which issue (underlying bond) will receive payment priority in the event of a default.
+Used to define a CDS instrument.
+            
+            <table>
+            
+            <tr>
+                <td>SD</td>
+                <td>=</td>
+                <td>SeniorSecured</td>
+            </tr>
+            
+            <tr>
+                <td>SR</td>
+                <td>=</td>
+                <td>Senior</td>
+            </tr>
+            
+            <tr>
+                <td>SB</td>
+                <td>=</td>
+                <td>Subordinated</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +153,11 @@ Used to define a CDS instrument.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

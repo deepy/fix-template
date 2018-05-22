@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ComplexEventStartDate [type '1492']</h1>
-<p style="white-space: pre-wrap;">Specifies the start date of the date range on which a complex event is effective. The start date will be set equal to the end date for single day events such as Bermuda options
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ComplexEventStartDate [type '1492']</h3>
+<p class="description">Specifies the start date of the date range on which a complex event is effective. The start date will be set equal to the end date for single day events such as Bermuda options
 ComplexEventStartDate must always be less than or equal to ComplexEventEndDate.</p>
 
 <table>
@@ -90,18 +103,21 @@ ComplexEventStartDate must always be less than or equal to ComplexEventEndDate.<
 
     <tr>
         <td class="green">
-            <a href="../fields/ComplexEventStartDate.html">
+            <a href="../fields/1492.html">
             1492
             </a>
         </td>
         <td>
-            <a href="../fields/ComplexEventStartDate.html">
+            <a href="../fields/1492.html">
             ComplexEventStartDate
             </a>
         </td>
         <td>StartDt</td>
-        <td>Specifies the start date of the date range on which a complex event is effective. The start date will be set equal to the end date for single day events such as Bermuda options
-ComplexEventStartDate must always be less than or equal to ComplexEventEndDate.</td>
+        <td>
+            Specifies the start date of the date range on which a complex event is effective. The start date will be set equal to the end date for single day events such as Bermuda options
+ComplexEventStartDate must always be less than or equal to ComplexEventEndDate.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@ ComplexEventStartDate must always be less than or equal to ComplexEventEndDate.<
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

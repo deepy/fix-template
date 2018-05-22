@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RefreshIndicator [type '1187']</h1>
-<p style="white-space: pre-wrap;">Set by the sender to tell the receiver to perform an immediate refresh of the book due to disruptions in the accompanying real-time feed
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RefreshIndicator [type '1187']</h3>
+<p class="description">Set by the sender to tell the receiver to perform an immediate refresh of the book due to disruptions in the accompanying real-time feed
 &#39;Y&#39; - Mandatory refresh by all participants
 &#39;N&#39; - Process as required</p>
 
@@ -91,19 +104,22 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/RefreshIndicator.html">
+            <a href="../fields/1187.html">
             1187
             </a>
         </td>
         <td>
-            <a href="../fields/RefreshIndicator.html">
+            <a href="../fields/1187.html">
             RefreshIndicator
             </a>
         </td>
         <td>RefInd</td>
-        <td>Set by the sender to tell the receiver to perform an immediate refresh of the book due to disruptions in the accompanying real-time feed
+        <td>
+            Set by the sender to tell the receiver to perform an immediate refresh of the book due to disruptions in the accompanying real-time feed
 &#39;Y&#39; - Mandatory refresh by all participants
-&#39;N&#39; - Process as required</td>
+&#39;N&#39; - Process as required
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

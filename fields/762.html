@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecuritySubType [type '762']</h1>
-<p style="white-space: pre-wrap;">Sub-type qualification/identification of the SecurityType. As an example for SecurityType(167)=&#34;REPO&#34;, the SecuritySubType=&#34;General Collateral&#34; can be used to further specify the type of REPO.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecuritySubType [type '762']</h3>
+<p class="description">Sub-type qualification/identification of the SecurityType. As an example for SecurityType(167)=&#34;REPO&#34;, the SecuritySubType=&#34;General Collateral&#34; can be used to further specify the type of REPO.
 If SecuritySubType is used then SecurityType is required.
 For SecurityType=&#34;MLEG&#34; a name of the option or futures strategy name can be specified, such as &#34;Calendar&#34;, &#34;Vertical&#34;, &#34;Butterfly&#34;.</p>
 
@@ -91,19 +104,22 @@ For SecurityType=&#34;MLEG&#34; a name of the option or futures strategy name ca
 
     <tr>
         <td class="green">
-            <a href="../fields/SecuritySubType.html">
+            <a href="../fields/762.html">
             762
             </a>
         </td>
         <td>
-            <a href="../fields/SecuritySubType.html">
+            <a href="../fields/762.html">
             SecuritySubType
             </a>
         </td>
         <td>SubTyp</td>
-        <td>Sub-type qualification/identification of the SecurityType. As an example for SecurityType(167)=&#34;REPO&#34;, the SecuritySubType=&#34;General Collateral&#34; can be used to further specify the type of REPO.
+        <td>
+            Sub-type qualification/identification of the SecurityType. As an example for SecurityType(167)=&#34;REPO&#34;, the SecuritySubType=&#34;General Collateral&#34; can be used to further specify the type of REPO.
 If SecuritySubType is used then SecurityType is required.
-For SecurityType=&#34;MLEG&#34; a name of the option or futures strategy name can be specified, such as &#34;Calendar&#34;, &#34;Vertical&#34;, &#34;Butterfly&#34;.</td>
+For SecurityType=&#34;MLEG&#34; a name of the option or futures strategy name can be specified, such as &#34;Calendar&#34;, &#34;Vertical&#34;, &#34;Butterfly&#34;.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -129,6 +145,11 @@ For SecurityType=&#34;MLEG&#34; a name of the option or futures strategy name ca
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

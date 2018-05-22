@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CollStatus [type '910']</h1>
-<p style="white-space: pre-wrap;">Collateral Status</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CollStatus [type '910']</h3>
+<p class="description">Collateral Status</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CollStatus.html">
+            <a href="../fields/910.html">
             910
             </a>
         </td>
         <td>
-            <a href="../fields/CollStatus.html">
+            <a href="../fields/910.html">
             CollStatus
             </a>
         </td>
         <td>Stat</td>
-        <td>Collateral Status</td>
+        <td>
+            Collateral Status
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Unassigned</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PartiallyAssigned</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>AssignmentProposed</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Assigned</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Challenged</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

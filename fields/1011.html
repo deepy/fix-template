@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MessageEventSource [type '1011']</h1>
-<p style="white-space: pre-wrap;">Used to identify the event or source which gave rise to a message.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MessageEventSource [type '1011']</h3>
+<p class="description">Used to identify the event or source which gave rise to a message.
 Valid values will be based on an exchange&#39;s implementation.
 Example values are:
 &#34;MQM&#34; (originated at Firm Back Office)
@@ -94,22 +107,25 @@ Example values are:
 
     <tr>
         <td class="green">
-            <a href="../fields/MessageEventSource.html">
+            <a href="../fields/1011.html">
             1011
             </a>
         </td>
         <td>
-            <a href="../fields/MessageEventSource.html">
+            <a href="../fields/1011.html">
             MessageEventSource
             </a>
         </td>
         <td>MsgEvtSrc</td>
-        <td>Used to identify the event or source which gave rise to a message.
+        <td>
+            Used to identify the event or source which gave rise to a message.
 Valid values will be based on an exchange&#39;s implementation.
 Example values are:
 &#34;MQM&#34; (originated at Firm Back Office)
 &#34;Clear&#34; (originated in Clearing System)
-&#34;Reg&#34; (static data generated via Register request)</td>
+&#34;Reg&#34; (static data generated via Register request)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -137,6 +153,11 @@ Example values are:
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

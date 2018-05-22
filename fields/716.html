@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlSessID [type '716']</h1>
-<p style="white-space: pre-wrap;">Identifies a specific settlement session</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlSessID [type '716']</h3>
+<p class="description">Identifies a specific settlement session</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlSessID.html">
+            <a href="../fields/716.html">
             716
             </a>
         </td>
         <td>
-            <a href="../fields/SettlSessID.html">
+            <a href="../fields/716.html">
             SettlSessID
             </a>
         </td>
         <td>SetSesID</td>
-        <td>Identifies a specific settlement session</td>
+        <td>
+            Identifies a specific settlement session
+            
+            <table>
+            
+            <tr>
+                <td>ITD</td>
+                <td>=</td>
+                <td>Intraday</td>
+            </tr>
+            
+            <tr>
+                <td>RTH</td>
+                <td>=</td>
+                <td>RegularTradingHours</td>
+            </tr>
+            
+            <tr>
+                <td>ETH</td>
+                <td>=</td>
+                <td>ElectronicTradingHours</td>
+            </tr>
+            
+            <tr>
+                <td>EOD</td>
+                <td>=</td>
+                <td>EndOfDay</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -139,6 +183,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

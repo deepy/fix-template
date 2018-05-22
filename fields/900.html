@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TotalNetValue [type '900']</h1>
-<p style="white-space: pre-wrap;">TotalNetValue is determined as follows:
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TotalNetValue [type '900']</h3>
+<p class="description">TotalNetValue is determined as follows:
 At the initial collateral assignment TotalNetValue is the sum of (UnderlyingStartValue * (1-haircut)).
 In a collateral substitution TotalNetValue is the sum of (UnderlyingCurrentValue * (1-haircut)).
 For listed derivatives clearing margin management, this is the collateral value which equals (Market value * haircut)</p>
@@ -92,20 +105,23 @@ For listed derivatives clearing margin management, this is the collateral value 
 
     <tr>
         <td class="green">
-            <a href="../fields/TotalNetValue.html">
+            <a href="../fields/900.html">
             900
             </a>
         </td>
         <td>
-            <a href="../fields/TotalNetValue.html">
+            <a href="../fields/900.html">
             TotalNetValue
             </a>
         </td>
         <td>TotNetValu</td>
-        <td>TotalNetValue is determined as follows:
+        <td>
+            TotalNetValue is determined as follows:
 At the initial collateral assignment TotalNetValue is the sum of (UnderlyingStartValue * (1-haircut)).
 In a collateral substitution TotalNetValue is the sum of (UnderlyingCurrentValue * (1-haircut)).
-For listed derivatives clearing margin management, this is the collateral value which equals (Market value * haircut)</td>
+For listed derivatives clearing margin management, this is the collateral value which equals (Market value * haircut)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -127,6 +143,11 @@ For listed derivatives clearing margin management, this is the collateral value 
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MassCancelRequestType [type '530']</h1>
-<p style="white-space: pre-wrap;">Specifies scope of Order Mass Cancel Request.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MassCancelRequestType [type '530']</h3>
+<p class="description">Specifies scope of Order Mass Cancel Request.</p>
 
 <table>
 <tr>
@@ -89,17 +102,96 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MassCancelRequestType.html">
+            <a href="../fields/530.html">
             530
             </a>
         </td>
         <td>
-            <a href="../fields/MassCancelRequestType.html">
+            <a href="../fields/530.html">
             MassCancelRequestType
             </a>
         </td>
         <td>MassCxlReqTyp</td>
-        <td>Specifies scope of Order Mass Cancel Request.</td>
+        <td>
+            Specifies scope of Order Mass Cancel Request.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CancelOrdersForASecurity</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>CancelOrdersForAnUnderlyingSecurity</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>CancelOrdersForAProduct</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>CancelOrdersForACFICode</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>CancelOrdersForASecurityType</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>CancelOrdersForATradingSession</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>CancelAllOrders</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>CancelOrdersForAMarket</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>CancelOrdersForAMarketSegment</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>CancelOrdersForASecurityGroup</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>CancelOrdersForSecurityIssuer</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>CancelForIssuerOfUnderlyingSecurity</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +207,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

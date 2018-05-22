@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CustDirectedOrder [type '1029']</h1>
-<p style="white-space: pre-wrap;">Indicates if the customer directed this order to a specific execution venue &#34;Y&#34; or not &#34;N&#34;.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CustDirectedOrder [type '1029']</h3>
+<p class="description">Indicates if the customer directed this order to a specific execution venue &#34;Y&#34; or not &#34;N&#34;.
 A default of &#34;N&#34; customer did not direct this order should be used in the case where the information is both missing and essential.</p>
 
 <table>
@@ -90,18 +103,21 @@ A default of &#34;N&#34; customer did not direct this order should be used in th
 
     <tr>
         <td class="green">
-            <a href="../fields/CustDirectedOrder.html">
+            <a href="../fields/1029.html">
             1029
             </a>
         </td>
         <td>
-            <a href="../fields/CustDirectedOrder.html">
+            <a href="../fields/1029.html">
             CustDirectedOrder
             </a>
         </td>
         <td>CustDrctdOrd</td>
-        <td>Indicates if the customer directed this order to a specific execution venue &#34;Y&#34; or not &#34;N&#34;.
-A default of &#34;N&#34; customer did not direct this order should be used in the case where the information is both missing and essential.</td>
+        <td>
+            Indicates if the customer directed this order to a specific execution venue &#34;Y&#34; or not &#34;N&#34;.
+A default of &#34;N&#34; customer did not direct this order should be used in the case where the information is both missing and essential.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +135,11 @@ A default of &#34;N&#34; customer did not direct this order should be used in th
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

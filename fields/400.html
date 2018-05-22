@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>BidDescriptor [type '400']</h1>
-<p style="white-space: pre-wrap;">BidDescriptor value. Usage depends upon BidDescriptorTyp (399).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>BidDescriptor [type '400']</h3>
+<p class="description">BidDescriptor value. Usage depends upon BidDescriptorTyp (399).
 If BidDescriptorType = 1
 Industrials etc - Free text
 If BidDescriptorType = 2
@@ -95,23 +108,26 @@ FT00, FT250, STOX - Free text</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/BidDescriptor.html">
+            <a href="../fields/400.html">
             400
             </a>
         </td>
         <td>
-            <a href="../fields/BidDescriptor.html">
+            <a href="../fields/400.html">
             BidDescriptor
             </a>
         </td>
         <td>BidDescptr</td>
-        <td>BidDescriptor value. Usage depends upon BidDescriptorTyp (399).
+        <td>
+            BidDescriptor value. Usage depends upon BidDescriptorTyp (399).
 If BidDescriptorType = 1
 Industrials etc - Free text
 If BidDescriptorType = 2
 &#34;FR&#34; etc - ISO Country Codes
 If BidDescriptorType = 3
-FT00, FT250, STOX - Free text</td>
+FT00, FT250, STOX - Free text
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +141,11 @@ FT00, FT250, STOX - Free text</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

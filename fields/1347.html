@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ApplReqType [type '1347']</h1>
-<p style="white-space: pre-wrap;">Type of Application Message Request being made.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ApplReqType [type '1347']</h3>
+<p class="description">Type of Application Message Request being made.</p>
 
 <table>
 <tr>
@@ -89,17 +102,66 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ApplReqType.html">
+            <a href="../fields/1347.html">
             1347
             </a>
         </td>
         <td>
-            <a href="../fields/ApplReqType.html">
+            <a href="../fields/1347.html">
             ApplReqType
             </a>
         </td>
         <td>ApplReqTyp</td>
-        <td>Type of Application Message Request being made.</td>
+        <td>
+            Type of Application Message Request being made.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Retransmission</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Subscription</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>RequestLastSeqNum</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>RequestApplications</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Unsubscribe</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>CancelRetransmission</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>CancelRetransmissionUnsubscribe</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +177,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

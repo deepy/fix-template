@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityResponseType [type '323']</h1>
-<p style="white-space: pre-wrap;">Type of Security Definition message response.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityResponseType [type '323']</h3>
+<p class="description">Type of Security Definition message response.</p>
 
 <table>
 <tr>
@@ -89,17 +102,60 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityResponseType.html">
+            <a href="../fields/323.html">
             323
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityResponseType.html">
+            <a href="../fields/323.html">
             SecurityResponseType
             </a>
         </td>
         <td>RspTyp</td>
-        <td>Type of Security Definition message response.</td>
+        <td>
+            Type of Security Definition message response.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>AcceptAsIs</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>AcceptWithRevisions</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>ListOfSecurityTypesReturnedPerRequest</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>ListOfSecuritiesReturnedPerRequest</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>RejectSecurityProposal</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>CannotMatchSelectionCriteria</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +173,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

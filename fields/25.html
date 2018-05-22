@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>IOIQltyInd [type '25']</h1>
-<p style="white-space: pre-wrap;">Relative quality of indication</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>IOIQltyInd [type '25']</h3>
+<p class="description">Relative quality of indication</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/IOIQltyInd.html">
+            <a href="../fields/25.html">
             25
             </a>
         </td>
         <td>
-            <a href="../fields/IOIQltyInd.html">
+            <a href="../fields/25.html">
             IOIQltyInd
             </a>
         </td>
         <td>QltyInd</td>
-        <td>Relative quality of indication</td>
+        <td>
+            Relative quality of indication
+            
+            <table>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>High</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>Low</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Medium</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

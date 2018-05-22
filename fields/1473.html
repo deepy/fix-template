@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>NewsCategory [type '1473']</h1>
-<p style="white-space: pre-wrap;">Category of news mesage.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>NewsCategory [type '1473']</h3>
+<p class="description">Category of news mesage.</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/NewsCategory.html">
+            <a href="../fields/1473.html">
             1473
             </a>
         </td>
         <td>
-            <a href="../fields/NewsCategory.html">
+            <a href="../fields/1473.html">
             NewsCategory
             </a>
         </td>
         <td>NewsCatgy</td>
-        <td>Category of news mesage.</td>
+        <td>
+            Category of news mesage.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>CompanyNews</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>MarketplaceNews</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>FinancialMarketNews</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>TechnicalNews</td>
+            </tr>
+            
+            <tr>
+                <td>99</td>
+                <td>=</td>
+                <td>OtherNews</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

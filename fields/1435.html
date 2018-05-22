@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ContractMultiplierUnit [type '1435']</h1>
-<p style="white-space: pre-wrap;">Indicates the type of multiplier being applied to the contract. Can be optionally used to further define what unit ContractMultiplier(tag 231) is expressed in.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ContractMultiplierUnit [type '1435']</h3>
+<p class="description">Indicates the type of multiplier being applied to the contract. Can be optionally used to further define what unit ContractMultiplier(tag 231) is expressed in.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ContractMultiplierUnit.html">
+            <a href="../fields/1435.html">
             1435
             </a>
         </td>
         <td>
-            <a href="../fields/ContractMultiplierUnit.html">
+            <a href="../fields/1435.html">
             ContractMultiplierUnit
             </a>
         </td>
         <td>MultTyp</td>
-        <td>Indicates the type of multiplier being applied to the contract. Can be optionally used to further define what unit ContractMultiplier(tag 231) is expressed in.</td>
+        <td>
+            Indicates the type of multiplier being applied to the contract. Can be optionally used to further define what unit ContractMultiplier(tag 231) is expressed in.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Shares</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Hours</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Days</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

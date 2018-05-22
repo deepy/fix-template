@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ReportToExch [type '113']</h1>
-<p style="white-space: pre-wrap;">Identifies party of trade responsible for exchange reporting.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ReportToExch [type '113']</h3>
+<p class="description">Identifies party of trade responsible for exchange reporting.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ReportToExch.html">
+            <a href="../fields/113.html">
             113
             </a>
         </td>
         <td>
-            <a href="../fields/ReportToExch.html">
+            <a href="../fields/113.html">
             ReportToExch
             </a>
         </td>
         <td>RptToExch</td>
-        <td>Identifies party of trade responsible for exchange reporting.</td>
+        <td>
+            Identifies party of trade responsible for exchange reporting.
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>SenderReports</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>ReceiverReports</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

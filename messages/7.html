@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>Advertisement [type '7']</h1>
-<p style="white-space: pre-wrap;">Advertisement messages are used to announce completed transactions. The advertisement message can be transmitted in various transaction types; NEW, CANCEL and REPLACE. All message types other than NEW modify the state of a previously transmitted advertisement identified in AdvRefID.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>Advertisement [type '7']</h3>
+<p class="description">Advertisement messages are used to announce completed transactions. The advertisement message can be transmitted in various transaction types; NEW, CANCEL and REPLACE. All message types other than NEW modify the state of a previously transmitted advertisement identified in AdvRefID.</p>
 
 <table>
 <tr>
@@ -467,5 +480,10 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

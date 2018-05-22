@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>Reject [type '3']</h1>
-<p style="white-space: pre-wrap;">The reject message should be issued when a message is received but cannot be properly processed due to a session-level rule violation. An example of when a reject may be appropriate would be the receipt of a message with invalid basic data which successfully passes de-encryption, CheckSum and BodyLength checks.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>Reject [type '3']</h3>
+<p class="description">The reject message should be issued when a message is received but cannot be properly processed due to a session-level rule violation. An example of when a reject may be appropriate would be the receipt of a message with invalid basic data which successfully passes de-encryption, CheckSum and BodyLength checks.</p>
 
 <table>
 <tr>
@@ -296,5 +309,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

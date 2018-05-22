@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SideTimeInForce [type '962']</h1>
-<p style="white-space: pre-wrap;">Indicates how long the order as specified in the side stays in effect. SideTimeInForce allows a two-sided cross order to specify order behavior separately for each side. Absence of this field indicates that TimeInForce should be referenced. SideTimeInForce will override TimeInForce if both are provided.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SideTimeInForce [type '962']</h3>
+<p class="description">Indicates how long the order as specified in the side stays in effect. SideTimeInForce allows a two-sided cross order to specify order behavior separately for each side. Absence of this field indicates that TimeInForce should be referenced. SideTimeInForce will override TimeInForce if both are provided.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SideTimeInForce.html">
+            <a href="../fields/962.html">
             962
             </a>
         </td>
         <td>
-            <a href="../fields/SideTimeInForce.html">
+            <a href="../fields/962.html">
             SideTimeInForce
             </a>
         </td>
         <td>SideTmFrc</td>
-        <td>Indicates how long the order as specified in the side stays in effect. SideTimeInForce allows a two-sided cross order to specify order behavior separately for each side. Absence of this field indicates that TimeInForce should be referenced. SideTimeInForce will override TimeInForce if both are provided.</td>
+        <td>
+            Indicates how long the order as specified in the side stays in effect. SideTimeInForce allows a two-sided cross order to specify order behavior separately for each side. Absence of this field indicates that TimeInForce should be referenced. SideTimeInForce will override TimeInForce if both are provided.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +129,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityRequestType [type '321']</h1>
-<p style="white-space: pre-wrap;">Type of Security Definition Request.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityRequestType [type '321']</h3>
+<p class="description">Type of Security Definition Request.</p>
 
 <table>
 <tr>
@@ -89,17 +102,84 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityRequestType.html">
+            <a href="../fields/321.html">
             321
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityRequestType.html">
+            <a href="../fields/321.html">
             SecurityRequestType
             </a>
         </td>
         <td>ReqTyp</td>
-        <td>Type of Security Definition Request.</td>
+        <td>
+            Type of Security Definition Request.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>RequestSecurityIdentityAndSpecifications</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>RequestSecurityIdentityForSpecifications</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>RequestListSecurityTypes</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>RequestListSecurities</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Symbol</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>SecurityTypeAndOrCFICode</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>Product</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>TradingSessionID</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>AllSecurities</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>MarketIDOrMarketID</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +193,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

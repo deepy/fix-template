@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CFICode [type '461']</h1>
-<p style="white-space: pre-wrap;">Indicates the type of security using ISO 10962 standard, Classification of Financial Instruments (CFI code) values. ISO 10962 is maintained by ANNA (Association of National Numbering Agencies) acting as Registration Authority. See &#34;Appendix 6-B FIX Fields Based Upon Other Standards&#34;. See also the Product (460) and SecurityType (167) fields. It is recommended that CFICode be used instead of SecurityType (167) for non-Fixed Income instruments.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CFICode [type '461']</h3>
+<p class="description">Indicates the type of security using ISO 10962 standard, Classification of Financial Instruments (CFI code) values. ISO 10962 is maintained by ANNA (Association of National Numbering Agencies) acting as Registration Authority. See &#34;Appendix 6-B FIX Fields Based Upon Other Standards&#34;. See also the Product (460) and SecurityType (167) fields. It is recommended that CFICode be used instead of SecurityType (167) for non-Fixed Income instruments.
 A subset of possible values applicable to FIX usage are identified in &#34;Appendix 6-D CFICode Usage - ISO 10962 Classification of Financial Instruments (CFI code)&#34;</p>
 
 <table>
@@ -90,18 +103,21 @@ A subset of possible values applicable to FIX usage are identified in &#34;Appen
 
     <tr>
         <td class="green">
-            <a href="../fields/CFICode.html">
+            <a href="../fields/461.html">
             461
             </a>
         </td>
         <td>
-            <a href="../fields/CFICode.html">
+            <a href="../fields/461.html">
             CFICode
             </a>
         </td>
         <td>CFI</td>
-        <td>Indicates the type of security using ISO 10962 standard, Classification of Financial Instruments (CFI code) values. ISO 10962 is maintained by ANNA (Association of National Numbering Agencies) acting as Registration Authority. See &#34;Appendix 6-B FIX Fields Based Upon Other Standards&#34;. See also the Product (460) and SecurityType (167) fields. It is recommended that CFICode be used instead of SecurityType (167) for non-Fixed Income instruments.
-A subset of possible values applicable to FIX usage are identified in &#34;Appendix 6-D CFICode Usage - ISO 10962 Classification of Financial Instruments (CFI code)&#34;</td>
+        <td>
+            Indicates the type of security using ISO 10962 standard, Classification of Financial Instruments (CFI code) values. ISO 10962 is maintained by ANNA (Association of National Numbering Agencies) acting as Registration Authority. See &#34;Appendix 6-B FIX Fields Based Upon Other Standards&#34;. See also the Product (460) and SecurityType (167) fields. It is recommended that CFICode be used instead of SecurityType (167) for non-Fixed Income instruments.
+A subset of possible values applicable to FIX usage are identified in &#34;Appendix 6-D CFICode Usage - ISO 10962 Classification of Financial Instruments (CFI code)&#34;
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -127,6 +143,11 @@ A subset of possible values applicable to FIX usage are identified in &#34;Appen
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

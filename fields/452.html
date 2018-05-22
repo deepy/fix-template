@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PartyRole [type '452']</h1>
-<p style="white-space: pre-wrap;">Identifies the type or role of the PartyID (448) specified.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PartyRole [type '452']</h3>
+<p class="description">Identifies the type or role of the PartyID (448) specified.
 See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;
 (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
@@ -91,19 +104,530 @@ See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;
 
     <tr>
         <td class="green">
-            <a href="../fields/PartyRole.html">
+            <a href="../fields/452.html">
             452
             </a>
         </td>
         <td>
-            <a href="../fields/PartyRole.html">
+            <a href="../fields/452.html">
             PartyRole
             </a>
         </td>
         <td>R</td>
-        <td>Identifies the type or role of the PartyID (448) specified.
+        <td>
+            Identifies the type or role of the PartyID (448) specified.
 See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;
-(see Volume : &#34;Glossary&#34; for value definitions)</td>
+(see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ExecutingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>BrokerOfCredit</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>ClientID</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>ClearingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>InvestorID</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>IntroducingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>EnteringFirm</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>Locate</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>FundManagerClientID</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>SettlementLocation</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>OrderOriginationTrader</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>ExecutingTrader</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>OrderOriginationFirm</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>GiveupClearingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>CorrespondantClearingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>ExecutingSystem</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>=</td>
+                <td>ContraFirm</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>ContraClearingFirm</td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>=</td>
+                <td>SponsoringFirm</td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>=</td>
+                <td>UnderlyingContraFirm</td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>=</td>
+                <td>ClearingOrganization</td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>=</td>
+                <td>Exchange</td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td>=</td>
+                <td>CustomerAccount</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>=</td>
+                <td>CorrespondentClearingOrganization</td>
+            </tr>
+            
+            <tr>
+                <td>26</td>
+                <td>=</td>
+                <td>CorrespondentBroker</td>
+            </tr>
+            
+            <tr>
+                <td>27</td>
+                <td>=</td>
+                <td>Buyer</td>
+            </tr>
+            
+            <tr>
+                <td>28</td>
+                <td>=</td>
+                <td>Custodian</td>
+            </tr>
+            
+            <tr>
+                <td>29</td>
+                <td>=</td>
+                <td>Intermediary</td>
+            </tr>
+            
+            <tr>
+                <td>30</td>
+                <td>=</td>
+                <td>Agent</td>
+            </tr>
+            
+            <tr>
+                <td>31</td>
+                <td>=</td>
+                <td>SubCustodian</td>
+            </tr>
+            
+            <tr>
+                <td>32</td>
+                <td>=</td>
+                <td>Beneficiary</td>
+            </tr>
+            
+            <tr>
+                <td>33</td>
+                <td>=</td>
+                <td>InterestedParty</td>
+            </tr>
+            
+            <tr>
+                <td>34</td>
+                <td>=</td>
+                <td>RegulatoryBody</td>
+            </tr>
+            
+            <tr>
+                <td>35</td>
+                <td>=</td>
+                <td>LiquidityProvider</td>
+            </tr>
+            
+            <tr>
+                <td>36</td>
+                <td>=</td>
+                <td>EnteringTrader</td>
+            </tr>
+            
+            <tr>
+                <td>37</td>
+                <td>=</td>
+                <td>ContraTrader</td>
+            </tr>
+            
+            <tr>
+                <td>38</td>
+                <td>=</td>
+                <td>PositionAccount</td>
+            </tr>
+            
+            <tr>
+                <td>39</td>
+                <td>=</td>
+                <td>ContraInvestorID</td>
+            </tr>
+            
+            <tr>
+                <td>40</td>
+                <td>=</td>
+                <td>TransferToFirm</td>
+            </tr>
+            
+            <tr>
+                <td>41</td>
+                <td>=</td>
+                <td>ContraPositionAccount</td>
+            </tr>
+            
+            <tr>
+                <td>42</td>
+                <td>=</td>
+                <td>ContraExchange</td>
+            </tr>
+            
+            <tr>
+                <td>43</td>
+                <td>=</td>
+                <td>InternalCarryAccount</td>
+            </tr>
+            
+            <tr>
+                <td>44</td>
+                <td>=</td>
+                <td>OrderEntryOperatorID</td>
+            </tr>
+            
+            <tr>
+                <td>45</td>
+                <td>=</td>
+                <td>SecondaryAccountNumber</td>
+            </tr>
+            
+            <tr>
+                <td>46</td>
+                <td>=</td>
+                <td>ForeignFirm</td>
+            </tr>
+            
+            <tr>
+                <td>47</td>
+                <td>=</td>
+                <td>ThirdPartyAllocationFirm</td>
+            </tr>
+            
+            <tr>
+                <td>48</td>
+                <td>=</td>
+                <td>ClaimingAccount</td>
+            </tr>
+            
+            <tr>
+                <td>49</td>
+                <td>=</td>
+                <td>AssetManager</td>
+            </tr>
+            
+            <tr>
+                <td>50</td>
+                <td>=</td>
+                <td>PledgorAccount</td>
+            </tr>
+            
+            <tr>
+                <td>51</td>
+                <td>=</td>
+                <td>PledgeeAccount</td>
+            </tr>
+            
+            <tr>
+                <td>52</td>
+                <td>=</td>
+                <td>LargeTraderReportableAccount</td>
+            </tr>
+            
+            <tr>
+                <td>53</td>
+                <td>=</td>
+                <td>TraderMnemonic</td>
+            </tr>
+            
+            <tr>
+                <td>54</td>
+                <td>=</td>
+                <td>SenderLocation</td>
+            </tr>
+            
+            <tr>
+                <td>55</td>
+                <td>=</td>
+                <td>SessionID</td>
+            </tr>
+            
+            <tr>
+                <td>56</td>
+                <td>=</td>
+                <td>AcceptableCounterparty</td>
+            </tr>
+            
+            <tr>
+                <td>57</td>
+                <td>=</td>
+                <td>UnacceptableCounterparty</td>
+            </tr>
+            
+            <tr>
+                <td>58</td>
+                <td>=</td>
+                <td>EnteringUnit</td>
+            </tr>
+            
+            <tr>
+                <td>59</td>
+                <td>=</td>
+                <td>ExecutingUnit</td>
+            </tr>
+            
+            <tr>
+                <td>60</td>
+                <td>=</td>
+                <td>IntroducingBroker</td>
+            </tr>
+            
+            <tr>
+                <td>61</td>
+                <td>=</td>
+                <td>QuoteOriginator</td>
+            </tr>
+            
+            <tr>
+                <td>62</td>
+                <td>=</td>
+                <td>ReportOriginator</td>
+            </tr>
+            
+            <tr>
+                <td>63</td>
+                <td>=</td>
+                <td>SystematicInternaliser</td>
+            </tr>
+            
+            <tr>
+                <td>64</td>
+                <td>=</td>
+                <td>MultilateralTradingFacility</td>
+            </tr>
+            
+            <tr>
+                <td>65</td>
+                <td>=</td>
+                <td>RegulatedMarket</td>
+            </tr>
+            
+            <tr>
+                <td>66</td>
+                <td>=</td>
+                <td>MarketMaker</td>
+            </tr>
+            
+            <tr>
+                <td>67</td>
+                <td>=</td>
+                <td>InvestmentFirm</td>
+            </tr>
+            
+            <tr>
+                <td>68</td>
+                <td>=</td>
+                <td>HostCompetentAuthority</td>
+            </tr>
+            
+            <tr>
+                <td>69</td>
+                <td>=</td>
+                <td>HomeCompetentAuthority</td>
+            </tr>
+            
+            <tr>
+                <td>70</td>
+                <td>=</td>
+                <td>CompetentAuthorityLiquidity</td>
+            </tr>
+            
+            <tr>
+                <td>71</td>
+                <td>=</td>
+                <td>CompetentAuthorityTransactionVenue</td>
+            </tr>
+            
+            <tr>
+                <td>72</td>
+                <td>=</td>
+                <td>ReportingIntermediary</td>
+            </tr>
+            
+            <tr>
+                <td>73</td>
+                <td>=</td>
+                <td>ExecutionVenue</td>
+            </tr>
+            
+            <tr>
+                <td>74</td>
+                <td>=</td>
+                <td>MarketDataEntryOriginator</td>
+            </tr>
+            
+            <tr>
+                <td>75</td>
+                <td>=</td>
+                <td>LocationID</td>
+            </tr>
+            
+            <tr>
+                <td>76</td>
+                <td>=</td>
+                <td>DeskID</td>
+            </tr>
+            
+            <tr>
+                <td>77</td>
+                <td>=</td>
+                <td>MarketDataMarket</td>
+            </tr>
+            
+            <tr>
+                <td>78</td>
+                <td>=</td>
+                <td>AllocationEntity</td>
+            </tr>
+            
+            <tr>
+                <td>79</td>
+                <td>=</td>
+                <td>PrimeBroker</td>
+            </tr>
+            
+            <tr>
+                <td>80</td>
+                <td>=</td>
+                <td>StepOutFirm</td>
+            </tr>
+            
+            <tr>
+                <td>81</td>
+                <td>=</td>
+                <td>BrokerClearingID</td>
+            </tr>
+            
+            <tr>
+                <td>82</td>
+                <td>=</td>
+                <td>CentralRegistrationDepository</td>
+            </tr>
+            
+            <tr>
+                <td>83</td>
+                <td>=</td>
+                <td>ClearingAccount</td>
+            </tr>
+            
+            <tr>
+                <td>84</td>
+                <td>=</td>
+                <td>AcceptableSettlingCounterparty</td>
+            </tr>
+            
+            <tr>
+                <td>85</td>
+                <td>=</td>
+                <td>UnacceptableSettlingCounterparty</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +641,11 @@ See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

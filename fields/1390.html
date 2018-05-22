@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradePublishIndicator [type '1390']</h1>
-<p style="white-space: pre-wrap;">Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradePublishIndicator [type '1390']</h3>
+<p class="description">Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TradePublishIndicator.html">
+            <a href="../fields/1390.html">
             1390
             </a>
         </td>
         <td>
-            <a href="../fields/TradePublishIndicator.html">
+            <a href="../fields/1390.html">
             TradePublishIndicator
             </a>
         </td>
         <td>TrdPubInd</td>
-        <td>Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).</td>
+        <td>
+            Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>DoNotPublishTrade</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PublishTrade</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>DeferredPublication</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +153,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

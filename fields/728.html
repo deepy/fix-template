@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PosReqResult [type '728']</h1>
-<p style="white-space: pre-wrap;">Result of Request for Position
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PosReqResult [type '728']</h3>
+<p class="description">Result of Request for Position
 4000+ Reserved and available for bi-laterally agreed upon user-defined values</p>
 
 <table>
@@ -90,18 +103,61 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PosReqResult.html">
+            <a href="../fields/728.html">
             728
             </a>
         </td>
         <td>
-            <a href="../fields/PosReqResult.html">
+            <a href="../fields/728.html">
             PosReqResult
             </a>
         </td>
         <td>Rslt</td>
-        <td>Result of Request for Position
-4000+ Reserved and available for bi-laterally agreed upon user-defined values</td>
+        <td>
+            Result of Request for Position
+4000+ Reserved and available for bi-laterally agreed upon user-defined values
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>ValidRequest</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>InvalidOrUnsupportedRequest</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>NoPositionsFoundThatMatchCriteria</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>NotAuthorizedToRequestPositions</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>RequestForPositionNotSupported</td>
+            </tr>
+            
+            <tr>
+                <td>99</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +173,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

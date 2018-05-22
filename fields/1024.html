@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDOriginType [type '1024']</h1>
-<p style="white-space: pre-wrap;">Used to describe the origin of an entry in the book</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDOriginType [type '1024']</h3>
+<p class="description">Used to describe the origin of an entry in the book</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MDOriginType.html">
+            <a href="../fields/1024.html">
             1024
             </a>
         </td>
         <td>
-            <a href="../fields/MDOriginType.html">
+            <a href="../fields/1024.html">
             MDOriginType
             </a>
         </td>
         <td>MDOrigTyp</td>
-        <td>Used to describe the origin of an entry in the book</td>
+        <td>
+            Used to describe the origin of an entry in the book
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Book</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>OffBook</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Cross</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +153,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>NewsRefType [type '1477']</h1>
-<p style="white-space: pre-wrap;">Type of reference to another News Message item. Defines if the referenced news item is a replacement, is in a different language, or is complimentary.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>NewsRefType [type '1477']</h3>
+<p class="description">Type of reference to another News Message item. Defines if the referenced news item is a replacement, is in a different language, or is complimentary.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/NewsRefType.html">
+            <a href="../fields/1477.html">
             1477
             </a>
         </td>
         <td>
-            <a href="../fields/NewsRefType.html">
+            <a href="../fields/1477.html">
             NewsRefType
             </a>
         </td>
         <td>RefTyp</td>
-        <td>Type of reference to another News Message item. Defines if the referenced news item is a replacement, is in a different language, or is complimentary.</td>
+        <td>
+            Type of reference to another News Message item. Defines if the referenced news item is a replacement, is in a different language, or is complimentary.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Replacement</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>OtherLanguage</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Complimentary</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

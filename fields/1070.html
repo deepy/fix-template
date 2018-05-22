@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDQuoteType [type '1070']</h1>
-<p style="white-space: pre-wrap;">Identifies market data quote type.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDQuoteType [type '1070']</h3>
+<p class="description">Identifies market data quote type.</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MDQuoteType.html">
+            <a href="../fields/1070.html">
             1070
             </a>
         </td>
         <td>
-            <a href="../fields/MDQuoteType.html">
+            <a href="../fields/1070.html">
             MDQuoteType
             </a>
         </td>
         <td>MDQteTyp</td>
-        <td>Identifies market data quote type.</td>
+        <td>
+            Identifies market data quote type.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Indicative</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Tradeable</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>RestrictedTradeable</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Counter</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>IndicativeAndTradeable</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +173,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

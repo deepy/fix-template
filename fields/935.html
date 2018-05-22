@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>NetworkRequestType [type '935']</h1>
-<p style="white-space: pre-wrap;">Indicates the type and level of details required for a Network Status Request Message
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>NetworkRequestType [type '935']</h3>
+<p class="description">Indicates the type and level of details required for a Network Status Request Message
 Boolean logic applies EG If you want to subscribe for changes to certain id&#39;s then UserRequestType =0 (8+2), Snapshot for certain ID&#39;s = 9 (8+1)</p>
 
 <table>
@@ -90,18 +103,49 @@ Boolean logic applies EG If you want to subscribe for changes to certain id&#39;
 
     <tr>
         <td class="green">
-            <a href="../fields/NetworkRequestType.html">
+            <a href="../fields/935.html">
             935
             </a>
         </td>
         <td>
-            <a href="../fields/NetworkRequestType.html">
+            <a href="../fields/935.html">
             NetworkRequestType
             </a>
         </td>
         <td>NtwkReqTyp</td>
-        <td>Indicates the type and level of details required for a Network Status Request Message
-Boolean logic applies EG If you want to subscribe for changes to certain id&#39;s then UserRequestType =0 (8+2), Snapshot for certain ID&#39;s = 9 (8+1)</td>
+        <td>
+            Indicates the type and level of details required for a Network Status Request Message
+Boolean logic applies EG If you want to subscribe for changes to certain id&#39;s then UserRequestType =0 (8+2), Snapshot for certain ID&#39;s = 9 (8+1)
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Snapshot</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Subscribe</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>StopSubscribing</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>LevelOfDetail</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@ Boolean logic applies EG If you want to subscribe for changes to certain id&#39;
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrdType [type '40']</h1>
-<p style="white-space: pre-wrap;">Order type. *** SOME VALUES ARE NO LONGER USED - See &#34;Deprecated (Phased-out) Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrdType [type '40']</h3>
+<p class="description">Order type. *** SOME VALUES ARE NO LONGER USED - See &#34;Deprecated (Phased-out) Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
 <table>
 <tr>
@@ -89,17 +102,168 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrdType.html">
+            <a href="../fields/40.html">
             40
             </a>
         </td>
         <td>
-            <a href="../fields/OrdType.html">
+            <a href="../fields/40.html">
             OrdType
             </a>
         </td>
         <td>OrdTyp</td>
-        <td>Order type. *** SOME VALUES ARE NO LONGER USED - See &#34;Deprecated (Phased-out) Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</td>
+        <td>
+            Order type. *** SOME VALUES ARE NO LONGER USED - See &#34;Deprecated (Phased-out) Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Market</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Limit</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Stop</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>StopLimit</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>MarketOnClose</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>WithOrWithout</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>LimitOrBetter</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>LimitWithOrWithout</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>OnBasis</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>OnClose</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>LimitOnClose</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>ForexMarket</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>PreviouslyQuoted</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>PreviouslyIndicated</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>ForexLimit</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>ForexSwap</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>ForexPreviouslyQuoted</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>Funari</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>MarketIfTouched</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>MarketWithLeftOverAsLimit</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>PreviousFundValuationPoint</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>NextFundValuationPoint</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>Pegged</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>CounterOrderSelection</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -155,6 +319,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

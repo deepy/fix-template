@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ApplResponseError [type '1354']</h1>
-<p style="white-space: pre-wrap;">Used to return an error code or text associated with a response to an Application Request.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ApplResponseError [type '1354']</h3>
+<p class="description">Used to return an error code or text associated with a response to an Application Request.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ApplResponseError.html">
+            <a href="../fields/1354.html">
             1354
             </a>
         </td>
         <td>
-            <a href="../fields/ApplResponseError.html">
+            <a href="../fields/1354.html">
             ApplResponseError
             </a>
         </td>
         <td>ApplRespErr</td>
-        <td>Used to return an error code or text associated with a response to an Application Request.</td>
+        <td>
+            Used to return an error code or text associated with a response to an Application Request.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>ApplicationDoesNotExist</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>MessagesRequestedAreNotAvailable</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>UserNotAuthorizedForApplication</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

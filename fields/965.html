@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityStatus [type '965']</h1>
-<p style="white-space: pre-wrap;">Used for derivatives. Denotes the current state of the Instrument.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityStatus [type '965']</h3>
+<p class="description">Used for derivatives. Denotes the current state of the Instrument.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityStatus.html">
+            <a href="../fields/965.html">
             965
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityStatus.html">
+            <a href="../fields/965.html">
             SecurityStatus
             </a>
         </td>
         <td>Status</td>
-        <td>Used for derivatives. Denotes the current state of the Instrument.</td>
+        <td>
+            Used for derivatives. Denotes the current state of the Instrument.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Active</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Inactive</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeCaptureReportRequestAck [type 'AQ']</h1>
-<p style="white-space: pre-wrap;">The Trade Capture Request Ack message is used to:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>TradeCaptureReportRequestAck [type 'AQ']</h3>
+<p class="description">The Trade Capture Request Ack message is used to:
 • Provide an acknowledgement to a Trade Capture Report Request in the case where the Trade Capture Report Request is used to specify a subscription or delivery of reports via an out-of-band ResponseTransmissionMethod.
 • Provide an acknowledgement to a Trade Capture Report Request in the case when the return of the Trade Capture Reports matching that request will be delayed or delivered asynchronously. This is useful in distributed trading system environments.
 • Indicate that no trades were found that matched the selection criteria specified on the Trade Capture Report Request
@@ -472,5 +485,10 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

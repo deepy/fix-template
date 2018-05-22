@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDEntryType [type '269']</h1>
-<p style="white-space: pre-wrap;">Type Market Data entry.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDEntryType [type '269']</h3>
+<p class="description">Type Market Data entry.</p>
 
 <table>
 <tr>
@@ -89,17 +102,240 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MDEntryType.html">
+            <a href="../fields/269.html">
             269
             </a>
         </td>
         <td>
-            <a href="../fields/MDEntryType.html">
+            <a href="../fields/269.html">
             MDEntryType
             </a>
         </td>
         <td>Typ</td>
-        <td>Type Market Data entry.</td>
+        <td>
+            Type Market Data entry.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Bid</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Offer</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Trade</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>IndexValue</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>OpeningPrice</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ClosingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>SettlementPrice</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>TradingSessionHighPrice</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>TradingSessionLowPrice</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>TradingSessionVWAPPrice</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Imbalance</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>TradeVolume</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>OpenInterest</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>CompositeUnderlyingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>SimulatedSellPrice</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>SimulatedBuyPrice</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>MarginRate</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>MidPrice</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>EmptyBook</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>SettleHighPrice</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>SettleLowPrice</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>PriorSettlePrice</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>SessionHighBid</td>
+            </tr>
+            
+            <tr>
+                <td>O</td>
+                <td>=</td>
+                <td>SessionLowOffer</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>EarlyPrices</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>AuctionClearingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>SwapValueFactor</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>DailyValueAdjustmentForLongPositions</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>=</td>
+                <td>CumulativeValueAdjustmentForLongPositions</td>
+            </tr>
+            
+            <tr>
+                <td>U</td>
+                <td>=</td>
+                <td>DailyValueAdjustmentForShortPositions</td>
+            </tr>
+            
+            <tr>
+                <td>V</td>
+                <td>=</td>
+                <td>CumulativeValueAdjustmentForShortPositions</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>RecoveryRate</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>RecoveryRateForLong</td>
+            </tr>
+            
+            <tr>
+                <td>a</td>
+                <td>=</td>
+                <td>RecoveryRateForShort</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>FixingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>X</td>
+                <td>=</td>
+                <td>CashRate</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +353,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

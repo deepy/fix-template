@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PositionMaintenanceReport [type 'AM']</h1>
-<p style="white-space: pre-wrap;">The Position Maintenance Report message is sent by the holder of a positon in response to a Position Maintenance Request and is used to confirm that a request has been successfully processed or rejected.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>PositionMaintenanceReport [type 'AM']</h3>
+<p class="description">The Position Maintenance Report message is sent by the holder of a positon in response to a Position Maintenance Request and is used to confirm that a request has been successfully processed or rejected.</p>
 
 <table>
 <tr>
@@ -654,5 +667,10 @@ Delta_plus, Delta_minus, Final. If Adjustment Type is null, the PCS request will
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

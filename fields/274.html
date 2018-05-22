@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TickDirection [type '274']</h1>
-<p style="white-space: pre-wrap;">Direction of the &#34;tick&#34;.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TickDirection [type '274']</h3>
+<p class="description">Direction of the &#34;tick&#34;.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TickDirection.html">
+            <a href="../fields/274.html">
             274
             </a>
         </td>
         <td>
-            <a href="../fields/TickDirection.html">
+            <a href="../fields/274.html">
             TickDirection
             </a>
         </td>
         <td>TickDirctn</td>
-        <td>Direction of the &#34;tick&#34;.</td>
+        <td>
+            Direction of the &#34;tick&#34;.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>PlusTick</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ZeroPlusTick</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>MinusTick</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>ZeroMinusTick</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

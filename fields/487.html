@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeReportTransType [type '487']</h1>
-<p style="white-space: pre-wrap;">Identifies Trade Report message transaction type
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradeReportTransType [type '487']</h3>
+<p class="description">Identifies Trade Report message transaction type
 (Prior to FIX 4.4 this field was of type char)</p>
 
 <table>
@@ -90,18 +103,61 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TradeReportTransType.html">
+            <a href="../fields/487.html">
             487
             </a>
         </td>
         <td>
-            <a href="../fields/TradeReportTransType.html">
+            <a href="../fields/487.html">
             TradeReportTransType
             </a>
         </td>
         <td>TransTyp</td>
-        <td>Identifies Trade Report message transaction type
-(Prior to FIX 4.4 this field was of type char)</td>
+        <td>
+            Identifies Trade Report message transaction type
+(Prior to FIX 4.4 this field was of type char)
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>New</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Cancel</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Replace</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Release</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Reverse</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>CancelDueToBackOutOfTrade</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +173,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

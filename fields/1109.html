@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TriggerPriceDirection [type '1109']</h1>
-<p style="white-space: pre-wrap;">The side from which the trigger price is reached.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TriggerPriceDirection [type '1109']</h3>
+<p class="description">The side from which the trigger price is reached.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TriggerPriceDirection.html">
+            <a href="../fields/1109.html">
             1109
             </a>
         </td>
         <td>
-            <a href="../fields/TriggerPriceDirection.html">
+            <a href="../fields/1109.html">
             TriggerPriceDirection
             </a>
         </td>
         <td>TrgrPxDir</td>
-        <td>The side from which the trigger price is reached.</td>
+        <td>
+            The side from which the trigger price is reached.
+            
+            <table>
+            
+            <tr>
+                <td>U</td>
+                <td>=</td>
+                <td>Up</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Down</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

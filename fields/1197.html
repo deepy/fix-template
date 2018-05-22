@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ValuationMethod [type '1197']</h1>
-<p style="white-space: pre-wrap;">Specifies the type of valuation method applied.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ValuationMethod [type '1197']</h3>
+<p class="description">Specifies the type of valuation method applied.</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ValuationMethod.html">
+            <a href="../fields/1197.html">
             1197
             </a>
         </td>
         <td>
-            <a href="../fields/ValuationMethod.html">
+            <a href="../fields/1197.html">
             ValuationMethod
             </a>
         </td>
         <td>ValMeth</td>
-        <td>Specifies the type of valuation method applied.</td>
+        <td>
+            Specifies the type of valuation method applied.
+            
+            <table>
+            
+            <tr>
+                <td>EQTY</td>
+                <td>=</td>
+                <td>PremiumStyle</td>
+            </tr>
+            
+            <tr>
+                <td>FUT</td>
+                <td>=</td>
+                <td>FuturesStyleMarkToMarket</td>
+            </tr>
+            
+            <tr>
+                <td>FUTDA</td>
+                <td>=</td>
+                <td>FuturesStyleWithAnAttachedCashAdjustment</td>
+            </tr>
+            
+            <tr>
+                <td>CDS</td>
+                <td>=</td>
+                <td>CDSStyleCollateralization</td>
+            </tr>
+            
+            <tr>
+                <td>CDSD</td>
+                <td>=</td>
+                <td>CDSInDeliveryUseRecoveryRateToCalculate</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

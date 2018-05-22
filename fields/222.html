@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>BenchmarkCurvePoint [type '222']</h1>
-<p style="white-space: pre-wrap;">Point on benchmark curve. Free form values: e.g. &#34;Y&#34;, &#34;7Y&#34;, &#34;INTERPOLATED&#34;.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>BenchmarkCurvePoint [type '222']</h3>
+<p class="description">Point on benchmark curve. Free form values: e.g. &#34;Y&#34;, &#34;7Y&#34;, &#34;INTERPOLATED&#34;.
 Sample values:
 M = combination of a number between 1-12 and a &#34;M&#34; for month
 Y = combination of number between 1-100 and a &#34;Y&#34; for year}
@@ -97,17 +110,18 @@ See Fixed Income-specific documentation at http://www.fixprotocol.org for additi
 
     <tr>
         <td class="green">
-            <a href="../fields/BenchmarkCurvePoint.html">
+            <a href="../fields/222.html">
             222
             </a>
         </td>
         <td>
-            <a href="../fields/BenchmarkCurvePoint.html">
+            <a href="../fields/222.html">
             BenchmarkCurvePoint
             </a>
         </td>
         <td>Point</td>
-        <td>Point on benchmark curve. Free form values: e.g. &#34;Y&#34;, &#34;7Y&#34;, &#34;INTERPOLATED&#34;.
+        <td>
+            Point on benchmark curve. Free form values: e.g. &#34;Y&#34;, &#34;7Y&#34;, &#34;INTERPOLATED&#34;.
 Sample values:
 M = combination of a number between 1-12 and a &#34;M&#34; for month
 Y = combination of number between 1-100 and a &#34;Y&#34; for year}
@@ -115,7 +129,9 @@ Y = combination of number between 1-100 and a &#34;Y&#34; for year}
 INTERPOLATED = the point is mathematically derived
 2/2031 5 3/8 = the point is stated via a combination of maturity month / year and coupon
 See Fixed Income-specific documentation at http://www.fixprotocol.org for additional values.
-(Note tag # was reserved in FIX 4.1, added in FIX 4.3)</td>
+(Note tag # was reserved in FIX 4.1, added in FIX 4.3)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -129,6 +145,11 @@ See Fixed Income-specific documentation at http://www.fixprotocol.org for additi
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

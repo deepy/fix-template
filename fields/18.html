@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecInst [type '18']</h1>
-<p style="white-space: pre-wrap;">Instructions for order handling on exchange trading floor. If more than one instruction is applicable to an order, this field can contain multiple instructions separated by space. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExecInst [type '18']</h3>
+<p class="description">Instructions for order handling on exchange trading floor. If more than one instruction is applicable to an order, this field can contain multiple instructions separated by space. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
 <table>
 <tr>
@@ -89,17 +102,360 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExecInst.html">
+            <a href="../fields/18.html">
             18
             </a>
         </td>
         <td>
-            <a href="../fields/ExecInst.html">
+            <a href="../fields/18.html">
             ExecInst
             </a>
         </td>
         <td>ExecInst</td>
-        <td>Instructions for order handling on exchange trading floor. If more than one instruction is applicable to an order, this field can contain multiple instructions separated by space. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)</td>
+        <td>
+            Instructions for order handling on exchange trading floor. If more than one instruction is applicable to an order, this field can contain multiple instructions separated by space. *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; *** (see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>StayOnOfferSide</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>NotHeld</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Work</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>GoAlong</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>OverTheDay</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Held</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ParticipateDoNotInitiate</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>StrictScale</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>TryToScale</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>StayOnBidSide</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>NoCross</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>OKToCross</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>CallFirst</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>PercentOfVolume</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>DoNotIncrease</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>DoNotReduce</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>AllOrNone</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>ReinstateOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>InstitutionsOnly</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>ReinstateOnTradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>CancelOnTradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>LastPeg</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>MidPricePeg</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>NonNegotiable</td>
+            </tr>
+            
+            <tr>
+                <td>O</td>
+                <td>=</td>
+                <td>OpeningPeg</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>MarketPeg</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>CancelOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>PrimaryPeg</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>Suspend</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>=</td>
+                <td>FixedPegToLocalBestBidOrOfferAtTimeOfOrder</td>
+            </tr>
+            
+            <tr>
+                <td>U</td>
+                <td>=</td>
+                <td>CustomerDisplayInstruction</td>
+            </tr>
+            
+            <tr>
+                <td>V</td>
+                <td>=</td>
+                <td>Netting</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>PegToVWAP</td>
+            </tr>
+            
+            <tr>
+                <td>X</td>
+                <td>=</td>
+                <td>TradeAlong</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>TryToStop</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>CancelIfNotBest</td>
+            </tr>
+            
+            <tr>
+                <td>a</td>
+                <td>=</td>
+                <td>TrailingStopPeg</td>
+            </tr>
+            
+            <tr>
+                <td>b</td>
+                <td>=</td>
+                <td>StrictLimit</td>
+            </tr>
+            
+            <tr>
+                <td>c</td>
+                <td>=</td>
+                <td>IgnorePriceValidityChecks</td>
+            </tr>
+            
+            <tr>
+                <td>d</td>
+                <td>=</td>
+                <td>PegToLimitPrice</td>
+            </tr>
+            
+            <tr>
+                <td>e</td>
+                <td>=</td>
+                <td>WorkToTargetStrategy</td>
+            </tr>
+            
+            <tr>
+                <td>f</td>
+                <td>=</td>
+                <td>IntermarketSweep</td>
+            </tr>
+            
+            <tr>
+                <td>g</td>
+                <td>=</td>
+                <td>ExternalRoutingAllowed</td>
+            </tr>
+            
+            <tr>
+                <td>h</td>
+                <td>=</td>
+                <td>ExternalRoutingNotAllowed</td>
+            </tr>
+            
+            <tr>
+                <td>i</td>
+                <td>=</td>
+                <td>ImbalanceOnly</td>
+            </tr>
+            
+            <tr>
+                <td>j</td>
+                <td>=</td>
+                <td>SingleExecutionRequestedForBlockTrade</td>
+            </tr>
+            
+            <tr>
+                <td>k</td>
+                <td>=</td>
+                <td>BestExecution</td>
+            </tr>
+            
+            <tr>
+                <td>l</td>
+                <td>=</td>
+                <td>SuspendOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>m</td>
+                <td>=</td>
+                <td>SuspendOnTradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>n</td>
+                <td>=</td>
+                <td>ReinstateOnConnectionLoss</td>
+            </tr>
+            
+            <tr>
+                <td>o</td>
+                <td>=</td>
+                <td>CancelOnConnectionLoss</td>
+            </tr>
+            
+            <tr>
+                <td>p</td>
+                <td>=</td>
+                <td>SuspendOnConnectionLoss</td>
+            </tr>
+            
+            <tr>
+                <td>q</td>
+                <td>=</td>
+                <td>ReleaseFromSuspension</td>
+            </tr>
+            
+            <tr>
+                <td>r</td>
+                <td>=</td>
+                <td>ExecuteAsDeltaNeutral</td>
+            </tr>
+            
+            <tr>
+                <td>s</td>
+                <td>=</td>
+                <td>ExecuteAsDurationNeutral</td>
+            </tr>
+            
+            <tr>
+                <td>t</td>
+                <td>=</td>
+                <td>ExecuteAsFXNeutral</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -139,6 +495,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

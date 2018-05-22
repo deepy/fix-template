@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderID [type '37']</h1>
-<p style="white-space: pre-wrap;">Unique identifier for Order as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day. Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrderID [type '37']</h3>
+<p class="description">Unique identifier for Order as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day. Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrderID.html">
+            <a href="../fields/37.html">
             37
             </a>
         </td>
         <td>
-            <a href="../fields/OrderID.html">
+            <a href="../fields/37.html">
             OrderID
             </a>
         </td>
         <td>OrdID</td>
-        <td>Unique identifier for Order as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day. Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.</td>
+        <td>
+            Unique identifier for Order as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day. Firms which accept multi-day orders should consider embedding a date within the OrderID field to assure uniqueness across days.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -165,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityDefinition [type 'd']</h1>
-<p style="white-space: pre-wrap;">The Security Definition message is used for the following:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>SecurityDefinition [type 'd']</h3>
+<p class="description">The Security Definition message is used for the following:
 1. Accept the security defined in a Security Definition message.
 2. Accept the security defined in a Security Definition message with changes to the definition and/or identity of the security.
 3. Reject the security requested in a Security Definition message.
@@ -473,5 +486,10 @@ of the requested Security</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

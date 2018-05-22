@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>BidRequest [type 'k']</h1>
-<p style="white-space: pre-wrap;">The BidRequest Message can be used in one of two ways depending on which market conventions are being followed.
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>BidRequest [type 'k']</h3>
+<p class="description">The BidRequest Message can be used in one of two ways depending on which market conventions are being followed.
       In the &#34;Non disclosed&#34; convention (e.g. US/European model) the BidRequest message can be used to request a bid based on the sector, country, index and liquidity information contained within the message itself. In the &#34;Non disclosed&#34; convention the entry repeating group is used to define liquidity of the program. See &#34; Program/Basket/List Trading&#34;  for an example.
       In the &#34;Disclosed&#34; convention (e.g. Japanese model) the BidRequest message can be used to request bids based on the ListOrderDetail messages sent in advance of BidRequest message. In the &#34;Disclosed&#34; convention the list repeating group is used to define which ListOrderDetail messages a bid is being sort for and the directions of the required bids.</p>
 
@@ -621,5 +634,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

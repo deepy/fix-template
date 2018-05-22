@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SolicitedFlag [type '377']</h1>
-<p style="white-space: pre-wrap;">Indicates whether or not the order was solicited.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SolicitedFlag [type '377']</h3>
+<p class="description">Indicates whether or not the order was solicited.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SolicitedFlag.html">
+            <a href="../fields/377.html">
             377
             </a>
         </td>
         <td>
-            <a href="../fields/SolicitedFlag.html">
+            <a href="../fields/377.html">
             SolicitedFlag
             </a>
         </td>
         <td>SolFlag</td>
-        <td>Indicates whether or not the order was solicited.</td>
+        <td>
+            Indicates whether or not the order was solicited.
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>WasNotSolicited</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>WasSolicited</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -135,6 +167,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

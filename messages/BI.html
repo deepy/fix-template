@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradingSessionListRequest [type 'BI']</h1>
-<p style="white-space: pre-wrap;">The Trading Session List Request is used to request a list of trading sessions available in a market place and the state of those trading sessions. A successful request will result in a response from the counterparty of a Trading Session List (MsgType=BJ) message that contains a list of zero or more trading sessions.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>TradingSessionListRequest [type 'BI']</h3>
+<p class="description">The Trading Session List Request is used to request a list of trading sessions available in a market place and the state of those trading sessions. A successful request will result in a response from the counterparty of a Trading Session List (MsgType=BJ) message that contains a list of zero or more trading sessions.</p>
 
 <table>
 <tr>
@@ -279,5 +292,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

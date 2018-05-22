@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>DisplayMethod [type '1084']</h1>
-<p style="white-space: pre-wrap;">Defines what value to use in DisplayQty (1138). If not specified the default DisplayMethod is &#34;1&#34;</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>DisplayMethod [type '1084']</h3>
+<p class="description">Defines what value to use in DisplayQty (1138). If not specified the default DisplayMethod is &#34;1&#34;</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/DisplayMethod.html">
+            <a href="../fields/1084.html">
             1084
             </a>
         </td>
         <td>
-            <a href="../fields/DisplayMethod.html">
+            <a href="../fields/1084.html">
             DisplayMethod
             </a>
         </td>
         <td>DspMthd</td>
-        <td>Defines what value to use in DisplayQty (1138). If not specified the default DisplayMethod is &#34;1&#34;</td>
+        <td>
+            Defines what value to use in DisplayQty (1138). If not specified the default DisplayMethod is &#34;1&#34;
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Initial</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>New</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Random</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Undisclosed</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

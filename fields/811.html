@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PriceDelta [type '811']</h1>
-<p style="white-space: pre-wrap;">The rate of change in the price of a derivative with respect to the movement in the price of the underlying instrument(s) upon which the derivative instrument price is based.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PriceDelta [type '811']</h3>
+<p class="description">The rate of change in the price of a derivative with respect to the movement in the price of the underlying instrument(s) upon which the derivative instrument price is based.
 This value is normally between -1.0 and 1.0.</p>
 
 <table>
@@ -90,18 +103,21 @@ This value is normally between -1.0 and 1.0.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/PriceDelta.html">
+            <a href="../fields/811.html">
             811
             </a>
         </td>
         <td>
-            <a href="../fields/PriceDelta.html">
+            <a href="../fields/811.html">
             PriceDelta
             </a>
         </td>
         <td>PxDelta</td>
-        <td>The rate of change in the price of a derivative with respect to the movement in the price of the underlying instrument(s) upon which the derivative instrument price is based.
-This value is normally between -1.0 and 1.0.</td>
+        <td>
+            The rate of change in the price of a derivative with respect to the movement in the price of the underlying instrument(s) upon which the derivative instrument price is based.
+This value is normally between -1.0 and 1.0.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -127,6 +143,11 @@ This value is normally between -1.0 and 1.0.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

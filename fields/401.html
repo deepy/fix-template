@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SideValueInd [type '401']</h1>
-<p style="white-space: pre-wrap;">Code to identify which &#34;SideValue&#34; the value refers to. SideValue1 and SideValue2 are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SideValueInd [type '401']</h3>
+<p class="description">Code to identify which &#34;SideValue&#34; the value refers to. SideValue1 and SideValue2 are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SideValueInd.html">
+            <a href="../fields/401.html">
             401
             </a>
         </td>
         <td>
-            <a href="../fields/SideValueInd.html">
+            <a href="../fields/401.html">
             SideValueInd
             </a>
         </td>
         <td>SideValuInd</td>
-        <td>Code to identify which &#34;SideValue&#34; the value refers to. SideValue1 and SideValue2 are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.</td>
+        <td>
+            Code to identify which &#34;SideValue&#34; the value refers to. SideValue1 and SideValue2 are used as opposed to Buy or Sell so that the basket can be quoted either way as Buy or Sell.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>SideValue1</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>SideValue2</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +147,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

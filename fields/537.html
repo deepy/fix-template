@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteType [type '537']</h1>
-<p style="white-space: pre-wrap;">Identifies the type of quote.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>QuoteType [type '537']</h3>
+<p class="description">Identifies the type of quote.
 An indicative quote is used to inform a counterparty of a market. An indicative quote does not result directly in a trade.
 A tradeable quote is submitted to a market and will result directly in a trade against other orders and quotes in a market.
 A restricted tradeable quote is submitted to a market and within a certain restriction (possibly based upon price or quantity) will automatically trade against orders. Order that do not comply with restrictions are sent to the quote issuer who can choose to accept or decline the order.
@@ -93,21 +106,52 @@ A counter quote is used in the negotiation model. See Volume 7 - Product: Fixed 
 
     <tr>
         <td class="green">
-            <a href="../fields/QuoteType.html">
+            <a href="../fields/537.html">
             537
             </a>
         </td>
         <td>
-            <a href="../fields/QuoteType.html">
+            <a href="../fields/537.html">
             QuoteType
             </a>
         </td>
         <td>Typ</td>
-        <td>Identifies the type of quote.
+        <td>
+            Identifies the type of quote.
 An indicative quote is used to inform a counterparty of a market. An indicative quote does not result directly in a trade.
 A tradeable quote is submitted to a market and will result directly in a trade against other orders and quotes in a market.
 A restricted tradeable quote is submitted to a market and within a certain restriction (possibly based upon price or quantity) will automatically trade against orders. Order that do not comply with restrictions are sent to the quote issuer who can choose to accept or decline the order.
-A counter quote is used in the negotiation model. See Volume 7 - Product: Fixed Income for example usage.</td>
+A counter quote is used in the negotiation model. See Volume 7 - Product: Fixed Income for example usage.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Indicative</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Tradeable</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>RestrictedTradeable</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Counter</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -145,6 +189,11 @@ A counter quote is used in the negotiation model. See Volume 7 - Product: Fixed 
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

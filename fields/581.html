@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>AccountType [type '581']</h1>
-<p style="white-space: pre-wrap;">Type of account associated with an order</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>AccountType [type '581']</h3>
+<p class="description">Type of account associated with an order</p>
 
 <table>
 <tr>
@@ -89,17 +102,66 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/AccountType.html">
+            <a href="../fields/581.html">
             581
             </a>
         </td>
         <td>
-            <a href="../fields/AccountType.html">
+            <a href="../fields/581.html">
             AccountType
             </a>
         </td>
         <td>AcctTyp</td>
-        <td>Type of account associated with an order</td>
+        <td>
+            Type of account associated with an order
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CarriedCustomerSide</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>CarriedNonCustomerSide</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>HouseTrader</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>FloorTrader</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>CarriedNonCustomerSideCrossMargined</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>HouseTraderCrossMargined</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>JointBackOfficeAccount</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -181,6 +243,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

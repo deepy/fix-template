@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>DiscretionRoundDirection [type '844']</h1>
-<p style="white-space: pre-wrap;">If the calculated discretionary price is not a valid tick price, specifies whether to round the price to be more or less aggressive</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>DiscretionRoundDirection [type '844']</h3>
+<p class="description">If the calculated discretionary price is not a valid tick price, specifies whether to round the price to be more or less aggressive</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/DiscretionRoundDirection.html">
+            <a href="../fields/844.html">
             844
             </a>
         </td>
         <td>
-            <a href="../fields/DiscretionRoundDirection.html">
+            <a href="../fields/844.html">
             DiscretionRoundDirection
             </a>
         </td>
         <td>RndDir</td>
-        <td>If the calculated discretionary price is not a valid tick price, specifies whether to round the price to be more or less aggressive</td>
+        <td>
+            If the calculated discretionary price is not a valid tick price, specifies whether to round the price to be more or less aggressive
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>MoreAggressive</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>MorePassive</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

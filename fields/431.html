@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ListOrderStatus [type '431']</h1>
-<p style="white-space: pre-wrap;">Code to represent the status of a list order.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ListOrderStatus [type '431']</h3>
+<p class="description">Code to represent the status of a list order.</p>
 
 <table>
 <tr>
@@ -89,17 +102,66 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ListOrderStatus.html">
+            <a href="../fields/431.html">
             431
             </a>
         </td>
         <td>
-            <a href="../fields/ListOrderStatus.html">
+            <a href="../fields/431.html">
             ListOrderStatus
             </a>
         </td>
         <td>ListOrdStat</td>
-        <td>Code to represent the status of a list order.</td>
+        <td>
+            Code to represent the status of a list order.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>InBiddingProcess</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>ReceivedForExecution</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Executing</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Cancelling</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Alert</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>AllDone</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>Reject</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +175,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SessionStatus [type '1409']</h1>
-<p style="white-space: pre-wrap;">Status of a FIX session</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SessionStatus [type '1409']</h3>
+<p class="description">Status of a FIX session</p>
 
 <table>
 <tr>
@@ -89,17 +102,78 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SessionStatus.html">
+            <a href="../fields/1409.html">
             1409
             </a>
         </td>
         <td>
-            <a href="../fields/SessionStatus.html">
+            <a href="../fields/1409.html">
             SessionStatus
             </a>
         </td>
         <td>SessStat</td>
-        <td>Status of a FIX session</td>
+        <td>
+            Status of a FIX session
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>SessionActive</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>SessionPasswordChanged</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>SessionPasswordDueToExpire</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>NewSessionPasswordDoesNotComplyWithPolicy</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SessionLogoutComplete</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>InvalidUsernameOrPassword</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>AccountLocked</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>LogonsAreNotAllowedAtThisTime</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>PasswordExpired</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +189,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PrivateQuote [type '1171']</h1>
-<p style="white-space: pre-wrap;">Specifies whether a quote is public, i.e. available to the market, or private, i.e. available to a specified counterparty only.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PrivateQuote [type '1171']</h3>
+<p class="description">Specifies whether a quote is public, i.e. available to the market, or private, i.e. available to a specified counterparty only.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PrivateQuote.html">
+            <a href="../fields/1171.html">
             1171
             </a>
         </td>
         <td>
-            <a href="../fields/PrivateQuote.html">
+            <a href="../fields/1171.html">
             PrivateQuote
             </a>
         </td>
         <td>PrvtQt</td>
-        <td>Specifies whether a quote is public, i.e. available to the market, or private, i.e. available to a specified counterparty only.</td>
+        <td>
+            Specifies whether a quote is public, i.e. available to the market, or private, i.e. available to a specified counterparty only.
+            
+            <table>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>PrivateQuote</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>PublicQuote</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

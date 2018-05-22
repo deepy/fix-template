@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>NewOrderCross [type 's']</h1>
-<p style="white-space: pre-wrap;">Used to submit a cross order into a market. The cross order contains two order sides (a buy and a sell). The cross order is identified by its CrossID.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>NewOrderCross [type 's']</h3>
+<p class="description">Used to submit a cross order into a market. The cross order contains two order sides (a buy and a sell). The cross order is identified by its CrossID.</p>
 
 <table>
 <tr>
@@ -1047,5 +1060,10 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

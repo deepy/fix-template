@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ApplicationMessageRequestAck [type 'BX']</h1>
-<p style="white-space: pre-wrap;">This message is used to acknowledge an Application Message Request providing a status on the request (i.e. whether successful or not). This message does not provide the actual content of the messages to be resent.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>ApplicationMessageRequestAck [type 'BX']</h3>
+<p class="description">This message is used to acknowledge an Application Message Request providing a status on the request (i.e. whether successful or not). This message does not provide the actual content of the messages to be resent.</p>
 
 <table>
 <tr>
@@ -296,5 +309,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

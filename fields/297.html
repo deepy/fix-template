@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteStatus [type '297']</h1>
-<p style="white-space: pre-wrap;">Identifies the status of the quote acknowledgement.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>QuoteStatus [type '297']</h3>
+<p class="description">Identifies the status of the quote acknowledgement.</p>
 
 <table>
 <tr>
@@ -89,17 +102,150 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/QuoteStatus.html">
+            <a href="../fields/297.html">
             297
             </a>
         </td>
         <td>
-            <a href="../fields/QuoteStatus.html">
+            <a href="../fields/297.html">
             QuoteStatus
             </a>
         </td>
         <td>Stat</td>
-        <td>Identifies the status of the quote acknowledgement.</td>
+        <td>
+            Identifies the status of the quote acknowledgement.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Accepted</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CancelForSymbol</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>CanceledForSecurityType</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>CanceledForUnderlying</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>CanceledAll</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Rejected</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>RemovedFromMarket</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>Expired</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>Query</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>QuoteNotFound</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>Pending</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>Pass</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>LockedMarketWarning</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>CrossMarketWarning</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>CanceledDueToLockMarket</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>CanceledDueToCrossMarket</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>Active</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>=</td>
+                <td>Canceled</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>UnsolicitedQuoteReplenishment</td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>=</td>
+                <td>PendingEndTrade</td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>=</td>
+                <td>TooLateToEnd</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +261,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

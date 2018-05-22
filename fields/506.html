@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RegistStatus [type '506']</h1>
-<p style="white-space: pre-wrap;">Registration status as returned by the broker or (for CIV) the fund manager:</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RegistStatus [type '506']</h3>
+<p class="description">Registration status as returned by the broker or (for CIV) the fund manager:</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/RegistStatus.html">
+            <a href="../fields/506.html">
             506
             </a>
         </td>
         <td>
-            <a href="../fields/RegistStatus.html">
+            <a href="../fields/506.html">
             RegistStatus
             </a>
         </td>
         <td>RegStat</td>
-        <td>Registration status as returned by the broker or (for CIV) the fund manager:</td>
+        <td>
+            Registration status as returned by the broker or (for CIV) the fund manager:
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Accepted</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>Rejected</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>Held</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>Reminder</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

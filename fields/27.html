@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>IOIQty [type '27']</h1>
-<p style="white-space: pre-wrap;">Quantity (e.g. number of shares) in numeric form or relative size.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>IOIQty [type '27']</h3>
+<p class="description">Quantity (e.g. number of shares) in numeric form or relative size.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/IOIQty.html">
+            <a href="../fields/27.html">
             27
             </a>
         </td>
         <td>
-            <a href="../fields/IOIQty.html">
+            <a href="../fields/27.html">
             IOIQty
             </a>
         </td>
         <td>Qty</td>
-        <td>Quantity (e.g. number of shares) in numeric form or relative size.</td>
+        <td>
+            Quantity (e.g. number of shares) in numeric form or relative size.
+            
+            <table>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>Small</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Medium</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>Large</td>
+            </tr>
+            
+            <tr>
+                <td>U</td>
+                <td>=</td>
+                <td>UndisclosedQuantity</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

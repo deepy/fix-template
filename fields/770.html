@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TrdRegTimestampType [type '770']</h1>
-<p style="white-space: pre-wrap;">Traded / Regulatory timestamp type.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TrdRegTimestampType [type '770']</h3>
+<p class="description">Traded / Regulatory timestamp type.
 Note of Applicability: values are required in US futures markets by the CFTC to support computerized trade reconstruction.
 (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
@@ -91,19 +104,68 @@ Note of Applicability: values are required in US futures markets by the CFTC to 
 
     <tr>
         <td class="green">
-            <a href="../fields/TrdRegTimestampType.html">
+            <a href="../fields/770.html">
             770
             </a>
         </td>
         <td>
-            <a href="../fields/TrdRegTimestampType.html">
+            <a href="../fields/770.html">
             TrdRegTimestampType
             </a>
         </td>
         <td>Typ</td>
-        <td>Traded / Regulatory timestamp type.
+        <td>
+            Traded / Regulatory timestamp type.
 Note of Applicability: values are required in US futures markets by the CFTC to support computerized trade reconstruction.
-(see Volume : &#34;Glossary&#34; for value definitions)</td>
+(see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ExecutionTime</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TimeIn</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>TimeOut</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>BrokerReceipt</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>BrokerExecution</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>DeskReceipt</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>SubmissionToClearing</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +179,11 @@ Note of Applicability: values are required in US futures markets by the CFTC to 
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

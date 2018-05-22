@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradingReferencePrice [type '1150']</h1>
-<p style="white-space: pre-wrap;">Reference price for the current trading price range usually representing the mid price between the HighLimitPrice and LowLimitPrice. The value may be the settlement price or closing price of the prior trading day.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradingReferencePrice [type '1150']</h3>
+<p class="description">Reference price for the current trading price range usually representing the mid price between the HighLimitPrice and LowLimitPrice. The value may be the settlement price or closing price of the prior trading day.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TradingReferencePrice.html">
+            <a href="../fields/1150.html">
             1150
             </a>
         </td>
         <td>
-            <a href="../fields/TradingReferencePrice.html">
+            <a href="../fields/1150.html">
             TradingReferencePrice
             </a>
         </td>
         <td>TrdgRefPx</td>
-        <td>Reference price for the current trading price range usually representing the mid price between the HighLimitPrice and LowLimitPrice. The value may be the settlement price or closing price of the prior trading day.</td>
+        <td>
+            Reference price for the current trading price range usually representing the mid price between the HighLimitPrice and LowLimitPrice. The value may be the settlement price or closing price of the prior trading day.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +129,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

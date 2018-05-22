@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteStatusReport [type 'AI']</h1>
-<p style="white-space: pre-wrap;">The quote status report message is used:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>QuoteStatusReport [type 'AI']</h3>
+<p class="description">The quote status report message is used:
 • as the response to a Quote Status Request message
 • as a response to a Quote Cancel message
 • as a response to a Quote Response message in a negotiation dialog (see Volume 7 – PRODUCT: FIXED INCOME and USER GROUP: EXCHANGES AND MARKETS)</p>
@@ -1320,5 +1333,10 @@ If not specified, the default is an indicative quote</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

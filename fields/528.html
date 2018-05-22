@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderCapacity [type '528']</h1>
-<p style="white-space: pre-wrap;">Designates the capacity of the firm placing the order.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrderCapacity [type '528']</h3>
+<p class="description">Designates the capacity of the firm placing the order.
 (as of FIX 4.3, this field replaced Rule80A (tag 47) --used in conjunction with OrderRestrictions (529) field)
 (see Volume : &#34;Glossary&#34; for value definitions)</p>
 
@@ -91,19 +104,62 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrderCapacity.html">
+            <a href="../fields/528.html">
             528
             </a>
         </td>
         <td>
-            <a href="../fields/OrderCapacity.html">
+            <a href="../fields/528.html">
             OrderCapacity
             </a>
         </td>
         <td>Cpcty</td>
-        <td>Designates the capacity of the firm placing the order.
+        <td>
+            Designates the capacity of the firm placing the order.
 (as of FIX 4.3, this field replaced Rule80A (tag 47) --used in conjunction with OrderRestrictions (529) field)
-(see Volume : &#34;Glossary&#34; for value definitions)</td>
+(see Volume : &#34;Glossary&#34; for value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Agency</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>Proprietary</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>Individual</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>Principal</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>RisklessPrincipal</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>AgentForOtherMember</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -155,6 +211,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

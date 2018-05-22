@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecRestatementReason [type '378']</h1>
-<p style="white-space: pre-wrap;">Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExecRestatementReason [type '378']</h3>
+<p class="description">Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.</p>
 
 <table>
 <tr>
@@ -89,17 +102,102 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExecRestatementReason.html">
+            <a href="../fields/378.html">
             378
             </a>
         </td>
         <td>
-            <a href="../fields/ExecRestatementReason.html">
+            <a href="../fields/378.html">
             ExecRestatementReason
             </a>
         </td>
         <td>ExecRstmtRsn</td>
-        <td>Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.</td>
+        <td>
+            Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>GTCorporateAction</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>GTRenewal</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>VerbalChange</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>RepricingOfOrder</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>BrokerOption</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>PartialDeclineOfOrderQty</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>CancelOnTradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>CancelOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>Market</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>Canceled</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>WarehouseRecap</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>PegRefresh</td>
+            </tr>
+            
+            <tr>
+                <td>99</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +215,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

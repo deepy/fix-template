@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteResponse [type 'AJ']</h1>
-<p style="white-space: pre-wrap;">The Quote Response message is used to respond to a IOI message or Quote message. It is also used to counter a Quote or end a negotiation dialog.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>QuoteResponse [type 'AJ']</h3>
+<p class="description">The Quote Response message is used to respond to a IOI message or Quote message. It is also used to counter a Quote or end a negotiation dialog.</p>
 
 <table>
 <tr>
@@ -1252,5 +1265,10 @@ Required for FI when the QuoteRespType is 2 (Counter quote) to indicate to the R
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

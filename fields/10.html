@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CheckSum [type '10']</h1>
-<p style="white-space: pre-wrap;">Three byte, simple checksum (see Volume 2: &#34;Checksum Calculation&#34; for description). ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing &lt;SOH&gt;, as the end-of-message delimiter. Always defined as three characters. (Always unencrypted)</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CheckSum [type '10']</h3>
+<p class="description">Three byte, simple checksum (see Volume 2: &#34;Checksum Calculation&#34; for description). ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing &lt;SOH&gt;, as the end-of-message delimiter. Always defined as three characters. (Always unencrypted)</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CheckSum.html">
+            <a href="../fields/10.html">
             10
             </a>
         </td>
         <td>
-            <a href="../fields/CheckSum.html">
+            <a href="../fields/10.html">
             CheckSum
             </a>
         </td>
         <td>CheckSum</td>
-        <td>Three byte, simple checksum (see Volume 2: &#34;Checksum Calculation&#34; for description). ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing &lt;SOH&gt;, as the end-of-message delimiter. Always defined as three characters. (Always unencrypted)</td>
+        <td>
+            Three byte, simple checksum (see Volume 2: &#34;Checksum Calculation&#34; for description). ALWAYS LAST FIELD IN MESSAGE; i.e. serves, with the trailing &lt;SOH&gt;, as the end-of-message delimiter. Always defined as three characters. (Always unencrypted)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +129,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ContAmtType [type '519']</h1>
-<p style="white-space: pre-wrap;">Type of ContAmtValue (520).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ContAmtType [type '519']</h3>
+<p class="description">Type of ContAmtValue (520).
 NOTE That Commission Amount / % in Contract Amounts is the commission actually charged, rather than the commission instructions given in Fields 2/3.</p>
 
 <table>
@@ -90,18 +103,115 @@ NOTE That Commission Amount / % in Contract Amounts is the commission actually c
 
     <tr>
         <td class="green">
-            <a href="../fields/ContAmtType.html">
+            <a href="../fields/519.html">
             519
             </a>
         </td>
         <td>
-            <a href="../fields/ContAmtType.html">
+            <a href="../fields/519.html">
             ContAmtType
             </a>
         </td>
         <td>ContAmtTyp</td>
-        <td>Type of ContAmtValue (520).
-NOTE That Commission Amount / % in Contract Amounts is the commission actually charged, rather than the commission instructions given in Fields 2/3.</td>
+        <td>
+            Type of ContAmtValue (520).
+NOTE That Commission Amount / % in Contract Amounts is the commission actually charged, rather than the commission instructions given in Fields 2/3.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CommissionAmount</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>CommissionPercent</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>InitialChargeAmount</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>InitialChargePercent</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>DiscountAmount</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>DiscountPercent</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>DilutionLevyAmount</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>DilutionLevyPercent</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>ExitChargeAmount</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>ExitChargePercent</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>FundBasedRenewalCommissionPercent</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>ProjectedFundValue</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>FundBasedRenewalCommissionOnOrder</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>FundBasedRenewalCommissionOnFund</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>NetSettlementAmount</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +225,11 @@ NOTE That Commission Amount / % in Contract Amounts is the commission actually c
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

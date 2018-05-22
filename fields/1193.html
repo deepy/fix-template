@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlMethod [type '1193']</h1>
-<p style="white-space: pre-wrap;">Settlement method for a contract. Can be used as an alternative to CFI Code value</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlMethod [type '1193']</h3>
+<p class="description">Settlement method for a contract. Can be used as an alternative to CFI Code value</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlMethod.html">
+            <a href="../fields/1193.html">
             1193
             </a>
         </td>
         <td>
-            <a href="../fields/SettlMethod.html">
+            <a href="../fields/1193.html">
             SettlMethod
             </a>
         </td>
         <td>SettlMeth</td>
-        <td>Settlement method for a contract. Can be used as an alternative to CFI Code value</td>
+        <td>
+            Settlement method for a contract. Can be used as an alternative to CFI Code value
+            
+            <table>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>CashSettlementRequired</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>PhysicalSettlementRequired</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

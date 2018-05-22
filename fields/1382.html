@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CurrencyRatio [type '1382']</h1>
-<p style="white-space: pre-wrap;">Specifies the currency ratio between the currency used for a multileg price and the currency used by the outright book defined by the leg. Example: Multileg quoted in EUR, outright leg in USD and 1 EUR = 0,7 USD then CurrencyRatio = 0.7</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CurrencyRatio [type '1382']</h3>
+<p class="description">Specifies the currency ratio between the currency used for a multileg price and the currency used by the outright book defined by the leg. Example: Multileg quoted in EUR, outright leg in USD and 1 EUR = 0,7 USD then CurrencyRatio = 0.7</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CurrencyRatio.html">
+            <a href="../fields/1382.html">
             1382
             </a>
         </td>
         <td>
-            <a href="../fields/CurrencyRatio.html">
+            <a href="../fields/1382.html">
             CurrencyRatio
             </a>
         </td>
         <td>CurrencyRatio</td>
-        <td>Specifies the currency ratio between the currency used for a multileg price and the currency used by the outright book defined by the leg. Example: Multileg quoted in EUR, outright leg in USD and 1 EUR = 0,7 USD then CurrencyRatio = 0.7</td>
+        <td>
+            Specifies the currency ratio between the currency used for a multileg price and the currency used by the outright book defined by the leg. Example: Multileg quoted in EUR, outright leg in USD and 1 EUR = 0,7 USD then CurrencyRatio = 0.7
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +129,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>LastParPx [type '669']</h1>
-<p style="white-space: pre-wrap;">Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx (31) is expressed in Yield, Spread, Discount or any other type.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>LastParPx [type '669']</h3>
+<p class="description">Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx (31) is expressed in Yield, Spread, Discount or any other type.
 Usage: Execution Report and Allocation Report repeating executions block (from sellside).</p>
 
 <table>
@@ -90,18 +103,21 @@ Usage: Execution Report and Allocation Report repeating executions block (from s
 
     <tr>
         <td class="green">
-            <a href="../fields/LastParPx.html">
+            <a href="../fields/669.html">
             669
             </a>
         </td>
         <td>
-            <a href="../fields/LastParPx.html">
+            <a href="../fields/669.html">
             LastParPx
             </a>
         </td>
         <td>LastParPx</td>
-        <td>Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx (31) is expressed in Yield, Spread, Discount or any other type.
-Usage: Execution Report and Allocation Report repeating executions block (from sellside).</td>
+        <td>
+            Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx (31) is expressed in Yield, Spread, Discount or any other type.
+Usage: Execution Report and Allocation Report repeating executions block (from sellside).
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -129,6 +145,11 @@ Usage: Execution Report and Allocation Report repeating executions block (from s
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

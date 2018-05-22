@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExchangeForPhysical [type '411']</h1>
-<p style="white-space: pre-wrap;">Indicates whether or not to exchange for phsyical.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExchangeForPhysical [type '411']</h3>
+<p class="description">Indicates whether or not to exchange for phsyical.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExchangeForPhysical.html">
+            <a href="../fields/411.html">
             411
             </a>
         </td>
         <td>
-            <a href="../fields/ExchangeForPhysical.html">
+            <a href="../fields/411.html">
             ExchangeForPhysical
             </a>
         </td>
         <td>EFP</td>
-        <td>Indicates whether or not to exchange for phsyical.</td>
+        <td>
+            Indicates whether or not to exchange for phsyical.
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>False</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

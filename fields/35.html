@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MsgType [type '35']</h1>
-<p style="white-space: pre-wrap;">Defines message type ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MsgType [type '35']</h3>
+<p class="description">Defines message type ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)
 Note: A &#34;U&#34; as the first character in the MsgType field (i.e. U, U2, etc) indicates that the message format is privately defined between the sender and receiver.
 *** Note the use of lower case letters ***</p>
 
@@ -91,19 +104,722 @@ Note: A &#34;U&#34; as the first character in the MsgType field (i.e. U, U2, etc
 
     <tr>
         <td class="green">
-            <a href="../fields/MsgType.html">
+            <a href="../fields/35.html">
             35
             </a>
         </td>
         <td>
-            <a href="../fields/MsgType.html">
+            <a href="../fields/35.html">
             MsgType
             </a>
         </td>
         <td>MsgTyp</td>
-        <td>Defines message type ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)
+        <td>
+            Defines message type ALWAYS THIRD FIELD IN MESSAGE. (Always unencrypted)
 Note: A &#34;U&#34; as the first character in the MsgType field (i.e. U, U2, etc) indicates that the message format is privately defined between the sender and receiver.
-*** Note the use of lower case letters ***</td>
+*** Note the use of lower case letters ***
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Heartbeat</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>TestRequest</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>ResendRequest</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Reject</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SequenceReset</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Logout</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>IOI</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>Advertisement</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>ExecutionReport</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>OrderCancelReject</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Logon</td>
+            </tr>
+            
+            <tr>
+                <td>AA</td>
+                <td>=</td>
+                <td>DerivativeSecurityList</td>
+            </tr>
+            
+            <tr>
+                <td>AB</td>
+                <td>=</td>
+                <td>NewOrderMultileg</td>
+            </tr>
+            
+            <tr>
+                <td>AC</td>
+                <td>=</td>
+                <td>MultilegOrderCancelReplace</td>
+            </tr>
+            
+            <tr>
+                <td>AD</td>
+                <td>=</td>
+                <td>TradeCaptureReportRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AE</td>
+                <td>=</td>
+                <td>TradeCaptureReport</td>
+            </tr>
+            
+            <tr>
+                <td>AF</td>
+                <td>=</td>
+                <td>OrderMassStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AG</td>
+                <td>=</td>
+                <td>QuoteRequestReject</td>
+            </tr>
+            
+            <tr>
+                <td>AH</td>
+                <td>=</td>
+                <td>RFQRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AI</td>
+                <td>=</td>
+                <td>QuoteStatusReport</td>
+            </tr>
+            
+            <tr>
+                <td>AJ</td>
+                <td>=</td>
+                <td>QuoteResponse</td>
+            </tr>
+            
+            <tr>
+                <td>AK</td>
+                <td>=</td>
+                <td>Confirmation</td>
+            </tr>
+            
+            <tr>
+                <td>AL</td>
+                <td>=</td>
+                <td>PositionMaintenanceRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AM</td>
+                <td>=</td>
+                <td>PositionMaintenanceReport</td>
+            </tr>
+            
+            <tr>
+                <td>AN</td>
+                <td>=</td>
+                <td>RequestForPositions</td>
+            </tr>
+            
+            <tr>
+                <td>AO</td>
+                <td>=</td>
+                <td>RequestForPositionsAck</td>
+            </tr>
+            
+            <tr>
+                <td>AP</td>
+                <td>=</td>
+                <td>PositionReport</td>
+            </tr>
+            
+            <tr>
+                <td>AQ</td>
+                <td>=</td>
+                <td>TradeCaptureReportRequestAck</td>
+            </tr>
+            
+            <tr>
+                <td>AR</td>
+                <td>=</td>
+                <td>TradeCaptureReportAck</td>
+            </tr>
+            
+            <tr>
+                <td>AS</td>
+                <td>=</td>
+                <td>AllocationReport</td>
+            </tr>
+            
+            <tr>
+                <td>AT</td>
+                <td>=</td>
+                <td>AllocationReportAck</td>
+            </tr>
+            
+            <tr>
+                <td>AU</td>
+                <td>=</td>
+                <td>ConfirmationAck</td>
+            </tr>
+            
+            <tr>
+                <td>AV</td>
+                <td>=</td>
+                <td>SettlementInstructionRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AW</td>
+                <td>=</td>
+                <td>AssignmentReport</td>
+            </tr>
+            
+            <tr>
+                <td>AX</td>
+                <td>=</td>
+                <td>CollateralRequest</td>
+            </tr>
+            
+            <tr>
+                <td>AY</td>
+                <td>=</td>
+                <td>CollateralAssignment</td>
+            </tr>
+            
+            <tr>
+                <td>AZ</td>
+                <td>=</td>
+                <td>CollateralResponse</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>News</td>
+            </tr>
+            
+            <tr>
+                <td>BA</td>
+                <td>=</td>
+                <td>CollateralReport</td>
+            </tr>
+            
+            <tr>
+                <td>BB</td>
+                <td>=</td>
+                <td>CollateralInquiry</td>
+            </tr>
+            
+            <tr>
+                <td>BC</td>
+                <td>=</td>
+                <td>NetworkCounterpartySystemStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BD</td>
+                <td>=</td>
+                <td>NetworkCounterpartySystemStatusResponse</td>
+            </tr>
+            
+            <tr>
+                <td>BE</td>
+                <td>=</td>
+                <td>UserRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BF</td>
+                <td>=</td>
+                <td>UserResponse</td>
+            </tr>
+            
+            <tr>
+                <td>BG</td>
+                <td>=</td>
+                <td>CollateralInquiryAck</td>
+            </tr>
+            
+            <tr>
+                <td>BH</td>
+                <td>=</td>
+                <td>ConfirmationRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BI</td>
+                <td>=</td>
+                <td>TradingSessionListRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BJ</td>
+                <td>=</td>
+                <td>TradingSessionList</td>
+            </tr>
+            
+            <tr>
+                <td>BK</td>
+                <td>=</td>
+                <td>SecurityListUpdateReport</td>
+            </tr>
+            
+            <tr>
+                <td>BL</td>
+                <td>=</td>
+                <td>AdjustedPositionReport</td>
+            </tr>
+            
+            <tr>
+                <td>BM</td>
+                <td>=</td>
+                <td>AllocationInstructionAlert</td>
+            </tr>
+            
+            <tr>
+                <td>BN</td>
+                <td>=</td>
+                <td>ExecutionAcknowledgement</td>
+            </tr>
+            
+            <tr>
+                <td>BO</td>
+                <td>=</td>
+                <td>ContraryIntentionReport</td>
+            </tr>
+            
+            <tr>
+                <td>BP</td>
+                <td>=</td>
+                <td>SecurityDefinitionUpdateReport</td>
+            </tr>
+            
+            <tr>
+                <td>BQ</td>
+                <td>=</td>
+                <td>SettlementObligationReport</td>
+            </tr>
+            
+            <tr>
+                <td>BR</td>
+                <td>=</td>
+                <td>DerivativeSecurityListUpdateReport</td>
+            </tr>
+            
+            <tr>
+                <td>BS</td>
+                <td>=</td>
+                <td>TradingSessionListUpdateReport</td>
+            </tr>
+            
+            <tr>
+                <td>BT</td>
+                <td>=</td>
+                <td>MarketDefinitionRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BU</td>
+                <td>=</td>
+                <td>MarketDefinition</td>
+            </tr>
+            
+            <tr>
+                <td>BV</td>
+                <td>=</td>
+                <td>MarketDefinitionUpdateReport</td>
+            </tr>
+            
+            <tr>
+                <td>BW</td>
+                <td>=</td>
+                <td>ApplicationMessageRequest</td>
+            </tr>
+            
+            <tr>
+                <td>BX</td>
+                <td>=</td>
+                <td>ApplicationMessageRequestAck</td>
+            </tr>
+            
+            <tr>
+                <td>BY</td>
+                <td>=</td>
+                <td>ApplicationMessageReport</td>
+            </tr>
+            
+            <tr>
+                <td>BZ</td>
+                <td>=</td>
+                <td>OrderMassActionReport</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>Email</td>
+            </tr>
+            
+            <tr>
+                <td>CA</td>
+                <td>=</td>
+                <td>OrderMassActionRequest</td>
+            </tr>
+            
+            <tr>
+                <td>CB</td>
+                <td>=</td>
+                <td>UserNotification</td>
+            </tr>
+            
+            <tr>
+                <td>CC</td>
+                <td>=</td>
+                <td>StreamAssignmentRequest</td>
+            </tr>
+            
+            <tr>
+                <td>CD</td>
+                <td>=</td>
+                <td>StreamAssignmentReport</td>
+            </tr>
+            
+            <tr>
+                <td>CE</td>
+                <td>=</td>
+                <td>StreamAssignmentReportACK</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>NewOrderSingle</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>NewOrderList</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>OrderCancelRequest</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>OrderCancelReplaceRequest</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>OrderStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>AllocationInstruction</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>ListCancelRequest</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>ListExecute</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>ListStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>ListStatus</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>AllocationInstructionAck</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>DontKnowTrade</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>QuoteRequest</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>Quote</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>=</td>
+                <td>SettlementInstructions</td>
+            </tr>
+            
+            <tr>
+                <td>V</td>
+                <td>=</td>
+                <td>MarketDataRequest</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>MarketDataSnapshotFullRefresh</td>
+            </tr>
+            
+            <tr>
+                <td>X</td>
+                <td>=</td>
+                <td>MarketDataIncrementalRefresh</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>MarketDataRequestReject</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>QuoteCancel</td>
+            </tr>
+            
+            <tr>
+                <td>a</td>
+                <td>=</td>
+                <td>QuoteStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>b</td>
+                <td>=</td>
+                <td>MassQuoteAcknowledgement</td>
+            </tr>
+            
+            <tr>
+                <td>c</td>
+                <td>=</td>
+                <td>SecurityDefinitionRequest</td>
+            </tr>
+            
+            <tr>
+                <td>d</td>
+                <td>=</td>
+                <td>SecurityDefinition</td>
+            </tr>
+            
+            <tr>
+                <td>e</td>
+                <td>=</td>
+                <td>SecurityStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>f</td>
+                <td>=</td>
+                <td>SecurityStatus</td>
+            </tr>
+            
+            <tr>
+                <td>g</td>
+                <td>=</td>
+                <td>TradingSessionStatusRequest</td>
+            </tr>
+            
+            <tr>
+                <td>h</td>
+                <td>=</td>
+                <td>TradingSessionStatus</td>
+            </tr>
+            
+            <tr>
+                <td>i</td>
+                <td>=</td>
+                <td>MassQuote</td>
+            </tr>
+            
+            <tr>
+                <td>j</td>
+                <td>=</td>
+                <td>BusinessMessageReject</td>
+            </tr>
+            
+            <tr>
+                <td>k</td>
+                <td>=</td>
+                <td>BidRequest</td>
+            </tr>
+            
+            <tr>
+                <td>l</td>
+                <td>=</td>
+                <td>BidResponse</td>
+            </tr>
+            
+            <tr>
+                <td>m</td>
+                <td>=</td>
+                <td>ListStrikePrice</td>
+            </tr>
+            
+            <tr>
+                <td>n</td>
+                <td>=</td>
+                <td>XMLnonFIX</td>
+            </tr>
+            
+            <tr>
+                <td>o</td>
+                <td>=</td>
+                <td>RegistrationInstructions</td>
+            </tr>
+            
+            <tr>
+                <td>p</td>
+                <td>=</td>
+                <td>RegistrationInstructionsResponse</td>
+            </tr>
+            
+            <tr>
+                <td>q</td>
+                <td>=</td>
+                <td>OrderMassCancelRequest</td>
+            </tr>
+            
+            <tr>
+                <td>r</td>
+                <td>=</td>
+                <td>OrderMassCancelReport</td>
+            </tr>
+            
+            <tr>
+                <td>s</td>
+                <td>=</td>
+                <td>NewOrderCross</td>
+            </tr>
+            
+            <tr>
+                <td>t</td>
+                <td>=</td>
+                <td>CrossOrderCancelReplaceRequest</td>
+            </tr>
+            
+            <tr>
+                <td>u</td>
+                <td>=</td>
+                <td>CrossOrderCancelRequest</td>
+            </tr>
+            
+            <tr>
+                <td>v</td>
+                <td>=</td>
+                <td>SecurityTypeRequest</td>
+            </tr>
+            
+            <tr>
+                <td>w</td>
+                <td>=</td>
+                <td>SecurityTypes</td>
+            </tr>
+            
+            <tr>
+                <td>x</td>
+                <td>=</td>
+                <td>SecurityListRequest</td>
+            </tr>
+            
+            <tr>
+                <td>y</td>
+                <td>=</td>
+                <td>SecurityList</td>
+            </tr>
+            
+            <tr>
+                <td>z</td>
+                <td>=</td>
+                <td>DerivativeSecurityListRequest</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +833,11 @@ Note: A &#34;U&#34; as the first character in the MsgType field (i.e. U, U2, etc
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>StipulationType [type '233']</h1>
-<p style="white-space: pre-wrap;">For Fixed Income.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>StipulationType [type '233']</h3>
+<p class="description">For Fixed Income.
 Type of Stipulation.
 Other types may be used by mutual agreement of the counterparties.
 (Note tag # was reserved in FIX 4.1, added in FIX 4.3)</p>
@@ -92,20 +105,507 @@ Other types may be used by mutual agreement of the counterparties.
 
     <tr>
         <td class="green">
-            <a href="../fields/StipulationType.html">
+            <a href="../fields/233.html">
             233
             </a>
         </td>
         <td>
-            <a href="../fields/StipulationType.html">
+            <a href="../fields/233.html">
             StipulationType
             </a>
         </td>
         <td>Typ</td>
-        <td>For Fixed Income.
+        <td>
+            For Fixed Income.
 Type of Stipulation.
 Other types may be used by mutual agreement of the counterparties.
-(Note tag # was reserved in FIX 4.1, added in FIX 4.3)</td>
+(Note tag # was reserved in FIX 4.1, added in FIX 4.3)
+            
+            <table>
+            
+            <tr>
+                <td>AMT</td>
+                <td>=</td>
+                <td>AlternativeMinimumTax</td>
+            </tr>
+            
+            <tr>
+                <td>AUTOREINV</td>
+                <td>=</td>
+                <td>AutoReinvestment</td>
+            </tr>
+            
+            <tr>
+                <td>BANKQUAL</td>
+                <td>=</td>
+                <td>BankQualified</td>
+            </tr>
+            
+            <tr>
+                <td>BGNCON</td>
+                <td>=</td>
+                <td>BargainConditions</td>
+            </tr>
+            
+            <tr>
+                <td>COUPON</td>
+                <td>=</td>
+                <td>CouponRange</td>
+            </tr>
+            
+            <tr>
+                <td>CURRENCY</td>
+                <td>=</td>
+                <td>ISOCurrencyCode</td>
+            </tr>
+            
+            <tr>
+                <td>CUSTOMDATE</td>
+                <td>=</td>
+                <td>CustomStart</td>
+            </tr>
+            
+            <tr>
+                <td>GEOG</td>
+                <td>=</td>
+                <td>Geographics</td>
+            </tr>
+            
+            <tr>
+                <td>HAIRCUT</td>
+                <td>=</td>
+                <td>ValuationDiscount</td>
+            </tr>
+            
+            <tr>
+                <td>INSURED</td>
+                <td>=</td>
+                <td>Insured</td>
+            </tr>
+            
+            <tr>
+                <td>ISSUE</td>
+                <td>=</td>
+                <td>IssueDate</td>
+            </tr>
+            
+            <tr>
+                <td>ISSUER</td>
+                <td>=</td>
+                <td>Issuer</td>
+            </tr>
+            
+            <tr>
+                <td>ISSUESIZE</td>
+                <td>=</td>
+                <td>IssueSizeRange</td>
+            </tr>
+            
+            <tr>
+                <td>LOOKBACK</td>
+                <td>=</td>
+                <td>LookbackDays</td>
+            </tr>
+            
+            <tr>
+                <td>LOT</td>
+                <td>=</td>
+                <td>ExplicitLotIdentifier</td>
+            </tr>
+            
+            <tr>
+                <td>LOTVAR</td>
+                <td>=</td>
+                <td>LotVariance</td>
+            </tr>
+            
+            <tr>
+                <td>MAT</td>
+                <td>=</td>
+                <td>MaturityYearAndMonth</td>
+            </tr>
+            
+            <tr>
+                <td>MATURITY</td>
+                <td>=</td>
+                <td>MaturityRange</td>
+            </tr>
+            
+            <tr>
+                <td>MAXSUBS</td>
+                <td>=</td>
+                <td>MaximumSubstitutions</td>
+            </tr>
+            
+            <tr>
+                <td>MINDNOM</td>
+                <td>=</td>
+                <td>MinimumDenomination</td>
+            </tr>
+            
+            <tr>
+                <td>MININCR</td>
+                <td>=</td>
+                <td>MinimumIncrement</td>
+            </tr>
+            
+            <tr>
+                <td>MINQTY</td>
+                <td>=</td>
+                <td>MinimumQuantity</td>
+            </tr>
+            
+            <tr>
+                <td>PAYFREQ</td>
+                <td>=</td>
+                <td>PaymentFrequency</td>
+            </tr>
+            
+            <tr>
+                <td>PIECES</td>
+                <td>=</td>
+                <td>NumberOfPieces</td>
+            </tr>
+            
+            <tr>
+                <td>PMAX</td>
+                <td>=</td>
+                <td>PoolsMaximum</td>
+            </tr>
+            
+            <tr>
+                <td>PPL</td>
+                <td>=</td>
+                <td>PoolsPerLot</td>
+            </tr>
+            
+            <tr>
+                <td>PPM</td>
+                <td>=</td>
+                <td>PoolsPerMillion</td>
+            </tr>
+            
+            <tr>
+                <td>PPT</td>
+                <td>=</td>
+                <td>PoolsPerTrade</td>
+            </tr>
+            
+            <tr>
+                <td>PRICE</td>
+                <td>=</td>
+                <td>PriceRange</td>
+            </tr>
+            
+            <tr>
+                <td>PRICEFREQ</td>
+                <td>=</td>
+                <td>PricingFrequency</td>
+            </tr>
+            
+            <tr>
+                <td>PROD</td>
+                <td>=</td>
+                <td>ProductionYear</td>
+            </tr>
+            
+            <tr>
+                <td>PROTECT</td>
+                <td>=</td>
+                <td>CallProtection</td>
+            </tr>
+            
+            <tr>
+                <td>PURPOSE</td>
+                <td>=</td>
+                <td>Purpose</td>
+            </tr>
+            
+            <tr>
+                <td>PXSOURCE</td>
+                <td>=</td>
+                <td>BenchmarkPriceSource</td>
+            </tr>
+            
+            <tr>
+                <td>RATING</td>
+                <td>=</td>
+                <td>RatingSourceAndRange</td>
+            </tr>
+            
+            <tr>
+                <td>REDEMPTION</td>
+                <td>=</td>
+                <td>TypeOfRedemption</td>
+            </tr>
+            
+            <tr>
+                <td>RESTRICTED</td>
+                <td>=</td>
+                <td>Restricted</td>
+            </tr>
+            
+            <tr>
+                <td>SECTOR</td>
+                <td>=</td>
+                <td>MarketSector</td>
+            </tr>
+            
+            <tr>
+                <td>SECTYPE</td>
+                <td>=</td>
+                <td>SecurityTypeIncludedOrExcluded</td>
+            </tr>
+            
+            <tr>
+                <td>STRUCT</td>
+                <td>=</td>
+                <td>Structure</td>
+            </tr>
+            
+            <tr>
+                <td>SUBSFREQ</td>
+                <td>=</td>
+                <td>SubstitutionsFrequency</td>
+            </tr>
+            
+            <tr>
+                <td>SUBSLEFT</td>
+                <td>=</td>
+                <td>SubstitutionsLeft</td>
+            </tr>
+            
+            <tr>
+                <td>TEXT</td>
+                <td>=</td>
+                <td>FreeformText</td>
+            </tr>
+            
+            <tr>
+                <td>TRDVAR</td>
+                <td>=</td>
+                <td>TradeVariance</td>
+            </tr>
+            
+            <tr>
+                <td>WAC</td>
+                <td>=</td>
+                <td>WeightedAverageCoupon</td>
+            </tr>
+            
+            <tr>
+                <td>WAL</td>
+                <td>=</td>
+                <td>WeightedAverageLifeCoupon</td>
+            </tr>
+            
+            <tr>
+                <td>WALA</td>
+                <td>=</td>
+                <td>WeightedAverageLoanAge</td>
+            </tr>
+            
+            <tr>
+                <td>WAM</td>
+                <td>=</td>
+                <td>WeightedAverageMaturity</td>
+            </tr>
+            
+            <tr>
+                <td>WHOLE</td>
+                <td>=</td>
+                <td>WholePool</td>
+            </tr>
+            
+            <tr>
+                <td>YIELD</td>
+                <td>=</td>
+                <td>YieldRange</td>
+            </tr>
+            
+            <tr>
+                <td>AVFICO</td>
+                <td>=</td>
+                <td>AverageFICOScore</td>
+            </tr>
+            
+            <tr>
+                <td>AVSIZE</td>
+                <td>=</td>
+                <td>AverageLoanSize</td>
+            </tr>
+            
+            <tr>
+                <td>MAXBAL</td>
+                <td>=</td>
+                <td>MaximumLoanBalance</td>
+            </tr>
+            
+            <tr>
+                <td>POOL</td>
+                <td>=</td>
+                <td>PoolIdentifier</td>
+            </tr>
+            
+            <tr>
+                <td>ROLLTYPE</td>
+                <td>=</td>
+                <td>TypeOfRollTrade</td>
+            </tr>
+            
+            <tr>
+                <td>REFTRADE</td>
+                <td>=</td>
+                <td>ReferenceToRollingOrClosingTrade</td>
+            </tr>
+            
+            <tr>
+                <td>REFPRIN</td>
+                <td>=</td>
+                <td>PrincipalOfRollingOrClosingTrade</td>
+            </tr>
+            
+            <tr>
+                <td>REFINT</td>
+                <td>=</td>
+                <td>InterestOfRollingOrClosingTrade</td>
+            </tr>
+            
+            <tr>
+                <td>AVAILQTY</td>
+                <td>=</td>
+                <td>AvailableOfferQuantityToBeShownToTheStreet</td>
+            </tr>
+            
+            <tr>
+                <td>BROKERCREDIT</td>
+                <td>=</td>
+                <td>BrokerCredit</td>
+            </tr>
+            
+            <tr>
+                <td>INTERNALPX</td>
+                <td>=</td>
+                <td>OfferPriceToBeShownToInternalBrokers</td>
+            </tr>
+            
+            <tr>
+                <td>INTERNALQTY</td>
+                <td>=</td>
+                <td>OfferQuantityToBeShownToInternalBrokers</td>
+            </tr>
+            
+            <tr>
+                <td>LEAVEQTY</td>
+                <td>=</td>
+                <td>TheMinimumResidualOfferQuantity</td>
+            </tr>
+            
+            <tr>
+                <td>MAXORDQTY</td>
+                <td>=</td>
+                <td>MaximumOrderSize</td>
+            </tr>
+            
+            <tr>
+                <td>ORDRINCR</td>
+                <td>=</td>
+                <td>OrderQuantityIncrement</td>
+            </tr>
+            
+            <tr>
+                <td>PRIMARY</td>
+                <td>=</td>
+                <td>PrimaryOrSecondaryMarketIndicator</td>
+            </tr>
+            
+            <tr>
+                <td>SALESCREDITOVR</td>
+                <td>=</td>
+                <td>BrokerSalesCreditOverride</td>
+            </tr>
+            
+            <tr>
+                <td>TRADERCREDIT</td>
+                <td>=</td>
+                <td>TraderCredit</td>
+            </tr>
+            
+            <tr>
+                <td>DISCOUNT</td>
+                <td>=</td>
+                <td>DiscountRate</td>
+            </tr>
+            
+            <tr>
+                <td>YTM</td>
+                <td>=</td>
+                <td>YieldToMaturity</td>
+            </tr>
+            
+            <tr>
+                <td>ABS</td>
+                <td>=</td>
+                <td>AbsolutePrepaymentSpeed</td>
+            </tr>
+            
+            <tr>
+                <td>CPP</td>
+                <td>=</td>
+                <td>ConstantPrepaymentPenalty</td>
+            </tr>
+            
+            <tr>
+                <td>CPR</td>
+                <td>=</td>
+                <td>ConstantPrepaymentRate</td>
+            </tr>
+            
+            <tr>
+                <td>CPY</td>
+                <td>=</td>
+                <td>ConstantPrepaymentYield</td>
+            </tr>
+            
+            <tr>
+                <td>HEP</td>
+                <td>=</td>
+                <td>FinalCPROfHomeEquityPrepaymentCurve</td>
+            </tr>
+            
+            <tr>
+                <td>MHP</td>
+                <td>=</td>
+                <td>PercentOfManufacturedHousingPrepaymentCurve</td>
+            </tr>
+            
+            <tr>
+                <td>MPR</td>
+                <td>=</td>
+                <td>MonthlyPrepaymentRate</td>
+            </tr>
+            
+            <tr>
+                <td>PPC</td>
+                <td>=</td>
+                <td>PercentOfProspectusPrepaymentCurve</td>
+            </tr>
+            
+            <tr>
+                <td>PSA</td>
+                <td>=</td>
+                <td>PercentOfBMAPrepaymentCurve</td>
+            </tr>
+            
+            <tr>
+                <td>SMM</td>
+                <td>=</td>
+                <td>SingleMonthlyMortality</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +619,11 @@ Other types may be used by mutual agreement of the counterparties.
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

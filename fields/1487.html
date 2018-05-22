@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ComplexEventPriceBoundaryMethod [type '1487']</h1>
-<p style="white-space: pre-wrap;">Specifies the boundary condition to be used for the event price relative to the underlying price at the point the complex event outcome takes effect as determined by the ComplexEventPriceTimeType.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ComplexEventPriceBoundaryMethod [type '1487']</h3>
+<p class="description">Specifies the boundary condition to be used for the event price relative to the underlying price at the point the complex event outcome takes effect as determined by the ComplexEventPriceTimeType.</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ComplexEventPriceBoundaryMethod.html">
+            <a href="../fields/1487.html">
             1487
             </a>
         </td>
         <td>
-            <a href="../fields/ComplexEventPriceBoundaryMethod.html">
+            <a href="../fields/1487.html">
             ComplexEventPriceBoundaryMethod
             </a>
         </td>
         <td>PxBndryMeth</td>
-        <td>Specifies the boundary condition to be used for the event price relative to the underlying price at the point the complex event outcome takes effect as determined by the ComplexEventPriceTimeType.</td>
+        <td>
+            Specifies the boundary condition to be used for the event price relative to the underlying price at the point the complex event outcome takes effect as determined by the ComplexEventPriceTimeType.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>LessThanComplexEventPrice</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>LessThanOrEqualToComplexEventPrice</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>EqualToComplexEventPrice</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>GreaterThanOrEqualToComplexEventPrice</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>GreaterThanComplexEventPrice</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

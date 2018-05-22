@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>UnitOfMeasure [type '996']</h1>
-<p style="white-space: pre-wrap;">The unit of measure of the underlying commodity upon which the contract is based. Two groups of units of measure enumerations are supported.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>UnitOfMeasure [type '996']</h3>
+<p class="description">The unit of measure of the underlying commodity upon which the contract is based. Two groups of units of measure enumerations are supported.
 Fixed Magnitude UOMs are primarily used in energy derivatives and specify a magnitude (such as, MM, Kilo, M, etc.) and the dimension (such as, watt hours, BTU&#39;s) to produce standard fixed measures (such as MWh - Megawatt-hours, MMBtu - One million BTUs).
 The second group, Variable Quantity UOMs, specifies the dimension as a single unit without a magnitude (or more accurately a magnitude of one) and uses the UnitOfMeasureQty(1147) field to define the quantity of units per contract. Variable Quantity UOMs are used for both commodities (such as lbs of lean cattle, bushels of corn, ounces of gold) and financial futures.
 Examples:
@@ -95,23 +108,108 @@ For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfM
 
     <tr>
         <td class="green">
-            <a href="../fields/UnitOfMeasure.html">
+            <a href="../fields/996.html">
             996
             </a>
         </td>
         <td>
-            <a href="../fields/UnitOfMeasure.html">
+            <a href="../fields/996.html">
             UnitOfMeasure
             </a>
         </td>
         <td>UOM</td>
-        <td>The unit of measure of the underlying commodity upon which the contract is based. Two groups of units of measure enumerations are supported.
+        <td>
+            The unit of measure of the underlying commodity upon which the contract is based. Two groups of units of measure enumerations are supported.
 Fixed Magnitude UOMs are primarily used in energy derivatives and specify a magnitude (such as, MM, Kilo, M, etc.) and the dimension (such as, watt hours, BTU&#39;s) to produce standard fixed measures (such as MWh - Megawatt-hours, MMBtu - One million BTUs).
 The second group, Variable Quantity UOMs, specifies the dimension as a single unit without a magnitude (or more accurately a magnitude of one) and uses the UnitOfMeasureQty(1147) field to define the quantity of units per contract. Variable Quantity UOMs are used for both commodities (such as lbs of lean cattle, bushels of corn, ounces of gold) and financial futures.
 Examples:
 For lean cattle futures contracts, a UnitOfMeasure of &#39;lbs&#39; with a UnitOfMeasureQty(1147) of 40,000, means each lean cattle futures contract represents 40,000 lbs of lean cattle.
 For Eurodollars futures contracts, a UnitOfMeasure of USD with a UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures contract represents 1,000,000 USD.
-For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfMeasureQty(1147) of 1,000, means each gold futures contract represents 1,000 troy ounces of gold.</td>
+For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfMeasureQty(1147) of 1,000, means each gold futures contract represents 1,000 troy ounces of gold.
+            
+            <table>
+            
+            <tr>
+                <td>Bcf</td>
+                <td>=</td>
+                <td>BillionCubicFeet</td>
+            </tr>
+            
+            <tr>
+                <td>MMbbl</td>
+                <td>=</td>
+                <td>MillionBarrels</td>
+            </tr>
+            
+            <tr>
+                <td>MMBtu</td>
+                <td>=</td>
+                <td>OneMillionBTU</td>
+            </tr>
+            
+            <tr>
+                <td>MWh</td>
+                <td>=</td>
+                <td>MegawattHours</td>
+            </tr>
+            
+            <tr>
+                <td>Bbl</td>
+                <td>=</td>
+                <td>Barrels</td>
+            </tr>
+            
+            <tr>
+                <td>Bu</td>
+                <td>=</td>
+                <td>Bushels</td>
+            </tr>
+            
+            <tr>
+                <td>lbs</td>
+                <td>=</td>
+                <td>Pounds</td>
+            </tr>
+            
+            <tr>
+                <td>Gal</td>
+                <td>=</td>
+                <td>Gallons</td>
+            </tr>
+            
+            <tr>
+                <td>oz_tr</td>
+                <td>=</td>
+                <td>TroyOunces</td>
+            </tr>
+            
+            <tr>
+                <td>t</td>
+                <td>=</td>
+                <td>MetricTons</td>
+            </tr>
+            
+            <tr>
+                <td>tn</td>
+                <td>=</td>
+                <td>Tons</td>
+            </tr>
+            
+            <tr>
+                <td>USD</td>
+                <td>=</td>
+                <td>USDollars</td>
+            </tr>
+            
+            <tr>
+                <td>Alw</td>
+                <td>=</td>
+                <td>Allowances</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +223,11 @@ For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfM
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

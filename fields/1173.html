@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDSubBookType [type '1173']</h1>
-<p style="white-space: pre-wrap;">Describes a class of sub book, e.g. for the separation of various lot types. The Sub Book Type indicates that the following Market Data Entries belong to a non-integrated Sub Book. Whenever provided the Sub Book must be used together with MDPriceLevel and MDEntryPositionNo in order to sort the order properly.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDSubBookType [type '1173']</h3>
+<p class="description">Describes a class of sub book, e.g. for the separation of various lot types. The Sub Book Type indicates that the following Market Data Entries belong to a non-integrated Sub Book. Whenever provided the Sub Book must be used together with MDPriceLevel and MDEntryPositionNo in order to sort the order properly.
 Values are bilaterally agreed.</p>
 
 <table>
@@ -90,18 +103,21 @@ Values are bilaterally agreed.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/MDSubBookType.html">
+            <a href="../fields/1173.html">
             1173
             </a>
         </td>
         <td>
-            <a href="../fields/MDSubBookType.html">
+            <a href="../fields/1173.html">
             MDSubBookType
             </a>
         </td>
         <td>MDSubBkTyp</td>
-        <td>Describes a class of sub book, e.g. for the separation of various lot types. The Sub Book Type indicates that the following Market Data Entries belong to a non-integrated Sub Book. Whenever provided the Sub Book must be used together with MDPriceLevel and MDEntryPositionNo in order to sort the order properly.
-Values are bilaterally agreed.</td>
+        <td>
+            Describes a class of sub book, e.g. for the separation of various lot types. The Sub Book Type indicates that the following Market Data Entries belong to a non-integrated Sub Book. Whenever provided the Sub Book must be used together with MDPriceLevel and MDEntryPositionNo in order to sort the order properly.
+Values are bilaterally agreed.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +139,11 @@ Values are bilaterally agreed.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

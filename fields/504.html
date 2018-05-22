@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PaymentDate [type '504']</h1>
-<p style="white-space: pre-wrap;">The date written on a cheque or date payment should be submitted to the relevant clearing system.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PaymentDate [type '504']</h3>
+<p class="description">The date written on a cheque or date payment should be submitted to the relevant clearing system.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PaymentDate.html">
+            <a href="../fields/504.html">
             504
             </a>
         </td>
         <td>
-            <a href="../fields/PaymentDate.html">
+            <a href="../fields/504.html">
             PaymentDate
             </a>
         </td>
         <td>PmtDt</td>
-        <td>The date written on a cheque or date payment should be submitted to the relevant clearing system.</td>
+        <td>
+            The date written on a cheque or date payment should be submitted to the relevant clearing system.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +129,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

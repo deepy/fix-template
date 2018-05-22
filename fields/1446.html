@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RateSource [type '1446']</h1>
-<p style="white-space: pre-wrap;">Identifies the source of rate information.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RateSource [type '1446']</h3>
+<p class="description">Identifies the source of rate information.
 For FX, the reference source to be used for the FX spot rate.</p>
 
 <table>
@@ -90,18 +103,49 @@ For FX, the reference source to be used for the FX spot rate.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/RateSource.html">
+            <a href="../fields/1446.html">
             1446
             </a>
         </td>
         <td>
-            <a href="../fields/RateSource.html">
+            <a href="../fields/1446.html">
             RateSource
             </a>
         </td>
         <td>RtSrc</td>
-        <td>Identifies the source of rate information.
-For FX, the reference source to be used for the FX spot rate.</td>
+        <td>
+            Identifies the source of rate information.
+For FX, the reference source to be used for the FX spot rate.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Bloomberg</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Reuters</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Telerate</td>
+            </tr>
+            
+            <tr>
+                <td>99</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@ For FX, the reference source to be used for the FX spot rate.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

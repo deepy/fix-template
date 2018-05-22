@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityIDSource [type '22']</h1>
-<p style="white-space: pre-wrap;">Identifies class or source of the SecurityID (48) value. Required if SecurityID is specified.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityIDSource [type '22']</h3>
+<p class="description">Identifies class or source of the SecurityID (48) value. Required if SecurityID is specified.
 100+ are reserved for private security identifications</p>
 
 <table>
@@ -90,18 +103,157 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityIDSource.html">
+            <a href="../fields/22.html">
             22
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityIDSource.html">
+            <a href="../fields/22.html">
             SecurityIDSource
             </a>
         </td>
         <td>Src</td>
-        <td>Identifies class or source of the SecurityID (48) value. Required if SecurityID is specified.
-100+ are reserved for private security identifications</td>
+        <td>
+            Identifies class or source of the SecurityID (48) value. Required if SecurityID is specified.
+100+ are reserved for private security identifications
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>CUSIP</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>SEDOL</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>QUIK</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>ISINNumber</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>RICCode</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ISOCurrencyCode</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ISOCountryCode</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>ExchangeSymbol</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>ConsolidatedTapeAssociation</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>BloombergSymbol</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>Wertpapier</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>Dutch</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Valoren</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>Sicovam</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>Belgian</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>Common</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>ClearingHouse</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>ISDAFpMLSpecification</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>OptionPriceReportingAuthority</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>ISDAFpMLURL</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>LetterOfCredit</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>MarketplaceAssignedIdentifier</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +267,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

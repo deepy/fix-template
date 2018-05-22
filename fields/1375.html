@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MassActionResponse [type '1375']</h1>
-<p style="white-space: pre-wrap;">Specifies the action taken by counterparty order handling system as a result of the action type indicated in MassActionType of the Order Mass Action Request.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MassActionResponse [type '1375']</h3>
+<p class="description">Specifies the action taken by counterparty order handling system as a result of the action type indicated in MassActionType of the Order Mass Action Request.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MassActionResponse.html">
+            <a href="../fields/1375.html">
             1375
             </a>
         </td>
         <td>
-            <a href="../fields/MassActionResponse.html">
+            <a href="../fields/1375.html">
             MassActionResponse
             </a>
         </td>
         <td>MassActionResponse</td>
-        <td>Specifies the action taken by counterparty order handling system as a result of the action type indicated in MassActionType of the Order Mass Action Request.</td>
+        <td>
+            Specifies the action taken by counterparty order handling system as a result of the action type indicated in MassActionType of the Order Mass Action Request.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Rejected</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Accepted</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

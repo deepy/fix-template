@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecAckStatus [type '1036']</h1>
-<p style="white-space: pre-wrap;">The status of this execution acknowledgement message.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExecAckStatus [type '1036']</h3>
+<p class="description">The status of this execution acknowledgement message.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExecAckStatus.html">
+            <a href="../fields/1036.html">
             1036
             </a>
         </td>
         <td>
-            <a href="../fields/ExecAckStatus.html">
+            <a href="../fields/1036.html">
             ExecAckStatus
             </a>
         </td>
         <td>ExecAckStat</td>
-        <td>The status of this execution acknowledgement message.</td>
+        <td>
+            The status of this execution acknowledgement message.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Received</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Accepted</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Don</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

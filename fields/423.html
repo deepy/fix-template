@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PriceType [type '423']</h1>
-<p style="white-space: pre-wrap;">Code to represent the price type.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PriceType [type '423']</h3>
+<p class="description">Code to represent the price type.
 (For Financing transactions PriceType implies the &#34;repo type&#34; - Fixed or Floating - 9 (Yield) or 6 (Spread) respectively - and Price (44) gives the corresponding &#34;repo rate&#34;.
 See Volume : &#34;Glossary&#34; for further value definitions)</p>
 
@@ -91,19 +104,134 @@ See Volume : &#34;Glossary&#34; for further value definitions)</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/PriceType.html">
+            <a href="../fields/423.html">
             423
             </a>
         </td>
         <td>
-            <a href="../fields/PriceType.html">
+            <a href="../fields/423.html">
             PriceType
             </a>
         </td>
         <td>PxTyp</td>
-        <td>Code to represent the price type.
+        <td>
+            Code to represent the price type.
 (For Financing transactions PriceType implies the &#34;repo type&#34; - Fixed or Floating - 9 (Yield) or 6 (Spread) respectively - and Price (44) gives the corresponding &#34;repo rate&#34;.
-See Volume : &#34;Glossary&#34; for further value definitions)</td>
+See Volume : &#34;Glossary&#34; for further value definitions)
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Percentage</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>PerUnit</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>FixedAmount</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Discount</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Premium</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>Spread</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>TEDPrice</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>TEDYield</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>Yield</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>FixedCabinetTradePrice</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>VariableCabinetTradePrice</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>ProductTicksInHalfs</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>ProductTicksInFourths</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>ProductTicksInEights</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>ProductTicksInSixteenths</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>=</td>
+                <td>ProductTicksInThirtySeconds</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>ProductTicksInSixtyForths</td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>=</td>
+                <td>ProductTicksInOneTwentyEights</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -183,6 +311,11 @@ See Volume : &#34;Glossary&#34; for further value definitions)</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

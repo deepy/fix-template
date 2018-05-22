@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TransBkdTime [type '483']</h1>
-<p style="white-space: pre-wrap;">For CIV A date and time stamp to indicate the time a CIV order was booked by the fund manager.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TransBkdTime [type '483']</h3>
+<p class="description">For CIV A date and time stamp to indicate the time a CIV order was booked by the fund manager.
 For derivatives a date and time stamp to indicate when this order was booked with the agent prior to submission to the VMU. Indicates the time at which the order was finalized between the buyer and seller prior to submission.</p>
 
 <table>
@@ -90,18 +103,21 @@ For derivatives a date and time stamp to indicate when this order was booked wit
 
     <tr>
         <td class="green">
-            <a href="../fields/TransBkdTime.html">
+            <a href="../fields/483.html">
             483
             </a>
         </td>
         <td>
-            <a href="../fields/TransBkdTime.html">
+            <a href="../fields/483.html">
             TransBkdTime
             </a>
         </td>
         <td>TransBkdTm</td>
-        <td>For CIV A date and time stamp to indicate the time a CIV order was booked by the fund manager.
-For derivatives a date and time stamp to indicate when this order was booked with the agent prior to submission to the VMU. Indicates the time at which the order was finalized between the buyer and seller prior to submission.</td>
+        <td>
+            For CIV A date and time stamp to indicate the time a CIV order was booked by the fund manager.
+For derivatives a date and time stamp to indicate when this order was booked with the agent prior to submission to the VMU. Indicates the time at which the order was finalized between the buyer and seller prior to submission.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -129,6 +145,11 @@ For derivatives a date and time stamp to indicate when this order was booked wit
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

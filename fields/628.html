@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>HopCompID [type '628']</h1>
-<p style="white-space: pre-wrap;">Assigned value used to identify the third party firm which delivered a specific message either from the firm which originated the message or from another third party (if multiple &#34;hops&#34; are performed). It is recommended that this value be the SenderCompID (49) of the third party.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>HopCompID [type '628']</h3>
+<p class="description">Assigned value used to identify the third party firm which delivered a specific message either from the firm which originated the message or from another third party (if multiple &#34;hops&#34; are performed). It is recommended that this value be the SenderCompID (49) of the third party.
 Applicable when messages are communicated/re-distributed via third parties which function as service bureaus or &#34;hubs&#34;. Only applicable if OnBehalfOfCompID (115) is being used.</p>
 
 <table>
@@ -90,18 +103,21 @@ Applicable when messages are communicated/re-distributed via third parties which
 
     <tr>
         <td class="green">
-            <a href="../fields/HopCompID.html">
+            <a href="../fields/628.html">
             628
             </a>
         </td>
         <td>
-            <a href="../fields/HopCompID.html">
+            <a href="../fields/628.html">
             HopCompID
             </a>
         </td>
         <td>ID</td>
-        <td>Assigned value used to identify the third party firm which delivered a specific message either from the firm which originated the message or from another third party (if multiple &#34;hops&#34; are performed). It is recommended that this value be the SenderCompID (49) of the third party.
-Applicable when messages are communicated/re-distributed via third parties which function as service bureaus or &#34;hubs&#34;. Only applicable if OnBehalfOfCompID (115) is being used.</td>
+        <td>
+            Assigned value used to identify the third party firm which delivered a specific message either from the firm which originated the message or from another third party (if multiple &#34;hops&#34; are performed). It is recommended that this value be the SenderCompID (49) of the third party.
+Applicable when messages are communicated/re-distributed via third parties which function as service bureaus or &#34;hubs&#34;. Only applicable if OnBehalfOfCompID (115) is being used.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@ Applicable when messages are communicated/re-distributed via third parties which
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

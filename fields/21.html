@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>HandlInst [type '21']</h1>
-<p style="white-space: pre-wrap;">Instructions for order handling on Broker trading floor</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>HandlInst [type '21']</h3>
+<p class="description">Instructions for order handling on Broker trading floor</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/HandlInst.html">
+            <a href="../fields/21.html">
             21
             </a>
         </td>
         <td>
-            <a href="../fields/HandlInst.html">
+            <a href="../fields/21.html">
             HandlInst
             </a>
         </td>
         <td>HandlInst</td>
-        <td>Instructions for order handling on Broker trading floor</td>
+        <td>
+            Instructions for order handling on Broker trading floor
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>AutomatedExecutionNoIntervention</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>AutomatedExecutionInterventionOK</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>ManualOrder</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -133,6 +171,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExDestinationIDSource [type '1133']</h1>
-<p style="white-space: pre-wrap;">The ID source of ExDestination</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExDestinationIDSource [type '1133']</h3>
+<p class="description">The ID source of ExDestination</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExDestinationIDSource.html">
+            <a href="../fields/1133.html">
             1133
             </a>
         </td>
         <td>
-            <a href="../fields/ExDestinationIDSource.html">
+            <a href="../fields/1133.html">
             ExDestinationIDSource
             </a>
         </td>
         <td>ExDestIDSrc</td>
-        <td>The ID source of ExDestination</td>
+        <td>
+            The ID source of ExDestination
+            
+            <table>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>BIC</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>GeneralIdentifier</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Proprietary</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>ISOCountryCode</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>MIC</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -137,6 +187,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

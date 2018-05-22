@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CancellationRights [type '480']</h1>
-<p style="white-space: pre-wrap;">For CIV - A one character code identifying whether Cancellation rights/Cooling off period applies.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CancellationRights [type '480']</h3>
+<p class="description">For CIV - A one character code identifying whether Cancellation rights/Cooling off period applies.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CancellationRights.html">
+            <a href="../fields/480.html">
             480
             </a>
         </td>
         <td>
-            <a href="../fields/CancellationRights.html">
+            <a href="../fields/480.html">
             CancellationRights
             </a>
         </td>
         <td>CxllationRights</td>
-        <td>For CIV - A one character code identifying whether Cancellation rights/Cooling off period applies.</td>
+        <td>
+            For CIV - A one character code identifying whether Cancellation rights/Cooling off period applies.
+            
+            <table>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>Yes</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>NoExecutionOnly</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>NoWaiverAgreement</td>
+            </tr>
+            
+            <tr>
+                <td>O</td>
+                <td>=</td>
+                <td>NoInstitutional</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -127,6 +171,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecID [type '17']</h1>
-<p style="white-space: pre-wrap;">Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) for ExecType (150)=I (Order Status)).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExecID [type '17']</h3>
+<p class="description">Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) for ExecType (150)=I (Order Status)).
 Uniqueness must be guaranteed within a single trading day or the life of a multi-day order. Firms which accept multi-day orders should consider embedding a date within the ExecID field to assure uniqueness across days.
 (Prior to FIX 4.1 this field was of type int).</p>
 
@@ -91,19 +104,22 @@ Uniqueness must be guaranteed within a single trading day or the life of a multi
 
     <tr>
         <td class="green">
-            <a href="../fields/ExecID.html">
+            <a href="../fields/17.html">
             17
             </a>
         </td>
         <td>
-            <a href="../fields/ExecID.html">
+            <a href="../fields/17.html">
             ExecID
             </a>
         </td>
         <td>ExecID</td>
-        <td>Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) for ExecType (150)=I (Order Status)).
+        <td>
+            Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) for ExecType (150)=I (Order Status)).
 Uniqueness must be guaranteed within a single trading day or the life of a multi-day order. Firms which accept multi-day orders should consider embedding a date within the ExecID field to assure uniqueness across days.
-(Prior to FIX 4.1 this field was of type int).</td>
+(Prior to FIX 4.1 this field was of type int).
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -137,6 +153,11 @@ Uniqueness must be guaranteed within a single trading day or the life of a multi
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

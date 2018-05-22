@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityDefinitionRequest [type 'c']</h1>
-<p style="white-space: pre-wrap;">The Security Definition Request message is used for the following:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>SecurityDefinitionRequest [type 'c']</h3>
+<p class="description">The Security Definition Request message is used for the following:
 1. Request a specific Security to be traded with the second party. The request security can be defined as a multileg security made up of one or more instrument legs.
 2. Request a set of individual securities for a single market segment.
 3. Request all securities, independent of market segment.</p>
@@ -453,5 +466,10 @@ of the requested Security</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

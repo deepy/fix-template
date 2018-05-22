@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>HaltReason [type '327']</h1>
-<p style="white-space: pre-wrap;">Denotes the reason for the Opening Delay or Trading Halt.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>HaltReason [type '327']</h3>
+<p class="description">Denotes the reason for the Opening Delay or Trading Halt.</p>
 
 <table>
 <tr>
@@ -89,17 +102,60 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/HaltReason.html">
+            <a href="../fields/327.html">
             327
             </a>
         </td>
         <td>
-            <a href="../fields/HaltReason.html">
+            <a href="../fields/327.html">
             HaltReason
             </a>
         </td>
         <td>HaltRsn</td>
-        <td>Denotes the reason for the Opening Delay or Trading Halt.</td>
+        <td>
+            Denotes the reason for the Opening Delay or Trading Halt.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>NewsDissemination</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>OrderInflux</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>OrderImbalance</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>AdditionalInformation</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>NewsPending</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>EquipmentChangeover</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +179,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

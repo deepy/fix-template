@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OptPayoutAmount [type '1195']</h1>
-<p style="white-space: pre-wrap;">Cash amount indicating the pay out associated with an option. For binary options this is a fixed amount. 
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OptPayoutAmount [type '1195']</h3>
+<p class="description">Cash amount indicating the pay out associated with an option. For binary options this is a fixed amount. 
 Conditionally required if OptPayoutType(1482) is set to binary.</p>
 
 <table>
@@ -90,18 +103,21 @@ Conditionally required if OptPayoutType(1482) is set to binary.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/OptPayoutAmount.html">
+            <a href="../fields/1195.html">
             1195
             </a>
         </td>
         <td>
-            <a href="../fields/OptPayoutAmount.html">
+            <a href="../fields/1195.html">
             OptPayoutAmount
             </a>
         </td>
         <td>OptPayAmt</td>
-        <td>Cash amount indicating the pay out associated with an option. For binary options this is a fixed amount. 
-Conditionally required if OptPayoutType(1482) is set to binary.</td>
+        <td>
+            Cash amount indicating the pay out associated with an option. For binary options this is a fixed amount. 
+Conditionally required if OptPayoutType(1482) is set to binary.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@ Conditionally required if OptPayoutType(1482) is set to binary.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

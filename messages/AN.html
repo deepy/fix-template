@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RequestForPositions [type 'AN']</h1>
-<p style="white-space: pre-wrap;">The Request For Positions message is used by the owner of a position to request a Position Report from the holder of the position, usually the central counter party or clearing organization. The request can be made at several levels of granularity.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>RequestForPositions [type 'AN']</h3>
+<p class="description">The Request For Positions message is used by the owner of a position to request a Position Report from the holder of the position, usually the central counter party or clearing organization. The request can be made at several levels of granularity.</p>
 
 <table>
 <tr>
@@ -518,5 +531,10 @@ If the field is absent, the value 0 will be the default</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

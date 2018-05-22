@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecPriceType [type '484']</h1>
-<p style="white-space: pre-wrap;">For CIV - Identifies how the execution price LastPx (31) was calculated from the fund unit/share price(s) calculated at the fund valuation point.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExecPriceType [type '484']</h3>
+<p class="description">For CIV - Identifies how the execution price LastPx (31) was calculated from the fund unit/share price(s) calculated at the fund valuation point.</p>
 
 <table>
 <tr>
@@ -89,17 +102,72 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExecPriceType.html">
+            <a href="../fields/484.html">
             484
             </a>
         </td>
         <td>
-            <a href="../fields/ExecPriceType.html">
+            <a href="../fields/484.html">
             ExecPriceType
             </a>
         </td>
         <td>ExecPxTyp</td>
-        <td>For CIV - Identifies how the execution price LastPx (31) was calculated from the fund unit/share price(s) calculated at the fund valuation point.</td>
+        <td>
+            For CIV - Identifies how the execution price LastPx (31) was calculated from the fund unit/share price(s) calculated at the fund valuation point.
+            
+            <table>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>BidPrice</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>CreationPrice</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>CreationPricePlusAdjustmentPercent</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>CreationPricePlusAdjustmentAmount</td>
+            </tr>
+            
+            <tr>
+                <td>O</td>
+                <td>=</td>
+                <td>OfferPrice</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>OfferPriceMinusAdjustmentPercent</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>OfferPriceMinusAdjustmentAmount</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>SinglePrice</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

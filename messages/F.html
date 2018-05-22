@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderCancelRequest [type 'F']</h1>
-<p style="white-space: pre-wrap;">The order cancel request message requests the cancellation of all of the remaining quantity of an existing order. Note that the Order Cancel/Replace Request should be used to partially cancel (reduce) an order).</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>OrderCancelRequest [type 'F']</h3>
+<p class="description">The order cancel request message requests the cancellation of all of the remaining quantity of an existing order. Note that the Order Cancel/Replace Request should be used to partially cancel (reduce) an order).</p>
 
 <table>
 <tr>
@@ -486,5 +499,10 @@ Note: OrderQty = CumQty + LeavesQty (see exceptions above)</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

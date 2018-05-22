@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>WorkingIndicator [type '636']</h1>
-<p style="white-space: pre-wrap;">Indicates if the order is currently being worked. Applicable only for OrdStatus = &#34;New&#34;. For open outcry markets this indicates that the order is being worked in the crowd. For electronic markets it indicates that the order has transitioned from a contingent order to a market order.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>WorkingIndicator [type '636']</h3>
+<p class="description">Indicates if the order is currently being worked. Applicable only for OrdStatus = &#34;New&#34;. For open outcry markets this indicates that the order is being worked in the crowd. For electronic markets it indicates that the order has transitioned from a contingent order to a market order.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/WorkingIndicator.html">
+            <a href="../fields/636.html">
             636
             </a>
         </td>
         <td>
-            <a href="../fields/WorkingIndicator.html">
+            <a href="../fields/636.html">
             WorkingIndicator
             </a>
         </td>
         <td>WorkingInd</td>
-        <td>Indicates if the order is currently being worked. Applicable only for OrdStatus = &#34;New&#34;. For open outcry markets this indicates that the order is being worked in the crowd. For electronic markets it indicates that the order has transitioned from a contingent order to a market order.</td>
+        <td>
+            Indicates if the order is currently being worked. Applicable only for OrdStatus = &#34;New&#34;. For open outcry markets this indicates that the order is being worked in the crowd. For electronic markets it indicates that the order has transitioned from a contingent order to a market order.
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>NotWorking</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>Working</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +155,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

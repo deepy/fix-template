@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RefOrdIDReason [type '1431']</h1>
-<p style="white-space: pre-wrap;">The reason for updating the RefOrdID</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RefOrdIDReason [type '1431']</h3>
+<p class="description">The reason for updating the RefOrdID</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/RefOrdIDReason.html">
+            <a href="../fields/1431.html">
             1431
             </a>
         </td>
         <td>
-            <a href="../fields/RefOrdIDReason.html">
+            <a href="../fields/1431.html">
             RefOrdIDReason
             </a>
         </td>
         <td>RefOrdIDRsn</td>
-        <td>The reason for updating the RefOrdID</td>
+        <td>
+            The reason for updating the RefOrdID
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>GTCFromPreviousDay</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PartialFillRemaining</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>OrderChanged</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

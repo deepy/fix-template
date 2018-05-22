@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ComplexEventEndTime [type '1496']</h1>
-<p style="white-space: pre-wrap;">Specifies the end time of the time range on which a complex event date is effective.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ComplexEventEndTime [type '1496']</h3>
+<p class="description">Specifies the end time of the time range on which a complex event date is effective.
 ComplexEventEndTime must always be greater than or equal to ComplexEventStartTime.</p>
 
 <table>
@@ -90,18 +103,21 @@ ComplexEventEndTime must always be greater than or equal to ComplexEventStartTim
 
     <tr>
         <td class="green">
-            <a href="../fields/ComplexEventEndTime.html">
+            <a href="../fields/1496.html">
             1496
             </a>
         </td>
         <td>
-            <a href="../fields/ComplexEventEndTime.html">
+            <a href="../fields/1496.html">
             ComplexEventEndTime
             </a>
         </td>
         <td>EndTm</td>
-        <td>Specifies the end time of the time range on which a complex event date is effective.
-ComplexEventEndTime must always be greater than or equal to ComplexEventStartTime.</td>
+        <td>
+            Specifies the end time of the time range on which a complex event date is effective.
+ComplexEventEndTime must always be greater than or equal to ComplexEventStartTime.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@ ComplexEventEndTime must always be greater than or equal to ComplexEventStartTim
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

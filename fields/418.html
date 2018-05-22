@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>BidTradeType [type '418']</h1>
-<p style="white-space: pre-wrap;">Code to represent the type of trade.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>BidTradeType [type '418']</h3>
+<p class="description">Code to represent the type of trade.
 (Prior to FIX 4.4 this field was named &#34;TradeType&#34;)</p>
 
 <table>
@@ -90,18 +103,49 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/BidTradeType.html">
+            <a href="../fields/418.html">
             418
             </a>
         </td>
         <td>
-            <a href="../fields/BidTradeType.html">
+            <a href="../fields/418.html">
             BidTradeType
             </a>
         </td>
         <td>BidTrdTyp</td>
-        <td>Code to represent the type of trade.
-(Prior to FIX 4.4 this field was named &#34;TradeType&#34;)</td>
+        <td>
+            Code to represent the type of trade.
+(Prior to FIX 4.4 this field was named &#34;TradeType&#34;)
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Agency</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>VWAPGuarantee</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>GuaranteedClose</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>RiskTrade</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

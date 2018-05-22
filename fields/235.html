@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>YieldType [type '235']</h1>
-<p style="white-space: pre-wrap;">Type of yield. (Note tag # was reserved in FIX 4.1, added in FIX 4.3)</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>YieldType [type '235']</h3>
+<p class="description">Type of yield. (Note tag # was reserved in FIX 4.1, added in FIX 4.3)</p>
 
 <table>
 <tr>
@@ -89,17 +102,228 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/YieldType.html">
+            <a href="../fields/235.html">
             235
             </a>
         </td>
         <td>
-            <a href="../fields/YieldType.html">
+            <a href="../fields/235.html">
             YieldType
             </a>
         </td>
         <td>Typ</td>
-        <td>Type of yield. (Note tag # was reserved in FIX 4.1, added in FIX 4.3)</td>
+        <td>
+            Type of yield. (Note tag # was reserved in FIX 4.1, added in FIX 4.3)
+            
+            <table>
+            
+            <tr>
+                <td>AFTERTAX</td>
+                <td>=</td>
+                <td>AfterTaxYield</td>
+            </tr>
+            
+            <tr>
+                <td>ANNUAL</td>
+                <td>=</td>
+                <td>AnnualYield</td>
+            </tr>
+            
+            <tr>
+                <td>ATISSUE</td>
+                <td>=</td>
+                <td>YieldAtIssue</td>
+            </tr>
+            
+            <tr>
+                <td>AVGMATURITY</td>
+                <td>=</td>
+                <td>YieldToAverageMaturity</td>
+            </tr>
+            
+            <tr>
+                <td>BOOK</td>
+                <td>=</td>
+                <td>BookYield</td>
+            </tr>
+            
+            <tr>
+                <td>CALL</td>
+                <td>=</td>
+                <td>YieldToNextCall</td>
+            </tr>
+            
+            <tr>
+                <td>CHANGE</td>
+                <td>=</td>
+                <td>YieldChangeSinceClose</td>
+            </tr>
+            
+            <tr>
+                <td>CLOSE</td>
+                <td>=</td>
+                <td>ClosingYield</td>
+            </tr>
+            
+            <tr>
+                <td>COMPOUND</td>
+                <td>=</td>
+                <td>CompoundYield</td>
+            </tr>
+            
+            <tr>
+                <td>CURRENT</td>
+                <td>=</td>
+                <td>CurrentYield</td>
+            </tr>
+            
+            <tr>
+                <td>GOVTEQUIV</td>
+                <td>=</td>
+                <td>GvntEquivalentYield</td>
+            </tr>
+            
+            <tr>
+                <td>GROSS</td>
+                <td>=</td>
+                <td>TrueGrossYield</td>
+            </tr>
+            
+            <tr>
+                <td>INFLATION</td>
+                <td>=</td>
+                <td>YieldWithInflationAssumption</td>
+            </tr>
+            
+            <tr>
+                <td>INVERSEFLOATER</td>
+                <td>=</td>
+                <td>InverseFloaterBondYield</td>
+            </tr>
+            
+            <tr>
+                <td>LASTCLOSE</td>
+                <td>=</td>
+                <td>MostRecentClosingYield</td>
+            </tr>
+            
+            <tr>
+                <td>LASTMONTH</td>
+                <td>=</td>
+                <td>ClosingYieldMostRecentMonth</td>
+            </tr>
+            
+            <tr>
+                <td>LASTQUARTER</td>
+                <td>=</td>
+                <td>ClosingYieldMostRecentQuarter</td>
+            </tr>
+            
+            <tr>
+                <td>LASTYEAR</td>
+                <td>=</td>
+                <td>ClosingYieldMostRecentYear</td>
+            </tr>
+            
+            <tr>
+                <td>LONGAVGLIFE</td>
+                <td>=</td>
+                <td>YieldToLongestAverageLife</td>
+            </tr>
+            
+            <tr>
+                <td>MARK</td>
+                <td>=</td>
+                <td>MarkToMarketYield</td>
+            </tr>
+            
+            <tr>
+                <td>MATURITY</td>
+                <td>=</td>
+                <td>YieldToMaturity</td>
+            </tr>
+            
+            <tr>
+                <td>NEXTREFUND</td>
+                <td>=</td>
+                <td>YieldToNextRefund</td>
+            </tr>
+            
+            <tr>
+                <td>OPENAVG</td>
+                <td>=</td>
+                <td>OpenAverageYield</td>
+            </tr>
+            
+            <tr>
+                <td>PREVCLOSE</td>
+                <td>=</td>
+                <td>PreviousCloseYield</td>
+            </tr>
+            
+            <tr>
+                <td>PROCEEDS</td>
+                <td>=</td>
+                <td>ProceedsYield</td>
+            </tr>
+            
+            <tr>
+                <td>PUT</td>
+                <td>=</td>
+                <td>YieldToNextPut</td>
+            </tr>
+            
+            <tr>
+                <td>SEMIANNUAL</td>
+                <td>=</td>
+                <td>SemiAnnualYield</td>
+            </tr>
+            
+            <tr>
+                <td>SHORTAVGLIFE</td>
+                <td>=</td>
+                <td>YieldToShortestAverageLife</td>
+            </tr>
+            
+            <tr>
+                <td>SIMPLE</td>
+                <td>=</td>
+                <td>SimpleYield</td>
+            </tr>
+            
+            <tr>
+                <td>TAXEQUIV</td>
+                <td>=</td>
+                <td>TaxEquivalentYield</td>
+            </tr>
+            
+            <tr>
+                <td>TENDER</td>
+                <td>=</td>
+                <td>YieldToTenderDate</td>
+            </tr>
+            
+            <tr>
+                <td>TRUE</td>
+                <td>=</td>
+                <td>TrueYield</td>
+            </tr>
+            
+            <tr>
+                <td>VALUE1_32</td>
+                <td>=</td>
+                <td>YieldValueOf32nds</td>
+            </tr>
+            
+            <tr>
+                <td>WORST</td>
+                <td>=</td>
+                <td>YieldToWorst</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +337,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

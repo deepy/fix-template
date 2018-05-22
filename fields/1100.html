@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TriggerType [type '1100']</h1>
-<p style="white-space: pre-wrap;">Defines when the trigger will hit, i.e. the action specified by the trigger instructions will come into effect.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TriggerType [type '1100']</h3>
+<p class="description">Defines when the trigger will hit, i.e. the action specified by the trigger instructions will come into effect.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TriggerType.html">
+            <a href="../fields/1100.html">
             1100
             </a>
         </td>
         <td>
-            <a href="../fields/TriggerType.html">
+            <a href="../fields/1100.html">
             TriggerType
             </a>
         </td>
         <td>TrgrTyp</td>
-        <td>Defines when the trigger will hit, i.e. the action specified by the trigger instructions will come into effect.</td>
+        <td>
+            Defines when the trigger will hit, i.e. the action specified by the trigger instructions will come into effect.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PartialExecution</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>SpecifiedTradingSession</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>NextAuction</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>PriceMovement</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

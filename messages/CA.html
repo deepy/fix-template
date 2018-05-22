@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderMassActionRequest [type 'CA']</h1>
-<p style="white-space: pre-wrap;">The Order Mass Action Request message can be used to request the suspension or release of a group of orders that match the criteria specified within the request. This is equivalent to individual Order Cancel Replace Requests for each order with or without adding &#34;S&#34; to the ExecInst values. It can also be used for mass order cancellation.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>OrderMassActionRequest [type 'CA']</h3>
+<p class="description">The Order Mass Action Request message can be used to request the suspension or release of a group of orders that match the criteria specified within the request. This is equivalent to individual Order Cancel Replace Requests for each order with or without adding &#34;S&#34; to the ExecInst values. It can also be used for mass order cancellation.</p>
 
 <table>
 <tr>
@@ -415,5 +428,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderCategory [type '1115']</h1>
-<p style="white-space: pre-wrap;">Defines the type of interest behind a trade (fill or partial fill).</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrderCategory [type '1115']</h3>
+<p class="description">Defines the type of interest behind a trade (fill or partial fill).</p>
 
 <table>
 <tr>
@@ -89,17 +102,78 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/OrderCategory.html">
+            <a href="../fields/1115.html">
             1115
             </a>
         </td>
         <td>
-            <a href="../fields/OrderCategory.html">
+            <a href="../fields/1115.html">
             OrderCategory
             </a>
         </td>
         <td>OrdCat</td>
-        <td>Defines the type of interest behind a trade (fill or partial fill).</td>
+        <td>
+            Defines the type of interest behind a trade (fill or partial fill).
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Order</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Quote</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>PrivatelyNegotiatedTrade</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>MultilegOrder</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>LinkedOrder</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>QuoteRequest</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ImpliedOrder</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>CrossOrder</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>StreamingPrice</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +197,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

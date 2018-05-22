@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteResponseLevel [type '301']</h1>
-<p style="white-space: pre-wrap;">Level of Response requested from receiver of quote messages. A default value should be bilaterally agreed.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>QuoteResponseLevel [type '301']</h3>
+<p class="description">Level of Response requested from receiver of quote messages. A default value should be bilaterally agreed.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/QuoteResponseLevel.html">
+            <a href="../fields/301.html">
             301
             </a>
         </td>
         <td>
-            <a href="../fields/QuoteResponseLevel.html">
+            <a href="../fields/301.html">
             QuoteResponseLevel
             </a>
         </td>
         <td>RspLvl</td>
-        <td>Level of Response requested from receiver of quote messages. A default value should be bilaterally agreed.</td>
+        <td>
+            Level of Response requested from receiver of quote messages. A default value should be bilaterally agreed.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>NoAcknowledgement</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>AcknowledgeOnlyNegativeOrErroneousQuotes</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>AcknowledgeEachQuoteMessage</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>SummaryAcknowledgement</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

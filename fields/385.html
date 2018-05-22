@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MsgDirection [type '385']</h1>
-<p style="white-space: pre-wrap;">Specifies the direction of the messsage.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MsgDirection [type '385']</h3>
+<p class="description">Specifies the direction of the messsage.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MsgDirection.html">
+            <a href="../fields/385.html">
             385
             </a>
         </td>
         <td>
-            <a href="../fields/MsgDirection.html">
+            <a href="../fields/385.html">
             MsgDirection
             </a>
         </td>
         <td>MsgDirctn</td>
-        <td>Specifies the direction of the messsage.</td>
+        <td>
+            Specifies the direction of the messsage.
+            
+            <table>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>Receive</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>Send</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

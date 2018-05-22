@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>GTBookingInst [type '427']</h1>
-<p style="white-space: pre-wrap;">Code to identify whether to book out executions on a part-filled GT order on the day of execution or to accumulate.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>GTBookingInst [type '427']</h3>
+<p class="description">Code to identify whether to book out executions on a part-filled GT order on the day of execution or to accumulate.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/GTBookingInst.html">
+            <a href="../fields/427.html">
             427
             </a>
         </td>
         <td>
-            <a href="../fields/GTBookingInst.html">
+            <a href="../fields/427.html">
             GTBookingInst
             </a>
         </td>
         <td>GTBkngInst</td>
-        <td>Code to identify whether to book out executions on a part-filled GT order on the day of execution or to accumulate.</td>
+        <td>
+            Code to identify whether to book out executions on a part-filled GT order on the day of execution or to accumulate.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>BookOutAllTradesOnDayOfExecution</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>AccumulateUntilFilledOrExpired</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>AccumulateUntilVerballyNotifiedOtherwise</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -133,6 +171,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

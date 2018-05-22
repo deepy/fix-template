@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>AllocReportType [type '794']</h1>
-<p style="white-space: pre-wrap;">Describes the specific type or purpose of an Allocation Report message</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>AllocReportType [type '794']</h3>
+<p class="description">Describes the specific type or purpose of an Allocation Report message</p>
 
 <table>
 <tr>
@@ -89,17 +102,84 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/AllocReportType.html">
+            <a href="../fields/794.html">
             794
             </a>
         </td>
         <td>
-            <a href="../fields/AllocReportType.html">
+            <a href="../fields/794.html">
             AllocReportType
             </a>
         </td>
         <td>RptTyp</td>
-        <td>Describes the specific type or purpose of an Allocation Report message</td>
+        <td>
+            Describes the specific type or purpose of an Allocation Report message
+            
+            <table>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>PreliminaryRequestToIntermediary</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>SellsideCalculatedUsingPreliminary</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SellsideCalculatedWithoutPreliminary</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>WarehouseRecap</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>RequestToIntermediary</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>Accept</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>Reject</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>AcceptPending</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>Complete</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>ReversePending</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +195,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

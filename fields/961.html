@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>HostCrossID [type '961']</h1>
-<p style="white-space: pre-wrap;">Host assigned entity ID that can be used to reference all components of a cross; sides + strategy + legs. Used as the primary key with which to refer to the Cross Order for cancellation and replace. The HostCrossID will also be used to link together components of the Cross Order. For example, each individual Execution Report associated with the order will carry HostCrossID in order to tie back to the original cross order.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>HostCrossID [type '961']</h3>
+<p class="description">Host assigned entity ID that can be used to reference all components of a cross; sides + strategy + legs. Used as the primary key with which to refer to the Cross Order for cancellation and replace. The HostCrossID will also be used to link together components of the Cross Order. For example, each individual Execution Report associated with the order will carry HostCrossID in order to tie back to the original cross order.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/HostCrossID.html">
+            <a href="../fields/961.html">
             961
             </a>
         </td>
         <td>
-            <a href="../fields/HostCrossID.html">
+            <a href="../fields/961.html">
             HostCrossID
             </a>
         </td>
         <td>HstCxID</td>
-        <td>Host assigned entity ID that can be used to reference all components of a cross; sides + strategy + legs. Used as the primary key with which to refer to the Cross Order for cancellation and replace. The HostCrossID will also be used to link together components of the Cross Order. For example, each individual Execution Report associated with the order will carry HostCrossID in order to tie back to the original cross order.</td>
+        <td>
+            Host assigned entity ID that can be used to reference all components of a cross; sides + strategy + legs. Used as the primary key with which to refer to the Cross Order for cancellation and replace. The HostCrossID will also be used to link together components of the Cross Order. For example, each individual Execution Report associated with the order will carry HostCrossID in order to tie back to the original cross order.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

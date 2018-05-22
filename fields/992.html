@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>IndividualAllocType [type '992']</h1>
-<p style="white-space: pre-wrap;">Identifies whether the allocation is to be sub-allocated or allocated to a third party</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>IndividualAllocType [type '992']</h3>
+<p class="description">Identifies whether the allocation is to be sub-allocated or allocated to a third party</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/IndividualAllocType.html">
+            <a href="../fields/992.html">
             992
             </a>
         </td>
         <td>
-            <a href="../fields/IndividualAllocType.html">
+            <a href="../fields/992.html">
             IndividualAllocType
             </a>
         </td>
         <td>Typ</td>
-        <td>Identifies whether the allocation is to be sub-allocated or allocated to a third party</td>
+        <td>
+            Identifies whether the allocation is to be sub-allocated or allocated to a third party
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>SubAllocate</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>ThirdPartyAllocation</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +147,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

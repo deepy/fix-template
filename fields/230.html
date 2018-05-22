@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExDate [type '230']</h1>
-<p style="white-space: pre-wrap;">The date when a distribution of interest is deducted from a securities assets or set aside for payment to bondholders. On the ex-date, the securities price drops by the amount of the distribution (plus or minus any market activity).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExDate [type '230']</h3>
+<p class="description">The date when a distribution of interest is deducted from a securities assets or set aside for payment to bondholders. On the ex-date, the securities price drops by the amount of the distribution (plus or minus any market activity).
 (Note tag # was reserved in FIX 4.1, added in FIX 4.3)
 (prior to FIX 4.4 field was of type UTCDate)</p>
 
@@ -91,19 +104,22 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/ExDate.html">
+            <a href="../fields/230.html">
             230
             </a>
         </td>
         <td>
-            <a href="../fields/ExDate.html">
+            <a href="../fields/230.html">
             ExDate
             </a>
         </td>
         <td>ExDt</td>
-        <td>The date when a distribution of interest is deducted from a securities assets or set aside for payment to bondholders. On the ex-date, the securities price drops by the amount of the distribution (plus or minus any market activity).
+        <td>
+            The date when a distribution of interest is deducted from a securities assets or set aside for payment to bondholders. On the ex-date, the securities price drops by the amount of the distribution (plus or minus any market activity).
 (Note tag # was reserved in FIX 4.1, added in FIX 4.3)
-(prior to FIX 4.4 field was of type UTCDate)</td>
+(prior to FIX 4.4 field was of type UTCDate)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -129,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PosAmtType [type '707']</h1>
-<p style="white-space: pre-wrap;">Type of Position amount</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PosAmtType [type '707']</h3>
+<p class="description">Type of Position amount</p>
 
 <table>
 <tr>
@@ -89,17 +102,132 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PosAmtType.html">
+            <a href="../fields/707.html">
             707
             </a>
         </td>
         <td>
-            <a href="../fields/PosAmtType.html">
+            <a href="../fields/707.html">
             PosAmtType
             </a>
         </td>
         <td>Typ</td>
-        <td>Type of Position amount</td>
+        <td>
+            Type of Position amount
+            
+            <table>
+            
+            <tr>
+                <td>CASH</td>
+                <td>=</td>
+                <td>CashAmount</td>
+            </tr>
+            
+            <tr>
+                <td>CRES</td>
+                <td>=</td>
+                <td>CashResidualAmount</td>
+            </tr>
+            
+            <tr>
+                <td>FMTM</td>
+                <td>=</td>
+                <td>FinalMarkToMarketAmount</td>
+            </tr>
+            
+            <tr>
+                <td>IMTM</td>
+                <td>=</td>
+                <td>IncrementalMarkToMarketAmount</td>
+            </tr>
+            
+            <tr>
+                <td>PREM</td>
+                <td>=</td>
+                <td>PremiumAmount</td>
+            </tr>
+            
+            <tr>
+                <td>SMTM</td>
+                <td>=</td>
+                <td>StartOfDayMarkToMarketAmount</td>
+            </tr>
+            
+            <tr>
+                <td>TVAR</td>
+                <td>=</td>
+                <td>TradeVariationAmount</td>
+            </tr>
+            
+            <tr>
+                <td>VADJ</td>
+                <td>=</td>
+                <td>ValueAdjustedAmount</td>
+            </tr>
+            
+            <tr>
+                <td>SETL</td>
+                <td>=</td>
+                <td>SettlementValue</td>
+            </tr>
+            
+            <tr>
+                <td>ICPN</td>
+                <td>=</td>
+                <td>InitialTradeCouponAmount</td>
+            </tr>
+            
+            <tr>
+                <td>ACPN</td>
+                <td>=</td>
+                <td>AccruedCouponAmount</td>
+            </tr>
+            
+            <tr>
+                <td>CPN</td>
+                <td>=</td>
+                <td>CouponAmount</td>
+            </tr>
+            
+            <tr>
+                <td>IACPN</td>
+                <td>=</td>
+                <td>IncrementalAccruedCoupon</td>
+            </tr>
+            
+            <tr>
+                <td>CMTM</td>
+                <td>=</td>
+                <td>CollateralizedMarkToMarket</td>
+            </tr>
+            
+            <tr>
+                <td>ICMTM</td>
+                <td>=</td>
+                <td>IncrementalCollateralizedMarkToMarket</td>
+            </tr>
+            
+            <tr>
+                <td>DLV</td>
+                <td>=</td>
+                <td>CompensationAmount</td>
+            </tr>
+            
+            <tr>
+                <td>BANK</td>
+                <td>=</td>
+                <td>TotalBankedAmount</td>
+            </tr>
+            
+            <tr>
+                <td>COLAT</td>
+                <td>=</td>
+                <td>TotalCollateralizedAmount</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +241,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

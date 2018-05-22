@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PartyIDSource [type '447']</h1>
-<p style="white-space: pre-wrap;">Identifies class or source of the PartyID (448) value. Required if PartyID is specified. Note: applicable values depend upon PartyRole (452) specified.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PartyIDSource [type '447']</h3>
+<p class="description">Identifies class or source of the PartyID (448) value. Required if PartyID is specified. Note: applicable values depend upon PartyRole (452) specified.
 See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;</p>
 
 <table>
@@ -90,18 +103,133 @@ See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/PartyIDSource.html">
+            <a href="../fields/447.html">
             447
             </a>
         </td>
         <td>
-            <a href="../fields/PartyIDSource.html">
+            <a href="../fields/447.html">
             PartyIDSource
             </a>
         </td>
         <td>Src</td>
-        <td>Identifies class or source of the PartyID (448) value. Required if PartyID is specified. Note: applicable values depend upon PartyRole (452) specified.
-See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;</td>
+        <td>
+            Identifies class or source of the PartyID (448) value. Required if PartyID is specified. Note: applicable values depend upon PartyRole (452) specified.
+See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;
+            
+            <table>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>UKNationalInsuranceOrPensionNumber</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>USSocialSecurityNumber</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>USEmployerOrTaxIDNumber</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>AustralianBusinessNumber</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>AustralianTaxFileNumber</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>KoreanInvestorID</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TaiwaneseForeignInvestorID</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>TaiwaneseTradingAcct</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>MalaysianCentralDepository</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ChineseInvestorID</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>ISITCAcronym</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>BIC</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>GeneralIdentifier</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Proprietary</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>ISOCountryCode</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>SettlementEntityLocation</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>MIC</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>CSDParticipant</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +243,11 @@ See &#34;Appendix 6-G - Use of &lt;Parties&gt; Component Block&#34;</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

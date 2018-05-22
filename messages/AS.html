@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>AllocationReport [type 'AS']</h1>
-<p style="white-space: pre-wrap;">Sent from sell-side to buy-side, sell-side to 3rd-party or 3rd-party to buy-side, the Allocation Report (Claim) provides account breakdown of an order or set of orders plus any additional follow-up front-office information developed post-trade during the trade allocation, matching and calculation phase. In versions of FIX prior to version 4.4, this functionality was provided through the Allocation message. Depending on the needs of the market and the timing of &#34;confirmed&#34; status, the role of Allocation Report can be taken over in whole or in part by the Confirmation message.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>AllocationReport [type 'AS']</h3>
+<p class="description">Sent from sell-side to buy-side, sell-side to 3rd-party or 3rd-party to buy-side, the Allocation Report (Claim) provides account breakdown of an order or set of orders plus any additional follow-up front-office information developed post-trade during the trade allocation, matching and calculation phase. In versions of FIX prior to version 4.4, this functionality was provided through the Allocation message. Depending on the needs of the market and the timing of &#34;confirmed&#34; status, the role of Allocation Report can be taken over in whole or in part by the Confirmation message.</p>
 
 <table>
 <tr>
@@ -1475,5 +1488,10 @@ Only required where message has been fragmented.</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

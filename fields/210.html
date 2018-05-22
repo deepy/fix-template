@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MaxShow [type '210']</h1>
-<p style="white-space: pre-wrap;">Maximum quantity (e.g. number of shares) within an order to be shown to other customers (i.e. sent via an IOI).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MaxShow [type '210']</h3>
+<p class="description">Maximum quantity (e.g. number of shares) within an order to be shown to other customers (i.e. sent via an IOI).
 (Prior to FIX 4.2 this field was of type int)</p>
 
 <table>
@@ -90,18 +103,21 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MaxShow.html">
+            <a href="../fields/210.html">
             210
             </a>
         </td>
         <td>
-            <a href="../fields/MaxShow.html">
+            <a href="../fields/210.html">
             MaxShow
             </a>
         </td>
         <td>MaxShow</td>
-        <td>Maximum quantity (e.g. number of shares) within an order to be shown to other customers (i.e. sent via an IOI).
-(Prior to FIX 4.2 this field was of type int)</td>
+        <td>
+            Maximum quantity (e.g. number of shares) within an order to be shown to other customers (i.e. sent via an IOI).
+(Prior to FIX 4.2 this field was of type int)
+            
+        </td>
         <td class="green">FIX.5.0</td>
     </tr>
 
@@ -135,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

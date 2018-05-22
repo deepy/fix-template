@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TriggerAction [type '1101']</h1>
-<p style="white-space: pre-wrap;">Defines the type of action to take when the trigger hits.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TriggerAction [type '1101']</h3>
+<p class="description">Defines the type of action to take when the trigger hits.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TriggerAction.html">
+            <a href="../fields/1101.html">
             1101
             </a>
         </td>
         <td>
-            <a href="../fields/TriggerAction.html">
+            <a href="../fields/1101.html">
             TriggerAction
             </a>
         </td>
         <td>TrgrActn</td>
-        <td>Defines the type of action to take when the trigger hits.</td>
+        <td>
+            Defines the type of action to take when the trigger hits.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Activate</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Modify</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Cancel</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

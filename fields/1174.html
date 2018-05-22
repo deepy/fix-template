@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityTradingEvent [type '1174']</h1>
-<p style="white-space: pre-wrap;">Identifies an event related to a SecurityTradingStatus(326). An event occurs and is gone, it is not a state that applies for a period of time.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityTradingEvent [type '1174']</h3>
+<p class="description">Identifies an event related to a SecurityTradingStatus(326). An event occurs and is gone, it is not a state that applies for a period of time.</p>
 
 <table>
 <tr>
@@ -89,17 +102,72 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityTradingEvent.html">
+            <a href="../fields/1174.html">
             1174
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityTradingEvent.html">
+            <a href="../fields/1174.html">
             SecurityTradingEvent
             </a>
         </td>
         <td>SecTrdEvnt</td>
-        <td>Identifies an event related to a SecurityTradingStatus(326). An event occurs and is gone, it is not a state that applies for a period of time.</td>
+        <td>
+            Identifies an event related to a SecurityTradingStatus(326). An event occurs and is gone, it is not a state that applies for a period of time.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>OrderImbalance</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TradingResumes</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>PriceVolatilityInterruption</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>ChangeOfTradingSession</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ChangeOfTradingSubsession</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ChangeOfSecurityTradingStatus</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ChangeOfBookType</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>ChangeOfMarketDepth</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

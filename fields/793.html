@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecondaryAllocID [type '793']</h1>
-<p style="white-space: pre-wrap;">Secondary allocation identifier. Unlike the AllocID (70), this can be shared across a number of allocation instruction or allocation report messages, thereby making it possible to pass an identifier for an original allocation message on multiple messages (e.g. from one party to a second to a third, across cancel and replace messages etc.).</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecondaryAllocID [type '793']</h3>
+<p class="description">Secondary allocation identifier. Unlike the AllocID (70), this can be shared across a number of allocation instruction or allocation report messages, thereby making it possible to pass an identifier for an original allocation message on multiple messages (e.g. from one party to a second to a third, across cancel and replace messages etc.).</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecondaryAllocID.html">
+            <a href="../fields/793.html">
             793
             </a>
         </td>
         <td>
-            <a href="../fields/SecondaryAllocID.html">
+            <a href="../fields/793.html">
             SecondaryAllocID
             </a>
         </td>
         <td>AllocID2</td>
-        <td>Secondary allocation identifier. Unlike the AllocID (70), this can be shared across a number of allocation instruction or allocation report messages, thereby making it possible to pass an identifier for an original allocation message on multiple messages (e.g. from one party to a second to a third, across cancel and replace messages etc.).</td>
+        <td>
+            Secondary allocation identifier. Unlike the AllocID (70), this can be shared across a number of allocation instruction or allocation report messages, thereby making it possible to pass an identifier for an original allocation message on multiple messages (e.g. from one party to a second to a third, across cancel and replace messages etc.).
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +141,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

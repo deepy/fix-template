@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TotNoAllocs [type '892']</h1>
-<p style="white-space: pre-wrap;">Total number of NoAlloc entries across all messages. Should be the sum of all NoAllocs in each message that has repeating NoAlloc entries related to the same AllocID or AllocReportID. Used to support fragmentation.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TotNoAllocs [type '892']</h3>
+<p class="description">Total number of NoAlloc entries across all messages. Should be the sum of all NoAllocs in each message that has repeating NoAlloc entries related to the same AllocID or AllocReportID. Used to support fragmentation.</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TotNoAllocs.html">
+            <a href="../fields/892.html">
             892
             </a>
         </td>
         <td>
-            <a href="../fields/TotNoAllocs.html">
+            <a href="../fields/892.html">
             TotNoAllocs
             </a>
         </td>
         <td>TotNoAllocs</td>
-        <td>Total number of NoAlloc entries across all messages. Should be the sum of all NoAllocs in each message that has repeating NoAlloc entries related to the same AllocID or AllocReportID. Used to support fragmentation.</td>
+        <td>
+            Total number of NoAlloc entries across all messages. Should be the sum of all NoAllocs in each message that has repeating NoAlloc entries related to the same AllocID or AllocReportID. Used to support fragmentation.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

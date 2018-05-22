@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PositionMaintenanceRequest [type 'AL']</h1>
-<p style="white-space: pre-wrap;">The Position Maintenance Request message allows the position owner to submit requests to the holder of a position which will result in a specific action being taken which will affect the position. Generally, the holder of the position is a central counter party or clearing organization but can also be a party providing investment services.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>PositionMaintenanceRequest [type 'AL']</h3>
+<p class="description">The Position Maintenance Request message allows the position owner to submit requests to the holder of a position which will result in a specific action being taken which will affect the position. Generally, the holder of the position is a central counter party or clearing organization but can also be a party providing investment services.</p>
 
 <table>
 <tr>
@@ -606,5 +619,10 @@ Delta_plus, Delta_minus, Final, If Adjustment Type is null, the request will be 
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

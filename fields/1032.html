@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>OrderHandlingInstSource [type '1032']</h1>
-<p style="white-space: pre-wrap;">Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>OrderHandlingInstSource [type '1032']</h3>
+<p class="description">Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
 Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</p>
 
 <table>
@@ -90,18 +103,31 @@ Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/OrderHandlingInstSource.html">
+            <a href="../fields/1032.html">
             1032
             </a>
         </td>
         <td>
-            <a href="../fields/OrderHandlingInstSource.html">
+            <a href="../fields/1032.html">
             OrderHandlingInstSource
             </a>
         </td>
         <td>OrdHndlInstSrc</td>
-        <td>Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
-Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</td>
+        <td>
+            Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
+Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>NASDOATS</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +145,11 @@ Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</td
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

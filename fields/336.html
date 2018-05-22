@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradingSessionID [type '336']</h1>
-<p style="white-space: pre-wrap;">Identifier for Trading Session
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradingSessionID [type '336']</h3>
+<p class="description">Identifier for Trading Session
 A trading session spans an extended period of time that can also be expressed informally in terms of the trading day. Usage is determined by market or counterparties.
 To specify good for session where session spans more than one calendar day, use TimeInForce = Day in conjunction with TradingSessionID.
 Bilaterally agreed values of data type &#34;String&#34; that start with a character can be used for backward compatibility.</p>
@@ -92,20 +105,63 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
 
     <tr>
         <td class="green">
-            <a href="../fields/TradingSessionID.html">
+            <a href="../fields/336.html">
             336
             </a>
         </td>
         <td>
-            <a href="../fields/TradingSessionID.html">
+            <a href="../fields/336.html">
             TradingSessionID
             </a>
         </td>
         <td>SesID</td>
-        <td>Identifier for Trading Session
+        <td>
+            Identifier for Trading Session
 A trading session spans an extended period of time that can also be expressed informally in terms of the trading day. Usage is determined by market or counterparties.
 To specify good for session where session spans more than one calendar day, use TimeInForce = Day in conjunction with TradingSessionID.
-Bilaterally agreed values of data type &#34;String&#34; that start with a character can be used for backward compatibility.</td>
+Bilaterally agreed values of data type &#34;String&#34; that start with a character can be used for backward compatibility.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Day</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>HalfDay</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Morning</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Afternoon</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>Evening</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>AfterHours</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -213,6 +269,11 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

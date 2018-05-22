@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ComplexEventStartTime [type '1495']</h1>
-<p style="white-space: pre-wrap;">Specifies the start time of the time range on which a complex event date is effective. 
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ComplexEventStartTime [type '1495']</h3>
+<p class="description">Specifies the start time of the time range on which a complex event date is effective. 
 ComplexEventStartTime must always be less than or equal to ComplexEventEndTime.</p>
 
 <table>
@@ -90,18 +103,21 @@ ComplexEventStartTime must always be less than or equal to ComplexEventEndTime.<
 
     <tr>
         <td class="green">
-            <a href="../fields/ComplexEventStartTime.html">
+            <a href="../fields/1495.html">
             1495
             </a>
         </td>
         <td>
-            <a href="../fields/ComplexEventStartTime.html">
+            <a href="../fields/1495.html">
             ComplexEventStartTime
             </a>
         </td>
         <td>StartTm</td>
-        <td>Specifies the start time of the time range on which a complex event date is effective. 
-ComplexEventStartTime must always be less than or equal to ComplexEventEndTime.</td>
+        <td>
+            Specifies the start time of the time range on which a complex event date is effective. 
+ComplexEventStartTime must always be less than or equal to ComplexEventEndTime.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +131,11 @@ ComplexEventStartTime must always be less than or equal to ComplexEventEndTime.<
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

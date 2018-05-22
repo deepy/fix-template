@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExecutionReport [type '8']</h1>
-<p style="white-space: pre-wrap;">The execution report message is used to:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>ExecutionReport [type '8']</h3>
+<p class="description">The execution report message is used to:
 1. confirm the receipt of an order
 2. confirm changes to an existing order (i.e. accept cancel and replace requests)
 3. relay order status information
@@ -3073,5 +3086,10 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>AvgPx [type '6']</h1>
-<p style="white-space: pre-wrap;">Calculated average price of all fills on this order.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>AvgPx [type '6']</h3>
+<p class="description">Calculated average price of all fills on this order.
 For Fixed Income trades AvgPx is always expressed as percent-of-par, regardless of the PriceType (423) of LastPx (31). I.e., AvgPx will contain an average of percent-of-par values (see LastParPx (669)) for issues traded in Yield, Spread or Discount.</p>
 
 <table>
@@ -90,18 +103,21 @@ For Fixed Income trades AvgPx is always expressed as percent-of-par, regardless 
 
     <tr>
         <td class="green">
-            <a href="../fields/AvgPx.html">
+            <a href="../fields/6.html">
             6
             </a>
         </td>
         <td>
-            <a href="../fields/AvgPx.html">
+            <a href="../fields/6.html">
             AvgPx
             </a>
         </td>
         <td>AvgPx</td>
-        <td>Calculated average price of all fills on this order.
-For Fixed Income trades AvgPx is always expressed as percent-of-par, regardless of the PriceType (423) of LastPx (31). I.e., AvgPx will contain an average of percent-of-par values (see LastParPx (669)) for issues traded in Yield, Spread or Discount.</td>
+        <td>
+            Calculated average price of all fills on this order.
+For Fixed Income trades AvgPx is always expressed as percent-of-par, regardless of the PriceType (423) of LastPx (31). I.e., AvgPx will contain an average of percent-of-par values (see LastParPx (669)) for issues traded in Yield, Spread or Discount.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -137,6 +153,11 @@ For Fixed Income trades AvgPx is always expressed as percent-of-par, regardless 
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

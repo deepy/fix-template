@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>LastForwardPoints [type '195']</h1>
-<p style="white-space: pre-wrap;">F/X forward points added to LastSpotRate (94). May be a negative value. Expressed in decimal form. For example, 61.99 points is expressed and sent as 0.006199</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>LastForwardPoints [type '195']</h3>
+<p class="description">F/X forward points added to LastSpotRate (94). May be a negative value. Expressed in decimal form. For example, 61.99 points is expressed and sent as 0.006199</p>
 
 <table>
 <tr>
@@ -89,17 +102,20 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/LastForwardPoints.html">
+            <a href="../fields/195.html">
             195
             </a>
         </td>
         <td>
-            <a href="../fields/LastForwardPoints.html">
+            <a href="../fields/195.html">
             LastForwardPoints
             </a>
         </td>
         <td>LastFwdPnts</td>
-        <td>F/X forward points added to LastSpotRate (94). May be a negative value. Expressed in decimal form. For example, 61.99 points is expressed and sent as 0.006199</td>
+        <td>
+            F/X forward points added to LastSpotRate (94). May be a negative value. Expressed in decimal form. For example, 61.99 points is expressed and sent as 0.006199
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

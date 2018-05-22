@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ClearingInstruction [type '577']</h1>
-<p style="white-space: pre-wrap;">Eligibility of this trade for clearing and central counterparty processing
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ClearingInstruction [type '577']</h3>
+<p class="description">Eligibility of this trade for clearing and central counterparty processing
 values above 4000 are reserved for agreement between parties</p>
 
 <table>
@@ -90,18 +103,109 @@ values above 4000 are reserved for agreement between parties</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/ClearingInstruction.html">
+            <a href="../fields/577.html">
             577
             </a>
         </td>
         <td>
-            <a href="../fields/ClearingInstruction.html">
+            <a href="../fields/577.html">
             ClearingInstruction
             </a>
         </td>
         <td>ClrngInstrctn</td>
-        <td>Eligibility of this trade for clearing and central counterparty processing
-values above 4000 are reserved for agreement between parties</td>
+        <td>
+            Eligibility of this trade for clearing and central counterparty processing
+values above 4000 are reserved for agreement between parties
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>ProcessNormally</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ExcludeFromAllNetting</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>BilateralNettingOnly</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>ExClearing</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SpecialTrade</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>MultilateralNetting</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ClearAgainstCentralCounterparty</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ExcludeFromCentralCounterparty</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>ManualMode</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>AutomaticPostingMode</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>AutomaticGiveUpMode</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>QualifiedServiceRepresentativeQSR</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>CustomerTrade</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>SelfClearing</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +219,11 @@ values above 4000 are reserved for agreement between parties</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

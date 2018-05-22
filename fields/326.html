@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityTradingStatus [type '326']</h1>
-<p style="white-space: pre-wrap;">Identifies the trading status applicable to the transaction.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityTradingStatus [type '326']</h3>
+<p class="description">Identifies the trading status applicable to the transaction.</p>
 
 <table>
 <tr>
@@ -89,17 +102,174 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityTradingStatus.html">
+            <a href="../fields/326.html">
             326
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityTradingStatus.html">
+            <a href="../fields/326.html">
             SecurityTradingStatus
             </a>
         </td>
         <td>TrdgStat</td>
-        <td>Identifies the trading status applicable to the transaction.</td>
+        <td>
+            Identifies the trading status applicable to the transaction.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>OpeningDelay</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Resume</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>NoOpen</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>PriceIndication</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>TradingRangeIndication</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>MarketImbalanceBuy</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>MarketImbalanceSell</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>MarketOnCloseImbalanceBuy</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>MarketOnCloseImbalanceSell</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>NoMarketImbalance</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>NoMarketOnCloseImbalance</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>ITSPreOpening</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>NewPriceIndication</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>TradeDisseminationTime</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>=</td>
+                <td>ReadyToTrade</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>NotAvailableForTrading</td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>=</td>
+                <td>NotTradedOnThisMarket</td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>=</td>
+                <td>UnknownOrInvalid</td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>=</td>
+                <td>PreOpen</td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>=</td>
+                <td>OpeningRotation</td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>=</td>
+                <td>FastMarket</td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td>=</td>
+                <td>PreCross</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>=</td>
+                <td>Cross</td>
+            </tr>
+            
+            <tr>
+                <td>26</td>
+                <td>=</td>
+                <td>PostClose</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +293,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

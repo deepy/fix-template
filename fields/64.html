@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlDate [type '64']</h1>
-<p style="white-space: pre-wrap;">Specific date of trade settlement (SettlementDate) in YYYYMMDD format.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlDate [type '64']</h3>
+<p class="description">Specific date of trade settlement (SettlementDate) in YYYYMMDD format.
 If present, this field overrides SettlType (63). This field is required if the value of SettlType (63) is 6 (Future) or 8 (Sellers Option). This field must be omitted if the value of SettlType (63) is 7 (When and If Issued)
 (expressed in local time at place of settlement)</p>
 
@@ -91,19 +104,22 @@ If present, this field overrides SettlType (63). This field is required if the v
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlDate.html">
+            <a href="../fields/64.html">
             64
             </a>
         </td>
         <td>
-            <a href="../fields/SettlDate.html">
+            <a href="../fields/64.html">
             SettlDate
             </a>
         </td>
         <td>SettlDt</td>
-        <td>Specific date of trade settlement (SettlementDate) in YYYYMMDD format.
+        <td>
+            Specific date of trade settlement (SettlementDate) in YYYYMMDD format.
 If present, this field overrides SettlType (63). This field is required if the value of SettlType (63) is 6 (Future) or 8 (Sellers Option). This field must be omitted if the value of SettlType (63) is 7 (When and If Issued)
-(expressed in local time at place of settlement)</td>
+(expressed in local time at place of settlement)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -187,6 +203,11 @@ If present, this field overrides SettlType (63). This field is required if the v
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

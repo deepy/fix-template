@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteRespType [type '694']</h1>
-<p style="white-space: pre-wrap;">Identifies the type of Quote Response.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>QuoteRespType [type '694']</h3>
+<p class="description">Identifies the type of Quote Response.</p>
 
 <table>
 <tr>
@@ -89,17 +102,72 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/QuoteRespType.html">
+            <a href="../fields/694.html">
             694
             </a>
         </td>
         <td>
-            <a href="../fields/QuoteRespType.html">
+            <a href="../fields/694.html">
             QuoteRespType
             </a>
         </td>
         <td>RspTyp</td>
-        <td>Identifies the type of Quote Response.</td>
+        <td>
+            Identifies the type of Quote Response.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Hit</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Counter</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Expired</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Cover</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>DoneAway</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>Pass</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>EndTrade</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>TimedOut</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PosReqType [type '724']</h1>
-<p style="white-space: pre-wrap;">Used to specify the type of position request being made.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PosReqType [type '724']</h3>
+<p class="description">Used to specify the type of position request being made.</p>
 
 <table>
 <tr>
@@ -89,17 +102,66 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PosReqType.html">
+            <a href="../fields/724.html">
             724
             </a>
         </td>
         <td>
-            <a href="../fields/PosReqType.html">
+            <a href="../fields/724.html">
             PosReqType
             </a>
         </td>
         <td>ReqTyp</td>
-        <td>Used to specify the type of position request being made.</td>
+        <td>
+            Used to specify the type of position request being made.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Positions</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Trades</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Exercises</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Assignments</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SettlementActivity</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>BackoutMessage</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>DeltaPositions</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -119,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

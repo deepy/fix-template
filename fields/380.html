@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>BusinessRejectReason [type '380']</h1>
-<p style="white-space: pre-wrap;">Code to identify reason for a Business Message Reject message.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>BusinessRejectReason [type '380']</h3>
+<p class="description">Code to identify reason for a Business Message Reject message.</p>
 
 <table>
 <tr>
@@ -89,17 +102,78 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/BusinessRejectReason.html">
+            <a href="../fields/380.html">
             380
             </a>
         </td>
         <td>
-            <a href="../fields/BusinessRejectReason.html">
+            <a href="../fields/380.html">
             BusinessRejectReason
             </a>
         </td>
         <td>BizRejRsn</td>
-        <td>Code to identify reason for a Business Message Reject message.</td>
+        <td>
+            Code to identify reason for a Business Message Reject message.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>UnknownID</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>UnknownSecurity</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>UnsupportedMessageType</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>ApplicationNotAvailable</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ConditionallyRequiredFieldMissing</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>NotAuthorized</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>DeliverToFirmNotAvailableAtThisTime</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>InvalidPriceIncrement</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +187,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

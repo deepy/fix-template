@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ExchangeRule [type '825']</h1>
-<p style="white-space: pre-wrap;">Used to report any exchange rules that apply to this trade.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ExchangeRule [type '825']</h3>
+<p class="description">Used to report any exchange rules that apply to this trade.
 Primarily intended for US futures markets. Certain trading practices are permitted by the CFTC, such as large lot trading, block trading, all or none trades. If the rules are used, the exchanges are required to indicate these rules on the trade.</p>
 
 <table>
@@ -90,18 +103,21 @@ Primarily intended for US futures markets. Certain trading practices are permitt
 
     <tr>
         <td class="green">
-            <a href="../fields/ExchangeRule.html">
+            <a href="../fields/825.html">
             825
             </a>
         </td>
         <td>
-            <a href="../fields/ExchangeRule.html">
+            <a href="../fields/825.html">
             ExchangeRule
             </a>
         </td>
         <td>ExchRule</td>
-        <td>Used to report any exchange rules that apply to this trade.
-Primarily intended for US futures markets. Certain trading practices are permitted by the CFTC, such as large lot trading, block trading, all or none trades. If the rules are used, the exchanges are required to indicate these rules on the trade.</td>
+        <td>
+            Used to report any exchange rules that apply to this trade.
+Primarily intended for US futures markets. Certain trading practices are permitted by the CFTC, such as large lot trading, block trading, all or none trades. If the rules are used, the exchanges are required to indicate these rules on the trade.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@ Primarily intended for US futures markets. Certain trading practices are permitt
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

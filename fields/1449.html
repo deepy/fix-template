@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RestructuringType [type '1449']</h1>
-<p style="white-space: pre-wrap;">A category of CDS credit even in which the underlying bond experiences a restructuring.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RestructuringType [type '1449']</h3>
+<p class="description">A category of CDS credit even in which the underlying bond experiences a restructuring.
 Used to define a CDS instrument.</p>
 
 <table>
@@ -90,18 +103,49 @@ Used to define a CDS instrument.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/RestructuringType.html">
+            <a href="../fields/1449.html">
             1449
             </a>
         </td>
         <td>
-            <a href="../fields/RestructuringType.html">
+            <a href="../fields/1449.html">
             RestructuringType
             </a>
         </td>
         <td>RestrctTyp</td>
-        <td>A category of CDS credit even in which the underlying bond experiences a restructuring.
-Used to define a CDS instrument.</td>
+        <td>
+            A category of CDS credit even in which the underlying bond experiences a restructuring.
+Used to define a CDS instrument.
+            
+            <table>
+            
+            <tr>
+                <td>FR</td>
+                <td>=</td>
+                <td>FullRestructuring</td>
+            </tr>
+            
+            <tr>
+                <td>MR</td>
+                <td>=</td>
+                <td>ModifiedRestructuring</td>
+            </tr>
+            
+            <tr>
+                <td>MM</td>
+                <td>=</td>
+                <td>ModifiedModRestructuring</td>
+            </tr>
+            
+            <tr>
+                <td>XR</td>
+                <td>=</td>
+                <td>NoRestructuringSpecified</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@ Used to define a CDS instrument.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlInstSource [type '165']</h1>
-<p style="white-space: pre-wrap;">Indicates source of Settlement Instructions</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlInstSource [type '165']</h3>
+<p class="description">Indicates source of Settlement Instructions</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlInstSource.html">
+            <a href="../fields/165.html">
             165
             </a>
         </td>
         <td>
-            <a href="../fields/SettlInstSource.html">
+            <a href="../fields/165.html">
             SettlInstSource
             </a>
         </td>
         <td>InstSrc</td>
-        <td>Indicates source of Settlement Instructions</td>
+        <td>
+            Indicates source of Settlement Instructions
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>BrokerCredit</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Institution</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Investor</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

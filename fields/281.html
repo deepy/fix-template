@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MDReqRejReason [type '281']</h1>
-<p style="white-space: pre-wrap;">Reason for the rejection of a Market Data request.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MDReqRejReason [type '281']</h3>
+<p class="description">Reason for the rejection of a Market Data request.</p>
 
 <table>
 <tr>
@@ -89,17 +102,108 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MDReqRejReason.html">
+            <a href="../fields/281.html">
             281
             </a>
         </td>
         <td>
-            <a href="../fields/MDReqRejReason.html">
+            <a href="../fields/281.html">
             MDReqRejReason
             </a>
         </td>
         <td>ReqRejResn</td>
-        <td>Reason for the rejection of a Market Data request.</td>
+        <td>
+            Reason for the rejection of a Market Data request.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>UnknownSymbol</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>DuplicateMDReqID</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>InsufficientBandwidth</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>InsufficientPermissions</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>UnsupportedSubscriptionRequestType</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>UnsupportedMarketDepth</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>UnsupportedMDUpdateType</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>UnsupportedAggregatedBook</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>UnsupportedMDEntryType</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>UnsupportedTradingSessionID</td>
+            </tr>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>UnsupportedScope</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>UnsupportedOpenCloseSettleFlag</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>UnsupportedMDImplicitDelete</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>InsufficientCredit</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +217,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

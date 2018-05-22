@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>IncTaxInd [type '416']</h1>
-<p style="white-space: pre-wrap;">Code to represent whether value is net (inclusive of tax) or gross.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>IncTaxInd [type '416']</h3>
+<p class="description">Code to represent whether value is net (inclusive of tax) or gross.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/IncTaxInd.html">
+            <a href="../fields/416.html">
             416
             </a>
         </td>
         <td>
-            <a href="../fields/IncTaxInd.html">
+            <a href="../fields/416.html">
             IncTaxInd
             </a>
         </td>
         <td>IncTaxInd</td>
-        <td>Code to represent whether value is net (inclusive of tax) or gross.</td>
+        <td>
+            Code to represent whether value is net (inclusive of tax) or gross.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Net</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Gross</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

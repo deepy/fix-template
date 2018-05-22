@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CommType [type '13']</h1>
-<p style="white-space: pre-wrap;">Commission type</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CommType [type '13']</h3>
+<p class="description">Commission type</p>
 
 <table>
 <tr>
@@ -89,17 +102,60 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/CommType.html">
+            <a href="../fields/13.html">
             13
             </a>
         </td>
         <td>
-            <a href="../fields/CommType.html">
+            <a href="../fields/13.html">
             CommType
             </a>
         </td>
         <td>CommTyp</td>
-        <td>Commission type</td>
+        <td>
+            Commission type
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>PerUnit</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Percent</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Absolute</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>PercentageWaivedCashDiscount</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>PercentageWaivedEnhancedUnits</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>PointsPerBondOrContract</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +181,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>CustOrderHandlingInst [type '1031']</h1>
-<p style="white-space: pre-wrap;">Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>CustOrderHandlingInst [type '1031']</h3>
+<p class="description">Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
 NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting only.
 Valid values are grouped by OrderHandlingInstSource(1032).</p>
 
@@ -91,19 +104,170 @@ Valid values are grouped by OrderHandlingInstSource(1032).</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/CustOrderHandlingInst.html">
+            <a href="../fields/1031.html">
             1031
             </a>
         </td>
         <td>
-            <a href="../fields/CustOrderHandlingInst.html">
+            <a href="../fields/1031.html">
             CustOrderHandlingInst
             </a>
         </td>
         <td>CustOrdHdlInst</td>
-        <td>Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
+        <td>
+            Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
 NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting only.
-Valid values are grouped by OrderHandlingInstSource(1032).</td>
+Valid values are grouped by OrderHandlingInstSource(1032).
+            
+            <table>
+            
+            <tr>
+                <td>ADD</td>
+                <td>=</td>
+                <td>AddOnOrder</td>
+            </tr>
+            
+            <tr>
+                <td>AON</td>
+                <td>=</td>
+                <td>AllOrNone</td>
+            </tr>
+            
+            <tr>
+                <td>CNH</td>
+                <td>=</td>
+                <td>CashNotHeld</td>
+            </tr>
+            
+            <tr>
+                <td>DIR</td>
+                <td>=</td>
+                <td>DirectedOrder</td>
+            </tr>
+            
+            <tr>
+                <td>E.W</td>
+                <td>=</td>
+                <td>ExchangeForPhysicalTransaction</td>
+            </tr>
+            
+            <tr>
+                <td>FOK</td>
+                <td>=</td>
+                <td>FillOrKill</td>
+            </tr>
+            
+            <tr>
+                <td>IO</td>
+                <td>=</td>
+                <td>ImbalanceOnly</td>
+            </tr>
+            
+            <tr>
+                <td>IOC</td>
+                <td>=</td>
+                <td>ImmediateOrCancel</td>
+            </tr>
+            
+            <tr>
+                <td>LOO</td>
+                <td>=</td>
+                <td>LimitOnOpen</td>
+            </tr>
+            
+            <tr>
+                <td>LOC</td>
+                <td>=</td>
+                <td>LimitOnClose</td>
+            </tr>
+            
+            <tr>
+                <td>MAO</td>
+                <td>=</td>
+                <td>MarketAtOpen</td>
+            </tr>
+            
+            <tr>
+                <td>MAC</td>
+                <td>=</td>
+                <td>MarketAtClose</td>
+            </tr>
+            
+            <tr>
+                <td>MOO</td>
+                <td>=</td>
+                <td>MarketOnOpen</td>
+            </tr>
+            
+            <tr>
+                <td>MOC</td>
+                <td>=</td>
+                <td>MarketOnClose</td>
+            </tr>
+            
+            <tr>
+                <td>MQT</td>
+                <td>=</td>
+                <td>MinimumQuantity</td>
+            </tr>
+            
+            <tr>
+                <td>NH</td>
+                <td>=</td>
+                <td>NotHeld</td>
+            </tr>
+            
+            <tr>
+                <td>OVD</td>
+                <td>=</td>
+                <td>OverTheDay</td>
+            </tr>
+            
+            <tr>
+                <td>PEG</td>
+                <td>=</td>
+                <td>Pegged</td>
+            </tr>
+            
+            <tr>
+                <td>RSV</td>
+                <td>=</td>
+                <td>ReserveSizeOrder</td>
+            </tr>
+            
+            <tr>
+                <td>S.W</td>
+                <td>=</td>
+                <td>StopStockTransaction</td>
+            </tr>
+            
+            <tr>
+                <td>SCL</td>
+                <td>=</td>
+                <td>Scale</td>
+            </tr>
+            
+            <tr>
+                <td>TMO</td>
+                <td>=</td>
+                <td>TimeOrder</td>
+            </tr>
+            
+            <tr>
+                <td>TS</td>
+                <td>=</td>
+                <td>TrailingStop</td>
+            </tr>
+            
+            <tr>
+                <td>WRK</td>
+                <td>=</td>
+                <td>Work</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -121,6 +285,11 @@ Valid values are grouped by OrderHandlingInstSource(1032).</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

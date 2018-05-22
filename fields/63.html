@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlType [type '63']</h1>
-<p style="white-space: pre-wrap;">Indicates order settlement period. If present, SettlDate (64) overrides this field. If both SettlType (63) and SettDate (64) are omitted, the default for SettlType (63) is 0 (Regular)
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlType [type '63']</h3>
+<p class="description">Indicates order settlement period. If present, SettlDate (64) overrides this field. If both SettlType (63) and SettDate (64) are omitted, the default for SettlType (63) is 0 (Regular)
 Regular is defined as the default settlement period for the particular security on the exchange of execution.
 In Fixed Income the contents of this field may influence the instrument definition if the SecurityID (48) is ambiguous. In the US an active Treasury offering may be re-opened, and for a time one CUSIP will apply to both the current and &#34;when-issued&#34; securities. Supplying a value of &#34;7&#34; clarifies the instrument description; any other value or the absence of this field should cause the respondent to default to the active issue.
 Additionally the following patterns may be uses as well as enum values
@@ -97,17 +110,18 @@ Noted that for FX the tenors expressed using Dx, Mx, Wx, and Yx values do not de
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlType.html">
+            <a href="../fields/63.html">
             63
             </a>
         </td>
         <td>
-            <a href="../fields/SettlType.html">
+            <a href="../fields/63.html">
             SettlType
             </a>
         </td>
         <td>SettlTyp</td>
-        <td>Indicates order settlement period. If present, SettlDate (64) overrides this field. If both SettlType (63) and SettDate (64) are omitted, the default for SettlType (63) is 0 (Regular)
+        <td>
+            Indicates order settlement period. If present, SettlDate (64) overrides this field. If both SettlType (63) and SettDate (64) are omitted, the default for SettlType (63) is 0 (Regular)
 Regular is defined as the default settlement period for the particular security on the exchange of execution.
 In Fixed Income the contents of this field may influence the instrument definition if the SecurityID (48) is ambiguous. In the US an active Treasury offering may be re-opened, and for a time one CUSIP will apply to both the current and &#34;when-issued&#34; securities. Supplying a value of &#34;7&#34; clarifies the instrument description; any other value or the absence of this field should cause the respondent to default to the active issue.
 Additionally the following patterns may be uses as well as enum values
@@ -115,7 +129,85 @@ Dx = FX tenor expression for &#34;days&#34;, e.g. &#34;D5&#34;, where &#34;x&#34
 Mx = FX tenor expression for &#34;months&#34;, e.g. &#34;M3&#34;, where &#34;x&#34; is any integer &gt; 0
 Wx = FX tenor expression for &#34;weeks&#34;, e.g. &#34;W13&#34;, where &#34;x&#34; is any integer &gt; 0
 Yx = FX tenor expression for &#34;years&#34;, e.g. &#34;Y1&#34;, where &#34;x&#34; is any integer &gt; 0
-Noted that for FX the tenors expressed using Dx, Mx, Wx, and Yx values do not denote business days, but calendar days.</td>
+Noted that for FX the tenors expressed using Dx, Mx, Wx, and Yx values do not denote business days, but calendar days.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Regular</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Cash</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>NextDay</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>TPlus2</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>TPlus3</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>TPlus4</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>Future</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>WhenAndIfIssued</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>SellersOption</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>TPlus5</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>BrokenDate</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>FXSpotNextSettlement</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -185,6 +277,11 @@ Noted that for FX the tenors expressed using Dx, Mx, Wx, and Yx values do not de
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

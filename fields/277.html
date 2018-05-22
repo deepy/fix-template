@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeCondition [type '277']</h1>
-<p style="white-space: pre-wrap;">Space-delimited list of conditions describing a trade</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradeCondition [type '277']</h3>
+<p class="description">Space-delimited list of conditions describing a trade</p>
 
 <table>
 <tr>
@@ -89,17 +102,486 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TradeCondition.html">
+            <a href="../fields/277.html">
             277
             </a>
         </td>
         <td>
-            <a href="../fields/TradeCondition.html">
+            <a href="../fields/277.html">
             TradeCondition
             </a>
         </td>
         <td>TrdCond</td>
-        <td>Space-delimited list of conditions describing a trade</td>
+        <td>
+            Space-delimited list of conditions describing a trade
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Cash</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>AveragePriceTrade</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>CashTrade</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>NextDay</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>Opening</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>IntradayTradeDetail</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>Rule127Trade</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>Rule155Trade</td>
+            </tr>
+            
+            <tr>
+                <td>I</td>
+                <td>=</td>
+                <td>SoldLast</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>NextDayTrade</td>
+            </tr>
+            
+            <tr>
+                <td>K</td>
+                <td>=</td>
+                <td>Opened</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>Seller</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Sold</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>StoppedStock</td>
+            </tr>
+            
+            <tr>
+                <td>P</td>
+                <td>=</td>
+                <td>ImbalanceMoreBuyers</td>
+            </tr>
+            
+            <tr>
+                <td>Q</td>
+                <td>=</td>
+                <td>ImbalanceMoreSellers</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>OpeningPrice</td>
+            </tr>
+            
+            <tr>
+                <td>S</td>
+                <td>=</td>
+                <td>BargainCondition</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>=</td>
+                <td>ConvertedPriceIndicator</td>
+            </tr>
+            
+            <tr>
+                <td>U</td>
+                <td>=</td>
+                <td>ExchangeLast</td>
+            </tr>
+            
+            <tr>
+                <td>V</td>
+                <td>=</td>
+                <td>FinalPriceOfSession</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>ExPit</td>
+            </tr>
+            
+            <tr>
+                <td>X</td>
+                <td>=</td>
+                <td>Crossed</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>TradesResultingFromManual</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>TradesResultingFromIntermarketSweep</td>
+            </tr>
+            
+            <tr>
+                <td>a</td>
+                <td>=</td>
+                <td>VolumeOnly</td>
+            </tr>
+            
+            <tr>
+                <td>b</td>
+                <td>=</td>
+                <td>DirectPlus</td>
+            </tr>
+            
+            <tr>
+                <td>c</td>
+                <td>=</td>
+                <td>Acquisition</td>
+            </tr>
+            
+            <tr>
+                <td>d</td>
+                <td>=</td>
+                <td>Bunched</td>
+            </tr>
+            
+            <tr>
+                <td>e</td>
+                <td>=</td>
+                <td>Distribution</td>
+            </tr>
+            
+            <tr>
+                <td>f</td>
+                <td>=</td>
+                <td>BunchedSale</td>
+            </tr>
+            
+            <tr>
+                <td>g</td>
+                <td>=</td>
+                <td>SplitTrade</td>
+            </tr>
+            
+            <tr>
+                <td>h</td>
+                <td>=</td>
+                <td>CancelStopped</td>
+            </tr>
+            
+            <tr>
+                <td>i</td>
+                <td>=</td>
+                <td>CancelETH</td>
+            </tr>
+            
+            <tr>
+                <td>j</td>
+                <td>=</td>
+                <td>CancelStoppedETH</td>
+            </tr>
+            
+            <tr>
+                <td>k</td>
+                <td>=</td>
+                <td>OutOfSequenceETH</td>
+            </tr>
+            
+            <tr>
+                <td>l</td>
+                <td>=</td>
+                <td>CancelLastETH</td>
+            </tr>
+            
+            <tr>
+                <td>m</td>
+                <td>=</td>
+                <td>SoldLastSaleETH</td>
+            </tr>
+            
+            <tr>
+                <td>n</td>
+                <td>=</td>
+                <td>CancelLast</td>
+            </tr>
+            
+            <tr>
+                <td>o</td>
+                <td>=</td>
+                <td>SoldLastSale</td>
+            </tr>
+            
+            <tr>
+                <td>p</td>
+                <td>=</td>
+                <td>CancelOpen</td>
+            </tr>
+            
+            <tr>
+                <td>q</td>
+                <td>=</td>
+                <td>CancelOpenETH</td>
+            </tr>
+            
+            <tr>
+                <td>r</td>
+                <td>=</td>
+                <td>OpenedSaleETH</td>
+            </tr>
+            
+            <tr>
+                <td>s</td>
+                <td>=</td>
+                <td>CancelOnly</td>
+            </tr>
+            
+            <tr>
+                <td>t</td>
+                <td>=</td>
+                <td>CancelOnlyETH</td>
+            </tr>
+            
+            <tr>
+                <td>u</td>
+                <td>=</td>
+                <td>LateOpenETH</td>
+            </tr>
+            
+            <tr>
+                <td>v</td>
+                <td>=</td>
+                <td>AutoExecutionETH</td>
+            </tr>
+            
+            <tr>
+                <td>w</td>
+                <td>=</td>
+                <td>Reopen</td>
+            </tr>
+            
+            <tr>
+                <td>x</td>
+                <td>=</td>
+                <td>ReopenETH</td>
+            </tr>
+            
+            <tr>
+                <td>y</td>
+                <td>=</td>
+                <td>Adjusted</td>
+            </tr>
+            
+            <tr>
+                <td>z</td>
+                <td>=</td>
+                <td>AdjustedETH</td>
+            </tr>
+            
+            <tr>
+                <td>AA</td>
+                <td>=</td>
+                <td>Spread</td>
+            </tr>
+            
+            <tr>
+                <td>AB</td>
+                <td>=</td>
+                <td>SpreadETH</td>
+            </tr>
+            
+            <tr>
+                <td>AC</td>
+                <td>=</td>
+                <td>Straddle</td>
+            </tr>
+            
+            <tr>
+                <td>AD</td>
+                <td>=</td>
+                <td>StraddleETH</td>
+            </tr>
+            
+            <tr>
+                <td>AE</td>
+                <td>=</td>
+                <td>Stopped</td>
+            </tr>
+            
+            <tr>
+                <td>AF</td>
+                <td>=</td>
+                <td>StoppedETH</td>
+            </tr>
+            
+            <tr>
+                <td>AG</td>
+                <td>=</td>
+                <td>RegularETH</td>
+            </tr>
+            
+            <tr>
+                <td>AH</td>
+                <td>=</td>
+                <td>Combo</td>
+            </tr>
+            
+            <tr>
+                <td>AI</td>
+                <td>=</td>
+                <td>ComboETH</td>
+            </tr>
+            
+            <tr>
+                <td>AJ</td>
+                <td>=</td>
+                <td>OfficialClosingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>AK</td>
+                <td>=</td>
+                <td>PriorReferencePrice</td>
+            </tr>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Cancel</td>
+            </tr>
+            
+            <tr>
+                <td>AL</td>
+                <td>=</td>
+                <td>StoppedSoldLast</td>
+            </tr>
+            
+            <tr>
+                <td>AM</td>
+                <td>=</td>
+                <td>StoppedOutOfSequence</td>
+            </tr>
+            
+            <tr>
+                <td>AN</td>
+                <td>=</td>
+                <td>OfficalClosingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>AO</td>
+                <td>=</td>
+                <td>CrossedOld</td>
+            </tr>
+            
+            <tr>
+                <td>AP</td>
+                <td>=</td>
+                <td>FastMarket</td>
+            </tr>
+            
+            <tr>
+                <td>AQ</td>
+                <td>=</td>
+                <td>AutomaticExecution</td>
+            </tr>
+            
+            <tr>
+                <td>AR</td>
+                <td>=</td>
+                <td>FormT</td>
+            </tr>
+            
+            <tr>
+                <td>AS</td>
+                <td>=</td>
+                <td>BasketIndex</td>
+            </tr>
+            
+            <tr>
+                <td>AT</td>
+                <td>=</td>
+                <td>BurstBasket</td>
+            </tr>
+            
+            <tr>
+                <td>AV</td>
+                <td>=</td>
+                <td>OutsideSpread</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>ImpliedTrade</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>MarketplaceEnteredTrade</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>MultAssetClassMultilegTrade</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>MultilegToMultilegTrade</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +597,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlInstTransType [type '163']</h1>
-<p style="white-space: pre-wrap;">Settlement Instructions message transaction type</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlInstTransType [type '163']</h3>
+<p class="description">Settlement Instructions message transaction type</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlInstTransType.html">
+            <a href="../fields/163.html">
             163
             </a>
         </td>
         <td>
-            <a href="../fields/SettlInstTransType.html">
+            <a href="../fields/163.html">
             SettlInstTransType
             </a>
         </td>
         <td>SettlInstTransTyp</td>
-        <td>Settlement Instructions message transaction type</td>
+        <td>
+            Settlement Instructions message transaction type
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>New</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>Cancel</td>
+            </tr>
+            
+            <tr>
+                <td>R</td>
+                <td>=</td>
+                <td>Replace</td>
+            </tr>
+            
+            <tr>
+                <td>T</td>
+                <td>=</td>
+                <td>Restate</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

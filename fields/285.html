@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>DeleteReason [type '285']</h1>
-<p style="white-space: pre-wrap;">Reason for deletion.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>DeleteReason [type '285']</h3>
+<p class="description">Reason for deletion.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/DeleteReason.html">
+            <a href="../fields/285.html">
             285
             </a>
         </td>
         <td>
-            <a href="../fields/DeleteReason.html">
+            <a href="../fields/285.html">
             DeleteReason
             </a>
         </td>
         <td>DelRsn</td>
-        <td>Reason for deletion.</td>
+        <td>
+            Reason for deletion.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Cancellation</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Error</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

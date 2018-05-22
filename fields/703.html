@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PosType [type '703']</h1>
-<p style="white-space: pre-wrap;">Used to identify the type of quantity that is being returned.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PosType [type '703']</h3>
+<p class="description">Used to identify the type of quantity that is being returned.</p>
 
 <table>
 <tr>
@@ -89,17 +102,186 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PosType.html">
+            <a href="../fields/703.html">
             703
             </a>
         </td>
         <td>
-            <a href="../fields/PosType.html">
+            <a href="../fields/703.html">
             PosType
             </a>
         </td>
         <td>Typ</td>
-        <td>Used to identify the type of quantity that is being returned.</td>
+        <td>
+            Used to identify the type of quantity that is being returned.
+            
+            <table>
+            
+            <tr>
+                <td>ALC</td>
+                <td>=</td>
+                <td>AllocationTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>AS</td>
+                <td>=</td>
+                <td>OptionAssignment</td>
+            </tr>
+            
+            <tr>
+                <td>ASF</td>
+                <td>=</td>
+                <td>AsOfTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>DLV</td>
+                <td>=</td>
+                <td>DeliveryQty</td>
+            </tr>
+            
+            <tr>
+                <td>ETR</td>
+                <td>=</td>
+                <td>ElectronicTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>EX</td>
+                <td>=</td>
+                <td>OptionExerciseQty</td>
+            </tr>
+            
+            <tr>
+                <td>FIN</td>
+                <td>=</td>
+                <td>EndOfDayQty</td>
+            </tr>
+            
+            <tr>
+                <td>IAS</td>
+                <td>=</td>
+                <td>IntraSpreadQty</td>
+            </tr>
+            
+            <tr>
+                <td>IES</td>
+                <td>=</td>
+                <td>InterSpreadQty</td>
+            </tr>
+            
+            <tr>
+                <td>PA</td>
+                <td>=</td>
+                <td>AdjustmentQty</td>
+            </tr>
+            
+            <tr>
+                <td>PIT</td>
+                <td>=</td>
+                <td>PitTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>SOD</td>
+                <td>=</td>
+                <td>StartOfDayQty</td>
+            </tr>
+            
+            <tr>
+                <td>SPL</td>
+                <td>=</td>
+                <td>IntegralSplit</td>
+            </tr>
+            
+            <tr>
+                <td>TA</td>
+                <td>=</td>
+                <td>TransactionFromAssignment</td>
+            </tr>
+            
+            <tr>
+                <td>TOT</td>
+                <td>=</td>
+                <td>TotalTransactionQty</td>
+            </tr>
+            
+            <tr>
+                <td>TQ</td>
+                <td>=</td>
+                <td>TransactionQuantity</td>
+            </tr>
+            
+            <tr>
+                <td>TRF</td>
+                <td>=</td>
+                <td>TransferTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>TX</td>
+                <td>=</td>
+                <td>TransactionFromExercise</td>
+            </tr>
+            
+            <tr>
+                <td>XM</td>
+                <td>=</td>
+                <td>CrossMarginQty</td>
+            </tr>
+            
+            <tr>
+                <td>RCV</td>
+                <td>=</td>
+                <td>ReceiveQuantity</td>
+            </tr>
+            
+            <tr>
+                <td>CAA</td>
+                <td>=</td>
+                <td>CorporateActionAdjustment</td>
+            </tr>
+            
+            <tr>
+                <td>DN</td>
+                <td>=</td>
+                <td>DeliveryNoticeQty</td>
+            </tr>
+            
+            <tr>
+                <td>EP</td>
+                <td>=</td>
+                <td>ExchangeForPhysicalQty</td>
+            </tr>
+            
+            <tr>
+                <td>PNTN</td>
+                <td>=</td>
+                <td>PrivatelyNegotiatedTradeQty</td>
+            </tr>
+            
+            <tr>
+                <td>DLT</td>
+                <td>=</td>
+                <td>NetDeltaQty</td>
+            </tr>
+            
+            <tr>
+                <td>CEA</td>
+                <td>=</td>
+                <td>CreditEventAdjustment</td>
+            </tr>
+            
+            <tr>
+                <td>SEA</td>
+                <td>=</td>
+                <td>SuccessionEventAdjustment</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +295,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

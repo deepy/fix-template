@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeCaptureReport [type 'AE']</h1>
-<p style="white-space: pre-wrap;">The Trade Capture Report message can be:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>TradeCaptureReport [type 'AE']</h3>
+<p class="description">The Trade Capture Report message can be:
 • Used to report trades between counterparties.
 • Used to report trades to a trade matching system
 • Can be sent unsolicited between counterparties.
@@ -1717,5 +1730,10 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

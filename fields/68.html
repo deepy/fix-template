@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TotNoOrders [type '68']</h1>
-<p style="white-space: pre-wrap;">Total number of list order entries across all messages. Should be the sum of all NoOrders (73) in each message that has repeating list order entries related to the same ListID (66). Used to support fragmentation.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TotNoOrders [type '68']</h3>
+<p class="description">Total number of list order entries across all messages. Should be the sum of all NoOrders (73) in each message that has repeating list order entries related to the same ListID (66). Used to support fragmentation.
 (Prior to FIX 4.2 this field was named &#34;ListNoOrds&#34;)</p>
 
 <table>
@@ -90,18 +103,21 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TotNoOrders.html">
+            <a href="../fields/68.html">
             68
             </a>
         </td>
         <td>
-            <a href="../fields/TotNoOrders.html">
+            <a href="../fields/68.html">
             TotNoOrders
             </a>
         </td>
         <td>TotNoOrds</td>
-        <td>Total number of list order entries across all messages. Should be the sum of all NoOrders (73) in each message that has repeating list order entries related to the same ListID (66). Used to support fragmentation.
-(Prior to FIX 4.2 this field was named &#34;ListNoOrds&#34;)</td>
+        <td>
+            Total number of list order entries across all messages. Should be the sum of all NoOrders (73) in each message that has repeating list order entries related to the same ListID (66). Used to support fragmentation.
+(Prior to FIX 4.2 this field was named &#34;ListNoOrds&#34;)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

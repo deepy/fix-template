@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RoundingModulus [type '469']</h1>
-<p style="white-space: pre-wrap;">For CIV - a float value indicating the value to which rounding is required.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RoundingModulus [type '469']</h3>
+<p class="description">For CIV - a float value indicating the value to which rounding is required.
 i.e. 0 means round to a multiple of 0 units/shares; 0.5 means round to a multiple of 0.5 units/shares.
 The default, if RoundingDirection (468) is specified without RoundingModulus, is to round to a whole unit/share.</p>
 
@@ -91,19 +104,22 @@ The default, if RoundingDirection (468) is specified without RoundingModulus, is
 
     <tr>
         <td class="green">
-            <a href="../fields/RoundingModulus.html">
+            <a href="../fields/469.html">
             469
             </a>
         </td>
         <td>
-            <a href="../fields/RoundingModulus.html">
+            <a href="../fields/469.html">
             RoundingModulus
             </a>
         </td>
         <td>RndMod</td>
-        <td>For CIV - a float value indicating the value to which rounding is required.
+        <td>
+            For CIV - a float value indicating the value to which rounding is required.
 i.e. 0 means round to a multiple of 0 units/shares; 0.5 means round to a multiple of 0.5 units/shares.
-The default, if RoundingDirection (468) is specified without RoundingModulus, is to round to a whole unit/share.</td>
+The default, if RoundingDirection (468) is specified without RoundingModulus, is to round to a whole unit/share.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@ The default, if RoundingDirection (468) is specified without RoundingModulus, is
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

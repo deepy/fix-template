@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>Spread [type '218']</h1>
-<p style="white-space: pre-wrap;">For Fixed Income. Either Swap Spread or Spread to Benchmark depending upon the order type.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>Spread [type '218']</h3>
+<p class="description">For Fixed Income. Either Swap Spread or Spread to Benchmark depending upon the order type.
 Spread to Benchmark: Basis points relative to a benchmark. To be expressed as &#34;count of basis points&#34; (vs. an absolute value). E.g. High Grade Corporate Bonds may express price as basis points relative to benchmark (the BenchmarkCurveName (22) field). Note: Basis points can be negative.
 Swap Spread: Target spread for a swap.</p>
 
@@ -91,19 +104,22 @@ Swap Spread: Target spread for a swap.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/Spread.html">
+            <a href="../fields/218.html">
             218
             </a>
         </td>
         <td>
-            <a href="../fields/Spread.html">
+            <a href="../fields/218.html">
             Spread
             </a>
         </td>
         <td>Spread</td>
-        <td>For Fixed Income. Either Swap Spread or Spread to Benchmark depending upon the order type.
+        <td>
+            For Fixed Income. Either Swap Spread or Spread to Benchmark depending upon the order type.
 Spread to Benchmark: Basis points relative to a benchmark. To be expressed as &#34;count of basis points&#34; (vs. an absolute value). E.g. High Grade Corporate Bonds may express price as basis points relative to benchmark (the BenchmarkCurveName (22) field). Note: Basis points can be negative.
-Swap Spread: Target spread for a swap.</td>
+Swap Spread: Target spread for a swap.
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +133,11 @@ Swap Spread: Target spread for a swap.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

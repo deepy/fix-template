@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>RoundingDirection [type '468']</h1>
-<p style="white-space: pre-wrap;">Specifies which direction to round For CIV - indicates whether or not the quantity of shares/units is to be rounded and in which direction where CashOrdQty (152) or (for CIV only) OrderPercent (516) are specified on an order.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>RoundingDirection [type '468']</h3>
+<p class="description">Specifies which direction to round For CIV - indicates whether or not the quantity of shares/units is to be rounded and in which direction where CashOrdQty (152) or (for CIV only) OrderPercent (516) are specified on an order.
 The default is for rounding to be at the discretion of the executing broker or fund manager.
 e.g. for an order specifying CashOrdQty or OrderPercent if the calculated number of shares/units was 325.76 and RoundingModulus (469) was 0 - &#34;round down&#34; would give 320 units, 1 - &#34;round up&#34; would give 330 units and &#34;round to nearest&#34; would give 320 units.</p>
 
@@ -91,19 +104,44 @@ e.g. for an order specifying CashOrdQty or OrderPercent if the calculated number
 
     <tr>
         <td class="green">
-            <a href="../fields/RoundingDirection.html">
+            <a href="../fields/468.html">
             468
             </a>
         </td>
         <td>
-            <a href="../fields/RoundingDirection.html">
+            <a href="../fields/468.html">
             RoundingDirection
             </a>
         </td>
         <td>RndDir</td>
-        <td>Specifies which direction to round For CIV - indicates whether or not the quantity of shares/units is to be rounded and in which direction where CashOrdQty (152) or (for CIV only) OrderPercent (516) are specified on an order.
+        <td>
+            Specifies which direction to round For CIV - indicates whether or not the quantity of shares/units is to be rounded and in which direction where CashOrdQty (152) or (for CIV only) OrderPercent (516) are specified on an order.
 The default is for rounding to be at the discretion of the executing broker or fund manager.
-e.g. for an order specifying CashOrdQty or OrderPercent if the calculated number of shares/units was 325.76 and RoundingModulus (469) was 0 - &#34;round down&#34; would give 320 units, 1 - &#34;round up&#34; would give 330 units and &#34;round to nearest&#34; would give 320 units.</td>
+e.g. for an order specifying CashOrdQty or OrderPercent if the calculated number of shares/units was 325.76 and RoundingModulus (469) was 0 - &#34;round down&#34; would give 320 units, 1 - &#34;round up&#34; would give 330 units and &#34;round to nearest&#34; would give 320 units.
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>RoundToNearest</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>RoundDown</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>RoundUp</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -117,6 +155,11 @@ e.g. for an order specifying CashOrdQty or OrderPercent if the calculated number
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

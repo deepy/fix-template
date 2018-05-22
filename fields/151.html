@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>LeavesQty [type '151']</h1>
-<p style="white-space: pre-wrap;">Quantity open for further execution. If the OrdStatus (39) is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty (38) - CumQty (14).
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>LeavesQty [type '151']</h3>
+<p class="description">Quantity open for further execution. If the OrdStatus (39) is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty (38) - CumQty (14).
 (Prior to FIX 4.2 this field was of type int)</p>
 
 <table>
@@ -90,18 +103,21 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/LeavesQty.html">
+            <a href="../fields/151.html">
             151
             </a>
         </td>
         <td>
-            <a href="../fields/LeavesQty.html">
+            <a href="../fields/151.html">
             LeavesQty
             </a>
         </td>
         <td>LeavesQty</td>
-        <td>Quantity open for further execution. If the OrdStatus (39) is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty (38) - CumQty (14).
-(Prior to FIX 4.2 this field was of type int)</td>
+        <td>
+            Quantity open for further execution. If the OrdStatus (39) is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty (38) - CumQty (14).
+(Prior to FIX 4.2 this field was of type int)
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +141,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

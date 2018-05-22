@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SecurityType [type '167']</h1>
-<p style="white-space: pre-wrap;">Indicates type of security. Security type enumerations are grouped by Product(460) field value. NOTE: Additional values may be used by mutual agreement of the counterparties.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SecurityType [type '167']</h3>
+<p class="description">Indicates type of security. Security type enumerations are grouped by Product(460) field value. NOTE: Additional values may be used by mutual agreement of the counterparties.</p>
 
 <table>
 <tr>
@@ -89,17 +102,732 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SecurityType.html">
+            <a href="../fields/167.html">
             167
             </a>
         </td>
         <td>
-            <a href="../fields/SecurityType.html">
+            <a href="../fields/167.html">
             SecurityType
             </a>
         </td>
         <td>SecTyp</td>
-        <td>Indicates type of security. Security type enumerations are grouped by Product(460) field value. NOTE: Additional values may be used by mutual agreement of the counterparties.</td>
+        <td>
+            Indicates type of security. Security type enumerations are grouped by Product(460) field value. NOTE: Additional values may be used by mutual agreement of the counterparties.
+            
+            <table>
+            
+            <tr>
+                <td>UST</td>
+                <td>=</td>
+                <td>USTreasuryNoteOld</td>
+            </tr>
+            
+            <tr>
+                <td>USTB</td>
+                <td>=</td>
+                <td>USTreasuryBillOld</td>
+            </tr>
+            
+            <tr>
+                <td>EUSUPRA</td>
+                <td>=</td>
+                <td>EuroSupranationalCoupons</td>
+            </tr>
+            
+            <tr>
+                <td>FAC</td>
+                <td>=</td>
+                <td>FederalAgencyCoupon</td>
+            </tr>
+            
+            <tr>
+                <td>FADN</td>
+                <td>=</td>
+                <td>FederalAgencyDiscountNote</td>
+            </tr>
+            
+            <tr>
+                <td>PEF</td>
+                <td>=</td>
+                <td>PrivateExportFunding</td>
+            </tr>
+            
+            <tr>
+                <td>SUPRA</td>
+                <td>=</td>
+                <td>USDSupranationalCoupons</td>
+            </tr>
+            
+            <tr>
+                <td>CORP</td>
+                <td>=</td>
+                <td>CorporateBond</td>
+            </tr>
+            
+            <tr>
+                <td>CPP</td>
+                <td>=</td>
+                <td>CorporatePrivatePlacement</td>
+            </tr>
+            
+            <tr>
+                <td>CB</td>
+                <td>=</td>
+                <td>ConvertibleBond</td>
+            </tr>
+            
+            <tr>
+                <td>DUAL</td>
+                <td>=</td>
+                <td>DualCurrency</td>
+            </tr>
+            
+            <tr>
+                <td>EUCORP</td>
+                <td>=</td>
+                <td>EuroCorporateBond</td>
+            </tr>
+            
+            <tr>
+                <td>EUFRN</td>
+                <td>=</td>
+                <td>EuroCorporateFloatingRateNotes</td>
+            </tr>
+            
+            <tr>
+                <td>FRN</td>
+                <td>=</td>
+                <td>USCorporateFloatingRateNotes</td>
+            </tr>
+            
+            <tr>
+                <td>XLINKD</td>
+                <td>=</td>
+                <td>IndexedLinked</td>
+            </tr>
+            
+            <tr>
+                <td>STRUCT</td>
+                <td>=</td>
+                <td>StructuredNotes</td>
+            </tr>
+            
+            <tr>
+                <td>YANK</td>
+                <td>=</td>
+                <td>YankeeCorporateBond</td>
+            </tr>
+            
+            <tr>
+                <td>FOR</td>
+                <td>=</td>
+                <td>ForeignExchangeContract</td>
+            </tr>
+            
+            <tr>
+                <td>CDS</td>
+                <td>=</td>
+                <td>CreditDefaultSwap</td>
+            </tr>
+            
+            <tr>
+                <td>FUT</td>
+                <td>=</td>
+                <td>Future</td>
+            </tr>
+            
+            <tr>
+                <td>OPT</td>
+                <td>=</td>
+                <td>Option</td>
+            </tr>
+            
+            <tr>
+                <td>OOF</td>
+                <td>=</td>
+                <td>OptionsOnFutures</td>
+            </tr>
+            
+            <tr>
+                <td>OOP</td>
+                <td>=</td>
+                <td>OptionsOnPhysical</td>
+            </tr>
+            
+            <tr>
+                <td>IRS</td>
+                <td>=</td>
+                <td>InterestRateSwap</td>
+            </tr>
+            
+            <tr>
+                <td>OOC</td>
+                <td>=</td>
+                <td>OptionsOnCombo</td>
+            </tr>
+            
+            <tr>
+                <td>CS</td>
+                <td>=</td>
+                <td>CommonStock</td>
+            </tr>
+            
+            <tr>
+                <td>PS</td>
+                <td>=</td>
+                <td>PreferredStock</td>
+            </tr>
+            
+            <tr>
+                <td>REPO</td>
+                <td>=</td>
+                <td>Repurchase</td>
+            </tr>
+            
+            <tr>
+                <td>FORWARD</td>
+                <td>=</td>
+                <td>Forward</td>
+            </tr>
+            
+            <tr>
+                <td>BUYSELL</td>
+                <td>=</td>
+                <td>BuySellback</td>
+            </tr>
+            
+            <tr>
+                <td>SECLOAN</td>
+                <td>=</td>
+                <td>SecuritiesLoan</td>
+            </tr>
+            
+            <tr>
+                <td>SECPLEDGE</td>
+                <td>=</td>
+                <td>SecuritiesPledge</td>
+            </tr>
+            
+            <tr>
+                <td>BRADY</td>
+                <td>=</td>
+                <td>BradyBond</td>
+            </tr>
+            
+            <tr>
+                <td>CAN</td>
+                <td>=</td>
+                <td>CanadianTreasuryNotes</td>
+            </tr>
+            
+            <tr>
+                <td>CTB</td>
+                <td>=</td>
+                <td>CanadianTreasuryBills</td>
+            </tr>
+            
+            <tr>
+                <td>EUSOV</td>
+                <td>=</td>
+                <td>EuroSovereigns</td>
+            </tr>
+            
+            <tr>
+                <td>PROV</td>
+                <td>=</td>
+                <td>CanadianProvincialBonds</td>
+            </tr>
+            
+            <tr>
+                <td>TB</td>
+                <td>=</td>
+                <td>TreasuryBill</td>
+            </tr>
+            
+            <tr>
+                <td>TBOND</td>
+                <td>=</td>
+                <td>USTreasuryBond</td>
+            </tr>
+            
+            <tr>
+                <td>TINT</td>
+                <td>=</td>
+                <td>InterestStripFromAnyBondOrNote</td>
+            </tr>
+            
+            <tr>
+                <td>TBILL</td>
+                <td>=</td>
+                <td>USTreasuryBill</td>
+            </tr>
+            
+            <tr>
+                <td>TIPS</td>
+                <td>=</td>
+                <td>TreasuryInflationProtectedSecurities</td>
+            </tr>
+            
+            <tr>
+                <td>TCAL</td>
+                <td>=</td>
+                <td>PrincipalStripOfACallableBondOrNote</td>
+            </tr>
+            
+            <tr>
+                <td>TPRN</td>
+                <td>=</td>
+                <td>PrincipalStripFromANonCallableBondOrNote</td>
+            </tr>
+            
+            <tr>
+                <td>TNOTE</td>
+                <td>=</td>
+                <td>USTreasuryNote</td>
+            </tr>
+            
+            <tr>
+                <td>TERM</td>
+                <td>=</td>
+                <td>TermLoan</td>
+            </tr>
+            
+            <tr>
+                <td>RVLV</td>
+                <td>=</td>
+                <td>RevolverLoan</td>
+            </tr>
+            
+            <tr>
+                <td>RVLVTRM</td>
+                <td>=</td>
+                <td>Revolver</td>
+            </tr>
+            
+            <tr>
+                <td>BRIDGE</td>
+                <td>=</td>
+                <td>BridgeLoan</td>
+            </tr>
+            
+            <tr>
+                <td>LOFC</td>
+                <td>=</td>
+                <td>LetterOfCredit</td>
+            </tr>
+            
+            <tr>
+                <td>SWING</td>
+                <td>=</td>
+                <td>SwingLineFacility</td>
+            </tr>
+            
+            <tr>
+                <td>DINP</td>
+                <td>=</td>
+                <td>DebtorInPossession</td>
+            </tr>
+            
+            <tr>
+                <td>DEFLTED</td>
+                <td>=</td>
+                <td>Defaulted</td>
+            </tr>
+            
+            <tr>
+                <td>WITHDRN</td>
+                <td>=</td>
+                <td>Withdrawn</td>
+            </tr>
+            
+            <tr>
+                <td>REPLACD</td>
+                <td>=</td>
+                <td>Replaced</td>
+            </tr>
+            
+            <tr>
+                <td>MATURED</td>
+                <td>=</td>
+                <td>Matured</td>
+            </tr>
+            
+            <tr>
+                <td>AMENDED</td>
+                <td>=</td>
+                <td>Amended</td>
+            </tr>
+            
+            <tr>
+                <td>RETIRED</td>
+                <td>=</td>
+                <td>Retired</td>
+            </tr>
+            
+            <tr>
+                <td>BA</td>
+                <td>=</td>
+                <td>BankersAcceptance</td>
+            </tr>
+            
+            <tr>
+                <td>BDN</td>
+                <td>=</td>
+                <td>BankDepositoryNote</td>
+            </tr>
+            
+            <tr>
+                <td>BN</td>
+                <td>=</td>
+                <td>BankNotes</td>
+            </tr>
+            
+            <tr>
+                <td>BOX</td>
+                <td>=</td>
+                <td>BillOfExchanges</td>
+            </tr>
+            
+            <tr>
+                <td>CAMM</td>
+                <td>=</td>
+                <td>CanadianMoneyMarkets</td>
+            </tr>
+            
+            <tr>
+                <td>CD</td>
+                <td>=</td>
+                <td>CertificateOfDeposit</td>
+            </tr>
+            
+            <tr>
+                <td>CL</td>
+                <td>=</td>
+                <td>CallLoans</td>
+            </tr>
+            
+            <tr>
+                <td>CP</td>
+                <td>=</td>
+                <td>CommercialPaper</td>
+            </tr>
+            
+            <tr>
+                <td>DN</td>
+                <td>=</td>
+                <td>DepositNotes</td>
+            </tr>
+            
+            <tr>
+                <td>EUCD</td>
+                <td>=</td>
+                <td>EuroCertificateOfDeposit</td>
+            </tr>
+            
+            <tr>
+                <td>EUCP</td>
+                <td>=</td>
+                <td>EuroCommercialPaper</td>
+            </tr>
+            
+            <tr>
+                <td>LQN</td>
+                <td>=</td>
+                <td>LiquidityNote</td>
+            </tr>
+            
+            <tr>
+                <td>MTN</td>
+                <td>=</td>
+                <td>MediumTermNotes</td>
+            </tr>
+            
+            <tr>
+                <td>ONITE</td>
+                <td>=</td>
+                <td>Overnight</td>
+            </tr>
+            
+            <tr>
+                <td>PN</td>
+                <td>=</td>
+                <td>PromissoryNote</td>
+            </tr>
+            
+            <tr>
+                <td>STN</td>
+                <td>=</td>
+                <td>ShortTermLoanNote</td>
+            </tr>
+            
+            <tr>
+                <td>PZFJ</td>
+                <td>=</td>
+                <td>PlazosFijos</td>
+            </tr>
+            
+            <tr>
+                <td>SLQN</td>
+                <td>=</td>
+                <td>SecuredLiquidityNote</td>
+            </tr>
+            
+            <tr>
+                <td>TD</td>
+                <td>=</td>
+                <td>TimeDeposit</td>
+            </tr>
+            
+            <tr>
+                <td>TLQN</td>
+                <td>=</td>
+                <td>TermLiquidityNote</td>
+            </tr>
+            
+            <tr>
+                <td>XCN</td>
+                <td>=</td>
+                <td>ExtendedCommNote</td>
+            </tr>
+            
+            <tr>
+                <td>YCD</td>
+                <td>=</td>
+                <td>YankeeCertificateOfDeposit</td>
+            </tr>
+            
+            <tr>
+                <td>ABS</td>
+                <td>=</td>
+                <td>AssetBackedSecurities</td>
+            </tr>
+            
+            <tr>
+                <td>CMB</td>
+                <td>=</td>
+                <td>CanadianMortgageBonds</td>
+            </tr>
+            
+            <tr>
+                <td>CMBS</td>
+                <td>=</td>
+                <td>Corp</td>
+            </tr>
+            
+            <tr>
+                <td>CMO</td>
+                <td>=</td>
+                <td>CollateralizedMortgageObligation</td>
+            </tr>
+            
+            <tr>
+                <td>IET</td>
+                <td>=</td>
+                <td>IOETTEMortgage</td>
+            </tr>
+            
+            <tr>
+                <td>MBS</td>
+                <td>=</td>
+                <td>MortgageBackedSecurities</td>
+            </tr>
+            
+            <tr>
+                <td>MIO</td>
+                <td>=</td>
+                <td>MortgageInterestOnly</td>
+            </tr>
+            
+            <tr>
+                <td>MPO</td>
+                <td>=</td>
+                <td>MortgagePrincipalOnly</td>
+            </tr>
+            
+            <tr>
+                <td>MPP</td>
+                <td>=</td>
+                <td>MortgagePrivatePlacement</td>
+            </tr>
+            
+            <tr>
+                <td>MPT</td>
+                <td>=</td>
+                <td>MiscellaneousPassThrough</td>
+            </tr>
+            
+            <tr>
+                <td>PFAND</td>
+                <td>=</td>
+                <td>Pfandbriefe</td>
+            </tr>
+            
+            <tr>
+                <td>TBA</td>
+                <td>=</td>
+                <td>ToBeAnnounced</td>
+            </tr>
+            
+            <tr>
+                <td>AN</td>
+                <td>=</td>
+                <td>OtherAnticipationNotes</td>
+            </tr>
+            
+            <tr>
+                <td>COFO</td>
+                <td>=</td>
+                <td>CertificateOfObligation</td>
+            </tr>
+            
+            <tr>
+                <td>COFP</td>
+                <td>=</td>
+                <td>CertificateOfParticipation</td>
+            </tr>
+            
+            <tr>
+                <td>GO</td>
+                <td>=</td>
+                <td>GeneralObligationBonds</td>
+            </tr>
+            
+            <tr>
+                <td>MT</td>
+                <td>=</td>
+                <td>MandatoryTender</td>
+            </tr>
+            
+            <tr>
+                <td>RAN</td>
+                <td>=</td>
+                <td>RevenueAnticipationNote</td>
+            </tr>
+            
+            <tr>
+                <td>REV</td>
+                <td>=</td>
+                <td>RevenueBonds</td>
+            </tr>
+            
+            <tr>
+                <td>SPCLA</td>
+                <td>=</td>
+                <td>SpecialAssessment</td>
+            </tr>
+            
+            <tr>
+                <td>SPCLO</td>
+                <td>=</td>
+                <td>SpecialObligation</td>
+            </tr>
+            
+            <tr>
+                <td>SPCLT</td>
+                <td>=</td>
+                <td>SpecialTax</td>
+            </tr>
+            
+            <tr>
+                <td>TAN</td>
+                <td>=</td>
+                <td>TaxAnticipationNote</td>
+            </tr>
+            
+            <tr>
+                <td>TAXA</td>
+                <td>=</td>
+                <td>TaxAllocation</td>
+            </tr>
+            
+            <tr>
+                <td>TECP</td>
+                <td>=</td>
+                <td>TaxExemptCommercialPaper</td>
+            </tr>
+            
+            <tr>
+                <td>TMCP</td>
+                <td>=</td>
+                <td>TaxableMunicipalCP</td>
+            </tr>
+            
+            <tr>
+                <td>TRAN</td>
+                <td>=</td>
+                <td>TaxRevenueAnticipationNote</td>
+            </tr>
+            
+            <tr>
+                <td>VRDN</td>
+                <td>=</td>
+                <td>VariableRateDemandNote</td>
+            </tr>
+            
+            <tr>
+                <td>WAR</td>
+                <td>=</td>
+                <td>Warrant</td>
+            </tr>
+            
+            <tr>
+                <td>MF</td>
+                <td>=</td>
+                <td>MutualFund</td>
+            </tr>
+            
+            <tr>
+                <td>MLEG</td>
+                <td>=</td>
+                <td>MultilegInstrument</td>
+            </tr>
+            
+            <tr>
+                <td>NONE</td>
+                <td>=</td>
+                <td>NoSecurityType</td>
+            </tr>
+            
+            <tr>
+                <td>?</td>
+                <td>=</td>
+                <td>Wildcard</td>
+            </tr>
+            
+            <tr>
+                <td>CASH</td>
+                <td>=</td>
+                <td>Cash</td>
+            </tr>
+            
+            <tr>
+                <td>FXNDF</td>
+                <td>=</td>
+                <td>NonDeliverableForward</td>
+            </tr>
+            
+            <tr>
+                <td>FXSPOT</td>
+                <td>=</td>
+                <td>FXSpot</td>
+            </tr>
+            
+            <tr>
+                <td>FXFWD</td>
+                <td>=</td>
+                <td>FXForward</td>
+            </tr>
+            
+            <tr>
+                <td>FXSWAP</td>
+                <td>=</td>
+                <td>FXSwap</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -131,6 +859,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

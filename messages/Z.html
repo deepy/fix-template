@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>QuoteCancel [type 'Z']</h1>
-<p style="white-space: pre-wrap;">The Quote Cancel message is used by an originator of quotes to cancel quotes.
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>QuoteCancel [type 'Z']</h3>
+<p class="description">The Quote Cancel message is used by an originator of quotes to cancel quotes.
 The Quote Cancel message supports cancellation of:
 • All quotes
 • Quotes for a specific symbol or security ID
@@ -370,5 +383,10 @@ Not required when cancelling all quotes.</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

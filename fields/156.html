@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>SettlCurrFxRateCalc [type '156']</h1>
-<p style="white-space: pre-wrap;">Specifies whether or not SettlCurrFxRate (55) should be multiplied or divided.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>SettlCurrFxRateCalc [type '156']</h3>
+<p class="description">Specifies whether or not SettlCurrFxRate (55) should be multiplied or divided.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/SettlCurrFxRateCalc.html">
+            <a href="../fields/156.html">
             156
             </a>
         </td>
         <td>
-            <a href="../fields/SettlCurrFxRateCalc.html">
+            <a href="../fields/156.html">
             SettlCurrFxRateCalc
             </a>
         </td>
         <td>SettlCurrFxRtCalc</td>
-        <td>Specifies whether or not SettlCurrFxRate (55) should be multiplied or divided.</td>
+        <td>
+            Specifies whether or not SettlCurrFxRate (55) should be multiplied or divided.
+            
+            <table>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Multiply</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Divide</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -133,6 +165,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>ComplexEventCondition [type '1490']</h1>
-<p style="white-space: pre-wrap;">Specifies the condition between complex events when more than one event is specified.  
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>ComplexEventCondition [type '1490']</h3>
+<p class="description">Specifies the condition between complex events when more than one event is specified.  
 Multiple barrier events would use an &#34;or&#34; condition since only one can be effective at a given time. A set of digital range events would use an &#34;and&#34; condition since both conditions must be in effect for a payout to result.</p>
 
 <table>
@@ -90,18 +103,37 @@ Multiple barrier events would use an &#34;or&#34; condition since only one can b
 
     <tr>
         <td class="green">
-            <a href="../fields/ComplexEventCondition.html">
+            <a href="../fields/1490.html">
             1490
             </a>
         </td>
         <td>
-            <a href="../fields/ComplexEventCondition.html">
+            <a href="../fields/1490.html">
             ComplexEventCondition
             </a>
         </td>
         <td>Cond</td>
-        <td>Specifies the condition between complex events when more than one event is specified.  
-Multiple barrier events would use an &#34;or&#34; condition since only one can be effective at a given time. A set of digital range events would use an &#34;and&#34; condition since both conditions must be in effect for a payout to result.</td>
+        <td>
+            Specifies the condition between complex events when more than one event is specified.  
+Multiple barrier events would use an &#34;or&#34; condition since only one can be effective at a given time. A set of digital range events would use an &#34;and&#34; condition since both conditions must be in effect for a payout to result.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>And</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Or</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +147,11 @@ Multiple barrier events would use an &#34;or&#34; condition since only one can b
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

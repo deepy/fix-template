@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>PosMaintAction [type '712']</h1>
-<p style="white-space: pre-wrap;">Maintenance Action to be performed.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>PosMaintAction [type '712']</h3>
+<p class="description">Maintenance Action to be performed.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/PosMaintAction.html">
+            <a href="../fields/712.html">
             712
             </a>
         </td>
         <td>
-            <a href="../fields/PosMaintAction.html">
+            <a href="../fields/712.html">
             PosMaintAction
             </a>
         </td>
         <td>Actn</td>
-        <td>Maintenance Action to be performed.</td>
+        <td>
+            Maintenance Action to be performed.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>New</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Replace</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Cancel</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Reverse</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>Scope [type '546']</h1>
-<p style="white-space: pre-wrap;">Specifies the market scope of the market data.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>Scope [type '546']</h3>
+<p class="description">Specifies the market scope of the market data.</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/Scope.html">
+            <a href="../fields/546.html">
             546
             </a>
         </td>
         <td>
-            <a href="../fields/Scope.html">
+            <a href="../fields/546.html">
             Scope
             </a>
         </td>
         <td>Scope</td>
-        <td>Specifies the market scope of the market data.</td>
+        <td>
+            Specifies the market scope of the market data.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>LocalMarket</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>National</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Global</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -123,6 +161,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MarketUpdateAction [type '1395']</h1>
-<p style="white-space: pre-wrap;">Specifies the action taken for the specified MarketID(1301) + MarketSegmentID(1300).</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>MarketUpdateAction [type '1395']</h3>
+<p class="description">Specifies the action taken for the specified MarketID(1301) + MarketSegmentID(1300).</p>
 
 <table>
 <tr>
@@ -89,17 +102,42 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/MarketUpdateAction.html">
+            <a href="../fields/1395.html">
             1395
             </a>
         </td>
         <td>
-            <a href="../fields/MarketUpdateAction.html">
+            <a href="../fields/1395.html">
             MarketUpdateAction
             </a>
         </td>
         <td>MktUpdtActn</td>
-        <td>Specifies the action taken for the specified MarketID(1301) + MarketSegmentID(1300).</td>
+        <td>
+            Specifies the action taken for the specified MarketID(1301) + MarketSegmentID(1300).
+            
+            <table>
+            
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>Add</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>Delete</td>
+            </tr>
+            
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Modify</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +151,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

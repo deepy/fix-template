@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeAllocIndicator [type '826']</h1>
-<p style="white-space: pre-wrap;">Identifies how the trade is to be allocated</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TradeAllocIndicator [type '826']</h3>
+<p class="description">Identifies how the trade is to be allocated</p>
 
 <table>
 <tr>
@@ -89,17 +102,60 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TradeAllocIndicator.html">
+            <a href="../fields/826.html">
             826
             </a>
         </td>
         <td>
-            <a href="../fields/TradeAllocIndicator.html">
+            <a href="../fields/826.html">
             TradeAllocIndicator
             </a>
         </td>
         <td>AllocInd</td>
-        <td>Identifies how the trade is to be allocated</td>
+        <td>
+            Identifies how the trade is to be allocated
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>AllocationNotRequired</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>AllocationRequired</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>UseAllocationProvidedWithTheTrade</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>AllocationGiveUpExecutor</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>AllocationFromExecutor</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>AllocationToClaimAccount</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +171,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

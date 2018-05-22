@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TickRuleType [type '1209']</h1>
-<p style="white-space: pre-wrap;">Specifies the type of tick rule which is being described</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TickRuleType [type '1209']</h3>
+<p class="description">Specifies the type of tick rule which is being described</p>
 
 <table>
 <tr>
@@ -89,17 +102,54 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TickRuleType.html">
+            <a href="../fields/1209.html">
             1209
             </a>
         </td>
         <td>
-            <a href="../fields/TickRuleType.html">
+            <a href="../fields/1209.html">
             TickRuleType
             </a>
         </td>
         <td>TickRuleTyp</td>
-        <td>Specifies the type of tick rule which is being described</td>
+        <td>
+            Specifies the type of tick rule which is being described
+            
+            <table>
+            
+            <tr>
+                <td>0</td>
+                <td>=</td>
+                <td>Regular</td>
+            </tr>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>Variable</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Fixed</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>TradedAsASpreadLeg</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>SettledAsASpreadLeg</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +163,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

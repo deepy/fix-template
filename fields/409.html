@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>LiquidityIndType [type '409']</h1>
-<p style="white-space: pre-wrap;">Code to identify the type of liquidity indicator.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>LiquidityIndType [type '409']</h3>
+<p class="description">Code to identify the type of liquidity indicator.</p>
 
 <table>
 <tr>
@@ -89,17 +102,48 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/LiquidityIndType.html">
+            <a href="../fields/409.html">
             409
             </a>
         </td>
         <td>
-            <a href="../fields/LiquidityIndType.html">
+            <a href="../fields/409.html">
             LiquidityIndType
             </a>
         </td>
         <td>LqdtyIndTyp</td>
-        <td>Code to identify the type of liquidity indicator.</td>
+        <td>
+            Code to identify the type of liquidity indicator.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>FiveDayMovingAverage</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>TwentyDayMovingAverage</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>NormalMarketSize</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +157,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

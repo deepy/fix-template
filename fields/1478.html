@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>StrikePriceDeterminationMethod [type '1478']</h1>
-<p style="white-space: pre-wrap;">Specifies how the strike price is determined at the point of option exercise. The strike may be fixed throughout the life of the option, set at expiration to the value of the underlying, set to the average value of the underlying , or set to the optimal value of the underlying.  
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>StrikePriceDeterminationMethod [type '1478']</h3>
+<p class="description">Specifies how the strike price is determined at the point of option exercise. The strike may be fixed throughout the life of the option, set at expiration to the value of the underlying, set to the average value of the underlying , or set to the optimal value of the underlying.  
 Conditionally, required if value is other than &#34;fixed&#34;.</p>
 
 <table>
@@ -90,18 +103,49 @@ Conditionally, required if value is other than &#34;fixed&#34;.</p>
 
     <tr>
         <td class="green">
-            <a href="../fields/StrikePriceDeterminationMethod.html">
+            <a href="../fields/1478.html">
             1478
             </a>
         </td>
         <td>
-            <a href="../fields/StrikePriceDeterminationMethod.html">
+            <a href="../fields/1478.html">
             StrikePriceDeterminationMethod
             </a>
         </td>
         <td>StrkPxDtrmnMeth</td>
-        <td>Specifies how the strike price is determined at the point of option exercise. The strike may be fixed throughout the life of the option, set at expiration to the value of the underlying, set to the average value of the underlying , or set to the optimal value of the underlying.  
-Conditionally, required if value is other than &#34;fixed&#34;.</td>
+        <td>
+            Specifies how the strike price is determined at the point of option exercise. The strike may be fixed throughout the life of the option, set at expiration to the value of the underlying, set to the average value of the underlying , or set to the optimal value of the underlying.  
+Conditionally, required if value is other than &#34;fixed&#34;.
+            
+            <table>
+            
+            <tr>
+                <td>1</td>
+                <td>=</td>
+                <td>FixedStrike</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>StrikeSetAtExpiration</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>StrikeSetToAverageAcrossLife</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>StrikeSetToOptimalValue</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -115,6 +159,11 @@ Conditionally, required if value is other than &#34;fixed&#34;.</td>
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

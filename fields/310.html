@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>UnderlyingSecurityType [type '310']</h1>
-<p style="white-space: pre-wrap;">Underlying security&#39;s SecurityType.
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>UnderlyingSecurityType [type '310']</h3>
+<p class="description">Underlying security&#39;s SecurityType.
 Valid values: see SecurityType (167) field
 (see below for details concerning this fields use in conjunction with SecurityType=REPO)
 The following applies when used in conjunction with SecurityType=REPO
@@ -95,23 +108,26 @@ If bonds of a particular issuer or country are wanted in an Order or are in the 
 
     <tr>
         <td class="green">
-            <a href="../fields/UnderlyingSecurityType.html">
+            <a href="../fields/310.html">
             310
             </a>
         </td>
         <td>
-            <a href="../fields/UnderlyingSecurityType.html">
+            <a href="../fields/310.html">
             UnderlyingSecurityType
             </a>
         </td>
         <td>SecTyp</td>
-        <td>Underlying security&#39;s SecurityType.
+        <td>
+            Underlying security&#39;s SecurityType.
 Valid values: see SecurityType (167) field
 (see below for details concerning this fields use in conjunction with SecurityType=REPO)
 The following applies when used in conjunction with SecurityType=REPO
 Represents the general or specific type of security that underlies a financing agreement
 Valid values for SecurityType=REPO:
-If bonds of a particular issuer or country are wanted in an Order or are in the basket of an Execution and the SecurityType is not granular enough, include the UnderlyingIssuer (306), UnderlyingCountryOfIssue (592), UnderlyingProgram, UnderlyingRegType and/or &lt; UnderlyingStipulations &gt; block e.g.:</td>
+If bonds of a particular issuer or country are wanted in an Order or are in the basket of an Execution and the SecurityType is not granular enough, include the UnderlyingIssuer (306), UnderlyingCountryOfIssue (592), UnderlyingProgram, UnderlyingRegType and/or &lt; UnderlyingStipulations &gt; block e.g.:
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -125,6 +141,11 @@ If bonds of a particular issuer or country are wanted in an Order or are in the 
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>

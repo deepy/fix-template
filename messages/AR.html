@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TradeCaptureReportAck [type 'AR']</h1>
-<p style="white-space: pre-wrap;">The Trade Capture Report Ack message can be:
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>TradeCaptureReportAck [type 'AR']</h3>
+<p class="description">The Trade Capture Report Ack message can be:
 • Used to acknowledge trade capture reports received from a counterparty
 • Used to reject a trade capture report received from a counterparty</p>
 
@@ -1575,5 +1588,10 @@ If the field is absent, the value 0 will be the default</td>
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

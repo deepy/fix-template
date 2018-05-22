@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>MarketDefinition [type 'BU']</h1>
-<p style="white-space: pre-wrap;">The Market Definition message is used to respond to Market Definition Request. In a subscription, it will be used to provide the initial snapshot of the information requested. Subsequent updates are provided by the Market Definition Update Report.</p>
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>MarketDefinition [type 'BU']</h3>
+<p class="description">The Market Definition message is used to respond to Market Definition Request. In a subscription, it will be used to provide the initial snapshot of the information requested. Subsequent updates are provided by the Market Definition Update Report.</p>
 
 <table>
 <tr>
@@ -432,5 +445,10 @@
 
 </table>
 
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
 
 </html>

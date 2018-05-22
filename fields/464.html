@@ -69,12 +69,25 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
     </style>
     
 </head>
 
-<h1>TestMessageIndicator [type '464']</h1>
-<p style="white-space: pre-wrap;">Indicates whether or not this FIX Session is a &#34;test&#34; vs. &#34;production&#34; connection. Useful for preventing &#34;accidents&#34;.</p>
+<h2>FIX.5.0SP2 Fields</h2>
+<h3>TestMessageIndicator [type '464']</h3>
+<p class="description">Indicates whether or not this FIX Session is a &#34;test&#34; vs. &#34;production&#34; connection. Useful for preventing &#34;accidents&#34;.</p>
 
 <table>
 <tr>
@@ -89,17 +102,36 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/TestMessageIndicator.html">
+            <a href="../fields/464.html">
             464
             </a>
         </td>
         <td>
-            <a href="../fields/TestMessageIndicator.html">
+            <a href="../fields/464.html">
             TestMessageIndicator
             </a>
         </td>
         <td>TestMsgInd</td>
-        <td>Indicates whether or not this FIX Session is a &#34;test&#34; vs. &#34;production&#34; connection. Useful for preventing &#34;accidents&#34;.</td>
+        <td>
+            Indicates whether or not this FIX Session is a &#34;test&#34; vs. &#34;production&#34; connection. Useful for preventing &#34;accidents&#34;.
+            
+            <table>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>Fales</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>True</td>
+            </tr>
+            
+            </table>
+            
+        </td>
         <td class="green"></td>
     </tr>
 
@@ -113,6 +145,11 @@
     
     </p>
     <hr />
+    
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
     
 
 </html>
