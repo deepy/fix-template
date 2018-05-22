@@ -22,7 +22,7 @@ def parse_messages(xml):
     for element in root:
         m = extract_xml(Message, element)
         messages[m.ComponentID] = m
-    return messages
+    return messages, root.attrib.get('copyright')
 
 
 def parse_msgcontents(xml):
@@ -36,7 +36,7 @@ def parse_msgcontents(xml):
     for element in root:
         m = extract_xml(MsgContent, element)
         msgcontent[m.ComponentID].append(m)
-    return msgcontent
+    return msgcontent, root.attrib.get('copyright')
 
 
 def parse_fields(xml):
@@ -48,7 +48,7 @@ def parse_fields(xml):
     for element in root:
         f = extract_xml(Field, element)
         fields[f.Tag] = f
-    return fields
+    return fields, root.attrib.get('copyright')
 
 
 def parse_components(xml):
@@ -60,7 +60,7 @@ def parse_components(xml):
     for element in root:
         c = extract_xml(Component, element)
         components[c.Name] = c
-    return components
+    return components, root.attrib.get('copyright')
 
 
 def parse_enums(xml):
@@ -74,7 +74,7 @@ def parse_enums(xml):
     for element in root:
         c = extract_xml(Enum, element)
         enums[c.Tag].append(c)
-    return enums
+    return enums, root.attrib.get('copyright')
 
 
 # noinspection SqlNoDataSourceInspection
@@ -179,12 +179,25 @@ class Lookup:
 
 
 def parse_spec(base, version):
+    messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
+    msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
+    fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
+    components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
+    enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
+
     return {
-        'messages': parse_messages(os.path.join(base, version, 'Base/Messages.xml')),
-        'msgcontents': parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml')),
-        'fields': parse_fields(os.path.join(base, version, 'Base/Fields.xml')),
-        'components': parse_components(os.path.join(base, version, 'Base/Components.xml')),
-        'enums': parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
+        'messages': messages[0],
+        'msgcontents': msgcontents[0],
+        'fields': fields[0],
+        'components': components[0],
+        'enums': enums[0],
+        'copyright': {
+            'messages': messages[1],
+            'msgcontents': msgcontents[1],
+            'fields': fields[1],
+            'components': components[1],
+            'enums': enums[1]
+        }
     }
 
 
@@ -201,9 +214,8 @@ if __name__ == '__main__':
         try:
             spec = parse_spec(base, version)
             lookup = Lookup(spec['messages'], spec['msgcontents'], spec['fields'], spec['components'], spec['enums'])
-            gen.fiximate(conf, 'messages', spec['messages'].values(), lookup)
-            gen.fiximate(conf, 'components', spec['components'].values(), lookup)
-            gen.fiximate(conf, 'fields', spec['fields'].values(), lookup)
+            for content in ['messages', 'components', 'fields']:
+                gen.fiximate(conf, content, spec[content].values(), lookup, spec['copyright'].get(content))
         except:
             print("Exception while processing: %s" % version)
             raise

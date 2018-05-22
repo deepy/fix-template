@@ -69,6 +69,14 @@
             text-align: center;
         }
 
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
     </style>
     {% endblock %}
 </head>
@@ -109,5 +117,10 @@
 {% endblock %}
 </table>
 {% block page_body %}
+{% endblock %}
+{% block copyright %}
+    {% if copyright %}
+    <p id="copyright">{{ copyright }}</p>
+    {% endif %}
 {% endblock %}
 </html>
