@@ -20,7 +20,7 @@ class Stylify:
             return text
 
 
-def fiximate(conf, subdir, messages, lookup, copyright=None):
+def fiximate(conf, subdir, messages, lookup, repo, copyright=None):
     template = env.select_template([subdir+'.html', 'messages.html'])
 
     import os
@@ -32,5 +32,5 @@ def fiximate(conf, subdir, messages, lookup, copyright=None):
     for message in messages:
         filename = '{}.html'.format(conf.get_filename(message))
         with open(os.path.join(path, filename), 'w', encoding='utf-8') as outfile:
-            result = template.render(message=message, lookup=lookup, stylify=stylify, copyright=copyright)
+            result = template.render(message=message, lookup=lookup, stylify=stylify, copyright=copyright, repository=repo)
             outfile.write(result)

@@ -76,13 +76,18 @@
             font-family: Verdana;
             font-size: x-small;
         }
+        
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
 
     </style>
     {% endblock %}
 </head>
 {% block page_header %}
-<h1>{{ message.pretty_name() }} [type '{{ message.pretty_type() }}']</h1>
-<p style="white-space: pre-wrap;">{{ message.Description }}</p>
+<h2>{{ repository.version }} {{ repository.type|capitalize }}</h2>
+<h3>{{ message.pretty_name() }} [type '{{ message.pretty_type() }}']</h3>
+<p class="description">{{ message.Description }}</p>
 {% endblock %}
 <table>
 <tr>
