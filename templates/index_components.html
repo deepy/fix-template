@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block table_header %}
+    <th>Name</th>
+{% endblock %}
+{% block table_body %}
+{% for entry in entries %}
+    <tr>
+        <td>
+            <a href="{{ entry | linkify }}">
+            {{ entry | boldify(entry.pretty_name()) }}
+            </a>
+        </td>
+    </tr>
+{% endfor %}
+{% endblock %}
