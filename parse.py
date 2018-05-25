@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+import multiprocessing as mp
 import os
 
 import gen
@@ -208,23 +209,38 @@ def parse_spec(base, version):
     }
 
 
+def render_version(base, version, conf):
+    try:
+        spec = parse_spec(base, version)
+        lookup = Lookup(**spec)
+        env = gen.get_env(conf)
+        for content in ['messages', 'components', 'fields']:
+            repo = {'version': spec['version'].get(content, version), 'type': content}
+            gen.fiximate(env, conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
+        return "Parsed {}/{}".format(base, version)
+    except:
+        print("Exception while processing: %s" % version)
+        raise
+
+
 if __name__ == '__main__':
     from configuration import Configuration
 
     base = 'fix_repository_2010_edition_20140507'
 
-    for version in next(os.walk(base))[1]:
-        if not version.startswith('FIX'):
-            continue
-        conf = Configuration.fiximate(os.path.join('out', version))
+    try:
+        ctx = mp.get_context('fork')
+    except ValueError:
+        ctx = mp.get_context()
 
-        try:
-            spec = parse_spec(base, version)
-            lookup = Lookup(**spec)
-            env = gen.get_env(conf)
-            for content in ['messages', 'components', 'fields']:
-                repo = {'version': spec['version'].get(content, version), 'type': content}
-                gen.fiximate(env, conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
-        except:
-            print("Exception while processing: %s" % version)
-            raise
+    with ctx.Pool(processes=4) as p:
+        for version in next(os.walk(base))[1]:
+            if not version.startswith('FIX'):
+                continue
+            conf = Configuration.fiximate(os.path.join('out', version))
+
+            p.apply_async(render_version, (base, version, conf), callback=print, error_callback=print)
+
+        # We're done, shut down
+        p.close()
+        p.join()
