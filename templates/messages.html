@@ -17,12 +17,20 @@
     <tr>
         <td class="green">
             <a href="{{ msgcontent | linkify }}">
-            {{ msgcontent | boldify(msgcontent.pretty_type()) }}
+            {% if msgcontent is component %}
+                <b>Component</b>
+            {% else %}
+                {{ msgcontent.TagText }}
+            {% endif %}
             </a>
         </td>
         <td>
             <a href="{{ msgcontent | linkify }}">
-            {{ msgcontent | boldify(msgcontent.FieldName) }}
+            {% if msgcontent is component %}
+                <b>{{ msgcontent.FieldName }}</b>
+            {% else %}
+                {{ msgcontent.FieldName }}
+            {% endif %}
             </a>
         </td>
         <td>{{ msgcontent.AbbrName }}</td>

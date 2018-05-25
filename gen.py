@@ -1,5 +1,6 @@
 import os
 from jinja2 import Environment, FileSystemLoader, select_autoescape, evalcontextfilter, Markup
+import jinja_filters
 
 
 class Stylify:
@@ -13,16 +14,6 @@ class Stylify:
             return Markup(result)
         return result
 
-    @evalcontextfilter
-    def boldify(self, eval_ctx, obj, text):
-        if obj.pretty_type() == 'Component':
-            result = "<b>{}</b>".format(text)
-            if eval_ctx.autoescape:
-                return Markup(result)
-            return result
-        else:
-            return text
-
 
 def get_env(conf):
     env = Environment(
@@ -32,8 +23,11 @@ def get_env(conf):
 
     stylify = Stylify(conf)
 
-    env.filters['boldify'] = stylify.boldify
     env.filters['linkify'] = stylify.linkify
+
+    env.tests['component'] = jinja_filters.is_component
+    env.tests['message'] = jinja_filters.is_message
+    env.tests['field'] = jinja_filters.is_field
 
     return env
 

@@ -5,7 +5,7 @@
 <p class="description">{{ entry.Description }}</p>
 {% endblock %}
 {% block table_header %}
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -15,12 +15,12 @@
     <tr>
         <td class="green">
             <a href="{{ entry | linkify }}">
-            {{ entry | boldify(entry.pretty_type()) }}
+            {{ entry.Field }}
             </a>
         </td>
         <td>
             <a href="{{ entry | linkify }}">
-            {{ entry | boldify(entry.pretty_name()) }}
+            {{ entry.Name }}
             </a>
         </td>
         <td>{{ entry.AbbrName }}</td>
