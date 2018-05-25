@@ -35,6 +35,7 @@ class Configuration:
         elif target == 'components':
             return os.path.join(self.base_dir, self.components_dir)
 
+
     def get_filename(self, target):
         if isinstance(target, Message):
             return target.MsgType

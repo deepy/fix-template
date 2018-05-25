@@ -1,3 +1,4 @@
+import os
 from jinja2 import Environment, FileSystemLoader, select_autoescape, evalcontextfilter, Markup
 
 
@@ -39,14 +40,24 @@ def get_env(conf):
 
 def fiximate(env, conf, subdir, entries, lookup, repo, copyright=None):
 
-    import os
     path = conf.get_paths(subdir)
     os.makedirs(path, exist_ok=True)
 
-    template = env.select_template([subdir + '.html', 'messages.html'])
+    write_index(copyright, entries, env, lookup, path, repo, subdir)
+    write_entries(conf, copyright, entries, env, lookup, path, repo, subdir)
 
+
+def write_index(copyright, entries, env, lookup, path, repo, subdir):
+    template = env.select_template(['index_{}.html'.format(subdir), 'index.html'])
+
+    template.stream(entries=entries, lookup=lookup, copyright=copyright, repository=repo) \
+        .dump(os.path.join(path, 'index.html'), encoding='utf-8')
+
+
+def write_entries(conf, copyright, entries, env, lookup, path, repo, subdir):
+    template = env.select_template([subdir + '.html', 'messages.html'])
     for entry in entries:
         filename = '{}.html'.format(conf.get_filename(entry))
-        with open(os.path.join(path, filename), 'w', encoding='utf-8') as outfile:
-            result = template.render(entry=entry, lookup=lookup, copyright=copyright, repository=repo)
-            outfile.write(result)
+
+        template.stream(entry=entry, lookup=lookup, copyright=copyright, repository=repo)\
+            .dump(os.path.join(path, filename), encoding='utf-8')
