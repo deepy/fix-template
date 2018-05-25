@@ -2,7 +2,8 @@
 
 
 class Entry:
-    attrib = {}
+    def __init__(self):
+        self.attrib = {}
 
 
 class Message(Entry):
