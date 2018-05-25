@@ -11,7 +11,7 @@ def extract_xml(constructor, element):
     for tag in element:
         r.parse_value(tag.tag, tag.text)
     for attrib in element.attrib:
-        r.parse_value('attr_' + attrib, element.attrib[attrib])
+        r.attrib[attrib] = element.attrib[attrib]
     return r
 
 

@@ -1,7 +1,11 @@
 # FIX models
 
 
-class Message:
+class Entry:
+    attrib = {}
+
+
+class Message(Entry):
     def parse_value(self, tag, text):
         if tag == 'NotReqXML':
             text = bool(int(text))
@@ -19,7 +23,7 @@ class Message:
         return "<Message %s>" % self.pretty_name()
 
 
-class MsgContent:
+class MsgContent(Entry):
     def parse_value(self, tag, text):
         if tag == 'Reqd':
             text = bool(int(text))
@@ -40,7 +44,7 @@ class MsgContent:
         return '<MsgContent %s>' % self.pretty_name()
 
 
-class Component:
+class Component(Entry):
     def parse_value(self, tag, text):
         if tag == 'NotReqXML':
             text = bool(int(text))
@@ -58,7 +62,7 @@ class Component:
         return '<Component %s>' % self.pretty_name()
 
 
-class Field:
+class Field(Entry):
     def parse_value(self, tag, text):
         if tag == 'NotReqXML':
             text = bool(int(text))
@@ -74,7 +78,7 @@ class Field:
         return '<Field %s>' % self.Name
 
 
-class Enum:
+class Enum(Entry):
     def parse_value(self, tag, text):
         setattr(self, tag, text)
 
