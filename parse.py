@@ -221,9 +221,10 @@ if __name__ == '__main__':
         try:
             spec = parse_spec(base, version)
             lookup = Lookup(**spec)
+            env = gen.get_env(conf)
             for content in ['messages', 'components', 'fields']:
                 repo = {'version': spec['version'].get(content, version), 'type': content}
-                gen.fiximate(conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
+                gen.fiximate(env, conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
         except:
             print("Exception while processing: %s" % version)
             raise

@@ -1,8 +1,8 @@
 {% extends "base_fiximate.html" %}
 {% block page_header %}
 <h2>{{ repository.version }} {{ repository.type|capitalize }}</h2>
-<h3>{{ message.pretty_name() }} [type '{{ message.pretty_type() }}']</h3>
-<p class="description">{{ message.Description }}</p>
+<h3>{{ entry.pretty_name() }} [type '{{ entry.pretty_type() }}']</h3>
+<p class="description">{{ entry.Description }}</p>
 {% endblock %}
 {% block table_header %}
     <th>Field/Component</th>
@@ -14,21 +14,21 @@
 {% block table_body %}
     <tr>
         <td class="green">
-            <a href="{{ message | linkify }}">
-            {{ message | boldify(message.pretty_type()) }}
+            <a href="{{ entry | linkify }}">
+            {{ entry | boldify(entry.pretty_type()) }}
             </a>
         </td>
         <td>
-            <a href="{{ message | linkify }}">
-            {{ message | boldify(message.pretty_name()) }}
+            <a href="{{ entry | linkify }}">
+            {{ entry | boldify(entry.pretty_name()) }}
             </a>
         </td>
-        <td>{{ message.AbbrName }}</td>
+        <td>{{ entry.AbbrName }}</td>
         <td>
-            {{ message.Description }}
-            {% if lookup.get_enums(message.pretty_type()) %}
+            {{ entry.Description }}
+            {% if lookup.get_enums(entry.pretty_type()) %}
             <table>
-            {% for enum in lookup.get_enums(message.pretty_type()) %}
+            {% for enum in lookup.get_enums(entry.pretty_type()) %}
             <tr>
                 <td>{{ enum.Value }}</td>
                 <td>=</td>
@@ -38,11 +38,11 @@
             </table>
             {% endif %}
         </td>
-        <td class="green">{{ message.attrib['deprecated'] }}</td>
+        <td class="green">{{ entry.attrib['deprecated'] }}</td>
     </tr>
 {% endblock %}
 {% block page_body %}
-    {% for section, content in lookup.fields_in(message.pretty_name()).items() %}
+    {% for section, content in lookup.fields_in(entry.pretty_name()).items() %}
     <p>Used in {{ section }}:</p>
     <p>
     {% for mess in content %}

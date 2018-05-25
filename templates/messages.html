@@ -1,8 +1,8 @@
 {% extends "base_fiximate.html" %}
 {% block page_header %}
 <h2>{{ repository.version }} {{ repository.type|capitalize }}</h2>
-<h3>{{ message.pretty_name() }} [type '{{ message.pretty_type() }}']</h3>
-<p class="description">{{ message.Description }}</p>
+<h3>{{ entry.pretty_name() }} [type '{{ entry.pretty_type() }}']</h3>
+<p class="description">{{ entry.Description }}</p>
 {% endblock %}
 {% block table_header %}
     <th>Field/Component</th>
@@ -13,7 +13,7 @@
     <th>Depr.</th>
 {% endblock %}
 {% block table_body %}
-{% for msgcontent in lookup.msgcontents(message.ComponentID) %}
+{% for msgcontent in lookup.msgcontents(entry.ComponentID) %}
     <tr>
         <td class="green">
             <a href="{{ msgcontent | linkify }}">
