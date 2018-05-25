@@ -16,13 +16,13 @@
 {% for msgcontent in lookup.msgcontents(message.ComponentID) %}
     <tr>
         <td class="green">
-            <a href="{{ stylify.linkify(msgcontent) | safe }}">
-            {{ stylify.boldify(msgcontent, msgcontent.pretty_type()) | safe }}
+            <a href="{{ msgcontent | linkify }}">
+            {{ msgcontent | boldify(msgcontent.pretty_type()) }}
             </a>
         </td>
         <td>
-            <a href="{{ stylify.linkify(msgcontent) | safe }}">
-            {{ stylify.boldify(msgcontent, msgcontent.FieldName) | safe }}
+            <a href="{{ msgcontent | linkify }}">
+            {{ msgcontent | boldify(msgcontent.FieldName) }}
             </a>
         </td>
         <td>{{ msgcontent.AbbrName }}</td>

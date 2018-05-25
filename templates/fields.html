@@ -14,13 +14,13 @@
 {% block table_body %}
     <tr>
         <td class="green">
-            <a href="{{ stylify.linkify(message) | safe }}">
-            {{ stylify.boldify(message, message.pretty_type()) | safe }}
+            <a href="{{ message | linkify }}">
+            {{ message | boldify(message.pretty_type()) }}
             </a>
         </td>
         <td>
-            <a href="{{ stylify.linkify(message) | safe }}">
-            {{ stylify.boldify(message, message.pretty_name()) | safe }}
+            <a href="{{ message | linkify }}">
+            {{ message | boldify(message.pretty_name()) }}
             </a>
         </td>
         <td>{{ message.AbbrName }}</td>
