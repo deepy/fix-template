@@ -1,5 +1,4 @@
 import xml.etree.ElementTree as ET
-import multiprocessing as mp
 import os
 
 import gen
@@ -223,10 +222,9 @@ def render_version(base, version, conf):
         raise
 
 
-if __name__ == '__main__':
+def fiximate(base='fix_repository_2010_edition_20140507'):
+    import multiprocessing as mp
     from configuration import Configuration
-
-    base = 'fix_repository_2010_edition_20140507'
 
     try:
         ctx = mp.get_context('fork')
@@ -244,3 +242,17 @@ if __name__ == '__main__':
         # We're done, shut down
         p.close()
         p.join()
+
+
+if __name__ == '__main__':
+    import argparse
+
+    parser = argparse.ArgumentParser(description='Parse a fix repository and format it')
+    parser.add_argument('--base', type=str, default='fix_repository_2010_edition_20140507',
+                        help='(default: fix_repository_2010_edition_20140507)')
+    parser.add_argument('--fiximate', dest='fiximate', action='store_true',
+                        help='generate a fiximate-styled page')
+    args = parser.parse_args()
+    if args.fiximate:
+        fiximate(args.base)
+
