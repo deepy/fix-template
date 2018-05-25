@@ -32,26 +32,31 @@ def get_env(conf):
     return env
 
 
-def fiximate(env, conf, subdir, entries, lookup, repo, copyright=None):
+def fiximate(env, conf, subdir, input, lookup, repo):
 
     path = conf.get_paths(subdir)
     os.makedirs(path, exist_ok=True)
 
-    write_index(copyright, entries, env, lookup, path, repo, subdir)
-    write_entries(conf, copyright, entries, env, lookup, path, repo, subdir)
+    if isinstance(input, list):
+        entries = input
+    elif isinstance(input, dict):
+        entries = input.values()
+
+    write_index(entries, env, lookup, path, repo, subdir)
+    write_entries(conf, entries, env, lookup, path, repo, subdir)
 
 
-def write_index(copyright, entries, env, lookup, path, repo, subdir):
+def write_index(entries, env, lookup, path, repo, subdir):
     template = env.select_template(['index_{}.html'.format(subdir), 'index.html'])
 
-    template.stream(entries=entries, lookup=lookup, copyright=copyright, repository=repo) \
+    template.stream(entries=entries, lookup=lookup, repository=repo) \
         .dump(os.path.join(path, 'index.html'), encoding='utf-8')
 
 
-def write_entries(conf, copyright, entries, env, lookup, path, repo, subdir):
+def write_entries(conf, entries, env, lookup, path, repo, subdir):
     template = env.select_template([subdir + '.html', 'messages.html'])
     for entry in entries:
         filename = '{}.html'.format(conf.get_filename(entry))
 
-        template.stream(entry=entry, lookup=lookup, copyright=copyright, repository=repo)\
+        template.stream(entry=entry, lookup=lookup, repository=repo)\
             .dump(os.path.join(path, filename), encoding='utf-8')

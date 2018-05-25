@@ -1,5 +1,7 @@
 import xml.etree.ElementTree as ET
 import os
+import copy
+import traceback
 
 import gen
 
@@ -22,7 +24,7 @@ def parse_messages(xml):
     for element in root:
         m = extract_xml(Message, element)
         messages[m.ComponentID] = m
-    return messages, root.attrib.get('copyright'), root.attrib.get('version')
+    return {'entries': messages, 'copyright': root.attrib.get('copyright'), 'version': root.attrib.get('version')}
 
 
 def parse_msgcontents(xml):
@@ -36,7 +38,7 @@ def parse_msgcontents(xml):
     for element in root:
         m = extract_xml(MsgContent, element)
         msgcontent[m.ComponentID].append(m)
-    return msgcontent, root.attrib.get('copyright'), root.attrib.get('version')
+    return {'entries': msgcontent, 'copyright': root.attrib.get('copyright'), 'version': root.attrib.get('version')}
 
 
 def parse_fields(xml):
@@ -48,7 +50,7 @@ def parse_fields(xml):
     for element in root:
         f = extract_xml(Field, element)
         fields[f.Tag] = f
-    return fields, root.attrib.get('copyright'), root.attrib.get('version')
+    return {'entries': fields, 'copyright': root.attrib.get('copyright'), 'version': root.attrib.get('version')}
 
 
 def parse_components(xml):
@@ -60,7 +62,7 @@ def parse_components(xml):
     for element in root:
         c = extract_xml(Component, element)
         components[c.Name] = c
-    return components, root.attrib.get('copyright'), root.attrib.get('version')
+    return {'entries': components, 'copyright': root.attrib.get('copyright'), 'version': root.attrib.get('version')}
 
 
 def parse_enums(xml):
@@ -74,7 +76,7 @@ def parse_enums(xml):
     for element in root:
         c = extract_xml(Enum, element)
         enums[c.Tag].append(c)
-    return enums, root.attrib.get('copyright'), root.attrib.get('version')
+    return {'entries': enums, 'copyright': root.attrib.get('copyright'), 'version': root.attrib.get('version')}
 
 
 # noinspection SqlNoDataSourceInspection
@@ -114,18 +116,16 @@ class Lookup:
         self._db.commit()
 
     def __init__(self, messages, msgcontents, fields, components, enums, **kwargs):
-        self._messages = messages
-        self._msgcontents = msgcontents
-        self._fields = fields
-        self._components = components
-        self._enums = enums
+        self._messages = messages['entries']
+        self._msgcontents = msgcontents['entries']
+        self._fields = fields['entries']
+        self._components = components['entries']
+        self._enums = enums['entries']
 
         self._init_db()
         self._index()
 
     def msgcontents(self, id):
-        import copy
-
         result = sorted(copy.deepcopy(self._msgcontents[id]), key=lambda res: float(res.Position))
 
         for r in result:
@@ -186,25 +186,11 @@ def parse_spec(base, version):
     enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
 
     return {
-        'messages': messages[0],
-        'msgcontents': msgcontents[0],
-        'fields': fields[0],
-        'components': components[0],
-        'enums': enums[0],
-        'copyright': {
-            'messages': messages[1],
-            'msgcontents': msgcontents[1],
-            'fields': fields[1],
-            'components': components[1],
-            'enums': enums[1]
-        },
-        'version': {
-            'messages': messages[2],
-            'msgcontents': msgcontents[2],
-            'fields': fields[2],
-            'components': components[2],
-            'enums': enums[2]
-        }
+        'messages': messages,
+        'msgcontents': msgcontents,
+        'fields': fields,
+        'components': components,
+        'enums': enums
     }
 
 
@@ -214,11 +200,13 @@ def render_version(base, version, conf):
         lookup = Lookup(**spec)
         env = gen.get_env(conf)
         for content in ['messages', 'components', 'fields']:
-            repo = {'version': spec['version'].get(content, version), 'type': content}
-            gen.fiximate(env, conf, content, spec[content].values(), lookup, repo, spec['copyright'].get(content))
+            repo = copy.deepcopy(spec[content])
+            repo['type'] = content
+            gen.fiximate(env, conf, content, spec[content].pop('entries'), lookup, repo)
         return "Parsed {}/{}".format(base, version)
     except:
         print("Exception while processing: %s" % version)
+        traceback.print_exc()
         raise
 
 

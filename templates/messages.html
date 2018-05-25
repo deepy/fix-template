@@ -36,7 +36,7 @@
         <td>{{ msgcontent.AbbrName }}</td>
         <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
         <td>{{ msgcontent.Description }}</td>
-        <td class="green">{{ msgcontent.attrib['deprecated'] }}</td>
+        <td class="green">{{ msgcontent.attrib.deprecated }}</td>
     </tr>
 {% endfor %}
 {% endblock %}

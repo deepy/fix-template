@@ -127,7 +127,7 @@
         <td>{{ msgcontent.AbbrName }}</td>
         <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
         <td>{{ msgcontent.Description }}</td>
-        <td class="green">{{ msgcontent.attrib['deprecated'] }}</td>
+        <td class="green">{{ msgcontent.attrib.deprecated }}</td>
     </tr>
 {% endfor %}
 {% endblock %}
@@ -135,8 +135,8 @@
 {% block page_body %}
 {% endblock %}
 {% block copyright %}
-    {% if copyright %}
-    <p id="copyright">{{ copyright }}</p>
+    {% if repository.copyright %}
+    <p id="copyright">{{ repository.copyright }}</p>
     {% endif %}
 {% endblock %}
 </html>
