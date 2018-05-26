@@ -59,5 +59,56 @@
         </div>
     {% endif %}
     {% endfor %}
+    <h2>Components</h2>
+    {% for component in components %}
+    {% if component is not blacklisted %}
+        <div>
+            <a name="c-{{ component.Name }}"></a>
+            <h3>{{ component.Name }}</h3>
+            <p class="description">{{ component.Description }}</p>
+            <table>
+                <tr>
+                    <th>Field/Component</th>
+                    <th>Field Name</th>
+                    <th>FIXML name</th>
+                    <th>Req'd</th>
+                    <th>Comments</th>
+                    <th>Depr.</th>
+                </tr>
+            {% for msgcontent in lookup.msgcontents(component.ComponentID) %}
+            {% if msgcontent is not blacklisted(component) %}
+                <tr>
+                    <td class="green">
+                        {% if msgcontent is component %}
+                            <a href="#c-{{ msgcontent.FieldName }}">
+                            <b>Component</b>
+                        {% else %}
+                            <a href="#f-{{ msgcontent.TagText }}">
+                            {{ msgcontent.TagText }}
+                        {% endif %}
+                        </a>
+                    </td>
+                    <td>
+                        {% if msgcontent is component %}
+                            <a href="#c-{{ msgcontent.FieldName }}">
+                            <b>{{ msgcontent.FieldName }}</b>
+                        {% else %}
+                            <a href="#f-{{ msgcontent.TagText }}">
+                            {{ msgcontent.FieldName }}
+                        {% endif %}
+                        </a>
+                    </td>
+                    <td>{{ msgcontent.AbbrName }}</td>
+                    <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
+                    <td>{{ msgcontent.Description }}</td>
+                    <td class="green">{{ msgcontent.attrib.deprecated }}</td>
+                </tr>
+
+            {% endif %}
+            {% endfor %}
+            </table>
+        </div>
+    {% endif %}
+    {% endfor %}
 <h2>{{ repository.version }}</h2>
 {% endblock %}

@@ -75,5 +75,6 @@ def document(env, input, version, lookup, repo):
 
     template = env.get_template('document.html')
 
-    template.stream(messages=input['messages']['entries'].values(), lookup=lookup, repository=repo)\
+    template.stream(messages=input['messages']['entries'].values(), components=input['components']['entries'].values(),
+                    lookup=lookup, repository=repo)\
         .dump(os.path.join(path, 'document.html'), encoding='utf-8')
