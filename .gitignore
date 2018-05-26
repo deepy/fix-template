@@ -4,3 +4,4 @@ out
 .idea
 __pycache__
 *.pyc
+document-settings.json

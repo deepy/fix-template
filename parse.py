@@ -198,7 +198,7 @@ def render_version(base, version, conf):
     try:
         spec = parse_spec(base, version)
         lookup = Lookup(**spec)
-        env = gen.get_env(conf)
+        env = gen.get_env(conf)[0]
         for content in ['messages', 'components', 'fields']:
             repo = copy.deepcopy(spec[content])
             repo['type'] = content
@@ -233,13 +233,30 @@ def fiximate(base='fix_repository_2010_edition_20140507'):
 
 
 def document(base):
+    import json
+
     for version in next(os.walk(base))[1]:
         if not version.startswith('FIX'):
             continue
 
         spec = parse_spec(base, version)
         lookup = Lookup(**spec)
-        env = gen.get_env()
+        env, filter = gen.get_env()
+        try:
+            with open('document-settings.json') as fp:
+                data = json.load(fp)
+                if not isinstance(data, dict):
+                    raise ValueError("Malformed settings, make sure it parses as a dict {}")
+
+                filter.blacklist = data.get('blacklist', [])
+                filter.whitelist = data.get('whitelist', [])
+                for k, value in data.get('ctx_blacklist', {}).items():
+                    filter.ctx_blacklist[k] = value
+                for k, value in data.get('ctx_whitelist', {}).items():
+                    filter.ctx_whitelist[k] = value
+        except IOError:
+            pass
+
         gen.document(env, spec, version, lookup, repo={'copyright': 'me', })
 
 

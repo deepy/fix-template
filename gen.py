@@ -15,7 +15,7 @@ class Stylify:
         return result
 
 
-def get_env(conf=None):
+def get_env(conf=None, jfilter=None):
     env = Environment(
         loader=FileSystemLoader('templates'),
         autoescape=select_autoescape(['html'])
@@ -25,7 +25,9 @@ def get_env(conf=None):
         stylify = Stylify(conf)
         env.filters['linkify'] = stylify.linkify
 
-    jfilter = jinja_filters.Filter()
+    if not jfilter:
+        jfilter = jinja_filters.Filter()
+
     env.tests['blacklisted'] = jfilter.is_blacklisted
     env.tests['whitelisted'] = jfilter.is_whitelisted
 
@@ -33,7 +35,7 @@ def get_env(conf=None):
     env.tests['message'] = jinja_filters.is_message
     env.tests['field'] = jinja_filters.is_field
 
-    return env
+    return env, jfilter
 
 
 def fiximate(env, conf, subdir, input, lookup, repo):
