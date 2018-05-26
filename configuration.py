@@ -1,4 +1,4 @@
-from models import Message, MsgContent, Component, Field, Enum
+from models import get_id, Message, MsgContent, Component, Field, Enum
 
 import os
 
@@ -16,11 +16,11 @@ class Configuration:
 
     def get_http_path(self, target):
         if isinstance(target, Message):
-            return "{}/{}".format(self.message_dir, self.get_filename(target))
+            return "{}/{}".format(self.message_dir, get_id(target))
         elif isinstance(target, Field):
-            return "{}/{}".format(self.fields_dir, self.get_filename(target))
+            return "{}/{}".format(self.fields_dir, get_id(target))
         elif isinstance(target, Component):
-            return "{}/{}".format(self.components_dir, self.get_filename(target))
+            return "{}/{}".format(self.components_dir, get_id(target))
         else:
             if target.pretty_type().isdigit():
                 return "{}/{}".format(self.fields_dir, target.pretty_name())
@@ -35,13 +35,7 @@ class Configuration:
         elif target == 'components':
             return os.path.join(self.base_dir, self.components_dir)
 
-
-    def get_filename(self, target):
-        if isinstance(target, Message):
-            return target.MsgType
-        elif isinstance(target, Field):
-            return target.Tag
-        elif isinstance(target, Component):
-            return target.Name
-        raise ValueError('No support for: ' + str(type(target)))
+    @staticmethod
+    def get_filename(target):
+        return get_id(target)
 

@@ -1,0 +1,26 @@
+{% extends "base_document.html" %}
+{% block page_body %}
+    <ul>
+    {% for message in messages %}
+    {% if message is not blacklisted %}
+        <li><a href="#{{ message.Name }}">{{ message.Name }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    {% for message in messages %}
+    {% if message is not blacklisted %}
+        <div>
+            <a name="{{ message.Name }}"></a>
+            <p>{{ message.Name }}</p>
+            <ul>
+            {% for msgcontent in lookup.msgcontents(message.ComponentID) %}
+            {% if msgcontent is not blacklisted(message) %}
+                <li>{{ msgcontent.FieldName }}</li>
+            {% endif %}
+            {% endfor %}
+            </ul>
+        </div>
+    {% endif %}
+    {% endfor %}
+<h2>{{ repository.version }}</h2>
+{% endblock %}

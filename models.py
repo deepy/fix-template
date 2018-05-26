@@ -88,3 +88,15 @@ class Enum(Entry):
 
     def __repr__(self):
         return '<Enum %s>' % self.SymbolicName
+
+
+def get_id(target):
+    if isinstance(target, Message):
+        return target.MsgType
+    elif isinstance(target, Field):
+        return target.Tag
+    elif isinstance(target, Component):
+        return target.Name
+    elif isinstance(target, MsgContent):
+        return target.TagText
+    raise ValueError('No support for: ' + str(type(target)))

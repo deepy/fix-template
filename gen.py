@@ -15,15 +15,19 @@ class Stylify:
         return result
 
 
-def get_env(conf):
+def get_env(conf=None):
     env = Environment(
         loader=FileSystemLoader('templates'),
         autoescape=select_autoescape(['html'])
     )
 
-    stylify = Stylify(conf)
+    if conf:
+        stylify = Stylify(conf)
+        env.filters['linkify'] = stylify.linkify
 
-    env.filters['linkify'] = stylify.linkify
+    jfilter = jinja_filters.Filter()
+    env.tests['blacklisted'] = jfilter.is_blacklisted
+    env.tests['whitelisted'] = jfilter.is_whitelisted
 
     env.tests['component'] = jinja_filters.is_component
     env.tests['message'] = jinja_filters.is_message
@@ -60,3 +64,14 @@ def write_entries(conf, entries, env, lookup, path, repo, subdir):
 
         template.stream(entry=entry, lookup=lookup, repository=repo)\
             .dump(os.path.join(path, filename), encoding='utf-8')
+
+
+def document(env, input, version, lookup, repo):
+
+    path = os.path.join('out', version)
+    os.makedirs(path, exist_ok=True)
+
+    template = env.get_template('document.html')
+
+    template.stream(messages=input['messages']['entries'].values(), lookup=lookup, repository=repo)\
+        .dump(os.path.join(path, 'document.html'), encoding='utf-8')

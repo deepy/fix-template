@@ -232,6 +232,17 @@ def fiximate(base='fix_repository_2010_edition_20140507'):
         p.join()
 
 
+def document(base):
+    for version in next(os.walk(base))[1]:
+        if not version.startswith('FIX'):
+            continue
+
+        spec = parse_spec(base, version)
+        lookup = Lookup(**spec)
+        env = gen.get_env()
+        gen.document(env, spec, version, lookup, repo={'copyright': 'me', })
+
+
 if __name__ == '__main__':
     import argparse
 
@@ -240,7 +251,10 @@ if __name__ == '__main__':
                         help='(default: fix_repository_2010_edition_20140507)')
     parser.add_argument('--fiximate', dest='fiximate', action='store_true',
                         help='generate a fiximate-styled page')
+    parser.add_argument('--document', dest='document', action='store_true',
+                        help='create a HTML document suitable for becoming a PDF')
     args = parser.parse_args()
     if args.fiximate:
         fiximate(args.base)
-
+    if args.document:
+        document(args.base)
