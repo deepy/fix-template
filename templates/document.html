@@ -1,15 +1,37 @@
 {% extends "base_document.html" %}
-{% block page_body %}
-    <h1>FIX specification</h1>
-    <h2>Messages</h2>
-    <ul>
-    {% for message in messages %}
-    {% if message is not blacklisted %}
-        <li><a href="#m-{{ message.Name }}">{{ message.Name }}</a></li>
+
+{% macro render_content(msgcontent) %}
+    {% if msgcontent is not blacklisted(message) %}
+        <tr>
+            <td class="green">
+                {% if msgcontent is component %}
+                    <a href="#c-{{ msgcontent.FieldName }}">
+                    <b>Component</b>
+                {% else %}
+                    <a href="#f-{{ msgcontent.TagText }}">
+                    {{ msgcontent.TagText }}
+                {% endif %}
+                </a>
+            </td>
+            <td>
+                {% if msgcontent is component %}
+                    <a href="#c-{{ msgcontent.FieldName }}">
+                    <b>{{ msgcontent.FieldName }}</b>
+                {% else %}
+                    <a href="#f-{{ msgcontent.TagText }}">
+                    {{ msgcontent.FieldName }}
+                {% endif %}
+                </a>
+            </td>
+            <td>{{ msgcontent.AbbrName }}</td>
+            <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
+            <td>{{ msgcontent.Description }}</td>
+            <td class="green">{{ msgcontent.attrib.deprecated }}</td>
+        </tr>
     {% endif %}
-    {% endfor %}
-    </ul>
-    {% for message in messages %}
+{% endmacro %}
+
+{% macro render_message(message) %}
     {% if message is not blacklisted %}
         <div>
             <a name="m-{{ message.Name }}"></a>
@@ -25,39 +47,25 @@
                     <th>Depr.</th>
                 </tr>
             {% for msgcontent in lookup.msgcontents(message.ComponentID) %}
-            {% if msgcontent is not blacklisted(message) %}
-                <tr>
-                    <td class="green">
-                        {% if msgcontent is component %}
-                            <a href="#c-{{ msgcontent.FieldName }}">
-                            <b>Component</b>
-                        {% else %}
-                            <a href="#f-{{ msgcontent.TagText }}">
-                            {{ msgcontent.TagText }}
-                        {% endif %}
-                        </a>
-                    </td>
-                    <td>
-                        {% if msgcontent is component %}
-                            <a href="#c-{{ msgcontent.FieldName }}">
-                            <b>{{ msgcontent.FieldName }}</b>
-                        {% else %}
-                            <a href="#f-{{ msgcontent.TagText }}">
-                            {{ msgcontent.FieldName }}
-                        {% endif %}
-                        </a>
-                    </td>
-                    <td>{{ msgcontent.AbbrName }}</td>
-                    <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
-                    <td>{{ msgcontent.Description }}</td>
-                    <td class="green">{{ msgcontent.attrib.deprecated }}</td>
-                </tr>
-
-            {% endif %}
+                {{ render_content(msgcontent) }}
             {% endfor %}
             </table>
         </div>
     {% endif %}
+{% endmacro %}
+
+{% block page_body %}
+    <h1>FIX specification</h1>
+    <h2>Messages</h2>
+    <ul>
+    {% for message in messages %}
+    {% if message is not blacklisted %}
+        <li><a href="#m-{{ message.Name }}">{{ message.Name }}</a></li>
+    {% endif %}
+    {% endfor %}
+    </ul>
+    {% for message in messages %}
+        {{ render_message(message) }}
     {% endfor %}
     <h2>Components</h2>
     <ul>
@@ -83,35 +91,7 @@
                     <th>Depr.</th>
                 </tr>
             {% for msgcontent in lookup.msgcontents(component.ComponentID) %}
-            {% if msgcontent is not blacklisted(component) %}
-                <tr>
-                    <td class="green">
-                        {% if msgcontent is component %}
-                            <a href="#c-{{ msgcontent.FieldName }}">
-                            <b>Component</b>
-                        {% else %}
-                            <a href="#f-{{ msgcontent.TagText }}">
-                            {{ msgcontent.TagText }}
-                        {% endif %}
-                        </a>
-                    </td>
-                    <td>
-                        {% if msgcontent is component %}
-                            <a href="#c-{{ msgcontent.FieldName }}">
-                            <b>{{ msgcontent.FieldName }}</b>
-                        {% else %}
-                            <a href="#f-{{ msgcontent.TagText }}">
-                            {{ msgcontent.FieldName }}
-                        {% endif %}
-                        </a>
-                    </td>
-                    <td>{{ msgcontent.AbbrName }}</td>
-                    <td class="green center">{% if msgcontent.Reqd %}✔{% endif %}</td>
-                    <td>{{ msgcontent.Description }}</td>
-                    <td class="green">{{ msgcontent.attrib.deprecated }}</td>
-                </tr>
-
-            {% endif %}
+                {{ render_content(msgcontent) }}
             {% endfor %}
             </table>
         </div>
