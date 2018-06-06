@@ -139,7 +139,8 @@ class Lookup:
                 r.FieldName = self._fields[r.TagText].Name
                 # This seems backwards
                 if not self._fields[r.TagText].NotReqXML:
-                    r.AbbrName = "@" + self._fields[r.TagText].AbbrName
+                    if hasattr(self._fields[r.TagText], 'AbbrName'):
+                        r.AbbrName = "@" + self._fields[r.TagText].AbbrName
         return result
 
     def fields_in(self, tag):
