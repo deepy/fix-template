@@ -5,3 +5,4 @@ out
 __pycache__
 *.pyc
 document-settings.json
+*.egg-info

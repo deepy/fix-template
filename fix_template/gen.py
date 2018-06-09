@@ -1,6 +1,6 @@
 import os
-from jinja2 import Environment, FileSystemLoader, select_autoescape, evalcontextfilter, Markup
-import jinja_filters
+from jinja2 import Environment, FileSystemLoader, PackageLoader, ChoiceLoader, select_autoescape, evalcontextfilter, Markup
+from fix_template import jinja_filters
 
 
 class Stylify:
@@ -16,8 +16,12 @@ class Stylify:
 
 
 def get_env(conf=None, jfilter=None):
+    loaders = ChoiceLoader([
+        FileSystemLoader(['.', 'templates']),
+        PackageLoader('fix_template'),
+    ])
     env = Environment(
-        loader=FileSystemLoader('templates'),
+        loader=loaders,
         autoescape=select_autoescape(['html'])
     )
 
@@ -43,10 +47,11 @@ def fiximate(env, conf, subdir, input, lookup, repo):
     path = conf.get_paths(subdir)
     os.makedirs(path, exist_ok=True)
 
-    if isinstance(input, list):
-        entries = input
-    elif isinstance(input, dict):
+    if isinstance(input, dict):
         entries = input.values()
+    else:
+        # probably a list
+        entries = input
 
     write_index(entries, env, lookup, path, repo, subdir)
     write_entries(conf, entries, env, lookup, path, repo, subdir)

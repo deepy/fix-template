@@ -1,4 +1,4 @@
-import models
+from fix_template import models
 
 
 def is_message(target):
