@@ -261,7 +261,7 @@ def document(base):
         gen.document(env, spec, version, lookup, repo={'copyright': 'me', })
 
 
-if __name__ == '__main__':
+def main():
     import argparse
 
     parser = argparse.ArgumentParser(description='Parse a fix repository and format it')
@@ -276,3 +276,7 @@ if __name__ == '__main__':
         fiximate(args.base)
     if args.document:
         document(args.base)
+
+
+if __name__ == '__main__':
+    main()
