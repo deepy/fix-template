@@ -15,7 +15,7 @@ class Stylify:
         return result
 
 
-def get_env(conf=None, jfilter=None):
+def get_env(conf=None, jfilter=jinja_filters.Filter()):
     loaders = ChoiceLoader([
         FileSystemLoader(['.', 'templates']),
         PackageLoader('fix_template'),
@@ -28,9 +28,6 @@ def get_env(conf=None, jfilter=None):
     if conf:
         stylify = Stylify(conf)
         env.filters['linkify'] = stylify.linkify
-
-    if not jfilter:
-        jfilter = jinja_filters.Filter()
 
     env.tests['blacklisted'] = jfilter.is_blacklisted
     env.tests['whitelisted'] = jfilter.is_whitelisted
