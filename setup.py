@@ -6,14 +6,14 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="fix_template",
+    name="FIXation",
     version="0.0.1",
     author="Alex Nordlund",
     author_email="deep.alexander@gmail.com",
     description="FIX repository tool",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/deepy/fix-template",
+    url="https://github.com/deepy/fixation",
     packages=setuptools.find_packages(),
     classifiers=(
         "Programming Language :: Python :: 3",
@@ -22,6 +22,6 @@ setuptools.setup(
     ),
     include_package_data=True,
     entry_points={
-        'console_scripts': ['fix-parse=fix_template.parse:main'],
+        'console_scripts': ['fix-parse=fixation.parse:main'],
     }
 )

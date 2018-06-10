@@ -3,9 +3,9 @@ import os
 import copy
 import traceback
 
-from fix_template import gen
+from fixation import gen
 
-from fix_template.models import Message, MsgContent, Component, Field, Enum
+from fixation.models import Message, MsgContent, Component, Field, Enum
 
 
 def extract_xml(constructor, element):

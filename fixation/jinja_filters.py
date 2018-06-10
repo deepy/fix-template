@@ -1,4 +1,4 @@
-from fix_template import models
+from fixation import models
 
 
 def is_message(target):

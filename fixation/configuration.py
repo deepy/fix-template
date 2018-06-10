@@ -1,4 +1,4 @@
-from fix_template.models import get_id, Message, MsgContent, Component, Field, Enum
+from fixation.models import get_id, Message, MsgContent, Component, Field, Enum
 
 import os
 

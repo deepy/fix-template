@@ -1,2 +1,2 @@
-recursive-include fix_template/templates *
+recursive-include fixation/templates *
 

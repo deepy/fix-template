@@ -1,6 +1,6 @@
 import os
 from jinja2 import Environment, FileSystemLoader, PackageLoader, ChoiceLoader, select_autoescape, evalcontextfilter, Markup
-from fix_template import jinja_filters
+from fixation import jinja_filters
 
 
 class Stylify:
@@ -18,7 +18,7 @@ class Stylify:
 def get_env(conf=None, jfilter=jinja_filters.Filter()):
     loaders = ChoiceLoader([
         FileSystemLoader(['.', 'templates']),
-        PackageLoader('fix_template'),
+        PackageLoader('fixation'),
     ])
     env = Environment(
         loader=loaders,
