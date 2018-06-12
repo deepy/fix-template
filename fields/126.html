@@ -91,17 +91,25 @@
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>ExpireTime [type '126']</h3>
 <p class="description">Time/Date of order expiration (always expressed in UTC (Universal Time Coordinated, also known as &#34;GMT&#34;)
+
 The meaning of expiration is specific to the context where the field is used.
+
 For orders, this is the expiration time of a Good Til Date TimeInForce.
+
 For Quotes - this is the expiration of the quote.
+
 Expiration time is provided across the quote message dialog to control the length of time of the overall quoting process.
+
 For collateral requests, this is the time by which collateral must be assigned.
-For collateral assignments, this is the time by which a response to the assignment is expected.</p>
+
+For collateral assignments, this is the time by which a response to the assignment is expected.
+
+For credit/risk limit checks, this is the time when the reserved credit limit will expire for the requested transaction.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -112,7 +120,7 @@ For collateral assignments, this is the time by which a response to the assignme
     <tr>
         <td class="green">
             <a href="../fields/126.html">
-            126
+            
             </a>
         </td>
         <td>
@@ -123,12 +131,20 @@ For collateral assignments, this is the time by which a response to the assignme
         <td>ExpireTm</td>
         <td>
             Time/Date of order expiration (always expressed in UTC (Universal Time Coordinated, also known as &#34;GMT&#34;)
+
 The meaning of expiration is specific to the context where the field is used.
+
 For orders, this is the expiration time of a Good Til Date TimeInForce.
+
 For Quotes - this is the expiration of the quote.
+
 Expiration time is provided across the quote message dialog to control the length of time of the overall quoting process.
+
 For collateral requests, this is the time by which collateral must be assigned.
+
 For collateral assignments, this is the time by which a response to the assignment is expected.
+
+For credit/risk limit checks, this is the time when the reserved credit limit will expire for the requested transaction.
             
         </td>
         <td class="green"></td>
@@ -179,6 +195,8 @@ For collateral assignments, this is the time by which a response to the assignme
         [<a href="../messages/D.html">NewOrderSingle]</a>
     
         [<a href="../messages/G.html">OrderCancelReplaceRequest]</a>
+    
+        [<a href="../messages/DG.html">PartyRiskLimitCheckRequestAck]</a>
     
         [<a href="../messages/AI.html">QuoteStatusReport]</a>
     

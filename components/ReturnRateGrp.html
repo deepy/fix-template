@@ -1,0 +1,747 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>ReturnRateGrp [type 'Component']</h3>
+<p class="description">ReturnRateGrp is a repeating subcomponent within the PaymentStreamFloatingRate component. It is used to specify the multiple return rates for an equity return swap payment stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42735.html">
+            
+                42735
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42735.html">
+            
+                NoReturnRates
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42736.html">
+            
+                42736
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42736.html">
+            
+                ReturnRatePriceSequence
+            
+            </a>
+        </td>
+        <td>@PxSeq</td>
+        <td class="green center"></td>
+        <td>Required if NoReturnRates(42735) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42737.html">
+            
+                42737
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42737.html">
+            
+                ReturnRateCommissionBasis
+            
+            </a>
+        </td>
+        <td>@CommBasis</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42738.html">
+            
+                42738
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42738.html">
+            
+                ReturnRateCommissionAmount
+            
+            </a>
+        </td>
+        <td>@CommAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42739.html">
+            
+                42739
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42739.html">
+            
+                ReturnRateCommissionCurrency
+            
+            </a>
+        </td>
+        <td>@CommCcy</td>
+        <td class="green center"></td>
+        <td>If not specified, this is defaulted to the reporting currency.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42740.html">
+            
+                42740
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42740.html">
+            
+                ReturnRateTotalCommissionPerTrade
+            
+            </a>
+        </td>
+        <td>@TotCommPerTrd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42741.html">
+            
+                42741
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42741.html">
+            
+                ReturnRateDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@DtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ReturnRatePriceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ReturnRatePriceGrp.html">
+            
+                <b>ReturnRatePriceGrp</b>
+            
+            </a>
+        </td>
+        <td>Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ReturnRateFXConversionGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ReturnRateFXConversionGrp.html">
+            
+                <b>ReturnRateFXConversionGrp</b>
+            
+            </a>
+        </td>
+        <td>FxCnvrsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42742.html">
+            
+                42742
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42742.html">
+            
+                ReturnRateAmountRelativeTo
+            
+            </a>
+        </td>
+        <td>@AmtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42743.html">
+            
+                42743
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42743.html">
+            
+                ReturnRateQuoteMeasureType
+            
+            </a>
+        </td>
+        <td>@QteTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42744.html">
+            
+                42744
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42744.html">
+            
+                ReturnRateQuoteUnits
+            
+            </a>
+        </td>
+        <td>@QteUnit</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42745.html">
+            
+                42745
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42745.html">
+            
+                ReturnRateQuoteMethod
+            
+            </a>
+        </td>
+        <td>@QteMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42746.html">
+            
+                42746
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42746.html">
+            
+                ReturnRateQuoteCurrency
+            
+            </a>
+        </td>
+        <td>@QteCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42747.html">
+            
+                42747
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42747.html">
+            
+                ReturnRateQuoteCurrencyType
+            
+            </a>
+        </td>
+        <td>@QteCcyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42748.html">
+            
+                42748
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42748.html">
+            
+                ReturnRateQuoteTimeType
+            
+            </a>
+        </td>
+        <td>@QteTmTyp</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with ReturnRateQuoteTime(42749).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42749.html">
+            
+                42749
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42749.html">
+            
+                ReturnRateQuoteTime
+            
+            </a>
+        </td>
+        <td>@QteTm</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with ReturnRateQuoteTimeType(42748).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42750.html">
+            
+                42750
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42750.html">
+            
+                ReturnRateQuoteDate
+            
+            </a>
+        </td>
+        <td>@QteDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42751.html">
+            
+                42751
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42751.html">
+            
+                ReturnRateQuoteExpirationTime
+            
+            </a>
+        </td>
+        <td>@QteExpTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42752.html">
+            
+                42752
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42752.html">
+            
+                ReturnRateQuoteBusinessCenter
+            
+            </a>
+        </td>
+        <td>@QteBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42753.html">
+            
+                42753
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42753.html">
+            
+                ReturnRateQuoteExchange
+            
+            </a>
+        </td>
+        <td>@QteExch</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ReturnRateInformationSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ReturnRateInformationSourceGrp.html">
+            
+                <b>ReturnRateInformationSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>InfoSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42754.html">
+            
+                42754
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42754.html">
+            
+                ReturnRateQuotePricingModel
+            
+            </a>
+        </td>
+        <td>@QteModel</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42755.html">
+            
+                42755
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42755.html">
+            
+                ReturnRateCashFlowType
+            
+            </a>
+        </td>
+        <td>@CshFlow</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ReturnRateDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ReturnRateDateGrp.html">
+            
+                <b>ReturnRateDateGrp</b>
+            
+            </a>
+        </td>
+        <td>Dt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42756.html">
+            
+                42756
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42756.html">
+            
+                ReturnRateValuationTimeType
+            
+            </a>
+        </td>
+        <td>@ValTmTyp</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with ReturnRateValuationTime(42757).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42757.html">
+            
+                42757
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42757.html">
+            
+                ReturnRateValuationTime
+            
+            </a>
+        </td>
+        <td>@ValTm</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with ReturnRateValuationTimeType(42756).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42758.html">
+            
+                42758
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42758.html">
+            
+                ReturnRateValuationTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@ValTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42759.html">
+            
+                42759
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42759.html">
+            
+                ReturnRateValuationPriceOption
+            
+            </a>
+        </td>
+        <td>@ValPxOpt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42760.html">
+            
+                42760
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42760.html">
+            
+                ReturnRateFinalPriceFallback
+            
+            </a>
+        </td>
+        <td>@FnlPxFallbck</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

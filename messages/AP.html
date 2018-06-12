@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../components/ApplicationSequenceControl.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ApplicationSequenceControl.html">
-            <b>ApplicationSequenceControl</b>
+            
+                <b>ApplicationSequenceControl</b>
+            
             </a>
         </td>
         <td>ApplSeqCtrl</td>
@@ -142,12 +150,16 @@
     <tr>
         <td class="green">
             <a href="../fields/721.html">
-            721
+            
+                721
+            
             </a>
         </td>
         <td>
             <a href="../fields/721.html">
-            PosMaintRptID
+            
+                PosMaintRptID
+            
             </a>
         </td>
         <td>@RptID</td>
@@ -158,13 +170,38 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2618.html">
+            
+                2618
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2618.html">
+            
+                PositionID
+            
+            </a>
+        </td>
+        <td>@PosID</td>
+        <td class="green center"></td>
+        <td>Unique identifier for this position entity.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/710.html">
-            710
+            
+                710
+            
             </a>
         </td>
         <td>
             <a href="../fields/710.html">
-            PosReqID
+            
+                PosReqID
+            
             </a>
         </td>
         <td>@ReqID</td>
@@ -177,15 +214,40 @@ This field should not be provided if the report was sent unsolicited.</td>
     <tr>
         <td class="green">
             <a href="../fields/724.html">
-            724
+            
+                724
+            
             </a>
         </td>
         <td>
             <a href="../fields/724.html">
-            PosReqType
+            
+                PosReqType
+            
             </a>
         </td>
         <td>@ReqTyp</td>
+        <td class="green center"></td>
+        <td>Will be 7=Net Position if the report contains net position information for margin requirements.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2364.html">
+            
+                2364
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2364.html">
+            
+                PosReportAction
+            
+            </a>
+        </td>
+        <td>@Actn</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>
@@ -193,13 +255,38 @@ This field should not be provided if the report was sent unsolicited.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1635.html">
+            
+                1635
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1635.html">
+            
+                MarginReqmtInqID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Unique identifier for the inquiry associated with this report. This field should not be provided if the report was sent unsolicited.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/263.html">
-            263
+            
+                263
+            
             </a>
         </td>
         <td>
             <a href="../fields/263.html">
-            SubscriptionRequestType
+            
+                SubscriptionRequestType
+            
             </a>
         </td>
         <td>@SubReqTyp</td>
@@ -212,29 +299,79 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/727.html">
-            727
+            
+                727
+            
             </a>
         </td>
         <td>
             <a href="../fields/727.html">
-            TotalNumPosReports
+            
+                TotalNumPosReports
+            
             </a>
         </td>
         <td>@TotRpts</td>
         <td class="green center"></td>
         <td>Total number of Position Reports being returned</td>
+        <td class="green">FIX.5.0SP2</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/911.html">
+            
+                911
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/911.html">
+            
+                TotNumReports
+            
+            </a>
+        </td>
+        <td>@TotNumRpts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/912.html">
+            
+                912
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/912.html">
+            
+                LastRptRequested
+            
+            </a>
+        </td>
+        <td>@LastRptReqed</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/728.html">
-            728
+            
+                728
+            
             </a>
         </td>
         <td>
             <a href="../fields/728.html">
-            PosReqResult
+            
+                PosReqResult
+            
             </a>
         </td>
         <td>@Rslt</td>
@@ -246,12 +383,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/325.html">
-            325
+            
+                325
+            
             </a>
         </td>
         <td>
             <a href="../fields/325.html">
-            UnsolicitedIndicator
+            
+                UnsolicitedIndicator
+            
             </a>
         </td>
         <td>@Unsol</td>
@@ -263,12 +404,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/715.html">
-            715
+            
+                715
+            
             </a>
         </td>
         <td>
             <a href="../fields/715.html">
-            ClearingBusinessDate
+            
+                ClearingBusinessDate
+            
             </a>
         </td>
         <td>@BizDt</td>
@@ -279,13 +424,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2084.html">
+            
+                2084
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2084.html">
+            
+                PreviousClearingBusinessDate
+            
+            </a>
+        </td>
+        <td>@PrevBizDt</td>
+        <td class="green center"></td>
+        <td>The business date previous to the clearing business date referred to by this maintenance request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/716.html">
-            716
+            
+                716
+            
             </a>
         </td>
         <td>
             <a href="../fields/716.html">
-            SettlSessID
+            
+                SettlSessID
+            
             </a>
         </td>
         <td>@SetSesID</td>
@@ -297,12 +467,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/717.html">
-            717
+            
+                717
+            
             </a>
         </td>
         <td>
             <a href="../fields/717.html">
-            SettlSessSubID
+            
+                SettlSessSubID
+            
             </a>
         </td>
         <td>@SetSesSub</td>
@@ -314,12 +488,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/423.html">
-            423
+            
+                423
+            
             </a>
         </td>
         <td>
             <a href="../fields/423.html">
-            PriceType
+            
+                PriceType
+            
             </a>
         </td>
         <td>@PxTyp</td>
@@ -331,12 +509,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/120.html">
-            120
+            
+                120
+            
             </a>
         </td>
         <td>
             <a href="../fields/120.html">
-            SettlCurrency
+            
+                SettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
@@ -348,12 +530,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/1011.html">
-            1011
+            
+                1011
+            
             </a>
         </td>
         <td>
             <a href="../fields/1011.html">
-            MessageEventSource
+            
+                MessageEventSource
+            
             </a>
         </td>
         <td>@MsgEvtSrc</td>
@@ -364,13 +550,227 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1832.html">
+            
+                1832
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1832.html">
+            
+                ClearedIndicator
+            
+            </a>
+        </td>
+        <td>@Clrd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1833.html">
+            
+                1833
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1833.html">
+            
+                ContractRefPosType
+            
+            </a>
+        </td>
+        <td>@ConRefPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1834.html">
+            
+                1834
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1834.html">
+            
+                PositionCapacity
+            
+            </a>
+        </td>
+        <td>@PosCpcty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2101.html">
+            
+                2101
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2101.html">
+            
+                TerminatedIndicator
+            
+            </a>
+        </td>
+        <td>@TrmtdInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2373.html">
+            
+                2373
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2373.html">
+            
+                IntraFirmTradeIndicator
+            
+            </a>
+        </td>
+        <td>@IntraFirmTrdInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1937.html">
+            
+                1937
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1937.html">
+            
+                TradeContinuation
+            
+            </a>
+        </td>
+        <td>@TrdContntn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2374.html">
+            
+                2374
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2374.html">
+            
+                TradeContinuationText
+            
+            </a>
+        </td>
+        <td>@TrdContntnTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2372.html">
+            
+                2372
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2372.html">
+            
+                EncodedTradeContinuationTextLen
+            
+            </a>
+        </td>
+        <td>@EncTrdContntnTextLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedTradeContinuationText(2371) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2371.html">
+            
+                2371
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2371.html">
+            
+                EncodedTradeContinuationText
+            
+            </a>
+        </td>
+        <td>@EncTrdContntnText</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the TradeContinuationText(2374) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1936.html">
+            
+                1936
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1936.html">
+            
+                TradeCollateralization
+            
+            </a>
+        </td>
+        <td>@TrdCollztn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -382,12 +782,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/1.html">
-            1
+            
+                1
+            
             </a>
         </td>
         <td>
             <a href="../fields/1.html">
-            Account
+            
+                Account
+            
             </a>
         </td>
         <td>@Acct</td>
@@ -399,12 +803,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/660.html">
-            660
+            
+                660
+            
             </a>
         </td>
         <td>
             <a href="../fields/660.html">
-            AcctIDSource
+            
+                AcctIDSource
+            
             </a>
         </td>
         <td>@AcctIDSrc</td>
@@ -416,12 +824,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/581.html">
-            581
+            
+                581
+            
             </a>
         </td>
         <td>
             <a href="../fields/581.html">
-            AccountType
+            
+                AccountType
+            
             </a>
         </td>
         <td>@AcctTyp</td>
@@ -432,13 +844,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2375.html">
+            
+                2375
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2375.html">
+            
+                TaxonomyType
+            
+            </a>
+        </td>
+        <td>@TxnmyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
@@ -449,13 +886,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../components/FinancingDetails.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingDetails.html">
+            
+                <b>FinancingDetails</b>
+            
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -466,13 +928,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/64.html">
+            
+                64
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/64.html">
+            
+                SettlDate
+            
+            </a>
+        </td>
+        <td>@SettlDt</td>
+        <td class="green center"></td>
+        <td>Position Settlement Date</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/730.html">
-            730
+            
+                730
+            
             </a>
         </td>
         <td>
             <a href="../fields/730.html">
-            SettlPrice
+            
+                SettlPrice
+            
             </a>
         </td>
         <td>@SetPx</td>
@@ -483,13 +970,101 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2366.html">
+            
+                2366
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2366.html">
+            
+                SettlPriceFxRateCalc
+            
+            </a>
+        </td>
+        <td>@SettlPxFxRtCalc</td>
+        <td class="green center"></td>
+        <td>Expresses whether to multiply or divide SettlPrice(730) to arrive at the amount reported in PosAmt(708).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2365.html">
+            
+                2365
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2365.html">
+            
+                SettlForwardPoints
+            
+            </a>
+        </td>
+        <td>@SettlFwdPnts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1886.html">
+            
+                1886
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1886.html">
+            
+                SettlPriceUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@SetPxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1887.html">
+            
+                1887
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1887.html">
+            
+                SettlPriceUnitOfMeasureCurrency
+            
+            </a>
+        </td>
+        <td>@SetPxUOMCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/731.html">
-            731
+            
+                731
+            
             </a>
         </td>
         <td>
             <a href="../fields/731.html">
-            SettlPriceType
+            
+                SettlPriceType
+            
             </a>
         </td>
         <td>@SetPxTyp</td>
@@ -501,12 +1076,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/734.html">
-            734
+            
+                734
+            
             </a>
         </td>
         <td>
             <a href="../fields/734.html">
-            PriorSettlPrice
+            
+                PriorSettlPrice
+            
             </a>
         </td>
         <td>@PriSetPx</td>
@@ -517,13 +1096,122 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1595.html">
+            
+                1595
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1595.html">
+            
+                PositionContingentPrice
+            
+            </a>
+        </td>
+        <td>@CntgPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1592.html">
+            
+                1592
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1592.html">
+            
+                DiscountFactor
+            
+            </a>
+        </td>
+        <td>@DiscFctr</td>
+        <td class="green center"></td>
+        <td>For a forward position this is an appropriate value to discount the mark to market amount from the contract’s maturity date back to present value.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2085.html">
+            
+                2085
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2085.html">
+            
+                ValuationDate
+            
+            </a>
+        </td>
+        <td>@ValDt</td>
+        <td class="green center"></td>
+        <td>Valuation date of the position(s) in this report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2086.html">
+            
+                2086
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2086.html">
+            
+                ValuationTime
+            
+            </a>
+        </td>
+        <td>@ValTm</td>
+        <td class="green center"></td>
+        <td>Valuation time of the position(s) in this report</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2087.html">
+            
+                2087
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2087.html">
+            
+                ValuationBusinessCenter
+            
+            </a>
+        </td>
+        <td>@ValBizCtr</td>
+        <td class="green center"></td>
+        <td>Business center of ValuationDate(2085) and ValuationTime(2086). Single value only.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/573.html">
-            573
+            
+                573
+            
             </a>
         </td>
         <td>
             <a href="../fields/573.html">
-            MatchStatus
+            
+                MatchStatus
+            
             </a>
         </td>
         <td>@MtchStat</td>
@@ -535,12 +1223,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../components/InstrmtLegGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtLegGrp.html">
-            <b>InstrmtLegGrp</b>
+            
+                <b>InstrmtLegGrp</b>
+            
             </a>
         </td>
         <td>Leg</td>
@@ -551,13 +1243,59 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>RelatedInstrumentGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdInstrmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CollateralAmountGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CollateralAmountGrp.html">
+            
+                <b>CollateralAmountGrp</b>
+            
+            </a>
+        </td>
+        <td>CollAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/PosUndInstrmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PosUndInstrmtGrp.html">
-            <b>PosUndInstrmtGrp</b>
+            
+                <b>PosUndInstrmtGrp</b>
+            
             </a>
         </td>
         <td>PosUnd</td>
@@ -568,13 +1306,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/PositionQty.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PositionQty.html">
-            <b>PositionQty</b>
+            
+                <b>PositionQty</b>
+            
             </a>
         </td>
         <td>Qty</td>
@@ -586,12 +1349,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../components/PositionAmountData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PositionAmountData.html">
-            <b>PositionAmountData</b>
+            
+                <b>PositionAmountData</b>
+            
             </a>
         </td>
         <td>Amt</td>
@@ -602,13 +1369,59 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../components/RegulatoryTradeIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RegulatoryTradeIDGrp.html">
+            
+                <b>RegulatoryTradeIDGrp</b>
+            
+            </a>
+        </td>
+        <td>RegTrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentGrp.html">
+            
+                <b>PaymentGrp</b>
+            
+            </a>
+        </td>
+        <td>Pmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/506.html">
-            506
+            
+                506
+            
             </a>
         </td>
         <td>
             <a href="../fields/506.html">
-            RegistStatus
+            
+                RegistStatus
+            
             </a>
         </td>
         <td>@RegStat</td>
@@ -620,12 +1433,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/743.html">
-            743
+            
+                743
+            
             </a>
         </td>
         <td>
             <a href="../fields/743.html">
-            DeliveryDate
+            
+                DeliveryDate
+            
             </a>
         </td>
         <td>@DlvDt</td>
@@ -637,12 +1454,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/1434.html">
-            1434
+            
+                1434
+            
             </a>
         </td>
         <td>
             <a href="../fields/1434.html">
-            ModelType
+            
+                ModelType
+            
             </a>
         </td>
         <td>@ModelTyp</td>
@@ -654,12 +1475,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/811.html">
-            811
+            
+                811
+            
             </a>
         </td>
         <td>
             <a href="../fields/811.html">
-            PriceDelta
+            
+                PriceDelta
+            
             </a>
         </td>
         <td>@PxDelta</td>
@@ -670,13 +1495,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../components/RelatedTradeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedTradeGrp.html">
+            
+                <b>RelatedTradeGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdTrd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -688,12 +1538,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
@@ -705,12 +1559,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
@@ -722,12 +1580,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

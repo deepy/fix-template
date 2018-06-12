@@ -1,0 +1,789 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingPaymentStubGrp [type 'Component']</h3>
+<p class="description">The UnderlyingPaymentStubGrp is a repeating subcomponent of the UnderlyingPaymentStream component used to specify front and back stubs in the payment stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40708.html">
+            
+                40708
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40708.html">
+            
+                NoUnderlyingPaymentStubs
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40709.html">
+            
+                40709
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40709.html">
+            
+                UnderlyingPaymentStubType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoUnderlyingPaymentStubs(40708) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40710.html">
+            
+                40710
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40710.html">
+            
+                UnderlyingPaymentStubLength
+            
+            </a>
+        </td>
+        <td>@Lngth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStubStartDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStubStartDate.html">
+            
+                <b>UnderlyingPaymentStubStartDate</b>
+            
+            </a>
+        </td>
+        <td>StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStubEndDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStubEndDate.html">
+            
+                <b>UnderlyingPaymentStubEndDate</b>
+            
+            </a>
+        </td>
+        <td>EndDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40711.html">
+            
+                40711
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40711.html">
+            
+                UnderlyingPaymentStubRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40712.html">
+            
+                40712
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40712.html">
+            
+                UnderlyingPaymentStubFixedAmount
+            
+            </a>
+        </td>
+        <td>@FixedAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40713.html">
+            
+                40713
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40713.html">
+            
+                UnderlyingPaymentStubFixedCurrency
+            
+            </a>
+        </td>
+        <td>@FixedCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40714.html">
+            
+                40714
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40714.html">
+            
+                UnderlyingPaymentStubIndex
+            
+            </a>
+        </td>
+        <td>@Ndx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40715.html">
+            
+                40715
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40715.html">
+            
+                UnderlyingPaymentStubIndexSource
+            
+            </a>
+        </td>
+        <td>@NdxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40716.html">
+            
+                40716
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40716.html">
+            
+                UnderlyingPaymentStubIndexCurvePeriod
+            
+            </a>
+        </td>
+        <td>@NdxPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStubIndexCurveUnit(40717) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40717.html">
+            
+                40717
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40717.html">
+            
+                UnderlyingPaymentStubIndexCurveUnit
+            
+            </a>
+        </td>
+        <td>@NdxUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStubIndexCurvePeriod(40716) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40718.html">
+            
+                40718
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40718.html">
+            
+                UnderlyingPaymentStubIndexRateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40719.html">
+            
+                40719
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40719.html">
+            
+                UnderlyingPaymentStubIndexRateSpread
+            
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40720.html">
+            
+                40720
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40720.html">
+            
+                UnderlyingPaymentStubIndexRateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@SpreadPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40721.html">
+            
+                40721
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40721.html">
+            
+                UnderlyingPaymentStubIndexRateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40722.html">
+            
+                40722
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40722.html">
+            
+                UnderlyingPaymentStubIndexCapRate
+            
+            </a>
+        </td>
+        <td>@CapRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40723.html">
+            
+                40723
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40723.html">
+            
+                UnderlyingPaymentStubIndexCapRateBuySide
+            
+            </a>
+        </td>
+        <td>@CapRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40724.html">
+            
+                40724
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40724.html">
+            
+                UnderlyingPaymentStubIndexCapRateSellSide
+            
+            </a>
+        </td>
+        <td>@CapRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40725.html">
+            
+                40725
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40725.html">
+            
+                UnderlyingPaymentStubIndexFloorRate
+            
+            </a>
+        </td>
+        <td>@FlrRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40726.html">
+            
+                40726
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40726.html">
+            
+                UnderlyingPaymentStubIndexFloorRateBuySide
+            
+            </a>
+        </td>
+        <td>@FlrRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40727.html">
+            
+                40727
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40727.html">
+            
+                UnderlyingPaymentStubIndexFloorRateSellSide
+            
+            </a>
+        </td>
+        <td>@FlrRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40728.html">
+            
+                40728
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40728.html">
+            
+                UnderlyingPaymentStubIndex2
+            
+            </a>
+        </td>
+        <td>@Ndx2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40729.html">
+            
+                40729
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40729.html">
+            
+                UnderlyingPaymentStubIndex2Source
+            
+            </a>
+        </td>
+        <td>@Ndx2Src</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40730.html">
+            
+                40730
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40730.html">
+            
+                UnderlyingPaymentStubIndex2CurvePeriod
+            
+            </a>
+        </td>
+        <td>@Ndx2Period</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStubIndex2CurveUnit(40731) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40731.html">
+            
+                40731
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40731.html">
+            
+                UnderlyingPaymentStubIndex2CurveUnit
+            
+            </a>
+        </td>
+        <td>@Ndx2Unit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStubIndex2CurvePeriod(40730) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40732.html">
+            
+                40732
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40732.html">
+            
+                UnderlyingPaymentStubIndex2RateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40733.html">
+            
+                40733
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40733.html">
+            
+                UnderlyingPaymentStubIndex2RateSpread
+            
+            </a>
+        </td>
+        <td>@Spread2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40734.html">
+            
+                40734
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40734.html">
+            
+                UnderlyingPaymentStubIndex2RateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@Spread2PosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40735.html">
+            
+                40735
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40735.html">
+            
+                UnderlyingPaymentStubIndex2RateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40736.html">
+            
+                40736
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40736.html">
+            
+                UnderlyingPaymentStubIndex2CapRate
+            
+            </a>
+        </td>
+        <td>@CapRt2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40737.html">
+            
+                40737
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40737.html">
+            
+                UnderlyingPaymentStubIndex2FloorRate
+            
+            </a>
+        </td>
+        <td>@FlrRt2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

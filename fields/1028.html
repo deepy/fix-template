@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>ManualOrderIndicator [type '1028']</h3>
-<p class="description">Indicates if the order was initially received manually (as opposed to electronically)</p>
+<p class="description">Indicates if the order was initially received manually (as opposed to electronically) or if it was entered manually (as opposed to entered by automated trading software).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1028.html">
-            1028
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>ManOrdInd</td>
         <td>
-            Indicates if the order was initially received manually (as opposed to electronically)
+            Indicates if the order was initially received manually (as opposed to electronically) or if it was entered manually (as opposed to entered by automated trading software).
             
         </td>
         <td class="green"></td>
@@ -125,10 +125,22 @@
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/ListOrdGrp.html">ListOrdGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
     
         [<a href="../messages/8.html">ExecutionReport]</a>
+    
+        [<a href="../messages/DJ.html">MassOrder]</a>
+    
+        [<a href="../messages/DK.html">MassOrderAck]</a>
     
         [<a href="../messages/D.html">NewOrderSingle]</a>
     

@@ -90,8 +90,8 @@
 
 <h2>FIX.5.0SP2 Messages</h2>
 <h3>SecurityDefinitionRequest [type 'c']</h3>
-<p class="description">The Security Definition Request message is used for the following:
-1. Request a specific Security to be traded with the second party. The request security can be defined as a multileg security made up of one or more instrument legs.
+<p class="description">The SecurityDefinitionRequest(35=c) message is used for the following:
+1. Request a specific security to be traded with the second party. The requested security can be defined as a multileg security made up of one or more instrument legs.
 2. Request a set of individual securities for a single market segment.
 3. Request all securities, independent of market segment.</p>
 
@@ -111,12 +111,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -128,12 +132,16 @@
     <tr>
         <td class="green">
             <a href="../fields/320.html">
-            320
+            
+                320
+            
             </a>
         </td>
         <td>
             <a href="../fields/320.html">
-            SecurityReqID
+            
+                SecurityReqID
+            
             </a>
         </td>
         <td>@ReqID</td>
@@ -145,12 +153,16 @@
     <tr>
         <td class="green">
             <a href="../fields/321.html">
-            321
+            
+                321
+            
             </a>
         </td>
         <td>
             <a href="../fields/321.html">
-            SecurityRequestType
+            
+                SecurityRequestType
+            
             </a>
         </td>
         <td>@ReqTyp</td>
@@ -162,12 +174,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1301.html">
-            1301
+            
+                1301
+            
             </a>
         </td>
         <td>
             <a href="../fields/1301.html">
-            MarketID
+            
+                MarketID
+            
             </a>
         </td>
         <td>@MktID</td>
@@ -179,12 +195,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1300.html">
-            1300
+            
+                1300
+            
             </a>
         </td>
         <td>
             <a href="../fields/1300.html">
-            MarketSegmentID
+            
+                MarketSegmentID
+            
             </a>
         </td>
         <td>@MktSegID</td>
@@ -196,64 +216,121 @@
     <tr>
         <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;Instrument&#34; (symbology) fields defined in &#34;Common Components of Application Messages&#34;
-of the requested Security</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/InstrumentExtension.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrumentExtension.html">
-            <b>InstrumentExtension</b>
+            
+                <b>InstrumentExtension</b>
+            
             </a>
         </td>
         <td>InstrmtExt</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;InstrumentExtension&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingDetails.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingDetails.html">
+            
+                <b>FinancingDetails</b>
+            
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/UndInstrmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UndInstrmtGrp.html">
-            <b>UndInstrmtGrp</b>
+            
+                <b>UndInstrmtGrp</b>
+            
             </a>
         </td>
         <td>Undly</td>
         <td class="green center"></td>
-        <td>Number of underlyings</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>RelatedInstrumentGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdInstrmt</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -264,81 +341,185 @@ of the requested Security</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/376.html">
+            
+                376
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/376.html">
+            
+                ComplianceID
+            
+            </a>
+        </td>
+        <td>@ComplianceID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2404.html">
+            
+                2404
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2404.html">
+            
+                ComplianceText
+            
+            </a>
+        </td>
+        <td>@ComplianceTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2351.html">
+            
+                2351
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2351.html">
+            
+                EncodedComplianceTextLen
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedComplianceText(2352) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2352.html">
+            
+                2352
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2352.html">
+            
+                EncodedComplianceText
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the ComplianceText(2404) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
         <td class="green center"></td>
-        <td>Comment, instructions, or other identifying information.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
+                336
+            
             </a>
         </td>
         <td>
             <a href="../fields/336.html">
-            TradingSessionID
+            
+                TradingSessionID
+            
             </a>
         </td>
         <td>@SesID</td>
         <td class="green center"></td>
-        <td>Optional Trading Session Identifier to specify a particular trading session for which you want to obtain a list of securities that are tradeable.</td>
+        <td>Optional trading session identifier to specify a particular trading session for which you want to obtain a list of securities that are tradeable.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/625.html">
-            625
+            
+                625
+            
             </a>
         </td>
         <td>
             <a href="../fields/625.html">
-            TradingSessionSubID
+            
+                TradingSessionSubID
+            
             </a>
         </td>
         <td>@SesSub</td>
@@ -350,12 +531,16 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../components/Stipulations.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Stipulations.html">
-            <b>Stipulations</b>
+            
+                <b>Stipulations</b>
+            
             </a>
         </td>
         <td>Stip</td>
@@ -367,29 +552,37 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../components/InstrmtLegGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtLegGrp.html">
-            <b>InstrmtLegGrp</b>
+            
+                <b>InstrmtLegGrp</b>
+            
             </a>
         </td>
         <td>Leg</td>
         <td class="green center"></td>
-        <td>Number of legs that make up the Security</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>SpreadOrBenchmarkCurveData</b>
+            
+                <b>SpreadOrBenchmarkCurveData</b>
+            
             </a>
         </td>
         <td>SprdBnchmkCurve</td>
@@ -401,12 +594,16 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../components/YieldData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/YieldData.html">
-            <b>YieldData</b>
+            
+                <b>YieldData</b>
+            
             </a>
         </td>
         <td>Yield</td>
@@ -418,12 +615,16 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../fields/827.html">
-            827
+            
+                827
+            
             </a>
         </td>
         <td>
             <a href="../fields/827.html">
-            ExpirationCycle
+            
+                ExpirationCycle
+            
             </a>
         </td>
         <td>@ExpirationCycle</td>
@@ -435,12 +636,16 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../fields/263.html">
-            263
+            
+                263
+            
             </a>
         </td>
         <td>
             <a href="../fields/263.html">
-            SubscriptionRequestType
+            
+                SubscriptionRequestType
+            
             </a>
         </td>
         <td>@SubReqTyp</td>
@@ -452,12 +657,16 @@ of the requested Security</td>
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

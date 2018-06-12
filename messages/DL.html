@@ -1,0 +1,581 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>PositionTransferInstruction [type 'DL']</h3>
+<p class="description">The PositionTransferInstruction(35=DL) is sent by clearing firms to CCPs to initiate position transfers, or to accept or decline position transfers.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = DL</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2436.html">
+            
+                2436
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2436.html">
+            
+                TransferInstructionID
+            
+            </a>
+        </td>
+        <td>@InstID</td>
+        <td class="green center">✔</td>
+        <td>Submitting, cancelling, changing, accepting, and declining a transfer are all considered separate instructions, and each must have a unique ID. Chaining of firm generated IDs is not supported; TransferID(2437) assigned by the CCP must be used when sending an instruction referencing a previously submitted transfer.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2437.html">
+            
+                2437
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2437.html">
+            
+                TransferID
+            
+            </a>
+        </td>
+        <td>@XferID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when responding to a PositionTransferReport(35=DN) message (e.g. when accepting or declining a transfer) or performing an action on a transfer (e.g. cancel or replace).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2439.html">
+            
+                2439
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2439.html">
+            
+                TransferTransType
+            
+            </a>
+        </td>
+        <td>@TransTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2440.html">
+            
+                2440
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2440.html">
+            
+                TransferType
+            
+            </a>
+        </td>
+        <td>@XferTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2441.html">
+            
+                2441
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2441.html">
+            
+                TransferScope
+            
+            </a>
+        </td>
+        <td>@XferScope</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            
+                <b>Parties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Specifies the source of the position transfer, e.g. the transferor.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TargetParties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TargetParties.html">
+            
+                <b>TargetParties</b>
+            
+            </a>
+        </td>
+        <td>TgtPty</td>
+        <td class="green center">✔</td>
+        <td>Specifies the target of the position transfer.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            
+                715
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            
+                ClearingBusinessDate
+            
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center"></td>
+        <td>	Business date the transfer would clear.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            
+                75
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            
+                TradeDate
+            
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td>Trade date associated with the position being transferred.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            
+                <b>Instrument</b>
+            
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>If not specified, indicates the transfer is for all instruments.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>UndInstrmtGrp</b>
+            
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionQty.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionQty.html">
+            
+                <b>PositionQty</b>
+            
+            </a>
+        </td>
+        <td>Qty</td>
+        <td class="green center"></td>
+        <td>Position to transfer from the perspective of the source party prior to the transfer.
+If not specified, indicates transfer of all positions for a specified instrument, if Instrument is specified, or transfer of all positions if Instrument is not specified.
+</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1596.html">
+            
+                1596
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1596.html">
+            
+                ClearingTradePrice
+            
+            </a>
+        </td>
+        <td>@ClrTrdPx</td>
+        <td class="green center"></td>
+        <td>Price at which the position is transferred.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            
+                15
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            
+                Currency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            
+                423
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            
+                PriceType
+            
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionAmountData.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionAmountData.html">
+            
+                <b>PositionAmountData</b>
+            
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td>Optionally used to include cash residuals, etc., from the perspective of the source party prior to the transfer.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            
+                58
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            
+                Text
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            
+                354
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            
+                EncodedTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            
+                355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            
+                EncodedText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

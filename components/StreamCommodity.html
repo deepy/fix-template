@@ -1,0 +1,789 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>StreamCommodity [type 'Component']</h3>
+<p class="description">StreamCommodity is a subcomponent of the Stream component used to identify and describe the underlying commodity.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41251.html">
+            
+                41251
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41251.html">
+            
+                StreamCommodityBase
+            
+            </a>
+        </td>
+        <td>@Base</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41252.html">
+            
+                41252
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41252.html">
+            
+                StreamCommodityType
+            
+            </a>
+        </td>
+        <td>@CmdtyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41253.html">
+            
+                41253
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41253.html">
+            
+                StreamCommoditySecurityID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommoditySecurityIDSource(41254) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41254.html">
+            
+                41254
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41254.html">
+            
+                StreamCommoditySecurityIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommoditySecurityID(41253) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCommodityAltIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCommodityAltIDGrp.html">
+            
+                <b>StreamCommodityAltIDGrp</b>
+            
+            </a>
+        </td>
+        <td>AID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41255.html">
+            
+                41255
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41255.html">
+            
+                StreamCommodityDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41256.html">
+            
+                41256
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41256.html">
+            
+                EncodedStreamCommodityDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedCommodityDesc(41257) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41257.html">
+            
+                41257
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41257.html">
+            
+                EncodedStreamCommodityDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the StreamCommodityDesc(41255) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42587.html">
+            
+                42587
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42587.html">
+            
+                StreamCommodityDeliveryPricingRegion
+            
+            </a>
+        </td>
+        <td>@DlvryPxngRgn</td>
+        <td class="green center"></td>
+        <td>May be used to specify the delivery or pricing region of a non-standard commodity swap contract (e.g. when InstrAttribType(871)=38 (US standard contract indicator) and InstrAttribValue(872)=N).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamAssetAttributeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamAssetAttributeGrp.html">
+            
+                <b>StreamAssetAttributeGrp</b>
+            
+            </a>
+        </td>
+        <td>AssetAttrb</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41258.html">
+            
+                41258
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41258.html">
+            
+                StreamCommodityUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@UOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41259.html">
+            
+                41259
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41259.html">
+            
+                StreamCommodityCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41260.html">
+            
+                41260
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41260.html">
+            
+                StreamCommodityExchange
+            
+            </a>
+        </td>
+        <td>@Exch</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41261.html">
+            
+                41261
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41261.html">
+            
+                StreamCommodityRateSource
+            
+            </a>
+        </td>
+        <td>@RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41262.html">
+            
+                41262
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41262.html">
+            
+                StreamCommodityRateReferencePage
+            
+            </a>
+        </td>
+        <td>@RefPg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41263.html">
+            
+                41263
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41263.html">
+            
+                StreamCommodityRateReferencePageHeading
+            
+            </a>
+        </td>
+        <td>@RefHdng</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41264.html">
+            
+                41264
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41264.html">
+            
+                StreamDataProvider
+            
+            </a>
+        </td>
+        <td>@DataPrvdr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCommodityDataSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCommodityDataSourceGrp.html">
+            
+                <b>StreamCommodityDataSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>DataSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41265.html">
+            
+                41265
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41265.html">
+            
+                StreamCommodityPricingType
+            
+            </a>
+        </td>
+        <td>@PxngTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41266.html">
+            
+                41266
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41266.html">
+            
+                StreamCommodityNearbySettlDayPeriod
+            
+            </a>
+        </td>
+        <td>@Period</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommodityNearbySettlDayUnit(41267) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41267.html">
+            
+                41267
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41267.html">
+            
+                StreamCommodityNearbySettlDayUnit
+            
+            </a>
+        </td>
+        <td>@Unit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommodityNearbySettlDayPeriod(41266) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41268.html">
+            
+                41268
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41268.html">
+            
+                StreamCommoditySettlDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@DtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41269.html">
+            
+                41269
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41269.html">
+            
+                StreamCommoditySettlDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument. The specified value would be specific to this instance of settlement dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCommoditySettlBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCommoditySettlBusinessCenterGrp.html">
+            
+                <b>StreamCommoditySettlBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument. The specified values would be specific to this instance of settlement dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41270.html">
+            
+                41270
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41270.html">
+            
+                StreamCommoditySettlDateAdjusted
+            
+            </a>
+        </td>
+        <td>@Dt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41271.html">
+            
+                41271
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41271.html">
+            
+                StreamCommoditySettlMonth
+            
+            </a>
+        </td>
+        <td>@Mo</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41272.html">
+            
+                41272
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41272.html">
+            
+                StreamCommoditySettlDateRollPeriod
+            
+            </a>
+        </td>
+        <td>@RollPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommoditySettlDateRollUnit(41273) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41273.html">
+            
+                41273
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41273.html">
+            
+                StreamCommoditySettlDateRollUnit
+            
+            </a>
+        </td>
+        <td>@RollUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCommoditySettlDateRollPeriod(41272) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41274.html">
+            
+                41274
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41274.html">
+            
+                StreamCommoditySettlDayType
+            
+            </a>
+        </td>
+        <td>@DayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCommoditySettlPeriodGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCommoditySettlPeriodGrp.html">
+            
+                <b>StreamCommoditySettlPeriodGrp</b>
+            
+            </a>
+        </td>
+        <td>SettlPeriod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41275.html">
+            
+                41275
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41275.html">
+            
+                StreamCommodityXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41276.html">
+            
+                41276
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41276.html">
+            
+                StreamCommodityXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

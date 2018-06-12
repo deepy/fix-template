@@ -1,0 +1,537 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingProvisionOptionExerciseDates [type 'Component']</h3>
+<p class="description">The UnderlyingProvisionOptionExerciseDates is a subcomponent within the UnderlyingProvisionGrp component used to report the option exercise dates and times defined in the provision.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42115.html">
+            
+                42115
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42115.html">
+            
+                UnderlyingProvisionOptionExerciseBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the busienss day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified value would be specific to this instance of the provisional option exercise date.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingProvisionOptionExerciseBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingProvisionOptionExerciseBusinessCenterGrp.html">
+            
+                <b>UnderlyingProvisionOptionExerciseBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified values would be specific to this instance of the provisional option exercise date.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingProvisionOptionExerciseFixedDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingProvisionOptionExerciseFixedDateGrp.html">
+            
+                <b>UnderlyingProvisionOptionExerciseFixedDateGrp</b>
+            
+            </a>
+        </td>
+        <td>OptExerFixedDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42116.html">
+            
+                42116
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42116.html">
+            
+                UnderlyingProvisionOptionExerciseEarliestDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@ErlstOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseEarliestDateUnit(42117) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42117.html">
+            
+                42117
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42117.html">
+            
+                UnderlyingProvisionOptionExerciseEarliestDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@ErlstOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseEasrliestDatePeriod(42116) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42118.html">
+            
+                42118
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42118.html">
+            
+                UnderlyingProvisionOptionExerciseFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseFrequencyUnit(42119) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42119.html">
+            
+                42119
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42119.html">
+            
+                UnderlyingProvisionOptionExerciseFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseFrequencyPeriod(42118) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42120.html">
+            
+                42120
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42120.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@StartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42121.html">
+            
+                42121
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42121.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@StartDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42122.html">
+            
+                42122
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42122.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@StartDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseStartDateOffsetUnit(42123) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42123.html">
+            
+                42123
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42123.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@StartDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProvisionOptionExerciseStartDateOffsetPeriod(42122) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42124.html">
+            
+                42124
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42124.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@StartDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42125.html">
+            
+                42125
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42125.html">
+            
+                UnderlyingProvisionOptionExerciseStartDateAdjusted
+            
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42126.html">
+            
+                42126
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42126.html">
+            
+                UnderlyingProvisionOptionExercisePeriodSkip
+            
+            </a>
+        </td>
+        <td>@Skip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42127.html">
+            
+                42127
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42127.html">
+            
+                UnderlyingProvisionOptionExerciseBoundsFirstDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42128.html">
+            
+                42128
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42128.html">
+            
+                UnderlyingProvisionOptionExerciseBoundsLastDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42129.html">
+            
+                42129
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42129.html">
+            
+                UnderlyingProvisionOptionExerciseEarliestTime
+            
+            </a>
+        </td>
+        <td>@ErlstTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42130.html">
+            
+                42130
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42130.html">
+            
+                UnderlyingProvisionOptionExerciseEarliestTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@ErlstTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42131.html">
+            
+                42131
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42131.html">
+            
+                UnderlyingProvisionOptionExerciseLatestTime
+            
+            </a>
+        </td>
+        <td>@LtstTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42132.html">
+            
+                42132
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42132.html">
+            
+                UnderlyingProvisionOptionExerciseLatestTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@LtstTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

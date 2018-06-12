@@ -1,0 +1,355 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>RelatedInstrumentGrp [type 'Component']</h3>
+<p class="description">The RelatedInstrumentGrp is a repeating component at the same hierarchical level as the Instrument component, describing relationships and linkages between the Instrument, UnderlyingInstrument and InstrumentLeg entries. If all instances of the UnderlyingInstrument in the message are true underliers of the Instrument then the RelatedInstrumentGrp component is not needed. If any instance of the UnderlyingInstrument has a different relationship, e.g. underlier of an InstrumentLeg, stream, equity equivalent or nearest exchange-traded contract or there are multiple instances of InstrumentLeg, then an entry for every relationship should be included in this component. When the RelatedInstrumentGrp appears within a repeating group, each entry only apply to the Instrument component at the same hierarchical level.
+In messages, such as Email(35=C) and News(35=B), where Instrument and the InstrumentLeg are within their repeating groups, the RelatedInstrumentGrp component may be used to link legs and underliers to their appropriate base Instrument.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1647.html">
+            
+                1647
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1647.html">
+            
+                NoRelatedInstruments
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1648.html">
+            
+                1648
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1648.html">
+            
+                RelatedInstrumentType
+            
+            </a>
+        </td>
+        <td>@InstrmtTyp</td>
+        <td class="green center"></td>
+        <td>Conditionally required when NoRelatedInstruments &gt; 0</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1649.html">
+            
+                1649
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1649.html">
+            
+                RelatedSymbol
+            
+            </a>
+        </td>
+        <td>@Sym</td>
+        <td class="green center"></td>
+        <td>Either RelatedSymbol(1649) or RelatedSecurityID(1650) must be specified. 
+
+For RelatedInstrumentType(1648)=1 (&#34;hedges for&#34; instrument) this would be the instrument being used to offset the option Instrument. 
+
+If one of the &#34;related to&#34; fields is specified, this is the UnderlyingSymbol(311) of an underlying instrument defining the related security in the current message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1650.html">
+            
+                1650
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1650.html">
+            
+                RelatedSecurityID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Either RelatedSymbol(1649) or RelatedSecurityID(1650) must be specified. 
+
+If one of the &#34;related to&#34; fields is specified, this is the UnderlyingSecurityID(309) of an underlying instrument defining the related security in the current message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1651.html">
+            
+                1651
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1651.html">
+            
+                RelatedSecurityIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Conditionally required when RelatedSecurityID(1650) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1652.html">
+            
+                1652
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1652.html">
+            
+                RelatedSecurityType
+            
+            </a>
+        </td>
+        <td>@SecTyp</td>
+        <td class="green center"></td>
+        <td>May be omitted if RelatedSecurityID(1650) or RelatedSymbol(1649) refers to an underlying instrument in the current message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1653.html">
+            
+                1653
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1653.html">
+            
+                RelatedMaturityMonthYear
+            
+            </a>
+        </td>
+        <td>@MMY</td>
+        <td class="green center"></td>
+        <td>May be omitted if RelatedSecurityID(1650) or RelatedSymbol(1649) refers to an underlying instrument in the current message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2413.html">
+            
+                2413
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2413.html">
+            
+                RelatedToSecurityID
+            
+            </a>
+        </td>
+        <td>@ReltdID</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with RelatedToStreamXIDRef(2415) and RelatedToDividendPeriodXIDRef(2417). If correlation is with the security in Instrument component then all &#34;related to&#34; fields may be omitted.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2414.html">
+            
+                2414
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2414.html">
+            
+                RelatedToSecurityIDSource
+            
+            </a>
+        </td>
+        <td>@ReltdIDSrc</td>
+        <td class="green center"></td>
+        <td>Conditionally required when RelatedToSecurityID(2413) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2415.html">
+            
+                2415
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2415.html">
+            
+                RelatedToStreamXIDRef
+            
+            </a>
+        </td>
+        <td>@ReltdStrmXIDRef</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with RelatedToSecurityID(2413) and RelatedToDividendPeriodXIDRef(2417). If correlation is with the security in Instrument component then all &#34;related to&#34; fields may be omitted.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2417.html">
+            
+                2417
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2417.html">
+            
+                RelatedToDividendPeriodXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with RelatedToSecurityID(2413) and RelatedToStreamXIDRef(2415). If correlation is with the security in Instrument component then all &#34;related to&#34; fields may be omitted.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -1,0 +1,432 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>PartyActionRequest [type 'DH']</h3>
+<p class="description">The PartyActionRequest message is used suspend or halt the specified party from further trading activities at the Respondent.  The Respondent must respond with a PartyActionReport(35=DI) message.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType=DH</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2328.html">
+            
+                2328
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2328.html">
+            
+                PartyActionRequestID
+            
+            </a>
+        </td>
+        <td>@ActnReqID</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2329.html">
+            
+                2329
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2329.html">
+            
+                PartyActionType
+            
+            </a>
+        </td>
+        <td>@ActnTyp</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2330.html">
+            
+                2330
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2330.html">
+            
+                ApplTestMessageIndicator
+            
+            </a>
+        </td>
+        <td>@ApplTstMsgInd</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1301.html">
+            
+                1301
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1301.html">
+            
+                MarketID
+            
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td>Use to reduce the scope to a market</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            
+                1300
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            
+                MarketSegmentID
+            
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td>Use to reduce the scope to a market segment</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentScope.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentScope.html">
+            
+                <b>InstrumentScope</b>
+            
+            </a>
+        </td>
+        <td>InstrmtScope</td>
+        <td class="green center"></td>
+        <td>Use to reduce the scope of instruments</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RequestingPartyGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RequestingPartyGrp.html">
+            
+                <b>RequestingPartyGrp</b>
+            
+            </a>
+        </td>
+        <td>ReqPty</td>
+        <td class="green center"></td>
+        <td>May be used to identify the party making the request and their role.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            
+                <b>Parties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center">✔</td>
+        <td>Used to specify the trading party on which the action is applied to.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedPartyDetailGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedPartyDetailGrp.html">
+            
+                <b>RelatedPartyDetailGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdPtyDetl</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            
+                58
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            
+                Text
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            
+                354
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            
+                EncodedTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            
+                355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            
+                EncodedText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

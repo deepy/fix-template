@@ -1,0 +1,1335 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>PaymentScheduleGrp [type 'Component']</h3>
+<p class="description">The PaymentScheduleGrp is a repeating subcomponent of the StreamGrp component used to specify notional and rate steps of the payment stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40828.html">
+            
+                40828
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40828.html">
+            
+                NoPaymentSchedules
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40829.html">
+            
+                40829
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40829.html">
+            
+                PaymentScheduleType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoPaymentSchedules(40828) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41164.html">
+            
+                41164
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41164.html">
+            
+                PaymentScheduleXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41165.html">
+            
+                41165
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41165.html">
+            
+                PaymentScheduleXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40830.html">
+            
+                40830
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40830.html">
+            
+                PaymentScheduleStubType
+            
+            </a>
+        </td>
+        <td>@StubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40831.html">
+            
+                40831
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40831.html">
+            
+                PaymentScheduleStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@StartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40832.html">
+            
+                40832
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40832.html">
+            
+                PaymentScheduleEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@EndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40833.html">
+            
+                40833
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40833.html">
+            
+                PaymentSchedulePaySide
+            
+            </a>
+        </td>
+        <td>@PaySide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40834.html">
+            
+                40834
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40834.html">
+            
+                PaymentScheduleReceiveSide
+            
+            </a>
+        </td>
+        <td>@RcvSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40835.html">
+            
+                40835
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40835.html">
+            
+                PaymentScheduleNotional
+            
+            </a>
+        </td>
+        <td>@Notl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40836.html">
+            
+                40836
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40836.html">
+            
+                PaymentScheduleCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40837.html">
+            
+                40837
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40837.html">
+            
+                PaymentScheduleRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40838.html">
+            
+                40838
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40838.html">
+            
+                PaymentScheduleRateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40839.html">
+            
+                40839
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40839.html">
+            
+                PaymentScheduleRateSpread
+            
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41166.html">
+            
+                41166
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41166.html">
+            
+                PaymentScheduleRateCurrency
+            
+            </a>
+        </td>
+        <td>@RtCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41167.html">
+            
+                41167
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41167.html">
+            
+                PaymentScheduleRateUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@RtUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41168.html">
+            
+                41168
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41168.html">
+            
+                PaymentScheduleRateConversionFactor
+            
+            </a>
+        </td>
+        <td>@RtFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41169.html">
+            
+                41169
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41169.html">
+            
+                PaymentScheduleRateSpreadType
+            
+            </a>
+        </td>
+        <td>@SpreadTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40840.html">
+            
+                40840
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40840.html">
+            
+                PaymentScheduleRateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@SpreadPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40841.html">
+            
+                40841
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40841.html">
+            
+                PaymentScheduleRateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40842.html">
+            
+                40842
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40842.html">
+            
+                PaymentScheduleFixedAmount
+            
+            </a>
+        </td>
+        <td>@FixedAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40843.html">
+            
+                40843
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40843.html">
+            
+                PaymentScheduleFixedCurrency
+            
+            </a>
+        </td>
+        <td>@FixedCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41170.html">
+            
+                41170
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41170.html">
+            
+                PaymentScheduleSettlPeriodPrice
+            
+            </a>
+        </td>
+        <td>@SettlPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41171.html">
+            
+                41171
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41171.html">
+            
+                PaymentScheduleSettlPeriodPriceCurrency
+            
+            </a>
+        </td>
+        <td>@SettlPxCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41172.html">
+            
+                41172
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41172.html">
+            
+                PaymentScheduleSettlPeriodPriceUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@SettlPxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41173.html">
+            
+                41173
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41173.html">
+            
+                PaymentScheduleStepUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@StepUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40844.html">
+            
+                40844
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40844.html">
+            
+                PaymentScheduleStepFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@StepPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleStepFrequencyUnit(40845) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40845.html">
+            
+                40845
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40845.html">
+            
+                PaymentScheduleStepFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@StepUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleStepFrequencyPeriod(40844) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40846.html">
+            
+                40846
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40846.html">
+            
+                PaymentScheduleStepOffsetValue
+            
+            </a>
+        </td>
+        <td>@StepVal</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40847.html">
+            
+                40847
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40847.html">
+            
+                PaymentScheduleStepRate
+            
+            </a>
+        </td>
+        <td>@StepRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40848.html">
+            
+                40848
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40848.html">
+            
+                PaymentScheduleStepOffsetRate
+            
+            </a>
+        </td>
+        <td>@StepOfstRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40849.html">
+            
+                40849
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40849.html">
+            
+                PaymentScheduleStepRelativeTo
+            
+            </a>
+        </td>
+        <td>@StepReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentScheduleRateSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentScheduleRateSourceGrp.html">
+            
+                <b>PaymentScheduleRateSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40850.html">
+            
+                40850
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40850.html">
+            
+                PaymentScheduleFixingDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FixngDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40851.html">
+            
+                40851
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40851.html">
+            
+                PaymentScheduleWeight
+            
+            </a>
+        </td>
+        <td>@Wt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40852.html">
+            
+                40852
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40852.html">
+            
+                PaymentScheduleFixingDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@FixngReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40853.html">
+            
+                40853
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40853.html">
+            
+                PaymentScheduleFixingDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@FixngBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument.  The specified value would be specific to this instance of the payment schedule.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentScheduleFixingDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentScheduleFixingDateBusinessCenterGrp.html">
+            
+                <b>PaymentScheduleFixingDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>FixngBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument.  The specified values would be specific to this instance of the payment schedule.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40855.html">
+            
+                40855
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40855.html">
+            
+                PaymentScheduleFixingDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@FixngPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingDateOffsetUnit(40856) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40856.html">
+            
+                40856
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40856.html">
+            
+                PaymentScheduleFixingDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@FixngUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingDateOffsetPeriod(40855) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40857.html">
+            
+                40857
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40857.html">
+            
+                PaymentScheduleFixingDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@FixngDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41174.html">
+            
+                41174
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41174.html">
+            
+                PaymentScheduleFixingDayDistribution
+            
+            </a>
+        </td>
+        <td>@FixngDayDistrib</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41175.html">
+            
+                41175
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41175.html">
+            
+                PaymentScheduleFixingDayCount
+            
+            </a>
+        </td>
+        <td>@FixngDayCnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40858.html">
+            
+                40858
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40858.html">
+            
+                PaymentScheduleFixingDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FixngDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentScheduleFixingDayGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentScheduleFixingDayGrp.html">
+            
+                <b>PaymentScheduleFixingDayGrp</b>
+            
+            </a>
+        </td>
+        <td>FixngDay</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41176.html">
+            
+                41176
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41176.html">
+            
+                PaymentScheduleFixingLagPeriod
+            
+            </a>
+        </td>
+        <td>@FixngLagPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingLagUnit(41177) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41177.html">
+            
+                41177
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41177.html">
+            
+                PaymentScheduleFixingLagUnit
+            
+            </a>
+        </td>
+        <td>@FixngLagUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingLagPeriod(41176) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41178.html">
+            
+                41178
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41178.html">
+            
+                PaymentScheduleFixingFirstObservationDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@FixngFirstObsvtnPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingFirstObservationDateOffsetUnit(41179) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41179.html">
+            
+                41179
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41179.html">
+            
+                PaymentScheduleFixingFirstObservationDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@FixngFirstObsvtnUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleFixingFirstObservationDateOffsetPeriod(41178) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40859.html">
+            
+                40859
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40859.html">
+            
+                PaymentScheduleFixingTime
+            
+            </a>
+        </td>
+        <td>@FixngTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40860.html">
+            
+                40860
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40860.html">
+            
+                PaymentScheduleFixingTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@FixngTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40861.html">
+            
+                40861
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40861.html">
+            
+                PaymentScheduleInterimExchangePaymentDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@IntrmExchDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40862.html">
+            
+                40862
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40862.html">
+            
+                PaymentScheduleInterimExchangeDatesBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@IntrmExchDtBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument.  The specified value would be specific to this instance of the payment schedule.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentScheduleInterimExchangeDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentScheduleInterimExchangeDateBusinessCenterGrp.html">
+            
+                <b>PaymentScheduleInterimExchangeDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>IntrmExchDtBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument.  The specified values would be specific to this instance of the payment schedule.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40864.html">
+            
+                40864
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40864.html">
+            
+                PaymentScheduleInterimExchangeDatesOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@IntrmExchDtPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleInterimExchangeDatesOffsetUnit(40865) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40865.html">
+            
+                40865
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40865.html">
+            
+                PaymentScheduleInterimExchangeDatesOffsetUnit
+            
+            </a>
+        </td>
+        <td>@IntrmExchDtUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PaymentScheduleInterimExchangeDatesOffsetPeriod(40864) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40866.html">
+            
+                40866
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40866.html">
+            
+                PaymentScheduleInterimExchangeDatesOffsetDayType
+            
+            </a>
+        </td>
+        <td>@IntrmExchDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40867.html">
+            
+                40867
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40867.html">
+            
+                PaymentScheduleInterimExchangeDateAdjusted
+            
+            </a>
+        </td>
+        <td>@IntrmExchDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

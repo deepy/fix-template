@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>NotAffOrigClOrdID [type '1372']</h3>
-<p class="description">ClOrdID(11) of the previous order (NOT the initial order of the day) as assigned by the institution, used to identify the previous order in cancel and cancel/replace requests.</p>
+<p class="description">ClOrdID(11) of an order not affected by a mass cancel or mass action request.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1372.html">
-            1372
+            
             </a>
         </td>
         <td>
@@ -114,9 +114,9 @@
             NotAffOrigClOrdID
             </a>
         </td>
-        <td>NotAffOrigClOrdID</td>
+        <td>OrigClOrdID</td>
         <td>
-            ClOrdID(11) of the previous order (NOT the initial order of the day) as assigned by the institution, used to identify the previous order in cancel and cancel/replace requests.
+            ClOrdID(11) of an order not affected by a mass cancel or mass action request.
             
         </td>
         <td class="green"></td>
@@ -128,7 +128,7 @@
     <p>Used in components:</p>
     <p>
     
-        [<a href="../components/NotAffectedOrdersGrp.html">NotAffectedOrdersGrp]</a>
+        [<a href="../components/NotAffectedOrdGrp.html">NotAffectedOrdGrp]</a>
     
     </p>
     <hr />

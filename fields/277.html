@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradeCondition [type '277']</h3>
-<p class="description">Space-delimited list of conditions describing a trade</p>
+<p class="description">Type of market data entry.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/277.html">
-            277
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>TrdCond</td>
         <td>
-            Space-delimited list of conditions describing a trade
+            Type of market data entry.
             
             <table>
             
@@ -555,7 +555,7 @@
             <tr>
                 <td>AV</td>
                 <td>=</td>
-                <td>OutsideSpread</td>
+                <td>QuoteSpread</td>
             </tr>
             
             <tr>
@@ -573,13 +573,85 @@
             <tr>
                 <td>3</td>
                 <td>=</td>
-                <td>MultAssetClassMultilegTrade</td>
+                <td>MultiAssetClassMultilegTrade</td>
             </tr>
             
             <tr>
                 <td>4</td>
                 <td>=</td>
                 <td>MultilegToMultilegTrade</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>ShortSaleMinPrice</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>Benchmark</td>
+            </tr>
+            
+            <tr>
+                <td>AU</td>
+                <td>=</td>
+                <td>TradeThroughExempt</td>
+            </tr>
+            
+            <tr>
+                <td>AW</td>
+                <td>=</td>
+                <td>LastAuctionPrice</td>
+            </tr>
+            
+            <tr>
+                <td>AX</td>
+                <td>=</td>
+                <td>HighPrice</td>
+            </tr>
+            
+            <tr>
+                <td>AY</td>
+                <td>=</td>
+                <td>LowPrice</td>
+            </tr>
+            
+            <tr>
+                <td>AZ</td>
+                <td>=</td>
+                <td>SystematicInternaliser</td>
+            </tr>
+            
+            <tr>
+                <td>BA</td>
+                <td>=</td>
+                <td>AwayMarket</td>
+            </tr>
+            
+            <tr>
+                <td>BB</td>
+                <td>=</td>
+                <td>MidpointPrice</td>
+            </tr>
+            
+            <tr>
+                <td>BC</td>
+                <td>=</td>
+                <td>TradedBeforeIssueDate</td>
+            </tr>
+            
+            <tr>
+                <td>BD</td>
+                <td>=</td>
+                <td>PreviousClosingPrice</td>
+            </tr>
+            
+            <tr>
+                <td>BE</td>
+                <td>=</td>
+                <td>NationalBestBidOffer</td>
             </tr>
             
             </table>
@@ -597,6 +669,8 @@
         [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
     
         [<a href="../components/MDIncGrp.html">MDIncGrp]</a>
+    
+        [<a href="../components/MDStatisticParameters.html">MDStatisticParameters]</a>
     
     </p>
     <hr />

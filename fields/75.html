@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradeDate [type '75']</h3>
-<p class="description">Indicates date of trade referenced in this message in YYYYMMDD format. Absence of this field indicates current day (expressed in local time at place of trade).</p>
+<p class="description">Indicates date of trading day. Absence of this field indicates current day (expressed in local time at place of trade).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/75.html">
-            75
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>TrdDt</td>
         <td>
-            Indicates date of trade referenced in this message in YYYYMMDD format. Absence of this field indicates current day (expressed in local time at place of trade).
+            Indicates date of trading day. Absence of this field indicates current day (expressed in local time at place of trade).
             
         </td>
         <td class="green"></td>
@@ -150,11 +150,19 @@
     
         [<a href="../messages/BM.html">AllocationInstructionAlert]</a>
     
+        [<a href="../messages/DU.html">AllocationInstructionAlertRequest]</a>
+    
         [<a href="../messages/AS.html">AllocationReport]</a>
     
         [<a href="../messages/AT.html">AllocationReportAck]</a>
     
         [<a href="../messages/k.html">BidRequest]</a>
+    
+        [<a href="../messages/AY.html">CollateralAssignment]</a>
+    
+        [<a href="../messages/BA.html">CollateralReport]</a>
+    
+        [<a href="../messages/AZ.html">CollateralResponse]</a>
     
         [<a href="../messages/AK.html">Confirmation]</a>
     
@@ -168,6 +176,10 @@
     
         [<a href="../messages/W.html">MarketDataSnapshotFullRefresh]</a>
     
+        [<a href="../messages/DP.html">MarketDataStatisticsReport]</a>
+    
+        [<a href="../messages/DO.html">MarketDataStatisticsRequest]</a>
+    
         [<a href="../messages/AC.html">MultilegOrderCancelReplace]</a>
     
         [<a href="../messages/AB.html">NewOrderMultileg]</a>
@@ -178,9 +190,21 @@
     
         [<a href="../messages/G.html">OrderCancelReplaceRequest]</a>
     
+        [<a href="../messages/DL.html">PositionTransferInstruction]</a>
+    
+        [<a href="../messages/DN.html">PositionTransferReport]</a>
+    
+        [<a href="../messages/CO.html">SecurityMassStatus]</a>
+    
+        [<a href="../messages/f.html">SecurityStatus]</a>
+    
         [<a href="../messages/AE.html">TradeCaptureReport]</a>
     
         [<a href="../messages/AR.html">TradeCaptureReportAck]</a>
+    
+        [<a href="../messages/DC.html">TradeMatchReport]</a>
+    
+        [<a href="../messages/h.html">TradingSessionStatus]</a>
     
     </p>
     <hr />

@@ -1,0 +1,621 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingPaymentStreamResetDates [type 'Component']</h3>
+<p class="description">UnderlyingPaymentStreamResetDates is a subcomponent of the UnderlyingPaymentStream component used to specify the floating rate reset dates of the stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40592.html">
+            
+                40592
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40592.html">
+            
+                UnderlyingPaymentStreamResetDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40593.html">
+            
+                40593
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40593.html">
+            
+                UnderlyingPaymentStreamResetDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified value would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamResetDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamResetDateBusinessCenterGrp.html">
+            
+                <b>UnderlyingPaymentStreamResetDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified values would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40595.html">
+            
+                40595
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40595.html">
+            
+                UnderlyingPaymentStreamResetFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamResetFrequencyUnit(40596) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40596.html">
+            
+                40596
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40596.html">
+            
+                UnderlyingPaymentStreamResetFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamResetFrequencyPeriod(40595) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40597.html">
+            
+                40597
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40597.html">
+            
+                UnderlyingPaymentStreamResetWeeklyRollConvention
+            
+            </a>
+        </td>
+        <td>@WklyRoll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified values would be specific to this instance of the reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40598.html">
+            
+                40598
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40598.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@InitReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40599.html">
+            
+                40599
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40599.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@InitBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified value would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamInitialFixingDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamInitialFixingDateBusinessCenterGrp.html">
+            
+                <b>UnderlyingPaymentStreamInitialFixingDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>InitBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified values would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40601.html">
+            
+                40601
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40601.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@InitPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamInitialFixingDateOffsetUnit(40602) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40602.html">
+            
+                40602
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40602.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@InitUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamInitialFixingDateOffsetPeriod(40601) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40603.html">
+            
+                40603
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40603.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@InitDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40604.html">
+            
+                40604
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40604.html">
+            
+                UnderlyingPaymentStreamInitialFixingDateAdjusted
+            
+            </a>
+        </td>
+        <td>@InitDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40605.html">
+            
+                40605
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40605.html">
+            
+                UnderlyingPaymentStreamFixingDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@FixngReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40606.html">
+            
+                40606
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40606.html">
+            
+                UnderlyingPaymentStreamFixingDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@FixngBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified value would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamFixingDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamFixingDateBusinessCenterGrp.html">
+            
+                <b>UnderlyingPaymentStreamFixingDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>FixngBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified values would be specific to this instance of the underlying instrument&#39;s payment stream&#39;s reset dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40608.html">
+            
+                40608
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40608.html">
+            
+                UnderlyingPaymentStreamFixingDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@FixngPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamFixingDateOffsetUnit(40609) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40609.html">
+            
+                40609
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40609.html">
+            
+                UnderlyingPaymentStreamFixingDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@FixngUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamFixingDateOffsetPeriod(40608) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40610.html">
+            
+                40610
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40610.html">
+            
+                UnderlyingPaymentStreamFixingDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@FixngDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40611.html">
+            
+                40611
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40611.html">
+            
+                UnderlyingPaymentStreamFixingDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FixngDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40612.html">
+            
+                40612
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40612.html">
+            
+                UnderlyingPaymentStreamRateCutoffDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@CutoffPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateCutoffDateOffsetUnit(40613) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40613.html">
+            
+                40613
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40613.html">
+            
+                UnderlyingPaymentStreamRateCutoffDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@CutoffUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateCutoffDateOffsetPeriod(40612) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40614.html">
+            
+                40614
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40614.html">
+            
+                UnderlyingPaymentStreamRateCutoffDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@CutoffDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamFixingDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamFixingDateGrp.html">
+            
+                <b>UnderlyingPaymentStreamFixingDateGrp</b>
+            
+            </a>
+        </td>
+        <td>FixngDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

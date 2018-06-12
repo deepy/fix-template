@@ -1,0 +1,516 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>AdditionalTermBondRefGrp [type 'Component']</h3>
+<p class="description">The AdditionalTermBondRefGrp is a repeating group subcomponent of the AdditionalTermGrp component used to identify an underlying reference bond for a swap.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40000.html">
+            
+                40000
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40000.html">
+            
+                NoAdditionalTermBondRefs
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40001.html">
+            
+                40001
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40001.html">
+            
+                AdditionalTermBondSecurityID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Required if NoAdditionalTermBondRefs(40000) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40002.html">
+            
+                40002
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40002.html">
+            
+                AdditionalTermBondSecurityIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Conditionally required when AdditionalTermBondSecurityID(40001) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40003.html">
+            
+                40003
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40003.html">
+            
+                AdditionalTermBondDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40004.html">
+            
+                40004
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40004.html">
+            
+                EncodedAdditionalTermBondDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedAdditionalTermBondDesc(40005) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40005.html">
+            
+                40005
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40005.html">
+            
+                EncodedAdditionalTermBondDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the AdditionalTermBondDesc(40003) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40006.html">
+            
+                40006
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40006.html">
+            
+                AdditionalTermBondCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40007.html">
+            
+                40007
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40007.html">
+            
+                AdditionalTermBondIssuer
+            
+            </a>
+        </td>
+        <td>@Issr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40008.html">
+            
+                40008
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40008.html">
+            
+                EncodedAdditionalTermBondIssuerLen
+            
+            </a>
+        </td>
+        <td>@EncIssrLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedAdditionalTermBondIssuer(40009) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40009.html">
+            
+                40009
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40009.html">
+            
+                EncodedAdditionalTermBondIssuer
+            
+            </a>
+        </td>
+        <td>@EncIssr</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the AdditionalTermBondIssuer(40007) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40010.html">
+            
+                40010
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40010.html">
+            
+                AdditionalTermBondSeniority
+            
+            </a>
+        </td>
+        <td>@Snrty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40011.html">
+            
+                40011
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40011.html">
+            
+                AdditionalTermBondCouponType
+            
+            </a>
+        </td>
+        <td>@CpnTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40012.html">
+            
+                40012
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40012.html">
+            
+                AdditionalTermBondCouponRate
+            
+            </a>
+        </td>
+        <td>@CpnRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40013.html">
+            
+                40013
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40013.html">
+            
+                AdditionalTermBondMaturityDate
+            
+            </a>
+        </td>
+        <td>@MatDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40014.html">
+            
+                40014
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40014.html">
+            
+                AdditionalTermBondParValue
+            
+            </a>
+        </td>
+        <td>@Par</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40015.html">
+            
+                40015
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40015.html">
+            
+                AdditionalTermBondCurrentTotalIssuedAmount
+            
+            </a>
+        </td>
+        <td>@CurTotAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40016.html">
+            
+                40016
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40016.html">
+            
+                AdditionalTermBondCouponFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@CpnPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when AdditionalTermBondCouponFrequencyUnit(40017) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40017.html">
+            
+                40017
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40017.html">
+            
+                AdditionalTermBondCouponFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@CpnUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when AdditionalTermBondCouponFrequencyPeriod(40016) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40018.html">
+            
+                40018
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40018.html">
+            
+                AdditionalTermBondDayCount
+            
+            </a>
+        </td>
+        <td>@DayCnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

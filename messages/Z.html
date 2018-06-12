@@ -113,12 +113,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -130,12 +134,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/131.html">
-            131
+            
+                131
+            
             </a>
         </td>
         <td>
             <a href="../fields/131.html">
-            QuoteReqID
+            
+                QuoteReqID
+            
             </a>
         </td>
         <td>@ReqID</td>
@@ -147,29 +155,58 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/117.html">
-            117
+            
+                117
+            
             </a>
         </td>
         <td>
             <a href="../fields/117.html">
-            QuoteID
+            
+                QuoteID
+            
             </a>
         </td>
         <td>@QID</td>
         <td class="green center"></td>
-        <td>Conditionally required when QuoteCancelType(298) = 5 (cancel quote specified in QuoteID). Maps to QuoteID(117) of a single Quote(MsgType=S) or QuoteEntryID(299) of a MassQuote(MsgType=i).</td>
+        <td>Conditionally required when QuoteCancelType(298) = 5 (Cancel specified single quote) and SecondarlyQuoteID(1751) is not specified. Maps to QuoteID(117) of a single Quote(35=S) or QuoteEntryID(299) of a MassQuote(35=i)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1751.html">
+            
+                1751
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1751.html">
+            
+                SecondaryQuoteID
+            
+            </a>
+        </td>
+        <td>@QID2</td>
+        <td class="green center"></td>
+        <td>Conditionally required when QuoteCancelType(298) = 5 (Cancel specific single quote) and QuoteID(117) is not specified.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1166.html">
-            1166
+            
+                1166
+            
             </a>
         </td>
         <td>
             <a href="../fields/1166.html">
-            QuoteMsgID
+            
+                QuoteMsgID
+            
             </a>
         </td>
         <td>@QtMsgID</td>
@@ -181,12 +218,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/298.html">
-            298
+            
+                298
+            
             </a>
         </td>
         <td>
             <a href="../fields/298.html">
-            QuoteCancelType
+            
+                QuoteCancelType
+            
             </a>
         </td>
         <td>@CxlTyp</td>
@@ -198,29 +239,37 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/537.html">
-            537
+            
+                537
+            
             </a>
         </td>
         <td>
             <a href="../fields/537.html">
-            QuoteType
+            
+                QuoteType
+            
             </a>
         </td>
         <td>@Typ</td>
         <td class="green center"></td>
-        <td>Conditional Required when QuoteCancelType(298)=6[Cancel by QuoteType]</td>
+        <td>Conditionally required when QuoteCancelType(298)=6(Cancel by type of quote).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/301.html">
-            301
+            
+                301
+            
             </a>
         </td>
         <td>
             <a href="../fields/301.html">
-            QuoteResponseLevel
+            
+                QuoteResponseLevel
+            
             </a>
         </td>
         <td>@RspLvl</td>
@@ -232,12 +281,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -249,12 +302,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../components/TargetParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TargetParties.html">
-            <b>TargetParties</b>
+            
+                <b>TargetParties</b>
+            
             </a>
         </td>
         <td>TgtPty</td>
@@ -266,12 +323,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/1.html">
-            1
+            
+                1
+            
             </a>
         </td>
         <td>
             <a href="../fields/1.html">
-            Account
+            
+                Account
+            
             </a>
         </td>
         <td>@Acct</td>
@@ -283,12 +344,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/660.html">
-            660
+            
+                660
+            
             </a>
         </td>
         <td>
             <a href="../fields/660.html">
-            AcctIDSource
+            
+                AcctIDSource
+            
             </a>
         </td>
         <td>@AcctIDSrc</td>
@@ -300,12 +365,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/581.html">
-            581
+            
+                581
+            
             </a>
         </td>
         <td>
             <a href="../fields/581.html">
-            AccountType
+            
+                AccountType
+            
             </a>
         </td>
         <td>@AcctTyp</td>
@@ -317,12 +386,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
+                336
+            
             </a>
         </td>
         <td>
             <a href="../fields/336.html">
-            TradingSessionID
+            
+                TradingSessionID
+            
             </a>
         </td>
         <td>@SesID</td>
@@ -334,12 +407,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../fields/625.html">
-            625
+            
+                625
+            
             </a>
         </td>
         <td>
             <a href="../fields/625.html">
-            TradingSessionSubID
+            
+                TradingSessionSubID
+            
             </a>
         </td>
         <td>@SesSub</td>
@@ -351,12 +428,16 @@ The Quote Cancel message supports cancellation of:
     <tr>
         <td class="green">
             <a href="../components/QuotCxlEntriesGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/QuotCxlEntriesGrp.html">
-            <b>QuotCxlEntriesGrp</b>
+            
+                <b>QuotCxlEntriesGrp</b>
+            
             </a>
         </td>
         <td>QuotCxlEntry</td>
@@ -369,12 +450,16 @@ Not required when cancelling all quotes.</td>
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

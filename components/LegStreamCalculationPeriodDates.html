@@ -1,0 +1,495 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegStreamCalculationPeriodDates [type 'Component']</h3>
+<p class="description">LegStreamCalculationPeriodDates is a subcomponent of the LegStreamGrp component used to specify the calculation period dates of the stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41641.html">
+            
+                41641
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41641.html">
+            
+                LegStreamCalculationPeriodDatesXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41642.html">
+            
+                41642
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41642.html">
+            
+                LegStreamCalculationPeriodDatesXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40265.html">
+            
+                40265
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40265.html">
+            
+                LegStreamCalculationPeriodBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to this instance of the leg stream calculation period dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamCalculationPeriodBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamCalculationPeriodBusinessCenterGrp.html">
+            
+                <b>LegStreamCalculationPeriodBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to this instance of the leg stream calculation period dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamCalculationPeriodDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamCalculationPeriodDateGrp.html">
+            
+                <b>LegStreamCalculationPeriodDateGrp</b>
+            
+            </a>
+        </td>
+        <td>CalcDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40267.html">
+            
+                40267
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40267.html">
+            
+                LegStreamFirstPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstStartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40268.html">
+            
+                40268
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40268.html">
+            
+                LegStreamFirstPeriodStartDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@FirstStartDtBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to this instance of the leg stream calculation period dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamFirstPeriodStartDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamFirstPeriodStartDateBusinessCenterGrp.html">
+            
+                <b>LegStreamFirstPeriodStartDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>FirstStartDtBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to this instance of the leg stream calculation period dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40270.html">
+            
+                40270
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40270.html">
+            
+                LegStreamFirstPeriodStartDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FirstStartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40271.html">
+            
+                40271
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40271.html">
+            
+                LegStreamFirstRegularPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstReglrStartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40272.html">
+            
+                40272
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40272.html">
+            
+                LegStreamFirstCompoundingPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstCmpndgEndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40273.html">
+            
+                40273
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40273.html">
+            
+                LegStreamLastRegularPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastReglrEndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40274.html">
+            
+                40274
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40274.html">
+            
+                LegStreamCalculationFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCalculationFrequencyUnit(40275) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40275.html">
+            
+                40275
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40275.html">
+            
+                LegStreamCalculationFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCalculationFrequencyPeriod(40274) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40276.html">
+            
+                40276
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40276.html">
+            
+                LegStreamCalculationRollConvention
+            
+            </a>
+        </td>
+        <td>@Roll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the LegDateAdjustment component in InstrumentLeg. The specified values would be specific to this instance of the stream calculation period dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41643.html">
+            
+                41643
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41643.html">
+            
+                LegStreamCalculationBalanceOfFirstPeriod
+            
+            </a>
+        </td>
+        <td>@BalFirst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41644.html">
+            
+                41644
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41644.html">
+            
+                LegStreamCalculationCorrectionPeriod
+            
+            </a>
+        </td>
+        <td>@CrrctnPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCalculationCorrectionUnit(41645) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41645.html">
+            
+                41645
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41645.html">
+            
+                LegStreamCalculationCorrectionUnit
+            
+            </a>
+        </td>
+        <td>@CrrctnUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCalculationCorrectionPeriod(41644) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

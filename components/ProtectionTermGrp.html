@@ -1,0 +1,369 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>ProtectionTermGrp [type 'Component']</h3>
+<p class="description">The ProtectionTermGrp is a repeating component within the Instrument component used to report protection term details referenced from UnderlyingInstrument component.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40181.html">
+            
+                40181
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40181.html">
+            
+                NoProtectionTerms
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40182.html">
+            
+                40182
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40182.html">
+            
+                ProtectionTermNotional
+            
+            </a>
+        </td>
+        <td>@Notl</td>
+        <td class="green center"></td>
+        <td>Required if NoProtectionTerms(40181) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40183.html">
+            
+                40183
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40183.html">
+            
+                ProtectionTermCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40184.html">
+            
+                40184
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40184.html">
+            
+                ProtectionTermSellerNotifies
+            
+            </a>
+        </td>
+        <td>@Seller</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40185.html">
+            
+                40185
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40185.html">
+            
+                ProtectionTermBuyerNotifies
+            
+            </a>
+        </td>
+        <td>@Buyer</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40186.html">
+            
+                40186
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40186.html">
+            
+                ProtectionTermEventBusinessCenter
+            
+            </a>
+        </td>
+        <td>@BizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40187.html">
+            
+                40187
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40187.html">
+            
+                ProtectionTermStandardSources
+            
+            </a>
+        </td>
+        <td>@StdSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40188.html">
+            
+                40188
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40188.html">
+            
+                ProtectionTermEventMinimumSources
+            
+            </a>
+        </td>
+        <td>@MinSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ProtectionTermEventNewsSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ProtectionTermEventNewsSourceGrp.html">
+            
+                <b>ProtectionTermEventNewsSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>NewsSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ProtectionTermEventGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ProtectionTermEventGrp.html">
+            
+                <b>ProtectionTermEventGrp</b>
+            
+            </a>
+        </td>
+        <td>Evnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ProtectionTermObligationGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ProtectionTermObligationGrp.html">
+            
+                <b>ProtectionTermObligationGrp</b>
+            
+            </a>
+        </td>
+        <td>Oblig</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40190.html">
+            
+                40190
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40190.html">
+            
+                ProtectionTermXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

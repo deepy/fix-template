@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>BaseTradingRules [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">Trading rules that are applicable to a market, market segment or individual security independent of a trading session.</p>
 
 <table>
 <tr>
@@ -108,29 +108,37 @@
     <tr>
         <td class="green">
             <a href="../components/TickRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TickRules.html">
-            <b>TickRules</b>
+            
+                <b>TickRules</b>
+            
             </a>
         </td>
         <td>TickRules</td>
         <td class="green center"></td>
-        <td>This block specifies the rules for determining how a security ticks, i.e. the price increments at which it can be quoted and traded, depending on the current price of the security</td>
+        <td>Specifies price tick rules for the security.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/LotTypeRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/LotTypeRules.html">
-            <b>LotTypeRules</b>
+            
+                <b>LotTypeRules</b>
+            
             </a>
         </td>
         <td>LotTypeRules</td>
@@ -142,12 +150,16 @@
     <tr>
         <td class="green">
             <a href="../components/PriceLimits.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PriceLimits.html">
-            <b>PriceLimits</b>
+            
+                <b>PriceLimits</b>
+            
             </a>
         </td>
         <td>PxLmts</td>
@@ -158,13 +170,59 @@
 
     <tr>
         <td class="green">
+            <a href="../components/PriceRangeRuleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PriceRangeRuleGrp.html">
+            
+                <b>PriceRangeRuleGrp</b>
+            
+            </a>
+        </td>
+        <td>PxRngRule</td>
+        <td class="green center"></td>
+        <td>Specifies the valid price range tables for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/QuoteSizeRuleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/QuoteSizeRuleGrp.html">
+            
+                <b>QuoteSizeRuleGrp</b>
+            
+            </a>
+        </td>
+        <td>QteSzRule</td>
+        <td class="green center"></td>
+        <td>Specifies the valid quote sizes for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/827.html">
-            827
+            
+                827
+            
             </a>
         </td>
         <td>
             <a href="../fields/827.html">
-            ExpirationCycle
+            
+                ExpirationCycle
+            
             </a>
         </td>
         <td>@ExpirationCycle</td>
@@ -175,64 +233,101 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1786.html">
+            
+                1786
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1786.html">
+            
+                TradeVolType
+            
+            </a>
+        </td>
+        <td>@TrdVolTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/562.html">
-            562
+            
+                562
+            
             </a>
         </td>
         <td>
             <a href="../fields/562.html">
-            MinTradeVol
+            
+                MinTradeVol
+            
             </a>
         </td>
         <td>@MinTrdVol</td>
         <td class="green center"></td>
-        <td>The minimum order quantity that can be submitted for an order.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1140.html">
-            1140
+            
+                1140
+            
             </a>
         </td>
         <td>
             <a href="../fields/1140.html">
-            MaxTradeVol
+            
+                MaxTradeVol
+            
             </a>
         </td>
         <td>@MaxTrdVol</td>
         <td class="green center"></td>
-        <td>The maximum order quantity that can be submitted for a security. For listed derivatives this indicates the minimum quantity necessary for an order or trade to qualify as a block trade</td>
+        <td>For listed derivatives this indicates the minimum quantity necessary for an order or trade to qualify as a block trade.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1143.html">
-            1143
+            
+                1143
+            
             </a>
         </td>
         <td>
             <a href="../fields/1143.html">
-            MaxPriceVariation
+            
+                MaxPriceVariation
+            
             </a>
         </td>
         <td>@MxPxVar</td>
         <td class="green center"></td>
-        <td>The maximum price variation of an execution from one event to the next for a given security. Expressed in absolute price terms.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1144.html">
-            1144
+            
+                1144
+            
             </a>
         </td>
         <td>
             <a href="../fields/1144.html">
-            ImpliedMarketIndicator
+            
+                ImpliedMarketIndicator
+            
             </a>
         </td>
         <td>@ImpldMktInd</td>
@@ -244,85 +339,147 @@
     <tr>
         <td class="green">
             <a href="../fields/1245.html">
-            1245
+            
+                1245
+            
             </a>
         </td>
         <td>
             <a href="../fields/1245.html">
-            TradingCurrency
+            
+                TradingCurrency
+            
             </a>
         </td>
         <td>@TrdCcy</td>
         <td class="green center"></td>
-        <td>Used when the trading currency can differ from the price currency</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/561.html">
-            561
+            
+                561
+            
             </a>
         </td>
         <td>
             <a href="../fields/561.html">
-            RoundLot
+            
+                RoundLot
+            
             </a>
         </td>
         <td>@RndLot</td>
         <td class="green center"></td>
-        <td>Trading lot size of security</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1377.html">
-            1377
+            
+                1377
+            
             </a>
         </td>
         <td>
             <a href="../fields/1377.html">
-            MultilegModel
+            
+                MultilegModel
+            
             </a>
         </td>
         <td>@MlegModel</td>
         <td class="green center"></td>
-        <td>Used for multileg security only. Defines whether the security is pre-defined or user-defined. Not that value = 2 (User-defined, Non-Securitized, Multileg) does not apply for Securities.</td>
+        <td>Used for multileg security only. </td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1378.html">
-            1378
+            
+                1378
+            
             </a>
         </td>
         <td>
             <a href="../fields/1378.html">
-            MultilegPriceMethod
+            
+                MultilegPriceMethod
+            
             </a>
         </td>
         <td>@MlegPxMeth</td>
         <td class="green center"></td>
-        <td>Used for multileg security only. Defines the method used when applying the multileg price to the legs.</td>
+        <td>Used for multileg security only. </td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/423.html">
-            423
+            
+                423
+            
             </a>
         </td>
         <td>
             <a href="../fields/423.html">
-            PriceType
+            
+                PriceType
+            
             </a>
         </td>
         <td>@PxTyp</td>
         <td class="green center"></td>
-        <td>Defines the default Price Type used for trading.</td>
+        <td>Defines the default price type used for trading.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2557.html">
+            
+                2557
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2557.html">
+            
+                FastMarketPercentage
+            
+            </a>
+        </td>
+        <td>@FastMktPctage</td>
+        <td class="green center"></td>
+        <td>Can be used as a factor to be applied to other base trading rules during a fast market, e.g. to widen price or size ranges by the specified percentage factor.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2559.html">
+            
+                2559
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2559.html">
+            
+                QuoteSideIndicator
+            
+            </a>
+        </td>
+        <td>@QuotSideInd</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 

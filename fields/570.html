@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>PreviouslyReported [type '570']</h3>
-<p class="description">Indicates if the trade capture report was previously reported to the counterparty</p>
+<p class="description">Indicates if the transaction was previously reported to the counterparty or market.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/570.html">
-            570
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>PrevlyRpted</td>
         <td>
-            Indicates if the trade capture report was previously reported to the counterparty
+            Indicates if the transaction was previously reported to the counterparty or market.
             
             <table>
             
@@ -129,7 +129,7 @@
             <tr>
                 <td>Y</td>
                 <td>=</td>
-                <td>PerviouslyReportedToCounterparty</td>
+                <td>PreviouslyReportedToCounterparty</td>
             </tr>
             
             </table>
@@ -141,6 +141,16 @@
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
+    
+        [<a href="../components/MDIncGrp.html">MDIncGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
     
@@ -149,6 +159,8 @@
         [<a href="../messages/BM.html">AllocationInstructionAlert]</a>
     
         [<a href="../messages/AS.html">AllocationReport]</a>
+    
+        [<a href="../messages/8.html">ExecutionReport]</a>
     
         [<a href="../messages/AE.html">TradeCaptureReport]</a>
     

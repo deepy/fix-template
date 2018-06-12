@@ -90,12 +90,13 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>DeskType [type '1033']</h3>
-<p class="description">Type of trading desk.  Valid values are grouped by DeskTypeSource(1034).</p>
+<p class="description">Identifies the type of Trading Desk.
+Conditionally required when InformationBarrierID(1727) is specified for OATS.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +107,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1033.html">
-            1033
+            
             </a>
         </td>
         <td>
@@ -116,7 +117,8 @@
         </td>
         <td>DskTyp</td>
         <td>
-            Type of trading desk.  Valid values are grouped by DeskTypeSource(1034).
+            Identifies the type of Trading Desk.
+Conditionally required when InformationBarrierID(1727) is specified for OATS.
             
             <table>
             
@@ -183,7 +185,43 @@
             <tr>
                 <td>T</td>
                 <td>=</td>
-                <td>Trading</td>
+                <td>TradingDeskSystem</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>BlockTrading</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>ConvertibleDesk</td>
+            </tr>
+            
+            <tr>
+                <td>CR</td>
+                <td>=</td>
+                <td>CentralRiskBooks</td>
+            </tr>
+            
+            <tr>
+                <td>EC</td>
+                <td>=</td>
+                <td>EquityCapitalMarkets</td>
+            </tr>
+            
+            <tr>
+                <td>SW</td>
+                <td>=</td>
+                <td>Swaps</td>
+            </tr>
+            
+            <tr>
+                <td>TR</td>
+                <td>=</td>
+                <td>Treasury</td>
             </tr>
             
             </table>

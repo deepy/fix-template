@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>FinancingDetails [type 'Component']</h3>
-<p class="description">Component block is optionally used only for financing deals to identify the legal agreement under which the deal was made and other unique characteristics of the transaction. The AgreementDesc field refers to base standard documents such as MRA 1996 Repurchase Agreement, GMRA 2000 Bills Transaction (U.K.), MSLA 1993 Securities Loan – Amended 1998, for example.</p>
+<p class="description">Component block is optionally used for financial transaction where legal contracts, master agreements or master confirmations is to be referenced.  This component identifies the legal agreement under which the deal was made and other unique characteristics of the transaction. For example, the AgreementDesc(913) field refers to base standard documents such as MRA 1996 Repurchase Agreement, GMRA 2000 Bills Transaction (U.K.), MSLA 1993 Securities Loan – Amended 1998, for example.</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/913.html">
-            913
+            
+                913
+            
             </a>
         </td>
         <td>
             <a href="../fields/913.html">
-            AgreementDesc
+            
+                AgreementDesc
+            
             </a>
         </td>
         <td>@AgmtDesc</td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../fields/914.html">
-            914
+            
+                914
+            
             </a>
         </td>
         <td>
             <a href="../fields/914.html">
-            AgreementID
+            
+                AgreementID
+            
             </a>
         </td>
         <td>@AgmtID</td>
@@ -141,13 +149,38 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1961.html">
+            
+                1961
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1961.html">
+            
+                AgreementVersion
+            
+            </a>
+        </td>
+        <td>@AgmtVer</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/915.html">
-            915
+            
+                915
+            
             </a>
         </td>
         <td>
             <a href="../fields/915.html">
-            AgreementDate
+            
+                AgreementDate
+            
             </a>
         </td>
         <td>@AgmtDt</td>
@@ -159,12 +192,16 @@
     <tr>
         <td class="green">
             <a href="../fields/918.html">
-            918
+            
+                918
+            
             </a>
         </td>
         <td>
             <a href="../fields/918.html">
-            AgreementCurrency
+            
+                AgreementCurrency
+            
             </a>
         </td>
         <td>@AgmtCcy</td>
@@ -175,13 +212,332 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1962.html">
+            
+                1962
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1962.html">
+            
+                MasterConfirmationDesc
+            
+            </a>
+        </td>
+        <td>@CnfmDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1963.html">
+            
+                1963
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1963.html">
+            
+                MasterConfirmationDate
+            
+            </a>
+        </td>
+        <td>@CnfmDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1964.html">
+            
+                1964
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1964.html">
+            
+                MasterConfirmationAnnexDesc
+            
+            </a>
+        </td>
+        <td>@CnfmAnxDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1965.html">
+            
+                1965
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1965.html">
+            
+                MasterConfirmationAnnexDate
+            
+            </a>
+        </td>
+        <td>@CnfmAnxDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1966.html">
+            
+                1966
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1966.html">
+            
+                BrokerConfirmationDesc
+            
+            </a>
+        </td>
+        <td>@BrkrCnfmDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingContractualDefinitionGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingContractualDefinitionGrp.html">
+            
+                <b>FinancingContractualDefinitionGrp</b>
+            
+            </a>
+        </td>
+        <td>CtrctlDef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingTermSupplementGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingTermSupplementGrp.html">
+            
+                <b>FinancingTermSupplementGrp</b>
+            
+            </a>
+        </td>
+        <td>TrmSupplmnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingContractualMatrixGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingContractualMatrixGrp.html">
+            
+                <b>FinancingContractualMatrixGrp</b>
+            
+            </a>
+        </td>
+        <td>CtrctlMtrx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1967.html">
+            
+                1967
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1967.html">
+            
+                CreditSupportAgreementDesc
+            
+            </a>
+        </td>
+        <td>@CrdSuprtDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1968.html">
+            
+                1968
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1968.html">
+            
+                CreditSupportAgreementDate
+            
+            </a>
+        </td>
+        <td>@CrdSuprtDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1969.html">
+            
+                1969
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1969.html">
+            
+                CreditSupportAgreementID
+            
+            </a>
+        </td>
+        <td>@CrdSuprtID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1970.html">
+            
+                1970
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1970.html">
+            
+                GoverningLaw
+            
+            </a>
+        </td>
+        <td>@Law</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1513.html">
+            
+                1513
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1513.html">
+            
+                DocumentationText
+            
+            </a>
+        </td>
+        <td>@DcmntnTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1525.html">
+            
+                1525
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1525.html">
+            
+                EncodedDocumentationTextLen
+            
+            </a>
+        </td>
+        <td>@EncDcmntnTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedDocumentationText(1527) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1527.html">
+            
+                1527
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1527.html">
+            
+                EncodedDocumentationText
+            
+            </a>
+        </td>
+        <td>@EncDcmntnTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the DocumentationText(1513) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/788.html">
-            788
+            
+                788
+            
             </a>
         </td>
         <td>
             <a href="../fields/788.html">
-            TerminationType
+            
+                TerminationType
+            
             </a>
         </td>
         <td>@TrmTyp</td>
@@ -193,12 +549,16 @@
     <tr>
         <td class="green">
             <a href="../fields/916.html">
-            916
+            
+                916
+            
             </a>
         </td>
         <td>
             <a href="../fields/916.html">
-            StartDate
+            
+                StartDate
+            
             </a>
         </td>
         <td>@StartDt</td>
@@ -210,12 +570,16 @@
     <tr>
         <td class="green">
             <a href="../fields/917.html">
-            917
+            
+                917
+            
             </a>
         </td>
         <td>
             <a href="../fields/917.html">
-            EndDate
+            
+                EndDate
+            
             </a>
         </td>
         <td>@EndDt</td>
@@ -227,12 +591,16 @@
     <tr>
         <td class="green">
             <a href="../fields/919.html">
-            919
+            
+                919
+            
             </a>
         </td>
         <td>
             <a href="../fields/919.html">
-            DeliveryType
+            
+                DeliveryType
+            
             </a>
         </td>
         <td>@DlvryTyp</td>
@@ -244,12 +612,16 @@
     <tr>
         <td class="green">
             <a href="../fields/898.html">
-            898
+            
+                898
+            
             </a>
         </td>
         <td>
             <a href="../fields/898.html">
-            MarginRatio
+            
+                MarginRatio
+            
             </a>
         </td>
         <td>@MgnRatio</td>

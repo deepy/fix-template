@@ -1,0 +1,432 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingOptionExercise [type 'Component']</h3>
+<p class="description">The UnderlyingOptionExercise component is a subcomponent of the UnderlyingInstrument component used to specify option exercise provisions. Its purpose is to identify the opportunities and conditions for exercise, e.g. the schedule of dates on which exercise is allowed. The embedded UnderlyingOptionExerciseExpiration component is used to terminate the opportunity for exercise.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41810.html">
+            
+                41810
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41810.html">
+            
+                UnderlyingExerciseDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41811.html">
+            
+                41811
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41811.html">
+            
+                EncodedUnderlyingExerciseDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedUnderlyingExerciseDesc(41812) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41812.html">
+            
+                41812
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41812.html">
+            
+                EncodedUnderlyingExerciseDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the UnderlyingExerciseDesc(41810) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41813.html">
+            
+                41813
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41813.html">
+            
+                UnderlyingAutomaticExerciseIndicator
+            
+            </a>
+        </td>
+        <td>@AutoExerInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41814.html">
+            
+                41814
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41814.html">
+            
+                UnderlyingAutomaticExerciseThresholdRate
+            
+            </a>
+        </td>
+        <td>@AutoRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41815.html">
+            
+                41815
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41815.html">
+            
+                UnderlyingExerciseConfirmationMethod
+            
+            </a>
+        </td>
+        <td>@ExerCnfm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41816.html">
+            
+                41816
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41816.html">
+            
+                UnderlyingManualNoticeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@ManNtcBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41817.html">
+            
+                41817
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41817.html">
+            
+                UnderlyingFallbackExerciseIndicator
+            
+            </a>
+        </td>
+        <td>@FallbckExerInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41818.html">
+            
+                41818
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41818.html">
+            
+                UnderlyingLimitedRightToConfirmIndicator
+            
+            </a>
+        </td>
+        <td>@LtdRightCnfmInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41819.html">
+            
+                41819
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41819.html">
+            
+                UnderlyingExerciseSplitTicketIndicator
+            
+            </a>
+        </td>
+        <td>@ExerSplitTktInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42887.html">
+            
+                42887
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42887.html">
+            
+                UnderlyingSettlMethodElectingPartySide
+            
+            </a>
+        </td>
+        <td>@SettlMethElctngSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingSettlMethodElectionDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingSettlMethodElectionDate.html">
+            
+                <b>UnderlyingSettlMethodElectionDate</b>
+            
+            </a>
+        </td>
+        <td>SettlMethDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingOptionExerciseDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingOptionExerciseDates.html">
+            
+                <b>UnderlyingOptionExerciseDates</b>
+            
+            </a>
+        </td>
+        <td>Dts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingOptionExerciseExpiration.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingOptionExerciseExpiration.html">
+            
+                <b>UnderlyingOptionExerciseExpiration</b>
+            
+            </a>
+        </td>
+        <td>Exp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingOptionExerciseMakeWholeProvision.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingOptionExerciseMakeWholeProvision.html">
+            
+                <b>UnderlyingOptionExerciseMakeWholeProvision</b>
+            
+            </a>
+        </td>
+        <td>MakeWhole</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

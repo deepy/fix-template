@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>ExecType [type '150']</h3>
-<p class="description">Describes the specific ExecutionRpt (i.e. Pending Cancel) while OrdStatus (39) will always identify the current order status (i.e. Partially Filled) *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; ***</p>
+<p class="description">Describes the specific ExecutionRpt (e.g. Pending Cancel) while OrdStatus(39) will always identify the current order status (e.g. Partially Filled).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/150.html">
-            150
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>ExecTyp</td>
         <td>
-            Describes the specific ExecutionRpt (i.e. Pending Cancel) while OrdStatus (39) will always identify the current order status (i.e. Partially Filled) *** SOME VALUES HAVE BEEN REPLACED - See &#34;Replaced Features and Supported Approach&#34; ***
+            Describes the specific ExecutionRpt (e.g. Pending Cancel) while OrdStatus(39) will always identify the current order status (e.g. Partially Filled).
             
             <table>
             
@@ -240,6 +240,18 @@
                 <td>TriggeredOrActivatedBySystem</td>
             </tr>
             
+            <tr>
+                <td>M</td>
+                <td>=</td>
+                <td>Locked</td>
+            </tr>
+            
+            <tr>
+                <td>N</td>
+                <td>=</td>
+                <td>Released</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -248,6 +260,14 @@
 
 </table>
 
+    
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/OrderEntryAckGrp.html">OrderEntryAckGrp]</a>
+    
+    </p>
+    <hr />
     
     <p>Used in messages:</p>
     <p>

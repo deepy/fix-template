@@ -90,15 +90,15 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradingSessionID [type '336']</h3>
-<p class="description">Identifier for Trading Session
+<p class="description">Identifier for a trading session.
 A trading session spans an extended period of time that can also be expressed informally in terms of the trading day. Usage is determined by market or counterparties.
-To specify good for session where session spans more than one calendar day, use TimeInForce = Day in conjunction with TradingSessionID.
+To specify good for session where session spans more than one calendar day, use TimeInForce = 0 (Day) in conjunction with TradingSessionID(336).
 Bilaterally agreed values of data type &#34;String&#34; that start with a character can be used for backward compatibility.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -109,7 +109,7 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
             </a>
         </td>
         <td>
@@ -119,9 +119,9 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
         </td>
         <td>SesID</td>
         <td>
-            Identifier for Trading Session
+            Identifier for a trading session.
 A trading session spans an extended period of time that can also be expressed informally in terms of the trading day. Usage is determined by market or counterparties.
-To specify good for session where session spans more than one calendar day, use TimeInForce = Day in conjunction with TradingSessionID.
+To specify good for session where session spans more than one calendar day, use TimeInForce = 0 (Day) in conjunction with TradingSessionID(336).
 Bilaterally agreed values of data type &#34;String&#34; that start with a character can be used for backward compatibility.
             
             <table>
@@ -162,6 +162,12 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
                 <td>AfterHours</td>
             </tr>
             
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>Holiday</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -181,6 +187,8 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
         [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
     
         [<a href="../components/MDIncGrp.html">MDIncGrp]</a>
+    
+        [<a href="../components/MDStatisticParameters.html">MDStatisticParameters]</a>
     
         [<a href="../components/QuotEntryAckGrp.html">QuotEntryAckGrp]</a>
     
@@ -254,6 +262,10 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
     
         [<a href="../messages/x.html">SecurityListRequest]</a>
     
+        [<a href="../messages/CO.html">SecurityMassStatus]</a>
+    
+        [<a href="../messages/CN.html">SecurityMassStatusRequest]</a>
+    
         [<a href="../messages/f.html">SecurityStatus]</a>
     
         [<a href="../messages/e.html">SecurityStatusRequest]</a>
@@ -263,6 +275,8 @@ Bilaterally agreed values of data type &#34;String&#34; that start with a charac
         [<a href="../messages/w.html">SecurityTypes]</a>
     
         [<a href="../messages/AD.html">TradeCaptureReportRequest]</a>
+    
+        [<a href="../messages/DC.html">TradeMatchReport]</a>
     
         [<a href="../messages/BI.html">TradingSessionListRequest]</a>
     

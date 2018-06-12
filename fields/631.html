@@ -90,12 +90,14 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>MidPx [type '631']</h3>
-<p class="description">Mid price/rate</p>
+<p class="description">Mid price/rate. 
+For OTC swaps this is the mid-market mark (for example, as defined by CFTC).
+For uncleared OTC swaps, LegMidPx(2346) and the MidPx(631) fields are mutually exclusive.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +108,7 @@
     <tr>
         <td class="green">
             <a href="../fields/631.html">
-            631
+            
             </a>
         </td>
         <td>
@@ -116,7 +118,9 @@
         </td>
         <td>MidPx</td>
         <td>
-            Mid price/rate
+            Mid price/rate. 
+For OTC swaps this is the mid-market mark (for example, as defined by CFTC).
+For uncleared OTC swaps, LegMidPx(2346) and the MidPx(631) fields are mutually exclusive.
             
         </td>
         <td class="green"></td>
@@ -132,17 +136,23 @@
     
         [<a href="../components/QuotEntryGrp.html">QuotEntryGrp]</a>
     
+        [<a href="../components/QuotReqGrp.html">QuotReqGrp]</a>
+    
     </p>
     <hr />
     
     <p>Used in messages:</p>
     <p>
     
+        [<a href="../messages/8.html">ExecutionReport]</a>
+    
         [<a href="../messages/S.html">Quote]</a>
     
         [<a href="../messages/AJ.html">QuoteResponse]</a>
     
         [<a href="../messages/AI.html">QuoteStatusReport]</a>
+    
+        [<a href="../messages/AE.html">TradeCaptureReport]</a>
     
     </p>
     <hr />

@@ -1,0 +1,999 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingComplexEvents [type 'Component']</h3>
+<p class="description">The UnderlyingComplexEvent Group is a repeating block which allows specifying an unlimited number and types of advanced events, such as observation and pricing in over the lifetime of an option, futures, commodities or equity swap contract. Use UnderlyingEvntGrp to specify more straightforward events.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2045.html">
+            
+                2045
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2045.html">
+            
+                NoUnderlyingComplexEvents
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2046.html">
+            
+                2046
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2046.html">
+            
+                UnderlyingComplexEventType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoUnderlyingComplexEvents(2045) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2261.html">
+            
+                2261
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2261.html">
+            
+                UnderlyingComplexOptPayoutPaySide
+            
+            </a>
+        </td>
+        <td>@OptPay</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2262.html">
+            
+                2262
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2262.html">
+            
+                UnderlyingComplexOptPayoutReceiveSide
+            
+            </a>
+        </td>
+        <td>@OptRcv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2263.html">
+            
+                2263
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2263.html">
+            
+                UnderlyingComplexOptPayoutUnderlier
+            
+            </a>
+        </td>
+        <td>@OptUndlr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2047.html">
+            
+                2047
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2047.html">
+            
+                UnderlyingComplexOptPayoutAmount
+            
+            </a>
+        </td>
+        <td>@OptPayAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2264.html">
+            
+                2264
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2264.html">
+            
+                UnderlyingComplexOptPayoutPercentage
+            
+            </a>
+        </td>
+        <td>@OptPctage</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2265.html">
+            
+                2265
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2265.html">
+            
+                UnderlyingComplexOptPayoutTime
+            
+            </a>
+        </td>
+        <td>@OptTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2266.html">
+            
+                2266
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2266.html">
+            
+                UnderlyingComplexOptPayoutCurrency
+            
+            </a>
+        </td>
+        <td>@OptCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2048.html">
+            
+                2048
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2048.html">
+            
+                UnderlyingComplexEventPrice
+            
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2267.html">
+            
+                2267
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2267.html">
+            
+                UnderlyingComplexEventPricePercentage
+            
+            </a>
+        </td>
+        <td>@PxPctage</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2049.html">
+            
+                2049
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2049.html">
+            
+                UnderlyingComplexEventPriceBoundaryMethod
+            
+            </a>
+        </td>
+        <td>@PxBndryMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2050.html">
+            
+                2050
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2050.html">
+            
+                UnderlyingComplexEventPriceBoundaryPrecision
+            
+            </a>
+        </td>
+        <td>@PxBndryPrcsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2051.html">
+            
+                2051
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2051.html">
+            
+                UnderlyingComplexEventPriceTimeType
+            
+            </a>
+        </td>
+        <td>@PxTmTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2052.html">
+            
+                2052
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2052.html">
+            
+                UnderlyingComplexEventCondition
+            
+            </a>
+        </td>
+        <td>@Cond</td>
+        <td class="green center"></td>
+        <td>Conditionally required when there are more than one UnderlyingComplexEvent occurrences. A chain of events must be linked together through use of the UnderlyingComplexEventCondition(2052) in which the relationship between any two events is described. For any two occurances of events the first occurrence will specify the UnderlyingComplexEventCondition(2052) which links it with the second event. </td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventDates.html">
+            
+                <b>UnderlyingComplexEventDates</b>
+            
+            </a>
+        </td>
+        <td>EvntDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2268.html">
+            
+                2268
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2268.html">
+            
+                UnderlyingComplexEventCurrencyOne
+            
+            </a>
+        </td>
+        <td>@Ccy1</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2269.html">
+            
+                2269
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2269.html">
+            
+                UnderlyingComplexEventCurrencyTwo
+            
+            </a>
+        </td>
+        <td>@Ccy2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2270.html">
+            
+                2270
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2270.html">
+            
+                UnderlyingComplexEventQuoteBasis
+            
+            </a>
+        </td>
+        <td>@QteBasis</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2271.html">
+            
+                2271
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2271.html">
+            
+                UnderlyingComplexEventFixedFXRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2419.html">
+            
+                2419
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2419.html">
+            
+                UnderlyingComplexEventSpotRate
+            
+            </a>
+        </td>
+        <td>@SpotRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2420.html">
+            
+                2420
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2420.html">
+            
+                UnderlyingComplexEventForwardPoints
+            
+            </a>
+        </td>
+        <td>@FwdPnts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2272.html">
+            
+                2272
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2272.html">
+            
+                UnderlyingComplexEventDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@Meth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2273.html">
+            
+                2273
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2273.html">
+            
+                UnderlyingComplexEventCalculationAgent
+            
+            </a>
+        </td>
+        <td>@CalcAgent</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2274.html">
+            
+                2274
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2274.html">
+            
+                UnderlyingComplexEventStrikePrice
+            
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2275.html">
+            
+                2275
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2275.html">
+            
+                UnderlyingComplexEventStrikeFactor
+            
+            </a>
+        </td>
+        <td>@StrkFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2276.html">
+            
+                2276
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2276.html">
+            
+                UnderlyingComplexEventStrikeNumberOfOptions
+            
+            </a>
+        </td>
+        <td>@StrkNum</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventRateSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventRateSourceGrp.html">
+            
+                <b>UnderlyingComplexEventRateSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventRelativeDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventRelativeDate.html">
+            
+                <b>UnderlyingComplexEventRelativeDate</b>
+            
+            </a>
+        </td>
+        <td>ReltvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventPeriodGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventPeriodGrp.html">
+            
+                <b>UnderlyingComplexEventPeriodGrp</b>
+            
+            </a>
+        </td>
+        <td>Period</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2277.html">
+            
+                2277
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2277.html">
+            
+                UnderlyingComplexEventCreditEventsXIDRef
+            
+            </a>
+        </td>
+        <td>@CdtEvntXIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2278.html">
+            
+                2278
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2278.html">
+            
+                UnderlyingComplexEventCreditEventNotifyingParty
+            
+            </a>
+        </td>
+        <td>@NotifygPty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2279.html">
+            
+                2279
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2279.html">
+            
+                UnderlyingComplexEventCreditEventBusinessCenter
+            
+            </a>
+        </td>
+        <td>@BizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2280.html">
+            
+                2280
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2280.html">
+            
+                UnderlyingComplexEventCreditEventStandardSources
+            
+            </a>
+        </td>
+        <td>@StdSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2281.html">
+            
+                2281
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2281.html">
+            
+                UnderlyingComplexEventCreditEventMinimumSources
+            
+            </a>
+        </td>
+        <td>@MinSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventCreditEventSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventCreditEventSourceGrp.html">
+            
+                <b>UnderlyingComplexEventCreditEventSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>EvntSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingComplexEventCreditEventGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingComplexEventCreditEventGrp.html">
+            
+                <b>UnderlyingComplexEventCreditEventGrp</b>
+            
+            </a>
+        </td>
+        <td>CrdEvnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2611.html">
+            
+                2611
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2611.html">
+            
+                UnderlyingComplexEventFuturesPriceValuation
+            
+            </a>
+        </td>
+        <td>@FutPxVal</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2612.html">
+            
+                2612
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2612.html">
+            
+                UnderlyingComplexEventOptionsPriceValuation
+            
+            </a>
+        </td>
+        <td>@OptPxVal</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2613.html">
+            
+                2613
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2613.html">
+            
+                UnderlyingComplexEventPVFinalPriceElectionFallback
+            
+            </a>
+        </td>
+        <td>@PVPxFallbck</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2282.html">
+            
+                2282
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2282.html">
+            
+                UnderlyingComplexEventXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2283.html">
+            
+                2283
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2283.html">
+            
+                UnderlyingComplexEventXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -1,0 +1,432 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingPaymentStreamCompoundingDates [type 'Component']</h3>
+<p class="description">UnderlyingPaymentStreamCompoundingDates is a subcomponent of the UnderlyingPaymentStream component used to specify the compounding dates of the stream - either specific, relative or periodic dates.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42904.html">
+            
+                42904
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42904.html">
+            
+                UnderlyingPaymentStreamCompoundingDatesBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified value would be specific to payment stream compounding dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamCompoundingDatesBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamCompoundingDatesBusinessCenterGrp.html">
+            
+                <b>UnderlyingPaymentStreamCompoundingDatesBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The specified values would be specific to payment stream compounding dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamCompoundingDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamCompoundingDateGrp.html">
+            
+                <b>UnderlyingPaymentStreamCompoundingDateGrp</b>
+            
+            </a>
+        </td>
+        <td>CmpndgDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42905.html">
+            
+                42905
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42905.html">
+            
+                UnderlyingPaymentStreamCompoundingDatesRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42906.html">
+            
+                42906
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42906.html">
+            
+                UnderlyingPaymentStreamCompoundingDatesOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@OfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCompoundingDatesOffsetUnit(42907) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42907.html">
+            
+                42907
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42907.html">
+            
+                UnderlyingPaymentStreamCompoundingDatesOffsetUnit
+            
+            </a>
+        </td>
+        <td>@OfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCompoundingDatesOffsetPeriod(42906) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42908.html">
+            
+                42908
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42908.html">
+            
+                UnderlyingPaymentStreamCompoundingDatesOffsetDayType
+            
+            </a>
+        </td>
+        <td>@OfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42909.html">
+            
+                42909
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42909.html">
+            
+                UnderlyingPaymentStreamCompoundingPeriodSkip
+            
+            </a>
+        </td>
+        <td>@Skip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamCompoundingStartDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamCompoundingStartDate.html">
+            
+                <b>UnderlyingPaymentStreamCompoundingStartDate</b>
+            
+            </a>
+        </td>
+        <td>StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamCompoundingEndDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamCompoundingEndDate.html">
+            
+                <b>UnderlyingPaymentStreamCompoundingEndDate</b>
+            
+            </a>
+        </td>
+        <td>EndDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42910.html">
+            
+                42910
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42910.html">
+            
+                UnderlyingPaymentStreamCompoundingFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCompoundingFrequencyUnit(42911) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42911.html">
+            
+                42911
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42911.html">
+            
+                UnderlyingPaymentStreamCompoundingFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCompoundingFrequencyPeriod(42910) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42912.html">
+            
+                42912
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42912.html">
+            
+                UnderlyingPaymentStreamCompoundingRollConvention
+            
+            </a>
+        </td>
+        <td>@Roll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified value would be specific to this instance of the payment stream dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42913.html">
+            
+                42913
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42913.html">
+            
+                UnderlyingPaymentStreamBoundsFirstDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42914.html">
+            
+                42914
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42914.html">
+            
+                UnderlyingPaymentStreamBoundsLastDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

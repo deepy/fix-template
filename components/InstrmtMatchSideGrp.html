@@ -1,0 +1,413 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>InstrmtMatchSideGrp [type 'Component']</h3>
+<p class="description">The InstrmtMatchSideGrp component is used to convey all trades for a given match event reported by instrument and trade side.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1889.html">
+            
+                1889
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1889.html">
+            
+                NoInstrmtMatchSides
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            
+                <b>Instrument</b>
+            
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>Required if NoInstrmtMatchSides(1889) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtLegGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtLegGrp.html">
+            
+                <b>InstrmtLegGrp</b>
+            
+            </a>
+        </td>
+        <td>Leg</td>
+        <td class="green center"></td>
+        <td>LegID(1788) in the InstrmtLegGrp component can be used to reference individual leg executions referenced in the TrdInstrmtLegExecGrp component with LegRefID(654).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>UndInstrmtGrp</b>
+            
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1891.html">
+            
+                1891
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1891.html">
+            
+                TrdMatchSubID
+            
+            </a>
+        </td>
+        <td>@MtchSubID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/53.html">
+            
+                53
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/53.html">
+            
+                Quantity
+            
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td>Total quantity for this instrument in this match event. This is the cumulative sum of LastQty(32) for all match steps for this instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            
+                15
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            
+                Currency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/120.html">
+            
+                120
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/120.html">
+            
+                SettlCurrency
+            
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/854.html">
+            
+                854
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/854.html">
+            
+                QtyType
+            
+            </a>
+        </td>
+        <td>@QtyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/32.html">
+            
+                32
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/32.html">
+            
+                LastQty
+            
+            </a>
+        </td>
+        <td>@LastQty</td>
+        <td class="green center"></td>
+        <td>Required if NoInstrmtMatchSides(1889) &gt; 0.
+
+Trade quantity for this instrument within this match step.  The value is the greater of the sum of SideLastQty(1009) of each side (i.e. buy or sell) for each TrdMatchSideGrp instance within the current InstrmtMatchSideGrp instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/423.html">
+            
+                423
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/423.html">
+            
+                PriceType
+            
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/31.html">
+            
+                31
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/31.html">
+            
+                LastPx
+            
+            </a>
+        </td>
+        <td>@LastPx</td>
+        <td class="green center"></td>
+        <td>Required if NoInstrmtMatchSides(1889) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/30.html">
+            
+                30
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/30.html">
+            
+                LastMkt
+            
+            </a>
+        </td>
+        <td>@LastMkt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdMatchSideGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdMatchSideGrp.html">
+            
+                <b>TrdMatchSideGrp</b>
+            
+            </a>
+        </td>
+        <td>TrdMtchSide</td>
+        <td class="green center"></td>
+        <td>Required if NoInstrmtMatchSides(1889) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

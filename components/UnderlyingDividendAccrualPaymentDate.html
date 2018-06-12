@@ -1,0 +1,285 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingDividendAccrualPaymentDate [type 'Component']</h3>
+<p class="description">The UnderlyingDividendAccrualPaymentDate component is a subcomponent of UnderlyingDividendConditions used to report the dividend accrual payment date.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42819.html">
+            
+                42819
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42819.html">
+            
+                UnderlyingDividendAccrualPaymentDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42820.html">
+            
+                42820
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42820.html">
+            
+                UnderlyingDividendAccrualPaymentDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@OfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingDividendAccrualPaymentDateOffsetUnit(42821) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42821.html">
+            
+                42821
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42821.html">
+            
+                UnderlyingDividendAccrualPaymentDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@OfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingDividendAccrualPaymentDateOffsetPeriod(42820) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42822.html">
+            
+                42822
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42822.html">
+            
+                UnderlyingDividendAccrualPaymentDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@OfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42823.html">
+            
+                42823
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42823.html">
+            
+                UnderlyingDividendAccrualPaymentDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@DtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42824.html">
+            
+                42824
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42824.html">
+            
+                UnderlyingDividendAccrualPaymentDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The value would be specific to this instance of UnderlyingDividendAccrualPaymentDate.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingDividendAccrualPaymentDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingDividendAccrualPaymentDateBusinessCenterGrp.html">
+            
+                <b>UnderlyingDividendAccrualPaymentDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument.  The values would be specific to this instance of UnderlyingDividendAccrualPaymentDate.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42825.html">
+            
+                42825
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42825.html">
+            
+                UnderlyingDividendAccrualPaymentDateAdjusted
+            
+            </a>
+        </td>
+        <td>@Dt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

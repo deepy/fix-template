@@ -90,12 +90,14 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>RefOrderID [type '1080']</h3>
-<p class="description">The ID reference to the order being hit or taken</p>
+<p class="description">The ID reference to the order being hit or taken.
+
+For pre-trade credit/risk limit check process, this is the reference to the placed order, quote request or quote for the credit/risk limit check.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +108,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1080.html">
-            1080
+            
             </a>
         </td>
         <td>
@@ -116,7 +118,9 @@
         </td>
         <td>RefOrdID</td>
         <td>
-            The ID reference to the order being hit or taken
+            The ID reference to the order being hit or taken.
+
+For pre-trade credit/risk limit check process, this is the reference to the placed order, quote request or quote for the credit/risk limit check.
             
         </td>
         <td class="green"></td>
@@ -138,9 +142,15 @@
     <p>Used in messages:</p>
     <p>
     
+        [<a href="../messages/8.html">ExecutionReport]</a>
+    
         [<a href="../messages/AB.html">NewOrderMultileg]</a>
     
         [<a href="../messages/D.html">NewOrderSingle]</a>
+    
+        [<a href="../messages/DF.html">PartyRiskLimitCheckRequest]</a>
+    
+        [<a href="../messages/DG.html">PartyRiskLimitCheckRequestAck]</a>
     
     </p>
     <hr />

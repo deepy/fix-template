@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/268.html">
-            268
+            
+                268
+            
             </a>
         </td>
         <td>
             <a href="../fields/268.html">
-            NoMDEntries
+            
+                NoMDEntries
+            
             </a>
         </td>
         <td></td>
@@ -125,63 +129,79 @@
     <tr>
         <td class="green">
             <a href="../fields/269.html">
-            269
+            
+                269
+            
             </a>
         </td>
         <td>
             <a href="../fields/269.html">
-            MDEntryType
+            
+                MDEntryType
+            
             </a>
         </td>
         <td>@Typ</td>
         <td class="green center">✔</td>
-        <td>Must be the first field in this repeating group.</td>
+        <td>Required if NoMDEntries(268) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/278.html">
-            278
+            
+                278
+            
             </a>
         </td>
         <td>
             <a href="../fields/278.html">
-            MDEntryID
+            
+                MDEntryID
+            
             </a>
         </td>
-        <td>@ID</td>
+        <td>@MDID</td>
         <td class="green center"></td>
-        <td>Conditionally required when maintaining an order-depth book, that is, when AggregatedBook (266) is &#34;N&#34;. allows subsequent Incremental changes to be applied using MDEntryID.</td>
+        <td>Conditionally required when maintaining an order-depth book (AggregatedBook(266) is &#34;N&#34;). Allows subsequent Incremental changes to be applied using MDEntryID(278).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/270.html">
-            270
+            
+                270
+            
             </a>
         </td>
         <td>
             <a href="../fields/270.html">
-            MDEntryPx
+            
+                MDEntryPx
+            
             </a>
         </td>
         <td>@Px</td>
         <td class="green center"></td>
-        <td>Conditionally required if MDEntryType is not Imbalance(A) ), Trade Volume (B), or Open Interest(C); Conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
+        <td>Conditionally required if MDEntryType(269) is not A (Imbalance), B (Trade Volume), or C (Open Interest); Conditionally required when MDEntryType(269) = Q (Auction clearing price).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/423.html">
-            423
+            
+                423
+            
             </a>
         </td>
         <td>
             <a href="../fields/423.html">
-            PriceType
+            
+                PriceType
+            
             </a>
         </td>
         <td>@PxTyp</td>
@@ -192,47 +212,101 @@
 
     <tr>
         <td class="green">
+            <a href="../components/PriceQualifierGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PriceQualifierGrp.html">
+            
+                <b>PriceQualifierGrp</b>
+            
+            </a>
+        </td>
+        <td>PxQual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/819.html">
+            
+                819
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/819.html">
+            
+                AvgPxIndicator
+            
+            </a>
+        </td>
+        <td>@AvgPxInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/YieldData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/YieldData.html">
-            <b>YieldData</b>
+            
+                <b>YieldData</b>
+            
             </a>
         </td>
         <td>Yield</td>
         <td class="green center"></td>
-        <td>Insert here the set of YieldData (yield-related) fields defined in &#34;Common Components of Application Messages</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>SpreadOrBenchmarkCurveData</b>
+            
+                <b>SpreadOrBenchmarkCurveData</b>
+            
             </a>
         </td>
         <td>SprdBnchmkCurve</td>
         <td class="green center"></td>
-        <td>Insert here the set of SpreadOrBenchmarkCurveData (Fixed Income spread or benchmark curve) fields defined in Common Components of Application Messages</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/40.html">
-            40
+            
+                40
+            
             </a>
         </td>
         <td>
             <a href="../fields/40.html">
-            OrdType
+            
+                OrdType
+            
             </a>
         </td>
         <td>@OrdTyp</td>
@@ -244,12 +318,16 @@
     <tr>
         <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -261,12 +339,16 @@
     <tr>
         <td class="green">
             <a href="../fields/120.html">
-            120
+            
+                120
+            
             </a>
         </td>
         <td>
             <a href="../fields/120.html">
-            SettlCurrency
+            
+                SettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
@@ -278,12 +360,16 @@
     <tr>
         <td class="green">
             <a href="../components/RateSource.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/RateSource.html">
-            <b>RateSource</b>
+            
+                <b>RateSource</b>
+            
             </a>
         </td>
         <td>RtSrc</td>
@@ -295,30 +381,37 @@
     <tr>
         <td class="green">
             <a href="../fields/271.html">
-            271
+            
+                271
+            
             </a>
         </td>
         <td>
             <a href="../fields/271.html">
-            MDEntrySize
+            
+                MDEntrySize
+            
             </a>
         </td>
         <td>@Sz</td>
         <td class="green center"></td>
-        <td>Conditionally required if MDEntryType = Bid(0), Offer(1), Trade(2) ), Trade Volume (B), or Open Interest(C)
-conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
+        <td>Conditionally required when MDUpdateAction(279) = 0 (New) and MDEntryType(269) = 0 (Bid), 1 (Offer), 2 (Trade), B (Trade volume), or C (Open interest).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/SecSizesGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SecSizesGrp.html">
-            <b>SecSizesGrp</b>
+            
+                <b>SecSizesGrp</b>
+            
             </a>
         </td>
         <td>SecSizesGrp</td>
@@ -330,12 +423,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/1093.html">
-            1093
+            
+                1093
+            
             </a>
         </td>
         <td>
             <a href="../fields/1093.html">
-            LotType
+            
+                LotType
+            
             </a>
         </td>
         <td>@LotTyp</td>
@@ -347,12 +444,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/272.html">
-            272
+            
+                272
+            
             </a>
         </td>
         <td>
             <a href="../fields/272.html">
-            MDEntryDate
+            
+                MDEntryDate
+            
             </a>
         </td>
         <td>@Dt</td>
@@ -364,12 +465,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/273.html">
-            273
+            
+                273
+            
             </a>
         </td>
         <td>
             <a href="../fields/273.html">
-            MDEntryTime
+            
+                MDEntryTime
+            
             </a>
         </td>
         <td>@Tm</td>
@@ -381,12 +486,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/274.html">
-            274
+            
+                274
+            
             </a>
         </td>
         <td>
             <a href="../fields/274.html">
-            TickDirection
+            
+                TickDirection
+            
             </a>
         </td>
         <td>@TickDirctn</td>
@@ -398,12 +507,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/275.html">
-            275
+            
+                275
+            
             </a>
         </td>
         <td>
             <a href="../fields/275.html">
-            MDMkt
+            
+                MDMkt
+            
             </a>
         </td>
         <td>@Mkt</td>
@@ -415,12 +528,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
+                336
+            
             </a>
         </td>
         <td>
             <a href="../fields/336.html">
-            TradingSessionID
+            
+                TradingSessionID
+            
             </a>
         </td>
         <td>@SesID</td>
@@ -432,12 +549,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/625.html">
-            625
+            
+                625
+            
             </a>
         </td>
         <td>
             <a href="../fields/625.html">
-            TradingSessionSubID
+            
+                TradingSessionSubID
+            
             </a>
         </td>
         <td>@SesSub</td>
@@ -449,12 +570,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/326.html">
-            326
+            
+                326
+            
             </a>
         </td>
         <td>
             <a href="../fields/326.html">
-            SecurityTradingStatus
+            
+                SecurityTradingStatus
+            
             </a>
         </td>
         <td>@TrdgStat</td>
@@ -466,12 +591,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/327.html">
-            327
+            
+                327
+            
             </a>
         </td>
         <td>
             <a href="../fields/327.html">
-            HaltReason
+            
+                HaltReason
+            
             </a>
         </td>
         <td>@HaltRsn</td>
@@ -482,13 +611,59 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2447.html">
+            
+                2447
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2447.html">
+            
+                FastMarketIndicator
+            
+            </a>
+        </td>
+        <td>@FastMktInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2705.html">
+            
+                2705
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2705.html">
+            
+                MarketCondition
+            
+            </a>
+        </td>
+        <td>@MktCond</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/276.html">
-            276
+            
+                276
+            
             </a>
         </td>
         <td>
             <a href="../fields/276.html">
-            QuoteCondition
+            
+                QuoteCondition
+            
             </a>
         </td>
         <td>@QCond</td>
@@ -500,12 +675,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/277.html">
-            277
+            
+                277
+            
             </a>
         </td>
         <td>
             <a href="../fields/277.html">
-            TradeCondition
+            
+                TradeCondition
+            
             </a>
         </td>
         <td>@TrdCond</td>
@@ -516,13 +695,59 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../components/TradePriceConditionGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TradePriceConditionGrp.html">
+            
+                <b>TradePriceConditionGrp</b>
+            
+            </a>
+        </td>
+        <td>TrdPxConds</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2667.html">
+            
+                2667
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2667.html">
+            
+                AlgorithmicTradeIndicator
+            
+            </a>
+        </td>
+        <td>@AlgoTrdInd</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/282.html">
-            282
+            
+                282
+            
             </a>
         </td>
         <td>
             <a href="../fields/282.html">
-            MDEntryOriginator
+            
+                MDEntryOriginator
+            
             </a>
         </td>
         <td>@Orig</td>
@@ -534,12 +759,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/283.html">
-            283
+            
+                283
+            
             </a>
         </td>
         <td>
             <a href="../fields/283.html">
-            LocationID
+            
+                LocationID
+            
             </a>
         </td>
         <td>@LctnID</td>
@@ -551,12 +780,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/284.html">
-            284
+            
+                284
+            
             </a>
         </td>
         <td>
             <a href="../fields/284.html">
-            DeskID
+            
+                DeskID
+            
             </a>
         </td>
         <td>@DeskID</td>
@@ -568,29 +801,37 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/286.html">
-            286
+            
+                286
+            
             </a>
         </td>
         <td>
             <a href="../fields/286.html">
-            OpenCloseSettlFlag
+            
+                OpenCloseSettlFlag
+            
             </a>
         </td>
         <td>@OpenClsSettlFlag</td>
         <td class="green center"></td>
-        <td>Used if MDEntryType = Opening Price(4), Closing Price(5), or Settlement Price(6).</td>
+        <td>Used if MDEntryType(269) = 4 (Opening price), 5 (Closing price), or 6 (Settlement price).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/59.html">
-            59
+            
+                59
+            
             </a>
         </td>
         <td>
             <a href="../fields/59.html">
-            TimeInForce
+            
+                TimeInForce
+            
             </a>
         </td>
         <td>@TmInForce</td>
@@ -602,46 +843,100 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/432.html">
-            432
+            
+                432
+            
             </a>
         </td>
         <td>
             <a href="../fields/432.html">
-            ExpireDate
+            
+                ExpireDate
+            
             </a>
         </td>
         <td>@ExpireDt</td>
         <td class="green center"></td>
-        <td>For optional use when this Bid or Offer represents an order. ExpireDate and ExpireTime cannot both be specified in one Market Data Entry.</td>
+        <td>For optional use when this Bid or Offer represents an order. ExpireDate(432) and ExpireTime(126) cannot both be specified in one Market Data Entry.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/126.html">
-            126
+            
+                126
+            
             </a>
         </td>
         <td>
             <a href="../fields/126.html">
-            ExpireTime
+            
+                ExpireTime
+            
             </a>
         </td>
         <td>@ExpireTm</td>
         <td class="green center"></td>
-        <td>For optional use when this Bid or Offer represents an order. ExpireDate and ExpireTime cannot both be specified in one Market Data Entry.</td>
+        <td>For optional use when this Bid or Offer represents an order. ExpireDate(432) and ExpireTime(126) cannot both be specified in one Market Data Entry.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1629.html">
+            
+                1629
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1629.html">
+            
+                ExposureDuration
+            
+            </a>
+        </td>
+        <td>@ExpsreDur</td>
+        <td class="green center"></td>
+        <td>Conditionally required when TimeInForce(59) = A (Good for Time).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1916.html">
+            
+                1916
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1916.html">
+            
+                ExposureDurationUnit
+            
+            </a>
+        </td>
+        <td>@ExpsreDurUnit</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/110.html">
-            110
+            
+                110
+            
             </a>
         </td>
         <td>
             <a href="../fields/110.html">
-            MinQty
+            
+                MinQty
+            
             </a>
         </td>
         <td>@MinQty</td>
@@ -653,12 +948,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/18.html">
-            18
+            
+                18
+            
             </a>
         </td>
         <td>
             <a href="../fields/18.html">
-            ExecInst
+            
+                ExecInst
+            
             </a>
         </td>
         <td>@ExecInst</td>
@@ -670,12 +969,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/287.html">
-            287
+            
+                287
+            
             </a>
         </td>
         <td>
             <a href="../fields/287.html">
-            SellerDays
+            
+                SellerDays
+            
             </a>
         </td>
         <td>@SellerDays</td>
@@ -687,12 +990,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/37.html">
-            37
+            
+                37
+            
             </a>
         </td>
         <td>
             <a href="../fields/37.html">
-            OrderID
+            
+                OrderID
+            
             </a>
         </td>
         <td>@OrdID</td>
@@ -704,12 +1011,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/198.html">
-            198
+            
+                198
+            
             </a>
         </td>
         <td>
             <a href="../fields/198.html">
-            SecondaryOrderID
+            
+                SecondaryOrderID
+            
             </a>
         </td>
         <td>@OrdID2</td>
@@ -721,12 +1032,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/299.html">
-            299
+            
+                299
+            
             </a>
         </td>
         <td>
             <a href="../fields/299.html">
-            QuoteEntryID
+            
+                QuoteEntryID
+            
             </a>
         </td>
         <td>@EntryID</td>
@@ -737,13 +1052,60 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1003.html">
+            
+                1003
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1003.html">
+            
+                TradeID
+            
+            </a>
+        </td>
+        <td>@TrdID</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting Trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1851.html">
+            
+                1851
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1851.html">
+            
+                StrategyLinkID
+            
+            </a>
+        </td>
+        <td>@StrategyLinkID</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting Trades.
+May be used to link together trades that are reported separately but are part of the same overall trade, e.g. spread trade and their constituent trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/288.html">
-            288
+            
+                288
+            
             </a>
         </td>
         <td>
             <a href="../fields/288.html">
-            MDEntryBuyer
+            
+                MDEntryBuyer
+            
             </a>
         </td>
         <td>@Buyer</td>
@@ -755,12 +1117,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/289.html">
-            289
+            
+                289
+            
             </a>
         </td>
         <td>
             <a href="../fields/289.html">
-            MDEntrySeller
+            
+                MDEntrySeller
+            
             </a>
         </td>
         <td>@Seller</td>
@@ -771,13 +1137,59 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2449.html">
+            
+                2449
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2449.html">
+            
+                NumberOfBuyOrders
+            
+            </a>
+        </td>
+        <td>@NumOfBuyOrds</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2450.html">
+            
+                2450
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2450.html">
+            
+                NumberOfSellOrders
+            
+            </a>
+        </td>
+        <td>@NumOfSellOrds</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/346.html">
-            346
+            
+                346
+            
             </a>
         </td>
         <td>
             <a href="../fields/346.html">
-            NumberOfOrders
+            
+                NumberOfOrders
+            
             </a>
         </td>
         <td>@NumOfOrds</td>
@@ -789,12 +1201,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/290.html">
-            290
+            
+                290
+            
             </a>
         </td>
         <td>
             <a href="../fields/290.html">
-            MDEntryPositionNo
+            
+                MDEntryPositionNo
+            
             </a>
         </td>
         <td>@PosNo</td>
@@ -806,12 +1222,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/546.html">
-            546
+            
+                546
+            
             </a>
         </td>
         <td>
             <a href="../fields/546.html">
-            Scope
+            
+                Scope
+            
             </a>
         </td>
         <td>@Scope</td>
@@ -823,12 +1243,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/811.html">
-            811
+            
+                811
+            
             </a>
         </td>
         <td>
             <a href="../fields/811.html">
-            PriceDelta
+            
+                PriceDelta
+            
             </a>
         </td>
         <td>@PxDelta</td>
@@ -840,29 +1264,226 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/828.html">
-            828
+            
+                828
+            
             </a>
         </td>
         <td>
             <a href="../fields/828.html">
-            TrdType
+            
+                TrdType
+            
             </a>
         </td>
         <td>@TrdTyp</td>
         <td class="green center"></td>
-        <td>Specifies trade type when a trade is being reported. Must be used when MDEntryType(269) = Trade(2).</td>
+        <td>Specifies trade type when a trade is being reported. For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/829.html">
+            
+                829
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/829.html">
+            
+                TrdSubType
+            
+            </a>
+        </td>
+        <td>@TrdSubTyp</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1934.html">
+            
+                1934
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1934.html">
+            
+                RegulatoryReportType
+            
+            </a>
+        </td>
+        <td>@RegRptTyp</td>
+        <td class="green center"></td>
+        <td>Used only when reporting a trade (MDEntryType(269)=2 (Trade)) that is a regulatory trade report.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2405.html">
+            
+                2405
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2405.html">
+            
+                ExecMethod
+            
+            </a>
+        </td>
+        <td>@ExecMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/574.html">
+            
+                574
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/574.html">
+            
+                MatchType
+            
+            </a>
+        </td>
+        <td>@MtchTyp</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1115.html">
+            
+                1115
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1115.html">
+            
+                OrderCategory
+            
+            </a>
+        </td>
+        <td>@OrdCat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1390.html">
+            
+                1390
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1390.html">
+            
+                TradePublishIndicator
+            
+            </a>
+        </td>
+        <td>@TrdPubInd</td>
+        <td class="green center"></td>
+        <td>For optional use in reporting trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TrdRegPublicationGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdRegPublicationGrp.html">
+            
+                <b>TrdRegPublicationGrp</b>
+            
+            </a>
+        </td>
+        <td>TrdRegPublctn</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/570.html">
+            
+                570
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/570.html">
+            
+                PreviouslyReported
+            
+            </a>
+        </td>
+        <td>@PrevlyRpted</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedTradeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedTradeGrp.html">
+            
+                <b>RelatedTradeGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdTrd</td>
+        <td class="green center"></td>
+        <td>For optional use when reporting trades. Lists trades related to the current market data entry, e.g. leg trades of a multi-leg trade.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -874,46 +1495,58 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1023.html">
-            1023
+            
+                1023
+            
             </a>
         </td>
         <td>
             <a href="../fields/1023.html">
-            MDPriceLevel
+            
+                MDPriceLevel
+            
             </a>
         </td>
         <td>@MDPxLvl</td>
@@ -925,29 +1558,37 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/528.html">
-            528
+            
+                528
+            
             </a>
         </td>
         <td>
             <a href="../fields/528.html">
-            OrderCapacity
+            
+                OrderCapacity
+            
             </a>
         </td>
         <td>@Cpcty</td>
         <td class="green center"></td>
-        <td>Designates the capacity of the firm placing the order</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1024.html">
-            1024
+            
+                1024
+            
             </a>
         </td>
         <td>
             <a href="../fields/1024.html">
-            MDOriginType
+            
+                MDOriginType
+            
             </a>
         </td>
         <td>@MDOrigTyp</td>
@@ -959,12 +1600,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/332.html">
-            332
+            
+                332
+            
             </a>
         </td>
         <td>
             <a href="../fields/332.html">
-            HighPx
+            
+                HighPx
+            
             </a>
         </td>
         <td>@HighPx</td>
@@ -976,29 +1621,37 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/333.html">
-            333
+            
+                333
+            
             </a>
         </td>
         <td>
             <a href="../fields/333.html">
-            LowPx
+            
+                LowPx
+            
             </a>
         </td>
         <td>@LowPx</td>
         <td class="green center"></td>
-        <td>Used to report low price in association with trade, bid or ask rather than a separate entitty</td>
+        <td>Used to report low price in association with trade, bid or ask rather than a separate entity.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1025.html">
-            1025
+            
+                1025
+            
             </a>
         </td>
         <td>
             <a href="../fields/1025.html">
-            FirstPx
+            
+                FirstPx
+            
             </a>
         </td>
         <td>@FirstPx</td>
@@ -1010,12 +1663,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/31.html">
-            31
+            
+                31
+            
             </a>
         </td>
         <td>
             <a href="../fields/31.html">
-            LastPx
+            
+                LastPx
+            
             </a>
         </td>
         <td>@LastPx</td>
@@ -1026,13 +1683,38 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1592.html">
+            
+                1592
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1592.html">
+            
+                DiscountFactor
+            
+            </a>
+        </td>
+        <td>@DiscFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1020.html">
-            1020
+            
+                1020
+            
             </a>
         </td>
         <td>
             <a href="../fields/1020.html">
-            TradeVolume
+            
+                TradeVolume
+            
             </a>
         </td>
         <td>@TrdVol</td>
@@ -1043,13 +1725,59 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/731.html">
+            
+                731
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/731.html">
+            
+                SettlPriceType
+            
+            </a>
+        </td>
+        <td>@SetPxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2451.html">
+            
+                2451
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2451.html">
+            
+                SettlPriceDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@SettlPxDtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/63.html">
-            63
+            
+                63
+            
             </a>
         </td>
         <td>
             <a href="../fields/63.html">
-            SettlType
+            
+                SettlType
+            
             </a>
         </td>
         <td>@SettlTyp</td>
@@ -1061,12 +1789,16 @@ conditionally required when MDEntryType = &#34;auction clearing price&#34;</td>
     <tr>
         <td class="green">
             <a href="../fields/64.html">
-            64
+            
+                64
+            
             </a>
         </td>
         <td>
             <a href="../fields/64.html">
-            SettlDate
+            
+                SettlDate
+            
             </a>
         </td>
         <td>@SettlDt</td>
@@ -1079,12 +1811,16 @@ For NDFs required for specifying the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1070.html">
-            1070
+            
+                1070
+            
             </a>
         </td>
         <td>
             <a href="../fields/1070.html">
-            MDQuoteType
+            
+                MDQuoteType
+            
             </a>
         </td>
         <td>@MDQteTyp</td>
@@ -1096,12 +1832,16 @@ For NDFs required for specifying the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/83.html">
-            83
+            
+                83
+            
             </a>
         </td>
         <td>
             <a href="../fields/83.html">
-            RptSeq
+            
+                RptSeq
+            
             </a>
         </td>
         <td>@RptSeq</td>
@@ -1113,29 +1853,37 @@ For NDFs required for specifying the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1048.html">
-            1048
+            
+                1048
+            
             </a>
         </td>
         <td>
             <a href="../fields/1048.html">
-            DealingCapacity
+            
+                DealingCapacity
+            
             </a>
         </td>
         <td>@DealingCpcty</td>
         <td class="green center"></td>
-        <td>Identifies role of dealer; Agent, Principal, RisklessPrincipal</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1026.html">
-            1026
+            
+                1026
+            
             </a>
         </td>
         <td>
             <a href="../fields/1026.html">
-            MDEntrySpotRate
+            
+                MDEntrySpotRate
+            
             </a>
         </td>
         <td>@MDEntrySpotRt</td>
@@ -1147,12 +1895,16 @@ For NDFs required for specifying the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1027.html">
-            1027
+            
+                1027
+            
             </a>
         </td>
         <td>
             <a href="../fields/1027.html">
-            MDEntryForwardPoints
+            
+                MDEntryForwardPoints
+            
             </a>
         </td>
         <td>@MDEntryFwdPnts</td>
@@ -1164,17 +1916,84 @@ For NDFs required for specifying the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
         <td class="green center"></td>
         <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2445.html">
+            
+                2445
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2445.html">
+            
+                AggressorTime
+            
+            </a>
+        </td>
+        <td>@AgrsrTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2446.html">
+            
+                2446
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2446.html">
+            
+                AggressorSide
+            
+            </a>
+        </td>
+        <td>@AgrsrSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/654.html">
+            
+                654
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/654.html">
+            
+                LegRefID
+            
+            </a>
+        </td>
+        <td>@RefID</td>
+        <td class="green center"></td>
+        <td>May be specified for an MDEntryType(269)=2 (Trade) entry to indicate that MDEntryPx(270), PriceType(423) and MDEntrySize(271) apply to the instance of the InstrmtLegGrp component with matching LegID(1788).</td>
         <td class="green"></td>
     </tr>
 

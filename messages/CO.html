@@ -1,0 +1,558 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>SecurityMassStatus [type 'CO']</h3>
+<p class="description">None</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = CO</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>ApplicationSequenceControl</b>
+            
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/324.html">
+            
+                324
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/324.html">
+            
+                SecurityStatusReqID
+            
+            </a>
+        </td>
+        <td>@StatReqID</td>
+        <td class="green center"></td>
+        <td>Required when mass status is in response to a SecurityMassStatusRequest(35=CN) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1465.html">
+            
+                1465
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1465.html">
+            
+                SecurityListID
+            
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center"></td>
+        <td>Identifies all securities for a security list identifier.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1301.html">
+            
+                1301
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1301.html">
+            
+                MarketID
+            
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td>Identifies all securities for a market.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            
+                1300
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            
+                MarketSegmentID
+            
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td>Identifies all securities for a market segment.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            
+                75
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            
+                TradeDate
+            
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td>Business day that the state change applies to.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            
+                336
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            
+                TradingSessionID
+            
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td>Identifies all securities for a trading session.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            
+                625
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            
+                TradingSessionSubID
+            
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td>Identifies all securities for a trading sub-session.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentScope.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentScope.html">
+            
+                <b>InstrumentScope</b>
+            
+            </a>
+        </td>
+        <td>InstrmtScope</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/325.html">
+            
+                325
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/325.html">
+            
+                UnsolicitedIndicator
+            
+            </a>
+        </td>
+        <td>@Unsol</td>
+        <td class="green center"></td>
+        <td>Set to &#34;Y&#34; if message is sent as a result of a subscription request not a snapshot request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1679.html">
+            
+                1679
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1679.html">
+            
+                SecurityMassTradingStatus
+            
+            </a>
+        </td>
+        <td>@TrdgStat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2447.html">
+            
+                2447
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2447.html">
+            
+                FastMarketIndicator
+            
+            </a>
+        </td>
+        <td>@FastMktInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1680.html">
+            
+                1680
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1680.html">
+            
+                SecurityMassTradingEvent
+            
+            </a>
+        </td>
+        <td>@SecTrdEvnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1681.html">
+            
+                1681
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1681.html">
+            
+                MassHaltReason
+            
+            </a>
+        </td>
+        <td>@HaltRsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1021.html">
+            
+                1021
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1021.html">
+            
+                MDBookType
+            
+            </a>
+        </td>
+        <td>@MDBkTyp</td>
+        <td class="green center"></td>
+        <td>Used to relay changes in the book type.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/264.html">
+            
+                264
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/264.html">
+            
+                MarketDepth
+            
+            </a>
+        </td>
+        <td>@MktDepth</td>
+        <td class="green center"></td>
+        <td>Used to relay changes in Market Depth.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>Time of state change for security list.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/334.html">
+            
+                334
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/334.html">
+            
+                Adjustment
+            
+            </a>
+        </td>
+        <td>@Adjmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SecMassStatGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/SecMassStatGrp.html">
+            
+                <b>SecMassStatGrp</b>
+            
+            </a>
+        </td>
+        <td>SecMassStat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

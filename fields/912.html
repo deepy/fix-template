@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>LastRptRequested [type '912']</h3>
-<p class="description">Indicates whether this message is that last report message in response to a request, such as Order Mass Status Request.</p>
+<p class="description">Indicates whether this message is the last report message in response to a request message, e.g. OrderMassStatusRequest(35=AF), TradeCaptureReportRequest(35=AD).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/912.html">
-            912
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>LastRptReqed</td>
         <td>
-            Indicates whether this message is that last report message in response to a request, such as Order Mass Status Request.
+            Indicates whether this message is the last report message in response to a request message, e.g. OrderMassStatusRequest(35=AF), TradeCaptureReportRequest(35=AD).
             
             <table>
             
@@ -149,6 +149,10 @@
         [<a href="../messages/BA.html">CollateralReport]</a>
     
         [<a href="../messages/8.html">ExecutionReport]</a>
+    
+        [<a href="../messages/CJ.html">MarginRequirementReport]</a>
+    
+        [<a href="../messages/AP.html">PositionReport]</a>
     
         [<a href="../messages/AE.html">TradeCaptureReport]</a>
     

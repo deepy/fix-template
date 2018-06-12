@@ -90,14 +90,15 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TrdRegTimestampType [type '770']</h3>
-<p class="description">Traded / Regulatory timestamp type.
-Note of Applicability: values are required in US futures markets by the CFTC to support computerized trade reconstruction.
-(see Volume : &#34;Glossary&#34; for value definitions)</p>
+<p class="description">Trading / Regulatory timestamp type.
+Note of applicability: Values are required in US futures markets by the CFTC to support computerized trade reconstruction, and required by MiFID II / MiFIR for transaction reporting and publication.
+(see Volume : &#34;Glossary&#34; for value definitions)
+</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -108,7 +109,7 @@ Note of Applicability: values are required in US futures markets by the CFTC to 
     <tr>
         <td class="green">
             <a href="../fields/770.html">
-            770
+            
             </a>
         </td>
         <td>
@@ -118,9 +119,10 @@ Note of Applicability: values are required in US futures markets by the CFTC to 
         </td>
         <td>Typ</td>
         <td>
-            Traded / Regulatory timestamp type.
-Note of Applicability: values are required in US futures markets by the CFTC to support computerized trade reconstruction.
+            Trading / Regulatory timestamp type.
+Note of applicability: Values are required in US futures markets by the CFTC to support computerized trade reconstruction, and required by MiFID II / MiFIR for transaction reporting and publication.
 (see Volume : &#34;Glossary&#34; for value definitions)
+
             
             <table>
             
@@ -164,6 +166,120 @@ Note of Applicability: values are required in US futures markets by the CFTC to 
                 <td>7</td>
                 <td>=</td>
                 <td>SubmissionToClearing</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>TimePriority</td>
+            </tr>
+            
+            <tr>
+                <td>9</td>
+                <td>=</td>
+                <td>OrderbookEntryTime</td>
+            </tr>
+            
+            <tr>
+                <td>10</td>
+                <td>=</td>
+                <td>OrderSubmissionTime</td>
+            </tr>
+            
+            <tr>
+                <td>11</td>
+                <td>=</td>
+                <td>PubliclyReported</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>PublicReportUpdated</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>NonPubliclyReported</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>NonPublicReportUpdated</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>SubmittedForConfirmation</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>UpdatedForConfirmation</td>
+            </tr>
+            
+            <tr>
+                <td>17</td>
+                <td>=</td>
+                <td>Confirmed</td>
+            </tr>
+            
+            <tr>
+                <td>18</td>
+                <td>=</td>
+                <td>UpdatedForClearing</td>
+            </tr>
+            
+            <tr>
+                <td>19</td>
+                <td>=</td>
+                <td>Cleared</td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>=</td>
+                <td>AllocationsSubmitted</td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>=</td>
+                <td>AllocationsUpdated</td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>=</td>
+                <td>AllocationsCompleted</td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>=</td>
+                <td>SubmittedToRepository</td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td>=</td>
+                <td>PostTrdContntnEvnt</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>=</td>
+                <td>PostTradeValuation</td>
+            </tr>
+            
+            <tr>
+                <td>26</td>
+                <td>=</td>
+                <td>PreviousTimePriority</td>
             </tr>
             
             </table>

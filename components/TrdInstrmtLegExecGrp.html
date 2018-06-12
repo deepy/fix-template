@@ -1,0 +1,453 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>TrdInstrmtLegExecGrp [type 'Component']</h3>
+<p class="description">The TrdInstrmtLegExecGrp component comprises individual executions for legs of the trade side of a trade match report for a specific instrument.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1892.html">
+            
+                1892
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1892.html">
+            
+                NoLegExecs
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/654.html">
+            
+                654
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/654.html">
+            
+                LegRefID
+            
+            </a>
+        </td>
+        <td>@RefID</td>
+        <td class="green center"></td>
+        <td>Required if NoLegExecs(1892) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1893.html">
+            
+                1893
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1893.html">
+            
+                LegExecID
+            
+            </a>
+        </td>
+        <td>@ExecID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1901.html">
+            
+                1901
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1901.html">
+            
+                LegExecRefID
+            
+            </a>
+        </td>
+        <td>@ExecRefID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1894.html">
+            
+                1894
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1894.html">
+            
+                LegTradeID
+            
+            </a>
+        </td>
+        <td>@TrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1895.html">
+            
+                1895
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1895.html">
+            
+                LegTradeReportID
+            
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/685.html">
+            
+                685
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/685.html">
+            
+                LegOrderQty
+            
+            </a>
+        </td>
+        <td>@OrdQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/564.html">
+            
+                564
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/564.html">
+            
+                LegPositionEffect
+            
+            </a>
+        </td>
+        <td>@PosEfct</td>
+        <td class="green center"></td>
+        <td>Can be used to specify the position effect for the leg if it is different from the position effect of the overall multileg security.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/565.html">
+            
+                565
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/565.html">
+            
+                LegCoveredOrUncovered
+            
+            </a>
+        </td>
+        <td>@Cover</td>
+        <td class="green center"></td>
+        <td>Can be used to specify whether the option is a cover, if it is different from the overall multileg security.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NestedParties3.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/NestedParties3.html">
+            
+                <b>NestedParties3</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/637.html">
+            
+                637
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/637.html">
+            
+                LegLastPx
+            
+            </a>
+        </td>
+        <td>@LastPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/686.html">
+            
+                686
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/686.html">
+            
+                LegPriceType
+            
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/675.html">
+            
+                675
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/675.html">
+            
+                LegSettlCurrency
+            
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1689.html">
+            
+                1689
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1689.html">
+            
+                LegShortSaleExemptionReason
+            
+            </a>
+        </td>
+        <td>@ShrtSaleExmptnRsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1418.html">
+            
+                1418
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1418.html">
+            
+                LegLastQty
+            
+            </a>
+        </td>
+        <td>@LastQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1591.html">
+            
+                1591
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1591.html">
+            
+                LegQtyType
+            
+            </a>
+        </td>
+        <td>@QtyTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

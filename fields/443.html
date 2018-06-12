@@ -90,12 +90,13 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>StrikeTime [type '443']</h3>
-<p class="description">The time at which current market prices are used to determine the value of a basket.</p>
+<p class="description">The time at which current market prices are used to determine the value of a basket. 
+In negotiation workflows where a spread-to-benchmark price is negotiated, this is the pre-determined time at which the benchmark is to be spotted. </p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +107,7 @@
     <tr>
         <td class="green">
             <a href="../fields/443.html">
-            443
+            
             </a>
         </td>
         <td>
@@ -116,7 +117,8 @@
         </td>
         <td>StrkTm</td>
         <td>
-            The time at which current market prices are used to determine the value of a basket.
+            The time at which current market prices are used to determine the value of a basket. 
+In negotiation workflows where a spread-to-benchmark price is negotiated, this is the pre-determined time at which the benchmark is to be spotted. 
             
         </td>
         <td class="green"></td>
@@ -125,10 +127,26 @@
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/QuotReqGrp.html">QuotReqGrp]</a>
+    
+        [<a href="../components/QuotReqRjctGrp.html">QuotReqRjctGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
     
         [<a href="../messages/k.html">BidRequest]</a>
+    
+        [<a href="../messages/S.html">Quote]</a>
+    
+        [<a href="../messages/AJ.html">QuoteResponse]</a>
+    
+        [<a href="../messages/AI.html">QuoteStatusReport]</a>
     
     </p>
     <hr />

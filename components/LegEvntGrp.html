@@ -1,0 +1,348 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegEvntGrp [type 'Component']</h3>
+<p class="description">The LegEvntGrp is a repeating subcomponent of the InstrumentLeg component used to specify straightforward events associated with the instrument. Examples include put and call dates for bonds and options; first exercise date for options; inventory and delivery dates for commodities; start, end and roll dates for swaps. Use LegComplexEvents for more advanced dates such as option, futures, commodities and equity swap observation and pricing events.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2059.html">
+            
+                2059
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2059.html">
+            
+                NoLegEvents
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2060.html">
+            
+                2060
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2060.html">
+            
+                LegEventType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoLegEvents(2059) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2061.html">
+            
+                2061
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2061.html">
+            
+                LegEventDate
+            
+            </a>
+        </td>
+        <td>@Dt</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegEventTime(2062) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2062.html">
+            
+                2062
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2062.html">
+            
+                LegEventTime
+            
+            </a>
+        </td>
+        <td>@Tm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2063.html">
+            
+                2063
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2063.html">
+            
+                LegEventTimeUnit
+            
+            </a>
+        </td>
+        <td>@TmUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegEventTimePeriod(2064) is specified. </td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2064.html">
+            
+                2064
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2064.html">
+            
+                LegEventTimePeriod
+            
+            </a>
+        </td>
+        <td>@TmPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegEventTimeUnit(2063) is specified. </td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2341.html">
+            
+                2341
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2341.html">
+            
+                LegEventMonthYear
+            
+            </a>
+        </td>
+        <td>@MoYr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2065.html">
+            
+                2065
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2065.html">
+            
+                LegEventPx
+            
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2066.html">
+            
+                2066
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2066.html">
+            
+                LegEventText
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2074.html">
+            
+                2074
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2074.html">
+            
+                EncodedLegEventTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedLegEventText(2075) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2075.html">
+            
+                2075
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2075.html">
+            
+                EncodedLegEventText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the LegEventText(2066) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

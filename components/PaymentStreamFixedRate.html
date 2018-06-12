@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>PaymentStreamFixedRate [type 'Component']</h3>
+<p class="description">PaymentStreamFixedRate is a subcomponent of the PaymentStream component used to report the fixed rate or fixed payment amount of the stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40784.html">
+            
+                40784
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40784.html">
+            
+                PaymentStreamRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with PaymentStreamFixedAmount(40785).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40785.html">
+            
+                40785
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40785.html">
+            
+                PaymentStreamFixedAmount
+            
+            </a>
+        </td>
+        <td>@Amt</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with PaymentStreamRate(40784).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40786.html">
+            
+                40786
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40786.html">
+            
+                PaymentStreamRateOrAmountCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41187.html">
+            
+                41187
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41187.html">
+            
+                PaymentStreamFixedAmountUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@FixedAmtUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41188.html">
+            
+                41188
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41188.html">
+            
+                PaymentStreamTotalFixedAmount
+            
+            </a>
+        </td>
+        <td>@FixedAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40787.html">
+            
+                40787
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40787.html">
+            
+                PaymentStreamFutureValueNotional
+            
+            </a>
+        </td>
+        <td>@FutValNotl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40788.html">
+            
+                40788
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40788.html">
+            
+                PaymentStreamFutureValueDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FutValDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41189.html">
+            
+                41189
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41189.html">
+            
+                PaymentStreamWorldScaleRate
+            
+            </a>
+        </td>
+        <td>@WorldScaleRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41190.html">
+            
+                41190
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41190.html">
+            
+                PaymentStreamContractPrice
+            
+            </a>
+        </td>
+        <td>@CtrctPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41191.html">
+            
+                41191
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41191.html">
+            
+                PaymentStreamContractPriceCurrency
+            
+            </a>
+        </td>
+        <td>@CtrctPxCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

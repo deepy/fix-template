@@ -1,0 +1,959 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>MDStatisticParameters [type 'Component']</h3>
+<p class="description">This component comprises all parameters that can be used to describe the market data statistics. These can be part of the request as well as the response. All parameters defined on the MarketDataStatisticsRequest(35=DO) message should be echoed in the MarketDataStatisticsReport(35=DP) message as the latter could also be sent unsolicited.
+The general category and the entities involved in the statistics are defined by MDStatisticType(2456), MDStatisticScope(2457), and MDStatisticIntervalType(2464) and must always be specified. The remaining fields are optional and restrict the data range in one way or another. The time range for the data can either be specified in terms of an interval for which the statistics are typically calculated on a regular basis or in terms of an absolute date and/or time range.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2456.html">
+            
+                2456
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2456.html">
+            
+                MDStatisticType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2457.html">
+            
+                2457
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2457.html">
+            
+                MDStatisticScope
+            
+            </a>
+        </td>
+        <td>@Scope</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2458.html">
+            
+                2458
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2458.html">
+            
+                MDStatisticSubScope
+            
+            </a>
+        </td>
+        <td>@SubScope</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2459.html">
+            
+                2459
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2459.html">
+            
+                MDStatisticScopeType
+            
+            </a>
+        </td>
+        <td>@ScopeTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2454.html">
+            
+                2454
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2454.html">
+            
+                MDStatisticName
+            
+            </a>
+        </td>
+        <td>@StatsNme</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2455.html">
+            
+                2455
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2455.html">
+            
+                MDStatisticDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2481.html">
+            
+                2481
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2481.html">
+            
+                EncodedMDStatisticDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedMDStatisticDesc(2482) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2482.html">
+            
+                2482
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2482.html">
+            
+                EncodedMDStatisticDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the MDStatisticDesc(2455) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/264.html">
+            
+                264
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/264.html">
+            
+                MarketDepth
+            
+            </a>
+        </td>
+        <td>@MktDepth</td>
+        <td class="green center"></td>
+        <td>May be used to specify the market depth up to specified level.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2460.html">
+            
+                2460
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2460.html">
+            
+                MDStatisticFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticFrequencyUnit(2461) is specified. Omission represents a one-time dissemination.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2461.html">
+            
+                2461
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2461.html">
+            
+                MDStatisticFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticFrequencyPeriod(2460) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2462.html">
+            
+                2462
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2462.html">
+            
+                MDStatisticDelayPeriod
+            
+            </a>
+        </td>
+        <td>@DelayPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticDelayUnit(2463) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2463.html">
+            
+                2463
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2463.html">
+            
+                MDStatisticDelayUnit
+            
+            </a>
+        </td>
+        <td>@DelayUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticDelayPeriod(2462) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2464.html">
+            
+                2464
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2464.html">
+            
+                MDStatisticIntervalType
+            
+            </a>
+        </td>
+        <td>@IntvlTyp</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2465.html">
+            
+                2465
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2465.html">
+            
+                MDStatisticIntervalTypeUnit
+            
+            </a>
+        </td>
+        <td>@IntvlTypUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticIntervalType (2464) = 5(Current time unit), 6(Previous time unit) or 8(Maximum range up to previous time unit).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2466.html">
+            
+                2466
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2466.html">
+            
+                MDStatisticIntervalPeriod
+            
+            </a>
+        </td>
+        <td>@IntvlPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required if/when MDStatisticIntervalUnit(2467) is specified. 
+Conditionally required when MDStatisticIntervalType(2464) = 1 (Sliding window) or 2 (Sliding window peak).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2467.html">
+            
+                2467
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2467.html">
+            
+                MDStatisticIntervalUnit
+            
+            </a>
+        </td>
+        <td>@IntvlUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticIntervalPeriod(2466) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2468.html">
+            
+                2468
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2468.html">
+            
+                MDStatisticStartDate
+            
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td>Can be used to define a date range for a sliding window peak other than the current day. Omission represents a date range starting with the first available day.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2469.html">
+            
+                2469
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2469.html">
+            
+                MDStatisticEndDate
+            
+            </a>
+        </td>
+        <td>@EndDt</td>
+        <td class="green center"></td>
+        <td>Can be used to define a date range for a sliding window peak other than the current day. Omission represents a date range including the current day.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2470.html">
+            
+                2470
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2470.html">
+            
+                MDStatisticStartTime
+            
+            </a>
+        </td>
+        <td>@StartTm</td>
+        <td class="green center"></td>
+        <td>Can be used to define a time range for a sliding window peak other than the complete day. Omission represents a time range starting at midnight.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2471.html">
+            
+                2471
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2471.html">
+            
+                MDStatisticEndTime
+            
+            </a>
+        </td>
+        <td>@EndTm</td>
+        <td class="green center"></td>
+        <td>Can be used to define a time range for a sliding window peak other than the complete day. Omission represents a time range ending with the time of dissemination of the statistical data.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2472.html">
+            
+                2472
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2472.html">
+            
+                MDStatisticRatioType
+            
+            </a>
+        </td>
+        <td>@RatioTyp</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDStatisticType(2456) = 5(Ratio).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NestedParties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/NestedParties.html">
+            
+                <b>NestedParties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2584.html">
+            
+                2584
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2584.html">
+            
+                AnnualTradingBusinessDays
+            
+            </a>
+        </td>
+        <td>@AnnlTrdgBizDays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1815.html">
+            
+                1815
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1815.html">
+            
+                TradingCapacity
+            
+            </a>
+        </td>
+        <td>@TrdgCpcty</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40.html">
+            
+                40
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40.html">
+            
+                OrdType
+            
+            </a>
+        </td>
+        <td>@OrdTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/59.html">
+            
+                59
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/59.html">
+            
+                TimeInForce
+            
+            </a>
+        </td>
+        <td>@TmInForce</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/276.html">
+            
+                276
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/276.html">
+            
+                QuoteCondition
+            
+            </a>
+        </td>
+        <td>@QCond</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/277.html">
+            
+                277
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/277.html">
+            
+                TradeCondition
+            
+            </a>
+        </td>
+        <td>@TrdCond</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            
+                54
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            
+                Side
+            
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/578.html">
+            
+                578
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/578.html">
+            
+                TradeInputSource
+            
+            </a>
+        </td>
+        <td>@InptSrc</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/336.html">
+            
+                336
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/336.html">
+            
+                TradingSessionID
+            
+            </a>
+        </td>
+        <td>@SesID</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/625.html">
+            
+                625
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/625.html">
+            
+                TradingSessionSubID
+            
+            </a>
+        </td>
+        <td>@SesSub</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1024.html">
+            
+                1024
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1024.html">
+            
+                MDOriginType
+            
+            </a>
+        </td>
+        <td>@MDOrigTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2711.html">
+            
+                2711
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2711.html">
+            
+                MDValueTier
+            
+            </a>
+        </td>
+        <td>@Tier</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/338.html">
+            
+                338
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/338.html">
+            
+                TradSesMethod
+            
+            </a>
+        </td>
+        <td>@Method</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1022.html">
+            
+                1022
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1022.html">
+            
+                MDFeedType
+            
+            </a>
+        </td>
+        <td>@MDFeedTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1629.html">
+            
+                1629
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1629.html">
+            
+                ExposureDuration
+            
+            </a>
+        </td>
+        <td>@ExpsreDur</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1916.html">
+            
+                1916
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1916.html">
+            
+                ExposureDurationUnit
+            
+            </a>
+        </td>
+        <td>@ExpsreDurUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when ExposureDuration(1629) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1057.html">
+            
+                1057
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1057.html">
+            
+                AggressorIndicator
+            
+            </a>
+        </td>
+        <td>@AgrsrInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

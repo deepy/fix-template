@@ -1,0 +1,390 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>CollateralAmountGrp [type 'Component']</h3>
+<p class="description">The Collateral Amount Group component block is a repeating group that provides the current value of the collateral type on deposit.  The currency of the collateral value may be optionally included.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1703.html">
+            
+                1703
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1703.html">
+            
+                NoCollateralAmounts
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1704.html">
+            
+                1704
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1704.html">
+            
+                CurrentCollateralAmount
+            
+            </a>
+        </td>
+        <td>@Amt</td>
+        <td class="green center"></td>
+        <td>Required if NoCollateralAmounts(1703) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1705.html">
+            
+                1705
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1705.html">
+            
+                CollateralCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Can be used to specify the currency of CollateralAmount(1704) if Currency(15) is not specified or is not the same.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2632.html">
+            
+                2632
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2632.html">
+            
+                CollateralAmountType
+            
+            </a>
+        </td>
+        <td>@AmtTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2090.html">
+            
+                2090
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2090.html">
+            
+                CollateralFXRate
+            
+            </a>
+        </td>
+        <td>@FxRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2091.html">
+            
+                2091
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2091.html">
+            
+                CollateralFXRateCalc
+            
+            </a>
+        </td>
+        <td>@FxRtCalc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1706.html">
+            
+                1706
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1706.html">
+            
+                CollateralType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2092.html">
+            
+                2092
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2092.html">
+            
+                CollateralAmountMarketSegmentID
+            
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2093.html">
+            
+                2093
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2093.html">
+            
+                CollateralAmountMarketID
+            
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1902.html">
+            
+                1902
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1902.html">
+            
+                HaircutIndicator
+            
+            </a>
+        </td>
+        <td>@HrctInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2350.html">
+            
+                2350
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2350.html">
+            
+                CollateralPortfolioID
+            
+            </a>
+        </td>
+        <td>@PrtflioID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2690.html">
+            
+                2690
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2690.html">
+            
+                CollateralPercentOverage
+            
+            </a>
+        </td>
+        <td>@PctOvrg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2689.html">
+            
+                2689
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2689.html">
+            
+                CollateralMarketPrice
+            
+            </a>
+        </td>
+        <td>@MktPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

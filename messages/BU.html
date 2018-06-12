@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Messages</h2>
 <h3>MarketDefinition [type 'BU']</h3>
-<p class="description">The Market Definition message is used to respond to Market Definition Request. In a subscription, it will be used to provide the initial snapshot of the information requested. Subsequent updates are provided by the Market Definition Update Report.</p>
+<p class="description">The MarketDefinition(35=BU) message is used to respond to MarketDefinitionRequest(35=BT). In a subscription, it will be used to provide the initial snapshot of the information requested. Subsequent updates are provided by the MarketDefinitionUpdateReport(35=BV).</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../components/ApplicationSequenceControl.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ApplicationSequenceControl.html">
-            <b>ApplicationSequenceControl</b>
+            
+                <b>ApplicationSequenceControl</b>
+            
             </a>
         </td>
         <td>ApplSeqCtrl</td>
@@ -142,29 +150,37 @@
     <tr>
         <td class="green">
             <a href="../fields/1394.html">
-            1394
+            
+                1394
+            
             </a>
         </td>
         <td>
             <a href="../fields/1394.html">
-            MarketReportID
+            
+                MarketReportID
+            
             </a>
         </td>
         <td>@MktRptID</td>
         <td class="green center">✔</td>
-        <td>Unique identifier for each Market Definition message</td>
+        <td>Unique identifier for each market definition message.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1393.html">
-            1393
+            
+                1393
+            
             </a>
         </td>
         <td>
             <a href="../fields/1393.html">
-            MarketReqID
+            
+                MarketReqID
+            
             </a>
         </td>
         <td>@MktReqID</td>
@@ -176,12 +192,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1301.html">
-            1301
+            
+                1301
+            
             </a>
         </td>
         <td>
             <a href="../fields/1301.html">
-            MarketID
+            
+                MarketID
+            
             </a>
         </td>
         <td>@MktID</td>
@@ -193,12 +213,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1300.html">
-            1300
+            
+                1300
+            
             </a>
         </td>
         <td>
             <a href="../fields/1300.html">
-            MarketSegmentID
+            
+                MarketSegmentID
+            
             </a>
         </td>
         <td>@MktSegID</td>
@@ -210,12 +234,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1396.html">
-            1396
+            
+                1396
+            
             </a>
         </td>
         <td>
             <a href="../fields/1396.html">
-            MarketSegmentDesc
+            
+                MarketSegmentDesc
+            
             </a>
         </td>
         <td>@MarketSegmentDesc</td>
@@ -227,63 +255,185 @@
     <tr>
         <td class="green">
             <a href="../fields/1397.html">
-            1397
+            
+                1397
+            
             </a>
         </td>
         <td>
             <a href="../fields/1397.html">
-            EncodedMktSegmDescLen
+            
+                EncodedMktSegmDescLen
+            
             </a>
         </td>
         <td>@EncodedMktSegmDescLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedMktSegmDesc field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedMktSegmDesc(1398) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1398.html">
-            1398
+            
+                1398
+            
             </a>
         </td>
         <td>
             <a href="../fields/1398.html">
-            EncodedMktSegmDesc
+            
+                EncodedMktSegmDesc
+            
             </a>
         </td>
         <td>@EncodedMktSegmDesc</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the MarketSegmDesc field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the MarketSegmDesc(1396) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1325.html">
-            1325
+            
+                1325
+            
             </a>
         </td>
         <td>
             <a href="../fields/1325.html">
-            ParentMktSegmID
+            
+                ParentMktSegmID
+            
             </a>
         </td>
         <td>@ParentMktSegmID</td>
         <td class="green center"></td>
-        <td>Specifies that the Market Segment is a sub segment of the Market Segment defined in this field.</td>
+        <td>Specifies that the market segment specified in this message is a sub-segment of the market segment defined in this field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2542.html">
+            
+                2542
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2542.html">
+            
+                MarketSegmentStatus
+            
+            </a>
+        </td>
+        <td>@MktSegStat</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2543.html">
+            
+                2543
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2543.html">
+            
+                MarketSegmentType
+            
+            </a>
+        </td>
+        <td>@MktSegTyp</td>
+        <td class="green center"></td>
+        <td>Used to specify the purpose of a special market segment identified by MarketSegmentID(1300).
+Conditionally required if MarketSegmentSubType(2544) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2544.html">
+            
+                2544
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2544.html">
+            
+                MarketSegmentSubType
+            
+            </a>
+        </td>
+        <td>@MktSegSubTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentScopeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentScopeGrp.html">
+            
+                <b>InstrumentScopeGrp</b>
+            
+            </a>
+        </td>
+        <td>InstrmtScope</td>
+        <td class="green center"></td>
+        <td>Used to specify the types of securities that belong to the market segment.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedMarketSegmentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedMarketSegmentGrp.html">
+            
+                <b>RelatedMarketSegmentGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdMktSeg</td>
+        <td class="green center"></td>
+        <td>Used to specify market segments that have a relationship to the market segment defined in this message.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -295,80 +445,247 @@
     <tr>
         <td class="green">
             <a href="../components/BaseTradingRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/BaseTradingRules.html">
-            <b>BaseTradingRules</b>
+            
+                <b>BaseTradingRules</b>
+            
             </a>
         </td>
         <td>BaseTrdgRules</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;BaseTradingRules&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td>Used to specify the base trading rules for the identified market or market segment.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/OrdTypeRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/OrdTypeRules.html">
-            <b>OrdTypeRules</b>
+            
+                <b>OrdTypeRules</b>
+            
             </a>
         </td>
         <td>OrdTypRules</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;OrdTypeRules&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td>Used to specify the order types that are valid for trading on the identified market or market segment.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/TimeInForceRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TimeInForceRules.html">
-            <b>TimeInForceRules</b>
+            
+                <b>TimeInForceRules</b>
+            
             </a>
         </td>
         <td>TmInForceRules</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;TimeInForceRules&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td>Used to specify the time in force rules that are valid for trading on the identified market or market segment.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/ExecInstRules.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ExecInstRules.html">
-            <b>ExecInstRules</b>
+            
+                <b>ExecInstRules</b>
+            
             </a>
         </td>
         <td>ExecInstRules</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;ExecInstRules&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td>Used to specify the execution instructions that are valid for trading on the identified market or market segment.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AuctionTypeRuleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AuctionTypeRuleGrp.html">
+            
+                <b>AuctionTypeRuleGrp</b>
+            
+            </a>
+        </td>
+        <td>AuctTypRule</td>
+        <td class="green center"></td>
+        <td>Used to specify the auction order types that are valid for trading on the identified market or market segment. </td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MarketDataFeedTypes.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MarketDataFeedTypes.html">
+            
+                <b>MarketDataFeedTypes</b>
+            
+            </a>
+        </td>
+        <td>MDFeedTyps</td>
+        <td class="green center"></td>
+        <td>Used to specify the market data feed types that are valid for trading on the identified market or market segment.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MatchRules.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MatchRules.html">
+            
+                <b>MatchRules</b>
+            
+            </a>
+        </td>
+        <td>MtchRules</td>
+        <td class="green center"></td>
+        <td>Used to specify the matching rules that are valid for trading on the identified market or market segment.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FlexProductEligibilityGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FlexProductEligibilityGrp.html">
+            
+                <b>FlexProductEligibilityGrp</b>
+            
+            </a>
+        </td>
+        <td>FlexProdElig</td>
+        <td class="green center"></td>
+        <td>Specifies the eligibility indicators for the creation of flexible securities.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            
+                <b>Parties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>Specifies parties relevant for the market or market segment, e.g. market makers.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MiscFeesGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MiscFeesGrp.html">
+            
+                <b>MiscFeesGrp</b>
+            
+            </a>
+        </td>
+        <td>MiscFees</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2400.html">
+            
+                2400
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2400.html">
+            
+                EffectiveBusinessDate
+            
+            </a>
+        </td>
+        <td>@EfctvBizDt</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/60.html">
-            60
+            
+                60
+            
             </a>
         </td>
         <td>
             <a href="../fields/60.html">
-            TransactTime
+            
+                TransactTime
+            
             </a>
         </td>
         <td>@TxnTm</td>
@@ -380,63 +697,79 @@
     <tr>
         <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
         <td class="green center"></td>
-        <td>Comment, instructions, or other identifying information.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

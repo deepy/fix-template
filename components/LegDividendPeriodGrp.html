@@ -1,0 +1,558 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegDividendPeriodGrp [type 'Component']</h3>
+<p class="description">LegDividendPeriodGrp is a repeating subcomponent within the LegDividendConditions component.  It is used to specify the valuation and payments dates of the dividend leg of a dividend swap.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42366.html">
+            
+                42366
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42366.html">
+            
+                NoLegDividendPeriods
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42367.html">
+            
+                42367
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42367.html">
+            
+                LegDividendPeriodSequence
+            
+            </a>
+        </td>
+        <td>@Seq</td>
+        <td class="green center"></td>
+        <td>Required if NoLegDividendPeriods(42366) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42368.html">
+            
+                42368
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42368.html">
+            
+                LegDividendPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@StartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42369.html">
+            
+                42369
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42369.html">
+            
+                LegDividendPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@EndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42370.html">
+            
+                42370
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42370.html">
+            
+                LegDividendPeriodUnderlierRefID
+            
+            </a>
+        </td>
+        <td>@UndlrRefID</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides LegDividendUnderlierRefID(42340). The specified value would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42371.html">
+            
+                42371
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42371.html">
+            
+                LegDividendPeriodStrikePrice
+            
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42372.html">
+            
+                42372
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42372.html">
+            
+                LegDividendPeriodBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegDividendPeriodBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegDividendPeriodBusinessCenterGrp.html">
+            
+                <b>LegDividendPeriodBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42373.html">
+            
+                42373
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42373.html">
+            
+                LegDividendPeriodValuationDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@ValDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42374.html">
+            
+                42374
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42374.html">
+            
+                LegDividendPeriodValuationDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@ValDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42375.html">
+            
+                42375
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42375.html">
+            
+                LegDividendPeriodValuationDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@ValDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendPeriodValuationDateOffsetUnit(42376) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42376.html">
+            
+                42376
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42376.html">
+            
+                LegDividendPeriodValuationDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@ValDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendPeriodValuationDateOffsetPeriod(42375) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42377.html">
+            
+                42377
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42377.html">
+            
+                LegDividendPeriodValuationDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@ValDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42378.html">
+            
+                42378
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42378.html">
+            
+                LegDividendPeriodValuationDateAdjusted
+            
+            </a>
+        </td>
+        <td>@ValDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42379.html">
+            
+                42379
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42379.html">
+            
+                LegDividendPeriodPaymentDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@PmtDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42380.html">
+            
+                42380
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42380.html">
+            
+                LegDividendPeriodPaymentDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@PmtDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42381.html">
+            
+                42381
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42381.html">
+            
+                LegDividendPeriodPaymentDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendPeriodPaymentDateOffsetUnit(42382) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42382.html">
+            
+                42382
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42382.html">
+            
+                LegDividendPeriodPaymentDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendPeriodPaymentDateOffsetPeriod(42381) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42383.html">
+            
+                42383
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42383.html">
+            
+                LegDividendPeriodPaymentDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42384.html">
+            
+                42384
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42384.html">
+            
+                LegDividendPeriodPaymentDateAdjusted
+            
+            </a>
+        </td>
+        <td>@PmtDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42385.html">
+            
+                42385
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42385.html">
+            
+                LegDividendPeriodXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

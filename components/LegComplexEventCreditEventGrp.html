@@ -1,0 +1,306 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegComplexEventCreditEventGrp [type 'Component']</h3>
+<p class="description">The LegComplexEventCreditEventGrp is a repeating component within the LegComplexEventGrp component used to report applicable option credit events.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41366.html">
+            
+                41366
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41366.html">
+            
+                NoLegComplexEventCreditEvents
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41367.html">
+            
+                41367
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41367.html">
+            
+                LegComplexEventCreditEventType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoLegComplexEventCreditEvents(41366) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41368.html">
+            
+                41368
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41368.html">
+            
+                LegComplexEventCreditEventValue
+            
+            </a>
+        </td>
+        <td>@Val</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41369.html">
+            
+                41369
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41369.html">
+            
+                LegComplexEventCreditEventCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41370.html">
+            
+                41370
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41370.html">
+            
+                LegComplexEventCreditEventPeriod
+            
+            </a>
+        </td>
+        <td>@Period</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegComplexEventCreditEventUnit(41371) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41371.html">
+            
+                41371
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41371.html">
+            
+                LegComplexEventCreditEventUnit
+            
+            </a>
+        </td>
+        <td>@Unit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegComplexEventCreditEventPeriod(41370) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41372.html">
+            
+                41372
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41372.html">
+            
+                LegComplexEventCreditEventDayType
+            
+            </a>
+        </td>
+        <td>@DayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41373.html">
+            
+                41373
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41373.html">
+            
+                LegComplexEventCreditEventRateSource
+            
+            </a>
+        </td>
+        <td>@RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegComplexEventCreditEventQualifierGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegComplexEventCreditEventQualifierGrp.html">
+            
+                <b>LegComplexEventCreditEventQualifierGrp</b>
+            
+            </a>
+        </td>
+        <td>Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

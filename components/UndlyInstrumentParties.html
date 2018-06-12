@@ -108,85 +108,126 @@
     <tr>
         <td class="green">
             <a href="../fields/1058.html">
-            1058
+            
+                1058
+            
             </a>
         </td>
         <td>
             <a href="../fields/1058.html">
-            NoUndlyInstrumentParties
+            
+                NoUndlyInstrumentParties
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Repeating group below should contain unique combinations of InstrumentPartyID, InstrumentPartyIDSource, and InstrumentPartyRole</td>
+        <td>Repeating group below should contain unique combinations of UnderlyingInstrumentPartyID(1059), UnderlyingInstrumentPartyIDSource(1060) and UnderlyingInstrumentPartyRole(1061).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1059.html">
-            1059
+            
+                1059
+            
             </a>
         </td>
         <td>
             <a href="../fields/1059.html">
-            UnderlyingInstrumentPartyID
+            
+                UnderlyingInstrumentPartyID
+            
             </a>
         </td>
         <td>@ID</td>
         <td class="green center"></td>
-        <td>Used to identify party id related to instrument</td>
+        <td>Used to identify the source of PartyID.  Required if UnderlyingInstrumentPartyIDSource(1060) is specified.  Required if NoUndlyInstrumentParties(1058) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1060.html">
-            1060
+            
+                1060
+            
             </a>
         </td>
         <td>
             <a href="../fields/1060.html">
-            UnderlyingInstrumentPartyIDSource
+            
+                UnderlyingInstrumentPartyIDSource
+            
             </a>
         </td>
         <td>@Src</td>
         <td class="green center"></td>
-        <td>Used to identify source of instrument party id</td>
+        <td>Used to identify class source of UnderlyingInstrumentPartyID(1059) value (e.g. BIC).  Required if UnderlyingInstrumentPartyID(1059) is specified.  Required if NoUndlyInstrumentParties(1058) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1061.html">
-            1061
+            
+                1061
+            
             </a>
         </td>
         <td>
             <a href="../fields/1061.html">
-            UnderlyingInstrumentPartyRole
+            
+                UnderlyingInstrumentPartyRole
+            
             </a>
         </td>
         <td>@R</td>
         <td class="green center"></td>
-        <td>Used to identify the role of instrument party id</td>
+        <td>Identifies the type of UnderlyingInstrumentPartyID(1059) (e.g. Executing Broker).  Required if NoUndlyInstrumentParties(1058) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2391.html">
+            
+                2391
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2391.html">
+            
+                UnderlyingInstrumentPartyRoleQualifier
+            
+            </a>
+        </td>
+        <td>@Qual</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/UndlyInstrumentPtysSubGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UndlyInstrumentPtysSubGrp.html">
-            <b>UndlyInstrumentPtysSubGrp</b>
+            
+                <b>UndlyInstrumentPtysSubGrp</b>
+            
             </a>
         </td>
         <td>Sub</td>
         <td class="green center"></td>
-        <td>Repeating group of InstrumentParty sub-identifiers.</td>
+        <td>Repeating group of party sub-identifiers.</td>
         <td class="green"></td>
     </tr>
 

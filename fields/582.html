@@ -90,13 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>CustOrderCapacity [type '582']</h3>
-<p class="description">Capacity of customer placing the order
-Primarily used by futures exchanges to indicate the CTICode (customer type indicator) as required by the US CFTC (Commodity Futures Trading Commission).</p>
+<p class="description">Capacity of customer placing the order.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -107,7 +106,7 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
     <tr>
         <td class="green">
             <a href="../fields/582.html">
-            582
+            
             </a>
         </td>
         <td>
@@ -117,8 +116,7 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
         </td>
         <td>CustCpcty</td>
         <td>
-            Capacity of customer placing the order
-Primarily used by futures exchanges to indicate the CTICode (customer type indicator) as required by the US CFTC (Commodity Futures Trading Commission).
+            Capacity of customer placing the order.
             
             <table>
             
@@ -146,6 +144,12 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
                 <td>AllOther</td>
             </tr>
             
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>RetailCustomer</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -166,6 +170,8 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
     
         [<a href="../components/TrdCapRptSideGrp.html">TrdCapRptSideGrp]</a>
     
+        [<a href="../components/TrdMatchSideGrp.html">TrdMatchSideGrp]</a>
+    
     </p>
     <hr />
     
@@ -179,6 +185,12 @@ Primarily used by futures exchanges to indicate the CTICode (customer type indic
         [<a href="../messages/AS.html">AllocationReport]</a>
     
         [<a href="../messages/8.html">ExecutionReport]</a>
+    
+        [<a href="../messages/DP.html">MarketDataStatisticsReport]</a>
+    
+        [<a href="../messages/DJ.html">MassOrder]</a>
+    
+        [<a href="../messages/DK.html">MassOrderAck]</a>
     
         [<a href="../messages/AC.html">MultilegOrderCancelReplace]</a>
     

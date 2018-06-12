@@ -1,0 +1,768 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegStreamGrp [type 'Component']</h3>
+<p class="description">The LegStreamGrp is a repeating subcomponent of the InstrumentLeg component used to detail the swap streams associated with the instrument.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40241.html">
+            
+                40241
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40241.html">
+            
+                NoLegStreams
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40242.html">
+            
+                40242
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40242.html">
+            
+                LegStreamType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoLegStreams(40241) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41700.html">
+            
+                41700
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41700.html">
+            
+                LegStreamXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40243.html">
+            
+                40243
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40243.html">
+            
+                LegStreamDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42583.html">
+            
+                42583
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42583.html">
+            
+                LegStreamVersion
+            
+            </a>
+        </td>
+        <td>@Ver</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42584.html">
+            
+                42584
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42584.html">
+            
+                LegStreamVersionEffectiveDate
+            
+            </a>
+        </td>
+        <td>@VerEfctvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40244.html">
+            
+                40244
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40244.html">
+            
+                LegStreamPaySide
+            
+            </a>
+        </td>
+        <td>@PaySide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40245.html">
+            
+                40245
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40245.html">
+            
+                LegStreamReceiveSide
+            
+            </a>
+        </td>
+        <td>@RcvSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41702.html">
+            
+                41702
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41702.html">
+            
+                LegStreamNotionalXIDRef
+            
+            </a>
+        </td>
+        <td>@NotlXIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40246.html">
+            
+                40246
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40246.html">
+            
+                LegStreamNotional
+            
+            </a>
+        </td>
+        <td>@Notl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40247.html">
+            
+                40247
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40247.html">
+            
+                LegStreamCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42585.html">
+            
+                42585
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42585.html">
+            
+                LegStreamNotionalDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@NotlDtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42586.html">
+            
+                42586
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42586.html">
+            
+                LegStreamNotionalAdjustments
+            
+            </a>
+        </td>
+        <td>@NotlAdjmts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41703.html">
+            
+                41703
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41703.html">
+            
+                LegStreamNotionalFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@NotlPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamNotionalFrequencyUnit(41704) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41704.html">
+            
+                41704
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41704.html">
+            
+                LegStreamNotionalFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@NotlUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamNotionalFrequencyPeriod(41703) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41705.html">
+            
+                41705
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41705.html">
+            
+                LegStreamNotionalCommodityFrequency
+            
+            </a>
+        </td>
+        <td>@NotlFreq</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41706.html">
+            
+                41706
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41706.html">
+            
+                LegStreamNotionalUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@NotlUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41707.html">
+            
+                41707
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41707.html">
+            
+                LegStreamTotalNotional
+            
+            </a>
+        </td>
+        <td>@TotNotl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41708.html">
+            
+                41708
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41708.html">
+            
+                LegStreamTotalNotionalUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@TotNotlUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamCommodity.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamCommodity.html">
+            
+                <b>LegStreamCommodity</b>
+            
+            </a>
+        </td>
+        <td>Cmdty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamEffectiveDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamEffectiveDate.html">
+            
+                <b>LegStreamEffectiveDate</b>
+            
+            </a>
+        </td>
+        <td>EfctvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamTerminationDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamTerminationDate.html">
+            
+                <b>LegStreamTerminationDate</b>
+            
+            </a>
+        </td>
+        <td>TrmtnDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamCalculationPeriodDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamCalculationPeriodDates.html">
+            
+                <b>LegStreamCalculationPeriodDates</b>
+            
+            </a>
+        </td>
+        <td>CalcDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStream.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStream.html">
+            
+                <b>LegPaymentStream</b>
+            
+            </a>
+        </td>
+        <td>PmtStrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentScheduleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentScheduleGrp.html">
+            
+                <b>LegPaymentScheduleGrp</b>
+            
+            </a>
+        </td>
+        <td>PmtSched</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStubGrp.html">
+            
+                <b>LegPaymentStubGrp</b>
+            
+            </a>
+        </td>
+        <td>PmtStub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegDeliveryStream.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegDeliveryStream.html">
+            
+                <b>LegDeliveryStream</b>
+            
+            </a>
+        </td>
+        <td>DlvryStrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegDeliveryScheduleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegDeliveryScheduleGrp.html">
+            
+                <b>LegDeliveryScheduleGrp</b>
+            
+            </a>
+        </td>
+        <td>DlvrySched</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40248.html">
+            
+                40248
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40248.html">
+            
+                LegStreamText
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40978.html">
+            
+                40978
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40978.html">
+            
+                EncodedLegStreamTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedLegStreamText(40979) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40979.html">
+            
+                40979
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40979.html">
+            
+                EncodedLegStreamText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the LegStreamText(40248) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

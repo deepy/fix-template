@@ -1,0 +1,369 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>OrderEntryGrp [type 'Component']</h3>
+<p class="description">Group of order transactions across one or more instruments.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2428.html">
+            
+                2428
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2428.html">
+            
+                NoOrderEntries
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2429.html">
+            
+                2429
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2429.html">
+            
+                OrderEntryAction
+            
+            </a>
+        </td>
+        <td>@OrdEntryActn</td>
+        <td class="green center"></td>
+        <td>Required if NoOrderEntries(2428) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2430.html">
+            
+                2430
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2430.html">
+            
+                OrderEntryID
+            
+            </a>
+        </td>
+        <td>@OrdEntryID</td>
+        <td class="green center"></td>
+        <td>Unique order entry identification across all entries of a single message. Conditionally required when neither ClOrdID(11) nor OrderID(37) is provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/11.html">
+            
+                11
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/11.html">
+            
+                ClOrdID
+            
+            </a>
+        </td>
+        <td>@ClOrdID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when neither OrderEntryID(2430) nor OrderID(37) is provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41.html">
+            
+                41
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41.html">
+            
+                OrigClOrdID
+            
+            </a>
+        </td>
+        <td>@OrigClOrdID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrderEntryAction(2429) is not &#34;1&#34; (Add), ClOrdID(11) was provided in original order, and message-chaining model is used.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/37.html">
+            
+                37
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/37.html">
+            
+                OrderID
+            
+            </a>
+        </td>
+        <td>@OrdID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrderEntryAction(2429) is not &#34;1&#34; (Add) and neither OrderEntryID(2430) nor ClOrdID(11) is provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40.html">
+            
+                40
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40.html">
+            
+                OrdType
+            
+            </a>
+        </td>
+        <td>@OrdTyp</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrderEntryAction (2429) = 1 (Add) or 2 (Modify). Only a subset of OrdType(40) values permitted that do not require additional pricing fields other than  Price(44) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/44.html">
+            
+                44
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/44.html">
+            
+                Price
+            
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrdType(40) = 2 (Limit)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/54.html">
+            
+                54
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/54.html">
+            
+                Side
+            
+            </a>
+        </td>
+        <td>@Side</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrderEntryAction(2429) = 1 (Add) or 2 (Modify)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/59.html">
+            
+                59
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/59.html">
+            
+                TimeInForce
+            
+            </a>
+        </td>
+        <td>@TmInForce</td>
+        <td class="green center"></td>
+        <td>Only subset of values permitted that do not require additional fields</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrderQtyData.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrderQtyData.html">
+            
+                <b>OrderQtyData</b>
+            
+            </a>
+        </td>
+        <td>OrdQty</td>
+        <td class="green center"></td>
+        <td>Conditionally required when OrderEntryAction(2429) = 1 (Add) or 2 (Modify)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            
+                <b>Instrument</b>
+            
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>Required if NoOrderEntries(2432) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

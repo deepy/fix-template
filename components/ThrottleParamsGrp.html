@@ -1,0 +1,264 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>ThrottleParamsGrp [type 'Component']</h3>
+<p class="description"></p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1610.html">
+            
+                1610
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1610.html">
+            
+                NoThrottles
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Indicates number of throttles to follow.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1611.html">
+            
+                1611
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1611.html">
+            
+                ThrottleAction
+            
+            </a>
+        </td>
+        <td>@Actn</td>
+        <td class="green center"></td>
+        <td>Required when NoThrottles &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1612.html">
+            
+                1612
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1612.html">
+            
+                ThrottleType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required when NoThrottles &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1613.html">
+            
+                1613
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1613.html">
+            
+                ThrottleNoMsgs
+            
+            </a>
+        </td>
+        <td>@NoMsgs</td>
+        <td class="green center"></td>
+        <td>Number of messages per time interval, or number of outstanding requests. Required when NoThrottles &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1614.html">
+            
+                1614
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1614.html">
+            
+                ThrottleTimeInterval
+            
+            </a>
+        </td>
+        <td>@TmIntvl</td>
+        <td class="green center"></td>
+        <td>Can be used only when ThrottleType = Inbound Rate. Indicates, along with ThrottleTimeUnit, the interval of time in which ThrottleNoMsgs may be sent. Default is 1.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1615.html">
+            
+                1615
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1615.html">
+            
+                ThrottleTimeUnit
+            
+            </a>
+        </td>
+        <td>@TmUnit</td>
+        <td class="green center"></td>
+        <td>Can be used only when ThrottleType = Inbound Rate. Indicates, along with ThrottleTimeUnit, the interval of time in which ThrottleNoMsgs may be sent. Default is Seconds.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ThrottleMsgTypeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ThrottleMsgTypeGrp.html">
+            
+                <b>ThrottleMsgTypeGrp</b>
+            
+            </a>
+        </td>
+        <td>ThrttlMsgTyp</td>
+        <td class="green center"></td>
+        <td>	Indicates MsgType values that this throttle counts. If not specified, the definition is implicit based upon bilateral agreement.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

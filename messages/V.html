@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Messages</h2>
 <h3>MarketDataRequest [type 'V']</h3>
-<p class="description">Some systems allow the transmission of real-time quote, order, trade, trade volume, open interest, and/or other price information on a subscription basis. A Market Data Request is a general request for market data on specific securities or forex quotes.</p>
+<p class="description">Some systems allow the transmission of real-time quote, order, trade, trade volume, open interest, and/or other price information on a subscription basis. A MarketDataRequest(35=V) is a general request for market data on specific securities or forex quotes.  The values in the fields provided within the request will serve as further filter criteria for the result set.</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -125,63 +129,79 @@
     <tr>
         <td class="green">
             <a href="../fields/262.html">
-            262
+            
+                262
+            
             </a>
         </td>
         <td>
             <a href="../fields/262.html">
-            MDReqID
+            
+                MDReqID
+            
             </a>
         </td>
         <td>@ReqID</td>
         <td class="green center">✔</td>
-        <td>Must be unique, or the ID of previous Market Data Request to disable if SubscriptionRequestType = Disable previous Snapshot + Updates Request (2).</td>
+        <td>Must be unique, or the ID of previous Market Data Request to disable if SubscriptionRequestType(263) = 2(Disable previous Snapshot + Updates Request).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/263.html">
-            263
+            
+                263
+            
             </a>
         </td>
         <td>
             <a href="../fields/263.html">
-            SubscriptionRequestType
+            
+                SubscriptionRequestType
+            
             </a>
         </td>
         <td>@SubReqTyp</td>
         <td class="green center">✔</td>
-        <td>SubscriptionRequestType indicates to the other party what type of response is expected. A snapshot request only asks for current information. A subscribe request asks for updates as the status changes. Unsubscribe will cancel any future update messages from the counter party.</td>
+        <td>SubscriptionRequestType(263) indicates to the other party what type of response is expected. A snapshot request only asks for current information. A subscribe request asks for updates as the status changes. Unsubscribe will cancel any future update messages from the counter party.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
         <td class="green center"></td>
-        <td>Insert here the set of Parties (firm identification) fields defined in &#34;Common Components of Application Messages</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/264.html">
-            264
+            
+                264
+            
             </a>
         </td>
         <td>
             <a href="../fields/264.html">
-            MarketDepth
+            
+                MarketDepth
+            
             </a>
         </td>
         <td>@MktDepth</td>
@@ -193,29 +213,37 @@
     <tr>
         <td class="green">
             <a href="../fields/265.html">
-            265
+            
+                265
+            
             </a>
         </td>
         <td>
             <a href="../fields/265.html">
-            MDUpdateType
+            
+                MDUpdateType
+            
             </a>
         </td>
         <td>@UpdtTyp</td>
         <td class="green center"></td>
-        <td>Required if SubscriptionRequestType = Snapshot + Updates (1).</td>
+        <td>Required if SubscriptionRequestType(263) = 1(Snapshot + Updates).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/266.html">
-            266
+            
+                266
+            
             </a>
         </td>
         <td>
             <a href="../fields/266.html">
-            AggregatedBook
+            
+                AggregatedBook
+            
             </a>
         </td>
         <td>@AggBook</td>
@@ -227,29 +255,37 @@
     <tr>
         <td class="green">
             <a href="../fields/286.html">
-            286
+            
+                286
+            
             </a>
         </td>
         <td>
             <a href="../fields/286.html">
-            OpenCloseSettlFlag
+            
+                OpenCloseSettlFlag
+            
             </a>
         </td>
         <td>@OpenClsSettlFlag</td>
         <td class="green center"></td>
-        <td>Can be used to clarify a request if MDEntryType = Opening Price(4), Closing Price(5), or Settlement Price(6).</td>
+        <td>Can be used to clarify a request if MDEntryType(269) = 4 (Opening price), 5 (Closing price), or 6 (Settlement price).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/546.html">
-            546
+            
+                546
+            
             </a>
         </td>
         <td>
             <a href="../fields/546.html">
-            Scope
+            
+                Scope
+            
             </a>
         </td>
         <td>@Scope</td>
@@ -261,80 +297,121 @@
     <tr>
         <td class="green">
             <a href="../fields/547.html">
-            547
+            
+                547
+            
             </a>
         </td>
         <td>
             <a href="../fields/547.html">
-            MDImplicitDelete
+            
+                MDImplicitDelete
+            
             </a>
         </td>
         <td>@ImplctDel</td>
         <td class="green center"></td>
-        <td>Can be used when MarketDepth &gt;= 2 and MDUpdateType = Incremental Refresh(1).</td>
+        <td>Can be used when MarketDepth(254) &gt;= 2 and MDUpdateType(265) = 1(Incremental Refresh).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/MDReqGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/MDReqGrp.html">
-            <b>MDReqGrp</b>
+            
+                <b>MDReqGrp</b>
+            
             </a>
         </td>
         <td>Req</td>
         <td class="green center">✔</td>
-        <td>Number of MDEntryType fields requested.</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MarketSegmentScopeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MarketSegmentScopeGrp.html">
+            
+                <b>MarketSegmentScopeGrp</b>
+            
+            </a>
+        </td>
+        <td>MktSegScope</td>
+        <td class="green center"></td>
+        <td>Can be used to limit the result set to the specified markets or market segments.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/InstrmtMDReqGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtMDReqGrp.html">
-            <b>InstrmtMDReqGrp</b>
+            
+                <b>InstrmtMDReqGrp</b>
+            
             </a>
         </td>
         <td>InstReq</td>
         <td class="green center">✔</td>
-        <td>Number of symbols (instruments) requested.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/TrdgSesGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TrdgSesGrp.html">
-            <b>TrdgSesGrp</b>
+            
+                <b>TrdgSesGrp</b>
+            
             </a>
         </td>
         <td>TrdSes</td>
         <td class="green center"></td>
-        <td>Number of trading sessions for which the request is valid.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/815.html">
-            815
+            
+                815
+            
             </a>
         </td>
         <td>
             <a href="../fields/815.html">
-            ApplQueueAction
+            
+                ApplQueueAction
+            
             </a>
         </td>
         <td>@ApplQuActn</td>
@@ -346,12 +423,16 @@
     <tr>
         <td class="green">
             <a href="../fields/812.html">
-            812
+            
+                812
+            
             </a>
         </td>
         <td>
             <a href="../fields/812.html">
-            ApplQueueMax
+            
+                ApplQueueMax
+            
             </a>
         </td>
         <td>@ApplQuMax</td>
@@ -363,12 +444,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1070.html">
-            1070
+            
+                1070
+            
             </a>
         </td>
         <td>
             <a href="../fields/1070.html">
-            MDQuoteType
+            
+                MDQuoteType
+            
             </a>
         </td>
         <td>@MDQteTyp</td>
@@ -379,13 +464,38 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2447.html">
+            
+                2447
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2447.html">
+            
+                FastMarketIndicator
+            
+            </a>
+        </td>
+        <td>@FastMktInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

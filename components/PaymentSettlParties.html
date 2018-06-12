@@ -1,0 +1,243 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>PaymentSettlParties [type 'Component']</h3>
+<p class="description">PaymentSettlParties is a repeating subcomponent of the PaymentSettlGrp component used to report payment settlement routing.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40233.html">
+            
+                40233
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40233.html">
+            
+                NoPaymentSettlPartyIDs
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40234.html">
+            
+                40234
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40234.html">
+            
+                PaymentSettlPartyID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Required if NoPaymentSettlPartyIDs(40233) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40235.html">
+            
+                40235
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40235.html">
+            
+                PaymentSettlPartyIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Required if NoPaymentSettlPartyIDs(40233) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40236.html">
+            
+                40236
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40236.html">
+            
+                PaymentSettlPartyRole
+            
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Required if NoPaymentSettlPartyIDs(40233) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40237.html">
+            
+                40237
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40237.html">
+            
+                PaymentSettlPartyRoleQualifier
+            
+            </a>
+        </td>
+        <td>@Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentSettlPtysSubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentSettlPtysSubGrp.html">
+            
+                <b>PaymentSettlPtysSubGrp</b>
+            
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

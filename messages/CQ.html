@@ -1,0 +1,455 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>AccountSummaryReport [type 'CQ']</h3>
+<p class="description">The AccountSummaryReport is provided by the clearinghouse to its clearing members on a daily basis. It contains margin, settlement, collateral and pay/collect data for each clearing member level account type. Clearing member account types will be described through use of the Parties component and PtysSubGrp sub-component.
+In certain usages, the clearing members can send the AccountSummaryReport message to the clearinghouse as needed. For example, clearing members can send this message to the clearinghouse to identify the value of collateral for each customer (to satisfy CFTC Legally Segregated Operationally Commingled (LSOC) regulatory reporting obligations).
+Clearing organizations can also send the AccountSummaryReport message to regulators to meet regulatory reporting obligations.  For example, clearing organizations can use this message to submit daily reports for each clearing member (“CM”) by house origin and by each customer origin for all futures, options, and swaps positions, and all securities positions held in a segregated account or pursuant to a cross margining agreement, to a regulator (e.g. to the CFTC to meet Part 39, Section 39.19 reporting obligations).</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = CQ</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1699.html">
+            
+                1699
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1699.html">
+            
+                AccountSummaryReportID
+            
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/715.html">
+            
+                715
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/715.html">
+            
+                ClearingBusinessDate
+            
+            </a>
+        </td>
+        <td>@BizDt</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            
+                15
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            
+                Currency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Identifies the base reporting currency used in this report.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/900.html">
+            
+                900
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/900.html">
+            
+                TotalNetValue
+            
+            </a>
+        </td>
+        <td>@TotNetValu</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/899.html">
+            
+                899
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/899.html">
+            
+                MarginExcess
+            
+            </a>
+        </td>
+        <td>@MgnExcess</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/716.html">
+            
+                716
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/716.html">
+            
+                SettlSessID
+            
+            </a>
+        </td>
+        <td>@SetSesID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/717.html">
+            
+                717
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/717.html">
+            
+                SettlSessSubID
+            
+            </a>
+        </td>
+        <td>@SetSesSub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SettlementAmountGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/SettlementAmountGrp.html">
+            
+                <b>SettlementAmountGrp</b>
+            
+            </a>
+        </td>
+        <td>SettlAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MarginAmount.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MarginAmount.html">
+            
+                <b>MarginAmount</b>
+            
+            </a>
+        </td>
+        <td>MgnAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            
+                <b>Parties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center">✔</td>
+        <td>Used to identify the parties for the account  (clearing organization, clearing firm, account type, etc.)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CollateralAmountGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CollateralAmountGrp.html">
+            
+                <b>CollateralAmountGrp</b>
+            
+            </a>
+        </td>
+        <td>CollAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PayCollectGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PayCollectGrp.html">
+            
+                <b>PayCollectGrp</b>
+            
+            </a>
+        </td>
+        <td>PayCol</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PositionAmountData.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PositionAmountData.html">
+            
+                <b>PositionAmountData</b>
+            
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td>Can be used to identify mark to market information for the position.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

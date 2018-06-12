@@ -1,0 +1,390 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>MarketDataReport [type 'DR']</h3>
+<p class="description">The MarketDataReport(35=DR) message is used to provide delimiting references (e.g. start and end markers in a continuous broadcast) and details about the number of market data messages sent in a given distribution cycle.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = DR</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>ApplicationSequenceControl</b>
+            
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/963.html">
+            
+                963
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/963.html">
+            
+                MDReportID
+            
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center"></td>
+        <td>Unique identifier for MarketDataReport(35=DR).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2535.html">
+            
+                2535
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2535.html">
+            
+                MDReportEvent
+            
+            </a>
+        </td>
+        <td>@MDRptEvent</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2536.html">
+            
+                2536
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2536.html">
+            
+                MDReportCount
+            
+            </a>
+        </td>
+        <td>@MDRptCnt</td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/911.html">
+            
+                911
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/911.html">
+            
+                TotNumReports
+            
+            </a>
+        </td>
+        <td>@TotNumRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2537.html">
+            
+                2537
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2537.html">
+            
+                TotNoMarketSegmentReports
+            
+            </a>
+        </td>
+        <td>@TotNoMktSegRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2538.html">
+            
+                2538
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2538.html">
+            
+                TotNoInstrumentReports
+            
+            </a>
+        </td>
+        <td>@TotNoInstrmtRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2539.html">
+            
+                2539
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2539.html">
+            
+                TotNoPartyDetailReports
+            
+            </a>
+        </td>
+        <td>@TotNoPtyDetlRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2540.html">
+            
+                2540
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2540.html">
+            
+                TotNoEntitlementReports
+            
+            </a>
+        </td>
+        <td>@TotNoEntlmntRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2541.html">
+            
+                2541
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2541.html">
+            
+                TotNoRiskLimitReports
+            
+            </a>
+        </td>
+        <td>@TotNoRiskLmtRpts</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -115,12 +115,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -132,12 +136,16 @@
     <tr>
         <td class="green">
             <a href="../components/ApplicationSequenceControl.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ApplicationSequenceControl.html">
-            <b>ApplicationSequenceControl</b>
+            
+                <b>ApplicationSequenceControl</b>
+            
             </a>
         </td>
         <td>ApplSeqCtrl</td>
@@ -149,12 +157,16 @@
     <tr>
         <td class="green">
             <a href="../fields/37.html">
-            37
+            
+                37
+            
             </a>
         </td>
         <td>
             <a href="../fields/37.html">
-            OrderID
+            
+                OrderID
+            
             </a>
         </td>
         <td>@OrdID</td>
@@ -165,49 +177,101 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2422.html">
+            
+                2422
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2422.html">
+            
+                OrderRequestID
+            
+            </a>
+        </td>
+        <td>@OrdReqID</td>
+        <td class="green center"></td>
+        <td>Required if provided on the order message. Echo back the value provided in the order message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2423.html">
+            
+                2423
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2423.html">
+            
+                MassOrderRequestID
+            
+            </a>
+        </td>
+        <td>@MassOrdReqID</td>
+        <td class="green center"></td>
+        <td>Can be used to link execution to the MassOrder(35=DJ) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/198.html">
-            198
+            
+                198
+            
             </a>
         </td>
         <td>
             <a href="../fields/198.html">
-            SecondaryOrderID
+            
+                SecondaryOrderID
+            
             </a>
         </td>
         <td>@OrdID2</td>
         <td class="green center"></td>
-        <td>Can be used to provide order id used by exchange or executing system.</td>
+        <td>Can be used to provide order id used by exchange or executing system. Can alternatively be used to convey implicit order priority.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/526.html">
-            526
+            
+                526
+            
             </a>
         </td>
         <td>
             <a href="../fields/526.html">
-            SecondaryClOrdID
+            
+                SecondaryClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID2</td>
         <td class="green center"></td>
-        <td>In the case of quotes can be mapped to:
-- QuoteID(117) of a single Quote
-- QuoteEntryID(299) of a Mass Quote.</td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/527.html">
-            527
+            
+                527
+            
             </a>
         </td>
         <td>
             <a href="../fields/527.html">
-            SecondaryExecID
+            
+                SecondaryExecID
+            
             </a>
         </td>
         <td>@ExecID2</td>
@@ -219,49 +283,85 @@
     <tr>
         <td class="green">
             <a href="../fields/11.html">
-            11
+            
+                11
+            
             </a>
         </td>
         <td>
             <a href="../fields/11.html">
-            ClOrdID
+            
+                ClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID</td>
         <td class="green center"></td>
-        <td>Required when referring to orders that were electronically submitted over FIX or otherwise assigned a ClOrdID(11).
+        <td>Required when referring to orders that where electronically submitted over FIX or otherwise assigned a ClOrdID(11). 
 In the case of quotes can be mapped to:
-- QuoteMsgID(1166) of a single Quote
-- QuoteID(117) of a Mass Quote.</td>
+- QuoteMsgID(1166) of a single Quote(35=S)
+- QuoteID(117) of a MassQuote(35=i).
+- MassOrderReportID(2424) of a MassOrderAck(35=DK)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1166.html">
+            
+                1166
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1166.html">
+            
+                QuoteMsgID
+            
+            </a>
+        </td>
+        <td>@QtMsgID</td>
+        <td class="green center"></td>
+        <td>In the case of quotes can be mapped to:
+o	QuoteMsgID(1166) of a single Quote(35=S)
+o	QuoteID(117) of a MassQuote(35=i)</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/41.html">
-            41
+            
+                41
+            
             </a>
         </td>
         <td>
             <a href="../fields/41.html">
-            OrigClOrdID
+            
+                OrigClOrdID
+            
             </a>
         </td>
         <td>@OrigClOrdID</td>
         <td class="green center"></td>
-        <td>Conditionally required for response to a Cancel or Cancel/Replace request (ExecType=PendingCancel, Replace, or Canceled) when referring to orders that where electronically submitted over FIX or otherwise assigned a ClOrdID(11). ClOrdID of the previous accepted order (NOT the initial order of the day) when canceling or replacing an order.</td>
+        <td>Conditionally required for response to a Cancel or Cancel/Replace request (ExecType(150) = 6 (Pending Cancel, 5 (Replaced), or 4 (Canceled)) when referring to orders that where electronically submitted over FIX or otherwise assigned a ClOrdID(11). ClOrdID(11) of the previous accepted order (NOT the initial order of the day) when canceling or replacing an order.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/583.html">
-            583
+            
+                583
+            
             </a>
         </td>
         <td>
             <a href="../fields/583.html">
-            ClOrdLinkID
+            
+                ClOrdLinkID
+            
             </a>
         </td>
         <td>@ClOrdLinkID</td>
@@ -272,64 +372,101 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/278.html">
+            
+                278
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/278.html">
+            
+                MDEntryID
+            
+            </a>
+        </td>
+        <td>@MDID</td>
+        <td class="green center"></td>
+        <td>Reference to the MDEntryID(278) of this order or quote in the market data.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/693.html">
-            693
+            
+                693
+            
             </a>
         </td>
         <td>
             <a href="../fields/693.html">
-            QuoteRespID
+            
+                QuoteRespID
+            
             </a>
         </td>
         <td>@RspID</td>
         <td class="green center"></td>
-        <td>Required if responding to a QuoteResponse message. Echo back the Initiator&#39;s value specified in the message.</td>
+        <td>Required if responding to a QuoteResponse(35=AJ) message.  Echo back the Initiator&#39;s value specified in the message.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/790.html">
-            790
+            
+                790
+            
             </a>
         </td>
         <td>
             <a href="../fields/790.html">
-            OrdStatusReqID
+            
+                OrdStatusReqID
+            
             </a>
         </td>
         <td>@StatReqID</td>
         <td class="green center"></td>
-        <td>Required if responding to and if provided on the Order Status Request message. Echo back the value provided by the requester.</td>
+        <td>Required if responding to and if provided on the OrderStatusRequest(35=H) message. Echo back the value provided by the requester.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/584.html">
-            584
+            
+                584
+            
             </a>
         </td>
         <td>
             <a href="../fields/584.html">
-            MassStatusReqID
+            
+                MassStatusReqID
+            
             </a>
         </td>
         <td>@MassStatReqID</td>
         <td class="green center"></td>
-        <td>Required if responding to a Order Mass Status Request. Echo back the value provided by the requester.</td>
+        <td>Required if responding to a OrderMassStatusRequest(35=AF). Echo back the value provided by the requester.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/961.html">
-            961
+            
+                961
+            
             </a>
         </td>
         <td>
             <a href="../fields/961.html">
-            HostCrossID
+            
+                HostCrossID
+            
             </a>
         </td>
         <td>@HstCxID</td>
@@ -341,63 +478,100 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/911.html">
-            911
+            
+                911
+            
             </a>
         </td>
         <td>
             <a href="../fields/911.html">
-            TotNumReports
+            
+                TotNumReports
+            
             </a>
         </td>
         <td>@TotNumRpts</td>
         <td class="green center"></td>
-        <td>Can be used when responding to an Order Mass Status Request to identify the total number of Execution Reports which will be returned.</td>
+        <td>Can be used when responding to an OrderMassStatusRequest(35=AF) to identify the total number of ExecutionReport(35=8) messages which will be returned.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/912.html">
-            912
+            
+                912
+            
             </a>
         </td>
         <td>
             <a href="../fields/912.html">
-            LastRptRequested
+            
+                LastRptRequested
+            
             </a>
         </td>
         <td>@LastRptReqed</td>
         <td class="green center"></td>
-        <td>Can be used when responding to an Order Mass Status Request to indicate that this is the last Execution Reports which will be returned as a result of the request.</td>
+        <td>Can be used when responding to an OrderMassStatusRequest(35=AF) to indicate that this is the last ExecutionReport(35=8) messages which will be returned as a result of the request.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td>Specifies party information related to the submitter.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TargetParties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TargetParties.html">
+            
+                <b>TargetParties</b>
+            
+            </a>
+        </td>
+        <td>TgtPty</td>
+        <td class="green center"></td>
+        <td>Specifies parties not directly associated with or owning the order, who are to be informed to effect processing of the order.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/229.html">
-            229
+            
+                229
+            
             </a>
         </td>
         <td>
             <a href="../fields/229.html">
-            TradeOriginationDate
+            
+                TradeOriginationDate
+            
             </a>
         </td>
         <td>@OrignDt</td>
@@ -409,29 +583,37 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../components/ContraGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ContraGrp.html">
-            <b>ContraGrp</b>
+            
+                <b>ContraGrp</b>
+            
             </a>
         </td>
         <td>Contra</td>
         <td class="green center"></td>
-        <td>Number of ContraBrokers repeating group instances.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/66.html">
-            66
+            
+                66
+            
             </a>
         </td>
         <td>
             <a href="../fields/66.html">
-            ListID
+            
+                ListID
+            
             </a>
         </td>
         <td>@ListID</td>
@@ -443,12 +625,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/548.html">
-            548
+            
+                548
+            
             </a>
         </td>
         <td>
             <a href="../fields/548.html">
-            CrossID
+            
+                CrossID
+            
             </a>
         </td>
         <td>@CrssID</td>
@@ -460,29 +646,37 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/551.html">
-            551
+            
+                551
+            
             </a>
         </td>
         <td>
             <a href="../fields/551.html">
-            OrigCrossID
+            
+                OrigCrossID
+            
             </a>
         </td>
         <td>@OrigCrssID</td>
         <td class="green center"></td>
-        <td>Must match original cross order. Same order chaining mechanism as ClOrdID/OrigClOrdID with single order Cancel/Replace.</td>
+        <td>Must match original cross order. Same order chaining mechanism as ClOrdID(11)/OrigClOrdID(41) with OrderCancelReplaceRequest(35=G).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/549.html">
-            549
+            
+                549
+            
             </a>
         </td>
         <td>
             <a href="../fields/549.html">
-            CrossType
+            
+                CrossType
+            
             </a>
         </td>
         <td>@CrssTyp</td>
@@ -493,13 +687,59 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/2334.html">
+            
+                2334
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2334.html">
+            
+                RefRiskLimitCheckID
+            
+            </a>
+        </td>
+        <td>@RefRiskLmtChkID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2335.html">
+            
+                2335
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2335.html">
+            
+                RefRiskLimitCheckIDType
+            
+            </a>
+        </td>
+        <td>@RefRiskLmtChkIDTyp</td>
+        <td class="green center"></td>
+        <td>Conditionally required when RefRiskLimitCheckID(2334) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/880.html">
-            880
+            
+                880
+            
             </a>
         </td>
         <td>
             <a href="../fields/880.html">
-            TrdMatchID
+            
+                TrdMatchID
+            
             </a>
         </td>
         <td>@MtchID</td>
@@ -510,47 +750,80 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/1891.html">
+            
+                1891
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1891.html">
+            
+                TrdMatchSubID
+            
+            </a>
+        </td>
+        <td>@MtchSubID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/17.html">
-            17
+            
+                17
+            
             </a>
         </td>
         <td>
             <a href="../fields/17.html">
-            ExecID
+            
+                ExecID
+            
             </a>
         </td>
         <td>@ExecID</td>
         <td class="green center">✔</td>
-        <td>Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) forExecType=I (Order Status)).</td>
+        <td>Unique identifier of execution message as assigned by sell-side (broker, exchange, ECN) (will be 0 (zero) for ExecType(150) = I (Order Status)).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/19.html">
-            19
+            
+                19
+            
             </a>
         </td>
         <td>
             <a href="../fields/19.html">
-            ExecRefID
+            
+                ExecRefID
+            
             </a>
         </td>
         <td>@ExecRefID</td>
         <td class="green center"></td>
-        <td>Required for Trade Cancel and Trade Correct ExecType messages</td>
+        <td>Required for ExecType(150) = H (Trade Cancel) and ExecType(150) = G (Trade Correct).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/150.html">
-            150
+            
+                150
+            
             </a>
         </td>
         <td>
             <a href="../fields/150.html">
-            ExecType
+            
+                ExecType
+            
             </a>
         </td>
         <td>@ExecTyp</td>
@@ -561,13 +834,38 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/2431.html">
+            
+                2431
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2431.html">
+            
+                ExecTypeReason
+            
+            </a>
+        </td>
+        <td>@ExecTypRsn</td>
+        <td class="green center"></td>
+        <td>Can be used to provide further detail for ExecType(150) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/39.html">
-            39
+            
+                39
+            
             </a>
         </td>
         <td>
             <a href="../fields/39.html">
-            OrdStatus
+            
+                OrdStatus
+            
             </a>
         </td>
         <td>@OrdStat</td>
@@ -579,12 +877,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/636.html">
-            636
+            
+                636
+            
             </a>
         </td>
         <td>
             <a href="../fields/636.html">
-            WorkingIndicator
+            
+                WorkingIndicator
+            
             </a>
         </td>
         <td>@WorkingInd</td>
@@ -596,12 +898,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/103.html">
-            103
+            
+                103
+            
             </a>
         </td>
         <td>
             <a href="../fields/103.html">
-            OrdRejReason
+            
+                OrdRejReason
+            
             </a>
         </td>
         <td>@RejRsn</td>
@@ -612,13 +918,80 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/1328.html">
+            
+                1328
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1328.html">
+            
+                RejectText
+            
+            </a>
+        </td>
+        <td>@RejTxt</td>
+        <td class="green center"></td>
+        <td>Reason description for rejecting the transaction request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1664.html">
+            
+                1664
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1664.html">
+            
+                EncodedRejectTextLen
+            
+            </a>
+        </td>
+        <td>@EncRejTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedRejectText(1665) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1665.html">
+            
+                1665
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1665.html">
+            
+                EncodedRejectText
+            
+            </a>
+        </td>
+        <td>@EncRejTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the RejectText(1328) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/378.html">
-            378
+            
+                378
+            
             </a>
         </td>
         <td>
             <a href="../fields/378.html">
-            ExecRestatementReason
+            
+                ExecRestatementReason
+            
             </a>
         </td>
         <td>@ExecRstmtRsn</td>
@@ -629,13 +1002,185 @@ In the case of quotes can be mapped to:
 
     <tr>
         <td class="green">
+            <a href="../fields/2667.html">
+            
+                2667
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2667.html">
+            
+                AlgorithmicTradeIndicator
+            
+            </a>
+        </td>
+        <td>@AlgoTrdInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/828.html">
+            
+                828
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/828.html">
+            
+                TrdType
+            
+            </a>
+        </td>
+        <td>@TrdTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/829.html">
+            
+                829
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/829.html">
+            
+                TrdSubType
+            
+            </a>
+        </td>
+        <td>@TrdSubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/855.html">
+            
+                855
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/855.html">
+            
+                SecondaryTrdType
+            
+            </a>
+        </td>
+        <td>@TrdTyp2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2347.html">
+            
+                2347
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2347.html">
+            
+                RegulatoryTransactionType
+            
+            </a>
+        </td>
+        <td>@RegTxnTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RegulatoryTradeIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RegulatoryTradeIDGrp.html">
+            
+                <b>RegulatoryTradeIDGrp</b>
+            
+            </a>
+        </td>
+        <td>RegTrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/570.html">
+            
+                570
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/570.html">
+            
+                PreviouslyReported
+            
+            </a>
+        </td>
+        <td>@PrevlyRpted</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2524.html">
+            
+                2524
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2524.html">
+            
+                TradeReportingIndicator
+            
+            </a>
+        </td>
+        <td>@TrdRptngInd</td>
+        <td class="green center"></td>
+        <td>May be used to bilaterally inform counterparty of trade reporting status.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1.html">
-            1
+            
+                1
+            
             </a>
         </td>
         <td>
             <a href="../fields/1.html">
-            Account
+            
+                Account
+            
             </a>
         </td>
         <td>@Acct</td>
@@ -647,12 +1192,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/660.html">
-            660
+            
+                660
+            
             </a>
         </td>
         <td>
             <a href="../fields/660.html">
-            AcctIDSource
+            
+                AcctIDSource
+            
             </a>
         </td>
         <td>@AcctIDSrc</td>
@@ -664,12 +1213,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/581.html">
-            581
+            
+                581
+            
             </a>
         </td>
         <td>
             <a href="../fields/581.html">
-            AccountType
+            
+                AccountType
+            
             </a>
         </td>
         <td>@AcctTyp</td>
@@ -681,12 +1234,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/589.html">
-            589
+            
+                589
+            
             </a>
         </td>
         <td>
             <a href="../fields/589.html">
-            DayBookingInst
+            
+                DayBookingInst
+            
             </a>
         </td>
         <td>@DayBkngInst</td>
@@ -698,12 +1255,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/590.html">
-            590
+            
+                590
+            
             </a>
         </td>
         <td>
             <a href="../fields/590.html">
-            BookingUnit
+            
+                BookingUnit
+            
             </a>
         </td>
         <td>@BkngUnit</td>
@@ -715,12 +1276,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/591.html">
-            591
+            
+                591
+            
             </a>
         </td>
         <td>
             <a href="../fields/591.html">
-            PreallocMethod
+            
+                PreallocMethod
+            
             </a>
         </td>
         <td>@PreallocMeth</td>
@@ -732,12 +1297,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/70.html">
-            70
+            
+                70
+            
             </a>
         </td>
         <td>
             <a href="../fields/70.html">
-            AllocID
+            
+                AllocID
+            
             </a>
         </td>
         <td>@AllocID</td>
@@ -749,12 +1318,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../components/PreAllocGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PreAllocGrp.html">
-            <b>PreAllocGrp</b>
+            
+                <b>PreAllocGrp</b>
+            
             </a>
         </td>
         <td>PreAll</td>
@@ -766,12 +1339,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/63.html">
-            63
+            
+                63
+            
             </a>
         </td>
         <td>
             <a href="../fields/63.html">
-            SettlType
+            
+                SettlType
+            
             </a>
         </td>
         <td>@SettlTyp</td>
@@ -783,12 +1360,16 @@ In the case of quotes can be mapped to:
     <tr>
         <td class="green">
             <a href="../fields/64.html">
-            64
+            
+                64
+            
             </a>
         </td>
         <td>
             <a href="../fields/64.html">
-            SettlDate
+            
+                SettlDate
+            
             </a>
         </td>
         <td>@SettlDt</td>
@@ -801,12 +1382,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/574.html">
-            574
+            
+                574
+            
             </a>
         </td>
         <td>
             <a href="../fields/574.html">
-            MatchType
+            
+                MatchType
+            
             </a>
         </td>
         <td>@MtchTyp</td>
@@ -818,12 +1403,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1115.html">
-            1115
+            
+                1115
+            
             </a>
         </td>
         <td>
             <a href="../fields/1115.html">
-            OrderCategory
+            
+                OrderCategory
+            
             </a>
         </td>
         <td>@OrdCat</td>
@@ -835,12 +1424,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/544.html">
-            544
+            
+                544
+            
             </a>
         </td>
         <td>
             <a href="../fields/544.html">
-            CashMargin
+            
+                CashMargin
+            
             </a>
         </td>
         <td>@CshMgn</td>
@@ -852,12 +1445,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/635.html">
-            635
+            
+                635
+            
             </a>
         </td>
         <td>
             <a href="../fields/635.html">
-            ClearingFeeIndicator
+            
+                ClearingFeeIndicator
+            
             </a>
         </td>
         <td>@ClrFeeInd</td>
@@ -869,46 +1466,58 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
         <td class="green center">✔</td>
-        <td>Insert here the set of &#34;Instrument&#34; (symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/FinancingDetails.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/FinancingDetails.html">
-            <b>FinancingDetails</b>
+            
+                <b>FinancingDetails</b>
+            
             </a>
         </td>
         <td>FinDetls</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;FinancingDetails&#34; (symbology) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/UndInstrmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UndInstrmtGrp.html">
-            <b>UndInstrmtGrp</b>
+            
+                <b>UndInstrmtGrp</b>
+            
             </a>
         </td>
         <td>Undly</td>
@@ -919,13 +1528,38 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
 
     <tr>
         <td class="green">
+            <a href="../components/PaymentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentGrp.html">
+            
+                <b>PaymentGrp</b>
+            
+            </a>
+        </td>
+        <td>Pmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/54.html">
-            54
+            
+                54
+            
             </a>
         </td>
         <td>
             <a href="../fields/54.html">
-            Side
+            
+                Side
+            
             </a>
         </td>
         <td>@Side</td>
@@ -936,30 +1570,80 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2102.html">
+            
+                2102
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2102.html">
+            
+                ShortMarkingExemptIndicator
+            
+            </a>
+        </td>
+        <td>@SMEInd</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1688.html">
+            
+                1688
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1688.html">
+            
+                ShortSaleExemptionReason
+            
+            </a>
+        </td>
+        <td>@ShrtSaleExmptnRsn</td>
+        <td class="green center"></td>
+        <td>Available for optional use when Side(54) = 6(Sell short exempt).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/Stipulations.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Stipulations.html">
-            <b>Stipulations</b>
+            
+                <b>Stipulations</b>
+            
             </a>
         </td>
         <td>Stip</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;Stipulations&#34; (repeating group of Fixed Income stipulations) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/854.html">
-            854
+            
+                854
+            
             </a>
         </td>
         <td>
             <a href="../fields/854.html">
-            QtyType
+            
+                QtyType
+            
             </a>
         </td>
         <td>@QtyTyp</td>
@@ -971,30 +1655,39 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../components/OrderQtyData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/OrderQtyData.html">
-            <b>OrderQtyData</b>
+            
+                <b>OrderQtyData</b>
+            
             </a>
         </td>
         <td>OrdQty</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;OrderQtyData&#34; fields defined in &#34;Common Components of Application Messages&#34;
-**IMPORTANT NOTE: OrderQty field is required for Single Instrument Orders unless rejecting or acknowledging an order for a CashOrderQty or PercentOrder. **</td>
+        <td>Conditionally required when the OrderQtyData component is required or specified in a prior, related message. 
+
+For example, when used in a work flow including a NewOrderSingle(35=D) or NewOrderCross(35=s) message, the OrderQtyData component is a required component in these messages and thus the component is required here.  When the OrderQtyData component is optional in a related message, such as the NewOrderMultileg(35=AB), the component is required here when specified in the prior, related NewOrderMultileg(35=AB) message.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1093.html">
-            1093
+            
+                1093
+            
             </a>
         </td>
         <td>
             <a href="../fields/1093.html">
-            LotType
+            
+                LotType
+            
             </a>
         </td>
         <td>@LotTyp</td>
@@ -1006,12 +1699,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/40.html">
-            40
+            
+                40
+            
             </a>
         </td>
         <td>
             <a href="../fields/40.html">
-            OrdType
+            
+                OrdType
+            
             </a>
         </td>
         <td>@OrdTyp</td>
@@ -1023,12 +1720,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/423.html">
-            423
+            
+                423
+            
             </a>
         </td>
         <td>
             <a href="../fields/423.html">
-            PriceType
+            
+                PriceType
+            
             </a>
         </td>
         <td>@PxTyp</td>
@@ -1039,13 +1740,38 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
 
     <tr>
         <td class="green">
+            <a href="../components/PriceQualifierGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PriceQualifierGrp.html">
+            
+                <b>PriceQualifierGrp</b>
+            
+            </a>
+        </td>
+        <td>PxQual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/44.html">
-            44
+            
+                44
+            
             </a>
         </td>
         <td>
             <a href="../fields/44.html">
-            Price
+            
+                Price
+            
             </a>
         </td>
         <td>@Px</td>
@@ -1057,12 +1783,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1092.html">
-            1092
+            
+                1092
+            
             </a>
         </td>
         <td>
             <a href="../fields/1092.html">
-            PriceProtectionScope
+            
+                PriceProtectionScope
+            
             </a>
         </td>
         <td>@PxPrtScp</td>
@@ -1074,12 +1804,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/99.html">
-            99
+            
+                99
+            
             </a>
         </td>
         <td>
             <a href="../fields/99.html">
-            StopPx
+            
+                StopPx
+            
             </a>
         </td>
         <td>@StopPx</td>
@@ -1091,63 +1825,100 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../components/TriggeringInstruction.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TriggeringInstruction.html">
-            <b>TriggeringInstruction</b>
+            
+                <b>TriggeringInstruction</b>
+            
             </a>
         </td>
         <td>TrgrInstr</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;TriggeringInstruction&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1823.html">
+            
+                1823
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1823.html">
+            
+                Triggered
+            
+            </a>
+        </td>
+        <td>@Trgrd</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/PegInstructions.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PegInstructions.html">
-            <b>PegInstructions</b>
+            
+                <b>PegInstructions</b>
+            
             </a>
         </td>
         <td>PegInstr</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;PegInstruction&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/DiscretionInstructions.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/DiscretionInstructions.html">
-            <b>DiscretionInstructions</b>
+            
+                <b>DiscretionInstructions</b>
+            
             </a>
         </td>
         <td>DiscInstr</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;DiscretionInstruction&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/839.html">
-            839
+            
+                839
+            
             </a>
         </td>
         <td>
             <a href="../fields/839.html">
-            PeggedPrice
+            
+                PeggedPrice
+            
             </a>
         </td>
         <td>@PeggedPx</td>
@@ -1159,12 +1930,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/1095.html">
-            1095
+            
+                1095
+            
             </a>
         </td>
         <td>
             <a href="../fields/1095.html">
-            PeggedRefPrice
+            
+                PeggedRefPrice
+            
             </a>
         </td>
         <td>@PggdRefPx</td>
@@ -1176,12 +1951,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/845.html">
-            845
+            
+                845
+            
             </a>
         </td>
         <td>
             <a href="../fields/845.html">
-            DiscretionPrice
+            
+                DiscretionPrice
+            
             </a>
         </td>
         <td>@DsctnPx</td>
@@ -1192,13 +1971,80 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1740.html">
+            
+                1740
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1740.html">
+            
+                TradePriceNegotiationMethod
+            
+            </a>
+        </td>
+        <td>@TrdPxNegottnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1742.html">
+            
+                1742
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1742.html">
+            
+                UpfrontPrice
+            
+            </a>
+        </td>
+        <td>@UpfrontPx</td>
+        <td class="green center"></td>
+        <td>Required if specified on the order</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1741.html">
+            
+                1741
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1741.html">
+            
+                UpfrontPriceType
+            
+            </a>
+        </td>
+        <td>@UpfrontPxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/847.html">
-            847
+            
+                847
+            
             </a>
         </td>
         <td>
             <a href="../fields/847.html">
-            TargetStrategy
+            
+                TargetStrategy
+            
             </a>
         </td>
         <td>@TgtStrategy</td>
@@ -1210,12 +2056,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../components/StrategyParametersGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StrategyParametersGrp.html">
-            <b>StrategyParametersGrp</b>
+            
+                <b>StrategyParametersGrp</b>
+            
             </a>
         </td>
         <td>StrtPrmGrp</td>
@@ -1227,12 +2077,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/848.html">
-            848
+            
+                848
+            
             </a>
         </td>
         <td>
             <a href="../fields/848.html">
-            TargetStrategyParameters
+            
+                TargetStrategyParameters
+            
             </a>
         </td>
         <td>@TgtStrategyParameters</td>
@@ -1244,12 +2098,16 @@ Required for NDFs to specify the &#34;value date&#34;.</td>
     <tr>
         <td class="green">
             <a href="../fields/849.html">
-            849
+            
+                849
+            
             </a>
         </td>
         <td>
             <a href="../fields/849.html">
-            ParticipationRate
+            
+                ParticipationRate
+            
             </a>
         </td>
         <td>@ParticipationRt</td>
@@ -1262,12 +2120,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/850.html">
-            850
+            
+                850
+            
             </a>
         </td>
         <td>
             <a href="../fields/850.html">
-            TargetStrategyPerformance
+            
+                TargetStrategyPerformance
+            
             </a>
         </td>
         <td>@TgtStrategyPerformance</td>
@@ -1279,12 +2141,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -1296,12 +2162,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/376.html">
-            376
+            
+                376
+            
             </a>
         </td>
         <td>
             <a href="../fields/376.html">
-            ComplianceID
+            
+                ComplianceID
+            
             </a>
         </td>
         <td>@ComplianceID</td>
@@ -1312,13 +2182,80 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
     <tr>
         <td class="green">
+            <a href="../fields/2404.html">
+            
+                2404
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2404.html">
+            
+                ComplianceText
+            
+            </a>
+        </td>
+        <td>@ComplianceTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2351.html">
+            
+                2351
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2351.html">
+            
+                EncodedComplianceTextLen
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedComplianceText(2352) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2352.html">
+            
+                2352
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2352.html">
+            
+                EncodedComplianceText
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the ComplianceText(2404) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/377.html">
-            377
+            
+                377
+            
             </a>
         </td>
         <td>
             <a href="../fields/377.html">
-            SolicitedFlag
+            
+                SolicitedFlag
+            
             </a>
         </td>
         <td>@SolFlag</td>
@@ -1330,12 +2267,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/59.html">
-            59
+            
+                59
+            
             </a>
         </td>
         <td>
             <a href="../fields/59.html">
-            TimeInForce
+            
+                TimeInForce
+            
             </a>
         </td>
         <td>@TmInForce</td>
@@ -1347,12 +2288,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/168.html">
-            168
+            
+                168
+            
             </a>
         </td>
         <td>
             <a href="../fields/168.html">
-            EffectiveTime
+            
+                EffectiveTime
+            
             </a>
         </td>
         <td>@EfctvTm</td>
@@ -1364,46 +2309,100 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/432.html">
-            432
+            
+                432
+            
             </a>
         </td>
         <td>
             <a href="../fields/432.html">
-            ExpireDate
+            
+                ExpireDate
+            
             </a>
         </td>
         <td>@ExpireDt</td>
         <td class="green center"></td>
-        <td>Conditionally required if TimeInForce = GTD and ExpireTime is not specified.</td>
+        <td>Conditionally required if TimeInForce(59) = 6 (GTD) and ExpireTime(126) is not specified.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/126.html">
-            126
+            
+                126
+            
             </a>
         </td>
         <td>
             <a href="../fields/126.html">
-            ExpireTime
+            
+                ExpireTime
+            
             </a>
         </td>
         <td>@ExpireTm</td>
         <td class="green center"></td>
-        <td>Conditionally required if TimeInForce = GTD and ExpireDate is not specified.</td>
+        <td>Conditionally required if TimeInForce(59) = 6 (GTD) and ExpireDate(432) is not specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1629.html">
+            
+                1629
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1629.html">
+            
+                ExposureDuration
+            
+            </a>
+        </td>
+        <td>@ExpsreDur</td>
+        <td class="green center"></td>
+        <td>Conditionally required when TimeInForce(59)=10 (Good for Time)</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1916.html">
+            
+                1916
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1916.html">
+            
+                ExposureDurationUnit
+            
+            </a>
+        </td>
+        <td>@ExpsreDurUnit</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/18.html">
-            18
+            
+                18
+            
             </a>
         </td>
         <td>
             <a href="../fields/18.html">
-            ExecInst
+            
+                ExecInst
+            
             </a>
         </td>
         <td>@ExecInst</td>
@@ -1414,13 +2413,38 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
     <tr>
         <td class="green">
+            <a href="../fields/1805.html">
+            
+                1805
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1805.html">
+            
+                AuctionInstruction
+            
+            </a>
+        </td>
+        <td>@AuctInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1057.html">
-            1057
+            
+                1057
+            
             </a>
         </td>
         <td>
             <a href="../fields/1057.html">
-            AggressorIndicator
+            
+                AggressorIndicator
+            
             </a>
         </td>
         <td>@AgrsrInd</td>
@@ -1432,12 +2456,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/528.html">
-            528
+            
+                528
+            
             </a>
         </td>
         <td>
             <a href="../fields/528.html">
-            OrderCapacity
+            
+                OrderCapacity
+            
             </a>
         </td>
         <td>@Cpcty</td>
@@ -1449,12 +2477,16 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
     <tr>
         <td class="green">
             <a href="../fields/529.html">
-            529
+            
+                529
+            
             </a>
         </td>
         <td>
             <a href="../fields/529.html">
-            OrderRestrictions
+            
+                OrderRestrictions
+            
             </a>
         </td>
         <td>@Rstctions</td>
@@ -1465,13 +2497,38 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
     <tr>
         <td class="green">
+            <a href="../fields/1815.html">
+            
+                1815
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1815.html">
+            
+                TradingCapacity
+            
+            </a>
+        </td>
+        <td>@TrdgCpcty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1091.html">
-            1091
+            
+                1091
+            
             </a>
         </td>
         <td>
             <a href="../fields/1091.html">
-            PreTradeAnonymity
+            
+                PreTradeAnonymity
+            
             </a>
         </td>
         <td>@PrTrdAnon</td>
@@ -1482,13 +2539,38 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
     <tr>
         <td class="green">
+            <a href="../fields/1390.html">
+            
+                1390
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1390.html">
+            
+                TradePublishIndicator
+            
+            </a>
+        </td>
+        <td>@TrdPubInd</td>
+        <td class="green center"></td>
+        <td>Applies to trades resulting from the order.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/582.html">
-            582
+            
+                582
+            
             </a>
         </td>
         <td>
             <a href="../fields/582.html">
-            CustOrderCapacity
+            
+                CustOrderCapacity
+            
             </a>
         </td>
         <td>@CustCpcty</td>
@@ -1499,65 +2581,102 @@ For other order types optionally specifies a volume limit (i.e. do not be more t
 
     <tr>
         <td class="green">
+            <a href="../components/OrderAttributeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrderAttributeGrp.html">
+            
+                <b>OrderAttributeGrp</b>
+            
+            </a>
+        </td>
+        <td>OrdAttrib</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/32.html">
-            32
+            
+                32
+            
             </a>
         </td>
         <td>
             <a href="../fields/32.html">
-            LastQty
+            
+                LastQty
+            
             </a>
         </td>
         <td>@LastQty</td>
         <td class="green center"></td>
-        <td>Quantity (e.g. shares) bought/sold on this (last) fill. Required if ExecType = Trade or Trade Correct.
-If ExecType=Stopped, represents the quantity stopped/guaranteed/protected for.</td>
+        <td>Quantity (e.g. shares) bought/sold on this (last) fill. Required if ExecType(150) = F (Trade) or ExecType(150) = G (Trade Correct) unless FillsGrp or OrderEventGrp is used.
+If ExecType(150) = 7 (Stopped), represents the quantity stopped/guaranteed/protected for.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1056.html">
-            1056
+            
+                1056
+            
             </a>
         </td>
         <td>
             <a href="../fields/1056.html">
-            CalculatedCcyLastQty
+            
+                CalculatedCcyLastQty
+            
             </a>
         </td>
         <td>@CalcCcyLastQty</td>
         <td class="green center"></td>
-        <td>Used for FX trades to express the quantity or amount of the other side of the currency. Conditionally required if ExecType = Trade or Trade Correct and is an FX trade.</td>
+        <td>Used for FX trades to express the quantity or amount of the other side of the currency. Conditionally required if ExecType(150) = F (Trade) or G (Trade Correct) and is an FX trade.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1071.html">
-            1071
+            
+                1071
+            
             </a>
         </td>
         <td>
             <a href="../fields/1071.html">
-            LastSwapPoints
+            
+                LastSwapPoints
+            
             </a>
         </td>
         <td>@LastSwapPnts</td>
         <td class="green center"></td>
-        <td>Optionally used when ExecType = Trade or Trade Correct and is a FX Swap trade. Used to express the swap points for the swap trade event.</td>
+        <td>Optionally used when ExecType(150) = F (Trade) or G (Trade Correct) and is a FX Swap trade. Used to express the swap points for the swap trade event.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/652.html">
-            652
+            
+                652
+            
             </a>
         </td>
         <td>
             <a href="../fields/652.html">
-            UnderlyingLastQty
+            
+                UnderlyingLastQty
+            
             </a>
         </td>
         <td>@UndLastQty</td>
@@ -1568,33 +2687,62 @@ If ExecType=Stopped, represents the quantity stopped/guaranteed/protected for.</
 
     <tr>
         <td class="green">
+            <a href="../fields/1828.html">
+            
+                1828
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1828.html">
+            
+                LastQtyVariance
+            
+            </a>
+        </td>
+        <td>@LastQtyVarnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/31.html">
-            31
+            
+                31
+            
             </a>
         </td>
         <td>
             <a href="../fields/31.html">
-            LastPx
+            
+                LastPx
+            
             </a>
         </td>
         <td>@LastPx</td>
         <td class="green center"></td>
-        <td>Price of this (last) fill. Required if ExecType = Trade or Trade Correct.
-Should represent the &#34;all-in&#34; (LastSpotRate + LastForwardPoints) rate for F/X orders. ).
-If ExecType=Stopped, represents the price stopped/guaranteed/protected at.
-Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &#34;all-in&#34; rate that applies to both legs of the FX Swap.</td>
+        <td>Price of this (last) fill. Required if ExecType(150) = ExecType = F (Trade) or G (Trade Correct) unless FillsGrp or OrderEventGrp or TradePriceCondition(1839)=17 (Price is pending) or 18 (Price is not applicable) is used.
+Should represent the &#34;all-in&#34; (LastSpotRate(194) + LastForwardPoints(195)) rate for F/X orders.).
+If ExecType(150) = 7 (Stopped), represents the price stopped/guaranteed/protected at.
+Not required for FX Swap when ExecType(150) = F (Trade) or G (Trade Correct) as there is no &#34;all-in&#34; rate that applies to both legs of the FX Swap.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/651.html">
-            651
+            
+                651
+            
             </a>
         </td>
         <td>
             <a href="../fields/651.html">
-            UnderlyingLastPx
+            
+                UnderlyingLastPx
+            
             </a>
         </td>
         <td>@UndLastPx</td>
@@ -1606,29 +2754,58 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
     <tr>
         <td class="green">
             <a href="../fields/669.html">
-            669
+            
+                669
+            
             </a>
         </td>
         <td>
             <a href="../fields/669.html">
-            LastParPx
+            
+                LastParPx
+            
             </a>
         </td>
         <td>@LastParPx</td>
         <td class="green center"></td>
-        <td>Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx is expressed in Yield, Spread, Discount or any other price type that is not percent-of-par.</td>
+        <td>Last price expressed in percent-of-par. Conditionally required for Fixed Income trades when LastPx(31) is expressed in Yield, Spread, Discount or any other price type that is not percent-of-par.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/631.html">
+            
+                631
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/631.html">
+            
+                MidPx
+            
+            </a>
+        </td>
+        <td>@MidPx</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/194.html">
-            194
+            
+                194
+            
             </a>
         </td>
         <td>
             <a href="../fields/194.html">
-            LastSpotRate
+            
+                LastSpotRate
+            
             </a>
         </td>
         <td>@LastSpotRt</td>
@@ -1640,12 +2817,16 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
     <tr>
         <td class="green">
             <a href="../fields/195.html">
-            195
+            
+                195
+            
             </a>
         </td>
         <td>
             <a href="../fields/195.html">
-            LastForwardPoints
+            
+                LastForwardPoints
+            
             </a>
         </td>
         <td>@LastFwdPnts</td>
@@ -1656,30 +2837,206 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
 
     <tr>
         <td class="green">
+            <a href="../fields/1743.html">
+            
+                1743
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1743.html">
+            
+                LastUpfrontPrice
+            
+            </a>
+        </td>
+        <td>@LastUpfrontPx</td>
+        <td class="green center"></td>
+        <td>Upfront Price for CDS transactions. Conditionally required if TradePriceNegotiationMethod(1740) = 4(Percent of par and upfront amount), 5(Deal spread and upfront amount) or 6(Upfront points and upfront amount).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2750.html">
+            
+                2750
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2750.html">
+            
+                ReportingPx
+            
+            </a>
+        </td>
+        <td>@RptngPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2751.html">
+            
+                2751
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2751.html">
+            
+                ReportingQty
+            
+            </a>
+        </td>
+        <td>@RptngQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/30.html">
-            30
+            
+                30
+            
             </a>
         </td>
         <td>
             <a href="../fields/30.html">
-            LastMkt
+            
+                LastMkt
+            
             </a>
         </td>
         <td>@LastMkt</td>
         <td class="green center"></td>
-        <td>If ExecType = Trade (F), indicates the market where the trade was executed. If ExecType = New (0), indicates the market where the order was routed.</td>
+        <td>If ExecType(150) = F (Trade), indicates the market where the trade was executed. If ExecType(150) = 0 (New (0), indicates the market where the order was routed.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1430.html">
+            
+                1430
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1430.html">
+            
+                VenueType
+            
+            </a>
+        </td>
+        <td>@VenuTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            
+                1300
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            
+                MarketSegmentID
+            
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/100.html">
+            
+                100
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/100.html">
+            
+                ExDestination
+            
+            </a>
+        </td>
+        <td>@ExDest</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1133.html">
+            
+                1133
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1133.html">
+            
+                ExDestinationIDSource
+            
+            </a>
+        </td>
+        <td>@ExDestIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2704.html">
+            
+                2704
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2704.html">
+            
+                ExDestinationType
+            
+            </a>
+        </td>
+        <td>@ExDestTyp</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
+                336
+            
             </a>
         </td>
         <td>
             <a href="../fields/336.html">
-            TradingSessionID
+            
+                TradingSessionID
+            
             </a>
         </td>
         <td>@SesID</td>
@@ -1691,12 +3048,16 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
     <tr>
         <td class="green">
             <a href="../fields/625.html">
-            625
+            
+                625
+            
             </a>
         </td>
         <td>
             <a href="../fields/625.html">
-            TradingSessionSubID
+            
+                TradingSessionSubID
+            
             </a>
         </td>
         <td>@SesSub</td>
@@ -1708,12 +3069,16 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
     <tr>
         <td class="green">
             <a href="../fields/943.html">
-            943
+            
+                943
+            
             </a>
         </td>
         <td>
             <a href="../fields/943.html">
-            TimeBracket
+            
+                TimeBracket
+            
             </a>
         </td>
         <td>@TmBkt</td>
@@ -1725,12 +3090,16 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
     <tr>
         <td class="green">
             <a href="../fields/29.html">
-            29
+            
+                29
+            
             </a>
         </td>
         <td>
             <a href="../fields/29.html">
-            LastCapacity
+            
+                LastCapacity
+            
             </a>
         </td>
         <td>@LastCpcty</td>
@@ -1741,30 +3110,59 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
 
     <tr>
         <td class="green">
+            <a href="../components/LimitAmts.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LimitAmts.html">
+            
+                <b>LimitAmts</b>
+            
+            </a>
+        </td>
+        <td>LmtAmts</td>
+        <td class="green center"></td>
+        <td>Insert here the set of &#34;LimitAmts&#34; fields defined in &#34;Common Components&#34;</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/151.html">
-            151
+            
+                151
+            
             </a>
         </td>
         <td>
             <a href="../fields/151.html">
-            LeavesQty
+            
+                LeavesQty
+            
             </a>
         </td>
         <td>@LeavesQty</td>
         <td class="green center">✔</td>
-        <td>Quantity open for further execution. If the OrdStatus is Canceled, DoneForTheDay, Expired, Calculated, or Rejected (in which case the order is no longer active) then LeavesQty could be 0, otherwise LeavesQty = OrderQty - CumQty.</td>
+        <td>Quantity open for further execution. If the OrdStatus(39) is = 4 (Canceled), 3 (Done For Day), C (Expired), B (Calculated), or 8 (Rejected) (in which case the order is no longer active) then LeavesQty(151) could be 0, otherwise LeavesQty(151) = OrderQty(38) - CumQty(14).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/14.html">
-            14
+            
+                14
+            
             </a>
         </td>
         <td>
             <a href="../fields/14.html">
-            CumQty
+            
+                CumQty
+            
             </a>
         </td>
         <td>@CumQty</td>
@@ -1775,13 +3173,38 @@ Not required for FX Swap when ExecType = Trade or Trade Correct as there is no &
 
     <tr>
         <td class="green">
+            <a href="../fields/84.html">
+            
+                84
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/84.html">
+            
+                CxlQty
+            
+            </a>
+        </td>
+        <td>@CxlQty</td>
+        <td class="green center"></td>
+        <td>Can be used to specify the remaining quantity that was cancelled prior to order reaching terminal state (i.e. when LeavesQty(151)=0). If specified, OrderQty(38) = CumQty(14) + CxlQty(84).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/6.html">
-            6
+            
+                6
+            
             </a>
         </td>
         <td>
             <a href="../fields/6.html">
-            AvgPx
+            
+                AvgPx
+            
             </a>
         </td>
         <td>@AvgPx</td>
@@ -1794,12 +3217,16 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/424.html">
-            424
+            
+                424
+            
             </a>
         </td>
         <td>
             <a href="../fields/424.html">
-            DayOrderQty
+            
+                DayOrderQty
+            
             </a>
         </td>
         <td>@DayOrdQty</td>
@@ -1811,12 +3238,16 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/425.html">
-            425
+            
+                425
+            
             </a>
         </td>
         <td>
             <a href="../fields/425.html">
-            DayCumQty
+            
+                DayCumQty
+            
             </a>
         </td>
         <td>@DayCumQty</td>
@@ -1828,12 +3259,16 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/426.html">
-            426
+            
+                426
+            
             </a>
         </td>
         <td>
             <a href="../fields/426.html">
-            DayAvgPx
+            
+                DayAvgPx
+            
             </a>
         </td>
         <td>@DayAvgPx</td>
@@ -1845,29 +3280,37 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/1361.html">
-            1361
+            
+                1361
+            
             </a>
         </td>
         <td>
             <a href="../fields/1361.html">
-            TotNoFills
+            
+                TotNoFills
+            
             </a>
         </td>
         <td>@TotNoFills</td>
         <td class="green center"></td>
-        <td>Used to support fragmentation. Sum of NoFills across all messages with the same ExecID.</td>
+        <td>Used to support fragmentation. Sum of NoFills(1362) across all messages with the same ExecID(17).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/893.html">
-            893
+            
+                893
+            
             </a>
         </td>
         <td>
             <a href="../fields/893.html">
-            LastFragment
+            
+                LastFragment
+            
             </a>
         </td>
         <td>@LastFragment</td>
@@ -1879,29 +3322,58 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../components/FillsGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/FillsGrp.html">
-            <b>FillsGrp</b>
+            
+                <b>FillsGrp</b>
+            
             </a>
         </td>
         <td>FillsGrp</td>
         <td class="green center"></td>
-        <td>Specifies the partial fills included in this Execution Report</td>
+        <td>Specifies the partial fills included in this ExecutionReport(35=8), mutually exclusive with OrderEventGrp component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/OrderEventGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/OrderEventGrp.html">
+            
+                <b>OrderEventGrp</b>
+            
+            </a>
+        </td>
+        <td>OrdEvent</td>
+        <td class="green center"></td>
+        <td>Specifies the order events included in this ExecutionReport(35=8), mutually exclusive with FillsGrp component.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/427.html">
-            427
+            
+                427
+            
             </a>
         </td>
         <td>
             <a href="../fields/427.html">
-            GTBookingInst
+            
+                GTBookingInst
+            
             </a>
         </td>
         <td>@GTBkngInst</td>
@@ -1913,12 +3385,16 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/75.html">
-            75
+            
+                75
+            
             </a>
         </td>
         <td>
             <a href="../fields/75.html">
-            TradeDate
+            
+                TradeDate
+            
             </a>
         </td>
         <td>@TrdDt</td>
@@ -1930,29 +3406,37 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../fields/60.html">
-            60
+            
+                60
+            
             </a>
         </td>
         <td>
             <a href="../fields/60.html">
-            TransactTime
+            
+                TransactTime
+            
             </a>
         </td>
         <td>@TxnTm</td>
         <td class="green center"></td>
-        <td>Time the transaction represented by this ExecutionReport occurred</td>
+        <td>Time the transaction represented by this ExecutionReport(35=8) occurred.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/113.html">
-            113
+            
+                113
+            
             </a>
         </td>
         <td>
             <a href="../fields/113.html">
-            ReportToExch
+            
+                ReportToExch
+            
             </a>
         </td>
         <td>@RptToExch</td>
@@ -1964,64 +3448,121 @@ Conditionally required otherwise.</td>
     <tr>
         <td class="green">
             <a href="../components/CommissionData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/CommissionData.html">
-            <b>CommissionData</b>
+            
+                <b>CommissionData</b>
+            
             </a>
         </td>
         <td>Comm</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;CommissionData&#34; fields defined in &#34;Common Components of Application Messages&#34;
-Note: On a fill/partial fill messages, it represents value for that fill/partial fill. On ExecType=Calculated, it represents cumulative value for the order. Monetary commission values are expressed in the currency reflected by the Currency field.</td>
+        <td>Note: On a fill/partial-fill message, it represents value for that fill/partial fill. On ExecType(150) = B (Calculated), it represents cumulative value for the order. </td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CommissionDataGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CommissionDataGrp.html">
+            
+                <b>CommissionDataGrp</b>
+            
+            </a>
+        </td>
+        <td>CommData</td>
+        <td class="green center"></td>
+        <td>Use as an alternative to CommissionData component if multiple commissions or enhanced attributes are needed.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>SpreadOrBenchmarkCurveData</b>
+            
+                <b>SpreadOrBenchmarkCurveData</b>
+            
             </a>
         </td>
         <td>SprdBnchmkCurve</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;SpreadOrBenchmarkCurveData&#34; (Fixed Income spread or benchmark curve) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelativeValueGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelativeValueGrp.html">
+            
+                <b>RelativeValueGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltvVal</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/YieldData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/YieldData.html">
-            <b>YieldData</b>
+            
+                <b>YieldData</b>
+            
             </a>
         </td>
         <td>Yield</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;YieldData&#34; (yield-related) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/381.html">
-            381
+            
+                381
+            
             </a>
         </td>
         <td>
             <a href="../fields/381.html">
-            GrossTradeAmt
+            
+                GrossTradeAmt
+            
             </a>
         </td>
         <td>@GrossTrdAmt</td>
@@ -2033,12 +3574,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/157.html">
-            157
+            
+                157
+            
             </a>
         </td>
         <td>
             <a href="../fields/157.html">
-            NumDaysInterest
+            
+                NumDaysInterest
+            
             </a>
         </td>
         <td>@NumDaysInt</td>
@@ -2050,12 +3595,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/230.html">
-            230
+            
+                230
+            
             </a>
         </td>
         <td>
             <a href="../fields/230.html">
-            ExDate
+            
+                ExDate
+            
             </a>
         </td>
         <td>@ExDt</td>
@@ -2067,12 +3616,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/158.html">
-            158
+            
+                158
+            
             </a>
         </td>
         <td>
             <a href="../fields/158.html">
-            AccruedInterestRate
+            
+                AccruedInterestRate
+            
             </a>
         </td>
         <td>@AcrdIntRt</td>
@@ -2084,12 +3637,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/159.html">
-            159
+            
+                159
+            
             </a>
         </td>
         <td>
             <a href="../fields/159.html">
-            AccruedInterestAmt
+            
+                AccruedInterestAmt
+            
             </a>
         </td>
         <td>@AcrdIntAmt</td>
@@ -2101,12 +3658,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/738.html">
-            738
+            
+                738
+            
             </a>
         </td>
         <td>
             <a href="../fields/738.html">
-            InterestAtMaturity
+            
+                InterestAtMaturity
+            
             </a>
         </td>
         <td>@IntAtMat</td>
@@ -2118,12 +3679,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/920.html">
-            920
+            
+                920
+            
             </a>
         </td>
         <td>
             <a href="../fields/920.html">
-            EndAccruedInterestAmt
+            
+                EndAccruedInterestAmt
+            
             </a>
         </td>
         <td>@EndAcrdIntAmt</td>
@@ -2135,46 +3700,58 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/921.html">
-            921
+            
+                921
+            
             </a>
         </td>
         <td>
             <a href="../fields/921.html">
-            StartCash
+            
+                StartCash
+            
             </a>
         </td>
         <td>@StartCsh</td>
         <td class="green center"></td>
-        <td>For repurchase agreements the start (dirty) cash consideration</td>
+        <td>For repurchase agreements the start (dirty) cash consideration.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/922.html">
-            922
+            
+                922
+            
             </a>
         </td>
         <td>
             <a href="../fields/922.html">
-            EndCash
+            
+                EndCash
+            
             </a>
         </td>
         <td>@EndCsh</td>
         <td class="green center"></td>
-        <td>For repurchase agreements the end (dirty) cash consideration</td>
+        <td>For repurchase agreements the end (dirty) cash consideration.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/258.html">
-            258
+            
+                258
+            
             </a>
         </td>
         <td>
             <a href="../fields/258.html">
-            TradedFlatSwitch
+            
+                TradedFlatSwitch
+            
             </a>
         </td>
         <td>@TrddFlatSwitch</td>
@@ -2186,12 +3763,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/259.html">
-            259
+            
+                259
+            
             </a>
         </td>
         <td>
             <a href="../fields/259.html">
-            BasisFeatureDate
+            
+                BasisFeatureDate
+            
             </a>
         </td>
         <td>@BasisFeatureDt</td>
@@ -2203,12 +3784,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/260.html">
-            260
+            
+                260
+            
             </a>
         </td>
         <td>
             <a href="../fields/260.html">
-            BasisFeaturePrice
+            
+                BasisFeaturePrice
+            
             </a>
         </td>
         <td>@BasisFeaturePx</td>
@@ -2220,12 +3805,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/238.html">
-            238
+            
+                238
+            
             </a>
         </td>
         <td>
             <a href="../fields/238.html">
-            Concession
+            
+                Concession
+            
             </a>
         </td>
         <td>@Concession</td>
@@ -2237,12 +3826,16 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/237.html">
-            237
+            
+                237
+            
             </a>
         </td>
         <td>
             <a href="../fields/237.html">
-            TotalTakedown
+            
+                TotalTakedown
+            
             </a>
         </td>
         <td>@TotTakedown</td>
@@ -2254,64 +3847,80 @@ Note: On a fill/partial fill messages, it represents value for that fill/partial
     <tr>
         <td class="green">
             <a href="../fields/118.html">
-            118
+            
+                118
+            
             </a>
         </td>
         <td>
             <a href="../fields/118.html">
-            NetMoney
+            
+                NetMoney
+            
             </a>
         </td>
         <td>@NetMny</td>
         <td class="green center"></td>
-        <td>Note: On a fill/partial fill messages, it represents value for that fill/partial fill, on ExecType=Calculated, it represents cumulative value for the order. Value expressed in the currency reflected by the Currency field.</td>
+        <td>On a fill/partial fill message, it represents value for that fill/partial fill. On a ExecType(150) = B (Calculated) message, it represents cumulative value for the order. Value expressed in the currency reflected by the Currency(15) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/119.html">
-            119
+            
+                119
+            
             </a>
         </td>
         <td>
             <a href="../fields/119.html">
-            SettlCurrAmt
+            
+                SettlCurrAmt
+            
             </a>
         </td>
         <td>@SettlCurrAmt</td>
         <td class="green center"></td>
-        <td>Used to report results of forex accommodation trade</td>
+        <td>Used to report results of forex accommodation trade.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/120.html">
-            120
+            
+                120
+            
             </a>
         </td>
         <td>
             <a href="../fields/120.html">
-            SettlCurrency
+            
+                SettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
         <td class="green center"></td>
-        <td>Used to report results of forex accomodation trade.
-Required for NDFs.</td>
+        <td>Used to report results of forex accommodation trade.
+Required for Non-Deliverable Forwards.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/RateSource.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/RateSource.html">
-            <b>RateSource</b>
+            
+                <b>RateSource</b>
+            
             </a>
         </td>
         <td>RtSrc</td>
@@ -2323,46 +3932,58 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/155.html">
-            155
+            
+                155
+            
             </a>
         </td>
         <td>
             <a href="../fields/155.html">
-            SettlCurrFxRate
+            
+                SettlCurrFxRate
+            
             </a>
         </td>
         <td>@SettlCurrFxRt</td>
         <td class="green center"></td>
-        <td>Foreign exchange rate used to compute SettlCurrAmt from Currency to SettlCurrency</td>
+        <td>Foreign exchange rate used to compute SettlCurrAmt(119) from Currency(15) to SettlCurrency(120).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/156.html">
-            156
+            
+                156
+            
             </a>
         </td>
         <td>
             <a href="../fields/156.html">
-            SettlCurrFxRateCalc
+            
+                SettlCurrFxRateCalc
+            
             </a>
         </td>
         <td>@SettlCurrFxRtCalc</td>
         <td class="green center"></td>
-        <td>Specifies whether the SettlCurrFxRate should be multiplied or divided</td>
+        <td>Specifies whether the SettlCurrFxRate(155) should be multiplied or divided.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/21.html">
-            21
+            
+                21
+            
             </a>
         </td>
         <td>
             <a href="../fields/21.html">
-            HandlInst
+            
+                HandlInst
+            
             </a>
         </td>
         <td>@HandlInst</td>
@@ -2374,12 +3995,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/110.html">
-            110
+            
+                110
+            
             </a>
         </td>
         <td>
             <a href="../fields/110.html">
-            MinQty
+            
+                MinQty
+            
             </a>
         </td>
         <td>@MinQty</td>
@@ -2390,13 +4015,38 @@ Required for NDFs.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1822.html">
+            
+                1822
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1822.html">
+            
+                MinQtyMethod
+            
+            </a>
+        </td>
+        <td>@MinQtyMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1089.html">
-            1089
+            
+                1089
+            
             </a>
         </td>
         <td>
             <a href="../fields/1089.html">
-            MatchIncrement
+            
+                MatchIncrement
+            
             </a>
         </td>
         <td>@MtchInc</td>
@@ -2408,12 +4058,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/1090.html">
-            1090
+            
+                1090
+            
             </a>
         </td>
         <td>
             <a href="../fields/1090.html">
-            MaxPriceLevels
+            
+                MaxPriceLevels
+            
             </a>
         </td>
         <td>@MxPxLvls</td>
@@ -2424,33 +4078,188 @@ Required for NDFs.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2676.html">
+            
+                2676
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2676.html">
+            
+                MaximumPricePercentage
+            
+            </a>
+        </td>
+        <td>@MaxPxPctage</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ValueChecksGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ValueChecksGrp.html">
+            
+                <b>ValueChecksGrp</b>
+            
+            </a>
+        </td>
+        <td>ValuChk</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MatchingInstructions.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MatchingInstructions.html">
+            
+                <b>MatchingInstructions</b>
+            
+            </a>
+        </td>
+        <td>MtchgInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2362.html">
+            
+                2362
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2362.html">
+            
+                SelfMatchPreventionID
+            
+            </a>
+        </td>
+        <td>@SlfMtchPrvntnID</td>
+        <td class="green center"></td>
+        <td>May be used as an alternative to MatchingInstructions when the identifier does not appear in another field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2523.html">
+            
+                2523
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2523.html">
+            
+                CrossedIndicator
+            
+            </a>
+        </td>
+        <td>@CrssdInd</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/DisplayInstruction.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/DisplayInstruction.html">
-            <b>DisplayInstruction</b>
+            
+                <b>DisplayInstruction</b>
+            
             </a>
         </td>
         <td>DsplyInstr</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;DisplayInstruction&#34; fields defined in &#34;common components of application messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DisclosureInstructionGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DisclosureInstructionGrp.html">
+            
+                <b>DisclosureInstructionGrp</b>
+            
+            </a>
+        </td>
+        <td>DisclsrInst</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/111.html">
-            111
+            
+                111
+            
             </a>
         </td>
         <td>
             <a href="../fields/111.html">
-            MaxFloor
+            
+                MaxFloor
+            
             </a>
         </td>
         <td>@MaxFloor</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green">FIX.5.0SP2</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1816.html">
+            
+                1816
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1816.html">
+            
+                ClearingAccountType
+            
+            </a>
+        </td>
+        <td>@ClrAcctTyp</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>
@@ -2459,12 +4268,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/77.html">
-            77
+            
+                77
+            
             </a>
         </td>
         <td>
             <a href="../fields/77.html">
-            PositionEffect
+            
+                PositionEffect
+            
             </a>
         </td>
         <td>@PosEfct</td>
@@ -2476,12 +4289,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/210.html">
-            210
+            
+                210
+            
             </a>
         </td>
         <td>
             <a href="../fields/210.html">
-            MaxShow
+            
+                MaxShow
+            
             </a>
         </td>
         <td>@MaxShow</td>
@@ -2493,12 +4310,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/775.html">
-            775
+            
+                775
+            
             </a>
         </td>
         <td>
             <a href="../fields/775.html">
-            BookingType
+            
+                BookingType
+            
             </a>
         </td>
         <td>@BkngTyp</td>
@@ -2510,12 +4331,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -2527,12 +4352,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
@@ -2544,12 +4373,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
@@ -2561,12 +4394,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/193.html">
-            193
+            
+                193
+            
             </a>
         </td>
         <td>
             <a href="../fields/193.html">
-            SettlDate2
+            
+                SettlDate2
+            
             </a>
         </td>
         <td>@SettlDt2</td>
@@ -2578,12 +4415,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/192.html">
-            192
+            
+                192
+            
             </a>
         </td>
         <td>
             <a href="../fields/192.html">
-            OrderQty2
+            
+                OrderQty2
+            
             </a>
         </td>
         <td>@Qty2</td>
@@ -2595,29 +4436,37 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/641.html">
-            641
+            
+                641
+            
             </a>
         </td>
         <td>
             <a href="../fields/641.html">
-            LastForwardPoints2
+            
+                LastForwardPoints2
+            
             </a>
         </td>
         <td>@LastFwdPnts2</td>
         <td class="green center"></td>
         <td>Can be used with OrdType = &#34;Forex - Swap&#34; to specify the forward points (added to LastSpotRate) for the future portion of a F/X swap.</td>
-        <td class="green"></td>
+        <td class="green">FIX.5.0SP2</td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/442.html">
-            442
+            
+                442
+            
             </a>
         </td>
         <td>
             <a href="../fields/442.html">
-            MultiLegReportingType
+            
+                MultiLegReportingType
+            
             </a>
         </td>
         <td>@MLegRptTyp</td>
@@ -2628,13 +4477,38 @@ Required for NDFs.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1385.html">
+            
+                1385
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1385.html">
+            
+                ContingencyType
+            
+            </a>
+        </td>
+        <td>@ContingencyType</td>
+        <td class="green center"></td>
+        <td>For contingency orders, the type of contingency as specified in the order.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/480.html">
-            480
+            
+                480
+            
             </a>
         </td>
         <td>
             <a href="../fields/480.html">
-            CancellationRights
+            
+                CancellationRights
+            
             </a>
         </td>
         <td>@CxllationRights</td>
@@ -2646,12 +4520,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/481.html">
-            481
+            
+                481
+            
             </a>
         </td>
         <td>
             <a href="../fields/481.html">
-            MoneyLaunderingStatus
+            
+                MoneyLaunderingStatus
+            
             </a>
         </td>
         <td>@MnyLaunderingStat</td>
@@ -2663,12 +4541,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/513.html">
-            513
+            
+                513
+            
             </a>
         </td>
         <td>
             <a href="../fields/513.html">
-            RegistID
+            
+                RegistID
+            
             </a>
         </td>
         <td>@RegistID</td>
@@ -2680,12 +4562,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/494.html">
-            494
+            
+                494
+            
             </a>
         </td>
         <td>
             <a href="../fields/494.html">
-            Designation
+            
+                Designation
+            
             </a>
         </td>
         <td>@Designation</td>
@@ -2697,12 +4583,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/483.html">
-            483
+            
+                483
+            
             </a>
         </td>
         <td>
             <a href="../fields/483.html">
-            TransBkdTime
+            
+                TransBkdTime
+            
             </a>
         </td>
         <td>@TransBkdTm</td>
@@ -2714,12 +4604,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/515.html">
-            515
+            
+                515
+            
             </a>
         </td>
         <td>
             <a href="../fields/515.html">
-            ExecValuationPoint
+            
+                ExecValuationPoint
+            
             </a>
         </td>
         <td>@ExecValuationPoint</td>
@@ -2731,12 +4625,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/484.html">
-            484
+            
+                484
+            
             </a>
         </td>
         <td>
             <a href="../fields/484.html">
-            ExecPriceType
+            
+                ExecPriceType
+            
             </a>
         </td>
         <td>@ExecPxTyp</td>
@@ -2748,12 +4646,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/485.html">
-            485
+            
+                485
+            
             </a>
         </td>
         <td>
             <a href="../fields/485.html">
-            ExecPriceAdjustment
+            
+                ExecPriceAdjustment
+            
             </a>
         </td>
         <td>@ExecPxAdjment</td>
@@ -2765,12 +4667,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/638.html">
-            638
+            
+                638
+            
             </a>
         </td>
         <td>
             <a href="../fields/638.html">
-            PriorityIndicator
+            
+                PriorityIndicator
+            
             </a>
         </td>
         <td>@PriInd</td>
@@ -2782,12 +4688,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/639.html">
-            639
+            
+                639
+            
             </a>
         </td>
         <td>
             <a href="../fields/639.html">
-            PriceImprovement
+            
+                PriceImprovement
+            
             </a>
         </td>
         <td>@PxImprvmnt</td>
@@ -2799,64 +4709,79 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/851.html">
-            851
+            
+                851
+            
             </a>
         </td>
         <td>
             <a href="../fields/851.html">
-            LastLiquidityInd
+            
+                LastLiquidityInd
+            
             </a>
         </td>
         <td>@LastLqdtyInd</td>
         <td class="green center"></td>
-        <td>Applicable only on OrdStatus of Partial or Filled.</td>
+        <td>Applicable only on OrdStatus(39) = 1 of (Partially filled) or 2(Filled).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/ContAmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ContAmtGrp.html">
-            <b>ContAmtGrp</b>
+            
+                <b>ContAmtGrp</b>
+            
             </a>
         </td>
         <td>ContAmt</td>
         <td class="green center"></td>
-        <td>Number of contract details in this message (number of repeating groups to follow)</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/InstrmtLegExecGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtLegExecGrp.html">
-            <b>InstrmtLegExecGrp</b>
+            
+                <b>InstrmtLegExecGrp</b>
+            
             </a>
         </td>
         <td>Exec</td>
         <td class="green center"></td>
-        <td>Number of legs
-Identifies a Multi-leg Execution if present and non-zero.</td>
+        <td>Specifies the leg executions of a multi-leg order or quote.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/797.html">
-            797
+            
+                797
+            
             </a>
         </td>
         <td>
             <a href="../fields/797.html">
-            CopyMsgIndicator
+            
+                CopyMsgIndicator
+            
             </a>
         </td>
         <td>@CopyMsgInd</td>
@@ -2868,12 +4793,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../components/MiscFeesGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/MiscFeesGrp.html">
-            <b>MiscFeesGrp</b>
+            
+                <b>MiscFeesGrp</b>
+            
             </a>
         </td>
         <td>MiscFees</td>
@@ -2885,12 +4814,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1380.html">
-            1380
+            
+                1380
+            
             </a>
         </td>
         <td>
             <a href="../fields/1380.html">
-            DividendYield
+            
+                DividendYield
+            
             </a>
         </td>
         <td>@DividendYield</td>
@@ -2902,12 +4835,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1028.html">
-            1028
+            
+                1028
+            
             </a>
         </td>
         <td>
             <a href="../fields/1028.html">
-            ManualOrderIndicator
+            
+                ManualOrderIndicator
+            
             </a>
         </td>
         <td>@ManOrdInd</td>
@@ -2919,12 +4856,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1029.html">
-            1029
+            
+                1029
+            
             </a>
         </td>
         <td>
             <a href="../fields/1029.html">
-            CustDirectedOrder
+            
+                CustDirectedOrder
+            
             </a>
         </td>
         <td>@CustDrctdOrd</td>
@@ -2936,29 +4877,37 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1030.html">
-            1030
+            
+                1030
+            
             </a>
         </td>
         <td>
             <a href="../fields/1030.html">
-            ReceivedDeptID
+            
+                ReceivedDeptID
+            
             </a>
         </td>
         <td>@RcvdDptID</td>
         <td class="green center"></td>
         <td></td>
-        <td class="green"></td>
+        <td class="green">FIX.5.0SP2</td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1031.html">
-            1031
+            
+                1031
+            
             </a>
         </td>
         <td>
             <a href="../fields/1031.html">
-            CustOrderHandlingInst
+            
+                CustOrderHandlingInst
+            
             </a>
         </td>
         <td>@CustOrdHdlInst</td>
@@ -2970,12 +4919,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1032.html">
-            1032
+            
+                1032
+            
             </a>
         </td>
         <td>
             <a href="../fields/1032.html">
-            OrderHandlingInstSource
+            
+                OrderHandlingInstSource
+            
             </a>
         </td>
         <td>@OrdHndlInstSrc</td>
@@ -2986,13 +4939,122 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1724.html">
+            
+                1724
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1724.html">
+            
+                OrderOrigination
+            
+            </a>
+        </td>
+        <td>@OrdOrigntn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1725.html">
+            
+                1725
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1725.html">
+            
+                OriginatingDeptID
+            
+            </a>
+        </td>
+        <td>@OrigntngDeptID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1726.html">
+            
+                1726
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1726.html">
+            
+                ReceivingDeptID
+            
+            </a>
+        </td>
+        <td>@RcvgDeptID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/522.html">
+            
+                522
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/522.html">
+            
+                OwnerType
+            
+            </a>
+        </td>
+        <td>@OwnerTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2679.html">
+            
+                2679
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2679.html">
+            
+                OrderOwnershipIndicator
+            
+            </a>
+        </td>
+        <td>@OrdOwnershipInd</td>
+        <td class="green center"></td>
+        <td>Can be used to highlight change of order ownership.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/TrdRegTimestamps.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TrdRegTimestamps.html">
-            <b>TrdRegTimestamps</b>
+            
+                <b>TrdRegTimestamps</b>
+            
             </a>
         </td>
         <td>TrdRegTS</td>
@@ -3003,13 +5065,59 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
     <tr>
         <td class="green">
+            <a href="../components/TrdRegPublicationGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TrdRegPublicationGrp.html">
+            
+                <b>TrdRegPublicationGrp</b>
+            
+            </a>
+        </td>
+        <td>TrdRegPublctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TradePriceConditionGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TradePriceConditionGrp.html">
+            
+                <b>TradePriceConditionGrp</b>
+            
+            </a>
+        </td>
+        <td>TrdPxConds</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1188.html">
-            1188
+            
+                1188
+            
             </a>
         </td>
         <td>
             <a href="../fields/1188.html">
-            Volatility
+            
+                Volatility
+            
             </a>
         </td>
         <td>@Vol</td>
@@ -3021,12 +5129,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1189.html">
-            1189
+            
+                1189
+            
             </a>
         </td>
         <td>
             <a href="../fields/1189.html">
-            TimeToExpiration
+            
+                TimeToExpiration
+            
             </a>
         </td>
         <td>@TmToExp</td>
@@ -3038,12 +5150,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/1190.html">
-            1190
+            
+                1190
+            
             </a>
         </td>
         <td>
             <a href="../fields/1190.html">
-            RiskFreeRate
+            
+                RiskFreeRate
+            
             </a>
         </td>
         <td>@RFR</td>
@@ -3055,12 +5171,16 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/811.html">
-            811
+            
+                811
+            
             </a>
         </td>
         <td>
             <a href="../fields/811.html">
-            PriceDelta
+            
+                PriceDelta
+            
             </a>
         </td>
         <td>@PxDelta</td>
@@ -3071,13 +5191,332 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1917.html">
+            
+                1917
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1917.html">
+            
+                CoverPrice
+            
+            </a>
+        </td>
+        <td>@CoverPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ThrottleResponse.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ThrottleResponse.html">
+            
+                <b>ThrottleResponse</b>
+            
+            </a>
+        </td>
+        <td>ThrttlRsp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1080.html">
+            
+                1080
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1080.html">
+            
+                RefOrderID
+            
+            </a>
+        </td>
+        <td>@RefOrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1081.html">
+            
+                1081
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1081.html">
+            
+                RefOrderIDSource
+            
+            </a>
+        </td>
+        <td>@RefOrdIDSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1806.html">
+            
+                1806
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1806.html">
+            
+                RefClOrdID
+            
+            </a>
+        </td>
+        <td>@RefClOrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1803.html">
+            
+                1803
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1803.html">
+            
+                AuctionType
+            
+            </a>
+        </td>
+        <td>@AuctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1804.html">
+            
+                1804
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1804.html">
+            
+                AuctionAllocationPct
+            
+            </a>
+        </td>
+        <td>@AuctPct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1808.html">
+            
+                1808
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1808.html">
+            
+                LockedQty
+            
+            </a>
+        </td>
+        <td>@LckQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1809.html">
+            
+                1809
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1809.html">
+            
+                SecondaryLockedQty
+            
+            </a>
+        </td>
+        <td>@LckQty2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1807.html">
+            
+                1807
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1807.html">
+            
+                LockType
+            
+            </a>
+        </td>
+        <td>@LckTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1810.html">
+            
+                1810
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1810.html">
+            
+                ReleaseInstruction
+            
+            </a>
+        </td>
+        <td>@RlsInst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1811.html">
+            
+                1811
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1811.html">
+            
+                ReleaseQty
+            
+            </a>
+        </td>
+        <td>@RlsQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1819.html">
+            
+                1819
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1819.html">
+            
+                RelatedHighPrice
+            
+            </a>
+        </td>
+        <td>@ReltdHiPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1820.html">
+            
+                1820
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1820.html">
+            
+                RelatedLowPrice
+            
+            </a>
+        </td>
+        <td>@ReltdLowPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1821.html">
+            
+                1821
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1821.html">
+            
+                RelatedPriceSource
+            
+            </a>
+        </td>
+        <td>@ReltdPxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

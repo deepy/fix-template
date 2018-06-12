@@ -90,13 +90,13 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>OrderHandlingInstSource [type '1032']</h3>
-<p class="description">Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
-Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</p>
+<p class="description">Identifies the class or source of the order handling instruction values.  Scope of this will apply to both CustOrderHandlingInst(1031) and DeskOrderHandlingInst(1035).
+Conditionally required when CustOrderHandlingInst(1031) or DeskOrderHandlingInst(1035) is specified.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -107,7 +107,7 @@ Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</p>
     <tr>
         <td class="green">
             <a href="../fields/1032.html">
-            1032
+            
             </a>
         </td>
         <td>
@@ -117,15 +117,21 @@ Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.</p>
         </td>
         <td>OrdHndlInstSrc</td>
         <td>
-            Identifies the class or source of the &#34;OrderHandlingInst&#34; values. Scope of this will apply to both CustOrderHandlingInst and DeskOrderHandlingInst fields.
-Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.
+            Identifies the class or source of the order handling instruction values.  Scope of this will apply to both CustOrderHandlingInst(1031) and DeskOrderHandlingInst(1035).
+Conditionally required when CustOrderHandlingInst(1031) or DeskOrderHandlingInst(1035) is specified.
             
             <table>
             
             <tr>
                 <td>1</td>
                 <td>=</td>
-                <td>NASDOATS</td>
+                <td>FINRAOATS</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>FIAExecutionSourceCode</td>
             </tr>
             
             </table>
@@ -137,8 +143,26 @@ Required if CustOrderHandlingInst and/or DeskOrderHandlingInst is specified.
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/TrdCapRptAckSideGrp.html">TrdCapRptAckSideGrp]</a>
+    
+        [<a href="../components/TrdCapRptSideGrp.html">TrdCapRptSideGrp]</a>
+    
+        [<a href="../components/TrdMatchSideGrp.html">TrdMatchSideGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
+    
+        [<a href="../messages/BM.html">AllocationInstructionAlert]</a>
+    
+        [<a href="../messages/AS.html">AllocationReport]</a>
+    
+        [<a href="../messages/AT.html">AllocationReportAck]</a>
     
         [<a href="../messages/8.html">ExecutionReport]</a>
     

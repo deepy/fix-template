@@ -1,0 +1,348 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>EntitlementGrp [type 'Component']</h3>
+<p class="description">Conveys a list of entitlements for one specific party, or relationship between two parties. Each entitlement may be further limited or clarified using optional fields and components.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1773.html">
+            
+                1773
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1773.html">
+            
+                NoEntitlements
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1774.html">
+            
+                1774
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1774.html">
+            
+                EntitlementIndicator
+            
+            </a>
+        </td>
+        <td>@Ind</td>
+        <td class="green center"></td>
+        <td>Required if NoEntitlements(1773) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1775.html">
+            
+                1775
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1775.html">
+            
+                EntitlementType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Absence of this field indicates the meaning of the entitlement is implicit.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2402.html">
+            
+                2402
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2402.html">
+            
+                EntitlementSubType
+            
+            </a>
+        </td>
+        <td>@SubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/EntitlementAttribGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/EntitlementAttribGrp.html">
+            
+                <b>EntitlementAttribGrp</b>
+            
+            </a>
+        </td>
+        <td>Attrib</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1776.html">
+            
+                1776
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1776.html">
+            
+                EntitlementID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1784.html">
+            
+                1784
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1784.html">
+            
+                EntitlementPlatform
+            
+            </a>
+        </td>
+        <td>@Pltfm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentScopeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentScopeGrp.html">
+            
+                <b>InstrumentScopeGrp</b>
+            
+            </a>
+        </td>
+        <td>InstrmtScope</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MarketSegmentScopeGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MarketSegmentScopeGrp.html">
+            
+                <b>MarketSegmentScopeGrp</b>
+            
+            </a>
+        </td>
+        <td>MktSegScope</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1782.html">
+            
+                1782
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1782.html">
+            
+                EntitlementStartDate
+            
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1783.html">
+            
+                1783
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1783.html">
+            
+                EntitlementEndDate
+            
+            </a>
+        </td>
+        <td>@EndDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

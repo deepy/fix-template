@@ -1,0 +1,537 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegProvisionOptionExerciseDates [type 'Component']</h3>
+<p class="description">The LegProvisionOptionExerciseDates is a subcomponent within the LegProvisionGrp component used to report the option exercise dates and times defined in the provision.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40476.html">
+            
+                40476
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40476.html">
+            
+                LegProvisionOptionExerciseBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to this instance of the leg provision option exercise dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegProvisionOptionExerciseBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegProvisionOptionExerciseBusinessCenterGrp.html">
+            
+                <b>LegProvisionOptionExerciseBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to this instance of the leg provision option exercise dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegProvisionOptionExerciseFixedDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegProvisionOptionExerciseFixedDateGrp.html">
+            
+                <b>LegProvisionOptionExerciseFixedDateGrp</b>
+            
+            </a>
+        </td>
+        <td>OptExerFixedDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40478.html">
+            
+                40478
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40478.html">
+            
+                LegProvisionOptionExerciseEarliestDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@ErlstOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseEarliestDateUnit(40479) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40479.html">
+            
+                40479
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40479.html">
+            
+                LegProvisionOptionExerciseEarliestDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@ErlstOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseEarliestDatePeriod(40478) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40480.html">
+            
+                40480
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40480.html">
+            
+                LegProvisionOptionExerciseFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseFrequencyUnit(40481) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40481.html">
+            
+                40481
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40481.html">
+            
+                LegProvisionOptionExerciseFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseFrequencyPeriod(40480) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40482.html">
+            
+                40482
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40482.html">
+            
+                LegProvisionOptionExerciseStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@StartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40483.html">
+            
+                40483
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40483.html">
+            
+                LegProvisionOptionExerciseStartDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@StartDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40484.html">
+            
+                40484
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40484.html">
+            
+                LegProvisionOptionExerciseStartDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@StartDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseStartDateOffsetUnit(40485) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40485.html">
+            
+                40485
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40485.html">
+            
+                LegProvisionOptionExerciseStartDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@StartDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegProvisionOptionExerciseStartDateOffsetPeriod(40484) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40486.html">
+            
+                40486
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40486.html">
+            
+                LegProvisionOptionExerciseStartDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@StartDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40487.html">
+            
+                40487
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40487.html">
+            
+                LegProvisionOptionExerciseStartDateAdjusted
+            
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40488.html">
+            
+                40488
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40488.html">
+            
+                LegProvisionOptionExercisePeriodSkip
+            
+            </a>
+        </td>
+        <td>@Skip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40489.html">
+            
+                40489
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40489.html">
+            
+                LegProvisionOptionExerciseBoundsFirstDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40490.html">
+            
+                40490
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40490.html">
+            
+                LegProvisionOptionExerciseBoundsLastDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40491.html">
+            
+                40491
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40491.html">
+            
+                LegProvisionOptionExerciseEarliestTime
+            
+            </a>
+        </td>
+        <td>@ErlstTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40492.html">
+            
+                40492
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40492.html">
+            
+                LegProvisionOptionExerciseEarliestTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@ErlstTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40493.html">
+            
+                40493
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40493.html">
+            
+                LegProvisionOptionExerciseLatestTime
+            
+            </a>
+        </td>
+        <td>@LtstTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40494.html">
+            
+                40494
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40494.html">
+            
+                LegProvisionOptionExerciseLatestTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@LtstTmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

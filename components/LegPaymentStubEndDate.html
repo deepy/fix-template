@@ -1,0 +1,285 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegPaymentStubEndDate [type 'Component']</h3>
+<p class="description">LegPaymentStubEndDate is a subcomponent of the LegPaymentStubGrp component used to specify the end date of the payment stub.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42488.html">
+            
+                42488
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42488.html">
+            
+                LegPaymentStubEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@DtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42489.html">
+            
+                42489
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42489.html">
+            
+                LegPaymentStubEndDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to this payment stub instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStubEndDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStubEndDateBusinessCenterGrp.html">
+            
+                <b>LegPaymentStubEndDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to this payment stub instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42490.html">
+            
+                42490
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42490.html">
+            
+                LegPaymentStubEndDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42491.html">
+            
+                42491
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42491.html">
+            
+                LegPaymentStubEndDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@OfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPaymentStubEndDateOffsetUnit(42492) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42492.html">
+            
+                42492
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42492.html">
+            
+                LegPaymentStubEndDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@OfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPaymentStubEndDateOffsetPeriod(42491) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42493.html">
+            
+                42493
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42493.html">
+            
+                LegPaymentStubEndDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@OfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42494.html">
+            
+                42494
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42494.html">
+            
+                LegPaymentStubEndDateAdjusted
+            
+            </a>
+        </td>
+        <td>@Dt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

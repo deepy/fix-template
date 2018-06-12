@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>MiscFeesGrp [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">The MiscFeesGrp component is used to provide details of trade and transaction fees other than commissions, e.g. regulatory, exchange, taxes, levies, markup, trade reporting, etc. In the context of ESMA RTS 27 Best Execution Reporting, it may also be used to collect and publish the nature and level of current venue fees, rebates and payouts. Use MiscFeeQualifier(2712) to communicate whether the fee affects trade economics.</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/136.html">
-            136
+            
+                136
+            
             </a>
         </td>
         <td>
             <a href="../fields/136.html">
-            NoMiscFees
+            
+                NoMiscFees
+            
             </a>
         </td>
         <td></td>
@@ -125,29 +129,37 @@
     <tr>
         <td class="green">
             <a href="../fields/137.html">
-            137
+            
+                137
+            
             </a>
         </td>
         <td>
             <a href="../fields/137.html">
-            MiscFeeAmt
+            
+                MiscFeeAmt
+            
             </a>
         </td>
         <td>@Amt</td>
         <td class="green center"></td>
-        <td>Required if NoMiscFees &gt; 0</td>
+        <td>Required if NoMiscFees(136) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/138.html">
-            138
+            
+                138
+            
             </a>
         </td>
         <td>
             <a href="../fields/138.html">
-            MiscFeeCurr
+            
+                MiscFeeCurr
+            
             </a>
         </td>
         <td>@Curr</td>
@@ -159,32 +171,145 @@
     <tr>
         <td class="green">
             <a href="../fields/139.html">
-            139
+            
+                139
+            
             </a>
         </td>
         <td>
             <a href="../fields/139.html">
-            MiscFeeType
+            
+                MiscFeeType
+            
             </a>
         </td>
         <td>@Typ</td>
         <td class="green center"></td>
-        <td>Required if NoMiscFees &gt; 0</td>
+        <td>Required if NoMiscFees(136) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2712.html">
+            
+                2712
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2712.html">
+            
+                MiscFeeQualifier
+            
+            </a>
+        </td>
+        <td>@Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MiscFeesSubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MiscFeesSubGrp.html">
+            
+                <b>MiscFeesSubGrp</b>
+            
+            </a>
+        </td>
+        <td>MiscFeesSub</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/891.html">
-            891
+            
+                891
+            
             </a>
         </td>
         <td>
             <a href="../fields/891.html">
-            MiscFeeBasis
+            
+                MiscFeeBasis
+            
             </a>
         </td>
         <td>@Basis</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2216.html">
+            
+                2216
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2216.html">
+            
+                MiscFeeRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2217.html">
+            
+                2217
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2217.html">
+            
+                MiscFeeAmountDue
+            
+            </a>
+        </td>
+        <td>@AmtDue</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2713.html">
+            
+                2713
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2713.html">
+            
+                MiscFeeDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>

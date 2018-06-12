@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>RefOrderIDSource [type '1081']</h3>
-<p class="description">Used to specify what identifier, provided in order depth market data, to use when hitting (taking) a specific order.</p>
+<p class="description">Used to specify what identifier, provided in order depth market data, to use when hitting (taking) a specific order or to identify what type of order or quote reference is being provided when seeking credit limit check.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1081.html">
-            1081
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>RefOrdIDSrc</td>
         <td>
-            Used to specify what identifier, provided in order depth market data, to use when hitting (taking) a specific order.
+            Used to specify what identifier, provided in order depth market data, to use when hitting (taking) a specific order or to identify what type of order or quote reference is being provided when seeking credit limit check.
             
             <table>
             
@@ -150,6 +150,18 @@
                 <td>OriginalOrderID</td>
             </tr>
             
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>QuoteID</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>QuoteReqID</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -172,9 +184,15 @@
     <p>Used in messages:</p>
     <p>
     
+        [<a href="../messages/8.html">ExecutionReport]</a>
+    
         [<a href="../messages/AB.html">NewOrderMultileg]</a>
     
         [<a href="../messages/D.html">NewOrderSingle]</a>
+    
+        [<a href="../messages/DF.html">PartyRiskLimitCheckRequest]</a>
+    
+        [<a href="../messages/DG.html">PartyRiskLimitCheckRequestAck]</a>
     
     </p>
     <hr />

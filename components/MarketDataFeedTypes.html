@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>MarketDataFeedTypes [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">The MarketDataFeedTypes component is used to specify the different available feed types and sub-types, and additional market data feed related attributes, such as the market depth of the specified feed type.</p>
 
 <table>
 <tr>
@@ -108,68 +108,252 @@
     <tr>
         <td class="green">
             <a href="../fields/1141.html">
-            1141
+            
+                1141
+            
             </a>
         </td>
         <td>
             <a href="../fields/1141.html">
-            NoMDFeedTypes
+            
+                NoMDFeedTypes
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>The number of feed types and corresponding book depths associated with a security</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1022.html">
-            1022
+            
+                1022
+            
             </a>
         </td>
         <td>
             <a href="../fields/1022.html">
-            MDFeedType
+            
+                MDFeedType
+            
             </a>
         </td>
         <td>@MDFeedTyp</td>
         <td class="green center"></td>
-        <td>Describes a class of service for a given data feed</td>
+        <td>Required if NoMDFeedTypes(1141) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1683.html">
+            
+                1683
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1683.html">
+            
+                MDSubFeedType
+            
+            </a>
+        </td>
+        <td>@MDSubFeedTyp</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/264.html">
-            264
+            
+                264
+            
             </a>
         </td>
         <td>
             <a href="../fields/264.html">
-            MarketDepth
+            
+                MarketDepth
+            
             </a>
         </td>
         <td>@MktDepth</td>
         <td class="green center"></td>
-        <td>The depth of book associated with a particular feed type</td>
+        <td>Specifies the depth of book (or levels of market depth) for the feed type.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2563.html">
+            
+                2563
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2563.html">
+            
+                MarketDepthTimeInterval
+            
+            </a>
+        </td>
+        <td>@MktDepthTmIntvl</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MarketDepthTimeIntervalUnit(2564) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2564.html">
+            
+                2564
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2564.html">
+            
+                MarketDepthTimeIntervalUnit
+            
+            </a>
+        </td>
+        <td>@MktDepthTmIntvlUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MarketDataTimeInterval(2563) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2565.html">
+            
+                2565
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2565.html">
+            
+                MDRecoveryTimeInterval
+            
+            </a>
+        </td>
+        <td>@MDRcvryTmIntvl</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDRecoveryTimeIntervalUnit(2566) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2566.html">
+            
+                2566
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2566.html">
+            
+                MDRecoveryTimeIntervalUnit
+            
+            </a>
+        </td>
+        <td>@MDRcvryTmIntvlUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when MDRecoveryTimeInterval(2565) is specified.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1021.html">
-            1021
+            
+                1021
+            
             </a>
         </td>
         <td>
             <a href="../fields/1021.html">
-            MDBookType
+            
+                MDBookType
+            
             </a>
         </td>
         <td>@MDBkTyp</td>
         <td class="green center"></td>
-        <td>Describes the type of book for which the feed is intended. Can be used when multiple feeds are provided over the same connection</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1173.html">
+            
+                1173
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1173.html">
+            
+                MDSubBookType
+            
+            </a>
+        </td>
+        <td>@MDSubBkTyp</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2567.html">
+            
+                2567
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2567.html">
+            
+                PrimaryServiceLocationID
+            
+            </a>
+        </td>
+        <td>@SvcLctnID1</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2568.html">
+            
+                2568
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2568.html">
+            
+                SecondaryServiceLocationID
+            
+            </a>
+        </td>
+        <td>@SvcLctnID2</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 

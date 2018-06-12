@@ -1,0 +1,285 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>RelatedPartyDetailGrp [type 'Component']</h3>
+<p class="description">Party details for parties related to the Party specified in the PartyDetailGrp.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1562.html">
+            
+                1562
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1562.html">
+            
+                NoRelatedPartyDetailID
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1563.html">
+            
+                1563
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1563.html">
+            
+                RelatedPartyDetailID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Required if NoRelatedPartyDetails &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1564.html">
+            
+                1564
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1564.html">
+            
+                RelatedPartyDetailIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Required if NoRelatedPartyDetails &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1565.html">
+            
+                1565
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1565.html">
+            
+                RelatedPartyDetailRole
+            
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Required if NoRelatedPartyDetails &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1675.html">
+            
+                1675
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1675.html">
+            
+                RelatedPartyDetailRoleQualifier
+            
+            </a>
+        </td>
+        <td>@Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedPartyDetailSubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedPartyDetailSubGrp.html">
+            
+                <b>RelatedPartyDetailSubGrp</b>
+            
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedPartyDetailAltIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedPartyDetailAltIDGrp.html">
+            
+                <b>RelatedPartyDetailAltIDGrp</b>
+            
+            </a>
+        </td>
+        <td>AltPty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PartyRelationshipGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PartyRelationshipGrp.html">
+            
+                <b>PartyRelationshipGrp</b>
+            
+            </a>
+        </td>
+        <td>Rltnshp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

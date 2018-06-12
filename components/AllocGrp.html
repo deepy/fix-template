@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>AllocGrp [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">This repeating group is optionally used for messages with AllocStatus(87) = 2 (account level reject), AllocStatus(87) = 0 (accepted), to provide details of the individual accounts that were accepted or rejected. In the case of a reject, the reasons for the rejection should be specified. This group should not be populated where AllocStatus(87) has any other value.</p>
 
 <table>
 <tr>
@@ -108,47 +108,61 @@
     <tr>
         <td class="green">
             <a href="../fields/78.html">
-            78
+            
+                78
+            
             </a>
         </td>
         <td>
             <a href="../fields/78.html">
-            NoAllocs
+            
+                NoAllocs
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Conditionally required except when AllocTransType = Cancel, or when AllocType = Ready-to-book or Warehouse instruction</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/79.html">
-            79
+            
+                79
+            
             </a>
         </td>
         <td>
             <a href="../fields/79.html">
-            AllocAccount
+            
+                AllocAccount
+            
             </a>
         </td>
         <td>@Acct</td>
         <td class="green center"></td>
-        <td>May be the same value as BrokerOfCredit if ProcessCode is step-out or soft-dollar step-out and Institution does not wish to disclose individual account breakdowns to the ExecBroker. Required if NoAllocs &gt; 0. Must be first field in repeating group.
-Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when AllocType= &#34;Ready-To-Book&#34; or &#34;Warehouse instruction&#34;.</td>
+        <td>May specify the broker of credit if ProcessCode(81) is step-out or soft-dollar step-out and Institution does not wish to disclose individual account breakdowns to the executing broker. 
+Required if NoAllocs(78) &gt; 0. 
+Must be first field in repeating group. 
+Conditionally required except when for AllocTransType(71) = 2 (Cancel), or when AllocType(626) = 5 (Ready-To-Book single order) or 7 (Warehouse instruction).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/661.html">
-            661
+            
+                661
+            
             </a>
         </td>
         <td>
             <a href="../fields/661.html">
-            AllocAcctIDSource
+            
+                AllocAcctIDSource
+            
             </a>
         </td>
         <td>@ActIDSrc</td>
@@ -160,12 +174,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/573.html">
-            573
+            
+                573
+            
             </a>
         </td>
         <td>
             <a href="../fields/573.html">
-            MatchStatus
+            
+                MatchStatus
+            
             </a>
         </td>
         <td>@MtchStat</td>
@@ -177,29 +195,37 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/366.html">
-            366
+            
+                366
+            
             </a>
         </td>
         <td>
             <a href="../fields/366.html">
-            AllocPrice
+            
+                AllocPrice
+            
             </a>
         </td>
         <td>@Px</td>
         <td class="green center"></td>
-        <td>Used when performing &#34;executed price&#34; vs. &#34;average price&#34; allocations (e.g. Japan). AllocAccount plus AllocPrice form a unique Allocs entry. Used in lieu of AllocAvgPx.</td>
+        <td>Used when performing &#34;executed price&#34; vs. &#34;average price&#34; allocations (e.g. Japan). AllocAccount(79) plus AllocPrice(366) form a unique Allocs entry. Used in lieu of AllocAvgPx(153).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/80.html">
-            80
+            
+                80
+            
             </a>
         </td>
         <td>
             <a href="../fields/80.html">
-            AllocQty
+            
+                AllocQty
+            
             </a>
         </td>
         <td>@Qty</td>
@@ -210,13 +236,122 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
 
     <tr>
         <td class="green">
+            <a href="../fields/2515.html">
+            
+                2515
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2515.html">
+            
+                AllocCalculatedCcyQty
+            
+            </a>
+        </td>
+        <td>@CalcCcyQty</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1752.html">
+            
+                1752
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1752.html">
+            
+                CustodialLotID
+            
+            </a>
+        </td>
+        <td>@CstdlLotID</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1753.html">
+            
+                1753
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1753.html">
+            
+                VersusPurchaseDate
+            
+            </a>
+        </td>
+        <td>@VSPDt</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, either VersusPurchasePrice(1754) or CurrentCostBasis(1755) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1754.html">
+            
+                1754
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1754.html">
+            
+                VersusPurchasePrice
+            
+            </a>
+        </td>
+        <td>@VSPPx</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1755.html">
+            
+                1755
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1755.html">
+            
+                CurrentCostBasis
+            
+            </a>
+        </td>
+        <td>@CurCostBasis</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/467.html">
-            467
+            
+                467
+            
             </a>
         </td>
         <td>
             <a href="../fields/467.html">
-            IndividualAllocID
+            
+                IndividualAllocID
+            
             </a>
         </td>
         <td>@IndAllocID</td>
@@ -227,13 +362,101 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
 
     <tr>
         <td class="green">
+            <a href="../fields/1729.html">
+            
+                1729
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1729.html">
+            
+                FirmMnemonic
+            
+            </a>
+        </td>
+        <td>@FirmMnem</td>
+        <td class="green center"></td>
+        <td>	Allocation identifier assigned by the Firm submitting the allocation for an individual allocation instruction (as opposed to the overall message level identifier).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1593.html">
+            
+                1593
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1593.html">
+            
+                ParentAllocID
+            
+            </a>
+        </td>
+        <td>@ParentAllocID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2727.html">
+            
+                2727
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2727.html">
+            
+                AllocLegRefID
+            
+            </a>
+        </td>
+        <td>@LegRefID</td>
+        <td class="green center"></td>
+        <td>The field may not be used in any message where there are no legs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AllocRegulatoryTradeIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AllocRegulatoryTradeIDGrp.html">
+            
+                <b>AllocRegulatoryTradeIDGrp</b>
+            
+            </a>
+        </td>
+        <td>RegTrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/81.html">
-            81
+            
+                81
+            
             </a>
         </td>
         <td>
             <a href="../fields/81.html">
-            ProcessCode
+            
+                ProcessCode
+            
             </a>
         </td>
         <td>@ProcCode</td>
@@ -245,12 +468,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/989.html">
-            989
+            
+                989
+            
             </a>
         </td>
         <td>
             <a href="../fields/989.html">
-            SecondaryIndividualAllocID
+            
+                SecondaryIndividualAllocID
+            
             </a>
         </td>
         <td>@IndAllocID2</td>
@@ -262,12 +489,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/1002.html">
-            1002
+            
+                1002
+            
             </a>
         </td>
         <td>
             <a href="../fields/1002.html">
-            AllocMethod
+            
+                AllocMethod
+            
             </a>
         </td>
         <td>@Meth</td>
@@ -278,13 +509,38 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
 
     <tr>
         <td class="green">
+            <a href="../fields/1735.html">
+            
+                1735
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1735.html">
+            
+                AllocationRollupInstruction
+            
+            </a>
+        </td>
+        <td>@AllocRollupInst</td>
+        <td class="green center"></td>
+        <td>An indicator to override the normal procedure to roll up allocations for the same Carry Firm.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/993.html">
-            993
+            
+                993
+            
             </a>
         </td>
         <td>
             <a href="../fields/993.html">
-            AllocCustomerCapacity
+            
+                AllocCustomerCapacity
+            
             </a>
         </td>
         <td>@CustCpcty</td>
@@ -296,12 +552,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/1047.html">
-            1047
+            
+                1047
+            
             </a>
         </td>
         <td>
             <a href="../fields/1047.html">
-            AllocPositionEffect
+            
+                AllocPositionEffect
+            
             </a>
         </td>
         <td>@AllocPosEfct</td>
@@ -313,12 +573,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../fields/992.html">
-            992
+            
+                992
+            
             </a>
         </td>
         <td>
             <a href="../fields/992.html">
-            IndividualAllocType
+            
+                IndividualAllocType
+            
             </a>
         </td>
         <td>@Typ</td>
@@ -330,12 +594,16 @@ Conditionally required except when for AllocTransType=&#34;Cancel&#34;, or when 
     <tr>
         <td class="green">
             <a href="../components/NestedParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties.html">
-            <b>NestedParties</b>
+            
+                <b>NestedParties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -349,12 +617,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/208.html">
-            208
+            
+                208
+            
             </a>
         </td>
         <td>
             <a href="../fields/208.html">
-            NotifyBrokerOfCredit
+            
+                NotifyBrokerOfCredit
+            
             </a>
         </td>
         <td>@NotifyBrkrOfCredit</td>
@@ -366,12 +638,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/209.html">
-            209
+            
+                209
+            
             </a>
         </td>
         <td>
             <a href="../fields/209.html">
-            AllocHandlInst
+            
+                AllocHandlInst
+            
             </a>
         </td>
         <td>@HandlInst</td>
@@ -383,12 +659,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/161.html">
-            161
+            
+                161
+            
             </a>
         </td>
         <td>
             <a href="../fields/161.html">
-            AllocText
+            
+                AllocText
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -400,12 +680,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/360.html">
-            360
+            
+                360
+            
             </a>
         </td>
         <td>
             <a href="../fields/360.html">
-            EncodedAllocTextLen
+            
+                EncodedAllocTextLen
+            
             </a>
         </td>
         <td>@EncAllocTextLen</td>
@@ -417,12 +701,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/361.html">
-            361
+            
+                361
+            
             </a>
         </td>
         <td>
             <a href="../fields/361.html">
-            EncodedAllocText
+            
+                EncodedAllocText
+            
             </a>
         </td>
         <td>@EncAllocText</td>
@@ -433,30 +721,122 @@ Note: this field can be used for settlement location (PSET) information.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1732.html">
+            
+                1732
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1732.html">
+            
+                FirmAllocText
+            
+            </a>
+        </td>
+        <td>@FirmTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1733.html">
+            
+                1733
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1733.html">
+            
+                EncodedFirmAllocTextLen
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1734.html">
+            
+                1734
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1734.html">
+            
+                EncodedFirmAllocText
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/CommissionData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/CommissionData.html">
-            <b>CommissionData</b>
+            
+                <b>CommissionData</b>
+            
             </a>
         </td>
         <td>Comm</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;CommissionData&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AllocCommissionDataGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AllocCommissionDataGrp.html">
+            
+                <b>AllocCommissionDataGrp</b>
+            
+            </a>
+        </td>
+        <td>CommData</td>
+        <td class="green center"></td>
+        <td>Use as an alternative to CommissionData component if multiple commissions or enhanced attributes are needed.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/153.html">
-            153
+            
+                153
+            
             </a>
         </td>
         <td>
             <a href="../fields/153.html">
-            AllocAvgPx
+            
+                AllocAvgPx
+            
             </a>
         </td>
         <td>@AvgPx</td>
@@ -469,12 +849,16 @@ Note: this field can be used for settlement location (PSET) information.</td>
     <tr>
         <td class="green">
             <a href="../fields/154.html">
-            154
+            
+                154
+            
             </a>
         </td>
         <td>
             <a href="../fields/154.html">
-            AllocNetMoney
+            
+                AllocNetMoney
+            
             </a>
         </td>
         <td>@NetMny</td>
@@ -489,12 +873,16 @@ For FX, if specified, expressed in terms of Currency(15).</td>
     <tr>
         <td class="green">
             <a href="../fields/119.html">
-            119
+            
+                119
+            
             </a>
         </td>
         <td>
             <a href="../fields/119.html">
-            SettlCurrAmt
+            
+                SettlCurrAmt
+            
             </a>
         </td>
         <td>@SettlCurrAmt</td>
@@ -505,13 +893,38 @@ For FX, if specified, expressed in terms of Currency(15).</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2300.html">
+            
+                2300
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2300.html">
+            
+                AllocGrossTradeAmt
+            
+            </a>
+        </td>
+        <td>@GrossTrdAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/737.html">
-            737
+            
+                737
+            
             </a>
         </td>
         <td>
             <a href="../fields/737.html">
-            AllocSettlCurrAmt
+            
+                AllocSettlCurrAmt
+            
             </a>
         </td>
         <td>@AllocSettlCurrAmt</td>
@@ -523,12 +936,16 @@ For FX, if specified, expressed in terms of Currency(15).</td>
     <tr>
         <td class="green">
             <a href="../fields/120.html">
-            120
+            
+                120
+            
             </a>
         </td>
         <td>
             <a href="../fields/120.html">
-            SettlCurrency
+            
+                SettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
@@ -541,12 +958,16 @@ SettlCurrency for this AllocAccount if different from &#34;overall&#34; Currency
     <tr>
         <td class="green">
             <a href="../fields/736.html">
-            736
+            
+                736
+            
             </a>
         </td>
         <td>
             <a href="../fields/736.html">
-            AllocSettlCurrency
+            
+                AllocSettlCurrency
+            
             </a>
         </td>
         <td>@AllocSettlCcy</td>
@@ -560,12 +981,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/155.html">
-            155
+            
+                155
+            
             </a>
         </td>
         <td>
             <a href="../fields/155.html">
-            SettlCurrFxRate
+            
+                SettlCurrFxRate
+            
             </a>
         </td>
         <td>@SettlCurrFxRt</td>
@@ -577,12 +1002,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/156.html">
-            156
+            
+                156
+            
             </a>
         </td>
         <td>
             <a href="../fields/156.html">
-            SettlCurrFxRateCalc
+            
+                SettlCurrFxRateCalc
+            
             </a>
         </td>
         <td>@SettlCurrFxRtCalc</td>
@@ -594,12 +1023,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/742.html">
-            742
+            
+                742
+            
             </a>
         </td>
         <td>
             <a href="../fields/742.html">
-            AllocAccruedInterestAmt
+            
+                AllocAccruedInterestAmt
+            
             </a>
         </td>
         <td>@AcrdIntAmt</td>
@@ -611,12 +1044,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/741.html">
-            741
+            
+                741
+            
             </a>
         </td>
         <td>
             <a href="../fields/741.html">
-            AllocInterestAtMaturity
+            
+                AllocInterestAtMaturity
+            
             </a>
         </td>
         <td>@IntAtMat</td>
@@ -628,12 +1065,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../components/MiscFeesGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/MiscFeesGrp.html">
-            <b>MiscFeesGrp</b>
+            
+                <b>MiscFeesGrp</b>
+            
             </a>
         </td>
         <td>MiscFees</td>
@@ -645,12 +1086,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../components/ClrInstGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ClrInstGrp.html">
-            <b>ClrInstGrp</b>
+            
+                <b>ClrInstGrp</b>
+            
             </a>
         </td>
         <td>ClrInst</td>
@@ -662,12 +1107,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/635.html">
-            635
+            
+                635
+            
             </a>
         </td>
         <td>
             <a href="../fields/635.html">
-            ClearingFeeIndicator
+            
+                ClearingFeeIndicator
+            
             </a>
         </td>
         <td>@ClrFeeInd</td>
@@ -679,12 +1128,16 @@ Required for NDFs.</td>
     <tr>
         <td class="green">
             <a href="../fields/780.html">
-            780
+            
+                780
+            
             </a>
         </td>
         <td>
             <a href="../fields/780.html">
-            AllocSettlInstType
+            
+                AllocSettlInstType
+            
             </a>
         </td>
         <td>@SettlInstTyp</td>
@@ -697,18 +1150,127 @@ Absence of this field implies use of default instructions.</td>
     <tr>
         <td class="green">
             <a href="../components/SettlInstructionsData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SettlInstructionsData.html">
-            <b>SettlInstructionsData</b>
+            
+                <b>SettlInstructionsData</b>
+            
             </a>
         </td>
         <td>SetInstr</td>
         <td class="green center"></td>
         <td>Insert here the set of &#34;SettlInstructionsData&#34; fields defined in &#34;Common Components of Application Messages&#34;
 Used to communicate settlement instructions for this AllocAccount detail. Required if AllocSettlInstType = 2 or 3.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2392.html">
+            
+                2392
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2392.html">
+            
+                AllocRefRiskLimitCheckID
+            
+            </a>
+        </td>
+        <td>@RefRiskLmtChkID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when AllocRefRiskLimitCheckIDType(2393) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2393.html">
+            
+                2393
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2393.html">
+            
+                AllocRefRiskLimitCheckIDType
+            
+            </a>
+        </td>
+        <td>@RefRiskLmtChkIDTyp</td>
+        <td class="green center"></td>
+        <td>Conditionally required when AllocRefRiskLimitCheckID(2392) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2483.html">
+            
+                2483
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2483.html">
+            
+                AllocRiskLimitCheckStatus
+            
+            </a>
+        </td>
+        <td>@RiskLmtChkStat</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2761.html">
+            
+                2761
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2761.html">
+            
+                AllocGroupAmount
+            
+            </a>
+        </td>
+        <td>@GrpAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TradeAllocAmtGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TradeAllocAmtGrp.html">
+            
+                <b>TradeAllocAmtGrp</b>
+            
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 

@@ -108,48 +108,79 @@
     <tr>
         <td class="green">
             <a href="../fields/552.html">
-            552
+            
+                552
+            
             </a>
         </td>
         <td>
             <a href="../fields/552.html">
-            NoSides
+            
+                NoSides
+            
             </a>
         </td>
         <td></td>
         <td class="green center">✔</td>
-        <td>Must be 1 or 2
-1 or 2 if CrossType=1
-2 otherwise</td>
+        <td>Must be 1 or 2 if CrossType(549)=1(All-or-none Cross), 2 otherwise.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/54.html">
-            54
+            
+                54
+            
             </a>
         </td>
         <td>
             <a href="../fields/54.html">
-            Side
+            
+                Side
+            
             </a>
         </td>
         <td>@Side</td>
         <td class="green center">✔</td>
-        <td></td>
+        <td>Required if NoSides(552) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2102.html">
+            
+                2102
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2102.html">
+            
+                ShortMarkingExemptIndicator
+            
+            </a>
+        </td>
+        <td>@SMEInd</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/41.html">
-            41
+            
+                41
+            
             </a>
         </td>
         <td>
             <a href="../fields/41.html">
-            OrigClOrdID
+            
+                OrigClOrdID
+            
             </a>
         </td>
         <td>@OrigClOrdID</td>
@@ -161,12 +192,16 @@
     <tr>
         <td class="green">
             <a href="../fields/11.html">
-            11
+            
+                11
+            
             </a>
         </td>
         <td>
             <a href="../fields/11.html">
-            ClOrdID
+            
+                ClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID</td>
@@ -178,12 +213,16 @@
     <tr>
         <td class="green">
             <a href="../fields/526.html">
-            526
+            
+                526
+            
             </a>
         </td>
         <td>
             <a href="../fields/526.html">
-            SecondaryClOrdID
+            
+                SecondaryClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID2</td>
@@ -195,12 +234,16 @@
     <tr>
         <td class="green">
             <a href="../fields/583.html">
-            583
+            
+                583
+            
             </a>
         </td>
         <td>
             <a href="../fields/583.html">
-            ClOrdLinkID
+            
+                ClOrdLinkID
+            
             </a>
         </td>
         <td>@ClOrdLinkID</td>
@@ -212,29 +255,79 @@
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;Parties&#34; (firm identification) fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/SideCrossLegGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/SideCrossLegGrp.html">
+            
+                <b>SideCrossLegGrp</b>
+            
+            </a>
+        </td>
+        <td>SideCrossLeg</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1690.html">
+            
+                1690
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1690.html">
+            
+                SideShortSaleExemptionReason
+            
+            </a>
+        </td>
+        <td>@ShrtSaleExmptnRsn</td>
+        <td class="green center"></td>
+        <td>Available for optional use when Side(54) = 6 (Sell short exempt).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/229.html">
-            229
+            
+                229
+            
             </a>
         </td>
         <td>
             <a href="../fields/229.html">
-            TradeOriginationDate
+            
+                TradeOriginationDate
+            
             </a>
         </td>
         <td>@OrignDt</td>
@@ -246,12 +339,16 @@
     <tr>
         <td class="green">
             <a href="../fields/75.html">
-            75
+            
+                75
+            
             </a>
         </td>
         <td>
             <a href="../fields/75.html">
-            TradeDate
+            
+                TradeDate
+            
             </a>
         </td>
         <td>@TrdDt</td>
@@ -263,12 +360,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1.html">
-            1
+            
+                1
+            
             </a>
         </td>
         <td>
             <a href="../fields/1.html">
-            Account
+            
+                Account
+            
             </a>
         </td>
         <td>@Acct</td>
@@ -280,12 +381,16 @@
     <tr>
         <td class="green">
             <a href="../fields/660.html">
-            660
+            
+                660
+            
             </a>
         </td>
         <td>
             <a href="../fields/660.html">
-            AcctIDSource
+            
+                AcctIDSource
+            
             </a>
         </td>
         <td>@AcctIDSrc</td>
@@ -297,12 +402,16 @@
     <tr>
         <td class="green">
             <a href="../fields/581.html">
-            581
+            
+                581
+            
             </a>
         </td>
         <td>
             <a href="../fields/581.html">
-            AccountType
+            
+                AccountType
+            
             </a>
         </td>
         <td>@AcctTyp</td>
@@ -314,12 +423,16 @@
     <tr>
         <td class="green">
             <a href="../fields/589.html">
-            589
+            
+                589
+            
             </a>
         </td>
         <td>
             <a href="../fields/589.html">
-            DayBookingInst
+            
+                DayBookingInst
+            
             </a>
         </td>
         <td>@DayBkngInst</td>
@@ -331,12 +444,16 @@
     <tr>
         <td class="green">
             <a href="../fields/590.html">
-            590
+            
+                590
+            
             </a>
         </td>
         <td>
             <a href="../fields/590.html">
-            BookingUnit
+            
+                BookingUnit
+            
             </a>
         </td>
         <td>@BkngUnit</td>
@@ -348,12 +465,16 @@
     <tr>
         <td class="green">
             <a href="../fields/591.html">
-            591
+            
+                591
+            
             </a>
         </td>
         <td>
             <a href="../fields/591.html">
-            PreallocMethod
+            
+                PreallocMethod
+            
             </a>
         </td>
         <td>@PreallocMeth</td>
@@ -365,12 +486,16 @@
     <tr>
         <td class="green">
             <a href="../fields/70.html">
-            70
+            
+                70
+            
             </a>
         </td>
         <td>
             <a href="../fields/70.html">
-            AllocID
+            
+                AllocID
+            
             </a>
         </td>
         <td>@AllocID</td>
@@ -382,12 +507,16 @@
     <tr>
         <td class="green">
             <a href="../components/PreAllocGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/PreAllocGrp.html">
-            <b>PreAllocGrp</b>
+            
+                <b>PreAllocGrp</b>
+            
             </a>
         </td>
         <td>PreAll</td>
@@ -399,12 +528,16 @@
     <tr>
         <td class="green">
             <a href="../fields/854.html">
-            854
+            
+                854
+            
             </a>
         </td>
         <td>
             <a href="../fields/854.html">
-            QtyType
+            
+                QtyType
+            
             </a>
         </td>
         <td>@QtyTyp</td>
@@ -416,46 +549,79 @@
     <tr>
         <td class="green">
             <a href="../components/OrderQtyData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/OrderQtyData.html">
-            <b>OrderQtyData</b>
+            
+                <b>OrderQtyData</b>
+            
             </a>
         </td>
         <td>OrdQty</td>
         <td class="green center">✔</td>
-        <td>Insert here the set of &#34;OrderQtyData&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/CommissionData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/CommissionData.html">
-            <b>CommissionData</b>
+            
+                <b>CommissionData</b>
+            
             </a>
         </td>
         <td>Comm</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;CommissionData&#34; fields defined in &#34;Common Components of Application Messages&#34;</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CommissionDataGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CommissionDataGrp.html">
+            
+                <b>CommissionDataGrp</b>
+            
+            </a>
+        </td>
+        <td>CommData</td>
+        <td class="green center"></td>
+        <td>Use as an alternative to CommissionData if multiple commissions or enhanced attributes are needed.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/528.html">
-            528
+            
+                528
+            
             </a>
         </td>
         <td>
             <a href="../fields/528.html">
-            OrderCapacity
+            
+                OrderCapacity
+            
             </a>
         </td>
         <td>@Cpcty</td>
@@ -467,12 +633,16 @@
     <tr>
         <td class="green">
             <a href="../fields/529.html">
-            529
+            
+                529
+            
             </a>
         </td>
         <td>
             <a href="../fields/529.html">
-            OrderRestrictions
+            
+                OrderRestrictions
+            
             </a>
         </td>
         <td>@Rstctions</td>
@@ -484,12 +654,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1091.html">
-            1091
+            
+                1091
+            
             </a>
         </td>
         <td>
             <a href="../fields/1091.html">
-            PreTradeAnonymity
+            
+                PreTradeAnonymity
+            
             </a>
         </td>
         <td>@PrTrdAnon</td>
@@ -501,12 +675,16 @@
     <tr>
         <td class="green">
             <a href="../fields/582.html">
-            582
+            
+                582
+            
             </a>
         </td>
         <td>
             <a href="../fields/582.html">
-            CustOrderCapacity
+            
+                CustOrderCapacity
+            
             </a>
         </td>
         <td>@CustCpcty</td>
@@ -518,12 +696,16 @@
     <tr>
         <td class="green">
             <a href="../fields/121.html">
-            121
+            
+                121
+            
             </a>
         </td>
         <td>
             <a href="../fields/121.html">
-            ForexReq
+            
+                ForexReq
+            
             </a>
         </td>
         <td>@ForexReq</td>
@@ -535,29 +717,37 @@
     <tr>
         <td class="green">
             <a href="../fields/120.html">
-            120
+            
+                120
+            
             </a>
         </td>
         <td>
             <a href="../fields/120.html">
-            SettlCurrency
+            
+                SettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
         <td class="green center"></td>
-        <td>Required if ForexReq = Y.</td>
+        <td>Conditionally required when ForexReq(121) = &#34;Y&#34;.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/775.html">
-            775
+            
+                775
+            
             </a>
         </td>
         <td>
             <a href="../fields/775.html">
-            BookingType
+            
+                BookingType
+            
             </a>
         </td>
         <td>@BkngTyp</td>
@@ -569,12 +759,16 @@
     <tr>
         <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -586,12 +780,16 @@
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
@@ -603,12 +801,16 @@
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
@@ -619,13 +821,38 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1816.html">
+            
+                1816
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1816.html">
+            
+                ClearingAccountType
+            
+            </a>
+        </td>
+        <td>@ClrAcctTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/77.html">
-            77
+            
+                77
+            
             </a>
         </td>
         <td>
             <a href="../fields/77.html">
-            PositionEffect
+            
+                PositionEffect
+            
             </a>
         </td>
         <td>@PosEfct</td>
@@ -637,12 +864,16 @@
     <tr>
         <td class="green">
             <a href="../fields/203.html">
-            203
+            
+                203
+            
             </a>
         </td>
         <td>
             <a href="../fields/203.html">
-            CoveredOrUncovered
+            
+                CoveredOrUncovered
+            
             </a>
         </td>
         <td>@Covered</td>
@@ -654,12 +885,16 @@
     <tr>
         <td class="green">
             <a href="../fields/544.html">
-            544
+            
+                544
+            
             </a>
         </td>
         <td>
             <a href="../fields/544.html">
-            CashMargin
+            
+                CashMargin
+            
             </a>
         </td>
         <td>@CshMgn</td>
@@ -671,12 +906,16 @@
     <tr>
         <td class="green">
             <a href="../fields/635.html">
-            635
+            
+                635
+            
             </a>
         </td>
         <td>
             <a href="../fields/635.html">
-            ClearingFeeIndicator
+            
+                ClearingFeeIndicator
+            
             </a>
         </td>
         <td>@ClrFeeInd</td>
@@ -688,12 +927,16 @@
     <tr>
         <td class="green">
             <a href="../fields/377.html">
-            377
+            
+                377
+            
             </a>
         </td>
         <td>
             <a href="../fields/377.html">
-            SolicitedFlag
+            
+                SolicitedFlag
+            
             </a>
         </td>
         <td>@SolFlag</td>
@@ -705,12 +948,16 @@
     <tr>
         <td class="green">
             <a href="../fields/659.html">
-            659
+            
+                659
+            
             </a>
         </td>
         <td>
             <a href="../fields/659.html">
-            SideComplianceID
+            
+                SideComplianceID
+            
             </a>
         </td>
         <td>@SideComplianceID</td>
@@ -722,12 +969,16 @@
     <tr>
         <td class="green">
             <a href="../fields/962.html">
-            962
+            
+                962
+            
             </a>
         </td>
         <td>
             <a href="../fields/962.html">
-            SideTimeInForce
+            
+                SideTimeInForce
+            
             </a>
         </td>
         <td>@SideTmFrc</td>

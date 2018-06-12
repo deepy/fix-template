@@ -90,11 +90,10 @@
 
 <h2>FIX.5.0SP2 Messages</h2>
 <h3>TradeCaptureReportRequestAck [type 'AQ']</h3>
-<p class="description">The Trade Capture Request Ack message is used to:
-• Provide an acknowledgement to a Trade Capture Report Request in the case where the Trade Capture Report Request is used to specify a subscription or delivery of reports via an out-of-band ResponseTransmissionMethod.
-• Provide an acknowledgement to a Trade Capture Report Request in the case when the return of the Trade Capture Reports matching that request will be delayed or delivered asynchronously. This is useful in distributed trading system environments.
-• Indicate that no trades were found that matched the selection criteria specified on the Trade Capture Report Request
-• The Trade Capture Request was invalid for some business reason, such as request is not authorized, invalid or unknown instrument, party, trading session, etc.</p>
+<p class="description">The Trade Capture Request Ack message is used to: 
+- Provide an acknowledgement to a Trade Capture Report Request in the case where the Trade Capture Report Request is used to specify a subscription or delivery of reports via an out-of-band ResponseTransmissionMethod. 
+- Provide an acknowledgement to a Trade Capture Report Request in the case when the return of the Trade Capture Reports matching that request will be delayed or delivered asynchronously. This is useful in distributed trading system environments. 
+- Indicate that no trades were found that matched the selection criteria specified on the Trade Capture Report Request or the Trade Capture Request was invalid for some business reason, such as request is not authorized, invalid or unknown instrument, party, trading session, etc.</p>
 
 <table>
 <tr>
@@ -112,12 +111,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -129,12 +132,16 @@
     <tr>
         <td class="green">
             <a href="../fields/568.html">
-            568
+            
+                568
+            
             </a>
         </td>
         <td>
             <a href="../fields/568.html">
-            TradeRequestID
+            
+                TradeRequestID
+            
             </a>
         </td>
         <td>@ReqID</td>
@@ -146,12 +153,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1003.html">
-            1003
+            
+                1003
+            
             </a>
         </td>
         <td>
             <a href="../fields/1003.html">
-            TradeID
+            
+                TradeID
+            
             </a>
         </td>
         <td>@TrdID</td>
@@ -163,12 +174,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1040.html">
-            1040
+            
+                1040
+            
             </a>
         </td>
         <td>
             <a href="../fields/1040.html">
-            SecondaryTradeID
+            
+                SecondaryTradeID
+            
             </a>
         </td>
         <td>@TrdID2</td>
@@ -180,12 +195,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1041.html">
-            1041
+            
+                1041
+            
             </a>
         </td>
         <td>
             <a href="../fields/1041.html">
-            FirmTradeID
+            
+                FirmTradeID
+            
             </a>
         </td>
         <td>@FirmTrdID</td>
@@ -197,12 +216,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1042.html">
-            1042
+            
+                1042
+            
             </a>
         </td>
         <td>
             <a href="../fields/1042.html">
-            SecondaryFirmTradeID
+            
+                SecondaryFirmTradeID
+            
             </a>
         </td>
         <td>@FirmTrdID2</td>
@@ -214,12 +237,16 @@
     <tr>
         <td class="green">
             <a href="../fields/569.html">
-            569
+            
+                569
+            
             </a>
         </td>
         <td>
             <a href="../fields/569.html">
-            TradeRequestType
+            
+                TradeRequestType
+            
             </a>
         </td>
         <td>@ReqTyp</td>
@@ -231,12 +258,16 @@
     <tr>
         <td class="green">
             <a href="../fields/263.html">
-            263
+            
+                263
+            
             </a>
         </td>
         <td>
             <a href="../fields/263.html">
-            SubscriptionRequestType
+            
+                SubscriptionRequestType
+            
             </a>
         </td>
         <td>@SubReqTyp</td>
@@ -249,12 +280,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/748.html">
-            748
+            
+                748
+            
             </a>
         </td>
         <td>
             <a href="../fields/748.html">
-            TotNumTradeReports
+            
+                TotNumTradeReports
+            
             </a>
         </td>
         <td>@TotNumTrdRpts</td>
@@ -266,12 +301,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/749.html">
-            749
+            
+                749
+            
             </a>
         </td>
         <td>
             <a href="../fields/749.html">
-            TradeRequestResult
+            
+                TradeRequestResult
+            
             </a>
         </td>
         <td>@ReqRslt</td>
@@ -283,12 +322,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../fields/750.html">
-            750
+            
+                750
+            
             </a>
         </td>
         <td>
             <a href="../fields/750.html">
-            TradeRequestStatus
+            
+                TradeRequestStatus
+            
             </a>
         </td>
         <td>@ReqStat</td>
@@ -300,12 +343,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
@@ -316,13 +363,38 @@ If the field is absent, the value 0 will be the default</td>
 
     <tr>
         <td class="green">
+            <a href="../components/InstrumentExtension.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentExtension.html">
+            
+                <b>InstrumentExtension</b>
+            
+            </a>
+        </td>
+        <td>InstrmtExt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/UndInstrmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UndInstrmtGrp.html">
-            <b>UndInstrmtGrp</b>
+            
+                <b>UndInstrmtGrp</b>
+            
             </a>
         </td>
         <td>Undly</td>
@@ -334,12 +406,16 @@ If the field is absent, the value 0 will be the default</td>
     <tr>
         <td class="green">
             <a href="../components/InstrmtLegGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtLegGrp.html">
-            <b>InstrmtLegGrp</b>
+            
+                <b>InstrmtLegGrp</b>
+            
             </a>
         </td>
         <td>Leg</td>
@@ -352,12 +428,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/442.html">
-            442
+            
+                442
+            
             </a>
         </td>
         <td>
             <a href="../fields/442.html">
-            MultiLegReportingType
+            
+                MultiLegReportingType
+            
             </a>
         </td>
         <td>@MLegRptTyp</td>
@@ -369,12 +449,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/725.html">
-            725
+            
+                725
+            
             </a>
         </td>
         <td>
             <a href="../fields/725.html">
-            ResponseTransportType
+            
+                ResponseTransportType
+            
             </a>
         </td>
         <td>@RspTransportTyp</td>
@@ -386,12 +470,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/726.html">
-            726
+            
+                726
+            
             </a>
         </td>
         <td>
             <a href="../fields/726.html">
-            ResponseDestination
+            
+                ResponseDestination
+            
             </a>
         </td>
         <td>@RspDest</td>
@@ -403,12 +491,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -420,12 +512,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
@@ -437,12 +533,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
@@ -454,12 +554,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../fields/1011.html">
-            1011
+            
+                1011
+            
             </a>
         </td>
         <td>
             <a href="../fields/1011.html">
-            MessageEventSource
+            
+                MessageEventSource
+            
             </a>
         </td>
         <td>@MsgEvtSrc</td>
@@ -471,12 +575,16 @@ NoLegs &gt; 0 identifies a Multi-leg Execution</td>
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

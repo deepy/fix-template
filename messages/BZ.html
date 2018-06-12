@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../fields/11.html">
-            11
+            
+                11
+            
             </a>
         </td>
         <td>
             <a href="../fields/11.html">
-            ClOrdID
+            
+                ClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID</td>
@@ -142,12 +150,16 @@
     <tr>
         <td class="green">
             <a href="../fields/526.html">
-            526
+            
+                526
+            
             </a>
         </td>
         <td>
             <a href="../fields/526.html">
-            SecondaryClOrdID
+            
+                SecondaryClOrdID
+            
             </a>
         </td>
         <td>@ClOrdID2</td>
@@ -159,12 +171,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1369.html">
-            1369
+            
+                1369
+            
             </a>
         </td>
         <td>
             <a href="../fields/1369.html">
-            MassActionReportID
+            
+                MassActionReportID
+            
             </a>
         </td>
         <td>@MassActionReportID</td>
@@ -176,12 +192,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1373.html">
-            1373
+            
+                1373
+            
             </a>
         </td>
         <td>
             <a href="../fields/1373.html">
-            MassActionType
+            
+                MassActionType
+            
             </a>
         </td>
         <td>@MassActionType</td>
@@ -193,12 +213,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1374.html">
-            1374
+            
+                1374
+            
             </a>
         </td>
         <td>
             <a href="../fields/1374.html">
-            MassActionScope
+            
+                MassActionScope
+            
             </a>
         </td>
         <td>@MassActionScope</td>
@@ -209,49 +233,81 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2675.html">
+            
+                2675
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2675.html">
+            
+                MassActionReason
+            
+            </a>
+        </td>
+        <td>@MassActnRsn</td>
+        <td class="green center"></td>
+        <td>Specifies the reason for the action taken.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1375.html">
-            1375
+            
+                1375
+            
             </a>
         </td>
         <td>
             <a href="../fields/1375.html">
-            MassActionResponse
+            
+                MassActionResponse
+            
             </a>
         </td>
         <td>@MassActionResponse</td>
         <td class="green center">✔</td>
-        <td>Indicates the action taken by the counterparty order handling system as a result of the Action Request
-0 - Indicates Order Mass Action Request was rejected.</td>
+        <td>Indicates the action taken by the counterparty order handling system as a result of the Action Request.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1376.html">
-            1376
+            
+                1376
+            
             </a>
         </td>
         <td>
             <a href="../fields/1376.html">
-            MassActionRejectReason
+            
+                MassActionRejectReason
+            
             </a>
         </td>
         <td>@MassActionRejectReason</td>
         <td class="green center"></td>
         <td>Indicates why Order Mass Action Request was rejected
-Required if MassActionResponse = 0</td>
+Required if MassActionResponse(1375) = 0 (Rejected).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/533.html">
-            533
+            
+                533
+            
             </a>
         </td>
         <td>
             <a href="../fields/533.html">
-            TotalAffectedOrders
+            
+                TotalAffectedOrders
+            
             </a>
         </td>
         <td>@TotAffctdOrds</td>
@@ -262,33 +318,83 @@ Required if MassActionResponse = 0</td>
 
     <tr>
         <td class="green">
-            <a href="../components/AffectedOrdGrp.html">
-            <b>Component</b>
+            <a href="../fields/2678.html">
+            
+                2678
+            
             </a>
         </td>
         <td>
-            <a href="../components/AffectedOrdGrp.html">
-            <b>AffectedOrdGrp</b>
+            <a href="../fields/2678.html">
+            
+                TotalNotAffectedOrders
+            
             </a>
         </td>
-        <td>AffectOrd</td>
+        <td>@TotNotAffctdOrds</td>
         <td class="green center"></td>
-        <td>Orders affected by the Order Mass Action Request.</td>
+        <td>Optional field used to indicate the total number of orders within the scope but not affected by the OrderMassActionRequest(35=CA).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
-            <a href="../components/NotAffectedOrdersGrp.html">
-            <b>Component</b>
+            <a href="../fields/893.html">
+            
+                893
+            
             </a>
         </td>
         <td>
-            <a href="../components/NotAffectedOrdersGrp.html">
-            <b>NotAffectedOrdersGrp</b>
+            <a href="../fields/893.html">
+            
+                LastFragment
+            
             </a>
         </td>
-        <td>NotAffectedOrdersGrp</td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td>Indicates whether this is the last fragment in a sequence of message fragments. Only required where message has been fragmented.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AffectedOrdGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AffectedOrdGrp.html">
+            
+                <b>AffectedOrdGrp</b>
+            
+            </a>
+        </td>
+        <td>AfctdOrd</td>
+        <td class="green center"></td>
+        <td>List of orders affected by the Order Mass Action Request.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NotAffectedOrdGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/NotAffectedOrdGrp.html">
+            
+                <b>NotAffectedOrdGrp</b>
+            
+            </a>
+        </td>
+        <td>NotAfctdOrd</td>
         <td class="green center"></td>
         <td>List of orders not affected by the Order Mass Action Request.</td>
         <td class="green"></td>
@@ -296,13 +402,59 @@ Required if MassActionResponse = 0</td>
 
     <tr>
         <td class="green">
+            <a href="../components/AffectedMarketSegmentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AffectedMarketSegmentGrp.html">
+            
+                <b>AffectedMarketSegmentGrp</b>
+            
+            </a>
+        </td>
+        <td>AfctdMktSeg</td>
+        <td class="green center"></td>
+        <td>List of market segments affected by the Order Mass Action Request. Should only be used when request uses TargetMarketSegmentGrp component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/NotAffectedMarketSegmentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/NotAffectedMarketSegmentGrp.html">
+            
+                <b>NotAffectedMarketSegmentGrp</b>
+            
+            </a>
+        </td>
+        <td>NotAfctdMktSeg</td>
+        <td class="green center"></td>
+        <td>List of market segments not affected by the Order Mass Action Request. Should only be used when request uses TargetMarketSegmentGrp component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1301.html">
-            1301
+            
+                1301
+            
             </a>
         </td>
         <td>
             <a href="../fields/1301.html">
-            MarketID
+            
+                MarketID
+            
             </a>
         </td>
         <td>@MktID</td>
@@ -314,29 +466,58 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../fields/1300.html">
-            1300
+            
+                1300
+            
             </a>
         </td>
         <td>
             <a href="../fields/1300.html">
-            MarketSegmentID
+            
+                MarketSegmentID
+            
             </a>
         </td>
         <td>@MktSegID</td>
         <td class="green center"></td>
-        <td>MarketSegmentID for which orders are to be affected</td>
+        <td>MarketSegmentID for which orders are to be affected. Mutually exclusive with TargetMarketSegmentGrp component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/TargetMarketSegmentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/TargetMarketSegmentGrp.html">
+            
+                <b>TargetMarketSegmentGrp</b>
+            
+            </a>
+        </td>
+        <td>TgtMktSeg</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with MarketSegmentID(1300).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/336.html">
-            336
+            
+                336
+            
             </a>
         </td>
         <td>
             <a href="../fields/336.html">
-            TradingSessionID
+            
+                TradingSessionID
+            
             </a>
         </td>
         <td>@SesID</td>
@@ -348,12 +529,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../fields/625.html">
-            625
+            
+                625
+            
             </a>
         </td>
         <td>
             <a href="../fields/625.html">
-            TradingSessionSubID
+            
+                TradingSessionSubID
+            
             </a>
         </td>
         <td>@SesSub</td>
@@ -365,12 +550,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../components/Parties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Parties.html">
-            <b>Parties</b>
+            
+                <b>Parties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -382,12 +571,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../components/TargetParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TargetParties.html">
-            <b>TargetParties</b>
+            
+                <b>TargetParties</b>
+            
             </a>
         </td>
         <td>TgtPty</td>
@@ -399,12 +592,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
@@ -416,12 +613,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../components/UnderlyingInstrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UnderlyingInstrument.html">
-            <b>UnderlyingInstrument</b>
+            
+                <b>UnderlyingInstrument</b>
+            
             </a>
         </td>
         <td>Undly</td>
@@ -433,12 +634,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../fields/54.html">
-            54
+            
+                54
+            
             </a>
         </td>
         <td>
             <a href="../fields/54.html">
-            Side
+            
+                Side
+            
             </a>
         </td>
         <td>@Side</td>
@@ -449,13 +654,38 @@ Required if MassActionResponse = 0</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/44.html">
+            
+                44
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/44.html">
+            
+                Price
+            
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/60.html">
-            60
+            
+                60
+            
             </a>
         </td>
         <td>
             <a href="../fields/60.html">
-            TransactTime
+            
+                TransactTime
+            
             </a>
         </td>
         <td>@TxnTm</td>
@@ -466,13 +696,101 @@ Required if MassActionResponse = 0</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/376.html">
+            
+                376
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/376.html">
+            
+                ComplianceID
+            
+            </a>
+        </td>
+        <td>@ComplianceID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2404.html">
+            
+                2404
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2404.html">
+            
+                ComplianceText
+            
+            </a>
+        </td>
+        <td>@ComplianceTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2351.html">
+            
+                2351
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2351.html">
+            
+                EncodedComplianceTextLen
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedComplianceText(2352) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2352.html">
+            
+                2352
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2352.html">
+            
+                EncodedComplianceText
+            
+            </a>
+        </td>
+        <td>@EncComplianceTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the ComplianceText(2404) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
@@ -484,12 +802,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
@@ -501,12 +823,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
@@ -518,12 +844,16 @@ Required if MassActionResponse = 0</td>
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>TickRules [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">The TickRules component specifies the rules for determining how a security ticks, i.e. the price increments which it can be quoted, traded, and for certain cases settled, depending on the current price of the security.</p>
 
 <table>
 <tr>
@@ -108,85 +108,168 @@
     <tr>
         <td class="green">
             <a href="../fields/1205.html">
-            1205
+            
+                1205
+            
             </a>
         </td>
         <td>
             <a href="../fields/1205.html">
-            NoTickRules
+            
+                NoTickRules
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Number of tick rules. This block specifies the rules for determining how a security ticks, i.e. the price increments at which it can be quoted and traded, depending on the current price of the security.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1206.html">
-            1206
+            
+                1206
+            
             </a>
         </td>
         <td>
             <a href="../fields/1206.html">
-            StartTickPriceRange
+            
+                StartTickPriceRange
+            
             </a>
         </td>
         <td>@StartTickPxRng</td>
         <td class="green center"></td>
-        <td>Starting price range for specified tick increment</td>
+        <td>Required if NoTickRules(1205) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1207.html">
-            1207
+            
+                1207
+            
             </a>
         </td>
         <td>
             <a href="../fields/1207.html">
-            EndTickPriceRange
+            
+                EndTickPriceRange
+            
             </a>
         </td>
         <td>@EndTickPxRng</td>
         <td class="green center"></td>
-        <td>Ending price range for the specified tick increment</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1208.html">
-            1208
+            
+                1208
+            
             </a>
         </td>
         <td>
             <a href="../fields/1208.html">
-            TickIncrement
+            
+                TickIncrement
+            
             </a>
         </td>
         <td>@TickIncr</td>
         <td class="green center"></td>
-        <td>Tick increment for stated price range. Specifies the valid price increments at which a security can be quoted and traded</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1209.html">
-            1209
+            
+                1209
+            
             </a>
         </td>
         <td>
             <a href="../fields/1209.html">
-            TickRuleType
+            
+                TickRuleType
+            
             </a>
         </td>
         <td>@TickRuleTyp</td>
         <td class="green center"></td>
-        <td>Specifies the type of tick rule which is being described</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2571.html">
+            
+                2571
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2571.html">
+            
+                TickRuleProductComplex
+            
+            </a>
+        </td>
+        <td>@TickRuleProdCmplx</td>
+        <td class="green center"></td>
+        <td>Can be used to limit tick rule to specific product suite.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1830.html">
+            
+                1830
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1830.html">
+            
+                SettlPriceIncrement
+            
+            </a>
+        </td>
+        <td>@SettlPxIncr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1831.html">
+            
+                1831
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1831.html">
+            
+                SettlPriceSecondaryIncrement
+            
+            </a>
+        </td>
+        <td>@SettlPxIncr2</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 

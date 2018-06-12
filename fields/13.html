@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>CommType [type '13']</h3>
-<p class="description">Commission type</p>
+<p class="description">Specifies the basis or unit used to calculate the total commission based on the rate.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/13.html">
-            13
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>CommTyp</td>
         <td>
-            Commission type
+            Specifies the basis or unit used to calculate the total commission based on the rate.
             
             <table>
             
@@ -156,6 +156,18 @@
                 <td>PointsPerBondOrContract</td>
             </tr>
             
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>AmountPerContract</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>BasisPoints</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -169,18 +181,6 @@
     <p>
     
         [<a href="../components/CommissionData.html">CommissionData]</a>
-    
-    </p>
-    <hr />
-    
-    <p>Used in messages:</p>
-    <p>
-    
-        [<a href="../messages/S.html">Quote]</a>
-    
-        [<a href="../messages/AJ.html">QuoteResponse]</a>
-    
-        [<a href="../messages/AI.html">QuoteStatusReport]</a>
     
     </p>
     <hr />

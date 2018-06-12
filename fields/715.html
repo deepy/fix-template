@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>ClearingBusinessDate [type '715']</h3>
-<p class="description">The &#34;Clearing Business Date&#34; referred to by this maintenance request.</p>
+<p class="description">The business date for which the trade is expected to be cleared.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/715.html">
-            715
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>BizDt</td>
         <td>
-            The &#34;Clearing Business Date&#34; referred to by this maintenance request.
+            The business date for which the trade is expected to be cleared.
             
         </td>
         <td class="green"></td>
@@ -127,6 +127,8 @@
     
     <p>Used in messages:</p>
     <p>
+    
+        [<a href="../messages/CQ.html">AccountSummaryReport]</a>
     
         [<a href="../messages/BL.html">AdjustedPositionReport]</a>
     
@@ -156,6 +158,12 @@
     
         [<a href="../messages/AA.html">DerivativeSecurityList]</a>
     
+        [<a href="../messages/CH.html">MarginRequirementInquiry]</a>
+    
+        [<a href="../messages/CI.html">MarginRequirementInquiryAck]</a>
+    
+        [<a href="../messages/CJ.html">MarginRequirementReport]</a>
+    
         [<a href="../messages/W.html">MarketDataSnapshotFullRefresh]</a>
     
         [<a href="../messages/AM.html">PositionMaintenanceReport]</a>
@@ -163,6 +171,12 @@
         [<a href="../messages/AL.html">PositionMaintenanceRequest]</a>
     
         [<a href="../messages/AP.html">PositionReport]</a>
+    
+        [<a href="../messages/DL.html">PositionTransferInstruction]</a>
+    
+        [<a href="../messages/DN.html">PositionTransferReport]</a>
+    
+        [<a href="../messages/o.html">RegistrationInstructions]</a>
     
         [<a href="../messages/AN.html">RequestForPositions]</a>
     
@@ -183,6 +197,8 @@
         [<a href="../messages/AR.html">TradeCaptureReportAck]</a>
     
         [<a href="../messages/AD.html">TradeCaptureReportRequest]</a>
+    
+        [<a href="../messages/DC.html">TradeMatchReport]</a>
     
     </p>
     <hr />

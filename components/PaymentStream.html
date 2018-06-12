@@ -1,0 +1,810 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>PaymentStream [type 'Component']</h3>
+<p class="description">The PaymentStream component is a subcomponent of the Stream used to detail the attributes of a payment stream in a swap.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40738.html">
+            
+                40738
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40738.html">
+            
+                PaymentStreamType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40739.html">
+            
+                40739
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40739.html">
+            
+                PaymentStreamMarketRate
+            
+            </a>
+        </td>
+        <td>@MktRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40740.html">
+            
+                40740
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40740.html">
+            
+                PaymentStreamDelayIndicator
+            
+            </a>
+        </td>
+        <td>@DelayInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42600.html">
+            
+                42600
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42600.html">
+            
+                PaymentStreamCashSettlIndicator
+            
+            </a>
+        </td>
+        <td>@CshSettlInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40741.html">
+            
+                40741
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40741.html">
+            
+                PaymentStreamSettlCurrency
+            
+            </a>
+        </td>
+        <td>@SettlCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40742.html">
+            
+                40742
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40742.html">
+            
+                PaymentStreamDayCount
+            
+            </a>
+        </td>
+        <td>@DayCnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40743.html">
+            
+                40743
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40743.html">
+            
+                PaymentStreamAccrualDays
+            
+            </a>
+        </td>
+        <td>@AcrlDays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40744.html">
+            
+                40744
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40744.html">
+            
+                PaymentStreamDiscountType
+            
+            </a>
+        </td>
+        <td>@DiscTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40745.html">
+            
+                40745
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40745.html">
+            
+                PaymentStreamDiscountRate
+            
+            </a>
+        </td>
+        <td>@Disc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40746.html">
+            
+                40746
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40746.html">
+            
+                PaymentStreamDiscountRateDayCount
+            
+            </a>
+        </td>
+        <td>@DiscDayCnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40747.html">
+            
+                40747
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40747.html">
+            
+                PaymentStreamCompoundingMethod
+            
+            </a>
+        </td>
+        <td>@CmpndgMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42601.html">
+            
+                42601
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42601.html">
+            
+                PaymentStreamCompoundingXIDRef
+            
+            </a>
+        </td>
+        <td>@CmpndgXIDRef</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with PaymentStreamCompoundingFixedRate(42605) or the PaymentStreamCompoundingFloatingRate component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42602.html">
+            
+                42602
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42602.html">
+            
+                PaymentStreamCompoundingSpread
+            
+            </a>
+        </td>
+        <td>@CmpndgSpread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42603.html">
+            
+                42603
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42603.html">
+            
+                PaymentStreamInterpolationMethod
+            
+            </a>
+        </td>
+        <td>@IntrpltnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42604.html">
+            
+                42604
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42604.html">
+            
+                PaymentStreamInterpolationPeriod
+            
+            </a>
+        </td>
+        <td>@IntrpltnPeriod</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40748.html">
+            
+                40748
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40748.html">
+            
+                PaymentStreamInitialPrincipalExchangeIndicator
+            
+            </a>
+        </td>
+        <td>@InitPrncplExchInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40749.html">
+            
+                40749
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40749.html">
+            
+                PaymentStreamInterimPrincipalExchangeIndicator
+            
+            </a>
+        </td>
+        <td>@IntrmPrncplExchInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40750.html">
+            
+                40750
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40750.html">
+            
+                PaymentStreamFinalPrincipalExchangeIndicator
+            
+            </a>
+        </td>
+        <td>@FnlPrncplExchInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41180.html">
+            
+                41180
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41180.html">
+            
+                PaymentStreamFlatRateIndicator
+            
+            </a>
+        </td>
+        <td>@FlatRtInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41181.html">
+            
+                41181
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41181.html">
+            
+                PaymentStreamFlatRateAmount
+            
+            </a>
+        </td>
+        <td>@FlatRtAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41182.html">
+            
+                41182
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41182.html">
+            
+                PaymentStreamFlatRateCurrency
+            
+            </a>
+        </td>
+        <td>@FlatRtCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41183.html">
+            
+                41183
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41183.html">
+            
+                PaymentStreamMaximumPaymentAmount
+            
+            </a>
+        </td>
+        <td>@MaxPmtAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41184.html">
+            
+                41184
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41184.html">
+            
+                PaymentStreamMaximumPaymentCurrency
+            
+            </a>
+        </td>
+        <td>@MaxPmtCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41185.html">
+            
+                41185
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41185.html">
+            
+                PaymentStreamMaximumTransactionAmount
+            
+            </a>
+        </td>
+        <td>@MaxTxnAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41186.html">
+            
+                41186
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41186.html">
+            
+                PaymentStreamMaximumTransactionCurrency
+            
+            </a>
+        </td>
+        <td>@MaxTxnCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamPaymentDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamPaymentDates.html">
+            
+                <b>PaymentStreamPaymentDates</b>
+            
+            </a>
+        </td>
+        <td>PmtDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamResetDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamResetDates.html">
+            
+                <b>PaymentStreamResetDates</b>
+            
+            </a>
+        </td>
+        <td>ResetDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamFixedRate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamFixedRate.html">
+            
+                <b>PaymentStreamFixedRate</b>
+            
+            </a>
+        </td>
+        <td>Fixed</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamFloatingRate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamFloatingRate.html">
+            
+                <b>PaymentStreamFloatingRate</b>
+            
+            </a>
+        </td>
+        <td>Float</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42605.html">
+            
+                42605
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42605.html">
+            
+                PaymentStreamCompoundingFixedRate
+            
+            </a>
+        </td>
+        <td>@CmpndgFixedRt</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with PaymentStreamCompoundingXIDRef(42601) or the PaymentStreamCompoundingFloatingRate component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamCompoundingFloatingRate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamCompoundingFloatingRate.html">
+            
+                <b>PaymentStreamCompoundingFloatingRate</b>
+            
+            </a>
+        </td>
+        <td>CmpndgFloat</td>
+        <td class="green center"></td>
+        <td>Mutually exclusive with PaymentStreamCompoundingFixedRate(42605) or the PaymentStreamCompoundingXIDRef(42601).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamCompoundingDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamCompoundingDates.html">
+            
+                <b>PaymentStreamCompoundingDates</b>
+            
+            </a>
+        </td>
+        <td>CmpndgDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStreamNonDeliverableSettlTerms.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStreamNonDeliverableSettlTerms.html">
+            
+                <b>PaymentStreamNonDeliverableSettlTerms</b>
+            
+            </a>
+        </td>
+        <td>NonDlvrblTrms</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

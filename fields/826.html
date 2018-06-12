@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradeAllocIndicator [type '826']</h3>
-<p class="description">Identifies how the trade is to be allocated</p>
+<p class="description">Identifies if, and how, the trade is to be allocated or split.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/826.html">
-            826
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>AllocInd</td>
         <td>
-            Identifies how the trade is to be allocated
+            Identifies if, and how, the trade is to be allocated or split.
             
             <table>
             
@@ -156,6 +156,12 @@
                 <td>AllocationToClaimAccount</td>
             </tr>
             
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>TradeSplit</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -171,6 +177,8 @@
         [<a href="../components/TrdCapRptAckSideGrp.html">TrdCapRptAckSideGrp]</a>
     
         [<a href="../components/TrdCapRptSideGrp.html">TrdCapRptSideGrp]</a>
+    
+        [<a href="../components/TrdMatchSideGrp.html">TrdMatchSideGrp]</a>
     
     </p>
     <hr />

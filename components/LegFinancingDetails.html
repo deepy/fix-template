@@ -1,0 +1,642 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegFinancingDetails [type 'Component']</h3>
+<p class="description">Component block is optionally used for financial transactions where legal contracts, master agreements or master confirmations are to be referenced. This component identifies the legal agreement under which the deal was made and other unique characteristics of the transaction. For example, the LegAgreementDesc(2497) field refers to base standard documents such as MRA 1996 Repurchase Agreement, GMRA 2000 Bills Transaction (U.K.), MSLA 1993 Securities Loan - Amended 1998, for example.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2497.html">
+            
+                2497
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2497.html">
+            
+                LegAgreementDesc
+            
+            </a>
+        </td>
+        <td>@AgmtDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2498.html">
+            
+                2498
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2498.html">
+            
+                LegAgreementID
+            
+            </a>
+        </td>
+        <td>@AgmtID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2499.html">
+            
+                2499
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2499.html">
+            
+                LegAgreementVersion
+            
+            </a>
+        </td>
+        <td>@AgmtVer</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2496.html">
+            
+                2496
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2496.html">
+            
+                LegAgreementDate
+            
+            </a>
+        </td>
+        <td>@AgmtDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2495.html">
+            
+                2495
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2495.html">
+            
+                LegAgreementCurrency
+            
+            </a>
+        </td>
+        <td>@AgmtCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2511.html">
+            
+                2511
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2511.html">
+            
+                LegMasterConfirmationDesc
+            
+            </a>
+        </td>
+        <td>@CnfmDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2510.html">
+            
+                2510
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2510.html">
+            
+                LegMasterConfirmationDate
+            
+            </a>
+        </td>
+        <td>@CnfmDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2512.html">
+            
+                2512
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2512.html">
+            
+                LegMasterConfirmationAnnexDesc
+            
+            </a>
+        </td>
+        <td>@CnfmAnxDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2509.html">
+            
+                2509
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2509.html">
+            
+                LegMasterConfirmationAnnexDate
+            
+            </a>
+        </td>
+        <td>@CnfmAnxDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2500.html">
+            
+                2500
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2500.html">
+            
+                LegBrokerConfirmationDesc
+            
+            </a>
+        </td>
+        <td>@BrkrCnfmDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegFinancingContractualDefinitionsGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegFinancingContractualDefinitionsGrp.html">
+            
+                <b>LegFinancingContractualDefinitionsGrp</b>
+            
+            </a>
+        </td>
+        <td>CtrctlDef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegFinancingTermSupplementGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegFinancingTermSupplementGrp.html">
+            
+                <b>LegFinancingTermSupplementGrp</b>
+            
+            </a>
+        </td>
+        <td>TrmSupplmnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegFinancingContractualMatrixGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegFinancingContractualMatrixGrp.html">
+            
+                <b>LegFinancingContractualMatrixGrp</b>
+            
+            </a>
+        </td>
+        <td>CtrctlMtrx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2502.html">
+            
+                2502
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2502.html">
+            
+                LegCreditSupportAgreementDesc
+            
+            </a>
+        </td>
+        <td>@CrdSuprtDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2501.html">
+            
+                2501
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2501.html">
+            
+                LegCreditSupportAgreementDate
+            
+            </a>
+        </td>
+        <td>@CrdSuprtDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2503.html">
+            
+                2503
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2503.html">
+            
+                LegCreditSupportAgreementID
+            
+            </a>
+        </td>
+        <td>@CrdSuprtID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2507.html">
+            
+                2507
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2507.html">
+            
+                LegGoverningLaw
+            
+            </a>
+        </td>
+        <td>@Law</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2505.html">
+            
+                2505
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2505.html">
+            
+                LegDocumentationText
+            
+            </a>
+        </td>
+        <td>@DcmntnTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2494.html">
+            
+                2494
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2494.html">
+            
+                EncodedLegDocumentationTextLen
+            
+            </a>
+        </td>
+        <td>@EncDcmntnTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedLegDocumentationText(2493) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2493.html">
+            
+                2493
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2493.html">
+            
+                EncodedLegDocumentationText
+            
+            </a>
+        </td>
+        <td>@EncDcmntnTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the LegDocumentationText(2505) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2514.html">
+            
+                2514
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2514.html">
+            
+                LegTerminationType
+            
+            </a>
+        </td>
+        <td>@TrmTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2513.html">
+            
+                2513
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2513.html">
+            
+                LegStartDate
+            
+            </a>
+        </td>
+        <td>@StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2506.html">
+            
+                2506
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2506.html">
+            
+                LegEndDate
+            
+            </a>
+        </td>
+        <td>@EndDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2504.html">
+            
+                2504
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2504.html">
+            
+                LegDeliveryType
+            
+            </a>
+        </td>
+        <td>@DlvryTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2508.html">
+            
+                2508
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2508.html">
+            
+                LegMarginRatio
+            
+            </a>
+        </td>
+        <td>@MgnRatio</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

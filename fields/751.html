@@ -91,12 +91,12 @@
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradeReportRejectReason [type '751']</h3>
 <p class="description">Reason Trade Capture Request was rejected.
-100+ Reserved and available for bi-laterally agreed upon user-defined values</p>
+100+ Reserved and available for bi-laterally agreed upon user-defined values.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -107,7 +107,7 @@
     <tr>
         <td class="green">
             <a href="../fields/751.html">
-            751
+            
             </a>
         </td>
         <td>
@@ -118,7 +118,7 @@
         <td>RejRsn</td>
         <td>
             Reason Trade Capture Request was rejected.
-100+ Reserved and available for bi-laterally agreed upon user-defined values
+100+ Reserved and available for bi-laterally agreed upon user-defined values.
             
             <table>
             
@@ -131,7 +131,7 @@
             <tr>
                 <td>1</td>
                 <td>=</td>
-                <td>InvalidPartyOnformation</td>
+                <td>InvalidPartyInformation</td>
             </tr>
             
             <tr>
@@ -158,6 +158,24 @@
                 <td>Other</td>
             </tr>
             
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>PriceExceedsCurrentPriceBand</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>ReferencePriceNotAvailable</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>NotionalValueExceedsThreshold</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -169,6 +187,8 @@
     
     <p>Used in messages:</p>
     <p>
+    
+        [<a href="../messages/AE.html">TradeCaptureReport]</a>
     
         [<a href="../messages/AR.html">TradeCaptureReportAck]</a>
     

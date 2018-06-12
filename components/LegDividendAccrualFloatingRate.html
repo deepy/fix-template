@@ -1,0 +1,495 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegDividendAccrualFloatingRate [type 'Component']</h3>
+<p class="description">The LegDividendAccrualFloatingRate component is a subcomponent of LegDividendConditions used to define the dividend accrual floating rate attributes of dividend payment conditions.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42312.html">
+            
+                42312
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42312.html">
+            
+                LegDividendFloatingRateIndex
+            
+            </a>
+        </td>
+        <td>@Ndx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42313.html">
+            
+                42313
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42313.html">
+            
+                LegDividendFloatingRateIndexCurvePeriod
+            
+            </a>
+        </td>
+        <td>@NdxPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendFloatingRateIndexCurveUnit(42314) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42314.html">
+            
+                42314
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42314.html">
+            
+                LegDividendFloatingRateIndexCurveUnit
+            
+            </a>
+        </td>
+        <td>@NdxUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegDividendFloatingRateIndexCurvePeriod(42313) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42315.html">
+            
+                42315
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42315.html">
+            
+                LegDividendFloatingRateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42316.html">
+            
+                42316
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42316.html">
+            
+                LegDividendFloatingRateSpread
+            
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42317.html">
+            
+                42317
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42317.html">
+            
+                LegDividendFloatingRateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@SpreadPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42318.html">
+            
+                42318
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42318.html">
+            
+                LegDividendFloatingRateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42319.html">
+            
+                42319
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42319.html">
+            
+                LegDividendCapRate
+            
+            </a>
+        </td>
+        <td>@CapRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42320.html">
+            
+                42320
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42320.html">
+            
+                LegDividendCapRateBuySide
+            
+            </a>
+        </td>
+        <td>@CapRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42321.html">
+            
+                42321
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42321.html">
+            
+                LegDividendCapRateSellSide
+            
+            </a>
+        </td>
+        <td>@CapRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42322.html">
+            
+                42322
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42322.html">
+            
+                LegDividendFloorRate
+            
+            </a>
+        </td>
+        <td>@FlrRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42323.html">
+            
+                42323
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42323.html">
+            
+                LegDividendFloorRateBuySide
+            
+            </a>
+        </td>
+        <td>@FlrRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42324.html">
+            
+                42324
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42324.html">
+            
+                LegDividendFloorRateSellSide
+            
+            </a>
+        </td>
+        <td>@FlrRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42325.html">
+            
+                42325
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42325.html">
+            
+                LegDividendInitialRate
+            
+            </a>
+        </td>
+        <td>@InitRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42326.html">
+            
+                42326
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42326.html">
+            
+                LegDividendFinalRateRoundingDirection
+            
+            </a>
+        </td>
+        <td>@FnlRtRndDirctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42327.html">
+            
+                42327
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42327.html">
+            
+                LegDividendFinalRatePrecision
+            
+            </a>
+        </td>
+        <td>@FnlRtPrcsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42328.html">
+            
+                42328
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42328.html">
+            
+                LegDividendAveragingMethod
+            
+            </a>
+        </td>
+        <td>@AvgngMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42329.html">
+            
+                42329
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42329.html">
+            
+                LegDividendNegativeRateTreatment
+            
+            </a>
+        </td>
+        <td>@NegtvRtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>ComplexEvents [type 'Component']</h3>
-<p class="description">The ComplexEvent Group is a repeating block which allows an unlimited number and types of events in the lifetime of an option to be specified.</p>
+<p class="description">The ComplexEvent Group is a repeating block which allows specifying an unlimited number and types of advanced events, such as observation and pricing over the lifetime of an option, futures, commodities or equity swap contract. Use EvntGrp to specify more straightforward events. </p>
 
 <table>
 <tr>
@@ -108,48 +108,121 @@
     <tr>
         <td class="green">
             <a href="../fields/1483.html">
-            1483
+            
+                1483
+            
             </a>
         </td>
         <td>
             <a href="../fields/1483.html">
-            NoComplexEvents
+            
+                NoComplexEvents
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Number of complex events</td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1484.html">
-            1484
+            
+                1484
+            
             </a>
         </td>
         <td>
             <a href="../fields/1484.html">
-            ComplexEventType
+            
+                ComplexEventType
+            
             </a>
         </td>
         <td>@Typ</td>
         <td class="green center"></td>
-        <td>Identifies the type of complex event. 
-Required if NoComplexEvents &gt; 0.
-</td>
+        <td>Required if NoComplexEvents(1483) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2117.html">
+            
+                2117
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2117.html">
+            
+                ComplexOptPayoutPaySide
+            
+            </a>
+        </td>
+        <td>@OptPay</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2118.html">
+            
+                2118
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2118.html">
+            
+                ComplexOptPayoutReceiveSide
+            
+            </a>
+        </td>
+        <td>@OptRcv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2119.html">
+            
+                2119
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2119.html">
+            
+                ComplexOptPayoutUnderlier
+            
+            </a>
+        </td>
+        <td>@OptUndlr</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1485.html">
-            1485
+            
+                1485
+            
             </a>
         </td>
         <td>
             <a href="../fields/1485.html">
-            ComplexOptPayoutAmount
+            
+                ComplexOptPayoutAmount
+            
             </a>
         </td>
         <td>@OptPayAmt</td>
@@ -160,13 +233,80 @@ Required if NoComplexEvents &gt; 0.
 
     <tr>
         <td class="green">
+            <a href="../fields/2120.html">
+            
+                2120
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2120.html">
+            
+                ComplexOptPayoutPercentage
+            
+            </a>
+        </td>
+        <td>@OptPctage</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2121.html">
+            
+                2121
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2121.html">
+            
+                ComplexOptPayoutTime
+            
+            </a>
+        </td>
+        <td>@OptTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2122.html">
+            
+                2122
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2122.html">
+            
+                ComplexOptPayoutCurrency
+            
+            </a>
+        </td>
+        <td>@OptCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1486.html">
-            1486
+            
+                1486
+            
             </a>
         </td>
         <td>
             <a href="../fields/1486.html">
-            ComplexEventPrice
+            
+                ComplexEventPrice
+            
             </a>
         </td>
         <td>@Px</td>
@@ -177,13 +317,38 @@ Required if NoComplexEvents &gt; 0.
 
     <tr>
         <td class="green">
+            <a href="../fields/2123.html">
+            
+                2123
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2123.html">
+            
+                ComplexEventPricePercentage
+            
+            </a>
+        </td>
+        <td>@PxPctage</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/1487.html">
-            1487
+            
+                1487
+            
             </a>
         </td>
         <td>
             <a href="../fields/1487.html">
-            ComplexEventPriceBoundaryMethod
+            
+                ComplexEventPriceBoundaryMethod
+            
             </a>
         </td>
         <td>@PxBndryMeth</td>
@@ -195,12 +360,16 @@ Required if NoComplexEvents &gt; 0.
     <tr>
         <td class="green">
             <a href="../fields/1488.html">
-            1488
+            
+                1488
+            
             </a>
         </td>
         <td>
             <a href="../fields/1488.html">
-            ComplexEventPriceBoundaryPrecision
+            
+                ComplexEventPriceBoundaryPrecision
+            
             </a>
         </td>
         <td>@PxBndryPrcsn</td>
@@ -212,12 +381,16 @@ Required if NoComplexEvents &gt; 0.
     <tr>
         <td class="green">
             <a href="../fields/1489.html">
-            1489
+            
+                1489
+            
             </a>
         </td>
         <td>
             <a href="../fields/1489.html">
-            ComplexEventPriceTimeType
+            
+                ComplexEventPriceTimeType
+            
             </a>
         </td>
         <td>@PxTmTyp</td>
@@ -229,34 +402,588 @@ Required if NoComplexEvents &gt; 0.
     <tr>
         <td class="green">
             <a href="../fields/1490.html">
-            1490
+            
+                1490
+            
             </a>
         </td>
         <td>
             <a href="../fields/1490.html">
-            ComplexEventCondition
+            
+                ComplexEventCondition
+            
             </a>
         </td>
         <td>@Cond</td>
         <td class="green center"></td>
-        <td>ComplexEventCondition is conditionally required when there are more than one ComplexEvent occurrences. A chain of ComplexEvents must be linked together through use of the ComplexEventCondition in which the relationship between any two events is described. For any two ComplexEvents the first occurrence will specify the ComplexEventCondition which links it with the second event.</td>
+        <td>Conditionally required when there are more than one ComplexEvents occurrences. A chain of ComplexEvents must be linked together through use of the ComplexEventCondition(1490) in which the relationship between any two events is described. For any two ComplexEvents the first occurrence will specify the ComplexEventCondition(1490) which links it with the second event.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/ComplexEventDates.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ComplexEventDates.html">
-            <b>ComplexEventDates</b>
+            
+                <b>ComplexEventDates</b>
+            
             </a>
         </td>
         <td>EvntDts</td>
         <td class="green center"></td>
-        <td>Used to specify the dates and time ranges when a complex event is in effect.</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2124.html">
+            
+                2124
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2124.html">
+            
+                ComplexEventCurrencyOne
+            
+            </a>
+        </td>
+        <td>@Ccy1</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2125.html">
+            
+                2125
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2125.html">
+            
+                ComplexEventCurrencyTwo
+            
+            </a>
+        </td>
+        <td>@Ccy2</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2126.html">
+            
+                2126
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2126.html">
+            
+                ComplexEventQuoteBasis
+            
+            </a>
+        </td>
+        <td>@QteBasis</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2127.html">
+            
+                2127
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2127.html">
+            
+                ComplexEventFixedFXRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2407.html">
+            
+                2407
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2407.html">
+            
+                ComplexEventSpotRate
+            
+            </a>
+        </td>
+        <td>@SpotRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2408.html">
+            
+                2408
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2408.html">
+            
+                ComplexEventForwardPoints
+            
+            </a>
+        </td>
+        <td>@FwdPnts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2128.html">
+            
+                2128
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2128.html">
+            
+                ComplexEventDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@Meth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2129.html">
+            
+                2129
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2129.html">
+            
+                ComplexEventCalculationAgent
+            
+            </a>
+        </td>
+        <td>@CalcAgent</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2130.html">
+            
+                2130
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2130.html">
+            
+                ComplexEventStrikePrice
+            
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2131.html">
+            
+                2131
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2131.html">
+            
+                ComplexEventStrikeFactor
+            
+            </a>
+        </td>
+        <td>@StrkFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2132.html">
+            
+                2132
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2132.html">
+            
+                ComplexEventStrikeNumberOfOptions
+            
+            </a>
+        </td>
+        <td>@StrkNum</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEventRateSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEventRateSourceGrp.html">
+            
+                <b>ComplexEventRateSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEventRelativeDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEventRelativeDate.html">
+            
+                <b>ComplexEventRelativeDate</b>
+            
+            </a>
+        </td>
+        <td>ReltvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEventPeriodGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEventPeriodGrp.html">
+            
+                <b>ComplexEventPeriodGrp</b>
+            
+            </a>
+        </td>
+        <td>Period</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2133.html">
+            
+                2133
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2133.html">
+            
+                ComplexEventCreditEventsXIDRef
+            
+            </a>
+        </td>
+        <td>@CdtEvntXIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2134.html">
+            
+                2134
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2134.html">
+            
+                ComplexEventCreditEventNotifyingParty
+            
+            </a>
+        </td>
+        <td>@NotifygPty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2135.html">
+            
+                2135
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2135.html">
+            
+                ComplexEventCreditEventBusinessCenter
+            
+            </a>
+        </td>
+        <td>@BizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2136.html">
+            
+                2136
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2136.html">
+            
+                ComplexEventCreditEventStandardSources
+            
+            </a>
+        </td>
+        <td>@StdSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2137.html">
+            
+                2137
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2137.html">
+            
+                ComplexEventCreditEventMinimumSources
+            
+            </a>
+        </td>
+        <td>@MinSrcs</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEventCreditEventSourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEventCreditEventSourceGrp.html">
+            
+                <b>ComplexEventCreditEventSourceGrp</b>
+            
+            </a>
+        </td>
+        <td>EvntSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ComplexEventCreditEventGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ComplexEventCreditEventGrp.html">
+            
+                <b>ComplexEventCreditEventGrp</b>
+            
+            </a>
+        </td>
+        <td>CrdEvnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2597.html">
+            
+                2597
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2597.html">
+            
+                ComplexEventFuturesPriceValuation
+            
+            </a>
+        </td>
+        <td>@FutPxVal</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2598.html">
+            
+                2598
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2598.html">
+            
+                ComplexEventOptionsPriceValuation
+            
+            </a>
+        </td>
+        <td>@OptPxVal</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2599.html">
+            
+                2599
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2599.html">
+            
+                ComplexEventPVFinalPriceElectionFallback
+            
+            </a>
+        </td>
+        <td>@PVPxFallbck</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2138.html">
+            
+                2138
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2138.html">
+            
+                ComplexEventXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2139.html">
+            
+                2139
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2139.html">
+            
+                ComplexEventXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 

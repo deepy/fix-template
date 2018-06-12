@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>ExecRestatementReason [type '378']</h3>
-<p class="description">Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.</p>
+<p class="description">The reason for restatement when an ExecutionReport(35=8) or TradeCaptureReport(35=AE) message is sent with ExecType(150) = D (Restated) or used when communicating an unsolicited cancel.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/378.html">
-            378
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>ExecRstmtRsn</td>
         <td>
-            Code to identify reason for an ExecutionRpt message sent with ExecType=Restated or used when communicating an unsolicited cancel.
+            The reason for restatement when an ExecutionReport(35=8) or TradeCaptureReport(35=AE) message is sent with ExecType(150) = D (Restated) or used when communicating an unsolicited cancel.
             
             <table>
             
@@ -196,6 +196,36 @@
                 <td>99</td>
                 <td>=</td>
                 <td>Other</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>CancelOnConnectionLoss</td>
+            </tr>
+            
+            <tr>
+                <td>13</td>
+                <td>=</td>
+                <td>CancelOnLogout</td>
+            </tr>
+            
+            <tr>
+                <td>14</td>
+                <td>=</td>
+                <td>AssignTimePriority</td>
+            </tr>
+            
+            <tr>
+                <td>15</td>
+                <td>=</td>
+                <td>CancelledForTradePriceViolation</td>
+            </tr>
+            
+            <tr>
+                <td>16</td>
+                <td>=</td>
+                <td>CancelledForCrossImbalance</td>
             </tr>
             
             </table>

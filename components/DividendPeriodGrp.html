@@ -1,0 +1,558 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>DividendPeriodGrp [type 'Component']</h3>
+<p class="description">DividendPeriodGrp is a repeating subcomponent within the DividendConditions component.  It is used to specify the valuation and payments dates of the dividend leg of a dividend swap.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42274.html">
+            
+                42274
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42274.html">
+            
+                NoDividendPeriods
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42275.html">
+            
+                42275
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42275.html">
+            
+                DividendPeriodSequence
+            
+            </a>
+        </td>
+        <td>@Seq</td>
+        <td class="green center"></td>
+        <td>Required if NoDividendPeriods(42274) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42276.html">
+            
+                42276
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42276.html">
+            
+                DividendPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@StartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42277.html">
+            
+                42277
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42277.html">
+            
+                DividendPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@EndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42278.html">
+            
+                42278
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42278.html">
+            
+                DividendPeriodUnderlierRefID
+            
+            </a>
+        </td>
+        <td>@UndlrRefID</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides DividendUnderlierRefID(42248). The specified value would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42279.html">
+            
+                42279
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42279.html">
+            
+                DividendPeriodStrikePrice
+            
+            </a>
+        </td>
+        <td>@StrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42280.html">
+            
+                42280
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42280.html">
+            
+                DividendPeriodBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument.  The specified value would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DividendPeriodBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DividendPeriodBusinessCenterGrp.html">
+            
+                <b>DividendPeriodBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument.  The specified values would be specific to this dividend period instance.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42281.html">
+            
+                42281
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42281.html">
+            
+                DividendPeriodValuationDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@ValDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42282.html">
+            
+                42282
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42282.html">
+            
+                DividendPeriodValuationDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@ValDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42283.html">
+            
+                42283
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42283.html">
+            
+                DividendPeriodValuationDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@ValDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when DividendPeriodValuationDateOffsetUnit(42284) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42284.html">
+            
+                42284
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42284.html">
+            
+                DividendPeriodValuationDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@ValDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when DividendPeriodValuationDateOffsetPeriod(42283) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42285.html">
+            
+                42285
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42285.html">
+            
+                DividendPeriodValuationDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@ValDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42286.html">
+            
+                42286
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42286.html">
+            
+                DividendPeriodValuationDateAdjusted
+            
+            </a>
+        </td>
+        <td>@ValDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42287.html">
+            
+                42287
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42287.html">
+            
+                DividendPeriodPaymentDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@PmtDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42288.html">
+            
+                42288
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42288.html">
+            
+                DividendPeriodPaymentDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@PmtDtReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42289.html">
+            
+                42289
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42289.html">
+            
+                DividendPeriodPaymentDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when DividendPeriodPaymentDateOffsetUnit(42290) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42290.html">
+            
+                42290
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42290.html">
+            
+                DividendPeriodPaymentDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when DividendPeriodPaymentDateOffsetPeriod(42289) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42291.html">
+            
+                42291
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42291.html">
+            
+                DividendPeriodPaymentDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@PmtDtOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42292.html">
+            
+                42292
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42292.html">
+            
+                DividendPeriodPaymentDateAdjusted
+            
+            </a>
+        </td>
+        <td>@PmtDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42293.html">
+            
+                42293
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42293.html">
+            
+                DividendPeriodXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

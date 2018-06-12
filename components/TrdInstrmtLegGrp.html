@@ -108,50 +108,145 @@
     <tr>
         <td class="green">
             <a href="../fields/555.html">
-            555
+            
+                555
+            
             </a>
         </td>
         <td>
             <a href="../fields/555.html">
-            NoLegs
+            
+                NoLegs
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Number of legs
-Identifies a Multi-leg Execution if present and non-zero.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/InstrumentLeg.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrumentLeg.html">
-            <b>InstrumentLeg</b>
+            
+                <b>InstrumentLeg</b>
+            
             </a>
         </td>
         <td>Leg</td>
         <td class="green center"></td>
-        <td>Must be provided if Number of legs &gt; 0</td>
+        <td>Required if NoLegs(555) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegFinancingDetails.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegFinancingDetails.html">
+            
+                <b>LegFinancingDetails</b>
+            
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPositionAmountData.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPositionAmountData.html">
+            
+                <b>LegPositionAmountData</b>
+            
+            </a>
+        </td>
+        <td>Amt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/685.html">
+            
+                685
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/685.html">
+            
+                LegOrderQty
+            
+            </a>
+        </td>
+        <td>@OrdQty</td>
+        <td class="green center"></td>
+        <td>Quantity ordered for this leg as provided during order entry.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/687.html">
-            687
+            
+                687
+            
             </a>
         </td>
         <td>
             <a href="../fields/687.html">
-            LegQty
+            
+                LegQty
+            
             </a>
         </td>
         <td>@Qty</td>
+        <td class="green center"></td>
+        <td>The LegQty(687) field is deprecated. The use of LegOrderQty(685) is recommended instead.</td>
+        <td class="green">FIX.5.0SP2</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2346.html">
+            
+                2346
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2346.html">
+            
+                LegMidPx
+            
+            </a>
+        </td>
+        <td>@MidPx</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>
@@ -160,63 +255,79 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
     <tr>
         <td class="green">
             <a href="../fields/690.html">
-            690
+            
+                690
+            
             </a>
         </td>
         <td>
             <a href="../fields/690.html">
-            LegSwapType
+            
+                LegSwapType
+            
             </a>
         </td>
         <td>@SwapTyp</td>
         <td class="green center"></td>
-        <td>Instead of LegQty - requests that the sellside calculate LegQty based on opposite Leg</td>
+        <td>Instead of LegOrderQty(685) requests that the sellside calculate LegOrderQty(685) based on opposite Leg.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/990.html">
-            990
+            
+                990
+            
             </a>
         </td>
         <td>
             <a href="../fields/990.html">
-            LegReportID
+            
+                LegReportID
+            
             </a>
         </td>
         <td>@RptID</td>
         <td class="green center"></td>
-        <td>Additional attribute to store the Trade ID of the Leg.</td>
+        <td>Additional attribute to store the trade or trade report identifier of the leg.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1152.html">
-            1152
+            
+                1152
+            
             </a>
         </td>
         <td>
             <a href="../fields/1152.html">
-            LegNumber
+            
+                LegNumber
+            
             </a>
         </td>
         <td>@LegNo</td>
         <td class="green center"></td>
-        <td>Allow sequencing of Legs for a Strategy to be captured</td>
+        <td>Allow sequencing of legs for a strategy to be captured.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/LegStipulations.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/LegStipulations.html">
-            <b>LegStipulations</b>
+            
+                <b>LegStipulations</b>
+            
             </a>
         </td>
         <td>Stip</td>
@@ -227,82 +338,143 @@ Identifies a Multi-leg Execution if present and non-zero.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/2680.html">
+            
+                2680
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2680.html">
+            
+                LegAccount
+            
+            </a>
+        </td>
+        <td>@Acct</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1817.html">
+            
+                1817
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1817.html">
+            
+                LegClearingAccountType
+            
+            </a>
+        </td>
+        <td>@ClrAcctTyp</td>
+        <td class="green center"></td>
+        <td>Provide if different from the value specified for the overall multileg security in ClearingAccountType(1816) in the Instrument component.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/564.html">
-            564
+            
+                564
+            
             </a>
         </td>
         <td>
             <a href="../fields/564.html">
-            LegPositionEffect
+            
+                LegPositionEffect
+            
             </a>
         </td>
         <td>@PosEfct</td>
         <td class="green center"></td>
-        <td>Provide if the PositionEffect for the leg is different from that specified for the overall multileg security</td>
+        <td>Provide if different from the value specified for the overall multileg security in PositionEffect(77) in the Instrument component.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/565.html">
-            565
+            
+                565
+            
             </a>
         </td>
         <td>
             <a href="../fields/565.html">
-            LegCoveredOrUncovered
+            
+                LegCoveredOrUncovered
+            
             </a>
         </td>
         <td>@Cover</td>
         <td class="green center"></td>
-        <td>Provide if the CoveredOrUncovered for the leg is different from that specified for the overall multileg security.</td>
+        <td>Provide if different from the value specified for the overall multileg security in CoveredOrUncovered(203) in the Instrument component.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/NestedParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties.html">
-            <b>NestedParties</b>
+            
+                <b>NestedParties</b>
+            
             </a>
         </td>
         <td>Pty</td>
         <td class="green center"></td>
-        <td>Insert here the set of &#34;Nested Parties&#34; (firm identification &#34;nested&#34; within additional repeating group) fields defined in &#34;Common Components of Application Messages&#34;
-Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/654.html">
-            654
+            
+                654
+            
             </a>
         </td>
         <td>
             <a href="../fields/654.html">
-            LegRefID
+            
+                LegRefID
+            
             </a>
         </td>
         <td>@RefID</td>
         <td class="green center"></td>
-        <td>Used to identify a specific leg.</td>
-        <td class="green"></td>
+        <td>Use of LegRefID(654) in this component is deprecated. Recommend the use of LegID(1788) in the InstrumentLeg component.</td>
+        <td class="green">FIX.5.0SP2</td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/587.html">
-            587
+            
+                587
+            
             </a>
         </td>
         <td>
             <a href="../fields/587.html">
-            LegSettlType
+            
+                LegSettlType
+            
             </a>
         </td>
         <td>@SettlTyp</td>
@@ -314,46 +486,80 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/588.html">
-            588
+            
+                588
+            
             </a>
         </td>
         <td>
             <a href="../fields/588.html">
-            LegSettlDate
+            
+                LegSettlDate
+            
             </a>
         </td>
         <td>@SettlDt</td>
         <td class="green center"></td>
-        <td>Takes precedence over LegSettlmntTyp value and conditionally required/omitted for specific LegSettlType values.</td>
+        <td>Takes precedence over a calculated LegSettlType(587) when specified regardless of LegSettlType(587) value.
+Conditionally required when LegSettlType(587) = B(Broken date).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/637.html">
-            637
+            
+                637
+            
             </a>
         </td>
         <td>
             <a href="../fields/637.html">
-            LegLastPx
+            
+                LegLastPx
+            
             </a>
         </td>
         <td>@LastPx</td>
         <td class="green center"></td>
-        <td>Used to report the execution price assigned to the leg of the multileg instrument</td>
+        <td>Used to report the execution price assigned to the leg of the multileg instrument.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/686.html">
+            
+                686
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/686.html">
+            
+                LegPriceType
+            
+            </a>
+        </td>
+        <td>@PxTyp</td>
+        <td class="green center"></td>
+        <td>Indicates the price type provided with each leg of a multi-leg trade</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/675.html">
-            675
+            
+                675
+            
             </a>
         </td>
         <td>
             <a href="../fields/675.html">
-            LegSettlCurrency
+            
+                LegSettlCurrency
+            
             </a>
         </td>
         <td>@SettlCcy</td>
@@ -365,12 +571,16 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1073.html">
-            1073
+            
+                1073
+            
             </a>
         </td>
         <td>
             <a href="../fields/1073.html">
-            LegLastForwardPoints
+            
+                LegLastForwardPoints
+            
             </a>
         </td>
         <td>@LegLastFwdPnts</td>
@@ -382,12 +592,16 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1074.html">
-            1074
+            
+                1074
+            
             </a>
         </td>
         <td>
             <a href="../fields/1074.html">
-            LegCalculatedCcyLastQty
+            
+                LegCalculatedCcyLastQty
+            
             </a>
         </td>
         <td>@LegCalcCcyLastQty</td>
@@ -399,29 +613,58 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1075.html">
-            1075
+            
+                1075
+            
             </a>
         </td>
         <td>
             <a href="../fields/1075.html">
-            LegGrossTradeAmt
+            
+                LegGrossTradeAmt
+            
             </a>
         </td>
         <td>@LegGrossTrdAmt</td>
         <td class="green center"></td>
-        <td>For FX Futures can be used to express the notional value of a trade when LegLastQty and other quantity fields are expressed in terms of number of contracts - LegContractMultiplier (231) is required in this case.</td>
+        <td>For FX Futures can be used to express the notional value of a trade when LegLastQty(1418) and other quantity fields are expressed in terms of number of contracts - LegContractMultiplier(231) is required in this case.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1689.html">
+            
+                1689
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1689.html">
+            
+                LegShortSaleExemptionReason
+            
+            </a>
+        </td>
+        <td>@ShrtSaleExmptnRsn</td>
+        <td class="green center"></td>
+        <td>Available for optional use when LegSide(624) = 6 (Sell short exempt) in InstrumentLeg component.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1379.html">
-            1379
+            
+                1379
+            
             </a>
         </td>
         <td>
             <a href="../fields/1379.html">
-            LegVolatility
+            
+                LegVolatility
+            
             </a>
         </td>
         <td>@LegVolatility</td>
@@ -433,12 +676,16 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1381.html">
-            1381
+            
+                1381
+            
             </a>
         </td>
         <td>
             <a href="../fields/1381.html">
-            LegDividendYield
+            
+                LegDividendYield
+            
             </a>
         </td>
         <td>@LegDividendYield</td>
@@ -450,12 +697,16 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1383.html">
-            1383
+            
+                1383
+            
             </a>
         </td>
         <td>
             <a href="../fields/1383.html">
-            LegCurrencyRatio
+            
+                LegCurrencyRatio
+            
             </a>
         </td>
         <td>@LegCurrencyRatio</td>
@@ -467,12 +718,16 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1384.html">
-            1384
+            
+                1384
+            
             </a>
         </td>
         <td>
             <a href="../fields/1384.html">
-            LegExecInst
+            
+                LegExecInst
+            
             </a>
         </td>
         <td>@LegExecInst</td>
@@ -484,15 +739,124 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../fields/1418.html">
-            1418
+            
+                1418
+            
             </a>
         </td>
         <td>
             <a href="../fields/1418.html">
-            LegLastQty
+            
+                LegLastQty
+            
             </a>
         </td>
         <td>@LastQty</td>
+        <td class="green center"></td>
+        <td>Quantity executed for this leg.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1591.html">
+            
+                1591
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1591.html">
+            
+                LegQtyType
+            
+            </a>
+        </td>
+        <td>@QtyTyp</td>
+        <td class="green center"></td>
+        <td>Leg quantity type to be specified at the leg level. Can be different for each leg.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2358.html">
+            
+                2358
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2358.html">
+            
+                LegLastMultipliedQty
+            
+            </a>
+        </td>
+        <td>@LastMultdQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2357.html">
+            
+                2357
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2357.html">
+            
+                LegTotalTradeQty
+            
+            </a>
+        </td>
+        <td>@TotTrdQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2360.html">
+            
+                2360
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2360.html">
+            
+                LegTotalTradeMultipliedQty
+            
+            </a>
+        </td>
+        <td>@TotTrdMultdQty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2359.html">
+            
+                2359
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2359.html">
+            
+                LegTotalGrossTradeAmt
+            
+            </a>
+        </td>
+        <td>@TotGrossTrdAmt</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>
@@ -501,17 +865,42 @@ Used for NestedPartyRole=Leg Clearing Firm/Account, Leg Account/Account Type</td
     <tr>
         <td class="green">
             <a href="../components/TradeCapLegUnderlyingsGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/TradeCapLegUnderlyingsGrp.html">
-            <b>TradeCapLegUnderlyingsGrp</b>
+            
+                <b>TradeCapLegUnderlyingsGrp</b>
+            
             </a>
         </td>
         <td>TradeCapLegUndlyGrp</td>
         <td class="green center"></td>
         <td></td>
+        <td class="green">FIX.5.0SP2</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2492.html">
+            
+                2492
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2492.html">
+            
+                LegDifferentialPrice
+            
+            </a>
+        </td>
+        <td>@DiffPx</td>
+        <td class="green center"></td>
+        <td>None</td>
         <td class="green"></td>
     </tr>
 

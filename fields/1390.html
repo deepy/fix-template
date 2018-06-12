@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradePublishIndicator [type '1390']</h3>
-<p class="description">Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).</p>
+<p class="description">Indicates if a trade should be or has been published via a market publication service. The indicator governs all publication services of the recipient. Replaces PublishTrdIndicator(852).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1390.html">
-            1390
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>TrdPubInd</td>
         <td>
-            Indicates if a trade should be reported via a market reporting service. The indicator governs all reporting services of the recipient. Replaces PublishTrdIndicator(852).
+            Indicates if a trade should be or has been published via a market publication service. The indicator governs all publication services of the recipient. Replaces PublishTrdIndicator(852).
             
             <table>
             
@@ -138,6 +138,12 @@
                 <td>DeferredPublication</td>
             </tr>
             
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Published</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -147,8 +153,28 @@
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
+    
+        [<a href="../components/MDIncGrp.html">MDIncGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
+    
+        [<a href="../messages/8.html">ExecutionReport]</a>
+    
+        [<a href="../messages/AC.html">MultilegOrderCancelReplace]</a>
+    
+        [<a href="../messages/AB.html">NewOrderMultileg]</a>
+    
+        [<a href="../messages/D.html">NewOrderSingle]</a>
+    
+        [<a href="../messages/G.html">OrderCancelReplaceRequest]</a>
     
         [<a href="../messages/AE.html">TradeCaptureReport]</a>
     

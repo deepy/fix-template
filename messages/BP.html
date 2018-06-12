@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Messages</h2>
 <h3>SecurityDefinitionUpdateReport [type 'BP']</h3>
-<p class="description">This message is used for reporting updates to a Product Security Masterfile. Updates could be the result of corporate actions or other business events. Updates may include additions, modifications or deletions.</p>
+<p class="description">This message is used for reporting updates to a product security master file. Updates could be the result of corporate actions or other business events. Updates may include additions, modifications or deletions.</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardHeader.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardHeader.html">
-            <b>StandardHeader</b>
+            
+                <b>StandardHeader</b>
+            
             </a>
         </td>
         <td>BaseHeader</td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../components/ApplicationSequenceControl.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/ApplicationSequenceControl.html">
-            <b>ApplicationSequenceControl</b>
+            
+                <b>ApplicationSequenceControl</b>
+            
             </a>
         </td>
         <td>ApplSeqCtrl</td>
@@ -142,32 +150,82 @@
     <tr>
         <td class="green">
             <a href="../fields/964.html">
-            964
+            
+                964
+            
             </a>
         </td>
         <td>
             <a href="../fields/964.html">
-            SecurityReportID
+            
+                SecurityReportID
+            
             </a>
         </td>
         <td>@RptID</td>
         <td class="green center"></td>
-        <td>Identifier for the Security Definition Update message in a bulk transfer environment (No Request/Response)</td>
+        <td>Used to identify the SecurityDefinitionUpdateReport(35=BP) message in a bulk message transfer. Not used in request/response messaging.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/320.html">
-            320
+            
+                320
+            
             </a>
         </td>
         <td>
             <a href="../fields/320.html">
-            SecurityReqID
+            
+                SecurityReqID
+            
             </a>
         </td>
         <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when responding to the SecurityDefinitionRequest(35=c) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/322.html">
+            
+                322
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/322.html">
+            
+                SecurityResponseID
+            
+            </a>
+        </td>
+        <td>@RspID</td>
+        <td class="green center"></td>
+        <td>Used to identify the SecurityDefinitionUpdateReport(35=BP) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/323.html">
+            
+                323
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/323.html">
+            
+                SecurityResponseType
+            
+            </a>
+        </td>
+        <td>@RspTyp</td>
         <td class="green center"></td>
         <td></td>
         <td class="green"></td>
@@ -175,47 +233,17 @@
 
     <tr>
         <td class="green">
-            <a href="../fields/322.html">
-            322
-            </a>
-        </td>
-        <td>
-            <a href="../fields/322.html">
-            SecurityResponseID
-            </a>
-        </td>
-        <td>@RspID</td>
-        <td class="green center"></td>
-        <td>Identifier for the Security Definition message.</td>
-        <td class="green"></td>
-    </tr>
-
-    <tr>
-        <td class="green">
-            <a href="../fields/323.html">
-            323
-            </a>
-        </td>
-        <td>
-            <a href="../fields/323.html">
-            SecurityResponseType
-            </a>
-        </td>
-        <td>@RspTyp</td>
-        <td class="green center"></td>
-        <td>Response to the Security Definition Request.</td>
-        <td class="green"></td>
-    </tr>
-
-    <tr>
-        <td class="green">
             <a href="../fields/715.html">
-            715
+            
+                715
+            
             </a>
         </td>
         <td>
             <a href="../fields/715.html">
-            ClearingBusinessDate
+            
+                ClearingBusinessDate
+            
             </a>
         </td>
         <td>@BizDt</td>
@@ -227,12 +255,16 @@
     <tr>
         <td class="green">
             <a href="../fields/980.html">
-            980
+            
+                980
+            
             </a>
         </td>
         <td>
             <a href="../fields/980.html">
-            SecurityUpdateAction
+            
+                SecurityUpdateAction
+            
             </a>
         </td>
         <td>@UpdActn</td>
@@ -244,29 +276,37 @@
     <tr>
         <td class="green">
             <a href="../fields/292.html">
-            292
+            
+                292
+            
             </a>
         </td>
         <td>
             <a href="../fields/292.html">
-            CorporateAction
+            
+                CorporateAction
+            
             </a>
         </td>
         <td>@CorpActn</td>
         <td class="green center"></td>
-        <td>Identifies the type of Corporate Action</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/Instrument.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Instrument.html">
-            <b>Instrument</b>
+            
+                <b>Instrument</b>
+            
             </a>
         </td>
         <td>Instrmt</td>
@@ -278,12 +318,16 @@
     <tr>
         <td class="green">
             <a href="../components/InstrumentExtension.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrumentExtension.html">
-            <b>InstrumentExtension</b>
+            
+                <b>InstrumentExtension</b>
+            
             </a>
         </td>
         <td>InstrmtExt</td>
@@ -294,13 +338,38 @@
 
     <tr>
         <td class="green">
+            <a href="../components/FinancingDetails.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingDetails.html">
+            
+                <b>FinancingDetails</b>
+            
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/UndInstrmtGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/UndInstrmtGrp.html">
-            <b>UndInstrmtGrp</b>
+            
+                <b>UndInstrmtGrp</b>
+            
             </a>
         </td>
         <td>Undly</td>
@@ -311,13 +380,38 @@
 
     <tr>
         <td class="green">
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>RelatedInstrumentGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdInstrmt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/15.html">
-            15
+            
+                15
+            
             </a>
         </td>
         <td>
             <a href="../fields/15.html">
-            Currency
+            
+                Currency
+            
             </a>
         </td>
         <td>@Ccy</td>
@@ -328,64 +422,143 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2572.html">
+            
+                2572
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2572.html">
+            
+                PreviousAdjustedOpenInterest
+            
+            </a>
+        </td>
+        <td>@PrevAdjOpenInt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2573.html">
+            
+                2573
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2573.html">
+            
+                PreviousUnadjustedOpenInterest
+            
+            </a>
+        </td>
+        <td>@PrevUnadjOpenInt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/734.html">
+            
+                734
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/734.html">
+            
+                PriorSettlPrice
+            
+            </a>
+        </td>
+        <td>@PriSetPx</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/58.html">
-            58
+            
+                58
+            
             </a>
         </td>
         <td>
             <a href="../fields/58.html">
-            Text
+            
+                Text
+            
             </a>
         </td>
         <td>@Txt</td>
         <td class="green center"></td>
-        <td>Comment, instructions, or other identifying information.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/354.html">
-            354
+            
+                354
+            
             </a>
         </td>
         <td>
             <a href="../fields/354.html">
-            EncodedTextLen
+            
+                EncodedTextLen
+            
             </a>
         </td>
         <td>@EncTxtLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedText field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/355.html">
-            355
+            
+                355
+            
             </a>
         </td>
         <td>
             <a href="../fields/355.html">
-            EncodedText
+            
+                EncodedText
+            
             </a>
         </td>
         <td>@EncTxt</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the Text field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/Stipulations.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/Stipulations.html">
-            <b>Stipulations</b>
+            
+                <b>Stipulations</b>
+            
             </a>
         </td>
         <td>Stip</td>
@@ -396,13 +569,59 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1606.html">
+            
+                1606
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1606.html">
+            
+                NumOfSimpleInstruments
+            
+            </a>
+        </td>
+        <td>@NumSimplInstrmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2562.html">
+            
+                2562
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2562.html">
+            
+                NumOfComplexInstruments
+            
+            </a>
+        </td>
+        <td>@NumCmplxInstrmt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/InstrmtLegGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrmtLegGrp.html">
-            <b>InstrmtLegGrp</b>
+            
+                <b>InstrmtLegGrp</b>
+            
             </a>
         </td>
         <td>Leg</td>
@@ -414,12 +633,16 @@
     <tr>
         <td class="green">
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/SpreadOrBenchmarkCurveData.html">
-            <b>SpreadOrBenchmarkCurveData</b>
+            
+                <b>SpreadOrBenchmarkCurveData</b>
+            
             </a>
         </td>
         <td>SprdBnchmkCurve</td>
@@ -431,12 +654,16 @@
     <tr>
         <td class="green">
             <a href="../components/YieldData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/YieldData.html">
-            <b>YieldData</b>
+            
+                <b>YieldData</b>
+            
             </a>
         </td>
         <td>Yield</td>
@@ -448,12 +675,16 @@
     <tr>
         <td class="green">
             <a href="../components/MarketSegmentGrp.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/MarketSegmentGrp.html">
-            <b>MarketSegmentGrp</b>
+            
+                <b>MarketSegmentGrp</b>
+            
             </a>
         </td>
         <td>MktSegGrp</td>
@@ -464,13 +695,59 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/779.html">
+            
+                779
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/779.html">
+            
+                LastUpdateTime
+            
+            </a>
+        </td>
+        <td>@LastUpdateTm</td>
+        <td class="green center"></td>
+        <td>Represents the time at which a security was last updated</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2400.html">
+            
+                2400
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2400.html">
+            
+                EffectiveBusinessDate
+            
+            </a>
+        </td>
+        <td>@EfctvBizDt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/60.html">
-            60
+            
+                60
+            
             </a>
         </td>
         <td>
             <a href="../fields/60.html">
-            TransactTime
+            
+                TransactTime
+            
             </a>
         </td>
         <td>@TxnTm</td>
@@ -482,12 +759,16 @@
     <tr>
         <td class="green">
             <a href="../components/StandardTrailer.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/StandardTrailer.html">
-            <b>StandardTrailer</b>
+            
+                <b>StandardTrailer</b>
+            
             </a>
         </td>
         <td></td>

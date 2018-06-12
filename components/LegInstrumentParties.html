@@ -1,0 +1,243 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegInstrumentParties [type 'Component']</h3>
+<p class="description">The use of this component block is restricted to instrument definition only and is not permitted to contain transactional information. Only a specified subset of party roles will be supported within the LegInstrumentParty block.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2254.html">
+            
+                2254
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2254.html">
+            
+                NoLegInstrumentParties
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Repeating group below should contain unique combinations of LegInstrumentPartyID(2255), LegInstrumentPartyIDSource(2256) and LegInstrumentPartyRole(2257).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2255.html">
+            
+                2255
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2255.html">
+            
+                LegInstrumentPartyID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Used to identify the source of PartyID.  Required if LegInstrumentPartyIDSource(2256) is specified.  Required if NoLegInstrumentParties(2254) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2256.html">
+            
+                2256
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2256.html">
+            
+                LegInstrumentPartyIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Used to identify class source of LegInstrumentPartyID(2255) value (e.g. BIC).  Required if LegInstrumentPartyID(2255) is specified.  Required if NoLegInstrumentParties(2254) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2257.html">
+            
+                2257
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2257.html">
+            
+                LegInstrumentPartyRole
+            
+            </a>
+        </td>
+        <td>@R</td>
+        <td class="green center"></td>
+        <td>Identifies the type of LegInstrumentPartyID(2255) (e.g. Executing Broker).  Required if NoLegInstrumentParties(2254) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2379.html">
+            
+                2379
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2379.html">
+            
+                LegInstrumentPartyRoleQualifier
+            
+            </a>
+        </td>
+        <td>@Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegInstrumentPtysSubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegInstrumentPtysSubGrp.html">
+            
+                <b>LegInstrumentPtysSubGrp</b>
+            
+            </a>
+        </td>
+        <td>Sub</td>
+        <td class="green center"></td>
+        <td>Repeating group of party sub-identifiers.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -91,13 +91,16 @@
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>CustOrderHandlingInst [type '1031']</h3>
 <p class="description">Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
-NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting only.
-Valid values are grouped by OrderHandlingInstSource(1032).</p>
+NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting and/or billing purposes only.
+
+For OrderHandlingInstSrc(1032) = 1 (FINRA OATS), valid values are (as of OATS Phase 3 as provided by FINRA. See also http://www.finra.org/Industry/Compliance/MarketTransparency/OATS/PhaseIII/index.htm for a complete list.
+
+For OrderHandlingInstSrc(1032) = 2 (FIA Execution Source Code), only one enumeration value may be specified.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -108,7 +111,7 @@ Valid values are grouped by OrderHandlingInstSource(1032).</p>
     <tr>
         <td class="green">
             <a href="../fields/1031.html">
-            1031
+            
             </a>
         </td>
         <td>
@@ -119,8 +122,11 @@ Valid values are grouped by OrderHandlingInstSource(1032).</p>
         <td>CustOrdHdlInst</td>
         <td>
             Codes that apply special information that the Broker / Dealer needs to report, as specified by the customer.
-NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting only.
-Valid values are grouped by OrderHandlingInstSource(1032).
+NOTE: This field and its values have no bearing on the ExecInst and TimeInForce fields. These values should not be used instead of ExecInst or TimeInForce. This field and its values are intended for compliance reporting and/or billing purposes only.
+
+For OrderHandlingInstSrc(1032) = 1 (FINRA OATS), valid values are (as of OATS Phase 3 as provided by FINRA. See also http://www.finra.org/Industry/Compliance/MarketTransparency/OATS/PhaseIII/index.htm for a complete list.
+
+For OrderHandlingInstSrc(1032) = 2 (FIA Execution Source Code), only one enumeration value may be specified.
             
             <table>
             
@@ -268,6 +274,330 @@ Valid values are grouped by OrderHandlingInstSource(1032).
                 <td>Work</td>
             </tr>
             
+            <tr>
+                <td>A</td>
+                <td>=</td>
+                <td>PhoneSimple</td>
+            </tr>
+            
+            <tr>
+                <td>B</td>
+                <td>=</td>
+                <td>PhoneComplex</td>
+            </tr>
+            
+            <tr>
+                <td>C</td>
+                <td>=</td>
+                <td>FCMProvidedScreen</td>
+            </tr>
+            
+            <tr>
+                <td>D</td>
+                <td>=</td>
+                <td>OtherProvidedScreen</td>
+            </tr>
+            
+            <tr>
+                <td>E</td>
+                <td>=</td>
+                <td>ClientProvidedPlatformControlledByFCM</td>
+            </tr>
+            
+            <tr>
+                <td>F</td>
+                <td>=</td>
+                <td>ClientProvidedPlatformDirectToExchange</td>
+            </tr>
+            
+            <tr>
+                <td>G</td>
+                <td>=</td>
+                <td>GOrderAndFCMAPIorFIX</td>
+            </tr>
+            
+            <tr>
+                <td>H</td>
+                <td>=</td>
+                <td>AlgoEngine</td>
+            </tr>
+            
+            <tr>
+                <td>J</td>
+                <td>=</td>
+                <td>PriceAtExecution</td>
+            </tr>
+            
+            <tr>
+                <td>W</td>
+                <td>=</td>
+                <td>DeskElectronic</td>
+            </tr>
+            
+            <tr>
+                <td>X</td>
+                <td>=</td>
+                <td>DeskPit</td>
+            </tr>
+            
+            <tr>
+                <td>Y</td>
+                <td>=</td>
+                <td>ClientElectronic</td>
+            </tr>
+            
+            <tr>
+                <td>Z</td>
+                <td>=</td>
+                <td>ClientPit</td>
+            </tr>
+            
+            <tr>
+                <td>CND</td>
+                <td>=</td>
+                <td>ConditionalOrder</td>
+            </tr>
+            
+            <tr>
+                <td>CSH</td>
+                <td>=</td>
+                <td>DeliveryInstructionsCash</td>
+            </tr>
+            
+            <tr>
+                <td>DLO</td>
+                <td>=</td>
+                <td>DiscretionaryLimitOrder</td>
+            </tr>
+            
+            <tr>
+                <td>IDX</td>
+                <td>=</td>
+                <td>IntraDayCross</td>
+            </tr>
+            
+            <tr>
+                <td>ISO</td>
+                <td>=</td>
+                <td>IntermarketSweepOrder</td>
+            </tr>
+            
+            <tr>
+                <td>MPT</td>
+                <td>=</td>
+                <td>MergerRelatedTransferPosition</td>
+            </tr>
+            
+            <tr>
+                <td>MTL</td>
+                <td>=</td>
+                <td>MarketToLimit</td>
+            </tr>
+            
+            <tr>
+                <td>ND</td>
+                <td>=</td>
+                <td>DeliveryInstructionsNextDay</td>
+            </tr>
+            
+            <tr>
+                <td>OPT</td>
+                <td>=</td>
+                <td>OptionsRelatedTransaction</td>
+            </tr>
+            
+            <tr>
+                <td>SLR</td>
+                <td>=</td>
+                <td>DeliveryInstructionsSellersOption</td>
+            </tr>
+            
+            <tr>
+                <td>F0</td>
+                <td>=</td>
+                <td>StayOnOfferside</td>
+            </tr>
+            
+            <tr>
+                <td>F3</td>
+                <td>=</td>
+                <td>GoAlong</td>
+            </tr>
+            
+            <tr>
+                <td>F6</td>
+                <td>=</td>
+                <td>ParticipateDoNotInitiate</td>
+            </tr>
+            
+            <tr>
+                <td>F7</td>
+                <td>=</td>
+                <td>StrictScale</td>
+            </tr>
+            
+            <tr>
+                <td>F8</td>
+                <td>=</td>
+                <td>TryToScale</td>
+            </tr>
+            
+            <tr>
+                <td>F9</td>
+                <td>=</td>
+                <td>StayOnBidside</td>
+            </tr>
+            
+            <tr>
+                <td>FA</td>
+                <td>=</td>
+                <td>NoCross</td>
+            </tr>
+            
+            <tr>
+                <td>FB</td>
+                <td>=</td>
+                <td>OKToCross</td>
+            </tr>
+            
+            <tr>
+                <td>FC</td>
+                <td>=</td>
+                <td>CallFirst</td>
+            </tr>
+            
+            <tr>
+                <td>FD</td>
+                <td>=</td>
+                <td>PercentOfVolume</td>
+            </tr>
+            
+            <tr>
+                <td>FH</td>
+                <td>=</td>
+                <td>ReinstateOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>FI</td>
+                <td>=</td>
+                <td>InstitutionOnly</td>
+            </tr>
+            
+            <tr>
+                <td>FJ</td>
+                <td>=</td>
+                <td>ReinstateOnTradingHalt</td>
+            </tr>
+            
+            <tr>
+                <td>FK</td>
+                <td>=</td>
+                <td>CancelOnTradingHalf</td>
+            </tr>
+            
+            <tr>
+                <td>FL</td>
+                <td>=</td>
+                <td>LastPeg</td>
+            </tr>
+            
+            <tr>
+                <td>FM</td>
+                <td>=</td>
+                <td>MidPricePeg</td>
+            </tr>
+            
+            <tr>
+                <td>FN</td>
+                <td>=</td>
+                <td>NonNegotiable</td>
+            </tr>
+            
+            <tr>
+                <td>FO</td>
+                <td>=</td>
+                <td>OpeningPeg</td>
+            </tr>
+            
+            <tr>
+                <td>FP</td>
+                <td>=</td>
+                <td>MarketPeg</td>
+            </tr>
+            
+            <tr>
+                <td>FQ</td>
+                <td>=</td>
+                <td>CancelOnSystemFailure</td>
+            </tr>
+            
+            <tr>
+                <td>FR</td>
+                <td>=</td>
+                <td>PrimaryPeg</td>
+            </tr>
+            
+            <tr>
+                <td>FS</td>
+                <td>=</td>
+                <td>Suspend</td>
+            </tr>
+            
+            <tr>
+                <td>FT</td>
+                <td>=</td>
+                <td>FixedPegToLocalBBO</td>
+            </tr>
+            
+            <tr>
+                <td>FW</td>
+                <td>=</td>
+                <td>PegToVWAP</td>
+            </tr>
+            
+            <tr>
+                <td>FX</td>
+                <td>=</td>
+                <td>TradeAlong</td>
+            </tr>
+            
+            <tr>
+                <td>FY</td>
+                <td>=</td>
+                <td>TryToStop</td>
+            </tr>
+            
+            <tr>
+                <td>FZ</td>
+                <td>=</td>
+                <td>CancelIfNotBest</td>
+            </tr>
+            
+            <tr>
+                <td>Fb</td>
+                <td>=</td>
+                <td>StrictLimit</td>
+            </tr>
+            
+            <tr>
+                <td>Fc</td>
+                <td>=</td>
+                <td>IgnorePriceValidityChecks</td>
+            </tr>
+            
+            <tr>
+                <td>Fd</td>
+                <td>=</td>
+                <td>PegToLimitPrice</td>
+            </tr>
+            
+            <tr>
+                <td>Fe</td>
+                <td>=</td>
+                <td>WorkToTargetStrategy</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -277,10 +607,32 @@ Valid values are grouped by OrderHandlingInstSource(1032).
 </table>
 
     
+    <p>Used in components:</p>
+    <p>
+    
+        [<a href="../components/TrdCapRptAckSideGrp.html">TrdCapRptAckSideGrp]</a>
+    
+        [<a href="../components/TrdCapRptSideGrp.html">TrdCapRptSideGrp]</a>
+    
+        [<a href="../components/TrdMatchSideGrp.html">TrdMatchSideGrp]</a>
+    
+    </p>
+    <hr />
+    
     <p>Used in messages:</p>
     <p>
     
+        [<a href="../messages/BM.html">AllocationInstructionAlert]</a>
+    
+        [<a href="../messages/AS.html">AllocationReport]</a>
+    
+        [<a href="../messages/AT.html">AllocationReportAck]</a>
+    
         [<a href="../messages/8.html">ExecutionReport]</a>
+    
+        [<a href="../messages/DJ.html">MassOrder]</a>
+    
+        [<a href="../messages/DK.html">MassOrderAck]</a>
     
         [<a href="../messages/D.html">NewOrderSingle]</a>
     

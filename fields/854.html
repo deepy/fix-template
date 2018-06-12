@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>QtyType [type '854']</h3>
-<p class="description">Type of quantity specified in a quantity field:</p>
+<p class="description">Type of quantity specified in quantity field. ContractMultiplier (tag 231) is required when QtyType = 1 (Contracts). UnitOfMeasure (tag 996) and TimeUnit (tag 997) are required when QtyType =  2 (Units of Measure per Time Unit).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/854.html">
-            854
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>QtyTyp</td>
         <td>
-            Type of quantity specified in a quantity field:
+            Type of quantity specified in quantity field. ContractMultiplier (tag 231) is required when QtyType = 1 (Contracts). UnitOfMeasure (tag 996) and TimeUnit (tag 997) are required when QtyType =  2 (Units of Measure per Time Unit).
             
             <table>
             
@@ -149,6 +149,8 @@
     
     <p>Used in components:</p>
     <p>
+    
+        [<a href="../components/InstrmtMatchSideGrp.html">InstrmtMatchSideGrp]</a>
     
         [<a href="../components/ListOrdGrp.html">ListOrdGrp]</a>
     

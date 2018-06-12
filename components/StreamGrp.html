@@ -1,0 +1,768 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>StreamGrp [type 'Component']</h3>
+<p class="description">The StreamGrp is a repeating subcomponent of the Instrument component used to detail the swap streams associated with the instrument.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40049.html">
+            
+                40049
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40049.html">
+            
+                NoStreams
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40050.html">
+            
+                40050
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40050.html">
+            
+                StreamType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoStreams(40049) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41303.html">
+            
+                41303
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41303.html">
+            
+                StreamXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40051.html">
+            
+                40051
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40051.html">
+            
+                StreamDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42784.html">
+            
+                42784
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42784.html">
+            
+                StreamVersion
+            
+            </a>
+        </td>
+        <td>@Ver</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42785.html">
+            
+                42785
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42785.html">
+            
+                StreamVersionEffectiveDate
+            
+            </a>
+        </td>
+        <td>@VerEfctvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40052.html">
+            
+                40052
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40052.html">
+            
+                StreamPaySide
+            
+            </a>
+        </td>
+        <td>@PaySide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40053.html">
+            
+                40053
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40053.html">
+            
+                StreamReceiveSide
+            
+            </a>
+        </td>
+        <td>@RcvSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41305.html">
+            
+                41305
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41305.html">
+            
+                StreamNotionalXIDRef
+            
+            </a>
+        </td>
+        <td>@NotlXIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40054.html">
+            
+                40054
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40054.html">
+            
+                StreamNotional
+            
+            </a>
+        </td>
+        <td>@Notl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40055.html">
+            
+                40055
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40055.html">
+            
+                StreamCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42786.html">
+            
+                42786
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42786.html">
+            
+                StreamNotionalDeterminationMethod
+            
+            </a>
+        </td>
+        <td>@NotlDtrmnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42787.html">
+            
+                42787
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42787.html">
+            
+                StreamNotionalAdjustments
+            
+            </a>
+        </td>
+        <td>@NotlAdjmts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41306.html">
+            
+                41306
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41306.html">
+            
+                StreamNotionalFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@NotlPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamNotionalFrequencyUnit(41307) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41307.html">
+            
+                41307
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41307.html">
+            
+                StreamNotionalFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@NotlUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamNotionalFrequencyPeriod(41306) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41308.html">
+            
+                41308
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41308.html">
+            
+                StreamNotionalCommodityFrequency
+            
+            </a>
+        </td>
+        <td>@NotlFreq</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41309.html">
+            
+                41309
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41309.html">
+            
+                StreamNotionalUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@NotlUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41310.html">
+            
+                41310
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41310.html">
+            
+                StreamTotalNotional
+            
+            </a>
+        </td>
+        <td>@TotNotl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41311.html">
+            
+                41311
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41311.html">
+            
+                StreamTotalNotionalUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@TotNotlUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCommodity.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCommodity.html">
+            
+                <b>StreamCommodity</b>
+            
+            </a>
+        </td>
+        <td>Cmdty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamEffectiveDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamEffectiveDate.html">
+            
+                <b>StreamEffectiveDate</b>
+            
+            </a>
+        </td>
+        <td>EfctvDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamTerminationDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamTerminationDate.html">
+            
+                <b>StreamTerminationDate</b>
+            
+            </a>
+        </td>
+        <td>TrmtnDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCalculationPeriodDates.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCalculationPeriodDates.html">
+            
+                <b>StreamCalculationPeriodDates</b>
+            
+            </a>
+        </td>
+        <td>CalcDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStream.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStream.html">
+            
+                <b>PaymentStream</b>
+            
+            </a>
+        </td>
+        <td>PmtStrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentScheduleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentScheduleGrp.html">
+            
+                <b>PaymentScheduleGrp</b>
+            
+            </a>
+        </td>
+        <td>PmtSched</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PaymentStubGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PaymentStubGrp.html">
+            
+                <b>PaymentStubGrp</b>
+            
+            </a>
+        </td>
+        <td>PmtStub</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DeliveryStream.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DeliveryStream.html">
+            
+                <b>DeliveryStream</b>
+            
+            </a>
+        </td>
+        <td>DlvryStrm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DeliveryScheduleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DeliveryScheduleGrp.html">
+            
+                <b>DeliveryScheduleGrp</b>
+            
+            </a>
+        </td>
+        <td>DlvrySched</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40056.html">
+            
+                40056
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40056.html">
+            
+                StreamText
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40982.html">
+            
+                40982
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40982.html">
+            
+                EncodedStreamTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedStreamText(40983) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40983.html">
+            
+                40983
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40983.html">
+            
+                EncodedStreamText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the StreamText(40056) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

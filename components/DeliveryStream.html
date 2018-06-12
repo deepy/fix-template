@@ -1,0 +1,726 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>DeliveryStream [type 'Component']</h3>
+<p class="description">The DeliveryStream component is used to optionally specify the attributes of a physical delivery stream in a swap.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41058.html">
+            
+                41058
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41058.html">
+            
+                DeliveryStreamType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DeliveryStreamCommoditySourceGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DeliveryStreamCommoditySourceGrp.html">
+            
+                <b>DeliveryStreamCommoditySourceGrp</b>
+            
+            </a>
+        </td>
+        <td>CmdtySrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41059.html">
+            
+                41059
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41059.html">
+            
+                DeliveryStreamPipeline
+            
+            </a>
+        </td>
+        <td>@Ppln</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41060.html">
+            
+                41060
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41060.html">
+            
+                DeliveryStreamEntryPoint
+            
+            </a>
+        </td>
+        <td>@EntryPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41061.html">
+            
+                41061
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41061.html">
+            
+                DeliveryStreamWithdrawalPoint
+            
+            </a>
+        </td>
+        <td>@WthdrwlPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41062.html">
+            
+                41062
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41062.html">
+            
+                DeliveryStreamDeliveryPoint
+            
+            </a>
+        </td>
+        <td>@DlvryPnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42192.html">
+            
+                42192
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42192.html">
+            
+                DeliveryStreamDeliveryPointSource
+            
+            </a>
+        </td>
+        <td>@DlvryPntSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42193.html">
+            
+                42193
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42193.html">
+            
+                DeliveryStreamDeliveryPointDesc
+            
+            </a>
+        </td>
+        <td>@DlvryPntDesc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41063.html">
+            
+                41063
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41063.html">
+            
+                DeliveryStreamDeliveryRestriction
+            
+            </a>
+        </td>
+        <td>@DlvryRstctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41064.html">
+            
+                41064
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41064.html">
+            
+                DeliveryStreamDeliveryContingency
+            
+            </a>
+        </td>
+        <td>@Cntgncy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41065.html">
+            
+                41065
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41065.html">
+            
+                DeliveryStreamDeliveryContingentPartySide
+            
+            </a>
+        </td>
+        <td>@CntgPty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41066.html">
+            
+                41066
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41066.html">
+            
+                DeliveryStreamDeliverAtSourceIndicator
+            
+            </a>
+        </td>
+        <td>@DlvrAtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41067.html">
+            
+                41067
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41067.html">
+            
+                DeliveryStreamRiskApportionment
+            
+            </a>
+        </td>
+        <td>@RiskApprtnmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41218.html">
+            
+                41218
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41218.html">
+            
+                DeliveryStreamRiskApportionmentSource
+            
+            </a>
+        </td>
+        <td>@RiskApprtnmtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/DeliveryStreamCycleGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/DeliveryStreamCycleGrp.html">
+            
+                <b>DeliveryStreamCycleGrp</b>
+            
+            </a>
+        </td>
+        <td>Cycle</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41068.html">
+            
+                41068
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41068.html">
+            
+                DeliveryStreamTitleTransferLocation
+            
+            </a>
+        </td>
+        <td>@TtlXfer</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41069.html">
+            
+                41069
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41069.html">
+            
+                DeliveryStreamTitleTransferCondition
+            
+            </a>
+        </td>
+        <td>@TtlXferCond</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41070.html">
+            
+                41070
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41070.html">
+            
+                DeliveryStreamImporterOfRecord
+            
+            </a>
+        </td>
+        <td>@Imprtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41071.html">
+            
+                41071
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41071.html">
+            
+                DeliveryStreamNegativeTolerance
+            
+            </a>
+        </td>
+        <td>@NegtvTlrnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41072.html">
+            
+                41072
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41072.html">
+            
+                DeliveryStreamPositiveTolerance
+            
+            </a>
+        </td>
+        <td>@PostvTlrnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41073.html">
+            
+                41073
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41073.html">
+            
+                DeliveryStreamToleranceUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@TlrncUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41074.html">
+            
+                41074
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41074.html">
+            
+                DeliveryStreamToleranceType
+            
+            </a>
+        </td>
+        <td>@TlrncTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41075.html">
+            
+                41075
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41075.html">
+            
+                DeliveryStreamToleranceOptionSide
+            
+            </a>
+        </td>
+        <td>@TlrncOptSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41076.html">
+            
+                41076
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41076.html">
+            
+                DeliveryStreamTotalPositiveTolerance
+            
+            </a>
+        </td>
+        <td>@TotPostvTlrnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41077.html">
+            
+                41077
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41077.html">
+            
+                DeliveryStreamTotalNegativeTolerance
+            
+            </a>
+        </td>
+        <td>@TotNegtvTlrnc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41078.html">
+            
+                41078
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41078.html">
+            
+                DeliveryStreamNotionalConversionFactor
+            
+            </a>
+        </td>
+        <td>@CnvrsnFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41079.html">
+            
+                41079
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41079.html">
+            
+                DeliveryStreamTransportEquipment
+            
+            </a>
+        </td>
+        <td>@Eqpmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41080.html">
+            
+                41080
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41080.html">
+            
+                DeliveryStreamElectingPartySide
+            
+            </a>
+        </td>
+        <td>@ElctngSide</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/43094.html">
+            
+                43094
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/43094.html">
+            
+                DeliveryStreamRouteOrCharter
+            
+            </a>
+        </td>
+        <td>@RteChrtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

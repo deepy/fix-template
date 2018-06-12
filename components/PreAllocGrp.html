@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/78.html">
-            78
+            
+                78
+            
             </a>
         </td>
         <td>
             <a href="../fields/78.html">
-            NoAllocs
+            
+                NoAllocs
+            
             </a>
         </td>
         <td></td>
@@ -125,12 +129,16 @@
     <tr>
         <td class="green">
             <a href="../fields/79.html">
-            79
+            
+                79
+            
             </a>
         </td>
         <td>
             <a href="../fields/79.html">
-            AllocAccount
+            
+                AllocAccount
+            
             </a>
         </td>
         <td>@Acct</td>
@@ -142,12 +150,16 @@
     <tr>
         <td class="green">
             <a href="../fields/661.html">
-            661
+            
+                661
+            
             </a>
         </td>
         <td>
             <a href="../fields/661.html">
-            AllocAcctIDSource
+            
+                AllocAcctIDSource
+            
             </a>
         </td>
         <td>@ActIDSrc</td>
@@ -159,12 +171,16 @@
     <tr>
         <td class="green">
             <a href="../fields/736.html">
-            736
+            
+                736
+            
             </a>
         </td>
         <td>
             <a href="../fields/736.html">
-            AllocSettlCurrency
+            
+                AllocSettlCurrency
+            
             </a>
         </td>
         <td>@AllocSettlCcy</td>
@@ -176,12 +192,16 @@
     <tr>
         <td class="green">
             <a href="../fields/467.html">
-            467
+            
+                467
+            
             </a>
         </td>
         <td>
             <a href="../fields/467.html">
-            IndividualAllocID
+            
+                IndividualAllocID
+            
             </a>
         </td>
         <td>@IndAllocID</td>
@@ -192,13 +212,38 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/2727.html">
+            
+                2727
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2727.html">
+            
+                AllocLegRefID
+            
+            </a>
+        </td>
+        <td>@LegRefID</td>
+        <td class="green center"></td>
+        <td>The field may not be used in NewOrderSingle(35=D), OrderCancelReplaceRequest(35=G), NewOrderList(35=E) or any other message where there are no legs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/NestedParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties.html">
-            <b>NestedParties</b>
+            
+                <b>NestedParties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -211,17 +256,105 @@ Used for NestedPartyRole=Clearing Firm</td>
     <tr>
         <td class="green">
             <a href="../fields/80.html">
-            80
+            
+                80
+            
             </a>
         </td>
         <td>
             <a href="../fields/80.html">
-            AllocQty
+            
+                AllocQty
+            
             </a>
         </td>
         <td>@Qty</td>
         <td class="green center"></td>
         <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1752.html">
+            
+                1752
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1752.html">
+            
+                CustodialLotID
+            
+            </a>
+        </td>
+        <td>@CstdlLotID</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1753.html">
+            
+                1753
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1753.html">
+            
+                VersusPurchaseDate
+            
+            </a>
+        </td>
+        <td>@VSPDt</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, either VersusPurchasePrice(1754) or CurrentCostBasis(1755) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1754.html">
+            
+                1754
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1754.html">
+            
+                VersusPurchasePrice
+            
+            </a>
+        </td>
+        <td>@VSPPx</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1755.html">
+            
+                1755
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1755.html">
+            
+                CurrentCostBasis
+            
+            </a>
+        </td>
+        <td>@CurCostBasis</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified</td>
         <td class="green"></td>
     </tr>
 

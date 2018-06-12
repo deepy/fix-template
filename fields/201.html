@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>PutOrCall [type '201']</h3>
-<p class="description">Indicates whether an option contract is a put or call</p>
+<p class="description">Indicates whether an option contract is a put, call, chooser or undetermined.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/201.html">
-            201
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>PutCall</td>
         <td>
-            Indicates whether an option contract is a put or call
+            Indicates whether an option contract is a put, call, chooser or undetermined.
             
             <table>
             
@@ -130,6 +130,18 @@
                 <td>1</td>
                 <td>=</td>
                 <td>Call</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>=</td>
+                <td>Other</td>
+            </tr>
+            
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>Chooser</td>
             </tr>
             
             </table>

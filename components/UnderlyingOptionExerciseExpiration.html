@@ -1,0 +1,369 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingOptionExerciseExpiration [type 'Component']</h3>
+<p class="description">The UnderlyingOptionExerciseExpiration component is a subcomponent of the UnderlyingOptionExercise component used to specify option exercise expiration dates and times. The purpose of UnderlyingOptionExercise is to identify the scheduled opportunities for exercise. UnderlyingOptionExerciseExpiration identifies the end of the schedule.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41846.html">
+            
+                41846
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41846.html">
+            
+                UnderlyingOptionExerciseExpirationDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified value would be specific to the underlying exercise expiration dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingOptionExerciseExpirationDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingOptionExerciseExpirationDateBusinessCenterGrp.html">
+            
+                <b>UnderlyingOptionExerciseExpirationDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified values would be specific to the underlying option exercise expiration dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingOptionExerciseExpirationDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingOptionExerciseExpirationDateGrp.html">
+            
+                <b>UnderlyingOptionExerciseExpirationDateGrp</b>
+            
+            </a>
+        </td>
+        <td>Dt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41847.html">
+            
+                41847
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41847.html">
+            
+                UnderlyingOptionExerciseExpirationDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41848.html">
+            
+                41848
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41848.html">
+            
+                UnderlyingOptionExerciseExpirationDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@OfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingOptionExerciseExpirationDateOffsetUnit(41849) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41849.html">
+            
+                41849
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41849.html">
+            
+                UnderlyingOptionExerciseExpirationDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@OfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingOptionExerciseExpirationDateOffsetPeriod(41848) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41850.html">
+            
+                41850
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41850.html">
+            
+                UnderlyingOptionExerciseExpirationFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingOptionExerciseExpirationFrequencyUnit(41851) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41851.html">
+            
+                41851
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41851.html">
+            
+                UnderlyingOptionExerciseExpirationFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingOptionExerciseExpirationFrequencyPeriod(41850) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41852.html">
+            
+                41852
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41852.html">
+            
+                UnderlyingOptionExerciseExpirationRollConvention
+            
+            </a>
+        </td>
+        <td>@Roll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified values would be specific to this instance of the option exercise dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41853.html">
+            
+                41853
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41853.html">
+            
+                UnderlyingOptionExerciseExpirationDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@OfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41854.html">
+            
+                41854
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41854.html">
+            
+                UnderlyingOptionExerciseExpirationTime
+            
+            </a>
+        </td>
+        <td>@Tm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41855.html">
+            
+                41855
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41855.html">
+            
+                UnderlyingOptionExerciseExpirationTimeBusinessCenter
+            
+            </a>
+        </td>
+        <td>@TmBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -1,0 +1,600 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>CashSettlTermGrp [type 'Component']</h3>
+<p class="description">The CashSettlTermGrp is a repeating component within the Instrument component used to report cash settlement terms referenced from UnderlyingInstruments.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40022.html">
+            
+                40022
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40022.html">
+            
+                NoCashSettlTerms
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40023.html">
+            
+                40023
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40023.html">
+            
+                CashSettlCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Required if NoCashSettlTerms(40022) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40024.html">
+            
+                40024
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40024.html">
+            
+                CashSettlValuationFirstBusinessDayOffset
+            
+            </a>
+        </td>
+        <td>@BizDayOfst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40916.html">
+            
+                40916
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40916.html">
+            
+                CashSettlValuationSubsequentBusinessDaysOffset
+            
+            </a>
+        </td>
+        <td>@SbsqntBizDayOfst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40917.html">
+            
+                40917
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40917.html">
+            
+                CashSettlNumOfValuationDates
+            
+            </a>
+        </td>
+        <td>@NumValDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40025.html">
+            
+                40025
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40025.html">
+            
+                CashSettlValuationTime
+            
+            </a>
+        </td>
+        <td>@ValTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40026.html">
+            
+                40026
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40026.html">
+            
+                CashSettlBusinessCenter
+            
+            </a>
+        </td>
+        <td>@BizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40027.html">
+            
+                40027
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40027.html">
+            
+                CashSettlQuoteMethod
+            
+            </a>
+        </td>
+        <td>@QteMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40028.html">
+            
+                40028
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40028.html">
+            
+                CashSettlQuoteAmount
+            
+            </a>
+        </td>
+        <td>@QteAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40029.html">
+            
+                40029
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40029.html">
+            
+                CashSettlQuoteCurrency
+            
+            </a>
+        </td>
+        <td>@QteCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40030.html">
+            
+                40030
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40030.html">
+            
+                CashSettlMinimumQuoteAmount
+            
+            </a>
+        </td>
+        <td>@MinQteAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40031.html">
+            
+                40031
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40031.html">
+            
+                CashSettlMinimumQuoteCurrency
+            
+            </a>
+        </td>
+        <td>@MinQteCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CashSettlDealerGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CashSettlDealerGrp.html">
+            
+                <b>CashSettlDealerGrp</b>
+            
+            </a>
+        </td>
+        <td>Dlr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42216.html">
+            
+                42216
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42216.html">
+            
+                CashSettlPriceSource
+            
+            </a>
+        </td>
+        <td>@PxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42217.html">
+            
+                42217
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42217.html">
+            
+                CashSettlPriceDefault
+            
+            </a>
+        </td>
+        <td>@PxDflt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40033.html">
+            
+                40033
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40033.html">
+            
+                CashSettlBusinessDays
+            
+            </a>
+        </td>
+        <td>@BizDays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40034.html">
+            
+                40034
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40034.html">
+            
+                CashSettlAmount
+            
+            </a>
+        </td>
+        <td>@Amt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/CashSettlDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/CashSettlDate.html">
+            
+                <b>CashSettlDate</b>
+            
+            </a>
+        </td>
+        <td>SettlDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40035.html">
+            
+                40035
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40035.html">
+            
+                CashSettlRecoveryFactor
+            
+            </a>
+        </td>
+        <td>@RcvryFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40036.html">
+            
+                40036
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40036.html">
+            
+                CashSettlFixedTermIndicator
+            
+            </a>
+        </td>
+        <td>@FixedInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40037.html">
+            
+                40037
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40037.html">
+            
+                CashSettlAccruedInterestIndicator
+            
+            </a>
+        </td>
+        <td>@AcrdIntInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40038.html">
+            
+                40038
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40038.html">
+            
+                CashSettlValuationMethod
+            
+            </a>
+        </td>
+        <td>@ValMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40039.html">
+            
+                40039
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40039.html">
+            
+                CashSettlTermXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

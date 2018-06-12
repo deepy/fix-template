@@ -108,82 +108,121 @@
     <tr>
         <td class="green">
             <a href="../fields/555.html">
-            555
+            
+                555
+            
             </a>
         </td>
         <td>
             <a href="../fields/555.html">
-            NoLegs
+            
+                NoLegs
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Required for multileg quotes</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/InstrumentLeg.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/InstrumentLeg.html">
-            <b>InstrumentLeg</b>
+            
+                <b>InstrumentLeg</b>
+            
             </a>
         </td>
         <td>Leg</td>
         <td class="green center"></td>
-        <td>Required for multileg quotes
-For Swaps one leg is Buy and other leg is Sell</td>
+        <td>Required if NoLegs(555) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
-            <a href="../fields/687.html">
-            687
-            </a>
-        </td>
-        <td>
-            <a href="../fields/687.html">
-            LegQty
-            </a>
-        </td>
-        <td>@Qty</td>
-        <td class="green center"></td>
-        <td></td>
-        <td class="green">FIX.5.0</td>
-    </tr>
-
-    <tr>
-        <td class="green">
             <a href="../fields/685.html">
-            685
+            
+                685
+            
             </a>
         </td>
         <td>
             <a href="../fields/685.html">
-            LegOrderQty
+            
+                LegOrderQty
+            
             </a>
         </td>
         <td>@OrdQty</td>
         <td class="green center"></td>
-        <td>When reporting an Execution, LegOrderQty may be used on Execution Report to echo back original LegOrderQty submission.
-This field should be used to specify OrderQty at the leg level rather than LegQty (deprecated).</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/687.html">
+            
+                687
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/687.html">
+            
+                LegQty
+            
+            </a>
+        </td>
+        <td>@Qty</td>
+        <td class="green center"></td>
+        <td>The LegQty(687) field is deprecated. The use of LegOrderQty(685) is recommended instead.</td>
+        <td class="green">FIX.5.0SP2</td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2346.html">
+            
+                2346
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2346.html">
+            
+                LegMidPx
+            
+            </a>
+        </td>
+        <td>@MidPx</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/690.html">
-            690
+            
+                690
+            
             </a>
         </td>
         <td>
             <a href="../fields/690.html">
-            LegSwapType
+            
+                LegSwapType
+            
             </a>
         </td>
         <td>@SwapTyp</td>
@@ -195,12 +234,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/587.html">
-            587
+            
+                587
+            
             </a>
         </td>
         <td>
             <a href="../fields/587.html">
-            LegSettlType
+            
+                LegSettlType
+            
             </a>
         </td>
         <td>@SettlTyp</td>
@@ -212,12 +255,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/588.html">
-            588
+            
+                588
+            
             </a>
         </td>
         <td>
             <a href="../fields/588.html">
-            LegSettlDate
+            
+                LegSettlDate
+            
             </a>
         </td>
         <td>@SettlDt</td>
@@ -229,12 +276,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../components/LegStipulations.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/LegStipulations.html">
-            <b>LegStipulations</b>
+            
+                <b>LegStipulations</b>
+            
             </a>
         </td>
         <td>Stip</td>
@@ -246,12 +297,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../components/NestedParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties.html">
-            <b>NestedParties</b>
+            
+                <b>NestedParties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -263,29 +318,38 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/686.html">
-            686
+            
+                686
+            
             </a>
         </td>
         <td>
             <a href="../fields/686.html">
-            LegPriceType
+            
+                LegPriceType
+            
             </a>
         </td>
         <td>@PxTyp</td>
         <td class="green center"></td>
-        <td>Code to represent type of price presented in LegBidPx and LegOfferPx. Required if LegBidPx or PegOfferPx is present.</td>
+        <td>Code to represent type of price presented in LegBidPx(681) and LegOfferPx(684).
+Conditionally required when LegBidPx(681) or PegOfferPx(684) is present.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/681.html">
-            681
+            
+                681
+            
             </a>
         </td>
         <td>
             <a href="../fields/681.html">
-            LegBidPx
+            
+                LegBidPx
+            
             </a>
         </td>
         <td>@BidPx</td>
@@ -297,12 +361,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/684.html">
-            684
+            
+                684
+            
             </a>
         </td>
         <td>
             <a href="../fields/684.html">
-            LegOfferPx
+            
+                LegOfferPx
+            
             </a>
         </td>
         <td>@OfrPx</td>
@@ -314,12 +382,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../components/LegBenchmarkCurveData.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/LegBenchmarkCurveData.html">
-            <b>LegBenchmarkCurveData</b>
+            
+                <b>LegBenchmarkCurveData</b>
+            
             </a>
         </td>
         <td>BnchmkCurve</td>
@@ -331,29 +403,37 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/654.html">
-            654
+            
+                654
+            
             </a>
         </td>
         <td>
             <a href="../fields/654.html">
-            LegRefID
+            
+                LegRefID
+            
             </a>
         </td>
         <td>@RefID</td>
         <td class="green center"></td>
-        <td>Initiator can optionally provide a unique identifier for the specific leg. Required for FX Swaps</td>
-        <td class="green"></td>
+        <td>Use of LegRefID(654) in this component is deprecated. Recommend the use of LegID(1788) in the InstrumentLeg component.</td>
+        <td class="green">FIX.5.0SP2</td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1067.html">
-            1067
+            
+                1067
+            
             </a>
         </td>
         <td>
             <a href="../fields/1067.html">
-            LegBidForwardPoints
+            
+                LegBidForwardPoints
+            
             </a>
         </td>
         <td>@LegBidFwdPnts</td>
@@ -365,12 +445,16 @@ This field should be used to specify OrderQty at the leg level rather than LegQt
     <tr>
         <td class="green">
             <a href="../fields/1068.html">
-            1068
+            
+                1068
+            
             </a>
         </td>
         <td>
             <a href="../fields/1068.html">
-            LegOfferForwardPoints
+            
+                LegOfferForwardPoints
+            
             </a>
         </td>
         <td>@LegOfrFwdPnts</td>

@@ -1,0 +1,265 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>PartyRiskLimitsUpdateGrp [type 'Component']</h3>
+<p class="description">This new block is a repeating group based on the existing block &lt;PartyRiskLimitsGrp&gt; with an additional field ListUpdateAction(1324) to support incremental changes of risk limit definitions. The group is part of the definition request as well as part of the update report for risk limits.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1677.html">
+            
+                1677
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1677.html">
+            
+                NoPartyRiskLimits
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1324.html">
+            
+                1324
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1324.html">
+            
+                ListUpdateAction
+            
+            </a>
+        </td>
+        <td>@ListUpdActn</td>
+        <td class="green center"></td>
+        <td>Required if NoPartyRiskLimits(1677) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PartyDetailGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PartyDetailGrp.html">
+            
+                <b>PartyDetailGrp</b>
+            
+            </a>
+        </td>
+        <td>PtyDetl</td>
+        <td class="green center"></td>
+        <td>Conditionally required when ListUpdateAction(1324) = A(Add).
+Conditionally required when ListUpdateAction(1324) = M(Modify) or D(Delete) and RiskLimitID(1670) is not provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RiskLimitsGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RiskLimitsGrp.html">
+            
+                <b>RiskLimitsGrp</b>
+            
+            </a>
+        </td>
+        <td>RiskLmt</td>
+        <td class="green center"></td>
+        <td>Conditionally required when ListUpdateAction(1324) = A(Add) or M(Modify).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1670.html">
+            
+                1670
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1670.html">
+            
+                RiskLimitID
+            
+            </a>
+        </td>
+        <td>@RiskLmtID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when PartyDetailGrp component is not provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2339.html">
+            
+                2339
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2339.html">
+            
+                RiskLimitCheckModelType
+            
+            </a>
+        </td>
+        <td>@ChkModelTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2355.html">
+            
+                2355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2355.html">
+            
+                PartyRiskLimitStatus
+            
+            </a>
+        </td>
+        <td>@PtyRiskLmtStat</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

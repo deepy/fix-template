@@ -1,0 +1,495 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>PartyRiskLimitsReport [type 'CM']</h3>
+<p class="description">The PartyRiskLimitsReport message is used to communicate party risk limits. The message can either be sent as a response to the PartyRiskLimitsRequest message or can be published unsolicited.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = CM</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>ApplicationSequenceControl</b>
+            
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1667.html">
+            
+                1667
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1667.html">
+            
+                RiskLimitReportID
+            
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1666.html">
+            
+                1666
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1666.html">
+            
+                RiskLimitRequestID
+            
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when responding to PartyRiskLimitsRequest(35=CL).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1760.html">
+            
+                1760
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1760.html">
+            
+                RiskLimitRequestType
+            
+            </a>
+        </td>
+        <td>@ReqTyp</td>
+        <td class="green center"></td>
+        <td>Can be used when responding to a PartyRiskLimitsRequest(35=CL).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1511.html">
+            
+                1511
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1511.html">
+            
+                RequestResult
+            
+            </a>
+        </td>
+        <td>@ReqRslt</td>
+        <td class="green center"></td>
+        <td>Conditionally required when responding to a PartyRiskLimitsRequest(35=CL).</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/325.html">
+            
+                325
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/325.html">
+            
+                UnsolicitedIndicator
+            
+            </a>
+        </td>
+        <td>@Unsol</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1512.html">
+            
+                1512
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1512.html">
+            
+                TotNoParties
+            
+            </a>
+        </td>
+        <td>@TotNoPtys</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/893.html">
+            
+                893
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/893.html">
+            
+                LastFragment
+            
+            </a>
+        </td>
+        <td>@LastFragment</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/PartyRiskLimitsGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/PartyRiskLimitsGrp.html">
+            
+                <b>PartyRiskLimitsGrp</b>
+            
+            </a>
+        </td>
+        <td>PtyRiskLmt</td>
+        <td class="green center"></td>
+        <td>Optionally includes utilization (consumption) information.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            
+                58
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            
+                Text
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            
+                354
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            
+                EncodedTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            
+                355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            
+                EncodedText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1328.html">
+            
+                1328
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1328.html">
+            
+                RejectText
+            
+            </a>
+        </td>
+        <td>@RejTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1664.html">
+            
+                1664
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1664.html">
+            
+                EncodedRejectTextLen
+            
+            </a>
+        </td>
+        <td>@EncRejTxtLen</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1665.html">
+            
+                1665
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1665.html">
+            
+                EncodedRejectText
+            
+            </a>
+        </td>
+        <td>@EncRejTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -1,0 +1,433 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>AllocCommissionDataGrp [type 'Component']</h3>
+<p class="description">The AllocCommissionDataGrp component block is used to carry commission information such as the type of commission and the rate at the allocation level.  It provides a means to express commission applicable for the specified allocation account.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2653.html">
+            
+                2653
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2653.html">
+            
+                NoAllocCommissions
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2654.html">
+            
+                2654
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2654.html">
+            
+                AllocCommissionAmount
+            
+            </a>
+        </td>
+        <td>@Amt</td>
+        <td class="green center"></td>
+        <td>Required if NoAllocCommissions(2653) &gt; 0. 
+If the commission is based on a percentage of trade quantity or a factor of &#34;unit of measure&#34;, AllocCommissionRate(2660) and AllocCommissionUnitOfMeasure(2658) may also be specified as appropriate.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2655.html">
+            
+                2655
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2655.html">
+            
+                AllocCommissionAmountType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoAllocCommissions(2653) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2726.html">
+            
+                2726
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2726.html">
+            
+                AllocCommissionAmountSubType
+            
+            </a>
+        </td>
+        <td>@SubTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2656.html">
+            
+                2656
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2656.html">
+            
+                AllocCommissionBasis
+            
+            </a>
+        </td>
+        <td>@Basis</td>
+        <td class="green center"></td>
+        <td>Required if NoAllocCommissions(2653) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2657.html">
+            
+                2657
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2657.html">
+            
+                AllocCommissionCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2658.html">
+            
+                2658
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2658.html">
+            
+                AllocCommissionUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@UOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2659.html">
+            
+                2659
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2659.html">
+            
+                AllocCommissionUnitOfMeasureCurrency
+            
+            </a>
+        </td>
+        <td>@UOMCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2660.html">
+            
+                2660
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2660.html">
+            
+                AllocCommissionRate
+            
+            </a>
+        </td>
+        <td>@Rt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2661.html">
+            
+                2661
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2661.html">
+            
+                AllocCommissionSharedIndicator
+            
+            </a>
+        </td>
+        <td>@SharedInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2662.html">
+            
+                2662
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2662.html">
+            
+                AllocCommissionAmountShared
+            
+            </a>
+        </td>
+        <td>@AmtShared</td>
+        <td class="green center"></td>
+        <td>If specified, AllocCommissionSharedIndicator(2661) must be set to &#34;Y&#34;.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2663.html">
+            
+                2663
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2663.html">
+            
+                AllocCommissionLegRefID
+            
+            </a>
+        </td>
+        <td>@LegRefID</td>
+        <td class="green center"></td>
+        <td>This field may be used for multi-leg trades sent as a single message to indicate that the entry applies only to a specific leg.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2664.html">
+            
+                2664
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2664.html">
+            
+                AllocCommissionDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2665.html">
+            
+                2665
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2665.html">
+            
+                EncodedAllocCommissionDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedAllocCommissionDesc(2666) is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2666.html">
+            
+                2666
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2666.html">
+            
+                EncodedAllocCommissionDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the AllocCommissionDesc(2664) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

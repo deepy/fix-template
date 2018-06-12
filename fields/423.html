@@ -90,14 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>PriceType [type '423']</h3>
-<p class="description">Code to represent the price type.
-(For Financing transactions PriceType implies the &#34;repo type&#34; - Fixed or Floating - 9 (Yield) or 6 (Spread) respectively - and Price (44) gives the corresponding &#34;repo rate&#34;.
-See Volume : &#34;Glossary&#34; for further value definitions)</p>
+<p class="description">Code to represent the price type.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -108,7 +106,7 @@ See Volume : &#34;Glossary&#34; for further value definitions)</p>
     <tr>
         <td class="green">
             <a href="../fields/423.html">
-            423
+            
             </a>
         </td>
         <td>
@@ -119,8 +117,6 @@ See Volume : &#34;Glossary&#34; for further value definitions)</p>
         <td>PxTyp</td>
         <td>
             Code to represent the price type.
-(For Financing transactions PriceType implies the &#34;repo type&#34; - Fixed or Floating - 9 (Yield) or 6 (Spread) respectively - and Price (44) gives the corresponding &#34;repo rate&#34;.
-See Volume : &#34;Glossary&#34; for further value definitions)
             
             <table>
             
@@ -193,7 +189,7 @@ See Volume : &#34;Glossary&#34; for further value definitions)
             <tr>
                 <td>13</td>
                 <td>=</td>
-                <td>ProductTicksInHalfs</td>
+                <td>ProductTicksInHalves</td>
             </tr>
             
             <tr>
@@ -205,7 +201,7 @@ See Volume : &#34;Glossary&#34; for further value definitions)
             <tr>
                 <td>15</td>
                 <td>=</td>
-                <td>ProductTicksInEights</td>
+                <td>ProductTicksInEighths</td>
             </tr>
             
             <tr>
@@ -223,13 +219,55 @@ See Volume : &#34;Glossary&#34; for further value definitions)
             <tr>
                 <td>18</td>
                 <td>=</td>
-                <td>ProductTicksInSixtyForths</td>
+                <td>ProductTicksInSixtyFourths</td>
             </tr>
             
             <tr>
                 <td>19</td>
                 <td>=</td>
-                <td>ProductTicksInOneTwentyEights</td>
+                <td>ProductTicksInOneTwentyEighths</td>
+            </tr>
+            
+            <tr>
+                <td>20</td>
+                <td>=</td>
+                <td>NormalRateRepresentation</td>
+            </tr>
+            
+            <tr>
+                <td>21</td>
+                <td>=</td>
+                <td>InverseRateRepresentation</td>
+            </tr>
+            
+            <tr>
+                <td>22</td>
+                <td>=</td>
+                <td>BasisPoints</td>
+            </tr>
+            
+            <tr>
+                <td>23</td>
+                <td>=</td>
+                <td>UpfrontPoints</td>
+            </tr>
+            
+            <tr>
+                <td>24</td>
+                <td>=</td>
+                <td>InterestRate</td>
+            </tr>
+            
+            <tr>
+                <td>12</td>
+                <td>=</td>
+                <td>PriceSpread</td>
+            </tr>
+            
+            <tr>
+                <td>25</td>
+                <td>=</td>
+                <td>PercentageNotional</td>
             </tr>
             
             </table>
@@ -247,6 +285,8 @@ See Volume : &#34;Glossary&#34; for further value definitions)
         [<a href="../components/BaseTradingRules.html">BaseTradingRules]</a>
     
         [<a href="../components/BidCompRspGrp.html">BidCompRspGrp]</a>
+    
+        [<a href="../components/InstrmtMatchSideGrp.html">InstrmtMatchSideGrp]</a>
     
         [<a href="../components/ListOrdGrp.html">ListOrdGrp]</a>
     
@@ -284,7 +324,7 @@ See Volume : &#34;Glossary&#34; for further value definitions)
     
         [<a href="../messages/t.html">CrossOrderCancelReplaceRequest]</a>
     
-        [<a href="../messages/BN.html">ExecutionAcknowledgement]</a>
+        [<a href="../messages/BN.html">ExecutionAck]</a>
     
         [<a href="../messages/8.html">ExecutionReport]</a>
     
@@ -301,6 +341,10 @@ See Volume : &#34;Glossary&#34; for further value definitions)
         [<a href="../messages/G.html">OrderCancelReplaceRequest]</a>
     
         [<a href="../messages/AP.html">PositionReport]</a>
+    
+        [<a href="../messages/DL.html">PositionTransferInstruction]</a>
+    
+        [<a href="../messages/DN.html">PositionTransferReport]</a>
     
         [<a href="../messages/S.html">Quote]</a>
     

@@ -1,0 +1,495 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>StreamCalculationPeriodDates [type 'Component']</h3>
+<p class="description">StreamCalculationPeriodDates is a subcomponent of the StreamGrp component used to specify the calculation period dates of the stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41244.html">
+            
+                41244
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41244.html">
+            
+                StreamCalculationPeriodDatesXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41245.html">
+            
+                41245
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41245.html">
+            
+                StreamCalculationPeriodDatesXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40073.html">
+            
+                40073
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40073.html">
+            
+                StreamCalculationPeriodBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument.  The specified value would be specific to this instance of the calculation period dates of the stream.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCalculationPeriodBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCalculationPeriodBusinessCenterGrp.html">
+            
+                <b>StreamCalculationPeriodBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument.  The specified values would be specific to this instance of the calculation period dates of the stream.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamCalculationPeriodDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamCalculationPeriodDateGrp.html">
+            
+                <b>StreamCalculationPeriodDateGrp</b>
+            
+            </a>
+        </td>
+        <td>CalcDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40075.html">
+            
+                40075
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40075.html">
+            
+                StreamFirstPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstStartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40076.html">
+            
+                40076
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40076.html">
+            
+                StreamFirstPeriodStartDateBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@FirstStartDtBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the DateAdjustment component in Instrument.  The specified value would be specific to this instance of the calculation period dates of the stream.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StreamFirstPeriodStartDateBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StreamFirstPeriodStartDateBusinessCenterGrp.html">
+            
+                <b>StreamFirstPeriodStartDateBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>FirstStartDtBizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the DateAdjustment component in Instrument.  The specified values would be specific to this instance of the calculation period dates of the stream.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40078.html">
+            
+                40078
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40078.html">
+            
+                StreamFirstPeriodStartDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FirstStartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40079.html">
+            
+                40079
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40079.html">
+            
+                StreamFirstRegularPeriodStartDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstReglrStartDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40080.html">
+            
+                40080
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40080.html">
+            
+                StreamFirstCompoundingPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstCmpndgEndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40081.html">
+            
+                40081
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40081.html">
+            
+                StreamLastRegularPeriodEndDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastReglrEndDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40082.html">
+            
+                40082
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40082.html">
+            
+                StreamCalculationFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCalculationFrequencyUnit(40083) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40083.html">
+            
+                40083
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40083.html">
+            
+                StreamCalculationFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCalculationFrequencyPeriod(40082) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40084.html">
+            
+                40084
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40084.html">
+            
+                StreamCalculationRollConvention
+            
+            </a>
+        </td>
+        <td>@Roll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the DateAdjustment component in Instrument. The specified values would be specific to this instance of the stream calculation dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41246.html">
+            
+                41246
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41246.html">
+            
+                StreamCalculationBalanceOfFirstPeriod
+            
+            </a>
+        </td>
+        <td>@BalFirst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41247.html">
+            
+                41247
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41247.html">
+            
+                StreamCalculationCorrectionPeriod
+            
+            </a>
+        </td>
+        <td>@CrrctnPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCalculationCorrectionUnit(41248) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41248.html">
+            
+                41248
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41248.html">
+            
+                StreamCalculationCorrectionUnit
+            
+            </a>
+        </td>
+        <td>@CrrctnUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when StreamCalculationCorrectionPeriod(41247) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

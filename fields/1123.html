@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>TradeHandlingInstr [type '1123']</h3>
-<p class="description">Specified how the Trade Capture Report should be handled by the Respondent.</p>
+<p class="description">Specified how the TradeCaptureReport(35=AE) should be handled by the respondent.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1123.html">
-            1123
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>TrdHandlInst</td>
         <td>
-            Specified how the Trade Capture Report should be handled by the Respondent.
+            Specified how the TradeCaptureReport(35=AE) should be handled by the respondent.
             
             <table>
             
@@ -154,6 +154,24 @@
                 <td>5</td>
                 <td>=</td>
                 <td>TwoPartyReportForClaim</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>OnePartyReport</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>ThirdPtyRptForPassThrough</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>OnePartyReportAutoMatch</td>
             </tr>
             
             </table>

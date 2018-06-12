@@ -95,13 +95,13 @@ Fixed Magnitude UOMs are primarily used in energy derivatives and specify a magn
 The second group, Variable Quantity UOMs, specifies the dimension as a single unit without a magnitude (or more accurately a magnitude of one) and uses the UnitOfMeasureQty(1147) field to define the quantity of units per contract. Variable Quantity UOMs are used for both commodities (such as lbs of lean cattle, bushels of corn, ounces of gold) and financial futures.
 Examples:
 For lean cattle futures contracts, a UnitOfMeasure of &#39;lbs&#39; with a UnitOfMeasureQty(1147) of 40,000, means each lean cattle futures contract represents 40,000 lbs of lean cattle.
-For Eurodollars futures contracts, a UnitOfMeasure of USD with a UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures contract represents 1,000,000 USD.
+For Eurodollars futures contracts, a UnitOfMeasure of Ccy with a UnitOfMeasureCurrency(1716)  of USD and a UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures contract represents 1,000,000 USD.
 For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfMeasureQty(1147) of 1,000, means each gold futures contract represents 1,000 troy ounces of gold.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -112,7 +112,7 @@ For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfM
     <tr>
         <td class="green">
             <a href="../fields/996.html">
-            996
+            
             </a>
         </td>
         <td>
@@ -127,7 +127,7 @@ Fixed Magnitude UOMs are primarily used in energy derivatives and specify a magn
 The second group, Variable Quantity UOMs, specifies the dimension as a single unit without a magnitude (or more accurately a magnitude of one) and uses the UnitOfMeasureQty(1147) field to define the quantity of units per contract. Variable Quantity UOMs are used for both commodities (such as lbs of lean cattle, bushels of corn, ounces of gold) and financial futures.
 Examples:
 For lean cattle futures contracts, a UnitOfMeasure of &#39;lbs&#39; with a UnitOfMeasureQty(1147) of 40,000, means each lean cattle futures contract represents 40,000 lbs of lean cattle.
-For Eurodollars futures contracts, a UnitOfMeasure of USD with a UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures contract represents 1,000,000 USD.
+For Eurodollars futures contracts, a UnitOfMeasure of Ccy with a UnitOfMeasureCurrency(1716)  of USD and a UnitOfMeasureQty(1147) of 1,000,000, means a Eurodollar futures contract represents 1,000,000 USD.
 For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfMeasureQty(1147) of 1,000, means each gold futures contract represents 1,000 troy ounces of gold.
             
             <table>
@@ -208,6 +208,210 @@ For gold futures contracts, a UnitOfMeasure is oz_tr (Troy ounce) with a UnitOfM
                 <td>Alw</td>
                 <td>=</td>
                 <td>Allowances</td>
+            </tr>
+            
+            <tr>
+                <td>CBM</td>
+                <td>=</td>
+                <td>CubicMeters</td>
+            </tr>
+            
+            <tr>
+                <td>CER</td>
+                <td>=</td>
+                <td>CertifiedEmissionsReduction</td>
+            </tr>
+            
+            <tr>
+                <td>PRINC</td>
+                <td>=</td>
+                <td>PrincipalWithRelationToDebtInstrument</td>
+            </tr>
+            
+            <tr>
+                <td>CRT</td>
+                <td>=</td>
+                <td>ClimateReserveTonnes</td>
+            </tr>
+            
+            <tr>
+                <td>Ccy</td>
+                <td>=</td>
+                <td>Currency</td>
+            </tr>
+            
+            <tr>
+                <td>BDFT</td>
+                <td>=</td>
+                <td>BoardFeet</td>
+            </tr>
+            
+            <tr>
+                <td>IPNT</td>
+                <td>=</td>
+                <td>IndexPoint</td>
+            </tr>
+            
+            <tr>
+                <td>day</td>
+                <td>=</td>
+                <td>Day</td>
+            </tr>
+            
+            <tr>
+                <td>cwt</td>
+                <td>=</td>
+                <td>Hundredweight</td>
+            </tr>
+            
+            <tr>
+                <td>g</td>
+                <td>=</td>
+                <td>Grams</td>
+            </tr>
+            
+            <tr>
+                <td>dt</td>
+                <td>=</td>
+                <td>DryMetricTons</td>
+            </tr>
+            
+            <tr>
+                <td>kWh</td>
+                <td>=</td>
+                <td>KilowattHours</td>
+            </tr>
+            
+            <tr>
+                <td>EnvOfst</td>
+                <td>=</td>
+                <td>EnvironmentalOffset</td>
+            </tr>
+            
+            <tr>
+                <td>EnvCrd</td>
+                <td>=</td>
+                <td>EnvironmentalCredit</td>
+            </tr>
+            
+            <tr>
+                <td>kW-min </td>
+                <td>=</td>
+                <td>KilowattMinute</td>
+            </tr>
+            
+            <tr>
+                <td>MW-min</td>
+                <td>=</td>
+                <td>MegawattMinute</td>
+            </tr>
+            
+            <tr>
+                <td>kW-h</td>
+                <td>=</td>
+                <td>KilowattHour</td>
+            </tr>
+            
+            <tr>
+                <td>MW-h</td>
+                <td>=</td>
+                <td>MegawattHour</td>
+            </tr>
+            
+            <tr>
+                <td>kW-d</td>
+                <td>=</td>
+                <td>KilowattDay</td>
+            </tr>
+            
+            <tr>
+                <td>MW-d</td>
+                <td>=</td>
+                <td>MegawattDay</td>
+            </tr>
+            
+            <tr>
+                <td>kW-M</td>
+                <td>=</td>
+                <td>KilowattMonth</td>
+            </tr>
+            
+            <tr>
+                <td>MW-M</td>
+                <td>=</td>
+                <td>MegawattMonth</td>
+            </tr>
+            
+            <tr>
+                <td>kW-a</td>
+                <td>=</td>
+                <td>KilowattYear</td>
+            </tr>
+            
+            <tr>
+                <td>MW-a</td>
+                <td>=</td>
+                <td>MegawattYear</td>
+            </tr>
+            
+            <tr>
+                <td>thm</td>
+                <td>=</td>
+                <td>therms</td>
+            </tr>
+            
+            <tr>
+                <td>GJ</td>
+                <td>=</td>
+                <td>gigajoules</td>
+            </tr>
+            
+            <tr>
+                <td>L</td>
+                <td>=</td>
+                <td>liters</td>
+            </tr>
+            
+            <tr>
+                <td>kL</td>
+                <td>=</td>
+                <td>kiloliters</td>
+            </tr>
+            
+            <tr>
+                <td>kg</td>
+                <td>=</td>
+                <td>Kilograms</td>
+            </tr>
+            
+            <tr>
+                <td>GT</td>
+                <td>=</td>
+                <td>GrossTons</td>
+            </tr>
+            
+            <tr>
+                <td>CDD</td>
+                <td>=</td>
+                <td>CoolingDegreeDay</td>
+            </tr>
+            
+            <tr>
+                <td>CPD</td>
+                <td>=</td>
+                <td>CriticalPrecipDay</td>
+            </tr>
+            
+            <tr>
+                <td>EnvAllwnc</td>
+                <td>=</td>
+                <td>EnvAllwncCert</td>
+            </tr>
+            
+            <tr>
+                <td>HDD</td>
+                <td>=</td>
+                <td>HeatingDegreeDay</td>
             </tr>
             
             </table>

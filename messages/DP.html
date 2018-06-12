@@ -1,0 +1,705 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Messages</h2>
+<h3>MarketDataStatisticsReport [type 'DP']</h3>
+<p class="description">The MarketDataStatisticsReport(35=DP) is used to provide unsolicited statistical information or in response to a specific request. Each report contains a set of statistics for a single entity which could be a market, a market segment, a security list or an instrument.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardHeader.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardHeader.html">
+            
+                <b>StandardHeader</b>
+            
+            </a>
+        </td>
+        <td>BaseHeader</td>
+        <td class="green center">✔</td>
+        <td>MsgType = DP</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/ApplicationSequenceControl.html">
+            
+                <b>ApplicationSequenceControl</b>
+            
+            </a>
+        </td>
+        <td>ApplSeqCtrl</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2453.html">
+            
+                2453
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2453.html">
+            
+                MDStatisticRptID
+            
+            </a>
+        </td>
+        <td>@RptID</td>
+        <td class="green center">✔</td>
+        <td>Unique message identifier for the report.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2452.html">
+            
+                2452
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2452.html">
+            
+                MDStatisticReqID
+            
+            </a>
+        </td>
+        <td>@ReqID</td>
+        <td class="green center"></td>
+        <td>Unique message identifier for the request. Conditionally required if report is sent in response to a MarketDataStatisticsRequest(35=DO) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2473.html">
+            
+                2473
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2473.html">
+            
+                MDStatisticRequestResult
+            
+            </a>
+        </td>
+        <td>@ReqRslt</td>
+        <td class="green center"></td>
+        <td>Conditionally required if report is sent in response to a MarketDataStatisticsRequest(35=DO) message.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/325.html">
+            
+                325
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/325.html">
+            
+                UnsolicitedIndicator
+            
+            </a>
+        </td>
+        <td>@Unsol</td>
+        <td class="green center"></td>
+        <td>Set to &#39;Y&#39; if message is sent as a result of a subscription request not a snapshot request</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Parties.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Parties.html">
+            
+                <b>Parties</b>
+            
+            </a>
+        </td>
+        <td>Pty</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/582.html">
+            
+                582
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/582.html">
+            
+                CustOrderCapacity
+            
+            </a>
+        </td>
+        <td>@CustCpcty</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/75.html">
+            
+                75
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/75.html">
+            
+                TradeDate
+            
+            </a>
+        </td>
+        <td>@TrdDt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1301.html">
+            
+                1301
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1301.html">
+            
+                MarketID
+            
+            </a>
+        </td>
+        <td>@MktID</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1300.html">
+            
+                1300
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1300.html">
+            
+                MarketSegmentID
+            
+            </a>
+        </td>
+        <td>@MktSegID</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1396.html">
+            
+                1396
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1396.html">
+            
+                MarketSegmentDesc
+            
+            </a>
+        </td>
+        <td>@MarketSegmentDesc</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1397.html">
+            
+                1397
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1397.html">
+            
+                EncodedMktSegmDescLen
+            
+            </a>
+        </td>
+        <td>@EncodedMktSegmDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedMktSegmDesc(1398) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1398.html">
+            
+                1398
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1398.html">
+            
+                EncodedMktSegmDesc
+            
+            </a>
+        </td>
+        <td>@EncodedMktSegmDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the MarketDesgmentDesc(1396) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1465.html">
+            
+                1465
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1465.html">
+            
+                SecurityListID
+            
+            </a>
+        </td>
+        <td>@ListID</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/15.html">
+            
+                15
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/15.html">
+            
+                Currency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/Instrument.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/Instrument.html">
+            
+                <b>Instrument</b>
+            
+            </a>
+        </td>
+        <td>Instrmt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrumentExtension.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrumentExtension.html">
+            
+                <b>InstrumentExtension</b>
+            
+            </a>
+        </td>
+        <td>InstrmtExt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/FinancingDetails.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/FinancingDetails.html">
+            
+                <b>FinancingDetails</b>
+            
+            </a>
+        </td>
+        <td>FinDetls</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UndInstrmtGrp.html">
+            
+                <b>UndInstrmtGrp</b>
+            
+            </a>
+        </td>
+        <td>Undly</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/InstrmtLegGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/InstrmtLegGrp.html">
+            
+                <b>InstrmtLegGrp</b>
+            
+            </a>
+        </td>
+        <td>Leg</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/RelatedInstrumentGrp.html">
+            
+                <b>RelatedInstrumentGrp</b>
+            
+            </a>
+        </td>
+        <td>ReltdInstrmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/MDStatisticRptGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/MDStatisticRptGrp.html">
+            
+                <b>MDStatisticRptGrp</b>
+            
+            </a>
+        </td>
+        <td>StatsRpt</td>
+        <td class="green center">✔</td>
+        <td>Specifies the resulting statistics information and corresponding statistical parameters.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/60.html">
+            
+                60
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/60.html">
+            
+                TransactTime
+            
+            </a>
+        </td>
+        <td>@TxnTm</td>
+        <td class="green center"></td>
+        <td>Time that the report was provided.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/58.html">
+            
+                58
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/58.html">
+            
+                Text
+            
+            </a>
+        </td>
+        <td>@Txt</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/354.html">
+            
+                354
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/354.html">
+            
+                EncodedTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedText(355) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/355.html">
+            
+                355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/355.html">
+            
+                EncodedText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the Text(58) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/StandardTrailer.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/StandardTrailer.html">
+            
+                <b>StandardTrailer</b>
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center">✔</td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

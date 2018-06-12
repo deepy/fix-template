@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>MatchRules [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">The MatchRules component is used to specify the details of order matching rules for specified product group or complex.</p>
 
 <table>
 <tr>
@@ -108,52 +108,105 @@
     <tr>
         <td class="green">
             <a href="../fields/1235.html">
-            1235
+            
+                1235
+            
             </a>
         </td>
         <td>
             <a href="../fields/1235.html">
-            NoMatchRules
+            
+                NoMatchRules
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>Number of match rules</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1142.html">
-            1142
+            
+                1142
+            
             </a>
         </td>
         <td>
             <a href="../fields/1142.html">
-            MatchAlgorithm
+            
+                MatchAlgorithm
+            
             </a>
         </td>
         <td>@MtchAlgo</td>
         <td class="green center"></td>
-        <td>The type of algorithm used to match orders in a specific security on an electronic trading platform.
-Possible values are FIFO, Allocation, Pro-rata, Lead Market Maker, Currency Calendar</td>
+        <td>Required if NoMatchRules(1235) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/574.html">
-            574
+            
+                574
+            
             </a>
         </td>
         <td>
             <a href="../fields/574.html">
-            MatchType
+            
+                MatchType
+            
             </a>
         </td>
         <td>@MtchTyp</td>
         <td class="green center"></td>
-        <td>The point in the matching process at which this trade was matched.</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2569.html">
+            
+                2569
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2569.html">
+            
+                MatchRuleProductComplex
+            
+            </a>
+        </td>
+        <td>@MtchRuleProdCmplx</td>
+        <td class="green center"></td>
+        <td>Can be used to limit match rule to specific product suite.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2570.html">
+            
+                2570
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2570.html">
+            
+                CustomerPriority
+            
+            </a>
+        </td>
+        <td>@CustPri</td>
+        <td class="green center"></td>
+        <td>Can be used to give customer orders priority for the given matching algorithm.</td>
         <td class="green"></td>
     </tr>
 

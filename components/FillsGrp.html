@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/1362.html">
-            1362
+            
+                1362
+            
             </a>
         </td>
         <td>
             <a href="../fields/1362.html">
-            NoFills
+            
+                NoFills
+            
             </a>
         </td>
         <td></td>
@@ -125,63 +129,126 @@
     <tr>
         <td class="green">
             <a href="../fields/1363.html">
-            1363
+            
+                1363
+            
             </a>
         </td>
         <td>
             <a href="../fields/1363.html">
-            FillExecID
+            
+                FillExecID
+            
             </a>
         </td>
         <td>@FillExecID</td>
         <td class="green center"></td>
-        <td>Unique identifier of execution as assigned by sell-side (broker, exchange, ECN). Must not overlap ExecID(17). Required if NoFills &gt; 0</td>
+        <td>Unique identifier of execution as assigned by sell-side (broker, exchange, ECN). 
+Must not overlap ExecID(17). 
+Required if NoFills(1362) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1364.html">
-            1364
+            
+                1364
+            
             </a>
         </td>
         <td>
             <a href="../fields/1364.html">
-            FillPx
+            
+                FillPx
+            
             </a>
         </td>
         <td>@FillPx</td>
         <td class="green center"></td>
-        <td>Price of this partial fill. Conditionally required if NoFills &gt; 0. Refer to LastPx(31).</td>
+        <td>Price of this partial fill. 
+Required if NoFills(1362) &gt; 0. 
+Refer to LastPx(31).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1365.html">
-            1365
+            
+                1365
+            
             </a>
         </td>
         <td>
             <a href="../fields/1365.html">
-            FillQty
+            
+                FillQty
+            
             </a>
         </td>
         <td>@FillQty</td>
         <td class="green center"></td>
-        <td>Quantity (e.g. shares) bought/sold on this partial fill. Required if NoFills &gt; 0.</td>
+        <td>Quantity (e.g. shares) bought/sold on this partial fill. 
+Required if NoFills(1362) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2673.html">
+            
+                2673
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2673.html">
+            
+                FillMatchID
+            
+            </a>
+        </td>
+        <td>@MtchID</td>
+        <td class="green center"></td>
+        <td>Can be used to refer to the related match event.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2674.html">
+            
+                2674
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2674.html">
+            
+                FillMatchSubID
+            
+            </a>
+        </td>
+        <td>@MtchSubID</td>
+        <td class="green center"></td>
+        <td>Can be used to refer to a price level (e.g. match step, clip) within the related match event.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1443.html">
-            1443
+            
+                1443
+            
             </a>
         </td>
         <td>
             <a href="../fields/1443.html">
-            FillLiquidityInd
+            
+                FillLiquidityInd
+            
             </a>
         </td>
         <td>@LqdtyInd</td>
@@ -192,13 +259,59 @@
 
     <tr>
         <td class="green">
+            <a href="../fields/1622.html">
+            
+                1622
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1622.html">
+            
+                FillYieldType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1623.html">
+            
+                1623
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1623.html">
+            
+                FillYield
+            
+            </a>
+        </td>
+        <td>@Yld</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../components/NestedParties4.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties4.html">
-            <b>NestedParties4</b>
+            
+                <b>NestedParties4</b>
+            
             </a>
         </td>
         <td>Pty</td>

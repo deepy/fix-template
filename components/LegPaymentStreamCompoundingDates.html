@@ -1,0 +1,432 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegPaymentStreamCompoundingDates [type 'Component']</h3>
+<p class="description">LegPaymentStreamCompoundingDates is a subcomponent of the LegPaymentStream component used to specify the compounding dates of the stream - either specific, relative or periodic dates.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42408.html">
+            
+                42408
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42408.html">
+            
+                LegPaymentStreamCompoundingDatesBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@BizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the LegDateAdjustment component in InstrumentLeg.  The specified value would be specific to payment stream compounding dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStreamCompoundingDatesBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStreamCompoundingDatesBusinessCenterGrp.html">
+            
+                <b>LegPaymentStreamCompoundingDatesBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>BizCtr</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business centers defined in the LegDateAdjustment component in InstrumentLeg.  The specified values would be specific to payment stream compounding dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStreamCompoundingDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStreamCompoundingDateGrp.html">
+            
+                <b>LegPaymentStreamCompoundingDateGrp</b>
+            
+            </a>
+        </td>
+        <td>CmpndgDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42409.html">
+            
+                42409
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42409.html">
+            
+                LegPaymentStreamCompoundingDatesRelativeTo
+            
+            </a>
+        </td>
+        <td>@Reltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42410.html">
+            
+                42410
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42410.html">
+            
+                LegPaymentStreamCompoundingDatesOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@OfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPaymentStreamCompoundingDatesOffsetUnit(42411) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42411.html">
+            
+                42411
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42411.html">
+            
+                LegPaymentStreamCompoundingDatesOffsetUnit
+            
+            </a>
+        </td>
+        <td>@OfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPaymentStreamCompoundingDatesOffsetPeriod(42410) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42412.html">
+            
+                42412
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42412.html">
+            
+                LegPaymentStreamCompoundingDatesOffsetDayType
+            
+            </a>
+        </td>
+        <td>@OfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42413.html">
+            
+                42413
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42413.html">
+            
+                LegPaymentStreamCompoundingPeriodSkip
+            
+            </a>
+        </td>
+        <td>@Skip</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStreamCompoundingStartDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStreamCompoundingStartDate.html">
+            
+                <b>LegPaymentStreamCompoundingStartDate</b>
+            
+            </a>
+        </td>
+        <td>StartDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegPaymentStreamCompoundingEndDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegPaymentStreamCompoundingEndDate.html">
+            
+                <b>LegPaymentStreamCompoundingEndDate</b>
+            
+            </a>
+        </td>
+        <td>EndDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42414.html">
+            
+                42414
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42414.html">
+            
+                LegPaymentStreamCompoundingFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPayamentStreamCompoundingFrequencyUnit(42415) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42415.html">
+            
+                42415
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42415.html">
+            
+                LegPaymentStreamCompoundingFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegPayamentStreamCompoundingFrequencyPeriod(42414) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42416.html">
+            
+                42416
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42416.html">
+            
+                LegPaymentStreamCompoundingRollConvention
+            
+            </a>
+        </td>
+        <td>@Roll</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the date roll convention defined in the LegDateAdjustment component in InstrumentLeg. The specified value would be specific to this instance of payment stream compounding dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42417.html">
+            
+                42417
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42417.html">
+            
+                LegPaymentStreamBoundsFirstDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42418.html">
+            
+                42418
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42418.html">
+            
+                LegPaymentStreamBoundsLastDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@LastDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

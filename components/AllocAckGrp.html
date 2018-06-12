@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>AllocAckGrp [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">This repeating group is optionally used for messages with AllocStatus(87) = 2 (Account level reject), to provide details of the individual accounts that were accepted or rejected. In the case of a reject, the reasons for the rejection should be specified. </p>
 
 <table>
 <tr>
@@ -108,47 +108,59 @@
     <tr>
         <td class="green">
             <a href="../fields/78.html">
-            78
+            
+                78
+            
             </a>
         </td>
         <td>
             <a href="../fields/78.html">
-            NoAllocs
+            
+                NoAllocs
+            
             </a>
         </td>
         <td></td>
         <td class="green center"></td>
-        <td>This repeating group is optionally used for messages with AllocStatus = 2 (account level reject), AllocStatus = 0 (accepted), to provide details of the individual accounts that were accepted or rejected. In the case of a reject, the reasons for the rejection should be specified. This group should not be populated where AllocStatus has any other value.
-Indicates number of allocation groups to follow.</td>
+        <td>Indicates number of allocation groups to follow.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/79.html">
-            79
+            
+                79
+            
             </a>
         </td>
         <td>
             <a href="../fields/79.html">
-            AllocAccount
+            
+                AllocAccount
+            
             </a>
         </td>
         <td>@Acct</td>
         <td class="green center"></td>
-        <td>Required if NoAllocs &gt; 0. Must be first field in repeating group.</td>
+        <td>Required if NoAllocs(78) &gt; 0. 
+Must be first field in repeating group.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/661.html">
-            661
+            
+                661
+            
             </a>
         </td>
         <td>
             <a href="../fields/661.html">
-            AllocAcctIDSource
+            
+                AllocAcctIDSource
+            
             </a>
         </td>
         <td>@ActIDSrc</td>
@@ -160,29 +172,37 @@ Indicates number of allocation groups to follow.</td>
     <tr>
         <td class="green">
             <a href="../fields/366.html">
-            366
+            
+                366
+            
             </a>
         </td>
         <td>
             <a href="../fields/366.html">
-            AllocPrice
+            
+                AllocPrice
+            
             </a>
         </td>
         <td>@Px</td>
         <td class="green center"></td>
-        <td>Used when performing &#34;executed price&#34; vs. &#34;average price&#34; allocations (e.g. Japan). AllocAccount plus AllocPrice form a unique Allocs entry. Used in lieu of AllocAvgPx.</td>
+        <td>Used when performing &#34;executed price&#34; vs. &#34;average price&#34; allocations (e.g. Japan). AllocAccount(79) plus AllocPrice(366) form a unique Allocs entry. Used in lieu of AllocAvgPx(153).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/1047.html">
-            1047
+            
+                1047
+            
             </a>
         </td>
         <td>
             <a href="../fields/1047.html">
-            AllocPositionEffect
+            
+                AllocPositionEffect
+            
             </a>
         </td>
         <td>@AllocPosEfct</td>
@@ -194,12 +214,16 @@ Indicates number of allocation groups to follow.</td>
     <tr>
         <td class="green">
             <a href="../fields/467.html">
-            467
+            
+                467
+            
             </a>
         </td>
         <td>
             <a href="../fields/467.html">
-            IndividualAllocID
+            
+                IndividualAllocID
+            
             </a>
         </td>
         <td>@IndAllocID</td>
@@ -210,30 +234,143 @@ Indicates number of allocation groups to follow.</td>
 
     <tr>
         <td class="green">
+            <a href="../fields/1593.html">
+            
+                1593
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1593.html">
+            
+                ParentAllocID
+            
+            </a>
+        </td>
+        <td>@ParentAllocID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1729.html">
+            
+                1729
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1729.html">
+            
+                FirmMnemonic
+            
+            </a>
+        </td>
+        <td>@FirmMnem</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1832.html">
+            
+                1832
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1832.html">
+            
+                ClearedIndicator
+            
+            </a>
+        </td>
+        <td>@Clrd</td>
+        <td class="green center"></td>
+        <td>Used to communicate the status of central clearing workflow.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2727.html">
+            
+                2727
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2727.html">
+            
+                AllocLegRefID
+            
+            </a>
+        </td>
+        <td>@LegRefID</td>
+        <td class="green center"></td>
+        <td>The field may not be used in any message where there are no legs.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/AllocRegulatoryTradeIDGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/AllocRegulatoryTradeIDGrp.html">
+            
+                <b>AllocRegulatoryTradeIDGrp</b>
+            
+            </a>
+        </td>
+        <td>RegTrdID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
             <a href="../fields/776.html">
-            776
+            
+                776
+            
             </a>
         </td>
         <td>
             <a href="../fields/776.html">
-            IndividualAllocRejCode
+            
+                IndividualAllocRejCode
+            
             </a>
         </td>
         <td>@IndAllocRejCode</td>
         <td class="green center"></td>
-        <td>Required if NoAllocs &gt; 0.</td>
+        <td>Required if NoAllocs(78) &gt; 0 and AllocStatus(87) = 2 (Account level reject).</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../components/NestedParties.html">
-            <b>Component</b>
+            
+                <b>Component</b>
+            
             </a>
         </td>
         <td>
             <a href="../components/NestedParties.html">
-            <b>NestedParties</b>
+            
+                <b>NestedParties</b>
+            
             </a>
         </td>
         <td>Pty</td>
@@ -245,119 +382,315 @@ Indicates number of allocation groups to follow.</td>
     <tr>
         <td class="green">
             <a href="../fields/161.html">
-            161
+            
+                161
+            
             </a>
         </td>
         <td>
             <a href="../fields/161.html">
-            AllocText
+            
+                AllocText
+            
             </a>
         </td>
         <td>@Txt</td>
         <td class="green center"></td>
-        <td>Free format text field related to this AllocAccount (can be used here to hold text relating to the rejection of this AllocAccount)</td>
+        <td>Can be used here to hold text relating to the rejection of this AllocAccount(366))</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/360.html">
-            360
+            
+                360
+            
             </a>
         </td>
         <td>
             <a href="../fields/360.html">
-            EncodedAllocTextLen
+            
+                EncodedAllocTextLen
+            
             </a>
         </td>
         <td>@EncAllocTextLen</td>
         <td class="green center"></td>
-        <td>Must be set if EncodedAllocText field is specified and must immediately precede it.</td>
+        <td>Must be set if EncodedAllocText(361) field is specified and must immediately precede it.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/361.html">
-            361
+            
+                361
+            
             </a>
         </td>
         <td>
             <a href="../fields/361.html">
-            EncodedAllocText
+            
+                EncodedAllocText
+            
             </a>
         </td>
         <td>@EncAllocText</td>
         <td class="green center"></td>
-        <td>Encoded (non-ASCII characters) representation of the AllocText field in the encoded format specified via the MessageEncoding field.</td>
+        <td>Encoded (non-ASCII characters) representation of the AllocText(161) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1732.html">
+            
+                1732
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1732.html">
+            
+                FirmAllocText
+            
+            </a>
+        </td>
+        <td>@FirmTxt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1733.html">
+            
+                1733
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1733.html">
+            
+                EncodedFirmAllocTextLen
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedFirmAllocText(1734) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1734.html">
+            
+                1734
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1734.html">
+            
+                EncodedFirmAllocText
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the FirmAllocText(1732) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/989.html">
-            989
+            
+                989
+            
             </a>
         </td>
         <td>
             <a href="../fields/989.html">
-            SecondaryIndividualAllocID
+            
+                SecondaryIndividualAllocID
+            
             </a>
         </td>
         <td>@IndAllocID2</td>
         <td class="green center"></td>
-        <td>Will allow the intermediary to specify an allocation ID generated by the system</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/993.html">
-            993
+            
+                993
+            
             </a>
         </td>
         <td>
             <a href="../fields/993.html">
-            AllocCustomerCapacity
+            
+                AllocCustomerCapacity
+            
             </a>
         </td>
         <td>@CustCpcty</td>
         <td class="green center"></td>
-        <td>Will allow for granular reporting of separate allocation detail within a single trade report or allocation message.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/992.html">
-            992
+            
+                992
+            
             </a>
         </td>
         <td>
             <a href="../fields/992.html">
-            IndividualAllocType
+            
+                IndividualAllocType
+            
             </a>
         </td>
         <td>@Typ</td>
         <td class="green center"></td>
-        <td>Identifies whether the allocation is to be sub-allocated or allocated to a third party.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/80.html">
-            80
+            
+                80
+            
             </a>
         </td>
         <td>
             <a href="../fields/80.html">
-            AllocQty
+            
+                AllocQty
+            
             </a>
         </td>
         <td>@Qty</td>
         <td class="green center"></td>
-        <td>Quantity to be allocated to specific sub-account</td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2515.html">
+            
+                2515
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2515.html">
+            
+                AllocCalculatedCcyQty
+            
+            </a>
+        </td>
+        <td>@CalcCcyQty</td>
+        <td class="green center"></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1752.html">
+            
+                1752
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1752.html">
+            
+                CustodialLotID
+            
+            </a>
+        </td>
+        <td>@CstdlLotID</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1753.html">
+            
+                1753
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1753.html">
+            
+                VersusPurchaseDate
+            
+            </a>
+        </td>
+        <td>@VSPDt</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, either VersusPurchasePrice(1754) or CurrentCostBasis(1755) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1754.html">
+            
+                1754
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1754.html">
+            
+                VersusPurchasePrice
+            
+            </a>
+        </td>
+        <td>@VSPPx</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1755.html">
+            
+                1755
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1755.html">
+            
+                CurrentCostBasis
+            
+            </a>
+        </td>
+        <td>@CurCostBasis</td>
+        <td class="green center"></td>
+        <td>Only used for specific lot trades. If this field is used, VersusPurchaseDate(1753) should be specified</td>
         <td class="green"></td>
     </tr>
 

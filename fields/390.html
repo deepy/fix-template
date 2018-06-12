@@ -90,12 +90,14 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>BidID [type '390']</h3>
-<p class="description">Unique identifier for Bid Response as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day.</p>
+<p class="description">For bid lists, unique identifier for BidResponse(35=I) as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day.
+
+For quotes, unique identifier for the bid side of the quote assigned by the quote issuer.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +108,7 @@
     <tr>
         <td class="green">
             <a href="../fields/390.html">
-            390
+            
             </a>
         </td>
         <td>
@@ -116,7 +118,9 @@
         </td>
         <td>BidID</td>
         <td>
-            Unique identifier for Bid Response as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day.
+            For bid lists, unique identifier for BidResponse(35=I) as assigned by sell-side (broker, exchange, ECN). Uniqueness must be guaranteed within a single trading day.
+
+For quotes, unique identifier for the bid side of the quote assigned by the quote issuer.
             
         </td>
         <td class="green"></td>
@@ -135,6 +139,10 @@
         [<a href="../messages/L.html">ListExecute]</a>
     
         [<a href="../messages/E.html">NewOrderList]</a>
+    
+        [<a href="../messages/S.html">Quote]</a>
+    
+        [<a href="../messages/AI.html">QuoteStatusReport]</a>
     
     </p>
     <hr />

@@ -90,7 +90,7 @@
 
 <h2>FIX.5.0SP2 Components</h2>
 <h3>EvntGrp [type 'Component']</h3>
-<p class="description">None</p>
+<p class="description">The EvntGrp is a repeating subcomponent of the Instrument component used to specify straightforward events associated with the instrument. Examples include put and call dates for bonds and options; first exercise date for options; inventory and delivery dates for commodities; start, end and roll dates for swaps. Use ComplexEvents for more advanced dates such as option, futures, commodities and equity swap observation and pricing events.</p>
 
 <table>
 <tr>
@@ -108,12 +108,16 @@
     <tr>
         <td class="green">
             <a href="../fields/864.html">
-            864
+            
+                864
+            
             </a>
         </td>
         <td>
             <a href="../fields/864.html">
-            NoEvents
+            
+                NoEvents
+            
             </a>
         </td>
         <td></td>
@@ -125,63 +129,142 @@
     <tr>
         <td class="green">
             <a href="../fields/865.html">
-            865
+            
+                865
+            
             </a>
         </td>
         <td>
             <a href="../fields/865.html">
-            EventType
+            
+                EventType
+            
             </a>
         </td>
         <td>@EventTyp</td>
         <td class="green center"></td>
-        <td></td>
+        <td>Required if NoEvents(864) &gt; 0.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/866.html">
-            866
+            
+                866
+            
             </a>
         </td>
         <td>
             <a href="../fields/866.html">
-            EventDate
+            
+                EventDate
+            
             </a>
         </td>
         <td>@Dt</td>
         <td class="green center"></td>
+        <td>Conditionally required when EventTime(1145) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1145.html">
+            
+                1145
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1145.html">
+            
+                EventTime
+            
+            </a>
+        </td>
+        <td>@Tm</td>
+        <td class="green center"></td>
         <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
-            <a href="../fields/1145.html">
-            1145
+            <a href="../fields/1827.html">
+            
+                1827
+            
             </a>
         </td>
         <td>
-            <a href="../fields/1145.html">
-            EventTime
+            <a href="../fields/1827.html">
+            
+                EventTimeUnit
+            
             </a>
         </td>
-        <td>@Tm</td>
+        <td>@TmUnit</td>
         <td class="green center"></td>
-        <td>Specific time of event. To be used in combination with EventDate [866]</td>
+        <td>Conditionally required when EventTimePeriod(1826) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1826.html">
+            
+                1826
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1826.html">
+            
+                EventTimePeriod
+            
+            </a>
+        </td>
+        <td>@TmPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when EventTimeUnit(1827) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/2340.html">
+            
+                2340
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/2340.html">
+            
+                EventMonthYear
+            
+            </a>
+        </td>
+        <td>@MoYr</td>
+        <td class="green center"></td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/867.html">
-            867
+            
+                867
+            
             </a>
         </td>
         <td>
             <a href="../fields/867.html">
-            EventPx
+            
+                EventPx
+            
             </a>
         </td>
         <td>@Px</td>
@@ -193,17 +276,63 @@
     <tr>
         <td class="green">
             <a href="../fields/868.html">
-            868
+            
+                868
+            
             </a>
         </td>
         <td>
             <a href="../fields/868.html">
-            EventText
+            
+                EventText
+            
             </a>
         </td>
         <td>@Txt</td>
         <td class="green center"></td>
-        <td></td>
+        <td>None</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1578.html">
+            
+                1578
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1578.html">
+            
+                EncodedEventTextLen
+            
+            </a>
+        </td>
+        <td>@EncTxtLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedEventText(1579) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/1579.html">
+            
+                1579
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/1579.html">
+            
+                EncodedEventText
+            
+            </a>
+        </td>
+        <td>@EncTxt</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the EventText(868) field in the encoded format specified via the MessageEncoding(347) field.</td>
         <td class="green"></td>
     </tr>
 

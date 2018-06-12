@@ -1,0 +1,222 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingSettlRateDisruptionFallbackGrp [type 'Component']</h3>
+<p class="description">The UnderlyingSettlRateDisruptionFallbackGrp is a repeating subcomponent of the UnderlyingPaymentStreamNonDeliverableSettlTermGrp component used to specify the method, prioritized by the order it is listed, to get a replacement rate for a disrupted settlement rate option for a non-deliverable settlement currency.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40659.html">
+            
+                40659
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40659.html">
+            
+                NoUnderlyingSettlRateFallbacks
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40660.html">
+            
+                40660
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40660.html">
+            
+                UnderlyingSettlRatePostponementMaximumDays
+            
+            </a>
+        </td>
+        <td>@MaxDays</td>
+        <td class="green center"></td>
+        <td>Required if NoUnderlyingSettlRateFallbacks(40659) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingSettlRateFallbackRateSource.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingSettlRateFallbackRateSource.html">
+            
+                <b>UnderlyingSettlRateFallbackRateSource</b>
+            
+            </a>
+        </td>
+        <td>RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40662.html">
+            
+                40662
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40662.html">
+            
+                UnderlyingSettlRatePostponementSurvey
+            
+            </a>
+        </td>
+        <td>@Survey</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40663.html">
+            
+                40663
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40663.html">
+            
+                UnderlyingSettlRatePostponementCalculationAgent
+            
+            </a>
+        </td>
+        <td>@CalcAgent</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

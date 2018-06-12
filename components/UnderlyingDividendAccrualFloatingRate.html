@@ -1,0 +1,495 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingDividendAccrualFloatingRate [type 'Component']</h3>
+<p class="description">The UnderlyingDividendAccrualFloatingRate component is a subcomponent of UnderlyingDividendConditions used to define the dividend accrual floating rate attributes of dividend payment conditions.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42801.html">
+            
+                42801
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42801.html">
+            
+                UnderlyingDividendFloatingRateIndex
+            
+            </a>
+        </td>
+        <td>@Ndx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42802.html">
+            
+                42802
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42802.html">
+            
+                UnderlyingDividendFloatingRateIndexCurvePeriod
+            
+            </a>
+        </td>
+        <td>@NdxPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingDividendFloatingRateIndexCurveUnit(42803) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42803.html">
+            
+                42803
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42803.html">
+            
+                UnderlyingDividendFloatingRateIndexCurveUnit
+            
+            </a>
+        </td>
+        <td>@NdxUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingDividendFloatingRateIndexCurvePeriod(42802) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42804.html">
+            
+                42804
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42804.html">
+            
+                UnderlyingDividendFloatingRateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42805.html">
+            
+                42805
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42805.html">
+            
+                UnderlyingDividendFloatingRateSpread
+            
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42806.html">
+            
+                42806
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42806.html">
+            
+                UnderlyingDividendFloatingRateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@SpreadPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42807.html">
+            
+                42807
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42807.html">
+            
+                UnderlyingDividendFloatingRateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42808.html">
+            
+                42808
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42808.html">
+            
+                UnderlyingDividendCapRate
+            
+            </a>
+        </td>
+        <td>@CapRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42809.html">
+            
+                42809
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42809.html">
+            
+                UnderlyingDividendCapRateBuySide
+            
+            </a>
+        </td>
+        <td>@CapRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42810.html">
+            
+                42810
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42810.html">
+            
+                UnderlyingDividendCapRateSellSide
+            
+            </a>
+        </td>
+        <td>@CapRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42811.html">
+            
+                42811
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42811.html">
+            
+                UnderlyingDividendFloorRate
+            
+            </a>
+        </td>
+        <td>@FlrRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42812.html">
+            
+                42812
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42812.html">
+            
+                UnderlyingDividendFloorRateBuySide
+            
+            </a>
+        </td>
+        <td>@FlrRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42813.html">
+            
+                42813
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42813.html">
+            
+                UnderlyingDividendFloorRateSellSide
+            
+            </a>
+        </td>
+        <td>@FlrRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42814.html">
+            
+                42814
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42814.html">
+            
+                UnderlyingDividendInitialRate
+            
+            </a>
+        </td>
+        <td>@InitRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42815.html">
+            
+                42815
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42815.html">
+            
+                UnderlyingDividendFinalRateRoundingDirection
+            
+            </a>
+        </td>
+        <td>@FnlRtRndDirctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42816.html">
+            
+                42816
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42816.html">
+            
+                UnderlyingDividendFinalRatePrecision
+            
+            </a>
+        </td>
+        <td>@FnlRtPrcsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42817.html">
+            
+                42817
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42817.html">
+            
+                UnderlyingDividendAveragingMethod
+            
+            </a>
+        </td>
+        <td>@AvgngMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42818.html">
+            
+                42818
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42818.html">
+            
+                UnderlyingDividendNegativeRateTreatment
+            
+            </a>
+        </td>
+        <td>@NegtvRtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

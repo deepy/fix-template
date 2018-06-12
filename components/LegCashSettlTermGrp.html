@@ -1,0 +1,600 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegCashSettlTermGrp [type 'Component']</h3>
+<p class="description">The LegCashSettlTermGrp is a repeating component within the InstrumentLeg component used to report cash settlement terms.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41344.html">
+            
+                41344
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41344.html">
+            
+                NoLegCashSettlTerms
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41345.html">
+            
+                41345
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41345.html">
+            
+                LegCashSettlCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td>Required if NoLegCashSettlTerms(41344) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41346.html">
+            
+                41346
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41346.html">
+            
+                LegCasSettlValuationFirstBusinessDayOffset
+            
+            </a>
+        </td>
+        <td>@BizDayOfst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41347.html">
+            
+                41347
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41347.html">
+            
+                LegCashSettlValuationSubsequentBusinessDaysOffset
+            
+            </a>
+        </td>
+        <td>@SbsqntBizDayOfst</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41348.html">
+            
+                41348
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41348.html">
+            
+                LegCashSettlNumOfValuationDates
+            
+            </a>
+        </td>
+        <td>@NumValDts</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41349.html">
+            
+                41349
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41349.html">
+            
+                LegCashSettlValuationTime
+            
+            </a>
+        </td>
+        <td>@ValTm</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41350.html">
+            
+                41350
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41350.html">
+            
+                LegCashSettlBusinessCenter
+            
+            </a>
+        </td>
+        <td>@BizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41351.html">
+            
+                41351
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41351.html">
+            
+                LegCashSettlQuoteMethod
+            
+            </a>
+        </td>
+        <td>@QteMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41352.html">
+            
+                41352
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41352.html">
+            
+                LegCashSettlQuoteAmount
+            
+            </a>
+        </td>
+        <td>@QteAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41353.html">
+            
+                41353
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41353.html">
+            
+                LegCashSettlQuoteCurrency
+            
+            </a>
+        </td>
+        <td>@QteCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41354.html">
+            
+                41354
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41354.html">
+            
+                LegCashSettlMinimumQuoteAmount
+            
+            </a>
+        </td>
+        <td>@MinQteAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41355.html">
+            
+                41355
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41355.html">
+            
+                LegCashSettlMinimumQuoteCurrency
+            
+            </a>
+        </td>
+        <td>@MinQteCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegCashSettlDealerGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegCashSettlDealerGrp.html">
+            
+                <b>LegCashSettlDealerGrp</b>
+            
+            </a>
+        </td>
+        <td>Dlr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42308.html">
+            
+                42308
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42308.html">
+            
+                LegCashSettlPriceSource
+            
+            </a>
+        </td>
+        <td>@PxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42309.html">
+            
+                42309
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42309.html">
+            
+                LegCashSettlPriceDefault
+            
+            </a>
+        </td>
+        <td>@PxDflt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41356.html">
+            
+                41356
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41356.html">
+            
+                LegCashSettlBusinessDays
+            
+            </a>
+        </td>
+        <td>@BizDays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41357.html">
+            
+                41357
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41357.html">
+            
+                LegCashSettlAmount
+            
+            </a>
+        </td>
+        <td>@Amt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegCashSettlDate.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegCashSettlDate.html">
+            
+                <b>LegCashSettlDate</b>
+            
+            </a>
+        </td>
+        <td>SettlDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41358.html">
+            
+                41358
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41358.html">
+            
+                LegCashSettlRecoveryFactor
+            
+            </a>
+        </td>
+        <td>@RcvryFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41359.html">
+            
+                41359
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41359.html">
+            
+                LegCashSettlFixedTermIndicator
+            
+            </a>
+        </td>
+        <td>@FixedInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41360.html">
+            
+                41360
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41360.html">
+            
+                LegCashSettlAccruedInterestIndicator
+            
+            </a>
+        </td>
+        <td>@AcrdIntInd</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41361.html">
+            
+                41361
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41361.html">
+            
+                LegCashSettlValuationMethod
+            
+            </a>
+        </td>
+        <td>@ValMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41362.html">
+            
+                41362
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41362.html">
+            
+                LegCashSettlTermXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>MDOriginType [type '1024']</h3>
-<p class="description">Used to describe the origin of an entry in the book</p>
+<p class="description">Used to describe the origin of the market data entry.</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/1024.html">
-            1024
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>MDOrigTyp</td>
         <td>
-            Used to describe the origin of an entry in the book
+            Used to describe the origin of the market data entry.
             
             <table>
             
@@ -138,6 +138,42 @@
                 <td>Cross</td>
             </tr>
             
+            <tr>
+                <td>3</td>
+                <td>=</td>
+                <td>QuoteDrivenMarket</td>
+            </tr>
+            
+            <tr>
+                <td>4</td>
+                <td>=</td>
+                <td>DarkOrderBook</td>
+            </tr>
+            
+            <tr>
+                <td>5</td>
+                <td>=</td>
+                <td>AuctionDrivenMarket</td>
+            </tr>
+            
+            <tr>
+                <td>6</td>
+                <td>=</td>
+                <td>QuoteNegotiation</td>
+            </tr>
+            
+            <tr>
+                <td>7</td>
+                <td>=</td>
+                <td>VoiceNegotiation</td>
+            </tr>
+            
+            <tr>
+                <td>8</td>
+                <td>=</td>
+                <td>HybridMarket</td>
+            </tr>
+            
             </table>
             
         </td>
@@ -153,6 +189,8 @@
         [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
     
         [<a href="../components/MDIncGrp.html">MDIncGrp]</a>
+    
+        [<a href="../components/MDStatisticParameters.html">MDStatisticParameters]</a>
     
     </p>
     <hr />

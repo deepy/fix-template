@@ -1,0 +1,1797 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingPaymentStreamFloatingRate [type 'Component']</h3>
+<p class="description">UnderlyingPaymentStreamFloatingRate is a subcomponent of the UnderlyingPaymentStream component used to report the floating rate attributes of the stream.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40620.html">
+            
+                40620
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40620.html">
+            
+                UnderlyingPaymentStreamRateIndex
+            
+            </a>
+        </td>
+        <td>@Ndx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40621.html">
+            
+                40621
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40621.html">
+            
+                UnderlyingPaymentStreamRateIndexSource
+            
+            </a>
+        </td>
+        <td>@NdxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/43092.html">
+            
+                43092
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/43092.html">
+            
+                UnderlyingPaymentStreamRateIndexID
+            
+            </a>
+        </td>
+        <td>@NdxID</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexIDSource(43093) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/43093.html">
+            
+                43093
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/43093.html">
+            
+                UnderlyingPaymentStreamRateIndexIDSource
+            
+            </a>
+        </td>
+        <td>@NdxIDSrc</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexID(43092) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40622.html">
+            
+                40622
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40622.html">
+            
+                UnderlyingPaymentStreamRateIndexCurveUnit
+            
+            </a>
+        </td>
+        <td>@NdxUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexCurvePeriod(40623) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40623.html">
+            
+                40623
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40623.html">
+            
+                UnderlyingPaymentStreamRateIndexCurvePeriod
+            
+            </a>
+        </td>
+        <td>@NdxPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexCurveUnit(40622) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41911.html">
+            
+                41911
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41911.html">
+            
+                UnderlyingPaymentStreamRateIndex2CurveUnit
+            
+            </a>
+        </td>
+        <td>@Ndx2Unit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexCurvePeriod2(41912) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41912.html">
+            
+                41912
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41912.html">
+            
+                UnderlyingPaymentStreamRateIndex2CurvePeriod
+            
+            </a>
+        </td>
+        <td>@Ndx2Period</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamRateIndexCurveUnit2(41911) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41913.html">
+            
+                41913
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41913.html">
+            
+                UnderlyingPaymentStreamRateIndexLocation
+            
+            </a>
+        </td>
+        <td>@NdxLctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41914.html">
+            
+                41914
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41914.html">
+            
+                UnderlyingPaymentStreamRateIndexLevel
+            
+            </a>
+        </td>
+        <td>@NdxLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41915.html">
+            
+                41915
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41915.html">
+            
+                UnderlyingPaymentStreamRateIndexUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@NdxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41916.html">
+            
+                41916
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41916.html">
+            
+                UnderlyingPaymentStreamSettlLevel
+            
+            </a>
+        </td>
+        <td>@SettlLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41917.html">
+            
+                41917
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41917.html">
+            
+                UnderlyingPaymentStreamReferenceLevel
+            
+            </a>
+        </td>
+        <td>@RefLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41918.html">
+            
+                41918
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41918.html">
+            
+                UnderlyingPaymentStreamReferenceLevelUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@RefUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41919.html">
+            
+                41919
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41919.html">
+            
+                UnderlyingPaymentStreamReferenceLevelEqualsZeroIndicator
+            
+            </a>
+        </td>
+        <td>@RefLvlZero</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40624.html">
+            
+                40624
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40624.html">
+            
+                UnderlyingPaymentStreamRateMultiplier
+            
+            </a>
+        </td>
+        <td>@RtMult</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40625.html">
+            
+                40625
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40625.html">
+            
+                UnderlyingPaymentStreamRateSpread
+            
+            </a>
+        </td>
+        <td>@Spread</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41920.html">
+            
+                41920
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41920.html">
+            
+                UnderlyingPaymentStreamRateSpreadCurrency
+            
+            </a>
+        </td>
+        <td>@SpreadCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41921.html">
+            
+                41921
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41921.html">
+            
+                UnderlyingPaymentStreamRateSpreadUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@SpreadUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41922.html">
+            
+                41922
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41922.html">
+            
+                UnderlyingPaymentStreamRateConversionFactor
+            
+            </a>
+        </td>
+        <td>@RtFctr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41923.html">
+            
+                41923
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41923.html">
+            
+                UnderlyingPaymentStreamRateSpreadType
+            
+            </a>
+        </td>
+        <td>@SpreadTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40626.html">
+            
+                40626
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40626.html">
+            
+                UnderlyingPaymentStreamRateSpreadPositionType
+            
+            </a>
+        </td>
+        <td>@SpreadPosTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40627.html">
+            
+                40627
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40627.html">
+            
+                UnderlyingPaymentStreamRateTreatment
+            
+            </a>
+        </td>
+        <td>@RtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40628.html">
+            
+                40628
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40628.html">
+            
+                UnderlyingPaymentStreamCapRate
+            
+            </a>
+        </td>
+        <td>@CapRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40629.html">
+            
+                40629
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40629.html">
+            
+                UnderlyingPaymentStreamCapRateBuySide
+            
+            </a>
+        </td>
+        <td>@CapRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40630.html">
+            
+                40630
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40630.html">
+            
+                UnderlyingPaymentStreamCapRateSellSide
+            
+            </a>
+        </td>
+        <td>@CapRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40631.html">
+            
+                40631
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40631.html">
+            
+                UnderlyingPaymentStreamFloorRate
+            
+            </a>
+        </td>
+        <td>@FlrRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40632.html">
+            
+                40632
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40632.html">
+            
+                UnderlyingPaymentStreamFloorRateBuySide
+            
+            </a>
+        </td>
+        <td>@FlrRtBuy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40633.html">
+            
+                40633
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40633.html">
+            
+                UnderlyingPaymentStreamFloorRateSellSide
+            
+            </a>
+        </td>
+        <td>@FlrRtSell</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40634.html">
+            
+                40634
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40634.html">
+            
+                UnderlyingPaymentStreamInitialRate
+            
+            </a>
+        </td>
+        <td>@InitRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41924.html">
+            
+                41924
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41924.html">
+            
+                UnderlyingPaymentStreamLastResetRate
+            
+            </a>
+        </td>
+        <td>@LastResetRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41925.html">
+            
+                41925
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41925.html">
+            
+                UnderlyingPaymentStreamFinalRate
+            
+            </a>
+        </td>
+        <td>@FnlRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40635.html">
+            
+                40635
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40635.html">
+            
+                UnderlyingPaymentStreamFinalRateRoundingDirection
+            
+            </a>
+        </td>
+        <td>@FnlRtRndDirctn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40636.html">
+            
+                40636
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40636.html">
+            
+                UnderlyingPaymentStreamFinalRatePrecision
+            
+            </a>
+        </td>
+        <td>@FnlRtPrcsn</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40637.html">
+            
+                40637
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40637.html">
+            
+                UnderlyingPaymentStreamAveragingMethod
+            
+            </a>
+        </td>
+        <td>@AvgngMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40638.html">
+            
+                40638
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40638.html">
+            
+                UnderlyingPaymentStreamNegativeRateTreatment
+            
+            </a>
+        </td>
+        <td>@NegtvRtTrtmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41926.html">
+            
+                41926
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41926.html">
+            
+                UnderlyingPaymentStreamCalculationLagPeriod
+            
+            </a>
+        </td>
+        <td>@CalcLagPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCalculationLagUnit(41927) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41927.html">
+            
+                41927
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41927.html">
+            
+                UnderlyingPaymentStreamCalculationLagUnit
+            
+            </a>
+        </td>
+        <td>@CalcLagUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamCalculationLagPeriod(41926) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42958.html">
+            
+                42958
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42958.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateUnadjusted
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnDtUnadj</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42959.html">
+            
+                42959
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42959.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateRelativeTo
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnReltv</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42960.html">
+            
+                42960
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42960.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateOffsetDayType
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnOfstDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41928.html">
+            
+                41928
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41928.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateOffsetPeriod
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnOfstPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamFirstObservationOffsetUnit(41929) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41929.html">
+            
+                41929
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41929.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateOffsetUnit
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnOfstUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamFirstObservationOffsetPeriod(41928) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42961.html">
+            
+                42961
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42961.html">
+            
+                UnderlyingPaymentStreamFirstObservationDateAdjusted
+            
+            </a>
+        </td>
+        <td>@FirstObsvtnDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41930.html">
+            
+                41930
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41930.html">
+            
+                UnderlyingPaymentStreamPricingDayType
+            
+            </a>
+        </td>
+        <td>@PxngDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41931.html">
+            
+                41931
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41931.html">
+            
+                UnderlyingPaymentStreamPricingDayDistribution
+            
+            </a>
+        </td>
+        <td>@PxngDayDistrib</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41932.html">
+            
+                41932
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41932.html">
+            
+                UnderlyingPaymentStreamPricingDayCount
+            
+            </a>
+        </td>
+        <td>@PxngDayCnt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41933.html">
+            
+                41933
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41933.html">
+            
+                UnderlyingPaymentStreamPricingBusinessCalendar
+            
+            </a>
+        </td>
+        <td>@PxngClndr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41934.html">
+            
+                41934
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41934.html">
+            
+                UnderlyingPaymentStreamPricingBusinessDayConvention
+            
+            </a>
+        </td>
+        <td>@PxngBizDayCnvtn</td>
+        <td class="green center"></td>
+        <td>When specified, this overrides the business day convention defined in the UnderlyingDateAdjustment component in UnderlyingInstrument. The specified value would be specific to this instance of pricing dates.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamPricingBusinessCenterGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamPricingBusinessCenterGrp.html">
+            
+                <b>UnderlyingPaymentStreamPricingBusinessCenterGrp</b>
+            
+            </a>
+        </td>
+        <td>PxngBizCtr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamPricingDayGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamPricingDayGrp.html">
+            
+                <b>UnderlyingPaymentStreamPricingDayGrp</b>
+            
+            </a>
+        </td>
+        <td>PxngDay</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamPricingDateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamPricingDateGrp.html">
+            
+                <b>UnderlyingPaymentStreamPricingDateGrp</b>
+            
+            </a>
+        </td>
+        <td>PxngDt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40639.html">
+            
+                40639
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40639.html">
+            
+                UnderlyingPaymentStreamInflationLagPeriod
+            
+            </a>
+        </td>
+        <td>@LagPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamInflationLagUnit(40640) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40640.html">
+            
+                40640
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40640.html">
+            
+                UnderlyingPaymentStreamInflationLagUnit
+            
+            </a>
+        </td>
+        <td>@LagUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingPaymentStreamInflationLagPeriod(40639) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40641.html">
+            
+                40641
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40641.html">
+            
+                UnderlyingPaymentStreamInflationLagDayType
+            
+            </a>
+        </td>
+        <td>@LagDayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40642.html">
+            
+                40642
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40642.html">
+            
+                UnderlyingPaymentStreamInflationInterpolationMethod
+            
+            </a>
+        </td>
+        <td>@IntrpltnMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40643.html">
+            
+                40643
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40643.html">
+            
+                UnderlyingPaymentStreamInflationIndexSource
+            
+            </a>
+        </td>
+        <td>@InfltnNdxSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40644.html">
+            
+                40644
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40644.html">
+            
+                UnderlyingPaymentStreamInflationPublicationSource
+            
+            </a>
+        </td>
+        <td>@PublctnSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40645.html">
+            
+                40645
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40645.html">
+            
+                UnderlyingPaymentStreamInflationInitialIndexLevel
+            
+            </a>
+        </td>
+        <td>@InitLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40646.html">
+            
+                40646
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40646.html">
+            
+                UnderlyingPaymentStreamInflationFallbackBondApplicable
+            
+            </a>
+        </td>
+        <td>@FallbckBond</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/40647.html">
+            
+                40647
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/40647.html">
+            
+                UnderlyingPaymentStreamFRADiscounting
+            
+            </a>
+        </td>
+        <td>@FRADisc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42962.html">
+            
+                42962
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42962.html">
+            
+                UnderlyingPaymentStreamUnderlierRefID
+            
+            </a>
+        </td>
+        <td>@UndlrRefID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingPaymentStreamFormula.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingPaymentStreamFormula.html">
+            
+                <b>UnderlyingPaymentStreamFormula</b>
+            
+            </a>
+        </td>
+        <td>Frmla</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingDividendConditions.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingDividendConditions.html">
+            
+                <b>UnderlyingDividendConditions</b>
+            
+            </a>
+        </td>
+        <td>DividendConds</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42963.html">
+            
+                42963
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42963.html">
+            
+                UnderlyingReturnRateNotionalReset
+            
+            </a>
+        </td>
+        <td>@RtnRtNotlReset</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingReturnRateGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingReturnRateGrp.html">
+            
+                <b>UnderlyingReturnRateGrp</b>
+            
+            </a>
+        </td>
+        <td>RtnRt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42964.html">
+            
+                42964
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42964.html">
+            
+                UnderlyingPaymentStreamLinkInitialLevel
+            
+            </a>
+        </td>
+        <td>@LinkInitLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42965.html">
+            
+                42965
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42965.html">
+            
+                UnderlyingPaymentStreamLinkClosingLevelIndicator
+            
+            </a>
+        </td>
+        <td>@LinkClsngLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42966.html">
+            
+                42966
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42966.html">
+            
+                UnderlyingPaymentStreamLinkExpiringLevelIndicator
+            
+            </a>
+        </td>
+        <td>@LinkExpngLvl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42967.html">
+            
+                42967
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42967.html">
+            
+                UnderlyingPaymentStreamLinkEstimatedTradingDays
+            
+            </a>
+        </td>
+        <td>@LinkEstTrdgDays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42968.html">
+            
+                42968
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42968.html">
+            
+                UnderlyingPaymentStreamLinkStrikePrice
+            
+            </a>
+        </td>
+        <td>@LinkStrkPx</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42969.html">
+            
+                42969
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42969.html">
+            
+                UnderlyingPaymentStreamLinkStrikePriceType
+            
+            </a>
+        </td>
+        <td>@LinkStrkPxTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42970.html">
+            
+                42970
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42970.html">
+            
+                UnderlyingPaymentStreamLinkMaximumBoundary
+            
+            </a>
+        </td>
+        <td>@LinkMaxBndry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42971.html">
+            
+                42971
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42971.html">
+            
+                UnderlyingPaymentStreamLinkMinimumBoundary
+            
+            </a>
+        </td>
+        <td>@LinkMinBndry</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42972.html">
+            
+                42972
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42972.html">
+            
+                UnderlyingPaymentStreamLinkNumberOfDataSeries
+            
+            </a>
+        </td>
+        <td>@LinkNumDataSeries</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42973.html">
+            
+                42973
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42973.html">
+            
+                UnderlyingPaymentStreamVarianceUnadjustedCap
+            
+            </a>
+        </td>
+        <td>@VarncCap</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42974.html">
+            
+                42974
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42974.html">
+            
+                UnderlyingPaymentStreamRealizedVarianceMethod
+            
+            </a>
+        </td>
+        <td>@RlzdVarncMeth</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42975.html">
+            
+                42975
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42975.html">
+            
+                UnderlyingPaymentStreamDaysAdjustmentIndicator
+            
+            </a>
+        </td>
+        <td>@DaysAdjmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42976.html">
+            
+                42976
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42976.html">
+            
+                UnderlyingPaymentStreamNearestExchangeContractRefID
+            
+            </a>
+        </td>
+        <td>@ExchCtrctRefID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42977.html">
+            
+                42977
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42977.html">
+            
+                UnderlyingPaymentStreamVegaNotionalAmount
+            
+            </a>
+        </td>
+        <td>@VegaNotlAmt</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

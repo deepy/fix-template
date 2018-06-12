@@ -1,0 +1,327 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingMarketDisruptionFallbackReferencePriceGrp [type 'Component']</h3>
+<p class="description">The UnderlyingMarketDisruptionFallbackReferencePriceGrp is a repeating subcomponent of the UnderlyingMarketDisruption component used to specify the fallback reference price and underlying security provisions</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41868.html">
+            
+                41868
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41868.html">
+            
+                NoUnderlyingMarketDisruptionFallbackReferencePrices
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41869.html">
+            
+                41869
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41869.html">
+            
+                UnderlyingMarketDisruptionFallbackUnderlierType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoUnderlyingMarketDisruptionFallbackReferencePrices (41868) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41870.html">
+            
+                41870
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41870.html">
+            
+                UnderlyingMarketDisruptionFallbackUnderlierSecurityID
+            
+            </a>
+        </td>
+        <td>@ID</td>
+        <td class="green center"></td>
+        <td>Conditionally required whem UnderlyingMarketDisruptionFallbackUnderlierSecurityIDSource(41871) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41871.html">
+            
+                41871
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41871.html">
+            
+                UnderlyingMarketDisruptionFallbackUnderlierSecurityIDSource
+            
+            </a>
+        </td>
+        <td>@Src</td>
+        <td class="green center"></td>
+        <td>Conditionally required whem UnderlyingMarketDisruptionFallbackUnderlierSecurityID(41870) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41872.html">
+            
+                41872
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41872.html">
+            
+                UnderlyingMarketDisruptionFallbackUnderlierSecurityDesc
+            
+            </a>
+        </td>
+        <td>@Desc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41873.html">
+            
+                41873
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41873.html">
+            
+                EncodedUnderlyingMarketDisruptionFallbackUnderlierSecurityDescLen
+            
+            </a>
+        </td>
+        <td>@EncDescLen</td>
+        <td class="green center"></td>
+        <td>Must be set if EncodedUnderlyingMarketDisruptionFallbackUnderlierSecurityDesc(41874) field is specified and must immediately precede it.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41874.html">
+            
+                41874
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41874.html">
+            
+                EncodedUnderlyingMarketDisruptionFallbackUnderlierSecurityDesc
+            
+            </a>
+        </td>
+        <td>@EncDesc</td>
+        <td class="green center"></td>
+        <td>Encoded (non-ASCII characters) representation of the UnderlyingMarketDisruptionFallbackUnderlierSecurityDesc(41872) field in the encoded format specified via the MessageEncoding(347) field.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41875.html">
+            
+                41875
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41875.html">
+            
+                UnderlyingMarketDisruptionFallbackOpenUnits
+            
+            </a>
+        </td>
+        <td>@OpnUnits</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41876.html">
+            
+                41876
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41876.html">
+            
+                UnderlyingMarketDisruptionFallbackBasketCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41877.html">
+            
+                41877
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41877.html">
+            
+                UnderlyingMarketDisruptionFallbackBasketDivisor
+            
+            </a>
+        </td>
+        <td>@Dvsr</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

@@ -108,69 +108,85 @@
     <tr>
         <td class="green">
             <a href="../fields/534.html">
-            534
+            
+                534
+            
             </a>
         </td>
         <td>
             <a href="../fields/534.html">
-            NoAffectedOrders
+            
+                NoAffectedOrders
+            
             </a>
         </td>
         <td>@NoAffctdOrds</td>
         <td class="green center"></td>
-        <td>Optional field used to indicate the number of order identifiers for orders affected by the mass action request. Must be followed with OrigClOrdID (41) as the next field.</td>
+        <td></td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
-            <a href="../fields/41.html">
-            41
+            <a href="../fields/1824.html">
+            
+                1824
+            
             </a>
         </td>
         <td>
-            <a href="../fields/41.html">
-            OrigClOrdID
+            <a href="../fields/1824.html">
+            
+                AffectedOrigClOrdID
+            
             </a>
         </td>
         <td>@OrigClOrdID</td>
         <td class="green center"></td>
-        <td>Required if NoAffectedOrders &gt; 0 and must be the first repeating field in the group.
-Indicates the client order id of an order affected by this request. If order(s) were manually delivered (or otherwise not delivered over FIX and not assigned a ClOrdID) this field should contain string &#34;MANUAL&#34;.</td>
+        <td>Required if NoAffectedOrders(534) &gt; 0.
+Indicates the client order id of an order affected by this request. If order(s) were manually delivered (or otherwise not delivered over FIX and not assigned a ClOrdID(11)) this field should contain string &#34;MANUAL&#34;.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/535.html">
-            535
+            
+                535
+            
             </a>
         </td>
         <td>
             <a href="../fields/535.html">
-            AffectedOrderID
+            
+                AffectedOrderID
+            
             </a>
         </td>
-        <td>@AffctdOrdID</td>
+        <td>@OrdID</td>
         <td class="green center"></td>
-        <td>Contains the OrderID assigned by the counterparty of an affected order. Not required as part of the repeating group if OrigClOrdID(41) has a value other than &#34;MANUAL&#34;.</td>
+        <td>Contains the OrderID(37) assigned by the counterparty of an affected order. Conditionally required when AffectedOrigClOrdID(1824) = &#34;MANUAL&#34;.</td>
         <td class="green"></td>
     </tr>
 
     <tr>
         <td class="green">
             <a href="../fields/536.html">
-            536
+            
+                536
+            
             </a>
         </td>
         <td>
             <a href="../fields/536.html">
-            AffectedSecondaryOrderID
+            
+                AffectedSecondaryOrderID
+            
             </a>
         </td>
-        <td>@AffctdScndOrdID</td>
+        <td>@OrdID2</td>
         <td class="green center"></td>
-        <td>Contains the SecondaryOrderID assigned by the counterparty of an affected order. Not required as part of the repeating group</td>
+        <td>Contains the SecondaryOrderID(198) assigned by the counterparty of an affected order.</td>
         <td class="green"></td>
     </tr>
 

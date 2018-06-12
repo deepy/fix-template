@@ -1,0 +1,432 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>LegStreamCommoditySettlPeriodGrp [type 'Component']</h3>
+<p class="description">The LegStreamCommoditySettlPeriodGrp is a repeating subcomponent of the LegStreamCommodiry component used to to define the settlement period details associated with the commodity contract.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41686.html">
+            
+                41686
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41686.html">
+            
+                NoLegStreamCommoditySettlPeriods
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41687.html">
+            
+                41687
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41687.html">
+            
+                LegStreamCommoditySettlCountry
+            
+            </a>
+        </td>
+        <td>@Ctry</td>
+        <td class="green center"></td>
+        <td>Required if NoLegStreamCommoditySettlPeriods(41686) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41688.html">
+            
+                41688
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41688.html">
+            
+                LegStreamCommoditySettlTimeZone
+            
+            </a>
+        </td>
+        <td>@TZ</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41689.html">
+            
+                41689
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41689.html">
+            
+                LegStreamCommoditySettlFlowType
+            
+            </a>
+        </td>
+        <td>@FlowTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41690.html">
+            
+                41690
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41690.html">
+            
+                LegStreamCommoditySettlPeriodNotional
+            
+            </a>
+        </td>
+        <td>@Notl</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41691.html">
+            
+                41691
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41691.html">
+            
+                LegStreamCommoditySettlPeriodNotionalUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@NotlUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41692.html">
+            
+                41692
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41692.html">
+            
+                LegStreamCommoditySettlPeriodFrequencyPeriod
+            
+            </a>
+        </td>
+        <td>@FreqPeriod</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCommoditySettlPeriodFrequencyUnit(41693) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41693.html">
+            
+                41693
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41693.html">
+            
+                LegStreamCommoditySettlPeriodFrequencyUnit
+            
+            </a>
+        </td>
+        <td>@FreqUnit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when LegStreamCommoditySettlPeriodFrequencyPeriod(41692) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41694.html">
+            
+                41694
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41694.html">
+            
+                LegStreamCommoditySettlPeriodPrice
+            
+            </a>
+        </td>
+        <td>@Px</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41695.html">
+            
+                41695
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41695.html">
+            
+                LegStreamCommoditySettlPeriodPriceUnitOfMeasure
+            
+            </a>
+        </td>
+        <td>@PxUOM</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41696.html">
+            
+                41696
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41696.html">
+            
+                LegStreamCommoditySettlPeriodPriceCurrency
+            
+            </a>
+        </td>
+        <td>@PxCcy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41697.html">
+            
+                41697
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41697.html">
+            
+                LegStreamCommoditySettlHolidaysProcessingInstruction
+            
+            </a>
+        </td>
+        <td>@Holidays</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/LegStreamCommoditySettlDayGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/LegStreamCommoditySettlDayGrp.html">
+            
+                <b>LegStreamCommoditySettlDayGrp</b>
+            
+            </a>
+        </td>
+        <td>Day</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41698.html">
+            
+                41698
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41698.html">
+            
+                LegStreamCommoditySettlPeriodXID
+            
+            </a>
+        </td>
+        <td>@XID</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/41699.html">
+            
+                41699
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/41699.html">
+            
+                LegStreamCommoditySettlPeriodXIDRef
+            
+            </a>
+        </td>
+        <td>@XIDRef</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>

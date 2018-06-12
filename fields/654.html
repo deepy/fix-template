@@ -90,12 +90,12 @@
 
 <h2>FIX.5.0SP2 Fields</h2>
 <h3>LegRefID [type '654']</h3>
-<p class="description">Unique indicator for a specific leg.</p>
+<p class="description">Unique identifier for a specific leg (uniqueness not defined as part of the FIX specification). LegRefID(654) be used to reference the value from LegID(1788).</p>
 
 <table>
 <tr>
     
-    <th>Field/Component</th>
+    <th>Tag</th>
     <th>Field Name</th>
     <th>FIXML name</th>
     <th>Comments</th>
@@ -106,7 +106,7 @@
     <tr>
         <td class="green">
             <a href="../fields/654.html">
-            654
+            
             </a>
         </td>
         <td>
@@ -116,7 +116,7 @@
         </td>
         <td>RefID</td>
         <td>
-            Unique indicator for a specific leg.
+            Unique identifier for a specific leg (uniqueness not defined as part of the FIX specification). LegRefID(654) be used to reference the value from LegID(1788).
             
         </td>
         <td class="green"></td>
@@ -134,7 +134,13 @@
     
         [<a href="../components/LegQuotGrp.html">LegQuotGrp]</a>
     
+        [<a href="../components/MDFullGrp.html">MDFullGrp]</a>
+    
         [<a href="../components/QuotReqLegsGrp.html">QuotReqLegsGrp]</a>
+    
+        [<a href="../components/SideCrossLegGrp.html">SideCrossLegGrp]</a>
+    
+        [<a href="../components/TrdInstrmtLegExecGrp.html">TrdInstrmtLegExecGrp]</a>
     
         [<a href="../components/TrdInstrmtLegGrp.html">TrdInstrmtLegGrp]</a>
     

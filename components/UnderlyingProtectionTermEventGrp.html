@@ -1,0 +1,306 @@
+<html>
+<head>
+    <meta charset="utf-8" />
+    
+    <style type="text/css">
+        th {
+            word-wrap: break-word;
+            background-color: #0f0263;
+            color: white;
+            font-weight: bold;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #0000ff 1px solid;
+            border-bottom: #000000 1px solid;
+            font-size: small;
+            text-align: left;
+            vertical-align: top;
+            padding-bottom: 8px;
+        }
+
+        td {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+        }
+
+        td.green {
+            word-wrap: break-word;
+            border-width: 1px;
+            border-top: #000000 1px solid;
+            border-left: #000000 1px solid;
+            border-bottom: #000000 1px solid;
+            background-color: #C0DCC0;
+        }
+
+        table {
+            font-family: Verdana;
+            font-size: x-small;
+
+            width: 100%;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-width: 0;
+            position: relative;
+            margin-top: -1px;
+        }
+
+        table A:visited {
+        }
+
+        table A:link {
+        }
+
+        table A {
+            color: #0f0263;
+            text-decoration: none;
+            font-weight: normal;
+            font-size: x-small;
+        }
+
+        table A:hover {
+            background-color: #0F0263;
+            color: white;
+        }
+
+        td.center {
+            text-align: center;
+        }
+
+        #copyright {
+            color: grey;
+            text-align: right;
+
+            font-family: Verdana;
+            font-size: x-small;
+        }
+
+        .description {
+            white-space: pre-wrap; font-family: Arial, Verdana, Helvetica
+        }
+
+        
+        
+
+    </style>
+    
+</head>
+
+<h2>FIX.5.0SP2 Components</h2>
+<h3>UnderlyingProtectionTermEventGrp [type 'Component']</h3>
+<p class="description">The UnderlyingProtectionTermEventGrp is a repeating component within the UnderlyingProtectionTermGrp component used to report applicable CDS credit events.</p>
+
+<table>
+<tr>
+    
+    <th>Field/Component</th>
+    <th>Field Name</th>
+    <th>FIXML name</th>
+    <th>Req'd</th>
+    <th>Comments</th>
+    <th>Depr.</th>
+
+</tr>
+
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42077.html">
+            
+                42077
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42077.html">
+            
+                NoUnderlyingProtectionTermEvents
+            
+            </a>
+        </td>
+        <td></td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42078.html">
+            
+                42078
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42078.html">
+            
+                UnderlyingProtectionTermEventType
+            
+            </a>
+        </td>
+        <td>@Typ</td>
+        <td class="green center"></td>
+        <td>Required if NoUnderlyingProtectionTermEvents (42078) &gt; 0.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42079.html">
+            
+                42079
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42079.html">
+            
+                UnderlyingProtectionTermEventValue
+            
+            </a>
+        </td>
+        <td>@Val</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42080.html">
+            
+                42080
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42080.html">
+            
+                UnderlyingProtectionTermEventCurrency
+            
+            </a>
+        </td>
+        <td>@Ccy</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42081.html">
+            
+                42081
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42081.html">
+            
+                UnderlyingProtectionTermEventPeriod
+            
+            </a>
+        </td>
+        <td>@Period</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProtectionTermEventUnit(42082) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42082.html">
+            
+                42082
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42082.html">
+            
+                UnderlyingProtectionTermEventUnit
+            
+            </a>
+        </td>
+        <td>@Unit</td>
+        <td class="green center"></td>
+        <td>Conditionally required when UnderlyingProtectionTermEventPeriod(42081) is specified.</td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42083.html">
+            
+                42083
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42083.html">
+            
+                UnderlyingProtectionTermEventDayType
+            
+            </a>
+        </td>
+        <td>@DayTyp</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../fields/42084.html">
+            
+                42084
+            
+            </a>
+        </td>
+        <td>
+            <a href="../fields/42084.html">
+            
+                UnderlyingProtectionTermEventRateSource
+            
+            </a>
+        </td>
+        <td>@RtSrc</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+    <tr>
+        <td class="green">
+            <a href="../components/UnderlyingProtectionTermEventQualifierGrp.html">
+            
+                <b>Component</b>
+            
+            </a>
+        </td>
+        <td>
+            <a href="../components/UnderlyingProtectionTermEventQualifierGrp.html">
+            
+                <b>UnderlyingProtectionTermEventQualifierGrp</b>
+            
+            </a>
+        </td>
+        <td>Qual</td>
+        <td class="green center"></td>
+        <td></td>
+        <td class="green"></td>
+    </tr>
+
+
+</table>
+
+
+
+    
+    <p id="copyright">Copyright (c) FIX Protocol Ltd. All Rights Reserved.</p>
+    
+
+</html>
