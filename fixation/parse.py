@@ -213,7 +213,7 @@ def render_version(base, version, conf):
 
 def fiximate(base='fix_repository_2010_edition_20140507'):
     import multiprocessing as mp
-    from configuration import Configuration
+    from fixation.configuration import Configuration
 
     try:
         ctx = mp.get_context('fork')
