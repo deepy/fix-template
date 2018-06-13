@@ -70,7 +70,7 @@ def write_entries(conf, entries, env, lookup, path, repo, subdir):
             .dump(os.path.join(path, filename), encoding='utf-8')
 
 
-def document(env, input, version, lookup, repo):
+def document(env, input, version, lookup, template_data, repo):
 
     path = os.path.join('out', version)
     os.makedirs(path, exist_ok=True)
@@ -78,5 +78,5 @@ def document(env, input, version, lookup, repo):
     template = env.get_template('document.html')
 
     template.stream(messages=input['messages']['entries'].values(), components=input['components']['entries'].values(),
-                    lookup=lookup, repository=repo)\
+                    lookup=lookup, repository=repo, **template_data)\
         .dump(os.path.join(path, 'document.html'), encoding='utf-8')

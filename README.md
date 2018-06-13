@@ -45,6 +45,8 @@ The following example is from document.html and handles blacklisting/whitelistin
 
 If you want to blacklist or whitelist things there are two ways to do it, in the following example the StandardTrailer will be considered blacklisted in the context of message ResendRequest (2)
 
+Anything put in extra_data will be inserted into the document so the following example would let you use `{{ key }}` to access the list.
+
 ```json
 {
 "blacklist": ["0", "StandardHeader"],

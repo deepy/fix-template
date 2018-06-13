@@ -243,6 +243,7 @@ def document(base):
         spec = parse_spec(base, version)
         lookup = Lookup(**spec)
         env, filter = gen.get_env()
+        template_data = {}
         try:
             with open('document-settings.json') as fp:
                 data = json.load(fp)
@@ -255,10 +256,11 @@ def document(base):
                     filter.ctx_blacklist[k] = value
                 for k, value in data.get('ctx_whitelist', {}).items():
                     filter.ctx_whitelist[k] = value
+                template_data = data.get('extra_data', {})
         except IOError:
             pass
 
-        gen.document(env, spec, version, lookup, repo={'copyright': 'me', })
+        gen.document(env, spec, version, lookup, template_data, repo={'copyright': 'me', })
 
 
 def main():
