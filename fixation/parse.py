@@ -245,10 +245,10 @@ def document(base):
     import json
 
     for version in next(os.walk(base))[1]:
-        if not version.startswith('FIX'):
-            continue
-
         path = get_path(base, version)
+        if not path:
+            continue
+        
         spec = parse_spec(path)
         lookup = Lookup(**spec)
         env, filter = gen.get_env()
