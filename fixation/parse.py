@@ -179,12 +179,12 @@ class Lookup:
         return self._enums.get(tag_id)
 
 
-def parse_spec(base, version):
-    messages = parse_messages(os.path.join(base, version, 'Base/Messages.xml'))
-    msgcontents = parse_msgcontents(os.path.join(base, version, 'Base/MsgContents.xml'))
-    fields = parse_fields(os.path.join(base, version, 'Base/Fields.xml'))
-    components = parse_components(os.path.join(base, version, 'Base/Components.xml'))
-    enums = parse_enums(os.path.join(base, version, 'Base/Enums.xml'))
+def parse_spec(path):
+    messages = parse_messages(os.path.join(path, 'Messages.xml'))
+    msgcontents = parse_msgcontents(os.path.join(path, 'MsgContents.xml'))
+    fields = parse_fields(os.path.join(path, 'Fields.xml'))
+    components = parse_components(os.path.join(path, 'Components.xml'))
+    enums = parse_enums(os.path.join(path, 'Enums.xml'))
 
     return {
         'messages': messages,
@@ -195,9 +195,17 @@ def parse_spec(base, version):
     }
 
 
+def get_path(base, version):
+    for path, dirs, files in os.walk(os.path.join(base, version), topdown=True):
+        for f in files:
+            if f == 'Messages.xml':
+                return path
+
+
 def render_version(base, version, conf):
     try:
-        spec = parse_spec(base, version)
+        path = get_path(base, version)
+        spec = parse_spec(path)
         lookup = Lookup(**spec)
         env = gen.get_env(conf)[0]
         for content in ['messages', 'components', 'fields']:
@@ -240,7 +248,8 @@ def document(base):
         if not version.startswith('FIX'):
             continue
 
-        spec = parse_spec(base, version)
+        path = get_path(base, version)
+        spec = parse_spec(path)
         lookup = Lookup(**spec)
         env, filter = gen.get_env()
         template_data = {}
