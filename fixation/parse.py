@@ -269,7 +269,7 @@ def document(base):
         except IOError:
             pass
 
-        gen.document(env, spec, version, lookup, template_data, repo={'copyright': 'me', })
+        gen.document(env, spec, version, lookup, template_data, repo={'copyright': 'me', 'version': version })
 
 
 def main():
