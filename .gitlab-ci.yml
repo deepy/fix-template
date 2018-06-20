@@ -1,0 +1,10 @@
+image: alpine:latest
+
+pages:
+  stage: deploy
+  artifacts:
+    paths:
+    - .
+  only:
+  - pages
+
